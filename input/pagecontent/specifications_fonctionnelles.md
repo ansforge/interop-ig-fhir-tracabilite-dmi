@@ -26,7 +26,7 @@ R5212-42). En outre, depuis le 26 mai 2021, les établissements de santé
 doivent enregistrer l'identifiant unique "IUD" des DMI de classe III,
 comme le prévoit la réglementation européenne (règlement (UE) 2017/745,
 Art. 27). Enfin, l'arrêté du 8 septembre 2021 relatif au management de
-la qualité du circuit des DMI[^1] introduit de nouvelles exigences à
+la qualité du circuit des DMI ([Arrêté du 8 septembre 2021 relatif au management de la qualité du circuit des dispositifs médicaux implantables dans les établissements de santé et les installations de chirurgie esthétique](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044053502)) introduit de nouvelles exigences à
 compter du 26 mai 2022 : renforcement des règles de traçabilité
 (nouvelles données à enregistrer, respect du cadre d'interopérabilité
 des systèmes d'information de santé), enregistrement de l'IUD à toutes
@@ -263,7 +263,7 @@ patient au niveau sanitaire ou médico-administratif.</p>
 Ci-dessous des exemples d’usages de la traçabilité de DMI en
 établissement de santé.
 
-**Réassort de stock - DMI gérés en achat**
+##### Réassort de stock - DMI gérés en achat
 
 - Un besoin de réassort est transmis à la PUI.
 - La PUI passe une commande
@@ -278,279 +278,221 @@ règlement de la facture de DMI.
 - L’infirmier ou l’IBODE reçoit les DMI,
 enregistre leur réception et les place dans le stock de proximité
 jusqu’à l’opération.
-- Le praticien « implanteur » effectue la pose de DMI.Et il enregistre l’acte de pose du DMI dans le système d’information du
+- Le praticien « implanteur » effectue la pose de DMI. Et il enregistre l’acte de pose du DMI dans le système d’information du
 PMSI.
 - L’infirmier ou l’IBODE renseigne les informations relatives à la
 pose de DMI. Les données relatives aux DMI doivent figurer dans le
-dossier patient[^2].
+dossier patient (Article R. 5212-40 du code de la santé publique).
 - La lettre de liaison est remise au patient et à son
 médecin traitant à l’issue de son séjour dans l’établissement de santé
 (hors périmètre de cette spécification fonctionnelle).
 
-**Préparation
-d’une intervention– DMI gérés en dépôt-vente et non disponibles en
-stock**
+##### Préparation d’une intervention– DMI gérés en dépôt-vente et non disponibles en stock
 
-Le plateau technique souhaite préparer une intervention chirurgicale
-avec pose de DMI pour une personne prise en charge.Le plateau technique,
+- Le plateau technique souhaite préparer une intervention chirurgicale
+avec pose de DMI pour une personne prise en charge.
+- Le plateau technique,
 ne disposant pas de DMI en stock, effectue une demande auprès de la
-PUI.La PUI passe une commande auprès du distributeur (hors périmètre de
-cette spécification fonctionnelle).Le distributeur reçoit la commande,
+PUI.
+-La PUI passe une commande auprès du distributeur (hors périmètre de
+cette spécification fonctionnelle).
+- Le distributeur reçoit la commande,
 la traite et livre les DMI au lieu de livraison renseigné sur le bon de
-commande (PUI) (hors périmètre de cette spécification fonctionnelle).La
-PUI reçoit les DMI, les enregistre, les délivre au plateau technique et
+commande (PUI) (hors périmètre de cette spécification fonctionnelle).
+- LaPUI reçoit les DMI, les enregistre, les délivre au plateau technique et
 en trace la délivrance.L’infirmier ou l’IBODE reçoit les DMI, enregistre
-leur réception et les stocke dans l’arsenal jusqu’à l’opération.Le
-praticien « implanteur » effectue la pose de DMI. Et il enregistre
-l’acte de pose du DMI dans le système d’information du PMSI.L’infirmier
-ou l’IBODE renseigne les informations relatives à la pose de DMI. Les
-données relatives aux DMI doivent figurer dans le dossier patient[^3].La
-PUI reçoit les informations de pose et donne l’accord de paiement des
-DMI consommés.Le gestionnaire de comptabilité déclenche le règlement de
-la facture de DMI.Une demande de réassort est éventuellement remontée.La
-PUI réexpédie et trace les produits non posés. Ce cas peut se produire
+leur réception et les stocke dans l’arsenal jusqu’à l’opération.
+- Le praticien « implanteur » effectue la pose de DMI. Et il enregistre
+l’acte de pose du DMI dans le système d’information du PMSI.
+- L’infirmier ou l’IBODE renseigne les informations relatives à la pose de DMI. Les
+données relatives aux DMI doivent figurer dans le dossier patient (Article R. 5212-40 du code de la santé publique).
+- La PUI reçoit les informations de pose et donne l’accord de paiement des
+DMI consommés.
+- Le gestionnaire de comptabilité déclenche le règlement de
+la facture de DMI.Une demande de réassort est éventuellement remontée.
+- La PUI réexpédie et trace les produits non posés. Ce cas peut se produire
 lorsque le distributeur envoie des sets complets avec plusieurs tailles
-afin de pouvoir répondre aux besoins de choix lors de la pose.La lettre
-de liaison est remise au patient et à son médecin traitant à l’issue de
+afin de pouvoir répondre aux besoins de choix lors de la pose.
+- La lettre de liaison est remise au patient et à son médecin traitant à l’issue de
 son séjour dans l’établissement de santé (hors périmètre de cette
-spécification fonctionnelle).**Préparation d’une intervention– DMI gérés
-en dépôt-vente et disponibles en stock**
+spécification fonctionnelle).
 
-- 
-- 
+##### Préparation d’une intervention– DMI gérés en dépôt-vente et disponibles en stock
 
-<!-- -->
-
-- 
-- 
-
-<!-- -->
-
-- 
-- 
-
-Le plateau technique souhaite préparer une intervention chirurgicale
-pour une pose de DMI chez un patient.Le plateau technique, disposant du
-DMI souhaité dans son stock, effectue la sortie du stock nécessaire.Le
-praticien « implanteur » effectue la pose de DMI. Et il enregistre
-l’acte de pose du DMI dans le système d’information du PMSI.L’infirmier
-ou l’IBODE renseigne les informations relatives à la pose de DMI. Les
-données relatives aux DMI doivent figurer dans le dossier patient[^4].La
-PUI reçoit les informations de pose et donne l’accord de paiement des
-DMI consommés.Une demande de réassort est systématiquement remontée pour
+- Le plateau technique souhaite préparer une intervention chirurgicale
+pour une pose de DMI chez un patient.
+- Le plateau technique, disposant du
+DMI souhaité dans son stock, effectue la sortie du stock nécessaire.
+- Le praticien « implanteur » effectue la pose de DMI. Et il enregistre
+l’acte de pose du DMI dans le système d’information du PMSI.
+- L’infirmier ou l’IBODE renseigne les informations relatives à la pose de DMI. Les
+données relatives aux DMI doivent figurer dans le dossier patient (Article R. 5212-40 du code de la santé publique).
+- La PUI reçoit les informations de pose et donne l’accord de paiement des
+DMI consommés.
+- Une demande de réassort est systématiquement remontée pour
 maintenir constant le niveau de stock selon la convention de
 réapprovisionnement entre le fournisseur et l’établissement.
 
 #### Cadre juridique
 
-###### 
+##### Plan national - Traçabilité sanitaire dans le cadre de la matériovigilance
 
-Plan national - Traçabilité sanitaire dans le cadre de la
-matériovigilance**Décret n°2006-1497 du 29 novembre 2006**
+###### Décret n°2006-1497 du 29 novembre 2006
 
 Le décret n°2006-1497 du 29 novembre 2006, modifiant le code de la santé
 publique (dispositions réglementaires de matériovigilance) institue
 l’obligation de traçabilité de certains dispositifs médicaux dont la
 liste a été fixée par l’arrêté du 26 Janvier 2007 :
 
-- 
-- 
-- 
-
-dispositifs médicaux incorporant une substance qui, si elle est utilisée
+- dispositifs médicaux incorporant une substance qui, si elle est utilisée
 séparément, est susceptible d'être considérée comme un médicament dérivé
-du sang ;valves cardiaques ;autres dispositifs médicaux implantables :  
-- y compris les implants dentaires ;  
-- à l'exception des ligatures, sutures et dispositifs d'ostéosynthèse.  
+du sang ;
+- valves cardiaques ;
+- autres dispositifs médicaux implantables :  
+  - y compris les implants dentaires ;  
+  - à l'exception des ligatures, sutures et dispositifs d'ostéosynthèse.  
+
 Les règles particulières de traçabilité sont posées par les articles du
 décret n°2006-1497 détaillés ci-dessous :
 
-- 
+- L’article R. 5212-36 circonscrit le périmètre des règles de
+ traçabilité des dispositifs médicaux depuis leur réception dans la
+ structure sanitaire ou de chirurgie esthétique où ils seront utilisés
+ jusqu'à leur utilisation chez le patient.L’objectif de cette
+ traçabilité est de permettre :
+  1. l’identification des patients pour lesquels les dispositifs médicaux d'un lot ont été utilisés;
+  2. l’identification des lots dont proviennent les dispositifs médicaux utilisés chez un patient.
 
-> L’article R. 5212-36 circonscrit le périmètre des règles de
-> traçabilité des dispositifs médicaux depuis leur réception dans la
-> structure sanitaire ou de chirurgie esthétique où ils seront utilisés
-> jusqu'à leur utilisation chez le patient.L’objectif de cette
-> traçabilité est de permettre :
+- L’article R. 5212-37 fixe, la durée de conservation des données de traçabilité : les données relatives à la traçabilité des DMI sont
+conservées <u>pendant 10 ans</u>. La durée de conservation est <u>portée à 40 ans</u> pour les DM incorporant une substance qui, si elle est utilisée séparément est susceptible d’être considérée comme un dérivé du sang.
 
-1.  
-2.  
+- L’article R. 5212-38 porte sur les données de traçabilité relatives à la délivrance des dispositifs médicaux. Ces données sont enregistrées sous le contrôle du pharmacien (L’article L. 5126-5 du code de la santé publique impose que le pharmacien en charge de la gestion d’une PUI soit responsable de l’ensemble de son activité pharmaceutique) gérant de la PUI ou du professionnel de santé responsable et sont ensuite transmises au service utilisateur du DMI. Les données de traçabilité de la délivrance sont :  
+  1. l'identification de chaque dispositif médical :  
+    a. dénomination ;  
+    b. numéro de série ou de lot ;  
+    c. nom du fabricant ou de son mandataire.
 
-> l’identification des patients pour lesquels les dispositifs médicaux
-> d'un lot ont été utilisés; l’identification des lots dont proviennent
-> les dispositifs médicaux utilisés chez un patient.
+  2. la date de la délivrance du dispositif médical au service utilisateur ;  
+  3. l'identification du service utilisateur.
 
-- 
-- 
-- 
-- 
-- 
-- 1.  
-  2.  
-  3.  
-  4.  
-  5.  
+- L’article R. 5212-39 impose que chaque service utilisateur d'un DMI complète les informations de traçabilité de la délivrance en enregistrant :  
+  1. la date d'utilisation ;  
+  2. l'identification du patient, et notamment ses : nom, prénom et date de naissance ;  
+  3. le nom du médecin ou du chirurgien-dentiste utilisateur.
 
-> L’article R. 5212-37 fixe, la durée de conservation des données de
-> traçabilité : : les données relatives à la traçabilité des DMI sont
-> conservées <u>pendant 10 ans</u>. La durée de conservation est
-> <u>portée à 40 ans</u> pour les DM incorporant une substance qui, si
-> elle est utilisée séparément est susceptible d’être considérée comme
-> un dérivé du sang.L’article R. 5212-38 porte sur les données de
-> traçabilité relatives à la délivrance des dispositifs médicaux. Ces
-> données sont enregistrées sous le contrôle du pharmacien[^5] gérant de
-> la PUI ou du professionnel de santé responsable et sont ensuite
-> transmises au service utilisateur du DMI. Les données de traçabilité
-> de la délivrance sont :  
-> 1. l'identification de chaque dispositif médical :  
-> a. dénomination ;  
-> b. numéro de série ou de lot ;  
-> c. nom du fabricant ou de son mandataire.  
-> 2. la date de la délivrance du dispositif médical au service
-> utilisateur ;  
-> 3. l'identification du service utilisateur.  
-> L’article R. 5212-39 impose que chaque service utilisateur d'un DMI
-> complète les informations de traçabilité de la délivrance en
-> enregistrant :  
-> 1. la date d'utilisation ;  
-> 2. l'identification du patient, et notamment ses : nom, prénom et date
-> de naissance ;  
-> 3. le nom du médecin ou du chirurgien-dentiste utilisateur.L’article
-> R. 5212-40 impose que tout professionnel de santé utilisant le DMI au
-> sein d’un établissement de santé fasse figurer dans le dossier médical
-> les informations suivantes :  
-> 1. l'identification du dispositif médical : dénomination, numéro de
-> série ou de lot, nom du fabricant ou de son mandataire ;  
-> 2. la date d'utilisation ;  
-> 3. le nom du médecin ou du chirurgien-dentiste utilisateur.Dans le cas
-> d’un professionnel de santé utilisant le DMI en dehors de
-> l’établissement de santé, les principes de traçabilité sont identiques
-> à ceux exigés pour les établissements de santé en plus de
-> l’information portant sur le lieu d'utilisation à renseigner dans le
-> dossier médical du patient (article R. 5212-41).L’article R. 5212-42
-> stipule qu’à l'issue des soins ou des actes de chirurgie esthétique
-> mettant en œuvre un dispositif médical figurant sur la liste prévue à
-> l'article [R.
-> 5212-36](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006072665&idArticle=LEGIARTI000006916313&dateTexte=&categorieLien=cid),
-> est transmis au patient un document mentionnant :l'identification du
-> dispositif médical utilisé : dénomination, numéro de série ou de lot,
-> nom du fabricant ou de son mandataire et marque ;le lieu et la date
-> d'utilisation ;le nom du médecin ou du chirurgien-dentiste utilisateur
-> ;l'existence d'une durée de vie limitée du produit et l'éventuelle
-> nécessité de réintervention qui en découle ;le cas échéant, le suivi
-> médical particulier. Ci-dessous, un tableau récapitulatif des
-> informations obligatoires de traçabilité de DMI.
+- L’article R. 5212-40 impose que tout professionnel de santé utilisant le DMI au sein d’un établissement de santé fasse figurer dans le dossier médical les informations suivantes :
+  1. l'identification du dispositif médical : dénomination, numéro de série ou de lot, nom du fabricant ou de son mandataire ;  
+  2. la date d'utilisation ;  
+  3. le nom du médecin ou du chirurgien-dentiste utilisateur.
 
-<table style="width:99%;">
-<colgroup>
-<col style="width: 77%" />
-<col style="width: 21%" />
-</colgroup>
-<thead>
+- Dans le cas d’un professionnel de santé utilisant le DMI en dehors de l’établissement de santé, les principes de traçabilité sont identiques à ceux exigés pour les établissements de santé en plus de l’information portant sur le lieu d'utilisation à renseigner dans le
+dossier médical du patient (article R. 5212-41).
+
+- L’article R. 5212-42 stipule qu’à l'issue des soins ou des actes de chirurgie esthétique mettant en œuvre un dispositif médical figurant sur la liste prévue à l'article [R. 5212-36](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006072665&idArticle=LEGIARTI000006916313&dateTexte=&categorieLien=cid), est transmis au patient un document mentionnant :
+  1. l'identification du dispositif médical utilisé : dénomination, numéro de série ou de lot, nom du fabricant ou de son mandataire et marque ;
+  2. le lieu et la date d'utilisation ;le nom du médecin ou du chirurgien-dentiste utilisateur ;
+  3. l'existence d'une durée de vie limitée du produit et l'éventuelle nécessité de réintervention qui en découle ;
+  4. le cas échéant, le suivi médical particulier.
+  
+Ci-dessous, un tableau récapitulatif des informations obligatoires de traçabilité de DMI.
+
+<table>
 <tr>
-<th style="text-align: center;">Informations obligatoires</th>
-<th style="text-align: center;">Référence</th>
+<th style="text-align:center;">Informations obligatoires</th>
+<th style="text-align:center;">Référence</th>
 </tr>
-</thead>
-<tbody>
+
 <tr>
-<td colspan="2" style="text-align: center;"><strong>Le
-pharmacien</strong><a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a> <strong>enregistre les données de
-réception des DMI et les transmet ensuite au service utilisateur lors de
-la délivrance du DMI :</strong></td>
+<td colspan="2" style="text-align:center;">
+<strong>
+Le pharmacien (Pour les établissements ne disposant pas de PUI, le responsable de la traçabilité est la personne en charge des commandes et de la gestion des stocks dans l'établissement, sous le contrôle d'un professionnel de santé) enregistre les données de réception des DMI et les transmet ensuite au service utilisateur lors de la délivrance du DMI :
+</strong>
+</td>
 </tr>
+
 <tr>
-<td style="text-align: center;"><ol type="1">
-<li><ol type="a">
-<li></li>
-<li></li>
-<li></li>
-</ol></li>
-<li></li>
-<li></li>
-</ol></td>
-<td style="text-align: center;">l’identification de chaque dispositif
-médical : dénomination ;numéro de série ou de lot ;nom du fabricant ou
-de son mandataire.la date de la délivrance du dispositif médical au
-service utilisateur ;l’identification du service utilisateur<em>R.
-5212-38</em></td>
+<td>
+<ul>
+<li>
+l’identification de chaque dispositif médical :
+<ul>
+<li>dénomination ;</li>
+<li>numéro de série ou de lot ;</li>
+<li>nom du fabricant ou de son mandataire.</li>
+</ul>
+</li>
+<li>la date de la délivrance du dispositif médical au service utilisateur ;</li>
+<li>l’identification du service utilisateur.</li>
+</ul>
+</td>
+<td><em>R. 5212-38</em></td>
 </tr>
+
 <tr>
-<td colspan="2" style="text-align: center;"><strong>Le service
-utilisateur renseigne ces informations lors de l'utilisation du
-DMI :</strong></td>
+<td colspan="2" style="text-align:center;">
+<strong>
+Le service utilisateur renseigne ces informations lors de l'utilisation du DMI :
+</strong>
+</td>
 </tr>
+
 <tr>
-<td style="text-align: center;"><ol type="1">
-<li></li>
-<li></li>
-<li></li>
-</ol></td>
-<td style="text-align: center;">la date d'utilisation ;l’identification
-du patient, et notamment ses : nom, prénom et date de naissance ;le nom
-du médecin ou du chirurgien-dentiste utilisateur ;<em>R.
-5212-39</em></td>
+<td>
+<ul>
+<li>la date d'utilisation ;</li>
+<li>l’identification du patient : nom, prénom et date de naissance ;</li>
+<li>le nom du médecin ou du chirurgien-dentiste utilisateur.</li>
+</ul>
+</td>
+<td><em>R. 5212-39</em></td>
 </tr>
+
 <tr>
-<td colspan="2" style="text-align: center;"><strong>L'établissement doit
-faire figurer dans le dossier patient</strong> :</td>
+<td colspan="2" style="text-align:center;">
+<strong>
+L'établissement doit faire figurer dans le dossier patient :
+</strong>
+</td>
 </tr>
+
 <tr>
-<td style="text-align: center;"><ol type="1">
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ol></td>
-<td style="text-align: center;">l’identification du dispositif médical :
-dénomination, numéro de série ou de lot, nom du fabricant ou de son
-mandataire ;la date d'utilisation ;le nom du médecin ou du
-chirurgien-dentiste utilisateur.le lieu d’utilisation.<em>R.
-5212-40</em></td>
+<td>
+<ul>
+<li>l’identification du dispositif médical : dénomination, numéro de série ou de lot, nom du fabricant ou de son mandataire ;</li>
+<li>la date d'utilisation ;</li>
+<li>le nom du médecin ou du chirurgien-dentiste utilisateur ;</li>
+<li>le lieu d’utilisation.</li>
+</ul>
+</td>
+<td><em>R. 5212-40</em></td>
 </tr>
-</tbody>
 </table>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Pour les établissements ne disposant pas de PUI, le
-responsable de la traçabilité est la personne en charge des commandes et
-de la gestion des stocks dans l'établissement, sous le contrôle d'un
-professionnel de santé.<a href="#fnref1" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
-Table 2 Les informations obligatoires de traçabilité de DMI
+<p style="text-align:center;">
+Table 2 – Les informations obligatoires de traçabilité de DMI
+</p>
 
-###### 
+###### Instruction n° DGOS/PF2/2015/200 du 15 juin 2015
 
-Instruction n° DGOS/PF2/2015/200 du 15 juin 2015 En complément du cadre
-législatif, la DGOS a mené une enquête aboutissant à la publication en
-juin 2015 d’une instruction (Instruction N° DGOS /PF2/2015 /200 du 15
-juin 2015) comportant une liste de recommandations pour la traçabilité
+En complément du cadre législatif, la DGOS a mené une enquête aboutissant à la publication en
+juin 2015 d’une instruction (Instruction N°DGOS/PF2 2015 /200 du 15 juin 2015) comportant une liste de recommandations pour la traçabilité
 sanitaire des DMI à destination des établissements de santé. Parmi les
 recommandations spécifiques au système d’information il y a :
 
-- 
-- 
-
-###### 
-
-l’utilisation d’un « référentiel des DMI unique et partagé avec
+- l’utilisation d’un « référentiel des DMI unique et partagé avec
 l’ensemble des applications informatiques de la PUI (traçabilité
 financière, processus logistiques) et des applications informatiques
-concernées des services utilisateurs ».« chaque fois que cela est
+concernées des services utilisateurs ».
+- « chaque fois que cela est
 possible, saisir les données de traçabilité (dénomination, numéro de lot
 ou de série du DMI, identité du patient,…) par la lecture optique de
 codes à barres ou autre lecteur adapté au support d’information (RFID),
 a minima avant la délivrance au service utilisateur. Afin de fiabiliser
 les données de traçabilité, limiter le recours à la saisie manuelle des
 données autant que de possible. »  
-  
-Guide de traçabilité des dispositifs médicauxLe guide de traçabilité des
+
+###### Guide de traçabilité des dispositifs médicaux
+Le guide de traçabilité des
 dispositifs médicaux, élaboré par Euro-Pharmat avec la collaboration de
 l'Agence nationale de sécurité du médicament et des produits de santé
 (AFSSAPS) , fournit la définition de certaines informations de
@@ -572,35 +514,38 @@ métier :
 <tr>
 <td>Dénomination du DMI</td>
 <td><ul>
-<li></li>
-<li></li>
+<li>dénomination commune issue si possible d’une nomenclature harmonisée
+reconnue ;</li>
+<li>termes de la dénomination commerciale utiles pour une
+identification fiable et unique : modèle / type / référence.</li>
 </ul></td>
 </tr>
 <tr>
-<td>dénomination commune issue si possible d’une nomenclature harmonisée
-reconnue ; termes de la dénomination commerciale utiles pour une
-identification fiable et unique : modèle / type / référence.Service
+<td> 
+Service
 utilisateur</td>
 <td><ul>
-<li></li>
-<li></li>
-<li></li>
+<li>nom du service utilisateur ;</li>
+<li>code Unité fonctionnelle de
+responsabilité médicale ;</li>
+<li>lieu géographique d’implantation
+(identification du plateau technique, n° salle d’intervention).</li>
 </ul></td>
 </tr>
 <tr>
-<td>nom du service utilisateur ;code Unité fonctionnelle de
-responsabilité médicale ;lieu géographique d’implantation
-(identification du plateau technique, n° salle d’intervention).Médecin
+<td>Médecin
 utilisateur, chirurgien-dentiste utilisateur</td>
 <td><ul>
-<li></li>
+<li>
+praticien « implanteur », quelle que soit sa qualité</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-praticien « implanteur », quelle que soit sa qualitéTable 3 Les
-définitions fournies par Euro-Pharmat
+<p style="text-align: center;">
+Table 3 Les définitions fournies par Euro-Pharmat
+</p>
 
 **<u>La traçabilité financière dans le cadre de la T2A (Tarification à
 l'activité):</u>**  
@@ -647,9 +592,9 @@ sur la LPPr ainsi que d’autres informations telles que le n° FINESS de
 l’établissement, les codes LPP des DMI implantés, le nombre de DMI
 implantés par code LPP, le prix d’achat des DMI, les dates de pose, etc.
 
-###### 
+######  Plan Européen
 
-Plan EuropéenLe règlement européen (UE) 2017/745 impose une traçabilité
+Le règlement européen (UE) 2017/745 impose une traçabilité
 des dispositifs implantables les plus à risque (classe III) aux
 opérateurs économiques mais aussi aux établissements de santé. Cette
 traçabilité se traduit par l’enregistrement de l’IUD des dispositifs
@@ -670,21 +615,18 @@ La traçabilité des dispositifs doit reposer sur un système
 d'identification unique des dispositifs (IUD) fondé sur des lignes
 directrices internationales lequel doit permettre d’assurer :
 
-- - 
-  - 
-  - 
-- 
-- 
-- 
-- 
-- 
+- la sécurité des dispositifs après commercialisation :
+  - notification des incidents ;
+  - mesures correctives de sécurité ciblées ;
+  - contrôle par les autorités compétentes.
 
-la sécurité des dispositifs après commercialisation :notification des
-incidents ;mesures correctives de sécurité ciblées ;contrôle par les
-autorités compétentes.la réduction du nombre d'erreurs médicales ;la
-lutte contre la falsification de dispositifs ;l’amélioration des
-politiques d'achat ;l’amélioration des politiques d'élimination des
-déchets ;la compatibilité avec d'autres systèmes d'authentification.  
+- la réduction du nombre d'erreurs médicales ;
+- la lutte contre la falsification de dispositifs ;
+- l’amélioration des politiques d'achat ;
+- l’amélioration des politiques d'élimination des
+déchets ;
+- la compatibilité avec d'autres systèmes d'authentification.
+
 Concrètement, cela signifie que le système d’IUD passe par l’obligation
 faite aux fabricants d’attribuer à chacun de leurs DM mis sur le marché
 européen un Identifiant Unique du Dispositif (IUD) en suivant les règles
@@ -698,20 +640,18 @@ L’IUD est un code alphanumérique. Il permet l'identification sans
 ambiguïté d'un dispositif médical spécifique sur le marché. Il comprend
 deux parties :
 
-- 
-- 
-
-une première partie, dite « L'IUD-ID » (pour identifiant du dispositif),
+- une première partie, dite « L'IUD-ID » (pour identifiant du dispositif),
 qui est propre à un modèle de dispositif médical. Cette partie du code
 est « statique » et est identique pour tous les dispositifs d’un même
 modèle. Cet identifiant donne accès aux informations prévues dans
-l’annexe VI, partie B du Règlement ;une seconde partie de l’IUD, dite «
-IUD-IP » (pour identifiant de la production). Il contient les
+l’annexe VI, partie B du Règlement ;
+- une seconde partie de l’IUD, dite «IUD-IP » (pour identifiant de la production). Il contient les
 informations relatives à chaque unité produite. Les différents types
 d’IUD-IP sont le numéro de série, le numéro de lot, la date de
 fabrication et/ou d’expiration. Cette partie du code est « dynamique »
-et est propre à chaque DM produit.**<u>Base de données européenne
-EUDAMED</u>**[^6]  
+et est propre à chaque DM produit.
+
+**<u>Base de données européenne [EUDAMED](https://ec.europa.eu/growth/sectors/medical-devices/new-regulations/eudamed_en)</u>**
 Le système d’identification IUD doit être « adossé » à une base de
 données européenne appelée EUDAMED, administrée par la Commission
 Européenne (CE). Elle permettra de centraliser les informations
@@ -721,21 +661,15 @@ d'accès à ces informations.
 
 Cette base EUDAMED a pour objectifs de permettre :
 
-- 
-- 
-- 
-- 
-- 
-- 
+- l'identification unique des DM, et de faciliter leur traçabilité et le
+suivi de leur marquage CE ;
+- d'informer le grand public des DM mis sur le marché et des investigations cliniques ;
+- de diffuser une information sur les incidents de matériovigilance ;
+- aux autorités compétentes et à la Commission d'exercer une surveillance du marché ;aux fabricants de
+déposer leurs dossiers d’investigations cliniques ;
+- aux autorités compétentes de transmettre les notifications des organismes notifiés (ON) ;
 
-l'identification unique des DM, et de faciliter leur traçabilité et le
-suivi de leur marquage CE ;d'informer le grand public des DM mis sur le
-marché et des investigations cliniques ;de diffuser une information sur
-les incidents de matériovigilance ;aux autorités compétentes et à la
-Commission d'exercer une surveillance du marché ;aux fabricants de
-déposer leurs dossiers d’investigations cliniques ;aux autorités
-compétentes de transmettre les notifications des organismes notifiés
-(ON) ;Les informations relatives aux DM seront enregistrées par les
+Les informations relatives aux DM seront enregistrées par les
 fabricants, les organismes notifiés, et les promoteurs d'investigations
 cliniques selon leurs obligations respectives définies dans le
 règlement. Ces informations seront ensuite accessibles en globalité aux
@@ -753,7 +687,7 @@ présente les informations devant figurer dans une carte d'implant
 fournie par le fabricant, et la liste des DM exemptés. Cette carte
 d'implant doit être remise au patient par l'établissement de santé.
 
-**Arrêté relatif au management de la qualité du circuit des DMI**
+###### Arrêté relatif au management de la qualité du circuit des DMI
 
 L’arrêté du 8 septembre 2021 relatif au management de la qualité du
 circuit des dispositifs médicaux implantables (DMI) dans les
@@ -762,14 +696,11 @@ doit entrer en vigueur le 26 mai 2022. Cet article mentionne des items
 précis à « récupérer » en sus de ceux décris dans (R 5212-38 et R
 5212-39) à chaque étape du circuit des DMI :
 
-- 
-- 
-- 
-- 
-- 
-
-Date de péremptionDimensionsRéférenceNombre d’unitésIUD lorsqu’il est
-disponible
+- Date de péremption
+- Dimensions
+- Référence
+- Nombre d’unités
+- IUD lorsqu’il est disponible
 
 #### Méthode d'élaboration
 
@@ -815,43 +746,36 @@ précisé dans la définition de la Table 1, le suivi de l’information du
 début jusqu’à la fin d’un processus. Cette traçabilité se décompose en
 plusieurs phases identifiées par les processus collaboratifs suivants :
 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-
-Demander DMI : la demande du/des DMI est effectuée par le service
-utilisateur.Commander DMI : la commande des DMI par le gestionnaire DMI
-(ou la PUI).Réceptionner par le gestionnaire DMI : la réception des DMI
-par le Gestionnaire DMI (ou la PUI).Délivrer DMI au service
+- Demander DMI : la demande du/des DMI est effectuée par le service
+utilisateur.
+- Commander DMI : la commande des DMI par le gestionnaire DMI
+(ou la PUI).
+- Réceptionner par le gestionnaire DMI : la réception des DMI
+par le Gestionnaire DMI (ou la PUI).
+- Délivrer DMI au service
 utilisateur : la délivrance des DMI par le gestionnaire DMI (ou la
 PUI).au service utilisateur. Ce processus déclenche également la
-traçabilité de sortie de stock de la PUI.Transporter DMI : le transport
-intra-hospitalier ou inter-sites est une phase critique dans
+traçabilité de sortie de stock de la PUI.
+- Transporter DMI : le transport intra-hospitalier ou inter-sites est une phase critique dans
 l’acheminement des dispositifs au service utilisateur. Il est important
-d’y tracer les différentes étapes de ce processus.Réceptionner DMI par
-le service utilisateur : la réception au sein du service utilisateur
-avec une entrée de stock dans le stock de proximité du service.Poser
-DMI : l’implantation (pose) chez le patient avec enregistrement des
+d’y tracer les différentes étapes de ce processus.
+- Réceptionner DMI par le service utilisateur : la réception au sein du service utilisateur
+avec une entrée de stock dans le stock de proximité du service.
+- Poser DMI : l’implantation (pose) chez le patient avec enregistrement des
 informations essentielles entre le dispositif et le patient dans le
-système d’information de l’établissement.Facturer DMI : la facturation
-du DMITracer : la traçabilité de DMI au sein d'un établissement de
+système d’information de l’établissement.
+- Facturer DMI : la facturation
+du DMI
+- Tracer : la traçabilité de DMI au sein d'un établissement de
 santé, dans le contexte de cette étude métier, se fait suite au
 déclenchement de l'un des évènements suivants : demande de DMI,
 réception de DMI, sortie de stock, délivrance au service utilisateur,
 transport du DMI, réception de DMI par le service utilisateur, la
-consommation de DMI (posé/non posé) et la facturation du DMI.Rechercher
-traces : ce processus concerne la recherche des évènements de
+consommation de DMI (posé/non posé) et la facturation du DMI.
+- Rechercher traces : ce processus concerne la recherche des évènements de
 traçabilité concernant un ou plusieurs DMI tout au long du circuit d’un
-DMI au sein d'un établissement de santé.Consulter trace : ce processus
-concerne la consultation d’un évènement de traçabilité concernant un ou
+DMI au sein d'un établissement de santé.
+- Consulter trace : ce processus concerne la consultation d’un évènement de traçabilité concernant un ou
 plusieurs DMI tout au long du circuit d’un DMI au sein d'un
 établissement de santé.
 
@@ -5944,7 +5868,7 @@ chez PHAST</td>
 
 [^2]: Article R. 5212-40 du code de la santé publique
 
-[^3]: Article R. 5212-40 du code de la santé publique
+[^3]: 
 
 [^4]: Article R. 5212-40 du code de la santé publique
 
@@ -5952,6 +5876,6 @@ chez PHAST</td>
     pharmacien en charge de la gestion d’une PUI soit responsable de
     l’ensemble de son activité pharmaceutique.
 
-[^6]: https://ec.europa.eu/growth/sectors/medical-devices/new-regulations/eudamed_en
+[^6]: 
 
 [^7]: http://mos.asipsante.fr/NOS/PDF/TRE_R254-TypeEvenement.tabs.pdf
