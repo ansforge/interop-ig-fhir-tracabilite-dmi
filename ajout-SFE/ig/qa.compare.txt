@@ -1,10 +1,10 @@
 ExampleIG : Validation Results
 =========================================
 
-err = 3, warn = 15, info = 17
+err = 3, warn = 14, info = 17
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.[code]#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/[code])
- Build Errors : 37 / 4 / 0
+ Build Errors : 37 / 3 / 0
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 2 / 3
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 2 / 3
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.[code] : 3 / 0 / 2
@@ -18,43 +18,42 @@ Generated $--. FHIR version $-- for ans.fhir.fr.[code]#$-- (canonical = https://
 </table>
 == n/a ==
 ERROR: searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
-WARNING: /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/output/specifications_fonctionnelles.html: Illegal HTML: Illegal HTML element: section
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1130, column 5: The image source 'media/media/image4.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1145, column 5: The image source 'media/media/image5.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1181, column 5: The image source 'media/media/image6.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1212, column 5: The image source 'media/media/image7.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1235, column 5: The image source 'media/media/image8.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1258, column 5: The image source 'media/media/image9.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1299, column 5: The image source 'media/media/image10.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1336, column 5: The image source 'media/media/image11.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1360, column 5: The image source 'media/media/image12.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1398, column 5: The image source 'media/media/image13.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1436, column 5: The image source 'media/media/image14.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1481, column 5: The image source 'media/media/image15.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1514, column 5: The image source 'media/media/image16.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1684, column 5: The image source 'media/media/image17.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1845, column 5: The image source 'media/media/image18.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1946, column 5: The image source 'media/media/image19.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2048, column 5: The image source 'media/media/image20.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2146, column 5: The image source 'media/media/image21.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2228, column 5: The image source 'media/media/image22.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2314, column 5: The image source 'media/media/image23.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2422, column 5: The image source 'media/media/image24.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2608, column 5: The image source 'media/media/image25.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2746, column 5: The image source 'media/media/image26.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2808, column 5: The image source 'media/media/image27.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2863, column 5: The image source 'media/media/image28.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2926, column 5: The image source 'media/media/image29.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3209, column 5: The image source 'media/media/image30.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3367, column 5: The image source 'media/media/image31.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3492, column 5: The image source 'media/media/image32.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3616, column 5: The image source 'media/media/image33.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3771, column 5: The image source 'media/media/image34.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3978, column 5: The image source 'media/media/image35.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 4132, column 5: The image source 'media/media/image36.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 4262, column 5: The image source 'media/media/image37.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 4511, column 5: The image source 'media/media/image38.png' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 4843, column 5: The image source 'media/media/image39.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1053, column 5: The image source 'media/media/image4.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1068, column 5: The image source 'media/media/image5.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1104, column 5: The image source 'media/media/image6.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1135, column 5: The image source 'media/media/image7.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1158, column 5: The image source 'media/media/image8.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1181, column 5: The image source 'media/media/image9.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1222, column 5: The image source 'media/media/image10.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1259, column 5: The image source 'media/media/image11.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1283, column 5: The image source 'media/media/image12.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1321, column 5: The image source 'media/media/image13.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1359, column 5: The image source 'media/media/image14.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1404, column 5: The image source 'media/media/image15.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1437, column 5: The image source 'media/media/image16.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1607, column 5: The image source 'media/media/image17.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1768, column 5: The image source 'media/media/image18.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1869, column 5: The image source 'media/media/image19.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 1971, column 5: The image source 'media/media/image20.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2069, column 5: The image source 'media/media/image21.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2151, column 5: The image source 'media/media/image22.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2237, column 5: The image source 'media/media/image23.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2345, column 5: The image source 'media/media/image24.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2531, column 5: The image source 'media/media/image25.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2669, column 5: The image source 'media/media/image26.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2731, column 5: The image source 'media/media/image27.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2786, column 5: The image source 'media/media/image28.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 2849, column 5: The image source 'media/media/image29.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3132, column 5: The image source 'media/media/image30.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3290, column 5: The image source 'media/media/image31.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3415, column 5: The image source 'media/media/image32.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3539, column 5: The image source 'media/media/image33.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3694, column 5: The image source 'media/media/image34.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 3901, column 5: The image source 'media/media/image35.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 4055, column 5: The image source 'media/media/image36.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 4185, column 5: The image source 'media/media/image37.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 4434, column 5: The image source 'media/media/image38.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/p/img at Line 4766, column 5: The image source 'media/media/image39.png' cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide

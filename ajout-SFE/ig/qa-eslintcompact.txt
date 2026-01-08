@@ -2,7 +2,6 @@ ExampleIG
 =========================================
 
 Generic: line 0, col 0, Error - The image source 'assets/images/fra.svg' cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Warning - Illegal HTML: Illegal HTML element: section (INVALID)
 Generic: line 0, col 0, Error - The image source 'media/media/image4.png' cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The image source 'media/media/image5.png' cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The image source 'media/media/image6.png' cannot be resolved (NOTFOUND)
@@ -74,5 +73,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'expansion-params.xhtml' is 
 /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ValueSet-TypeCarteVS.json: line 1, col 1234, Info - Reference to draft CodeSystem urn:iso:std:iso:3166|20210120 (BUSINESSRULE)
 /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ValueSet-TypeCarteVS.json: line 1, col 1353, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
 
-err = 3, warn = 15, info = 17
+err = 3, warn = 14, info = 17
 IG Publisher Version: 2.0.29
