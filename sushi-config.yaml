@@ -46,10 +46,7 @@ pages:
 menu:
     Accueil: index.html
     Volume 1 - Etude fonctionnelle: index.html
-    Volume 2 - Détail des transactions:
-        Construction des flux: construction_des_flux.html
-        Flux 01: st_flux1.html
-        Flux 02: st_flux2.html
+    Volume 2 - Détail des transactions: specifications_techniques.html
     Ressources de conformité: artifacts.html
     Autres ressources:
         Sécurité: securite.html
