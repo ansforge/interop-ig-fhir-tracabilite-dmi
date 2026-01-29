@@ -10,7 +10,7 @@
   <name value="ExampleIG"/>
   <title value="ANS IG Example"/>
   <status value="draft"/>
-  <date value="2026-01-08T09:17:48+00:00"/>
+  <date value="2026-01-29T13:10:46+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -618,33 +618,49 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="specifications_techniques.html"/>
+          <valueUrl value="specifications_techniques_introduction.html"/>
         </extension>
-        <nameUrl value="specifications_techniques.html"/>
-        <title value="Specifications Techniques"/>
+        <nameUrl value="specifications_techniques_introduction.html"/>
+        <title value="Volume 2 - Détail des transactions"/>
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="construction_des_flux.html"/>
+            <valueUrl value="specifications_techniques_construction_flux.html"/>
           </extension>
-          <nameUrl value="construction_des_flux.html"/>
-          <title value="Vue d'ensemble"/>
+          <nameUrl value="specifications_techniques_construction_flux.html"/>
+          <title value="Construction des flux"/>
           <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="st_flux1.html"/>
+            <valueUrl value="specifications_techniques_flux23_recherche_traces.html"/>
           </extension>
-          <nameUrl value="st_flux1.html"/>
-          <title value="Flux 01"/>
+          <nameUrl value="specifications_techniques_flux23_recherche_traces.html"/>
+          <title value="Flux 23 - RechercheTraces"/>
           <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="st_flux2.html"/>
+            <valueUrl value="specifications_techniques_flux24_reponse_recherche_traces.html"/>
           </extension>
-          <nameUrl value="st_flux2.html"/>
-          <title value="Flux 02"/>
+          <nameUrl value="specifications_techniques_flux24_reponse_recherche_traces.html"/>
+          <title value="Flux 24 - RéponseRechercheTraces"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="specifications_techniques_flux25_consulter_trace.html"/>
+          </extension>
+          <nameUrl value="specifications_techniques_flux25_consulter_trace.html"/>
+          <title value="Flux 25 - ConsulterTrace"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="specifications_techniques_flux26_reponse_consulter_trace.html"/>
+          </extension>
+          <nameUrl value="specifications_techniques_flux26_reponse_consulter_trace.html"/>
+          <title value="Flux 26 - ReponseConsulterTrace"/>
           <generation value="markdown"/>
         </page>
       </page>

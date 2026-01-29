@@ -101,8 +101,30 @@
   <li>
     <a href="index.html">Volume 1 - Etude fonctionnelle</a>
   </li>
-  <li>
-    <a href="specifications_techniques.html">Volume 2 - Détail des transactions</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2 - Détail des transactions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="specifications_techniques_introduction.html">Introduction</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_construction_flux.html">Construction des flux</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_flux23_recherche_traces.html">RechercheTraces</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_flux24_reponse_recherche_traces.html">RéponseRechercheTraces</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_flux25_consulter_trace.html">ConsulterTrace</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_flux26_reponse_consulter_trace.html">ReponseConsulterTrace</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
@@ -255,7 +277,7 @@
         
           Draft
           
-            as of 2026-01-08
+            as of 2026-01-29
           
         
       </td>
@@ -361,7 +383,7 @@ ID délément:     <code>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-EyeColorVS.html" title="https://interop.esante.gouv.fr/ig/fhir/[code]/ValueSet/EyeColorVS" class="binding">EyeColor Value Set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3059a9dc-eb1f-414a-ad79-b9a5b1214f69
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e98d765a-a48a-41da-8bda-118a9283b7e4
 document.getElementById('cbEyeColorD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EyeColorD'), 'binding', document.getElementById('cbEyeColorD-binding').checked, document.getElementById('ppEyeColorD'));
 document.getElementById('cbEyeColorD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -402,7 +424,7 @@ filterDesc(document.getElementById('EyeColorD'), 'obligation', document.getEleme
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value of extension<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-EyeColorVS.html" title="https://interop.esante.gouv.fr/ig/fhir/[code]/ValueSet/EyeColorVS" class="binding">EyeColor Value Set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3059a9dc-eb1f-414a-ad79-b9a5b1214f69
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e98d765a-a48a-41da-8bda-118a9283b7e4
 document.getElementById('cbEyeColorS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EyeColorS'), 'binding', document.getElementById('cbEyeColorS-binding').checked, document.getElementById('ppEyeColorS'));
 document.getElementById('cbEyeColorS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -496,7 +518,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-EyeColorVS.html" title="https://interop.esante.gouv.fr/ig/fhir/[code]/ValueSet/EyeColorVS" class="binding">EyeColor Value Set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3059a9dc-eb1f-414a-ad79-b9a5b1214f69
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e98d765a-a48a-41da-8bda-118a9283b7e4
 document.getElementById('cbEyeColorDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EyeColorDA'), 'binding', document.getElementById('cbEyeColorDA-binding').checked, document.getElementById('ppEyeColorDA'));
 document.getElementById('cbEyeColorDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -537,7 +559,7 @@ filterDesc(document.getElementById('EyeColorDA'), 'obligation', document.getElem
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value of extension<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-EyeColorVS.html" title="https://interop.esante.gouv.fr/ig/fhir/[code]/ValueSet/EyeColorVS" class="binding">EyeColor Value Set</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 3059a9dc-eb1f-414a-ad79-b9a5b1214f69
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e98d765a-a48a-41da-8bda-118a9283b7e4
 document.getElementById('cbEyeColorSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EyeColorSA'), 'binding', document.getElementById('cbEyeColorSA-binding').checked, document.getElementById('ppEyeColorSA'));
 document.getElementById('cbEyeColorSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -737,7 +759,7 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 8, 2026 09:17+0000">2026-01-08</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 13:10+0000">2026-01-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

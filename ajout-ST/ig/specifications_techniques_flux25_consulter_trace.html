@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Flux 01 - ANS IG Example v0.1.0</title>
+    <title>Flux 25 - ConsulterTrace - ANS IG Example v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"3.2"}
-    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.4"}
+    h3,h4,h5,h6{--heading-prefix:"3.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -101,8 +101,30 @@
   <li>
     <a href="index.html">Volume 1 - Etude fonctionnelle</a>
   </li>
-  <li>
-    <a href="specifications_techniques.html">Volume 2 - Détail des transactions</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2 - Détail des transactions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="specifications_techniques_introduction.html">Introduction</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_construction_flux.html">Construction des flux</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_flux23_recherche_traces.html">RechercheTraces</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_flux24_reponse_recherche_traces.html">RéponseRechercheTraces</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_flux25_consulter_trace.html">ConsulterTrace</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_flux26_reponse_consulter_trace.html">ReponseConsulterTrace</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
@@ -144,15 +166,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques.html'><b>Specifications Techniques</b></a></li><li><b>Flux 01</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques_introduction.html'><b>Volume 2 - Détail des transactions</b></a></li><li><b>Flux 25 - ConsulterTrace</b></li>
 
           <span style="float:right;">
 
-            <a href="construction_des_flux.html">&lt;prev</a> | 
+            <a href="specifications_techniques_flux24_reponse_recherche_traces.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="st_flux2.html">next&gt;</a>
+          | <a href="specifications_techniques_flux26_reponse_consulter_trace.html">next&gt;</a>
 
           </span>
 
@@ -174,7 +196,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">ANS IG Example - version de développement local (v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/[code]/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
-  <h2>Flux 01</h2>
+  <h2>Flux 25 - ConsulterTrace</h2>
   
 
 
@@ -189,21 +211,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#nom-du-flux" id="markdown-toc-nom-du-flux">Nom du flux</a></li>
-  <li><a href="#construction-du-flux" id="markdown-toc-construction-du-flux">Construction du flux</a></li>
-</ul>
-
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<h3 id="nom-du-flux">Nom du flux</h3>
+<p>Le Flux 25 « ConsultationTrace » permet au consommateur de demander la
+consultation d’une trace dont l’identifiant est connu au gestionnaire de
+traçabilité.</p>
 
-<p>Description du flux</p>
+<p>Ce flux utilise l’interaction « read »[^11] de l’API REST de HL7 FHIR.
+Il s’agit d’une requête HTTP GET adressant la ressource auditEvent.</p>
 
-<h3 id="construction-du-flux">Construction du flux</h3>
+<p>La première étape de construction de ce flux consiste à récupérer
+l’identifiant de la ressource AuditEvent représentant la trace à
+consulter.</p>
 
-<p>Explication de comment doit être construit le flux</p>
+<p>Cet identifiant est utilisé dans la requête GET suivante :</p>
+
+<table style="width:100%;">
+<colgroup>
+<col style="width: 99%" />
+</colgroup>
+<thead>
+<tr>
+<th><p>GET [base]/AuditEvent/[id]</p>
+<p>Où [base] est le point de contact défini par le gestionnaire de
+trace et [id] l’identifiant système de la ressource AuditEvent à
+consulter.</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
 
 
 
@@ -227,7 +267,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="construction_des_flux.html">&lt;prev</a>
+                <a href="specifications_techniques_flux24_reponse_recherche_traces.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -235,7 +275,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="st_flux2.html">next&gt;</a>
+                <a href="specifications_techniques_flux26_reponse_consulter_trace.html">next&gt;</a>
 
               </td>
             </tr>
@@ -245,7 +285,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 8, 2026 09:17+0000">2026-01-08</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 13:10+0000">2026-01-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

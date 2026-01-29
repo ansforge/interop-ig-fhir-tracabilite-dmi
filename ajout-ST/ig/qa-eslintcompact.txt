@@ -2,13 +2,7 @@ ExampleIG
 =========================================
 
 Generic: line 0, col 0, Error - The image source 'assets/images/fra.svg' cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Warning - Illegal HTML: Illegal HTML element: section (INVALID)
-Generic: line 0, col 0, Error - The link '#flux-6a-tracabilitesortiestock' for "Tableau 8" cannot be resolved (valid targets: 171 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The image source 'media/media/image7.png' cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'file:///Z:/Réalisation/Conseil/ASIP/ANS-006%20Contrat%20cadre%20CI%20SIS%202021/Projets/ANS-006-20_TraçabilitéDMI/Entrants/CI-SIS_ETUDE_METIER_TRACABILITE-DMI_V2.1.docx#_78df6d3c-0e56-4be7-895a-22ec649a6a5f' for "DimensionsDM" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'file:///Z:/Réalisation/Conseil/ASIP/ANS-006%20Contrat%20cadre%20CI%20SIS%202021/Projets/ANS-006-20_TraçabilitéDMI/Entrants/CI-SIS_ETUDE_METIER_TRACABILITE-DMI_V2.1.docx#_c2857583-85c7-434f-940b-912ab2b2cd36' for "EntiteJuridique" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'file:///Z:/Réalisation/Conseil/ASIP/ANS-006%20Contrat%20cadre%20CI%20SIS%202021/Projets/ANS-006-20_TraçabilitéDMI/Entrants/CI-SIS_ETUDE_METIER_TRACABILITE-DMI_V2.1.docx#_4eaa36c8-4756-4b51-8e05-312dcd3e772b' for "Adresse" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'file:///Z:/Réalisation/Conseil/ASIP/ANS-006%20Contrat%20cadre%20CI%20SIS%202021/Projets/ANS-006-20_TraçabilitéDMI/Entrants/CI-SIS_ETUDE_METIER_TRACABILITE-DMI_V2.1.docx#_cff4ad64-57f1-42cf-b97e-6f7c54e020ca' for "Telecommunication" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#_Flux_23_-' for "Tableau 13" cannot be resolved (valid targets: [ans-nav, segment-header, publish-box, flux-23-recherchetraces, bottom, hl7-logo, segment-post-footer, hl7-search-lnk, ig-search, family-nav, ig-status, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb]) (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
@@ -44,5 +38,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'expansion-params.xhtml' is 
 /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ValueSet-TypeCarteVS.json: line 1, col 1234, Info - Reference to draft CodeSystem urn:iso:std:iso:3166|20210120 (BUSINESSRULE)
 /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ValueSet-TypeCarteVS.json: line 1, col 1353, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
 
-err = 3, warn = 15, info = 17
-IG Publisher Version: 2.0.29
+err = 3, warn = 14, info = 17
+IG Publisher Version: 2.0.30

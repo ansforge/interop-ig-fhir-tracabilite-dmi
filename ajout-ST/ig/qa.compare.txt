@@ -1,10 +1,10 @@
 ExampleIG : Validation Results
 =========================================
 
-err = 3, warn = 15, info = 17
+err = 3, warn = 14, info = 17
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.[code]#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/[code])
- Build Errors : 7 / 4 / 0
+ Build Errors : 2 / 3 / 0
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 2 / 3
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 2 / 3
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.[code] : 3 / 0 / 2
@@ -18,13 +18,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.[code]#$-- (canonical = https://
 </table>
 == n/a ==
 ERROR: searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
-WARNING: /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/output/specifications_techniques.html: Illegal HTML: Illegal HTML element: section
-ERROR: specifications_techniques.html#/html/body/div/div/div/div/div/p/a at Line 1699, column 59: The link '#flux-6a-tracabilitesortiestock' for "Tableau 8" cannot be resolved (valid targets: 171 targets)
-ERROR: specifications_techniques.html#/html/body/div/div/div/div/div/p/img at Line 5663, column 5: The image source 'media/media/image7.png' cannot be resolved
-ERROR: specifications_techniques.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 6407, column 61: The link 'file:///Z:/Réalisation/Conseil/ASIP/ANS-006%20Contrat%20cadre%20CI%20SIS%202021/Projets/ANS-006-20_TraçabilitéDMI/Entrants/CI-SIS_ETUDE_METIER_TRACABILITE-DMI_V2.1.docx#_78df6d3c-0e56-4be7-895a-22ec649a6a5f' for "DimensionsDM" cannot be resolved
-ERROR: specifications_techniques.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 6532, column 58: The link 'file:///Z:/Réalisation/Conseil/ASIP/ANS-006%20Contrat%20cadre%20CI%20SIS%202021/Projets/ANS-006-20_TraçabilitéDMI/Entrants/CI-SIS_ETUDE_METIER_TRACABILITE-DMI_V2.1.docx#_c2857583-85c7-434f-940b-912ab2b2cd36' for "EntiteJuridique" cannot be resolved
-ERROR: specifications_techniques.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 6601, column 51: The link 'file:///Z:/Réalisation/Conseil/ASIP/ANS-006%20Contrat%20cadre%20CI%20SIS%202021/Projets/ANS-006-20_TraçabilitéDMI/Entrants/CI-SIS_ETUDE_METIER_TRACABILITE-DMI_V2.1.docx#_4eaa36c8-4756-4b51-8e05-312dcd3e772b' for "Adresse" cannot be resolved
-ERROR: specifications_techniques.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 6605, column 59: The link 'file:///Z:/Réalisation/Conseil/ASIP/ANS-006%20Contrat%20cadre%20CI%20SIS%202021/Projets/ANS-006-20_TraçabilitéDMI/Entrants/CI-SIS_ETUDE_METIER_TRACABILITE-DMI_V2.1.docx#_cff4ad64-57f1-42cf-b97e-6f7c54e020ca' for "Telecommunication" cannot be resolved
+ERROR: specifications_techniques_flux23_recherche_traces.html#/html/body/div/div/div/div/div/table/thead/tr/th/p/a at Line 247, column 54: The link '#_Flux_23_-' for "Tableau 13" cannot be resolved (valid targets: [ans-nav, segment-header, publish-box, flux-23-recherchetraces, bottom, hl7-logo, segment-post-footer, hl7-search-lnk, ig-search, family-nav, ig-status, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide

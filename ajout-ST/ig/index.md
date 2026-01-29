@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/[code]/ImplementationGuide/ans.fhir.fr.[code] | *Version*:0.1.0 |
-| Draft as of 2026-01-08 | *Computable Name*:ExampleIG |
+| Draft as of 2026-01-29 | *Computable Name*:ExampleIG |
 
  **Brief description of this Implementation Guide**
  [Add a brief description of this IG in English] 
@@ -63,7 +63,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "ExampleIG",
   "title" : "ANS IG Example",
   "status" : "draft",
-  "date" : "2026-01-08T09:17:48+00:00",
+  "date" : "2026-01-29T13:10:46+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -1009,44 +1009,66 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "extension" : [
             {
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "specifications_techniques.html"
+              "valueUrl" : "specifications_techniques_introduction.html"
             }
           ],
-          "nameUrl" : "specifications_techniques.html",
-          "title" : "Specifications Techniques",
+          "nameUrl" : "specifications_techniques_introduction.html",
+          "title" : "Volume 2 - Détail des transactions",
           "generation" : "markdown",
           "page" : [
             {
               "extension" : [
                 {
                   "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-                  "valueUrl" : "construction_des_flux.html"
+                  "valueUrl" : "specifications_techniques_construction_flux.html"
                 }
               ],
-              "nameUrl" : "construction_des_flux.html",
-              "title" : "Vue d'ensemble",
+              "nameUrl" : "specifications_techniques_construction_flux.html",
+              "title" : "Construction des flux",
               "generation" : "markdown"
             },
             {
               "extension" : [
                 {
                   "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-                  "valueUrl" : "st_flux1.html"
+                  "valueUrl" : "specifications_techniques_flux23_recherche_traces.html"
                 }
               ],
-              "nameUrl" : "st_flux1.html",
-              "title" : "Flux 01",
+              "nameUrl" : "specifications_techniques_flux23_recherche_traces.html",
+              "title" : "Flux 23 - RechercheTraces",
               "generation" : "markdown"
             },
             {
               "extension" : [
                 {
                   "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-                  "valueUrl" : "st_flux2.html"
+                  "valueUrl" : "specifications_techniques_flux24_reponse_recherche_traces.html"
                 }
               ],
-              "nameUrl" : "st_flux2.html",
-              "title" : "Flux 02",
+              "nameUrl" : "specifications_techniques_flux24_reponse_recherche_traces.html",
+              "title" : "Flux 24 - RéponseRechercheTraces",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "specifications_techniques_flux25_consulter_trace.html"
+                }
+              ],
+              "nameUrl" : "specifications_techniques_flux25_consulter_trace.html",
+              "title" : "Flux 25 - ConsulterTrace",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "specifications_techniques_flux26_reponse_consulter_trace.html"
+                }
+              ],
+              "nameUrl" : "specifications_techniques_flux26_reponse_consulter_trace.html",
+              "title" : "Flux 26 - ReponseConsulterTrace",
               "generation" : "markdown"
             }
           ]

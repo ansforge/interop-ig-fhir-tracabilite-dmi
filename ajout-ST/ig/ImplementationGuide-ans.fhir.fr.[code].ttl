@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ExampleIG"] ; # 
   fhir:title [ fhir:v "ANS IG Example"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-08T09:17:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-01-29T13:10:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1673,16 +1673,16 @@
            ] ;
            fhir:value [
              a fhir:Url ;
-             fhir:v "specifications_techniques.html"^^xsd:anyURI ;
-             fhir:l fhir:specifications_techniques.html
+             fhir:v "specifications_techniques_introduction.html"^^xsd:anyURI ;
+             fhir:l fhir:specifications_techniques_introduction.html
            ]
          ] ) ;
          fhir:name [
            a fhir:Url ;
-           fhir:v "specifications_techniques.html"^^xsd:anyURI ;
-           fhir:l fhir:specifications_techniques.html
+           fhir:v "specifications_techniques_introduction.html"^^xsd:anyURI ;
+           fhir:l fhir:specifications_techniques_introduction.html
          ] ;
-         fhir:title [ fhir:v "Specifications Techniques" ] ;
+         fhir:title [ fhir:v "Volume 2 - Détail des transactions" ] ;
          fhir:generation [ fhir:v "markdown" ] ;
          fhir:page ( [
            fhir:extension ( [
@@ -1692,16 +1692,16 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "construction_des_flux.html"^^xsd:anyURI ;
-               fhir:l fhir:construction_des_flux.html
+               fhir:v "specifications_techniques_construction_flux.html"^^xsd:anyURI ;
+               fhir:l fhir:specifications_techniques_construction_flux.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "construction_des_flux.html"^^xsd:anyURI ;
-             fhir:l fhir:construction_des_flux.html
+             fhir:v "specifications_techniques_construction_flux.html"^^xsd:anyURI ;
+             fhir:l fhir:specifications_techniques_construction_flux.html
            ] ;
-           fhir:title [ fhir:v "Vue d'ensemble" ] ;
+           fhir:title [ fhir:v "Construction des flux" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -1711,16 +1711,16 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "st_flux1.html"^^xsd:anyURI ;
-               fhir:l fhir:st_flux1.html
+               fhir:v "specifications_techniques_flux23_recherche_traces.html"^^xsd:anyURI ;
+               fhir:l fhir:specifications_techniques_flux23_recherche_traces.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "st_flux1.html"^^xsd:anyURI ;
-             fhir:l fhir:st_flux1.html
+             fhir:v "specifications_techniques_flux23_recherche_traces.html"^^xsd:anyURI ;
+             fhir:l fhir:specifications_techniques_flux23_recherche_traces.html
            ] ;
-           fhir:title [ fhir:v "Flux 01" ] ;
+           fhir:title [ fhir:v "Flux 23 - RechercheTraces" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -1730,16 +1730,54 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "st_flux2.html"^^xsd:anyURI ;
-               fhir:l fhir:st_flux2.html
+               fhir:v "specifications_techniques_flux24_reponse_recherche_traces.html"^^xsd:anyURI ;
+               fhir:l fhir:specifications_techniques_flux24_reponse_recherche_traces.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "st_flux2.html"^^xsd:anyURI ;
-             fhir:l fhir:st_flux2.html
+             fhir:v "specifications_techniques_flux24_reponse_recherche_traces.html"^^xsd:anyURI ;
+             fhir:l fhir:specifications_techniques_flux24_reponse_recherche_traces.html
            ] ;
-           fhir:title [ fhir:v "Flux 02" ] ;
+           fhir:title [ fhir:v "Flux 24 - RéponseRechercheTraces" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "specifications_techniques_flux25_consulter_trace.html"^^xsd:anyURI ;
+               fhir:l fhir:specifications_techniques_flux25_consulter_trace.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "specifications_techniques_flux25_consulter_trace.html"^^xsd:anyURI ;
+             fhir:l fhir:specifications_techniques_flux25_consulter_trace.html
+           ] ;
+           fhir:title [ fhir:v "Flux 25 - ConsulterTrace" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "specifications_techniques_flux26_reponse_consulter_trace.html"^^xsd:anyURI ;
+               fhir:l fhir:specifications_techniques_flux26_reponse_consulter_trace.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "specifications_techniques_flux26_reponse_consulter_trace.html"^^xsd:anyURI ;
+             fhir:l fhir:specifications_techniques_flux26_reponse_consulter_trace.html
+           ] ;
+           fhir:title [ fhir:v "Flux 26 - ReponseConsulterTrace" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [
