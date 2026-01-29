@@ -212,7 +212,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#les-standards" id="markdown-toc-les-standards">Les standards</a></li>
   <li><a href="#comparaison-des-standards-presentes" id="markdown-toc-comparaison-des-standards-presentes">Comparaison des standards presentes</a></li>
   <li><a href="#synthese-et-conclusion" id="markdown-toc-synthese-et-conclusion">Synthese et conclusion</a></li>
-  <li><a href="#annexes" id="markdown-toc-annexes">Annexes</a></li>
 </ul>
 
 </div>
@@ -221,8 +220,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Ce document regroupe l’analyse des standards identifiés comme
 potentiellement adaptés pour la mise en œuvre, de la «&nbsp;traçabilité des
 dispositifs médicaux implantables en établissement de santé&nbsp;» relative à
-la spécification fonctionnelle «&nbsp;Traçabilité des dispositifs médicaux
-implantables en établissement de santé&nbsp;» [1]&nbsp;:</p>
+la <a href="specifications_fonctionnelles.html">spécification fonctionnelle</a> :</p>
 
 <ul>
   <li>
@@ -269,15 +267,17 @@ ressources FHIR suivantes sont notamment analysées :</p>
   </li>
 </ul>
 
-<p>L’analyse de ces standards ci-dessus n’est pas détaillée dans ce
-document car elle est disponible dans le document [3] «&nbsp;Etude Normes &amp;
-Standards généricisation&nbsp;: gestion des traces&nbsp;». Pour rappel, cette
+<p><a name="l469">​</a>L’analyse de ces standards ci-dessus n’est pas détaillée dans ce
+document car elle est disponible dans le document <a href="N&amp;S TDE">«&nbsp;Etude Normes &amp;
+Standards généricisation&nbsp;: gestion des traces&nbsp;»</a>. Pour rappel, cette
 étude Normes &amp; Standards propose de se baser sur une version
 «&nbsp;générique&nbsp;» de la gestion des traces du profil ATNA.</p>
 
-<p><a name="l473">​</a><img src="media/media/image5.png" style="width:6.22083in;height:1.45417in"/></p>
+<div class="figure">
+    <img src="contexte.png" alt="contexte" style="width:100%;" title="contexte"/>
+</div>
 
-<p>En complément de cette étude [3], le présent document comprend
+<p><a name="l480">​</a>En complément de cette <a href="N&amp;S TDE">étude</a>, le présent document comprend
 l’analyse des standards suivants, spécifiques au métier de la gestion
 des dispositifs médicaux&nbsp;:</p>
 
@@ -305,32 +305,11 @@ Standards&nbsp;» [5] qui présente une description des organismes
 producteurs de standards ainsi que la manière dont ces standards sont
 gérés.</p>
 
-<p><strong><u>  
-</u></strong></p>
-
-<p><strong><u>Note éditoriale&nbsp;:</u></strong></p>
-
-<p>Afin de préserver la fluidité de lecture, les références sont gérées de
-la manière suivante dans le document&nbsp;:</p>
-
-<ul>
-  <li>
-    <p>Les références aux documents de référence listés en annexe 2 sont
-indiquées par le numéro du document entre crochets – [1] fait donc
-référence au premier document de la liste de l’annexe 2&nbsp;;</p>
-  </li>
-  <li>
-    <p>Les références aux sites web permettant d’approfondir les aspects
-techniques référencés sont directement intégrées sous forme de liens
-cliquables dans des notes de bas de page.</p>
-  </li>
-</ul>
-
 <h3 id="presentation-synthetique">Presentation synthetique</h3>
 
 <p>Cette étude s’insère dans le cadre du besoin d’interopérabilité
 «&nbsp;Traçabilité des Dispositifs Médicaux Implantables en Etablissement de
-Santé&nbsp;» (cf. document de spécifications fonctionnelles [1]).</p>
+Santé&nbsp;» (cf. <a href="specifications_fonctionnelles.html">spécification fonctionnelle</a>).</p>
 
 <p>Ce besoin d’interopérabilité concerne la mise en œuvre d’un mécanisme
 qui permet de gérer la traçabilité des dispositifs médicaux implantables
@@ -360,7 +339,7 @@ traces associées à un dispositif médical implantable de sa dispensation
 à son implantation, en passant par sa commande, la réception dans la
 pharmacie d’un établissement de soin et son transfert dans l’unité de
 soin implantant ce dispositif. Les cas d’utilisation métier sont donc
-(cf. [1])&nbsp;:</p>
+(cf. <a href="specifications_fonctionnelles.html">spécification fonctionnelle</a>)&nbsp;:</p>
 
 <ul>
   <li>
@@ -430,19 +409,25 @@ traces&nbsp;:</p>
   <li>Tracer (créer des traces)</li>
 </ul>
 
-<p><a name="l675">​</a><img src="media/media/image6.png" style="width:4.27477in;height:2.91496in"/></p>
+<div class="figure">
+    <img src="creerTrace.png" alt="Créer des traces" style="width:100%;" title="Tracer"/>
+</div>
 
 <ul>
   <li>Rechercher des traces</li>
 </ul>
 
-<p><a name="l684">​</a><img src="media/media/image7.png" style="width:4.18186in;height:3.37247in"/></p>
+<div class="figure">
+    <img src="rechercherTrace.png" alt="Rechercher des traces" style="width:100%;" title="Rechercher des traces"/>
+</div>
 
 <ul>
   <li>Consulter une trace</li>
 </ul>
 
-<p><a name="l693">​</a><img src="media/media/image8.png" style="width:4.14727in;height:4.19967in"/></p>
+<div class="figure">
+    <img src="consulterTrace.png" alt="Consulter une trace" style="width:100%;" title="Consulter une trace"/>
+</div>
 
 <p>En mappant les acteurs et les transactions sur le profil générique
 «&nbsp;généricisation&nbsp;: gestion des traces&nbsp;», nous pouvons en déduire que ce
@@ -511,17 +496,23 @@ partir du volet générique.</p>
 
 <p>1)  En utilisant Syslog</p>
 
-<p><a name="l824">​</a><img src="media/media/image9.png" style="width:5.29167in;height:1.52083in"/></p>
+<div class="figure">
+    <img src="tracerSyslog.png" alt="Tracer Syslog" style="width:100%;" title="Tracer Syslog"/>
+</div>
 
 <p>2)  En utilisant HL7 FHIR</p>
 
 <p>Dans le cas de la transmission d’une seule trace</p>
 
-<p><a name="l833">​</a><img src="media/media/image10.png" style="width:5.8125in;height:1.52083in"/></p>
+<div class="figure">
+    <img src="transmissionTrace.png" alt="Transmission trace" style="width:100%;" title="Transmission trace"/>
+</div>
 
 <p>Dans le cas de la transmission de plusieurs traces</p>
 
-<p><a name="l839">​</a><img src="media/media/image11.png" style="width:6.22083in;height:1.47917in"/></p>
+<div class="figure">
+    <img src="transmissionTraces.png" alt="Transmission traces" style="width:100%;" title="Transmission traces"/>
+</div>
 
 <h6 id="rechercher-des-traces">Rechercher des traces</h6>
 
@@ -530,11 +521,15 @@ volet générique.</p>
 
 <p>1)  En utilisant Syslog</p>
 
-<p><a name="l851">​</a><img src="media/media/image12.png" style="width:6.22083in;height:1.70069in"/></p>
+<div class="figure">
+    <img src="rechercheTraceSyslog.png" alt="Recherche trace syslog" style="width:100%;" title="Recherche trace syslog"/>
+</div>
 
 <p>2)  En utilisant HL7 FHIR</p>
 
-<p><a name="l857">​</a><img src="media/media/image13.png" style="width:6.22083in;height:1.79167in"/></p>
+<div class="figure">
+    <img src="rechercheTrace.png" alt="Recherche trace" style="width:100%;" title="Recherche trace"/>
+</div>
 
 <h6 id="consulter-une-trace">Consulter une trace</h6>
 
@@ -543,11 +538,15 @@ générique.</p>
 
 <p>1)  En utilisant Syslog</p>
 
-<p><a name="l869">​</a><img src="media/media/image14.png" style="width:6.22083in;height:1.7375in"/></p>
+<div class="figure">
+    <img src="consulterTraceSyslog.png" alt="Consulter trace syslog" style="width:100%;" title="Consulter trace syslog"/>
+</div>
 
 <p>2)  En utilisant HL7 FHIR</p>
 
-<p><a name="l875">​</a><img src="media/media/image15.png" style="width:6.20833in;height:2.01042in"/></p>
+<div class="figure">
+    <img src="consulterTraceFHIR.png" alt="Consulter trace" style="width:100%;" title="Consulter trace"/>
+</div>
 
 <h5 id="conclusion">Conclusion</h5>
 
@@ -573,7 +572,7 @@ médicaux implantables en établissement de santé.</p>
 
 <h4 id="profil-ihe-memdmc">Profil IHE MEMDMC</h4>
 
-<p>IHE <strong>MEMDMC</strong> [8]&nbsp;: le profil MEMDMC – «&nbsp;Medical Equipment Management
+<p><a href="https://wiki.ihe.net/index.php/MEM-DMC">IHE MEMDMC</a> : le profil MEMDMC – «&nbsp;Medical Equipment Management
 Device Management Communication&nbsp;» définit un profil de communication
 pour envoyer différentes informations sur un device (identification,
 information sur la version du matériel, du logiciel et du device, statut
@@ -604,7 +603,7 @@ Médicaux Implantables.</p>
 
 <h4 id="le-profil-memls">Le profil MEMLS</h4>
 
-<p>IHE <strong>MEMLS</strong> [9]&nbsp;: le profil MEMLS – «&nbsp;Medical Equipment Management
+<p><a href="https://wiki.ihe.net/index.php/MEM-LS">IHE MEMLS</a>: le profil MEMLS – «&nbsp;Medical Equipment Management
 Location Services&nbsp;» définit un profil de communication pour envoyer des
 informations de localisation d’équipements et de personnes en l’absence
 d’observations patients, d’alertes ou de notifications d’événements.</p>
@@ -632,7 +631,7 @@ Médicaux Implantables.</p>
 
 <h4 id="le-profil-pmdt">Le profil PMDT</h4>
 
-<p>IHE <strong>PMDT</strong> [10]&nbsp;: le profil PMDT – «&nbsp;Point of care Medical Device
+<p><a href="https://wiki.ihe.net/index.php/Point-of-Care_Medical_Device_Tracking_(PMDT)">IHE PMDT</a>&nbsp;: le profil PMDT – «&nbsp;Point of care Medical Device
 Tracking&nbsp;» définit un profil basé sur HL7 FHIR (STU3) pour collecter des
 informations provenant d’un dispositif médical en vue d’une utilisation
 ultérieure.</p>
@@ -648,14 +647,14 @@ Procedure PCC-54&nbsp;».</p>
 
 <ul>
   <li>
-    <p>Harmonization Pattern for UDI<sup id="fnref:1"><a role="doc-noteref" rel="footnote" href="#fn:1" class="footnote">1</a></sup></p>
+    <p><a href="http://wiki.hl7.org/images/2/24/Harmonization_Pattern_for_Unique_Device_Identifiers_20141113.pdf">Harmonization Pattern for UDI</a></p>
   </li>
   <li>
-    <p>UDI Format by FDA-Accredited Issuing Agency Version 1.2<sup id="fnref:2"><a role="doc-noteref" rel="footnote" href="#fn:2" class="footnote">2</a></sup></p>
+    <p><a href="https://www.fda.gov/media/96648/download">UDI Format by FDA-Accredited Issuing Agency Version 1.2</a></p>
   </li>
   <li>
     <p>Clinical terminology consistent with ONC Health IT certified EHR
-systems (LOINC, SNOMED-CT, RxNorm</p>
+systems (LOINC, SNOMED-CT, RxNorm)</p>
   </li>
 </ul>
 
@@ -718,13 +717,13 @@ modification d’une procédure&nbsp;», etc.).</p>
 
 <h3 id="comparaison-des-standards-presentes">Comparaison des standards presentes</h3>
 
-<p>Les nouveaux profils analysés dans ce document n’apportant d’éléments
+<p><a name="l1032">​</a>Les nouveaux profils analysés dans ce document n’apportant d’éléments
 permettant de les choisir pour répondre au besoin d’interopérabilité de
 «&nbsp;traçabilité des dispositifs médicaux implantables en établissement de
 santé&nbsp;», il n’est pas nécessaire de compléter la «&nbsp;comparaison des
 standards&nbsp;» par rapport à celle présente dans le chapitre 4 du document
-[3] «&nbsp;Etude Normes et Standards – généricisation&nbsp;: gestion des
-traces&nbsp;».</p>
+ <a href="N&amp;S TDE">«&nbsp;Etude Normes et Standards – généricisation&nbsp;: gestion des
+traces&nbsp;»</a>.</p>
 
 <h3 id="synthese-et-conclusion">Synthese et conclusion</h3>
 
@@ -749,7 +748,7 @@ de la trace.</p>
 <p>Par exemple, pour le flux métier «&nbsp;Flux 13a – TracabilitéRefusDMI&nbsp;», il
 faudra spécifier techniquement «&nbsp;les informations de traçabilité de
 refus de l’utilisation du DMI au bloc opératoire&nbsp;», i.e. ce qui est
-décrit dans le chapitre 6.22 du document [1].</p>
+décrit dans le chapitre 6.22 du document <a href="specifications_fonctionnelles.html">spécification fonctionnelle</a>.</p>
 
 <p>Détail du flux&nbsp;:</p>
 
@@ -821,153 +820,6 @@ appel au volet «&nbsp;traçabilité des dispositifs médicaux implantables en
 volet « traçabilité des dispositifs médicaux implantables en
 établissement de santé ».</p>
 
-<h3 id="annexes">Annexes</h3>
-
-<h4 id="glossaire">Glossaire</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Sigle / Acronyme</th>
-      <th>Signification</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ANS</td>
-      <td>Agence du Numérique en Santé</td>
-    </tr>
-    <tr>
-      <td>CI-SIS</td>
-      <td>Cadre d’interopérabilité des systèmes d’information de santé</td>
-    </tr>
-    <tr>
-      <td>FHIR</td>
-      <td><em>Fast Healthcare Interoperability Ressources</em></td>
-    </tr>
-    <tr>
-      <td>HIMSS</td>
-      <td>Healthcare Information and Management Systems Society</td>
-    </tr>
-    <tr>
-      <td>HL7</td>
-      <td><em>Health Level 7</em></td>
-    </tr>
-    <tr>
-      <td>HTTP</td>
-      <td>HyperText Transfer Protocol</td>
-    </tr>
-    <tr>
-      <td>JSON</td>
-      <td>JavaScript Object Notation</td>
-    </tr>
-    <tr>
-      <td>MEMDMC</td>
-      <td>Medical Equipment Management Device Management Communication</td>
-    </tr>
-    <tr>
-      <td>MEMLS</td>
-      <td>Medical Equipment Management Location Service</td>
-    </tr>
-    <tr>
-      <td>PMDT</td>
-      <td>Point of care Medicao Device Tracking</td>
-    </tr>
-    <tr>
-      <td>REST</td>
-      <td>REpresentational State Transfer</td>
-    </tr>
-    <tr>
-      <td>XML</td>
-      <td>Extensible Markup Language</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="documents-de-référence">Documents de référence</h4>
-
-<table style="width:100%;">
-<colgroup>
-<col style="width: 99%"/>
-</colgroup>
-<thead>
-<tr>
-<th style="text-align: center;">Documents de référence</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><ol type="1">
-<li><p>Spécifications fonctionnelles des échanges – Traçabilité des
-Dispositifs Médicaux Implantables en Etablissement de Santé</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="2" type="1">
-<li><p>Etude Métier – Généricisation&nbsp;: gestion des traces</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="3" type="1">
-<li><p>Etude Normes et Standards – Généricisation&nbsp;: gestion des
-traces</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="4" type="1">
-<li><p>Spécification technique – Généricisation&nbsp;: gestion des
-traces</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="5" type="1">
-<li><p>Organismes et Standards</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="6" type="1">
-<li><p>Doctrine du CI-SIS</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="7" type="1">
-<li><p>Modèle des Objets de Santé</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="8" type="1">
-<li><p>Profil IHE Medical Equipment Management Device Management
-Communication</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="9" type="1">
-<li><p>Profil IHE Medical Equipment Management Location
-Services</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="10" type="1">
-<li><p>Profil IHE Point of care Medical Device Tracking</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
-<div role="doc-endnotes" class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p><sup><a href="https://www.healthit.gov/sites/default/files/2017_draft_interoperability_standards_advisory_8.16.16.pdf">https://www.healthit.gov/sites/default/files/2017_draft_interoperability_standards_advisory_8.16.16.pdf</a>
-or
-<a href="http://wiki.hl7.org/images/2/24/Harmonization_Pattern_for_Unique_Device_Identifiers_20141113.pdf">http://wiki.hl7.org/images/2/24/Harmonization_Pattern_for_Unique_Device_Identifiers_20141113.pdf</a></sup>&nbsp;<a role="doc-backlink" href="#fnref:1" class="reversefootnote">↩</a></p>
-    </li>
-    <li id="fn:2">
-      <p><sup><a href="https://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIIssuingAgencies/default.htm">https://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIIssuingAgencies/default.htm</a>
-or
-<a href="https://www.fda.gov/downloads/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIIssuingAgencies/UCM489869.pdf">https://www.fda.gov/downloads/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIIssuingAgencies/UCM489869.pdf</a></sup>&nbsp;<a role="doc-backlink" href="#fnref:2" class="reversefootnote">↩</a></p>
-    </li>
-  </ol>
-</div>
 
 
 
@@ -1009,7 +861,7 @@ or
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 8, 2026 08:57+0000">2026-01-08</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 15:20+0000">2026-01-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

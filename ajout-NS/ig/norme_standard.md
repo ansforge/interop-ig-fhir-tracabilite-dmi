@@ -7,7 +7,7 @@
 
 ### Introduction
 
-Ce document regroupe l’analyse des standards identifiés comme potentiellement adaptés pour la mise en œuvre, de la « traçabilité des dispositifs médicaux implantables en établissement de santé » relative à la spécification fonctionnelle « Traçabilité des dispositifs médicaux implantables en établissement de santé » [1] :
+Ce document regroupe l’analyse des standards identifiés comme potentiellement adaptés pour la mise en œuvre, de la « traçabilité des dispositifs médicaux implantables en établissement de santé » relative à la [spécification fonctionnelle](specifications_fonctionnelles.md) :
 
 * Le standard HL7 FHIR R4 (**Fast Healthcare Interoperability Resources**). Pour le besoin d’interopérabilité « Traçabilité des dispositifs médicaux implantables en établissement de santé », les ressources FHIR suivantes sont notamment analysées :
 * Les profils IHE ATNA, RESTful ATNA, mACM / ACM, PLT, SOLE ;
@@ -15,11 +15,9 @@ Ce document regroupe l’analyse des standards identifiés comme potentiellement
 * Le standard GS1 ;
 * Le standard Syslog.
 
-L’analyse de ces standards ci-dessus n’est pas détaillée dans ce document car elle est disponible dans le document [3] « Etude Normes & Standards généricisation : gestion des traces ». Pour rappel, cette étude Normes & Standards propose de se baser sur une version « générique » de la gestion des traces du profil ATNA.
+L’analyse de ces standards ci-dessus n’est pas détaillée dans ce document car elle est disponible dans le document [« Etude Normes & Standards généricisation : gestion des traces »](N&S TDE). Pour rappel, cette étude Normes & Standards propose de se baser sur une version « générique » de la gestion des traces du profil ATNA.
 
-![](media/media/image5.png)
-
-En complément de cette étude [3], le présent document comprend l’analyse des standards suivants, spécifiques au métier de la gestion des dispositifs médicaux :
+En complément de cette [étude](N&S TDE), le présent document comprend l’analyse des standards suivants, spécifiques au métier de la gestion des dispositifs médicaux :
 
 * Profil IHE MEMDMC
 * Profil IHE MEMLS
@@ -31,16 +29,9 @@ Un tableau de synthèse reprend ces éléments afin d’en faciliter la comparai
 
 A noter que cette étude se base sur le document « Organismes et Standards » [5] qui présente une description des organismes producteurs de standards ainsi que la manière dont ces standards sont gérés.
 
-**_Note éditoriale :_**
-
-Afin de préserver la fluidité de lecture, les références sont gérées de la manière suivante dans le document :
-
-* Les références aux documents de référence listés en annexe 2 sont indiquées par le numéro du document entre crochets – [1] fait donc référence au premier document de la liste de l’annexe 2 ;
-* Les références aux sites web permettant d’approfondir les aspects techniques référencés sont directement intégrées sous forme de liens cliquables dans des notes de bas de page.
-
 ### Presentation synthetique
 
-Cette étude s’insère dans le cadre du besoin d’interopérabilité « Traçabilité des Dispositifs Médicaux Implantables en Etablissement de Santé » (cf. document de spécifications fonctionnelles [1]).
+Cette étude s’insère dans le cadre du besoin d’interopérabilité « Traçabilité des Dispositifs Médicaux Implantables en Etablissement de Santé » (cf. [spécification fonctionnelle](specifications_fonctionnelles.md)).
 
 Ce besoin d’interopérabilité concerne la mise en œuvre d’un mécanisme qui permet de gérer la traçabilité des dispositifs médicaux implantables (DMI) tout au long de leur cycle de vie :
 
@@ -51,7 +42,7 @@ Ce besoin d’interopérabilité concerne la mise en œuvre d’un mécanisme qu
 
 Cette gestion du cycle de vie des dispositifs médicaux implantables ne fait pas partie de cette étude normes et standards ; elle se limite à la gestion des traces produites lors de ce cycle de vie.
 
-Il s’agit de fournir un mécanisme de création et de consultation des traces associées à un dispositif médical implantable de sa dispensation à son implantation, en passant par sa commande, la réception dans la pharmacie d’un établissement de soin et son transfert dans l’unité de soin implantant ce dispositif. Les cas d’utilisation métier sont donc (cf. [1]) :
+Il s’agit de fournir un mécanisme de création et de consultation des traces associées à un dispositif médical implantable de sa dispensation à son implantation, en passant par sa commande, la réception dans la pharmacie d’un établissement de soin et son transfert dans l’unité de soin implantant ce dispositif. Les cas d’utilisation métier sont donc (cf. [spécification fonctionnelle](specifications_fonctionnelles.md)) :
 
 * Tracer (Créer des traces)
 * Consulter une trace
@@ -85,15 +76,9 @@ L’étude métier « traçabilité des dispositifs médicaux implantables en �
 
 * Tracer (créer des traces)
 
-![](media/media/image6.png)
-
 * Rechercher des traces
 
-![](media/media/image7.png)
-
 * Consulter une trace
-
-![](media/media/image8.png)
 
 En mappant les acteurs et les transactions sur le profil générique « généricisation : gestion des traces », nous pouvons en déduire que ce volet est « instanciable » dans le cas métier de gestion de la « traçabilité des dispositifs médicaux implantables en établissement de santé » :
 
@@ -116,17 +101,11 @@ Ce scénario décrit la demande « Tracer » (Création d’une trace), à par
 
 1) En utilisant Syslog
 
-![](media/media/image9.png)
-
 2) En utilisant HL7 FHIR
 
 Dans le cas de la transmission d’une seule trace
 
-![](media/media/image10.png)
-
 Dans le cas de la transmission de plusieurs traces
-
-![](media/media/image11.png)
 
 ###### Rechercher des traces
 
@@ -134,11 +113,7 @@ Ce scénario décrit la demande « Rechercher des traces », à partir du vole
 
 1) En utilisant Syslog
 
-![](media/media/image12.png)
-
 2) En utilisant HL7 FHIR
-
-![](media/media/image13.png)
 
 ###### Consulter une trace
 
@@ -146,11 +121,7 @@ Ce scénario décrit la demande « Consulter une trace », à partir du volet 
 
 1) En utilisant Syslog
 
-![](media/media/image14.png)
-
 2) En utilisant HL7 FHIR
-
-![](media/media/image15.png)
 
 ##### Conclusion
 
@@ -164,7 +135,7 @@ Ces profils peuvent répondre à différents besoins : gestion, communication, 
 
 #### Profil IHE MEMDMC
 
-IHE **MEMDMC** [8] : le profil MEMDMC – « Medical Equipment Management Device Management Communication » définit un profil de communication pour envoyer différentes informations sur un device (identification, information sur la version du matériel, du logiciel et du device, statut batterie et alimentation) en l’absence de moyens d’observation patient, de gestion d’alertes ou de notifications d’événements.
+[IHE MEMDMC](https://wiki.ihe.net/index.php/MEM-DMC) : le profil MEMDMC – « Medical Equipment Management Device Management Communication » définit un profil de communication pour envoyer différentes informations sur un device (identification, information sur la version du matériel, du logiciel et du device, statut batterie et alimentation) en l’absence de moyens d’observation patient, de gestion d’alertes ou de notifications d’événements.
 
 MEMDMC définit deux acteurs : « DMIR - Device Management Information Reporter » et « DMIC – Device Management Information Consumer ». L’acteur DMIR peut aussi être un acteur dans différents profils et agir comme un acteur DEC DOR, ACM AR ou IPEC DOR. L’acteur DMIC peut être considéré comme un « CMMS – Computerized Maintenance Management System » ou un « CEMS - Clinical Equipment Management System » et il peut aussi être un acteur dans différents profils et agir comme un DEC DOC, ACM AM ou IPEC DOC. MEMDMC spécifie une transaction « DMIO Device Management Information Observation – PCD-15 ». Cette transaction est spécifiée en HL7 et est déclenchée sur l’événement trigger « ORU^R01^ORU_R01 ». Le message HL7 correspondant est un message « Observation ».
 
@@ -174,7 +145,7 @@ Ce profil est plutôt utilisé pour monitorer des informations provenant de l’
 
 #### Le profil MEMLS
 
-IHE **MEMLS** [9] : le profil MEMLS – « Medical Equipment Management Location Services » définit un profil de communication pour envoyer des informations de localisation d’équipements et de personnes en l’absence d’observations patients, d’alertes ou de notifications d’événements.
+[IHE MEMLS](https://wiki.ihe.net/index.php/MEM-LS): le profil MEMLS – « Medical Equipment Management Location Services » définit un profil de communication pour envoyer des informations de localisation d’équipements et de personnes en l’absence d’observations patients, d’alertes ou de notifications d’événements.
 
 MEMLS définit deux acteurs : « LOR – Location Observer Reporter » et « Location Observer Consumer ». L’acteur LOR peut être vu comme un service de localisation (« Location Services system »), en lien direct avec les systèmes de localisation sous-jacent (RFID – Radio Frequency Identification ou RTLS – Real Time Location Services). Il peut agir aussi comme un acteur DEC DOR, ACM AR ou IPEC DOR. L’acteur LOC peut être aussi acteur DEC DOC, ACM AM ou IPEC DOC. MEMLS spécifie une transaction « RLO Report Location Observation – PCD-16 ». Cette transaction est spécifiée en HL7 et est déclenchée sur l’événement trigger « ORU^R01^ORU_R01 ». Le message HL7 correspondant est un message « Observation ».
 
@@ -184,15 +155,15 @@ Ce profil est plutôt utilisé pour envoyer des informations de localisation plu
 
 #### Le profil PMDT
 
-IHE **PMDT** [10] : le profil PMDT – « Point of care Medical Device Tracking » définit un profil basé sur HL7 FHIR (STU3) pour collecter des informations provenant d’un dispositif médical en vue d’une utilisation ultérieure.
+[IHE PMDT](https://wiki.ihe.net/index.php/Point-of-Care_Medical_Device_Tracking_(PMDT)) : le profil PMDT – « Point of care Medical Device Tracking » définit un profil basé sur HL7 FHIR (STU3) pour collecter des informations provenant d’un dispositif médical en vue d’une utilisation ultérieure.
 
 PMDT définit trois acteurs : «  Medical Device Reporter », « Medical Device Server » et « Medical Device Requester » et cinq transactions « Register Medical Device PCC-50 », « Start Point-of-care Device Procedure PCC-52 », « Complete Point-of-care Device Procedure PCC-53 », « Search Medical Device PCC-51 » et « Search Point-of-care Device Procedure PCC-54 ».
 
 Ce profile PMDT se base sur les standards suivants :
 
-* Harmonization Pattern for UDI[1](#fn:1)
-* UDI Format by FDA-Accredited Issuing Agency Version 1.2[2](#fn:2)
-* Clinical terminology consistent with ONC Health IT certified EHR systems (LOINC, SNOMED-CT, RxNorm
+* [Harmonization Pattern for UDI](http://wiki.hl7.org/images/2/24/Harmonization_Pattern_for_Unique_Device_Identifiers_20141113.pdf)
+* [UDI Format by FDA-Accredited Issuing Agency Version 1.2](https://www.fda.gov/media/96648/download)
+* Clinical terminology consistent with ONC Health IT certified EHR systems (LOINC, SNOMED-CT, RxNorm)
 
 La transaction « Register Medical Device » est spécifiée par une requête « http PUT » de la ressource « Device ». Cette ressource doit inclure la ressource « Patient » pour identifier le patient associé à l’enregistrement au niveau de l’unité de soin.
 
@@ -219,7 +190,7 @@ Ce profil est plutôt utilisé pour enregistrer les actions réalisées lors de 
 
 ### Comparaison des standards presentes
 
-Les nouveaux profils analysés dans ce document n’apportant d’éléments permettant de les choisir pour répondre au besoin d’interopérabilité de « traçabilité des dispositifs médicaux implantables en établissement de santé », il n’est pas nécessaire de compléter la « comparaison des standards » par rapport à celle présente dans le chapitre 4 du document [3] « Etude Normes et Standards – généricisation : gestion des traces ».
+Les nouveaux profils analysés dans ce document n’apportant d’éléments permettant de les choisir pour répondre au besoin d’interopérabilité de « traçabilité des dispositifs médicaux implantables en établissement de santé », il n’est pas nécessaire de compléter la « comparaison des standards » par rapport à celle présente dans le chapitre 4 du document [« Etude Normes et Standards – généricisation : gestion des traces »](N&S TDE).
 
 ### Synthese et conclusion
 
@@ -231,7 +202,7 @@ La démarche de l’ANS de proposer un volet générique « généricisation :
 
 Il sera possible de spécifier techniquement le volet « traçabilité des dispositifs médicaux implantables en établissement de santé » de la façon suivante : pour chaque trace générée lors du cycle de vie du dispositif médical implantable, spécifier le format de la partie utile de la trace.
 
-Par exemple, pour le flux métier « Flux 13a – TracabilitéRefusDMI », il faudra spécifier techniquement « les informations de traçabilité de refus de l’utilisation du DMI au bloc opératoire », i.e. ce qui est décrit dans le chapitre 6.22 du document [1].
+Par exemple, pour le flux métier « Flux 13a – TracabilitéRefusDMI », il faudra spécifier techniquement « les informations de traçabilité de refus de l’utilisation du DMI au bloc opératoire », i.e. ce qui est décrit dans le chapitre 6.22 du document [spécification fonctionnelle](specifications_fonctionnelles.md).
 
 Détail du flux :
 
@@ -247,51 +218,4 @@ Ces trois profils sont orientés métier, dans la gestion des équipements médi
 #### Conclusion
 
 En conclusion, le volet générique « généricisation : gestion des traces » semble bien approprié pour permettre la spécification technique du volet « traçabilité des dispositifs médicaux implantables en établissement de santé ».
-
-### Annexes
-
-#### Glossaire
-
-| | |
-| :--- | :--- |
-| ANS | Agence du Numérique en Santé |
-| CI-SIS | Cadre d’interopérabilité des systèmes d’information de santé |
-| FHIR | **Fast Healthcare Interoperability Ressources** |
-| HIMSS | Healthcare Information and Management Systems Society |
-| HL7 | **Health Level 7** |
-| HTTP | HyperText Transfer Protocol |
-| JSON | JavaScript Object Notation |
-| MEMDMC | Medical Equipment Management Device Management Communication |
-| MEMLS | Medical Equipment Management Location Service |
-| PMDT | Point of care Medicao Device Tracking |
-| REST | REpresentational State Transfer |
-| XML | Extensible Markup Language |
-
-#### Documents de référence
-
-| |
-| :--- |
-| 1. Spécifications fonctionnelles des échanges – Traçabilité des Dispositifs Médicaux Implantables en Etablissement de Santé
- |
-| 1. Etude Métier – Généricisation : gestion des traces
- |
-| 1. Etude Normes et Standards – Généricisation : gestion des traces
- |
-| 1. Spécification technique – Généricisation : gestion des traces
- |
-| 1. Organismes et Standards
- |
-| 1. Doctrine du CI-SIS
- |
-| 1. Modèle des Objets de Santé
- |
-| 1. Profil IHE Medical Equipment Management Device Management Communication
- |
-| 1. Profil IHE Medical Equipment Management Location Services
- |
-| 1. Profil IHE Point of care Medical Device Tracking
- |
-
-1. [https://www.healthit.gov/sites/default/files/2017_draft_interoperability_standards_advisory_8.16.16.pdf](https://www.healthit.gov/sites/default/files/2017_draft_interoperability_standards_advisory_8.16.16.pdf)or[http://wiki.hl7.org/images/2/24/Harmonization_Pattern_for_Unique_Device_Identifiers_20141113.pdf](http://wiki.hl7.org/images/2/24/Harmonization_Pattern_for_Unique_Device_Identifiers_20141113.pdf) [↩](#fnref:1)
-1. [https://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIIssuingAgencies/default.htm](https://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIIssuingAgencies/default.htm)or[https://www.fda.gov/downloads/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIIssuingAgencies/UCM489869.pdf](https://www.fda.gov/downloads/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIIssuingAgencies/UCM489869.pdf) [↩](#fnref:2)
 

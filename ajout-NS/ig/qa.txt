@@ -2,9 +2,9 @@ ExampleIG : Validation Results
 =========================================
 
 err = 3, warn = 14, info = 17
-IG Publisher Version: 2.0.29
-Generated Thu Jan 08 08:58:09 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.[code]#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/[code])
- Build Errors : 12 / 3 / 0
+IG Publisher Version: 2.0.30
+Generated Thu Jan 29 15:21:36 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.[code]#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/[code])
+ Build Errors : 4 / 3 / 0
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 2 / 3
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 2 / 3
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.[code] : 3 / 0 / 2
@@ -17,17 +17,9 @@ Generated Thu Jan 08 08:58:09 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.[code
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ValueSet-TypeCarteVS : 0 / 1 / 2
 </table>
 == n/a ==
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/img at Line 278, column 5: The image source 'media/media/image5.png' cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/img at Line 433, column 5: The image source 'media/media/image6.png' cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/img at Line 439, column 5: The image source 'media/media/image7.png' cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/img at Line 445, column 5: The image source 'media/media/image8.png' cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/img at Line 514, column 5: The image source 'media/media/image9.png' cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/img at Line 520, column 5: The image source 'media/media/image10.png' cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/img at Line 524, column 5: The image source 'media/media/image11.png' cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/img at Line 533, column 5: The image source 'media/media/image12.png' cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/img at Line 537, column 5: The image source 'media/media/image13.png' cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/img at Line 546, column 5: The image source 'media/media/image14.png' cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/img at Line 550, column 5: The image source 'media/media/image15.png' cannot be resolved
+ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/a at Line 271, column 52: The link 'N&S TDE' for "« Etude Normes & Standards généricisation : gestion des traces »" cannot be resolved
+ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/a at Line 280, column 28: The link 'N&S TDE' for "étude" cannot be resolved
+ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/a at Line 725, column 3: The link 'N&S TDE' for "« Etude Normes et Standards – généricisation : gestion des traces »" cannot be resolved
 ERROR: searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
