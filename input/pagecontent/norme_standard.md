@@ -3,8 +3,7 @@
 Ce document regroupe l’analyse des standards identifiés comme
 potentiellement adaptés pour la mise en œuvre, de la « traçabilité des
 dispositifs médicaux implantables en établissement de santé » relative à
-la spécification fonctionnelle « Traçabilité des dispositifs médicaux
-implantables en établissement de santé » \[1\] :
+la [spécification fonctionnelle](specifications_fonctionnelles.html) :
 
 - Le standard HL7 FHIR R4 (*Fast Healthcare Interoperability
   Resources*). Pour le besoin d’interopérabilité « Traçabilité des
@@ -34,15 +33,16 @@ implantables en établissement de santé » \[1\] :
 - Le standard Syslog.
 
 L’analyse de ces standards ci-dessus n’est pas détaillée dans ce
-document car elle est disponible dans le document \[3\] « Etude Normes &
-Standards généricisation : gestion des traces ». Pour rappel, cette
+document car elle est disponible dans le document [« Etude Normes &
+Standards généricisation : gestion des traces »](N&S TDE). Pour rappel, cette
 étude Normes & Standards propose de se baser sur une version
 « générique » de la gestion des traces du profil ATNA.
 
-<img src="media/media/image5.png"
-style="width:6.22083in;height:1.45417in" />
+<div class="figure">
+    <img src="contexte.png" alt="contexte" title="contexte" style="width:100%;">
+</div>
 
-En complément de cette étude \[3\], le présent document comprend
+En complément de cette [étude](N&S TDE), le présent document comprend
 l’analyse des standards suivants, spécifiques au métier de la gestion
 des dispositifs médicaux :
 
@@ -64,27 +64,11 @@ Standards » \[5\] qui présente une description des organismes
 producteurs de standards ainsi que la manière dont ces standards sont
 gérés.
 
-**<u>  
-</u>**
-
-**<u>Note éditoriale :</u>**
-
-Afin de préserver la fluidité de lecture, les références sont gérées de
-la manière suivante dans le document :
-
-- Les références aux documents de référence listés en annexe 2 sont
-  indiquées par le numéro du document entre crochets – \[1\] fait donc
-  référence au premier document de la liste de l’annexe 2 ;
-
-- Les références aux sites web permettant d’approfondir les aspects
-  techniques référencés sont directement intégrées sous forme de liens
-  cliquables dans des notes de bas de page.
-
 ### Presentation synthetique
 
 Cette étude s’insère dans le cadre du besoin d’interopérabilité
 « Traçabilité des Dispositifs Médicaux Implantables en Etablissement de
-Santé » (cf. document de spécifications fonctionnelles \[1\]).
+Santé » (cf. [spécification fonctionnelle](specifications_fonctionnelles.html)).
 
 Ce besoin d’interopérabilité concerne la mise en œuvre d’un mécanisme
 qui permet de gérer la traçabilité des dispositifs médicaux implantables
@@ -107,7 +91,7 @@ traces associées à un dispositif médical implantable de sa dispensation
 à son implantation, en passant par sa commande, la réception dans la
 pharmacie d’un établissement de soin et son transfert dans l’unité de
 soin implantant ce dispositif. Les cas d’utilisation métier sont donc
-(cf. \[1\]) :
+(cf. [spécification fonctionnelle](specifications_fonctionnelles.html)) :
 
 - Tracer (Créer des traces)
 
@@ -157,18 +141,21 @@ traces :
 
 - Tracer (créer des traces)
 
-<img src="media/media/image6.png"
-style="width:4.27477in;height:2.91496in" />
+<div class="figure">
+    <img src="creerTrace.png" alt="Créer des traces" title="Tracer" style="width:100%;">
+</div>
 
 - Rechercher des traces
 
-<img src="media/media/image7.png"
-style="width:4.18186in;height:3.37247in" />
+<div class="figure">
+    <img src="rechercherTrace.png" alt="Rechercher des traces" title="Rechercher des traces" style="width:100%;">
+</div>
 
 - Consulter une trace
 
-<img src="media/media/image8.png"
-style="width:4.14727in;height:4.19967in" />
+<div class="figure">
+    <img src="consulterTrace.png" alt="Consulter une trace" title="Consulter une trace" style="width:100%;">
+</div>
 
 En mappant les acteurs et les transactions sur le profil générique
 « généricisation : gestion des traces », nous pouvons en déduire que ce
@@ -237,20 +224,23 @@ partir du volet générique.
 
 1)  En utilisant Syslog
 
-<img src="media/media/image9.png"
-style="width:5.29167in;height:1.52083in" />
+<div class="figure">
+    <img src="tracerSyslog.png" alt="Tracer Syslog" title="Tracer Syslog" style="width:100%;">
+</div>
 
 2)  En utilisant HL7 FHIR
 
 Dans le cas de la transmission d’une seule trace
 
-<img src="media/media/image10.png"
-style="width:5.8125in;height:1.52083in" />
+<div class="figure">
+    <img src="transmissionTrace.png" alt="Transmission trace" title="Transmission trace" style="width:100%;">
+</div>
 
 Dans le cas de la transmission de plusieurs traces
 
-<img src="media/media/image11.png"
-style="width:6.22083in;height:1.47917in" />
+<div class="figure">
+    <img src="transmissionTraces.png" alt="Transmission traces" title="Transmission traces" style="width:100%;">
+</div>
 
 ###### Rechercher des traces
 
@@ -259,13 +249,15 @@ volet générique.
 
 1)  En utilisant Syslog
 
-<img src="media/media/image12.png"
-style="width:6.22083in;height:1.70069in" />
+<div class="figure">
+    <img src="rechercheTraceSyslog.png" alt="Recherche trace syslog" title="Recherche trace syslog" style="width:100%;">
+</div>
 
 2)  En utilisant HL7 FHIR
 
-<img src="media/media/image13.png"
-style="width:6.22083in;height:1.79167in" />
+<div class="figure">
+    <img src="rechercheTrace.png" alt="Recherche trace" title="Recherche trace" style="width:100%;">
+</div>
 
 ###### Consulter une trace
 
@@ -274,13 +266,15 @@ générique.
 
 1)  En utilisant Syslog
 
-<img src="media/media/image14.png"
-style="width:6.22083in;height:1.7375in" />
+<div class="figure">
+    <img src="consulterTraceSyslog.png" alt="Consulter trace syslog" title="Consulter trace syslog" style="width:100%;">
+</div>
 
 2)  En utilisant HL7 FHIR
 
-<img src="media/media/image15.png"
-style="width:6.20833in;height:2.01042in" />
+<div class="figure">
+    <img src="consulterTraceFHIR.png" alt="Consulter trace" title="Consulter trace" style="width:100%;">
+</div>
 
 ##### Conclusion
 
@@ -306,7 +300,7 @@ médicaux implantables en établissement de santé.
 
 #### Profil IHE MEMDMC
 
-IHE **MEMDMC** \[8\] : le profil MEMDMC – « Medical Equipment Management
+[IHE MEMDMC](https://wiki.ihe.net/index.php/MEM-DMC) : le profil MEMDMC – « Medical Equipment Management
 Device Management Communication » définit un profil de communication
 pour envoyer différentes informations sur un device (identification,
 information sur la version du matériel, du logiciel et du device, statut
@@ -337,7 +331,7 @@ Médicaux Implantables.
 
 #### Le profil MEMLS
 
-IHE **MEMLS** \[9\] : le profil MEMLS – « Medical Equipment Management
+[IHE MEMLS](https://wiki.ihe.net/index.php/MEM-LS): le profil MEMLS – « Medical Equipment Management
 Location Services » définit un profil de communication pour envoyer des
 informations de localisation d’équipements et de personnes en l’absence
 d’observations patients, d’alertes ou de notifications d’événements.
@@ -365,7 +359,7 @@ Médicaux Implantables.
 
 #### Le profil PMDT
 
-IHE **PMDT** \[10\] : le profil PMDT – « Point of care Medical Device
+[IHE PMDT](https://wiki.ihe.net/index.php/Point-of-Care_Medical_Device_Tracking_(PMDT)) : le profil PMDT – « Point of care Medical Device
 Tracking » définit un profil basé sur HL7 FHIR (STU3) pour collecter des
 informations provenant d’un dispositif médical en vue d’une utilisation
 ultérieure.
@@ -379,12 +373,12 @@ Procedure PCC-54 ».
 
 Ce profile PMDT se base sur les standards suivants :
 
-- Harmonization Pattern for UDI[^1]
+- [Harmonization Pattern for UDI](http://wiki.hl7.org/images/2/24/Harmonization_Pattern_for_Unique_Device_Identifiers_20141113.pdf)
 
-- UDI Format by FDA-Accredited Issuing Agency Version 1.2[^2]
+- [UDI Format by FDA-Accredited Issuing Agency Version 1.2](https://www.fda.gov/media/96648/download)
 
 - Clinical terminology consistent with ONC Health IT certified EHR
-  systems (LOINC, SNOMED-CT, RxNorm
+  systems (LOINC, SNOMED-CT, RxNorm)
 
 La transaction « Register Medical Device » est spécifiée par une requête
 « http PUT » de la ressource « Device ». Cette ressource doit inclure la
@@ -439,8 +433,8 @@ permettant de les choisir pour répondre au besoin d’interopérabilité de
 « traçabilité des dispositifs médicaux implantables en établissement de
 santé », il n’est pas nécessaire de compléter la « comparaison des
 standards » par rapport à celle présente dans le chapitre 4 du document
-\[3\] « Etude Normes et Standards – généricisation : gestion des
-traces ».
+ [« Etude Normes et Standards – généricisation : gestion des
+traces »](N&S TDE).
 
 ### Synthese et conclusion
 
@@ -465,7 +459,7 @@ de la trace.
 Par exemple, pour le flux métier « Flux 13a – TracabilitéRefusDMI », il
 faudra spécifier techniquement « les informations de traçabilité de
 refus de l’utilisation du DMI au bloc opératoire », i.e. ce qui est
-décrit dans le chapitre 6.22 du document \[1\].
+décrit dans le chapitre 6.22 du document [spécification fonctionnelle](specifications_fonctionnelles.html).
 
 Détail du flux :
 
@@ -512,100 +506,3 @@ En conclusion, le volet générique « généricisation : gestion des traces
 » semble bien approprié pour permettre la spécification technique du
 volet « traçabilité des dispositifs médicaux implantables en
 établissement de santé ».
-
-### Annexes 
-
-#### Glossaire
-
-| Sigle / Acronyme | Signification |
-|----|----|
-| ANS | Agence du Numérique en Santé |
-| CI-SIS | Cadre d’interopérabilité des systèmes d’information de santé |
-| FHIR | *Fast Healthcare Interoperability Ressources* |
-| HIMSS | Healthcare Information and Management Systems Society |
-| HL7 | *Health Level 7* |
-| HTTP | HyperText Transfer Protocol |
-| JSON | JavaScript Object Notation |
-| MEMDMC | Medical Equipment Management Device Management Communication |
-| MEMLS | Medical Equipment Management Location Service |
-| PMDT | Point of care Medicao Device Tracking |
-| REST | REpresentational State Transfer |
-| XML | Extensible Markup Language |
-
-#### Documents de référence
-
-<table style="width:100%;">
-<colgroup>
-<col style="width: 99%" />
-</colgroup>
-<thead>
-<tr>
-<th style="text-align: center;">Documents de référence</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><ol type="1">
-<li><p>Spécifications fonctionnelles des échanges – Traçabilité des
-Dispositifs Médicaux Implantables en Etablissement de Santé</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="2" type="1">
-<li><p>Etude Métier – Généricisation : gestion des traces</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="3" type="1">
-<li><p>Etude Normes et Standards – Généricisation : gestion des
-traces</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="4" type="1">
-<li><p>Spécification technique – Généricisation : gestion des
-traces</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="5" type="1">
-<li><p>Organismes et Standards</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="6" type="1">
-<li><p>Doctrine du CI-SIS</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="7" type="1">
-<li><p>Modèle des Objets de Santé</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="8" type="1">
-<li><p>Profil IHE Medical Equipment Management Device Management
-Communication</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="9" type="1">
-<li><p>Profil IHE Medical Equipment Management Location
-Services</p></li>
-</ol></td>
-</tr>
-<tr>
-<td><ol start="10" type="1">
-<li><p>Profil IHE Point of care Medical Device Tracking</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
-[^1]: <sup><https://www.healthit.gov/sites/default/files/2017_draft_interoperability_standards_advisory_8.16.16.pdf>
-    or
-    <http://wiki.hl7.org/images/2/24/Harmonization_Pattern_for_Unique_Device_Identifiers_20141113.pdf></sup>
-
-[^2]: <sup><https://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIIssuingAgencies/default.htm>
-    or
-    <https://www.fda.gov/downloads/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIIssuingAgencies/UCM489869.pdf></sup>
