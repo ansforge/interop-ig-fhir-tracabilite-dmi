@@ -58,7 +58,7 @@ Pas dusage de PI externe (autre que celles de la spécification FHIR)
   "name" : "TDMI",
   "title" : "Traçabilité des Dispositifs Médicaux Implantables",
   "status" : "draft",
-  "date" : "2026-01-29T10:16:38+00:00",
+  "date" : "2026-01-29T14:17:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -856,78 +856,76 @@ Pas dusage de PI externe (autre que celles de la spécification FHIR)
             }
           ],
           "nameUrl" : "specifications_fonctionnelles.html",
-          "title" : "Specifications Fonctionnelles",
-          "generation" : "markdown",
-          "page" : [
-            {
-              "extension" : [
-                {
-                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-                  "valueUrl" : "sf1.html"
-                }
-              ],
-              "nameUrl" : "sf1.html",
-              "title" : "Vue d'ensemble",
-              "generation" : "markdown"
-            }
-          ]
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "specifications_techniques.html"
-            }
-          ],
-          "nameUrl" : "specifications_techniques.html",
-          "title" : "Specifications Techniques",
-          "generation" : "markdown",
-          "page" : [
-            {
-              "extension" : [
-                {
-                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-                  "valueUrl" : "construction_des_flux.html"
-                }
-              ],
-              "nameUrl" : "construction_des_flux.html",
-              "title" : "Vue d'ensemble",
-              "generation" : "markdown"
-            },
-            {
-              "extension" : [
-                {
-                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-                  "valueUrl" : "st_flux1.html"
-                }
-              ],
-              "nameUrl" : "st_flux1.html",
-              "title" : "Flux 01",
-              "generation" : "markdown"
-            },
-            {
-              "extension" : [
-                {
-                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-                  "valueUrl" : "st_flux2.html"
-                }
-              ],
-              "nameUrl" : "st_flux2.html",
-              "title" : "Flux 02",
-              "generation" : "markdown"
-            }
-          ]
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "change-log.html"
-            }
-          ],
-          "nameUrl" : "change-log.html",
-          "title" : "Historique des versions",
+          "title" : "Volume 1 - Etude fonctionnelle",
           "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "specifications_techniques_introduction.html"
+            }
+          ],
+          "nameUrl" : "specifications_techniques_introduction.html",
+          "title" : "Volume 2 - Détail des transactions",
+          "generation" : "markdown",
+          "page" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "specifications_techniques_construction_flux.html"
+                }
+              ],
+              "nameUrl" : "specifications_techniques_construction_flux.html",
+              "title" : "Construction des flux",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "specifications_techniques_flux23_recherche_traces.html"
+                }
+              ],
+              "nameUrl" : "specifications_techniques_flux23_recherche_traces.html",
+              "title" : "Flux 23 - RechercheTraces",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "specifications_techniques_flux24_reponse_recherche_traces.html"
+                }
+              ],
+              "nameUrl" : "specifications_techniques_flux24_reponse_recherche_traces.html",
+              "title" : "Flux 24 - RéponseRechercheTraces",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "specifications_techniques_flux25_consulter_trace.html"
+                }
+              ],
+              "nameUrl" : "specifications_techniques_flux25_consulter_trace.html",
+              "title" : "Flux 25 - ConsulterTrace",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "specifications_techniques_flux26_reponse_consulter_trace.html"
+                }
+              ],
+              "nameUrl" : "specifications_techniques_flux26_reponse_consulter_trace.html",
+              "title" : "Flux 26 - ReponseConsulterTrace",
+              "generation" : "markdown"
+            }
+          ]
         },
         {
           "extension" : [
@@ -940,6 +938,28 @@ Pas dusage de PI externe (autre que celles de la spécification FHIR)
           "title" : "Autres Ressources",
           "generation" : "markdown",
           "page" : [
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "norme_standard.html"
+                }
+              ],
+              "nameUrl" : "norme_standard.html",
+              "title" : "Normes et Standards",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "glossaire.html"
+                }
+              ],
+              "nameUrl" : "glossaire.html",
+              "title" : "Glossaire",
+              "generation" : "markdown"
+            },
             {
               "extension" : [
                 {
@@ -963,6 +983,17 @@ Pas dusage de PI externe (autre que celles de la spécification FHIR)
               "generation" : "markdown"
             }
           ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "change-log.html"
+            }
+          ],
+          "nameUrl" : "change-log.html",
+          "title" : "Historique des versions",
+          "generation" : "markdown"
         }
       ]
     },
