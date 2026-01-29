@@ -36,7 +36,7 @@ Ce paragraphe délivre une définition succincte de certains termes utilisés da
 *  ISO 9000 : « Aptitude à retrouver l'historique, l'utilisation ou la localisation d'une entité au moyen d'identifications enregistrées ». 
 *  HAS : « Possibilité de retrouver, dans un système, une liste d’informations déterminées attachées à un ou plusieurs éléments du système pour expliquer ses défaillances ». 
 *  Du point de vue de la gestion de l’information, mettre en place un système de traçabilité, c’est associer systématiquement un flux d’informations à un flux physique. 
-L’objectif est de pouvoir retrouver, à l’instant voulu, des données préalablement enregistrées permettant de localiser l’entité.Le décret du 29 novembre 2006 demande la traçabilité des DM depuis leur réception jusqu'à leur utilisation chez le patient et leur éventuelle explantation. |
+ L’objectif est de pouvoir retrouver, à l’instant voulu, des données préalablement enregistrées permettant de localiser l’entité.Le décret du 29 novembre 2006 demande la traçabilité des DM depuis leur réception jusqu'à leur utilisation chez le patient et leur éventuelle explantation. |
 |  | L’article 2 partie 1 du Règlement (UE) 2017/745 du 5 avril 2017 définit un DM comme tout instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé, seul ou en association, chez l'homme pour l'une ou plusieurs des fins médicales précises suivantes:* diagnostic, prévention, surveillance, prédiction, pronostic, traitement ou atténuation d'une maladie,
 * diagnostic, contrôle, traitement, atténuation d'une blessure ou d'un handicap ou compensation de ceux-ci,
 * investigation, remplacement ou modification d'une structure ou fonction anatomique ou d'un processus ou état physiologique ou pathologique,
@@ -117,9 +117,9 @@ Les règles particulières de traçabilité sont posées par les articles du dé
 * L’article R. 5212-37 fixe, la durée de conservation des données de traçabilité : les données relatives à la traçabilité des DMI sont conservées _pendant 10 ans_. La durée de conservation est _portée à 40 ans_ pour les DM incorporant une substance qui, si elle est utilisée séparément est susceptible d’être considérée comme un dérivé du sang.
 * L’article R. 5212-38 porte sur les données de traçabilité relatives à la délivrance des dispositifs médicaux. Ces données sont enregistrées sous le contrôle du pharmacien (L’article L. 5126-5 du code de la santé publique impose que le pharmacien en charge de la gestion d’une PUI soit responsable de l’ensemble de son activité pharmaceutique) gérant de la PUI ou du professionnel de santé responsable et sont ensuite transmises au service utilisateur du DMI. Les données de traçabilité de la délivrance sont : 
 1. l'identification de chaque dispositif médical :
-a. dénomination ;
-b. numéro de série ou de lot ;
-c. nom du fabricant ou de son mandataire.
+ a. dénomination ;
+ b. numéro de série ou de lot ;
+ c. nom du fabricant ou de son mandataire.
 1. la date de la délivrance du dispositif médical au service utilisateur ;
 1. l'identification du service utilisateur.
  
@@ -143,7 +143,7 @@ c. nom du fabricant ou de son mandataire.
 
 Ci-dessous, un tableau récapitulatif des informations obligatoires de traçabilité de DMI.
 
-* Informations obligatoires: **Le pharmacien (Pour les établissements ne disposant pas de PUI, le responsable de la traçabilité est la personne en charge des commandes et de la gestion des stocks dans l'établissement, sous le contrôle d'un professionnel de santé) enregistre les données de réception des DMI et les transmet ensuite au service utilisateur lors de la délivrance du DMI :**
+* Informations obligatoires: ** Le pharmacien (Pour les établissements ne disposant pas de PUI, le responsable de la traçabilité est la personne en charge des commandes et de la gestion des stocks dans l'établissement, sous le contrôle d'un professionnel de santé) enregistre les données de réception des DMI et les transmet ensuite au service utilisateur lors de la délivrance du DMI : **
 * Informations obligatoires: *  l’identification de chaque dispositif médical : 
 * dénomination ;
 * numéro de série ou de lot ;
@@ -153,13 +153,13 @@ Ci-dessous, un tableau récapitulatif des informations obligatoires de traçabil
 * l’identification du service utilisateur.
 
   * Référence: **R. 5212-38**
-* Informations obligatoires: **Le service utilisateur renseigne ces informations lors de l'utilisation du DMI :**
+* Informations obligatoires: ** Le service utilisateur renseigne ces informations lors de l'utilisation du DMI : **
 * Informations obligatoires: * la date d'utilisation ;
 * l’identification du patient : nom, prénom et date de naissance ;
 * le nom du médecin ou du chirurgien-dentiste utilisateur.
 
   * Référence: **R. 5212-39**
-* Informations obligatoires: **L'établissement doit faire figurer dans le dossier patient :**
+* Informations obligatoires: ** L'établissement doit faire figurer dans le dossier patient : **
 * Informations obligatoires: * l’identification du dispositif médical : dénomination, numéro de série ou de lot, nom du fabricant ou de son mandataire ;
 * la date d'utilisation ;
 * le nom du médecin ou du chirurgien-dentiste utilisateur ;
@@ -2315,24 +2315,6 @@ Le format RSF de l’ATIH est accessible ici : [https://www.atih.sante.fr/nouve
 | **MOS** | Modèle des objets de santé |
 | **PUI** | Pharmacie à usage intérieur |
 | **T2A** | Tarification à l’activité |
-
-##### Personnes ayant contribué à l'élaboration de cette étude
-
-| | |
-| :--- | :--- |
-| Manuel METZ | Responsable du programme interopérabilité.Pôle Urbanisation et services de confiance – ASIP Santé |
-| Eric SEBELIN | Expert interopérabilitéDEII - Architecture et interopérabilité - ANS |
-| Nader CHEAIB | Chargé de mission modélisation et référentiels d’interopérabilité.Pôle Urbanisation et services de confiance – ASIP Santé |
-| Geneviève LACHENAL | Cadre de Supérieur de SantéRéférente transverse blocs opératoiresHospices civils de Lyon |
-| Sophie BONNEFOY | DirectriceDirection Pharmacie StérilisationHospices civils de Lyon |
-| Catherine CHATANIER | Cadre IBODE Bloc Opératoire.Hôpital Necker – Enfants Malades |
-| Valérie TALON | Pharmacienne responsable des dispositifs médicaux.Hôpital Privé Saint Joseph – Paris |
-| Catherine FARGEOT | Pharmacien clinicien des blocs opératoiresResponsable Management de la Qualité (RSMQ) PUIGH Bicêtre - Pôle BPPSP (HUPS /APHP) |
-| Patrick MAZAUD | Conseiller Suppléant Section HChargé de Mission Conseil NationalOrdre National des Pharmaciens |
-| Cécile VAUGELADE | Directeur Affaires Technico-Réglementaires au SNITEM |
-| Dominique THIVEAUD | Président d'Euro-Pharmat |
-| Etienne DUBOURDIEU | Responsable de l’unité des dispositifs médicaux chez PHAST |
-| François MACARY | Responsable des projets internationaux chez PHAST |
 
 1. http://mos.asipsante.fr/NOS/PDF/TRE_R254-TypeEvenement.tabs.pdf [↩](#fnref:7)
 
