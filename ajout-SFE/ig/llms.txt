@@ -10,7 +10,7 @@
 * [Specifications Techniques](specifications_techniques.md)
 * [Sécurité](securite.md)
 * [Autres Ressources](autres_ressources.md)
-* [Specifications Fonctionnelles](specifications_fonctionnelles.md)
+* [Volume 1 - Étude fonctionnelle](specifications_fonctionnelles.md)
 * [Vue d'ensemble](construction_des_flux.md)
 * [Téléchargements et usages](downloads.md)
 

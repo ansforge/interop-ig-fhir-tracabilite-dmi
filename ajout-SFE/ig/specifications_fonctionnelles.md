@@ -1,9 +1,9 @@
-# Specifications Fonctionnelles - ANS IG Example v0.1.0
+# Volume 1 - Étude fonctionnelle - ANS IG Example v0.1.0
 
 * [**Table of Contents**](toc.md)
-* **Specifications Fonctionnelles**
+* **Volume 1 - Étude fonctionnelle**
 
-## Specifications Fonctionnelles
+## Volume 1 - Étude fonctionnelle
 
 ### Introduction
 
