@@ -15,7 +15,7 @@ Cette étude doit être interprétée à la lumière des exigences réglementair
 
 Pour faciliter la mise en conformité avec les exigences de traçabilité, renforcer l'identification des DM et optimiser la gestion de leurs informations dans les SIH, les établissements de santé peuvent utiliser depuis plusieurs années des bases de données professionnelles externes dont certaines permettent la convergence vers le système IUD (CIOdm et autres bases comme par exemple Exhausmed, Vidal, Euro-Pharmat, Phast CIOdm, ACL).
 
-L’élaboration de cette étude a été basée sur un travail de recherche documentaire ainsi que des rencontres avec des acteurs métier (cf. Annexe D).
+L’élaboration de cette étude a été basée sur un travail de recherche documentaire ainsi que des rencontres avec des acteurs métier (cf.Annexe D).
 
 _Remarque_ :
 
@@ -195,8 +195,7 @@ Le guide de traçabilité des dispositifs médicaux, élaboré par Euro-Pharmat 
  Table 3 Les définitions fournies par Euro-Pharmat 
 
 **_La traçabilité financière dans le cadre de la T2A (Tarification à l'activité):_**
- Le système de financement pour les activités MCO (Médecine, chirurgie, obstétrique) des établissements de santé, T2A, se base sur l’activité réellement produite. Concrètement, chaque séjour de patient est attribué à un groupe homogène de malade (GHM) et est associé à un tarif appelé groupe homogène de séjours (GHS) qui couvre l’ensemble des coûts fixes et variables correspondant aux prestations dont le patient a bénéficié au cours de son séjour. Les dépenses liées aux DMI sont intégrées dans ces tarifs d’hospitalisation à l’activité.
- Toutefois, certains DMI ayant un coût trop élevé, sont financés « en sus » des forfaits de séjours et doivent alors figurer dans la Liste des Produits et Prestations remboursables par l’Assurance maladie (LPPr) en application de l'article L. 162-22-7 du code de la sécurité sociale (CSS) en vue de leur remboursement par l’assurance maladie. Les règles d’inscription sur la LPPr sont définies dans l’article L-165-1 du Code de la Sécurité Sociale et la liste est établie après avis d'une commission de la Haute Autorité de Santé et d’autres acteurs mentionnés dans l'article L. 161-37 du CSS.
+ Le système de financement pour les activités MCO (Médecine, chirurgie, obstétrique) des établissements de santé, T2A, se base sur l’activité réellement produite. Concrètement, chaque séjour de patient est attribué à un groupe homogène de malade (GHM) et est associé à un tarif appelé groupe homogène de séjours (GHS) qui couvre l’ensemble des coûts fixes et variables correspondant aux prestations dont le patient a bénéficié au cours de son séjour. Les dépenses liées aux DMI sont intégrées dans ces tarifs d’hospitalisation à l’activité. Toutefois, certains DMI ayant un coût trop élevé, sont financés « en sus » des forfaits de séjours et doivent alors figurer dans la Liste des Produits et Prestations remboursables par l’Assurance maladie (LPPr) en application de l'article L. 162-22-7 du code de la sécurité sociale (CSS) en vue de leur remboursement par l’assurance maladie. Les règles d’inscription sur la LPPr sont définies dans l’article L-165-1 du Code de la Sécurité Sociale et la liste est établie après avis d'une commission de la Haute Autorité de Santé et d’autres acteurs mentionnés dans l'article L. 161-37 du CSS.
 
 La traçabilité financière initialement consiste alors en l’attribution d’un ou plusieurs codes LPP à chaque séjour de patient ayant bénéficié de l’implantation de DMI inscrits sur la LPPr. Actuellement, cette traçabilité a évolué et dépasse le périmètre initial des DMI inscrits sur cette liste :
 
@@ -235,7 +234,7 @@ L’IUD est un code alphanumérique. Il permet l'identification sans ambiguïté
 * une première partie, dite « L'IUD-ID » (pour identifiant du dispositif), qui est propre à un modèle de dispositif médical. Cette partie du code est « statique » et est identique pour tous les dispositifs d’un même modèle. Cet identifiant donne accès aux informations prévues dans l’annexe VI, partie B du Règlement ;
 * une seconde partie de l’IUD, dite «IUD-IP » (pour identifiant de la production). Il contient les informations relatives à chaque unité produite. Les différents types d’IUD-IP sont le numéro de série, le numéro de lot, la date de fabrication et/ou d’expiration. Cette partie du code est « dynamique » et est propre à chaque DM produit.
 
-**_Base de données européenne [EUDAMED](https://ec.europa.eu/growth/sectors/medical-devices/new-regulations/eudamed_en)_** Le système d’identification IUD doit être « adossé » à une base de données européenne appelée EUDAMED, administrée par la Commission Européenne (CE). Elle permettra de centraliser les informations relatives à tous les DM mis sur le marché de l'Union Européenne, et sera en partie ouverte au public. L'IUD-ID constituera la principale clé d'accès à ces informations.
+Base de données européenne [EUDAMED](https://ec.europa.eu/growth/sectors/medical-devices/new-regulations/eudamed_en) Le système d’identification IUD doit être « adossé » à une base de données européenne appelée EUDAMED, administrée par la Commission Européenne (CE). Elle permettra de centraliser les informations relatives à tous les DM mis sur le marché de l'Union Européenne, et sera en partie ouverte au public. L'IUD-ID constituera la principale clé d'accès à ces informations.
 
 Cette base EUDAMED a pour objectifs de permettre :
 
@@ -254,7 +253,7 @@ L'obligation faîte aux fabricants d'enregistrer leurs DM dans EUDAMED sera effe
 
 ###### Arrêté relatif au management de la qualité du circuit des DMI
 
-L’arrêté du 8 septembre 2021 relatif au management de la qualité du circuit des dispositifs médicaux implantables (DMI) dans les établissements de santé et les installations de chirurgie esthétique doit entrer en vigueur le 26 mai 2022. Cet article mentionne des items précis à « récupérer » en sus de ceux décris dans (R 5212-38 et R 5212-39) à chaque étape du circuit des DMI :
+L’arrêté du 8 septembre 2021 relatif au management de la qualité du circuit des dispositifs médicaux implantables (DMI) dans les établissements de santé et les installations de chirurgie esthétique doit entrer en vigueur le 26 mai 2022. Cet article mentionne des items précis à « récupérer » en sus de ceux décris dans (R 5212-38 et R5212-39) à chaque étape du circuit des DMI :
 
 * Date de péremption
 * Dimensions
@@ -301,9 +300,7 @@ Il est à noter que d’autres processus pouvant exister comme le processus de s
 
 L'organisation du contexte métier de la traçabilité de DMI en établissement de santé est représentée par le diagramme de paquetage ci-dessous :
 
-![](media/media/image4.png)
-
-Figure 1 Diagramme de paquetage recensant les processus identifiés
+ Diagramme de paquetage recensant les processus identifiés 
 
 ### Définition du processus collaboratif
 
@@ -312,9 +309,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
 #### "Cas d'utilisation "Demander DMI""
 
-![](media/media/image5.png)
-
-Figure 2 Cas d'utilisation "Demander DMI"
+ Cas d'utilisation "Demander DMI" 
 
 | | |
 | :--- | :--- |
@@ -324,9 +319,7 @@ Table 2 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Commander les DMI""
 
-![](media/media/image6.png)
-
-Figure 3 Cas d'utilisation "Commander les DMI"
+ Cas d'utilisation "Commander les DMI" 
 
 | | |
 | :--- | :--- |
@@ -336,9 +329,7 @@ Table 3 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Réceptionner et contrôler les DMI""
 
-![](media/media/image7.png)
-
-Figure 4 Cas d'utilisation "Réceptionner et contrôler les DMI"
+ Cas d'utilisation "Réceptionner et contrôler les DMI" 
 
 | | |
 | :--- | :--- |
@@ -348,9 +339,7 @@ Table 4 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Réceptionner le DMI""
 
-![](media/media/image8.png)
-
-Figure 5 Cas d'utilisation "Réceptionner le DMI"
+ Cas d'utilisation "Réceptionner le DMI" 
 
 | | |
 | :--- | :--- |
@@ -360,9 +349,7 @@ Table 5 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Délivrer les DMI au service utilisateur""
 
-![](media/media/image9.png)
-
-Figure 6 Cas d'utilisation "Délivrer les DMI au service utilisateur"
+ Cas d'utilisation "Délivrer les DMI au service utilisateur" 
 
 | | |
 | :--- | :--- |
@@ -372,9 +359,7 @@ Table 6 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Transporter DMI au sein de l'établissement""
 
-![](media/media/image10.png)
-
-Figure 7 Cas d'utilisation "Transporter DMI au sein de l'établissement"
+ Cas d'utilisation "Transporter DMI au sein de l'établissement" 
 
 | | |
 | :--- | :--- |
@@ -384,9 +369,7 @@ Table 7 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Réceptionner les DMI par le service utilisateur""
 
-![](media/media/image11.png)
-
-Figure 8 Cas d'utilisation "Réceptionner les DMI par le service utilisateur"
+ Cas d'utilisation "Réceptionner les DMI par le service utilisateur" 
 
 | | |
 | :--- | :--- |
@@ -396,9 +379,7 @@ Table 8 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Poser les DMI""
 
-![](media/media/image12.png)
-
-Figure 9 Cas d'utilisation "Poser les DMI"
+ Cas d'utilisation "Poser les DMI" 
 
 | | |
 | :--- | :--- |
@@ -408,9 +389,7 @@ Table 9 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Facturation du DMI""
 
-![](media/media/image13.png)
-
-Figure 10 Cas d'utilisation "Facturation du DMI"
+ Cas d'utilisation "Facturation du DMI" 
 
 | | |
 | :--- | :--- |
@@ -420,9 +399,7 @@ Table 10 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Tracer""
 
-![](media/media/image14.png)
-
-Figure 11 Cas d'utilisation "Tracer"
+ Cas d'utilisation "Tracer" 
 
 | | |
 | :--- | :--- |
@@ -432,9 +409,7 @@ Table 11 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Rechercher des traces""
 
-![](media/media/image15.png)
-
-Figure 12 Cas d'utilisation "Rechercher des traces"
+ Cas d'utilisation "Rechercher des traces" 
 
 | | |
 | :--- | :--- |
@@ -444,9 +419,7 @@ Table 12 Table des cas d'utilisation
 
 #### "Cas d'utilisation Consulter une trace"
 
-![](media/media/image16.png)
-
-Figure 13 Cas d'utilisation Consulter une trace
+ Cas d'utilisation Consulter une trace 
 
 | | |
 | :--- | :--- |
@@ -480,9 +453,7 @@ Table 14 Table des acteurs
 Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
  Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image17.png)
-
-Figure 14 : Diagramme d'activité Demander DMI
+ Diagramme d'activité Demander DMI 
 
 ##### Actions
 
@@ -528,9 +499,7 @@ Le processus de commande de DMI est activé lorsqu’une des conditions ci-desso
 Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
  Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image18.png)
-
-Figure 15 : Diagramme d'activité Commander les DMI
+ Diagramme d'activité Commander les DMI 
 
 ##### Actions
 
@@ -565,9 +534,7 @@ Table 20 Flux identifiés du Diagramme d'activité Commander les DMI
 Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
  Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image19.png)
-
-Figure 16 : Diagramme d'activité Réceptionner et contrôler DMI
+ Diagramme d'activité Réceptionner et contrôler DMI 
 
 ##### Actions
 
@@ -605,9 +572,7 @@ Table 23 Flux identifiés du Diagramme d'activité Réceptionner et contrôler D
 Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
  Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image20.png)
-
-Figure 17 : Diagramme d'activité Réceptionner le DMI
+ Diagramme d'activité Réceptionner le DMI 
 
 ##### Actions
 
@@ -638,9 +603,7 @@ Table 25 Flux identifiés du Diagramme d'activité Réceptionner le DMI
 Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
  Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image21.png)
-
-Figure 18 : Diagramme d'activité Délivrer DMI au Service Utilisateur
+ Diagramme d'activité Délivrer DMI au Service Utilisateur 
 
 ##### Actions
 
@@ -669,9 +632,7 @@ Table 27 Flux identifiés du Diagramme d'activité Délivrer DMI au Service Util
 Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
  Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image22.png)
-
-Figure 19 : Diagramme d'activité Transporter DMI
+ Diagramme d'activité Transporter DMI 
 
 ##### Actions
 
@@ -698,9 +659,7 @@ Table 29 Flux identifiés du Diagramme d'activité Transporter DMI
 Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
  Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image23.png)
-
-Figure 20 : Diagramme d'activité Réceptionner DMI par le service utilisateur
+ Diagramme d'activité Réceptionner DMI par le service utilisateur 
 
 ##### Actions
 
@@ -732,9 +691,7 @@ Table 31 Flux identifiés du Diagramme d'activité Réceptionner DMI par le serv
 Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
  Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image24.png)
-
-Figure 21 : Diagramme d'activité Poser DMI
+ Diagramme d'activité Poser DMI 
 
 ##### Actions
 
@@ -781,9 +738,7 @@ Préconditions :
 
 Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image25.png)
-
-Figure 22 : Diagramme d'activité Facturer DMI (dépôt-vente)
+ Diagramme d'activité Facturer DMI (dépôt-vente) 
 
 ##### Actions
 
@@ -830,9 +785,7 @@ Préconditions:
 
 Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image26.png)
-
-Figure 23 : Diagramme d'activité Facturer DMI (achat)
+ Diagramme d'activité Facturer DMI (achat) 
 
 ##### Actions
 
@@ -861,9 +814,7 @@ Ce processus permet de modéliser la traçabilité d'un évènement.
 
 Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image27.png)
-
-Figure 24 : Diagramme d'activité Tracer
+ Diagramme d'activité Tracer 
 
 ##### Actions
 
@@ -890,9 +841,7 @@ Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
 
 Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image28.png)
-
-Figure 25 : Diagramme d'activité Rechercher des traces
+ Diagramme d'activité Rechercher des traces 
 
 ##### Actions
 
@@ -921,9 +870,7 @@ Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
 
 Se référer au Tableau 14 pour la définition des acteurs.
 
-![](media/media/image29.png)
-
-Figure 26 : Diagramme d'activité Consulter une trace
+ Diagramme d'activité Consulter une trace 
 
 ##### Actions
 
@@ -1000,9 +947,7 @@ Le modèle est formalisé par un diagramme de classes UML pour chaque flux faisa
 
 Cette section présente le diagramme de classes du Flux 1 - DemandeDMI. Ce flux concerne la création, la mise à jour ou la suppression d'une demande de DMI envoyée au gestionnaire DMI par le service utilisateur.
 
-![](media/media/image30.png)
-
-Figure 27 Flux 1 - DemandeDMI
+ Flux 1 - DemandeDMI 
 
 ##### Classe "Demande"
 
@@ -1063,9 +1008,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 
 Cette section présente le diagramme de classes du Flux 2 - ReponseDemandeDMI. Il s'agit du flux de réponse de la part du gestionnaire DMI après avoir reçu la demande soit de création ou de mise à jour.
 
-![](media/media/image31.png)
-
-Figure 28 Flux 2 - ReponseDemandeDMI
+ Flux 1 - DemandeDMI 
 
 ##### Classe "Reponse"
 
@@ -1123,9 +1066,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 
 Cette section présente le diagramme de classes du Flux 3 - CommandeDMI. Ce flux concerne la soumission par le gestionnaire DMI de la commande de DMI auprès du fournisseur (fabricant ou distributeur).
 
-![](media/media/image32.png)
-
-Figure 29 Flux 3 - CommandeDMI
+ Flux 3 - CommandeDMI 
 
 ##### Classe "Commande"
 
@@ -1183,9 +1124,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 
 Cette section présente le diagramme de classes du Flux 4 - LivraisonDMI. Ce flux concerne la réception des DMI par le gestionnaire de réception.
 
-![](media/media/image33.png)
-
-Figure 30 Flux 4 - LivraisonDMI
+ Flux 4 - LivraisonDMI 
 
 ##### Classe "Livraison"
 
@@ -1264,9 +1203,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 
 Cette section présente le diagramme de classes du Flux 5b - ReceptionUnitaireDM. Ce flux concerne les DMI réceptionnés par le gestionnaire de réception.
 
-![](media/media/image34.png)
-
-Figure 31 Flux 5b - ReceptionUnitaireDMI
+ Flux 5b - ReceptionUnitaireDMI 
 
 ##### Classe "StatutReception"
 
@@ -1372,9 +1309,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 
 Cette section présente le diagramme de classes du Flux 6 - DelivranceSU. Ce flux concerne l'envoie des informations nécessaires au gestionnaire de réception du service utilisateur concernant les DMI délivrés par la PUI.
 
-![](media/media/image35.png)
-
-Figure 32 Flux 6 - DelivrerSU
+ Flux 6 - DelivrerSU 
 
 ##### Classe "Delivrance"
 
@@ -1452,9 +1387,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 
 Cette section présente le diagramme de classes du Flux 8 - TransportDMI. Ce flux concerne l'envoie des informations nécessaires au gestionnaire de réception du service utilisateur concernant le transport des DMI qui sont acheminés.
 
-![](media/media/image36.png)
-
-Figure 33 Flux 8 - TransportDMI
+ Flux 8 - TransportDMI 
 
 ##### Classe "Transport"
 
@@ -1505,9 +1438,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 
 Cette section présente le diagramme de classes du Flux 10 - ReceptionSU. Ce flux concerne l'envoie des informations nécessaires au service utilisateur concernant la réception des DMI dans ses locaux.
 
-![](media/media/image37.png)
-
-Figure 34 Flux 10 - ReceptionSU
+ Flux 10 - ReceptionSU 
 
 ##### Classe "ReceptionDMI"
 
@@ -1625,9 +1556,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 
 Cette section présente le diagramme de classes du Flux 13 - ConsommationDMI. Ce flux concerne l'envoie des informations nécessaires au gestionnaire DMI concernant la pose du (des) DMI par le service utilisateur chez un patient.
 
-![](media/media/image38.png)
-
-Figure 35 Flux 13 - ConsommationDMI
+ Flux 13 - ConsommationDMI 
 
 ##### Classe "InterventionMedicale"
 
@@ -1798,9 +1727,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 
 Cette section présente le diagramme de classes du Flux 17 - AutorisationPaiement. Ce flux concerne l'envoie des informations nécessaires au gestionnaire de compatibilité afin de régler la facture auprès du fournisseur.
 
-![](media/media/image39.png)
-
-Figure 36 Flux 17 - AutorisationPaiement
+ Flux 17 - AutorisationPaiement 
 
 ##### Classe "Facture"
 
