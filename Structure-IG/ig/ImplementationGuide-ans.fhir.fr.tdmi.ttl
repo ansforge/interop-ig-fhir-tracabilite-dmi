@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "ans.fhir.fr.tdmi"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tdmi</b></p><a name=\"ans.fhir.fr.tdmi\"> </a><a name=\"hcans.fhir.fr.tdmi\"> </a><h2>TDMI</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi</pre></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tdmi</b></p><a name=\"ans.fhir.fr.tdmi\"> </a><a name=\"hcans.fhir.fr.tdmi\"> </a><h2>TDMI</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi</pre></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi"^^xsd:anyURI ;
@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDMI"] ; # 
   fhir:title [ fhir:v "Traçabilité des Dispositifs Médicaux Implantables"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-29T14:17:01+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-13T08:45:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
