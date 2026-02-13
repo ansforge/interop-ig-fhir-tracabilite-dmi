@@ -1,71 +1,29 @@
 ### Introduction
 
-Ce document présente l’étude « métier » pour la traçabilité des
-dispositifs médicaux implantables (DMI) au sein d’un établissement de
-santé. Cette étude propose, d’une part, la modélisation des flux
-d’échanges pour la traçabilité du cycle de vie des DMI, au sein d’un
-établissement de santé et d’autre part, la définition du périmètre
-métier nécessaire à la mise en œuvre de cette traçabilité entre systèmes
-d’information ou composants de systèmes d’information.
+Ce document présente l’étude « métier » pour la traçabilité des dispositifs médicaux implantables (DMI) au sein d’un établissement de santé. Cette étude propose, d’une part, la modélisation des flux d’échanges pour la traçabilité du cycle de vie des DMI, au sein d’un établissement de santé et d’autre part, la définition du périmètre métier nécessaire à la mise en œuvre de cette traçabilité entre systèmes d’information ou composants de systèmes d’information.
 
-La finalité de cette étude correspond à la modélisation du circuit des
-DMI dans les établissements de santé (depuis leur réception dans
-l'établissement jusqu’à leur pose chez le patient) permettant
-d'identifier dans les SIH les flux entrant dans le cadre de la
-traçabilité sanitaire, financière et logistique des DMI. avec « l’appel
-à la gestion de traces » issue du volet « Traçabilité d’événements »
-(cf. CI-SIS Etude métier – Généricisation : Spécifications
-fonctionnelles des échanges Gestion des traces).
+La finalité de cette étude correspond à la modélisation du circuit des DMI dans les établissements de santé (depuis leur réception dans l'établissement jusqu’à leur pose chez le patient) permettant d'identifier dans les SIH les flux entrant dans le cadre de la traçabilité sanitaire, financière et logistique des DMI. avec « l’appel à la gestion de traces » issue du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces).
 
-Cette étude doit être interprétée à la lumière des exigences
-réglementaires applicables aux établissements de santé en matière de
-traçabilité des DMI. En premier lieu, il s'agit des règles de
-traçabilité sanitaire définies par le Décret n° 2006-1497 du 29 novembre
-2006, inscrites dans le code de la santé publique (Art. R5212-36 à
-R5212-42). En outre, depuis le 26 mai 2021, les établissements de santé
-doivent enregistrer l'identifiant unique "IUD" des DMI de classe III,
-comme le prévoit la réglementation européenne (règlement (UE) 2017/745,
-Art. 27). Enfin, l'arrêté du 8 septembre 2021 relatif au management de
-la qualité du circuit des DMI ([Arrêté du 8 septembre 2021 relatif au management de la qualité du circuit des dispositifs médicaux implantables dans les établissements de santé et les installations de chirurgie esthétique](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044053502)) introduit de nouvelles exigences à
-compter du 26 mai 2022 : renforcement des règles de traçabilité
-(nouvelles données à enregistrer, respect du cadre d'interopérabilité
-des systèmes d'information de santé), enregistrement de l'IUD à toutes
-les étapes du circuit, pour tous les DMI à l'exception des ligatures,
-sutures et dispositifs d'ostéosynthèse.
+Cette étude doit être interprétée à la lumière des exigences réglementaires applicables aux établissements de santé en matière de traçabilité des DMI. En premier lieu, il s'agit des règles de traçabilité sanitaire définies par le Décret n° 2006-1497 du 29 novembre 2006, inscrites dans le code de la santé publique (Art. R5212-36 à R5212-42). En outre, depuis le 26 mai 2021, les établissements de santé doivent enregistrer l'identifiant unique "IUD" des DMI de classe III, comme le prévoit la réglementation européenne (règlement (UE) 2017/745, Art. 27). Enfin, l'arrêté du 8 septembre 2021 relatif au management de la qualité du circuit des DMI ([Arrêté du 8 septembre 2021 relatif au management de la qualité du circuit des dispositifs médicaux implantables dans les établissements de santé et les installations de chirurgie esthétique](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044053502)) introduit de nouvelles exigences à compter du 26 mai 2022 : renforcement des règles de traçabilité (nouvelles données à enregistrer, respect du cadre d'interopérabilité des systèmes d'information de santé), enregistrement de l'IUD à toutes les étapes du circuit, pour tous les DMI à l'exception des ligatures, sutures et dispositifs d'ostéosynthèse.
 
-Pour faciliter la mise en conformité avec les exigences de traçabilité,
-renforcer l'identification des DM et optimiser la gestion de leurs
-informations dans les SIH, les établissements de santé peuvent utiliser
-depuis plusieurs années des bases de données professionnelles externes
-dont certaines permettent la convergence vers le système IUD (CIOdm et
-autres bases comme par exemple Exhausmed, Vidal, Euro-Pharmat, Phast
-CIOdm, ACL).
+Pour faciliter la mise en conformité avec les exigences de traçabilité, renforcer l'identification des DM et optimiser la gestion de leurs informations dans les SIH, les établissements de santé peuvent utiliser depuis plusieurs années des bases de données professionnelles externes
+dont certaines permettent la convergence vers le système IUD (CIOdm et autres bases comme par exemple Exhausmed, Vidal, Euro-Pharmat, Phast CIOdm, ACL).
 
-L’élaboration de cette étude a été basée sur un travail de recherche
-documentaire ainsi que des rencontres avec des acteurs métier (cf.
-Annexe D).
+L’élaboration de cette étude a été basée sur un travail de recherche documentaire ainsi que des rencontres avec des acteurs métier (cf.Annexe D).
 
 <u>Remarque</u> :
 
-La modélisation des processus de traçabilité des dispositifs médicaux
-implantables est invariante selon le mode de gestion des stocks. La
-gestion des stocks de DMI peut s’effectuer à deux niveaux selon
-l’organisation interne de l’établissement de santé. Les stocks de
-dispositifs médicaux peuvent être gérés par la pharmacie à usage
-intérieur (PUI) d’une part ou au sein du stock de proximité du plateau
-technique opératoire d’autre part.
+La modélisation des processus de traçabilité des dispositifs médicaux implantables est invariante selon le mode de gestion des stocks. La gestion des stocks de DMI peut s’effectuer à deux niveaux selon l’organisation interne de l’établissement de santé. Les stocks de
+dispositifs médicaux peuvent être gérés par la pharmacie à usage intérieur (PUI) d’une part ou au sein du stock de proximité du plateau technique opératoire d’autre part.
 
-Dans le cadre de cette étude, le parti pris a été celui d’une gestion de
-stock des DMI partagée et d’un respect des obligations réglementaires :
+Dans le cadre de cette étude, le parti pris a été celui d’une gestion de stock des DMI partagée et d’un respect des obligations réglementaires :
 
 - La PUI délivre les DMI et trace cette délivrance.
-- Le plateau technique
-opératoire pose les DMI et trace cette pose.
+- Le plateau technique opératoire pose les DMI et trace cette pose.
 
 #### Définitions
 
-Ce paragraphe délivre une définition succincte de certains termes
-utilisés dans ce document
+Ce paragraphe délivre une définition succincte de certains termes utilisés dans ce document
 
 <table style="width:97%;">
 <colgroup>
@@ -92,72 +50,41 @@ utilisés dans ce document
 
 <ul>
 <li>
-Commission nationale de terminologie : « Ensemble des procédures et
-des contrôles permettant de suivre l'historique d'un produit depuis sa
-fabrication jusqu'à son administration à un patient ».
+Commission nationale de terminologie : « Ensemble des procédures et des contrôles permettant de suivre l'historique d'un produit depuis sa fabrication jusqu'à son administration à un patient ».
 </li>
 
 <li>
-ISO 9000 :
-« Aptitude à retrouver l'historique, l'utilisation ou la localisation
-d'une entité au moyen d'identifications enregistrées ».
+ISO 9000 : « Aptitude à retrouver l'historique, l'utilisation ou la localisation d'une entité au moyen d'identifications enregistrées ».
 </li>
 
 <li>
-HAS : « Possibilité de retrouver, dans un système, une liste d’informations
-déterminées attachées à un ou plusieurs éléments du système pour
-expliquer ses défaillances ».
+HAS : « Possibilité de retrouver, dans un système, une liste d’informations déterminées attachées à un ou plusieurs éléments du système pour expliquer ses défaillances ».
 </li>
 
 <li>
-Du point de vue de la gestion de
-l’information, mettre en place un système de traçabilité, c’est associer
-systématiquement un flux d’informations à un flux physique.
+Du point de vue de la gestion de l’information, mettre en place un système de traçabilité, c’est associer systématiquement un flux d’informations à un flux physique.
 </li>
 </ul>
 
 <p>
-L’objectif
-est de pouvoir retrouver, à l’instant voulu, des données préalablement
-enregistrées permettant de localiser l’entité.</p>
-<p>Le décret du 29 novembre 2006 demande la traçabilité des DM depuis
-leur réception jusqu'à leur utilisation chez le patient et leur
-éventuelle explantation.</p></td>
+L’objectif est de pouvoir retrouver, à l’instant voulu, des données préalablement enregistrées permettant de localiser l’entité.</p>
+<p>Le décret du 29 novembre 2006 demande la traçabilité des DM depuis leur réception jusqu'à leur utilisation chez le patient et leur éventuelle explantation.</p></td>
 </tr>
 <tr>
 <td><ul>
 <p><strong>Dispositif médical - DM</strong></p>
 </ul></td>
-<td><p>L’article 2 partie 1 du Règlement (UE) 2017/745 du 5 avril 2017
-définit un DM comme tout instrument, appareil, équipement, logiciel,
-implant, réactif, matière ou autre article, destiné par le fabricant à
-être utilisé, seul ou en association, chez l'homme pour l'une ou
-plusieurs des fins médicales précises suivantes:</p>
+<td><p>L’article 2 partie 1 du Règlement (UE) 2017/745 du 5 avril 2017 définit un DM comme tout instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé, seul ou en association, chez l'homme pour l'une ou plusieurs des fins médicales précises suivantes:</p>
 <ul>
-<li>diagnostic, prévention, surveillance, prédiction, pronostic,
-traitement ou atténuation d'une maladie,</li>
-<li>diagnostic, contrôle,
-traitement, atténuation d'une blessure ou d'un handicap ou compensation
-de ceux-ci,</li>
-<li>investigation, remplacement ou modification d'une structure
-ou fonction anatomique ou d'un processus ou état physiologique ou
-pathologique,</li>
-<li>communication d'informations au moyen d'un examen in vitro
-d'échantillons provenant du corps humain, y compris les dons d'organes,
-de sang et de tissus,</li>
+<li>diagnostic, prévention, surveillance, prédiction, pronostic, traitement ou atténuation d'une maladie,</li>
+<li>diagnostic, contrôle, traitement, atténuation d'une blessure ou d'un handicap ou compensation de ceux-ci,</li>
+<li>investigation, remplacement ou modification d'une structure ou fonction anatomique ou d'un processus ou état physiologique ou pathologique,</li>
+<li>communication d'informations au moyen d'un examen in vitro d'échantillons provenant du corps humain, y compris les dons d'organes, de sang et de tissus,</li>
 </ul>
-<p>et dont l'action principale voulue dans ou sur le
-corps humain n'est pas obtenue par des moyens pharmacologiques ou
-immunologiques ni par métabolisme, mais dont la fonction peut être
-assistée par de tels moyens. Les produits ci-après sont également
-réputés être des dispositifs médicaux :</p>
+<p>et dont l'action principale voulue dans ou sur le corps humain n'est pas obtenue par des moyens pharmacologiques ou immunologiques ni par métabolisme, mais dont la fonction peut être assistée par de tels moyens. Les produits ci-après sont également réputés être des dispositifs médicaux :</p>
 <ul>
-<li>les dispositifs destinés à la maîtrise de la conception ou à
-l'assistance à celle-ci,</li>
-<li>les produits spécifiquement destinés au
-nettoyage, à la désinfection ou à la stérilisation des dispositifs visés
-à l'article 1er, paragraphe 4, et de ceux visés au premier alinéa du
-présent point.</li>
+<li>les dispositifs destinés à la maîtrise de la conception ou à l'assistance à celle-ci,</li>
+<li>les produits spécifiquement destinés au nettoyage, à la désinfection ou à la stérilisation des dispositifs visés à l'article 1er, paragraphe 4, et de ceux visés au premier alinéa du présent point.</li>
 </ul></td>
 </tr>
 <tr>
@@ -168,28 +95,16 @@ présent point.</li>
   </a>
 </p>
 </ul></td>
-<td><p>L’article 2 partie 5 du Règlement (UE) 2017/745 du 5 avril 2017
-définit un DMI comme tout dispositif, y compris ceux qui sont absorbés
-en partie ou en totalité, (i) destiné à être introduit intégralement
-dans le corps humain ou (ii) à remplacer une surface épithéliale ou la
-surface de l'œil - par une intervention clinique et à demeurer en place
-après l'intervention.</p>
-<p>Est également réputé être un DMI tout dispositif destiné à être
-introduit partiellement dans le corps humain par une intervention
-clinique et à demeurer en place après l'intervention pendant une période
-d'au moins trente jours</p></td>
+<td><p>L’article 2 partie 5 du Règlement (UE) 2017/745 du 5 avril 2017 définit un DMI comme tout dispositif, y compris ceux qui sont absorbés en partie ou en totalité, (i) destiné à être introduit intégralement dans le corps humain ou (ii) à remplacer une surface épithéliale ou la
+surface de l'œil - par une intervention clinique et à demeurer en place après l'intervention.</p>
+<p>Est également réputé être un DMI tout dispositif destiné à être introduit partiellement dans le corps humain par une intervention clinique et à demeurer en place après l'intervention pendant une période d'au moins trente jours</p></td>
 </tr>
 <tr>
 <td><ul>
 <p><strong>DMI gérés en achat </strong></p>
 </ul></td>
-<td>Les DMI sont commandés par l’établissement de santé et réceptionnés
-dans une certaine quantité en prévision de leur utilisation future. Ils
-sont la propriété de l’établissement de santé et sont généralement
-stockés au niveau de l’arsenal du plateau technique opératoire afin
-d’être immédiatement disponible en cas d’intervention. Dans les contrats
-qui lient les distributeurs aux établissements de santé, la gestion des
-péremptions et le réapprovisionnement relève de la responsabilité des
+<td>Les DMI sont commandés par l’établissement de santé et réceptionnés dans une certaine quantité en prévision de leur utilisation future. Ils sont la propriété de l’établissement de santé et sont généralement stockés au niveau de l’arsenal du plateau technique opératoire afin
+d’être immédiatement disponible en cas d’intervention. Dans les contrats qui lient les distributeurs aux établissements de santé, la gestion des péremptions et le réapprovisionnement relève de la responsabilité des
 établissements<a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044053502"
      target="_blank">(cf arrêté du 8 septembre 2021).</a></td>
 </tr>
@@ -197,49 +112,31 @@ péremptions et le réapprovisionnement relève de la responsabilité des
 <td><ul>
 <p><strong>Fournisseur</strong></p>
 </ul></td>
-<td>Le fournisseur est une entité commerciale selon son statut défini
-dans le Règlement (UE) 2017/745 : fabricant, mandataire ou distributeur
-autorisée à fournir des DM à un établissement de santé client. Elle peut
-agir dans le cadre d’un contrat (marché public ou privé) qui régit sa
+<td>Le fournisseur est une entité commerciale selon son statut défini dans le Règlement (UE) 2017/745 : fabricant, mandataire ou distributeur autorisée à fournir des DM à un établissement de santé client. Elle peut agir dans le cadre d’un contrat (marché public ou privé) qui régit sa
 relation commerciale avec son client.</td>
 </tr>
 <tr>
 <td><ul>
 <p><strong>DMI gérés en dépôt-vente</strong> </p>
 </ul></td>
-<td>Le fournisseur met à disposition de l’établissement de santé des
-DMI. Ils restent la propriété du fournisseur, qui en gère l’inventaire
-et la péremption, et ce jusqu’à leur utilisation. Lorsque les produits
-sont en dépôt, l’établissement de santé indique au fournisseur la pose
-d’un implant qui est facturé à ce moment-là. Le dépôt vente donne lieu à
-une convention définissant les obligations des parties (fournisseur et
-établissement de santé), cette convention est partie intégrante du
-contrat lorsqu’il existe entre le fournisseur et l’établissement de
-santé <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044053502"
-target="_blank">(cf arrêté du 8 septembre 2021).</a></td>
+<td>Le fournisseur met à disposition de l’établissement de santé des DMI. Ils restent la propriété du fournisseur, qui en gère l’inventaire et la péremption, et ce jusqu’à leur utilisation. Lorsque les produits sont en dépôt, l’établissement de santé indique au fournisseur la pose
+d’un implant qui est facturé à ce moment-là. Le dépôt vente donne lieu à une convention définissant les obligations des parties (fournisseur et établissement de santé), cette convention est partie intégrante du contrat lorsqu’il existe entre le fournisseur et l’établissement de
+santé <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044053502" target="_blank">(cf arrêté du 8 septembre 2021).</a></td>
 </tr>
 <tr>
 <td><ul>
 <p><strong>Patient pris en charge</strong></p>
 </ul></td>
-<td>Il s’agit de la personne prise en charge que ce soit au niveau
-sanitaire, médico-administratif, médico-social et social. Cette personne
-peut être un usager dans le secteur social ou un patient. Dans le
-contexte de cette étude, il s’agit d’un patient pour lequel un ou
-plusieurs DMI sont posés lors d’une intervention médicale ou
-chirurgicale.</td>
+<td>Il s’agit de la personne prise en charge que ce soit au niveau sanitaire, médico-administratif, médico-social et social. Cette personne peut être un usager dans le secteur social ou un patient. Dans le contexte de cette étude, il s’agit d’un patient pour lequel un ou
+plusieurs DMI sont posés lors d’une intervention médicale ou chirurgicale.</td>
 </tr>
 <tr>
 <td><ul>
 <p><strong>Professionnel</strong></p>
 </ul></td>
-<td><p>Un professionnel est une personne qui participe, au titre de son
-emploi professionnel, à la prise en charge d’une personne que ce soit au
-niveau sanitaire, médico-administratif, médico-social ou social. Dans le
-cadre de cette étude, il s’agit d’un professionnel prenant en charge le
+<td><p>Un professionnel est une personne qui participe, au titre de son emploi professionnel, à la prise en charge d’une personne que ce soit au niveau sanitaire, médico-administratif, médico-social ou social. Dans le cadre de cette étude, il s’agit d’un professionnel prenant en charge le
 patient au niveau sanitaire ou médico-administratif.</p>
-<p>Synonyme : utilisateur (Règlement (UE) 2017/745, Article 2 Point
-37).</p></td>
+<p>Synonyme : utilisateur (Règlement (UE) 2017/745, Article 2 Point 37).</p></td>
 </tr>
 <tr>
 <td><ul>
@@ -260,78 +157,42 @@ patient au niveau sanitaire ou médico-administratif.</p>
 
 #### Exemples de cas d'usage
 
-Ci-dessous des exemples d’usages de la traçabilité de DMI en
-établissement de santé.
+Ci-dessous des exemples d’usages de la traçabilité de DMI en établissement de santé.
 
 ##### Réassort de stock - DMI gérés en achat
 
 - Un besoin de réassort est transmis à la PUI.
-- La PUI passe une commande
-auprès du fournisseur.
-- Le fournisseur reçoit la commande, la traite et
-livre les DMI à la PUI.
-- La PUI reçoit les DMI, les enregistre, délivre
-les DMI au service utilisateur ayant déclenché la demande de réassort et
-en trace la délivrance.
-- Le gestionnaire de comptabilité déclenche le
-règlement de la facture de DMI.
-- L’infirmier ou l’IBODE reçoit les DMI,
-enregistre leur réception et les place dans le stock de proximité
-jusqu’à l’opération.
-- Le praticien « implanteur » effectue la pose de DMI. Et il enregistre l’acte de pose du DMI dans le système d’information du
-PMSI.
-- L’infirmier ou l’IBODE renseigne les informations relatives à la
-pose de DMI. Les données relatives aux DMI doivent figurer dans le
-dossier patient (Article R. 5212-40 du code de la santé publique).
-- La lettre de liaison est remise au patient et à son
-médecin traitant à l’issue de son séjour dans l’établissement de santé
-(hors périmètre de cette spécification fonctionnelle).
+- La PUI passe une commande auprès du fournisseur.
+- Le fournisseur reçoit la commande, la traite et livre les DMI à la PUI.
+- La PUI reçoit les DMI, les enregistre, délivre les DMI au service utilisateur ayant déclenché la demande de réassort et en trace la délivrance.
+- Le gestionnaire de comptabilité déclenche le règlement de la facture de DMI.
+- L’infirmier ou l’IBODE reçoit les DMI, enregistre leur réception et les place dans le stock de proximité jusqu’à l’opération.
+- Le praticien « implanteur » effectue la pose de DMI. Et il enregistre l’acte de pose du DMI dans le système d’information du PMSI.
+- L’infirmier ou l’IBODE renseigne les informations relatives à la pose de DMI. Les données relatives aux DMI doivent figurer dans le dossier patient (Article R. 5212-40 du code de la santé publique).
+- La lettre de liaison est remise au patient et à son médecin traitant à l’issue de son séjour dans l’établissement de santé (hors périmètre de cette spécification fonctionnelle).
 
 ##### Préparation d’une intervention– DMI gérés en dépôt-vente et non disponibles en stock
 
-- Le plateau technique souhaite préparer une intervention chirurgicale
-avec pose de DMI pour une personne prise en charge.
-- Le plateau technique,
-ne disposant pas de DMI en stock, effectue une demande auprès de la
-PUI.
--La PUI passe une commande auprès du distributeur (hors périmètre de
-cette spécification fonctionnelle).
-- Le distributeur reçoit la commande,
-la traite et livre les DMI au lieu de livraison renseigné sur le bon de
-commande (PUI) (hors périmètre de cette spécification fonctionnelle).
-- LaPUI reçoit les DMI, les enregistre, les délivre au plateau technique et
-en trace la délivrance.L’infirmier ou l’IBODE reçoit les DMI, enregistre
-leur réception et les stocke dans l’arsenal jusqu’à l’opération.
-- Le praticien « implanteur » effectue la pose de DMI. Et il enregistre
-l’acte de pose du DMI dans le système d’information du PMSI.
-- L’infirmier ou l’IBODE renseigne les informations relatives à la pose de DMI. Les
-données relatives aux DMI doivent figurer dans le dossier patient (Article R. 5212-40 du code de la santé publique).
-- La PUI reçoit les informations de pose et donne l’accord de paiement des
-DMI consommés.
-- Le gestionnaire de comptabilité déclenche le règlement de
-la facture de DMI.Une demande de réassort est éventuellement remontée.
-- La PUI réexpédie et trace les produits non posés. Ce cas peut se produire
-lorsque le distributeur envoie des sets complets avec plusieurs tailles
-afin de pouvoir répondre aux besoins de choix lors de la pose.
-- La lettre de liaison est remise au patient et à son médecin traitant à l’issue de
-son séjour dans l’établissement de santé (hors périmètre de cette
-spécification fonctionnelle).
+- Le plateau technique souhaite préparer une intervention chirurgicale avec pose de DMI pour une personne prise en charge.
+- Le plateau technique, ne disposant pas de DMI en stock, effectue une demande auprès de la PUI.
+-La PUI passe une commande auprès du distributeur (hors périmètre de cette spécification fonctionnelle).
+- Le distributeur reçoit la commande, la traite et livre les DMI au lieu de livraison renseigné sur le bon de commande (PUI) (hors périmètre de cette spécification fonctionnelle).
+- LaPUI reçoit les DMI, les enregistre, les délivre au plateau technique et en trace la délivrance.L’infirmier ou l’IBODE reçoit les DMI, enregistre leur réception et les stocke dans l’arsenal jusqu’à l’opération.
+- Le praticien « implanteur » effectue la pose de DMI. Et il enregistre l’acte de pose du DMI dans le système d’information du PMSI.
+- L’infirmier ou l’IBODE renseigne les informations relatives à la pose de DMI. Les données relatives aux DMI doivent figurer dans le dossier patient (Article R. 5212-40 du code de la santé publique).
+- La PUI reçoit les informations de pose et donne l’accord de paiement des DMI consommés.
+- Le gestionnaire de comptabilité déclenche le règlement de la facture de DMI.Une demande de réassort est éventuellement remontée.
+- La PUI réexpédie et trace les produits non posés. Ce cas peut se produire lorsque le distributeur envoie des sets complets avec plusieurs tailles afin de pouvoir répondre aux besoins de choix lors de la pose.
+- La lettre de liaison est remise au patient et à son médecin traitant à l’issue de son séjour dans l’établissement de santé (hors périmètre de cette spécification fonctionnelle).
 
 ##### Préparation d’une intervention– DMI gérés en dépôt-vente et disponibles en stock
 
-- Le plateau technique souhaite préparer une intervention chirurgicale
-pour une pose de DMI chez un patient.
-- Le plateau technique, disposant du
-DMI souhaité dans son stock, effectue la sortie du stock nécessaire.
-- Le praticien « implanteur » effectue la pose de DMI. Et il enregistre
-l’acte de pose du DMI dans le système d’information du PMSI.
-- L’infirmier ou l’IBODE renseigne les informations relatives à la pose de DMI. Les
-données relatives aux DMI doivent figurer dans le dossier patient (Article R. 5212-40 du code de la santé publique).
-- La PUI reçoit les informations de pose et donne l’accord de paiement des
-DMI consommés.
-- Une demande de réassort est systématiquement remontée pour
-maintenir constant le niveau de stock selon la convention de
-réapprovisionnement entre le fournisseur et l’établissement.
+- Le plateau technique souhaite préparer une intervention chirurgicale pour une pose de DMI chez un patient.
+- Le plateau technique, disposant du DMI souhaité dans son stock, effectue la sortie du stock nécessaire.
+- Le praticien « implanteur » effectue la pose de DMI. Et il enregistre l’acte de pose du DMI dans le système d’information du PMSI.
+- L’infirmier ou l’IBODE renseigne les informations relatives à la pose de DMI. Les données relatives aux DMI doivent figurer dans le dossier patient (Article R. 5212-40 du code de la santé publique).
+- La PUI reçoit les informations de pose et donne l’accord de paiement des DMI consommés.
+- Une demande de réassort est systématiquement remontée pour maintenir constant le niveau de stock selon la convention de réapprovisionnement entre le fournisseur et l’établissement.
 
 #### Cadre juridique
 
@@ -339,14 +200,9 @@ réapprovisionnement entre le fournisseur et l’établissement.
 
 ###### Décret n°2006-1497 du 29 novembre 2006
 
-Le décret n°2006-1497 du 29 novembre 2006, modifiant le code de la santé
-publique (dispositions réglementaires de matériovigilance) institue
-l’obligation de traçabilité de certains dispositifs médicaux dont la
-liste a été fixée par l’arrêté du 26 Janvier 2007 :
+Le décret n°2006-1497 du 29 novembre 2006, modifiant le code de la santé publique (dispositions réglementaires de matériovigilance) institue l’obligation de traçabilité de certains dispositifs médicaux dont la liste a été fixée par l’arrêté du 26 Janvier 2007 :
 
-- dispositifs médicaux incorporant une substance qui, si elle est utilisée
-séparément, est susceptible d'être considérée comme un médicament dérivé
-du sang ;
+- dispositifs médicaux incorporant une substance qui, si elle est utilisée séparément, est susceptible d'être considérée comme un médicament dérivé du sang ;
 - valves cardiaques ;
 - autres dispositifs médicaux implantables :  
   - y compris les implants dentaires ;  
@@ -355,16 +211,11 @@ du sang ;
 Les règles particulières de traçabilité sont posées par les articles du
 décret n°2006-1497 détaillés ci-dessous :
 
-- L’article R. 5212-36 circonscrit le périmètre des règles de
- traçabilité des dispositifs médicaux depuis leur réception dans la
- structure sanitaire ou de chirurgie esthétique où ils seront utilisés
- jusqu'à leur utilisation chez le patient.L’objectif de cette
- traçabilité est de permettre :
+- L’article R. 5212-36 circonscrit le périmètre des règles de traçabilité des dispositifs médicaux depuis leur réception dans la structure sanitaire ou de chirurgie esthétique où ils seront utilisés jusqu'à leur utilisation chez le patient.L’objectif de cette traçabilité est de permettre :
   1. l’identification des patients pour lesquels les dispositifs médicaux d'un lot ont été utilisés;
   2. l’identification des lots dont proviennent les dispositifs médicaux utilisés chez un patient.
 
-- L’article R. 5212-37 fixe, la durée de conservation des données de traçabilité : les données relatives à la traçabilité des DMI sont
-conservées <u>pendant 10 ans</u>. La durée de conservation est <u>portée à 40 ans</u> pour les DM incorporant une substance qui, si elle est utilisée séparément est susceptible d’être considérée comme un dérivé du sang.
+- L’article R. 5212-37 fixe, la durée de conservation des données de traçabilité : les données relatives à la traçabilité des DMI sont conservées <u>pendant 10 ans</u>. La durée de conservation est <u>portée à 40 ans</u> pour les DM incorporant une substance qui, si elle est utilisée séparément est susceptible d’être considérée comme un dérivé du sang.
 
 - L’article R. 5212-38 porte sur les données de traçabilité relatives à la délivrance des dispositifs médicaux. Ces données sont enregistrées sous le contrôle du pharmacien (L’article L. 5126-5 du code de la santé publique impose que le pharmacien en charge de la gestion d’une PUI soit responsable de l’ensemble de son activité pharmaceutique) gérant de la PUI ou du professionnel de santé responsable et sont ensuite transmises au service utilisateur du DMI. Les données de traçabilité de la délivrance sont :  
   1. l'identification de chaque dispositif médical :  
@@ -474,30 +325,13 @@ Table 2 – Les informations obligatoires de traçabilité de DMI
 
 ###### Instruction n° DGOS/PF2/2015/200 du 15 juin 2015
 
-En complément du cadre législatif, la DGOS a mené une enquête aboutissant à la publication en
-juin 2015 d’une instruction (Instruction N°DGOS/PF2 2015 /200 du 15 juin 2015) comportant une liste de recommandations pour la traçabilité
-sanitaire des DMI à destination des établissements de santé. Parmi les
-recommandations spécifiques au système d’information il y a :
+En complément du cadre législatif, la DGOS a mené une enquête aboutissant à la publication en juin 2015 d’une instruction (Instruction N°DGOS/PF2 2015 /200 du 15 juin 2015) comportant une liste de recommandations pour la traçabilité sanitaire des DMI à destination des établissements de santé. Parmi les recommandations spécifiques au système d’information il y a :
 
-- l’utilisation d’un « référentiel des DMI unique et partagé avec
-l’ensemble des applications informatiques de la PUI (traçabilité
-financière, processus logistiques) et des applications informatiques
-concernées des services utilisateurs ».
-- « chaque fois que cela est
-possible, saisir les données de traçabilité (dénomination, numéro de lot
-ou de série du DMI, identité du patient,…) par la lecture optique de
-codes à barres ou autre lecteur adapté au support d’information (RFID),
-a minima avant la délivrance au service utilisateur. Afin de fiabiliser
-les données de traçabilité, limiter le recours à la saisie manuelle des
-données autant que de possible. »  
+- l’utilisation d’un « référentiel des DMI unique et partagé avec l’ensemble des applications informatiques de la PUI (traçabilité financière, processus logistiques) et des applications informatiques concernées des services utilisateurs ».
+- « chaque fois que cela est possible, saisir les données de traçabilité (dénomination, numéro de lot ou de série du DMI, identité du patient,…) par la lecture optique de codes à barres ou autre lecteur adapté au support d’information (RFID), a minima avant la délivrance au service utilisateur. Afin de fiabiliser les données de traçabilité, limiter le recours à la saisie manuelle des données autant que de possible. »  
 
 ###### Guide de traçabilité des dispositifs médicaux
-Le guide de traçabilité des
-dispositifs médicaux, élaboré par Euro-Pharmat avec la collaboration de
-l'Agence nationale de sécurité du médicament et des produits de santé
-(AFSSAPS) , fournit la définition de certaines informations de
-traçabilité qui seront reprises dans le cadre de la présente étude
-métier :
+Le guide de traçabilité des dispositifs médicaux, élaboré par Euro-Pharmat avec la collaboration de l'Agence nationale de sécurité du médicament et des produits de santé (AFSSAPS) , fournit la définition de certaines informations de traçabilité qui seront reprises dans le cadre de la présente étude métier :
 
 <table style="width:99%;">
 <colgroup>
@@ -547,73 +381,32 @@ praticien « implanteur », quelle que soit sa qualité</li>
 Table 3 Les définitions fournies par Euro-Pharmat
 </p>
 
-**<u>La traçabilité financière dans le cadre de la T2A (Tarification à
-l'activité):</u>**  
-Le système de financement pour les activités MCO (Médecine, chirurgie,
-obstétrique) des établissements de santé, T2A, se base sur l’activité
-réellement produite. Concrètement, chaque séjour de patient est attribué
-à un groupe homogène de malade (GHM) et est associé à un tarif appelé
-groupe homogène de séjours (GHS) qui couvre l’ensemble des coûts fixes
-et variables correspondant aux prestations dont le patient a bénéficié
-au cours de son séjour. Les dépenses liées aux DMI sont intégrées dans
-ces tarifs d’hospitalisation à l’activité.  
-Toutefois, certains DMI ayant un coût trop élevé, sont financés « en sus
-» des forfaits de séjours et doivent alors figurer dans la Liste des
-Produits et Prestations remboursables par l’Assurance maladie (LPPr) en
-application de l'article L. 162-22-7 du code de la sécurité sociale
-(CSS) en vue de leur remboursement par l’assurance maladie. Les règles
-d’inscription sur la LPPr sont définies dans l’article L-165-1 du Code
-de la Sécurité Sociale et la liste est établie après avis d'une
-commission de la Haute Autorité de Santé et d’autres acteurs mentionnés
-dans l'article L. 161-37 du CSS.  
+**<u>La traçabilité financière dans le cadre de la T2A (Tarification à l'activité):</u>**  
+Le système de financement pour les activités MCO (Médecine, chirurgie, obstétrique) des établissements de santé, T2A, se base sur l’activité réellement produite. Concrètement, chaque séjour de patient est attribué à un groupe homogène de malade (GHM) et est associé à un tarif appelé
+groupe homogène de séjours (GHS) qui couvre l’ensemble des coûts fixes et variables correspondant aux prestations dont le patient a bénéficié au cours de son séjour. Les dépenses liées aux DMI sont intégrées dans ces tarifs d’hospitalisation à l’activité. Toutefois, certains DMI ayant un coût trop élevé, sont financés « en sus » des forfaits de séjours et doivent alors figurer dans la Liste des Produits et Prestations remboursables par l’Assurance maladie (LPPr) en application de l'article L. 162-22-7 du code de la sécurité sociale (CSS) en vue de leur remboursement par l’assurance maladie. Les règles d’inscription sur la LPPr sont définies dans l’article L-165-1 du Code de la Sécurité Sociale et la liste est établie après avis d'une commission de la Haute Autorité de Santé et d’autres acteurs mentionnés dans l'article L. 161-37 du CSS.  
   
-La traçabilité financière initialement consiste alors en l’attribution
-d’un ou plusieurs codes LPP à chaque séjour de patient ayant bénéficié
-de l’implantation de DMI inscrits sur la LPPr. Actuellement, cette
-traçabilité a évolué et dépasse le périmètre initial des DMI inscrits
-sur cette liste :  
+La traçabilité financière initialement consiste alors en l’attribution d’un ou plusieurs codes LPP à chaque séjour de patient ayant bénéficié de l’implantation de DMI inscrits sur la LPPr. Actuellement, cette traçabilité a évolué et dépasse le périmètre initial des DMI inscrits
+sur cette liste :
   
-1. Il existe désormais des DMI, des parties de DMI et des accessoires de
-DMI à traçabilité obligatoire (étant donné qu’ils sont indispensables au
-fonctionnement du DMI) qui sont facturés dans le cadre de soins
-externes ;  
-2. Certains DMI non-inscrits sur la LPPs font l’objet d’une traçabilité
-financière puisque qu’ils sont soumis à contrôle, notamment les DMI
-intra GHS ;  
-3. Il existe des DM non implantables pris en charge au Titre V de la
-LPP, à traçabilité financière indispensable.  
+1. Il existe désormais des DMI, des parties de DMI et des accessoires de DMI à traçabilité obligatoire (étant donné qu’ils sont indispensables au fonctionnement du DMI) qui sont facturés dans le cadre de soins externes ;  
+2. Certains DMI non-inscrits sur la LPPs font l’objet d’une traçabilité financière puisque qu’ils sont soumis à contrôle, notamment les DMI intra GHS ;  
+3. Il existe des DM non implantables pris en charge au Titre V de la LPP, à traçabilité financière indispensable.  
   
-Pour être remboursés intégralement ou partiellement par l’assurance
-maladie, les établissements de santé doivent communiquer mensuellement
-un fichier FICHCOMP (disponible en annexe) ou un RSF (pour les
-établissements sous objectif quantifié national) comportant la liste des
-séjours des patients accompagnée de la liste des DMI posés et inscrits
-sur la LPPr ainsi que d’autres informations telles que le n° FINESS de
-l’établissement, les codes LPP des DMI implantés, le nombre de DMI
-implantés par code LPP, le prix d’achat des DMI, les dates de pose, etc.
+Pour être remboursés intégralement ou partiellement par l’assurance maladie, les établissements de santé doivent communiquer mensuellement un fichier FICHCOMP (disponible en annexe) ou un RSF (pour les établissements sous objectif quantifié national) comportant la liste des
+séjours des patients accompagnée de la liste des DMI posés et inscrits sur la LPPr ainsi que d’autres informations telles que le n° FINESS de l’établissement, les codes LPP des DMI implantés, le nombre de DMI implantés par code LPP, le prix d’achat des DMI, les dates de pose, etc.
 
 ######  Plan Européen
 
-Le règlement européen (UE) 2017/745 impose une traçabilité
-des dispositifs implantables les plus à risque (classe III) aux
-opérateurs économiques mais aussi aux établissements de santé. Cette
-traçabilité se traduit par l’enregistrement de l’IUD des dispositifs
+Le règlement européen (UE) 2017/745 impose une traçabilité des dispositifs implantables les plus à risque (classe III) aux opérateurs économiques mais aussi aux établissements de santé. Cette traçabilité se traduit par l’enregistrement de l’IUD des dispositifs
 qu’ils auront fournis ou qu’on leur aura fournis.
 
-La mise en œuvre de cette traçabilité doit permettre d’identifier
-rapidement et de façon précise quels dispositifs ont été implantés chez
-quels patients, a fortiori en cas de rappel de lot. De plus, il faut à
-tout moment connaitre la localisation d’un DMI non posé, de manière à
-procéder immédiatement au retrait de lot et à la mise en quarantaine en
-cas de rappel ou de signalement d’incident.
+La mise en œuvre de cette traçabilité doit permettre d’identifier rapidement et de façon précise quels dispositifs ont été implantés chez quels patients, a fortiori en cas de rappel de lot. De plus, il faut à tout moment connaitre la localisation d’un DMI non posé, de manière à
+procéder immédiatement au retrait de lot et à la mise en quarantaine en cas de rappel ou de signalement d’incident.
 
-L’accessibilité à ces informations doit être immédiate pour le
-correspondant local de matériovigilance  
+L’accessibilité à ces informations doit être immédiate pour le correspondant local de matériovigilance  
   
 **<u>Système d'identification unique des dispositifs (IUD)</u>**  
-La traçabilité des dispositifs doit reposer sur un système
-d'identification unique des dispositifs (IUD) fondé sur des lignes
-directrices internationales lequel doit permettre d’assurer :
+La traçabilité des dispositifs doit reposer sur un système d'identification unique des dispositifs (IUD) fondé sur des lignes directrices internationales lequel doit permettre d’assurer :
 
 - la sécurité des dispositifs après commercialisation :
   - notification des incidents ;
@@ -627,74 +420,38 @@ directrices internationales lequel doit permettre d’assurer :
 déchets ;
 - la compatibilité avec d'autres systèmes d'authentification.
 
-Concrètement, cela signifie que le système d’IUD passe par l’obligation
-faite aux fabricants d’attribuer à chacun de leurs DM mis sur le marché
-européen un Identifiant Unique du Dispositif (IUD) en suivant les règles
-d’un organisme de standardisation habilité, puis d’apposer cet IUD sous
-la forme d’un code-barres sur le conditionnement du dispositif ou le
-dispositif lui-même. Cet IUD devra être enregistré et partagé par
-l’ensemble des acteurs intervenant dans la chaîne de distribution (e.g.
-opérateurs économiques, établissements de santé).
+Concrètement, cela signifie que le système d’IUD passe par l’obligation faite aux fabricants d’attribuer à chacun de leurs DM mis sur le marché européen un Identifiant Unique du Dispositif (IUD) en suivant les règles d’un organisme de standardisation habilité, puis d’apposer cet IUD sous
+la forme d’un code-barres sur le conditionnement du dispositif ou le dispositif lui-même. Cet IUD devra être enregistré et partagé par l’ensemble des acteurs intervenant dans la chaîne de distribution (e.g. opérateurs économiques, établissements de santé).
 
-L’IUD est un code alphanumérique. Il permet l'identification sans
-ambiguïté d'un dispositif médical spécifique sur le marché. Il comprend
-deux parties :
+L’IUD est un code alphanumérique. Il permet l'identification sans ambiguïté d'un dispositif médical spécifique sur le marché. Il comprend deux parties :
 
-- une première partie, dite « L'IUD-ID » (pour identifiant du dispositif),
-qui est propre à un modèle de dispositif médical. Cette partie du code
-est « statique » et est identique pour tous les dispositifs d’un même
-modèle. Cet identifiant donne accès aux informations prévues dans
+- une première partie, dite « L'IUD-ID » (pour identifiant du dispositif), qui est propre à un modèle de dispositif médical. Cette partie du code est « statique » et est identique pour tous les dispositifs d’un même modèle. Cet identifiant donne accès aux informations prévues dans
 l’annexe VI, partie B du Règlement ;
-- une seconde partie de l’IUD, dite «IUD-IP » (pour identifiant de la production). Il contient les
-informations relatives à chaque unité produite. Les différents types
-d’IUD-IP sont le numéro de série, le numéro de lot, la date de
-fabrication et/ou d’expiration. Cette partie du code est « dynamique »
-et est propre à chaque DM produit.
+- une seconde partie de l’IUD, dite «IUD-IP » (pour identifiant de la production). Il contient les informations relatives à chaque unité produite. Les différents types d’IUD-IP sont le numéro de série, le numéro de lot, la date de fabrication et/ou d’expiration. Cette partie du code est « dynamique » et est propre à chaque DM produit.
 
-**<u>Base de données européenne [EUDAMED](https://ec.europa.eu/growth/sectors/medical-devices/new-regulations/eudamed_en)</u>**
-Le système d’identification IUD doit être « adossé » à une base de
-données européenne appelée EUDAMED, administrée par la Commission
-Européenne (CE). Elle permettra de centraliser les informations
-relatives à tous les DM mis sur le marché de l'Union Européenne, et sera
-en partie ouverte au public. L'IUD-ID constituera la principale clé
-d'accès à ces informations.
+Base de données européenne [EUDAMED](https://ec.europa.eu/growth/sectors/medical-devices/new-regulations/eudamed_en) Le système d’identification IUD doit être « adossé » à une base de données européenne appelée EUDAMED, administrée par la Commission Européenne (CE). Elle permettra de centraliser les informations relatives à tous les DM mis sur le marché de l'Union Européenne, et sera en partie ouverte au public. L'IUD-ID constituera la principale clé d'accès à ces informations.
 
 Cette base EUDAMED a pour objectifs de permettre :
 
-- l'identification unique des DM, et de faciliter leur traçabilité et le
-suivi de leur marquage CE ;
+- l'identification unique des DM, et de faciliter leur traçabilité et le suivi de leur marquage CE ;
 - d'informer le grand public des DM mis sur le marché et des investigations cliniques ;
 - de diffuser une information sur les incidents de matériovigilance ;
-- aux autorités compétentes et à la Commission d'exercer une surveillance du marché ;aux fabricants de
-déposer leurs dossiers d’investigations cliniques ;
+- aux autorités compétentes et à la Commission d'exercer une surveillance du marché ;aux fabricants de déposer leurs dossiers d’investigations cliniques ;
 - aux autorités compétentes de transmettre les notifications des organismes notifiés (ON) ;
 
-Les informations relatives aux DM seront enregistrées par les
-fabricants, les organismes notifiés, et les promoteurs d'investigations
-cliniques selon leurs obligations respectives définies dans le
-règlement. Ces informations seront ensuite accessibles en globalité aux
-États membres et à la Commission et en accès limité aux organismes
-notifiés, aux opérateurs économiques, aux promoteurs et au grand public.
+Les informations relatives aux DM seront enregistrées par les fabricants, les organismes notifiés, et les promoteurs d'investigations cliniques selon leurs obligations respectives définies dans le règlement. Ces informations seront ensuite accessibles en globalité aux
+États membres et à la Commission et en accès limité aux organismes notifiés, aux opérateurs économiques, aux promoteurs et au grand public.
 
-L'obligation faîte aux fabricants d'enregistrer leurs DM dans EUDAMED
-sera effective 24 mois après publication par la Commission Européenne
-d'un avis au JOUE déclarant la pleine fonctionnalité de EUDAMED.
+L'obligation faîte aux fabricants d'enregistrer leurs DM dans EUDAMED sera effective 24 mois après publication par la Commission Européenne d'un avis au JOUE déclarant la pleine fonctionnalité de EUDAMED.
 
 **<u>Carte d’implant :</u>**  
-Le contenu de la carte d’implant réalisé sous la responsabilité du
-fabricant relève de l’article 18 du règlement (UE) 2017/745. Cet article
-présente les informations devant figurer dans une carte d'implant
-fournie par le fabricant, et la liste des DM exemptés. Cette carte
+Le contenu de la carte d’implant réalisé sous la responsabilité du fabricant relève de l’article 18 du règlement (UE) 2017/745. Cet article présente les informations devant figurer dans une carte d'implant fournie par le fabricant, et la liste des DM exemptés. Cette carte
 d'implant doit être remise au patient par l'établissement de santé.
 
 ###### Arrêté relatif au management de la qualité du circuit des DMI
 
-L’arrêté du 8 septembre 2021 relatif au management de la qualité du
-circuit des dispositifs médicaux implantables (DMI) dans les
-établissements de santé et les installations de chirurgie esthétique
-doit entrer en vigueur le 26 mai 2022. Cet article mentionne des items
-précis à « récupérer » en sus de ceux décris dans (R 5212-38 et R
-5212-39) à chaque étape du circuit des DMI :
+L’arrêté du 8 septembre 2021 relatif au management de la qualité du circuit des dispositifs médicaux implantables (DMI) dans les établissements de santé et les installations de chirurgie esthétique doit entrer en vigueur le 26 mai 2022. Cet article mentionne des items
+précis à « récupérer » en sus de ceux décris dans (R 5212-38 et R5212-39) à chaque étape du circuit des DMI :
 
 - Date de péremption
 - Dimensions
@@ -704,112 +461,76 @@ précis à « récupérer » en sus de ceux décris dans (R 5212-38 et R
 
 #### Méthode d'élaboration
 
-Les spécifications « métier » présentées dans ce document suivent la
-méthode d’élaboration des spécifications fonctionnelles des échanges
-mise en oeuvre par l’ANS. Cette méthode est constituée de plusieurs
-étapes :  
+Les spécifications « métier » présentées dans ce document suivent la méthode d’élaboration des spécifications fonctionnelles des échanges mise en oeuvre par l’ANS. Cette méthode est constituée de plusieurs étapes :  
   
 - Étape 1: Organisation du contexte métier ;  
 - Étape 2: Définition des processus métier collaboratifs ;  
-- Étape 3: Description de chaque processus défini et identification des
-flux d’informations ;  
-- Étape 4: Pour chaque flux, identification des concepts "métier"
-véhiculés ;  
-- Étape 5: Élaboration du modèle de chaque flux structuré (sous forme
-d’un ou plusieurs diagrammes de classes UML). Le modèle de chaque flux
-repose sur la reprise des composants mutualisés dans le modèle des
-objets de santé (MOS) et des nomenclatures associées. À l'issue de cette
-élaboration, il se peut que de nouveaux composants jusqu'alors
-inexistants dans le MOS aient été définis et soient intégrés par la
-suite au MOS.  
-- Annexe A : Une définition de chaque concept métier identifié à l'étape
-4 est présentée. Une mise en correspondance entre ces concepts et ceux
-du MOS est également présentée.  
-- Annexe B : Les listes de codes associés à des attributs définis à
-l’étape 5 sont présentées.  
-- Annexe D : Des informations supplémentaires concernant cette étude
-métier sont présentées.
+- Étape 3: Description de chaque processus défini et identification des flux d’informations ;  
+- Étape 4: Pour chaque flux, identification des concepts "métier" véhiculés ;  
+- Étape 5: Élaboration du modèle de chaque flux structuré (sous forme d’un ou plusieurs diagrammes de classes UML). Le modèle de chaque flux repose sur la reprise des composants mutualisés dans le modèle des objets de santé (MOS) et des nomenclatures associées. À l'issue de cette
+élaboration, il se peut que de nouveaux composants jusqu'alors inexistants dans le MOS aient été définis et soient intégrés par la suite au MOS.  
+- Annexe A : Une définition de chaque concept métier identifié à l'étape 4 est présentée. Une mise en correspondance entre ces concepts et ceux du MOS est également présentée.  
+- Annexe B : Les listes de codes associés à des attributs définis à l’étape 5 sont présentées.  
+- Annexe D : Des informations supplémentaires concernant cette étude métier sont présentées.
 
 #### Lectorat cible
 
-Les lecteurs cibles sont principalement des chefs de projets ainsi que
-toute personne concernée par la maîtrise d’ouvrage et qui spécifie des
-projets avec des interfaces interopérables.
+Les lecteurs cibles sont principalement des chefs de projets ainsi que toute personne concernée par la maîtrise d’ouvrage et qui spécifie des projets avec des interfaces interopérables.
 
 ### Organisation du contexte métier
 
-Ce chapitre présente la cartographie des processus du circuit DMI
-permettant son informatisation ainsi que son interopérabilité. La
-Traçabilité des DMI au sein d'un établissement de santé doit être assuré
-tout au long du circuit du DMI. Nous entendons par Traçabilité comme
-précisé dans la définition de la Table 1, le suivi de l’information du
-début jusqu’à la fin d’un processus. Cette traçabilité se décompose en
-plusieurs phases identifiées par les processus collaboratifs suivants :
+Ce chapitre présente la cartographie des processus du circuit DMI permettant son informatisation ainsi que son interopérabilité. La Traçabilité des DMI au sein d'un établissement de santé doit être assuré tout au long du circuit du DMI. Nous entendons par Traçabilité comme
+précisé dans la définition de la Table 1, le suivi de l’information du début jusqu’à la fin d’un processus. Cette traçabilité se décompose en plusieurs phases identifiées par les processus collaboratifs suivants :
 
-- Demander DMI : la demande du/des DMI est effectuée par le service
-utilisateur.
-- Commander DMI : la commande des DMI par le gestionnaire DMI
-(ou la PUI).
-- Réceptionner par le gestionnaire DMI : la réception des DMI
-par le Gestionnaire DMI (ou la PUI).
-- Délivrer DMI au service
-utilisateur : la délivrance des DMI par le gestionnaire DMI (ou la
-PUI).au service utilisateur. Ce processus déclenche également la
-traçabilité de sortie de stock de la PUI.
-- Transporter DMI : le transport intra-hospitalier ou inter-sites est une phase critique dans
-l’acheminement des dispositifs au service utilisateur. Il est important
-d’y tracer les différentes étapes de ce processus.
-- Réceptionner DMI par le service utilisateur : la réception au sein du service utilisateur
-avec une entrée de stock dans le stock de proximité du service.
-- Poser DMI : l’implantation (pose) chez le patient avec enregistrement des
-informations essentielles entre le dispositif et le patient dans le
-système d’information de l’établissement.
-- Facturer DMI : la facturation
-du DMI
-- Tracer : la traçabilité de DMI au sein d'un établissement de
-santé, dans le contexte de cette étude métier, se fait suite au
-déclenchement de l'un des évènements suivants : demande de DMI,
-réception de DMI, sortie de stock, délivrance au service utilisateur,
-transport du DMI, réception de DMI par le service utilisateur, la
-consommation de DMI (posé/non posé) et la facturation du DMI.
-- Rechercher traces : ce processus concerne la recherche des évènements de
-traçabilité concernant un ou plusieurs DMI tout au long du circuit d’un
-DMI au sein d'un établissement de santé.
-- Consulter trace : ce processus concerne la consultation d’un évènement de traçabilité concernant un ou
-plusieurs DMI tout au long du circuit d’un DMI au sein d'un
-établissement de santé.
+- Demander DMI : la demande du/des DMI est effectuée par le service utilisateur.
+- Commander DMI : la commande des DMI par le gestionnaire DMI (ou la PUI).
+- Réceptionner par le gestionnaire DMI : la réception des DMI par le Gestionnaire DMI (ou la PUI).
+- Délivrer DMI au service utilisateur : la délivrance des DMI par le gestionnaire DMI (ou la PUI).au service utilisateur. Ce processus déclenche également la traçabilité de sortie de stock de la PUI.
+- Transporter DMI : le transport intra-hospitalier ou inter-sites est une phase critique dans l’acheminement des dispositifs au service utilisateur. Il est important d’y tracer les différentes étapes de ce processus.
+- Réceptionner DMI par le service utilisateur : la réception au sein du service utilisateur avec une entrée de stock dans le stock de proximité du service.
+- Poser DMI : l’implantation (pose) chez le patient avec enregistrement des informations essentielles entre le dispositif et le patient dans le système d’information de l’établissement.
+- Facturer DMI : la facturation du DMI
+- Tracer : la traçabilité de DMI au sein d'un établissement de santé, dans le contexte de cette étude métier, se fait suite au déclenchement de l'un des évènements suivants : demande de DMI, réception de DMI, sortie de stock, délivrance au service utilisateur,
+transport du DMI, réception de DMI par le service utilisateur, la consommation de DMI (posé/non posé) et la facturation du DMI.
+- Rechercher traces : ce processus concerne la recherche des évènements de traçabilité concernant un ou plusieurs DMI tout au long du circuit d’un DMI au sein d'un établissement de santé.
+- Consulter trace : ce processus concerne la consultation d’un évènement de traçabilité concernant un ou plusieurs DMI tout au long du circuit d’un DMI au sein d'un établissement de santé.
 
-Chaque processus peut contenir un ou plusieurs flux d'échanges entre
-systèmes d'informations ou composants de systèmes d'information.
+Chaque processus peut contenir un ou plusieurs flux d'échanges entre systèmes d'informations ou composants de systèmes d'information.
 
-Il est à noter que d’autres processus pouvant exister comme le processus
-de stérilisation ou le processus de gestion d’achats sont hors périmètre
-de cette étude.
+Il est à noter que d’autres processus pouvant exister comme le processus de stérilisation ou le processus de gestion d’achats sont hors périmètre de cette étude.
 
-L'organisation du contexte métier de la traçabilité de DMI en
-établissement de santé est représentée par le diagramme de paquetage
-ci-dessous :
+L'organisation du contexte métier de la traçabilité de DMI en établissement de santé est représentée par le diagramme de paquetage ci-dessous :
 
-<img src="media/media/image4.png"
-style="width:6.25in;height:3.60417in" />
+<div class="figure" style="text-align: center;">
+    <img src="diag_paquetage.png"
+    alt="Diagramme de paquetage"
+    title="Diagramme de paquetage"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 1 Diagramme de paquetage recensant les processus identifiés
+    <p>
+    Diagramme de paquetage recensant les processus identifiés 
+    </p>
+</div>
 
 ### Définition du processus collaboratif
 
-L’objectif de cette étape est de définir les processus métier
-collaboratifs identifiés dans le diagramme à l’étape 1. Cette
-modélisation est entreprise de façon macroscopique en représentant les
+L’objectif de cette étape est de définir les processus métier collaboratifs identifiés dans le diagramme à l’étape 1. Cette modélisation est entreprise de façon macroscopique en représentant les
 processus par des diagrammes de cas d’utilisation UML.  
 Chaque acteurs (personnes physiques et morales) avec leur périmètre
 d'activité est décrit dans le paragraphe 3.13.
 
 #### "Cas d'utilisation "Demander DMI""
 
-<img src="media/media/image5.png"
-style="width:6.25in;height:1.80208in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisation_demanderDMI.png"
+    alt="Cas d'utilisation Demander DMI"
+    title="Cas d'utilisation Demander DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 2 Cas d'utilisation "Demander DMI"
+    <p>
+    Cas d'utilisation "Demander DMI"
+    </p>
+</div>
 
 <table>
 <colgroup>
@@ -843,10 +564,16 @@ Table 2 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Commander les DMI""
 
-<img src="media/media/image6.png"
-style="width:6.20833in;height:2.125in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisation_commanderDMI.png"
+    alt="Cas d'utilisation Commander les DMI"
+    title="Cas d'utilisation Commander les DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 3 Cas d'utilisation "Commander les DMI"
+    <p>
+    Cas d'utilisation "Commander les DMI"
+    </p>
+</div>
 
 <table>
 <colgroup>
@@ -875,10 +602,16 @@ Table 3 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Réceptionner et contrôler les DMI""
 
-<img src="media/media/image7.png"
-style="width:5.79167in;height:3.58333in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisationReceptionnerControlerDMI.png"
+    alt="Cas d'utilisation Réceptionner et contrôler les DMI"
+    title="Cas d'utilisation Réceptionner et contrôler les DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 4 Cas d'utilisation "Réceptionner et contrôler les DMI"
+    <p>
+    Cas d'utilisation "Réceptionner et contrôler les DMI"
+    </p>
+</div>
 
 | Cas d'utilisation | Description |
 |:---|:---|
@@ -888,10 +621,16 @@ Table 4 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Réceptionner le DMI""
 
-<img src="media/media/image8.png"
-style="width:6.25in;height:2.19792in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisationReceptionnerDMI.png"
+    alt="Cas d'utilisation Réceptionner le DMI"
+    title="Cas d'utilisation Réceptionner le DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 5 Cas d'utilisation "Réceptionner le DMI"
+    <p>
+    Cas d'utilisation "Réceptionner le DMI"
+    </p>
+</div>
 
 | Cas d'utilisation | Description |
 |:---|:---|
@@ -901,10 +640,16 @@ Table 5 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Délivrer les DMI au service utilisateur""
 
-<img src="media/media/image9.png"
-style="width:6.25in;height:3.17708in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisationDelivrerDMI.png"
+    alt="Cas d'utilisation Délivrer les DMI au service utilisateur"
+    title="Cas d'utilisation Délivrer les DMI au service utilisateur"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 6 Cas d'utilisation "Délivrer les DMI au service utilisateur"
+    <p>
+    Cas d'utilisation "Délivrer les DMI au service utilisateur"
+    </p>
+</div>
 
 <table>
 <colgroup>
@@ -943,10 +688,16 @@ Table 6 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Transporter DMI au sein de l'établissement""
 
-<img src="media/media/image10.png"
-style="width:6.25in;height:2.05208in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisationTransporterDMI.png"
+    alt="Cas d'utilisation Transporter DMI au sein de l'établissement"
+    title="Cas d'utilisation Transporter DMI au sein de l'établissement"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 7 Cas d'utilisation "Transporter DMI au sein de l'établissement"
+    <p>
+    Cas d'utilisation "Transporter DMI au sein de l'établissement"
+    </p>
+</div>
 
 <table>
 <colgroup>
@@ -981,11 +732,16 @@ Table 7 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Réceptionner les DMI par le service utilisateur""
 
-<img src="media/media/image11.png"
-style="width:6.25in;height:2.07292in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisationReceptionnerDMIserviceUtilisateur.png"
+    alt="Cas d'utilisation Réceptionner les DMI par le service utilisateur"
+    title="Cas d'utilisation Réceptionner les DMI par le service utilisateur"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 8 Cas d'utilisation "Réceptionner les DMI par le service
-utilisateur"
+    <p>
+    Cas d'utilisation "Réceptionner les DMI par le service utilisateur"
+    </p>
+</div>
 
 | Cas d'utilisation | Description |
 |:---|:---|
@@ -995,10 +751,16 @@ Table 8 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Poser les DMI""
 
-<img src="media/media/image12.png"
-style="width:5.9375in;height:2.04167in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisationPoserDMI.png"
+    alt="Cas d'utilisation Poser les DMI"
+    title="Cas d'utilisation Poser les DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 9 Cas d'utilisation "Poser les DMI"
+    <p>
+    Cas d'utilisation "Poser les DMI"
+    </p>
+</div>
 
 <table>
 <colgroup>
@@ -1034,10 +796,16 @@ Table 9 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Facturation du DMI""
 
-<img src="media/media/image13.png"
-style="width:6.08333in;height:4.5in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisationFacturerDMI.png"
+    alt="Cas d'utilisation Facturation du DMI"
+    title="Cas d'utilisation Facturation du DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 10 Cas d'utilisation "Facturation du DMI"
+    <p>
+    Cas d'utilisation "Facturation du DMI"
+    </p>
+</div>
 
 <table>
 <colgroup>
@@ -1073,10 +841,16 @@ Table 10 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Tracer""
 
-<img src="media/media/image14.png"
-style="width:6.25in;height:0.89583in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisationTracerDMI.png"
+    alt="Cas d'utilisation Tracer"
+    title="Cas d'utilisation Tracer"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 11 Cas d'utilisation "Tracer"
+    <p>
+    Cas d'utilisation "Tracer"
+    </p>
+</div>
 
 <table>
 <colgroup>
@@ -1119,10 +893,16 @@ Table 11 Table des cas d'utilisation
 
 #### "Cas d'utilisation "Rechercher des traces""
 
-<img src="media/media/image15.png"
-style="width:6.25in;height:0.92708in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisationRechercheTrace.png"
+    alt="Cas d'utilisation Rechercher des traces"
+    title="Cas d'utilisation Rechercher des traces"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 12 Cas d'utilisation "Rechercher des traces"
+    <p>
+    Cas d'utilisation "Rechercher des traces"
+    </p>
+</div>
 
 <table>
 <colgroup>
@@ -1153,10 +933,16 @@ Table 12 Table des cas d'utilisation
 
 #### "Cas d'utilisation Consulter une trace"
 
-<img src="media/media/image16.png"
-style="width:6.25in;height:0.94792in" />
+<div class="figure" style="text-align: center;">
+    <img src="cas_utilisationConsulterTrace.png"
+    alt="Cas d'utilisation Consulter une trace"
+    title="Cas d'utilisation Consulter une trace"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 13 Cas d'utilisation Consulter une trace
+    <p>
+    Cas d'utilisation Consulter une trace
+    </p>
+</div>
 
 | Cas d'utilisation | Description |
 |:---|:---|
@@ -1313,10 +1099,16 @@ Ce processus permet d'identifier les flux définis dans le diagramme
 ci-après.  
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image17.png"
-style="width:6.93028in;height:5.16917in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activiteDemanderDMI.png"
+    alt="Diagramme d'activité Demander DMI"
+    title="Diagramme d'activité Demander DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 14 : Diagramme d'activité Demander DMI
+    <p>
+    Diagramme d'activité Demander DMI
+    </p>
+</div>
 
 ##### Actions
 
@@ -1453,10 +1245,16 @@ Ce processus permet d'identifier les flux définis dans le diagramme
 ci-après.  
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image18.png"
-style="width:7.13149in;height:3.28777in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activiteCommanderDMI.png"
+    alt="Diagramme d'activité Commander les DMI"
+    title="Diagramme d'activité Commander les DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 15 : Diagramme d'activité Commander les DMI
+    <p>
+    Diagramme d'activité Commander les DMI
+    </p>
+</div>
 
 ##### Actions
 
@@ -1541,10 +1339,16 @@ Ce processus permet d'identifier les flux définis dans le diagramme
 ci-après.  
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image19.png"
-style="width:7.11534in;height:4.9785in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activiteReceptionnerControler.png"
+    alt="Diagramme d'activité Réceptionner et contrôler DMI"
+    title="Diagramme d'activité Réceptionner et contrôler DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 16 : Diagramme d'activité Réceptionner et contrôler DMI
+    <p>
+    Diagramme d'activité Réceptionner et contrôler DMI
+    </p>
+</div>
 
 ##### Actions
 
@@ -1607,10 +1411,16 @@ Ce processus permet d'identifier les flux définis dans le diagramme
 ci-après.  
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image20.png"
-style="width:7.10921in;height:4.56399in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activiteReceptionnerDMI.png"
+    alt="Diagramme d'activité Réceptionner le DMI"
+    title="Diagramme d'activité Réceptionner le DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 17 : Diagramme d'activité Réceptionner le DMI
+    <p>
+    Diagramme d'activité Réceptionner le DMI
+    </p>
+</div>
 
 ##### Actions
 
@@ -1686,10 +1496,16 @@ Ce processus permet d'identifier les flux définis dans le diagramme
 ci-après.  
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image21.png"
-style="width:7.27494in;height:4.57502in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activiteDelivrerDMI.png"
+    alt="Diagramme d'activité Délivrer DMI au Service Utilisateur"
+    title="Diagramme d'activité Délivrer DMI au Service Utilisateur"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 18 : Diagramme d'activité Délivrer DMI au Service Utilisateur
+    <p>
+    Diagramme d'activité Délivrer DMI au Service Utilisateur
+    </p>
+</div>
 
 ##### Actions
 
@@ -1752,10 +1568,16 @@ Ce processus permet d'identifier les flux définis dans le diagramme
 ci-après.  
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image22.png"
-style="width:7.15306in;height:5.63007in" />
+<div class="figure" style="text-align: center;">
+    <img src="input/images/diagramme_activiteTransporterDMI.png"
+    alt="Diagramme d'activité Transporter DMI"
+    title="Diagramme d'activité Transporter DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 19 : Diagramme d'activité Transporter DMI
+    <p>
+    Diagramme d'activité Transporter DMI
+    </p>
+</div>
 
 ##### Actions
 
@@ -1839,11 +1661,16 @@ Ce processus permet d'identifier les flux définis dans le diagramme
 ci-après.  
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image23.png"
-style="width:7.25221in;height:5.45873in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activiteReceptionnerDMIserviceUtilisateur.png"
+    alt="Diagramme d'activité Réceptionner DMI par le service utilisateur"
+    title="Diagramme d'activité Réceptionner DMI par le service utilisateur"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 20 : Diagramme d'activité Réceptionner DMI par le service
-utilisateur
+    <p>
+    Diagramme d'activité Réceptionner DMI par le service utilisateur
+    </p>
+</div>
 
 ##### Actions
 
@@ -1928,10 +1755,16 @@ Ce processus permet d'identifier les flux définis dans le diagramme
 ci-après.  
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image24.png"
-style="width:7.26812in;height:6.88673in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activitePoserDMI.png"
+    alt="Diagramme d'activité Poser DMI"
+    title="Diagramme d'activité Poser DMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 21 : Diagramme d'activité Poser DMI
+    <p>
+    Diagramme d'activité Poser DMI
+    </p>
+</div>
 
 ##### Actions
 
@@ -2113,10 +1946,16 @@ envoyée par le service utilisateur au gestionnaire DMI.
   
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image25.png"
-style="width:7.03087in;height:6.66747in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activiteFacturerDMI_dv.png"
+    alt="Diagramme d'activité Facturer DMI (dépôt-vente)"
+    title="Diagramme d'activité Facturer DMI (dépôt-vente)"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 22 : Diagramme d'activité Facturer DMI (dépôt-vente)
+    <p>
+    Diagramme d'activité Facturer DMI (dépôt-vente)
+    </p>
+</div>
 
 ##### Actions
 
@@ -2218,10 +2057,16 @@ par le gestionnaire DMI au gestionnaire de comptabilité.
   
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image26.png"
-style="width:6.25in;height:3.85417in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activiteFacturerDMI_achat.png"
+    alt="Diagramme d'activité Facturer DMI (achat)"
+    title="Diagramme d'activité Facturer DMI (achat)"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 23 : Diagramme d'activité Facturer DMI (achat)
+    <p>
+    Diagramme d'activité Facturer DMI (achat)
+    </p>
+</div>
 
 ##### Actions
 
@@ -2250,10 +2095,16 @@ Ce processus permet de modéliser la traçabilité d'un évènement.
   
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image27.png"
-style="width:6.25in;height:3.96875in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activiteTracer.png"
+    alt="Diagramme d'activité Tracer"
+    title="Diagramme d'activité Tracer"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 24 : Diagramme d'activité Tracer
+    <p>
+    Diagramme d'activité Tracer
+    </p>
+</div>
 
 ##### Actions
 
@@ -2281,9 +2132,16 @@ ci-après.
   
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image28.png" style="width:6.25in;height:5in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activiteRechercheTrace.png"
+    alt="Diagramme d'activité Rechercher des traces"
+    title="Diagramme d'activité Rechercher des traces"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 25 : Diagramme d'activité Rechercher des traces
+    <p>
+    Diagramme d'activité Rechercher des traces
+    </p>
+</div>
 
 ##### Actions
 
@@ -2313,9 +2171,16 @@ ci-après.
   
 Se référer au Tableau 14 pour la définition des acteurs.
 
-<img src="media/media/image29.png" style="width:6.25in;height:6.25in" />
+<div class="figure" style="text-align: center;">
+    <img src="diagramme_activiteConsulterTrace.png"
+    alt="Diagramme d'activité Consulter une trace"
+    title="Diagramme d'activité Consulter une trace"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 26 : Diagramme d'activité Consulter une trace
+    <p>
+    Diagramme d'activité Consulter une trace
+    </p>
+</div>
 
 ##### Actions
 
@@ -2563,10 +2428,16 @@ Cette section présente le diagramme de classes du Flux 1 - DemandeDMI.
 Ce flux concerne la création, la mise à jour ou la suppression d'une
 demande de DMI envoyée au gestionnaire DMI par le service utilisateur.
 
-<img src="media/media/image30.png"
-style="width:7.33919in;height:4.1997in" />
+<div class="figure" style="text-align: center;">
+    <img src="flux1_demandeDMI.png"
+    alt="Flux 1 - DemandeDMI"
+    title="Flux 1 - DemandeDMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 27 Flux 1 - DemandeDMI
+    <p>
+    Flux 1 - DemandeDMI
+    </p>
+</div>
 
 ##### Classe "Demande"
 
@@ -2697,10 +2568,16 @@ ReponseDemandeDMI. Il s'agit du flux de réponse de la part du
 gestionnaire DMI après avoir reçu la demande soit de création ou de mise
 à jour.
 
-<img src="media/media/image31.png"
-style="width:6.77222in;height:2.68125in" />
+<div class="figure" style="text-align: center;">
+    <img src="flux2_reponseDemandeDMI.png"
+    alt="Flux 2 - ReponseDemandeDMI"
+    title="Flux 2 - ReponseDemandeDMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 28 Flux 2 - ReponseDemandeDMI
+    <p>
+    Flux 1 - DemandeDMI
+    </p>
+</div>
 
 ##### Classe "Reponse"
 
@@ -2775,10 +2652,16 @@ Cette section présente le diagramme de classes du Flux 3 - CommandeDMI.
 Ce flux concerne la soumission par le gestionnaire DMI de la commande de
 DMI auprès du fournisseur (fabricant ou distributeur).
 
-<img src="media/media/image32.png"
-style="width:7.33016in;height:4.49944in" />
+<div class="figure" style="text-align: center;">
+    <img src="flux3_commandeDMI.png"
+    alt="Flux 3 - CommandeDMI"
+    title="Flux 3 - CommandeDMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 29 Flux 3 - CommandeDMI
+    <p>
+    Flux 3 - CommandeDMI
+    </p>
+</div>
 
 ##### Classe "Commande"
 
@@ -2852,10 +2735,16 @@ binaire
 Cette section présente le diagramme de classes du Flux 4 - LivraisonDMI.
 Ce flux concerne la réception des DMI par le gestionnaire de réception.
 
-<img src="media/media/image33.png"
-style="width:7.49689in;height:4.23785in" />
+<div class="figure" style="text-align: center;">
+    <img src="flux4_livraisonDMI.png"
+    alt="Flux 4 - LivraisonDMI"
+    title="Flux 4 - LivraisonDMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 30 Flux 4 - LivraisonDMI
+    <p>
+    Flux 4 - LivraisonDMI
+    </p>
+</div>
 
 ##### Classe "Livraison"
 
@@ -2966,10 +2855,16 @@ Cette section présente le diagramme de classes du Flux 5b -
 ReceptionUnitaireDM. Ce flux concerne les DMI réceptionnés par le
 gestionnaire de réception.
 
-<img src="media/media/image34.png"
-style="width:7.39813in;height:4.60267in" />
+<div class="figure" style="text-align: center;">
+    <img src="flux5b_receptionUnitaireDMI.png"
+    alt="Flux 5b - ReceptionUnitaireDMI"
+    title="Flux 5b - ReceptionUnitaireDMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 31 Flux 5b - ReceptionUnitaireDMI
+    <p>
+    Flux 5b - ReceptionUnitaireDMI
+    </p>
+</div>
 
 ##### Classe "StatutReception"
 
@@ -3150,10 +3045,16 @@ Ce flux concerne l'envoie des informations nécessaires au gestionnaire
 de réception du service utilisateur concernant les DMI délivrés par la
 PUI.
 
-<img src="media/media/image35.png"
-style="width:7.43232in;height:4.43919in" />
+<div class="figure" style="text-align: center;">
+    <img src="flux6_delivrerSU.png"
+    alt="Flux 6 - DelivrerSU"
+    title="Flux 6 - DelivrerSU"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 32 Flux 6 - DelivrerSU
+    <p>
+    Flux 6 - DelivrerSU
+    </p>
+</div>
 
 ##### Classe "Delivrance"
 
@@ -3266,10 +3167,16 @@ Ce flux concerne l'envoie des informations nécessaires au gestionnaire
 de réception du service utilisateur concernant le transport des DMI qui
 sont acheminés.
 
-<img src="media/media/image36.png"
-style="width:7.00677in;height:2.88552in" />
+<div class="figure" style="text-align: center;">
+    <img src="flux8_transportDMI.png"
+    alt="Flux 8 - TransportDMI"
+    title="Flux 8 - TransportDMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 33 Flux 8 - TransportDMI
+    <p>
+    Flux 8 - TransportDMI
+    </p>
+</div>
 
 ##### Classe "Transport"
 
@@ -3389,10 +3296,16 @@ Cette section présente le diagramme de classes du Flux 10 - ReceptionSU.
 Ce flux concerne l'envoie des informations nécessaires au service
 utilisateur concernant la réception des DMI dans ses locaux.
 
-<img src="media/media/image37.png"
-style="width:7.1716in;height:3.6135in" />
+<div class="figure" style="text-align: center;">
+    <img src="flux10_receptionSU.png"
+    alt="Flux 10 - ReceptionSU"
+    title="Flux 10 - ReceptionSU"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 34 Flux 10 - ReceptionSU
+    <p>
+    Flux 10 - ReceptionSU
+    </p>
+</div>
 
 ##### Classe "ReceptionDMI"
 
@@ -3595,10 +3508,16 @@ ConsommationDMI. Ce flux concerne l'envoie des informations nécessaires
 au gestionnaire DMI concernant la pose du (des) DMI par le service
 utilisateur chez un patient.
 
-<img src="media/media/image38.png"
-style="width:7.52806in;height:3.60115in" />
+<div class="figure" style="text-align: center;">
+    <img src="flux13_consommationDMI.png"
+    alt="Flux 13 - ConsommationDMI"
+    title="Flux 13 - ConsommationDMI"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 35 Flux 13 - ConsommationDMI
+    <p>
+    Flux 13 - ConsommationDMI
+    </p>
+</div>
 
 ##### Classe "InterventionMedicale"
 
@@ -3891,10 +3810,16 @@ AutorisationPaiement. Ce flux concerne l'envoie des informations
 nécessaires au gestionnaire de compatibilité afin de régler la facture
 auprès du fournisseur.
 
-<img src="media/media/image39.png"
-style="width:6.9724in;height:3.66209in" />
+<div class="figure" style="text-align: center;">
+    <img src="flux17_authorisationPaiement.png"
+    alt="Flux 17 - AutorisationPaiement"
+    title="Flux 17 - AutorisationPaiement"
+    style="width:5.74528in;height:2.95283in">
 
-Figure 36 Flux 17 - AutorisationPaiement
+    <p>
+    Flux 17 - AutorisationPaiement
+    </p>
+</div>
 
 ##### Classe "Facture"
 
