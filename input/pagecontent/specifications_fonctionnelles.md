@@ -320,7 +320,7 @@ L'établissement doit faire figurer dans le dossier patient :
 </table>
 
 <p style="text-align:center;">
-Table 2 – Les informations obligatoires de traçabilité de DMI
+Les informations obligatoires de traçabilité de DMI
 </p>
 
 ###### Instruction n° DGOS/PF2/2015/200 du 15 juin 2015
@@ -378,7 +378,7 @@ praticien « implanteur », quelle que soit sa qualité</li>
 </table>
 
 <p style="text-align: center;">
-Table 3 Les définitions fournies par Euro-Pharmat
+Les définitions fournies par Euro-Pharmat
 </p>
 
 **<u>La traçabilité financière dans le cadre de la T2A (Tarification à l'activité):</u>**  
@@ -397,11 +397,9 @@ séjours des patients accompagnée de la liste des DMI posés et inscrits sur la
 
 ######  Plan Européen
 
-Le règlement européen (UE) 2017/745 impose une traçabilité des dispositifs implantables les plus à risque (classe III) aux opérateurs économiques mais aussi aux établissements de santé. Cette traçabilité se traduit par l’enregistrement de l’IUD des dispositifs
-qu’ils auront fournis ou qu’on leur aura fournis.
+Le règlement européen (UE) 2017/745 impose une traçabilité des dispositifs implantables les plus à risque (classe III) aux opérateurs économiques mais aussi aux établissements de santé. Cette traçabilité se traduit par l’enregistrement de l’IUD des dispositifs qu’ils auront fournis ou qu’on leur aura fournis.
 
-La mise en œuvre de cette traçabilité doit permettre d’identifier rapidement et de façon précise quels dispositifs ont été implantés chez quels patients, a fortiori en cas de rappel de lot. De plus, il faut à tout moment connaitre la localisation d’un DMI non posé, de manière à
-procéder immédiatement au retrait de lot et à la mise en quarantaine en cas de rappel ou de signalement d’incident.
+La mise en œuvre de cette traçabilité doit permettre d’identifier rapidement et de façon précise quels dispositifs ont été implantés chez quels patients, a fortiori en cas de rappel de lot. De plus, il faut à tout moment connaitre la localisation d’un DMI non posé, de manière à procéder immédiatement au retrait de lot et à la mise en quarantaine en cas de rappel ou de signalement d’incident.
 
 L’accessibilité à ces informations doit être immédiate pour le correspondant local de matériovigilance  
   
@@ -420,13 +418,11 @@ La traçabilité des dispositifs doit reposer sur un système d'identification u
 déchets ;
 - la compatibilité avec d'autres systèmes d'authentification.
 
-Concrètement, cela signifie que le système d’IUD passe par l’obligation faite aux fabricants d’attribuer à chacun de leurs DM mis sur le marché européen un Identifiant Unique du Dispositif (IUD) en suivant les règles d’un organisme de standardisation habilité, puis d’apposer cet IUD sous
-la forme d’un code-barres sur le conditionnement du dispositif ou le dispositif lui-même. Cet IUD devra être enregistré et partagé par l’ensemble des acteurs intervenant dans la chaîne de distribution (e.g. opérateurs économiques, établissements de santé).
+Concrètement, cela signifie que le système d’IUD passe par l’obligation faite aux fabricants d’attribuer à chacun de leurs DM mis sur le marché européen un Identifiant Unique du Dispositif (IUD) en suivant les règles d’un organisme de standardisation habilité, puis d’apposer cet IUD sous la forme d’un code-barres sur le conditionnement du dispositif ou le dispositif lui-même. Cet IUD devra être enregistré et partagé par l’ensemble des acteurs intervenant dans la chaîne de distribution (e.g. opérateurs économiques, établissements de santé).
 
 L’IUD est un code alphanumérique. Il permet l'identification sans ambiguïté d'un dispositif médical spécifique sur le marché. Il comprend deux parties :
 
-- une première partie, dite « L'IUD-ID » (pour identifiant du dispositif), qui est propre à un modèle de dispositif médical. Cette partie du code est « statique » et est identique pour tous les dispositifs d’un même modèle. Cet identifiant donne accès aux informations prévues dans
-l’annexe VI, partie B du Règlement ;
+- une première partie, dite « L'IUD-ID » (pour identifiant du dispositif), qui est propre à un modèle de dispositif médical. Cette partie du code est « statique » et est identique pour tous les dispositifs d’un même modèle. Cet identifiant donne accès aux informations prévues dans l’annexe VI, partie B du Règlement ;
 - une seconde partie de l’IUD, dite «IUD-IP » (pour identifiant de la production). Il contient les informations relatives à chaque unité produite. Les différents types d’IUD-IP sont le numéro de série, le numéro de lot, la date de fabrication et/ou d’expiration. Cette partie du code est « dynamique » et est propre à chaque DM produit.
 
 Base de données européenne [EUDAMED](https://ec.europa.eu/growth/sectors/medical-devices/new-regulations/eudamed_en) Le système d’identification IUD doit être « adossé » à une base de données européenne appelée EUDAMED, administrée par la Commission Européenne (CE). Elle permettra de centraliser les informations relatives à tous les DM mis sur le marché de l'Union Européenne, et sera en partie ouverte au public. L'IUD-ID constituera la principale clé d'accès à ces informations.
@@ -439,19 +435,16 @@ Cette base EUDAMED a pour objectifs de permettre :
 - aux autorités compétentes et à la Commission d'exercer une surveillance du marché ;aux fabricants de déposer leurs dossiers d’investigations cliniques ;
 - aux autorités compétentes de transmettre les notifications des organismes notifiés (ON) ;
 
-Les informations relatives aux DM seront enregistrées par les fabricants, les organismes notifiés, et les promoteurs d'investigations cliniques selon leurs obligations respectives définies dans le règlement. Ces informations seront ensuite accessibles en globalité aux
-États membres et à la Commission et en accès limité aux organismes notifiés, aux opérateurs économiques, aux promoteurs et au grand public.
+Les informations relatives aux DM seront enregistrées par les fabricants, les organismes notifiés, et les promoteurs d'investigations cliniques selon leurs obligations respectives définies dans le règlement. Ces informations seront ensuite accessibles en globalité aux États membres et à la Commission et en accès limité aux organismes notifiés, aux opérateurs économiques, aux promoteurs et au grand public.
 
 L'obligation faîte aux fabricants d'enregistrer leurs DM dans EUDAMED sera effective 24 mois après publication par la Commission Européenne d'un avis au JOUE déclarant la pleine fonctionnalité de EUDAMED.
 
 **<u>Carte d’implant :</u>**  
-Le contenu de la carte d’implant réalisé sous la responsabilité du fabricant relève de l’article 18 du règlement (UE) 2017/745. Cet article présente les informations devant figurer dans une carte d'implant fournie par le fabricant, et la liste des DM exemptés. Cette carte
-d'implant doit être remise au patient par l'établissement de santé.
+Le contenu de la carte d’implant réalisé sous la responsabilité du fabricant relève de l’article 18 du règlement (UE) 2017/745. Cet article présente les informations devant figurer dans une carte d'implant fournie par le fabricant, et la liste des DM exemptés. Cette carte d'implant doit être remise au patient par l'établissement de santé.
 
 ###### Arrêté relatif au management de la qualité du circuit des DMI
 
-L’arrêté du 8 septembre 2021 relatif au management de la qualité du circuit des dispositifs médicaux implantables (DMI) dans les établissements de santé et les installations de chirurgie esthétique doit entrer en vigueur le 26 mai 2022. Cet article mentionne des items
-précis à « récupérer » en sus de ceux décris dans (R 5212-38 et R5212-39) à chaque étape du circuit des DMI :
+L’arrêté du 8 septembre 2021 relatif au management de la qualité du circuit des dispositifs médicaux implantables (DMI) dans les établissements de santé et les installations de chirurgie esthétique doit entrer en vigueur le 26 mai 2022. Cet article mentionne des items précis à « récupérer » en sus de ceux décris dans (R 5212-38 et R5212-39) à chaque étape du circuit des DMI :
 
 - Date de péremption
 - Dimensions
@@ -467,8 +460,7 @@ Les spécifications « métier » présentées dans ce document suivent la méth
 - Étape 2: Définition des processus métier collaboratifs ;  
 - Étape 3: Description de chaque processus défini et identification des flux d’informations ;  
 - Étape 4: Pour chaque flux, identification des concepts "métier" véhiculés ;  
-- Étape 5: Élaboration du modèle de chaque flux structuré (sous forme d’un ou plusieurs diagrammes de classes UML). Le modèle de chaque flux repose sur la reprise des composants mutualisés dans le modèle des objets de santé (MOS) et des nomenclatures associées. À l'issue de cette
-élaboration, il se peut que de nouveaux composants jusqu'alors inexistants dans le MOS aient été définis et soient intégrés par la suite au MOS.  
+- Étape 5: Élaboration du modèle de chaque flux structuré (sous forme d’un ou plusieurs diagrammes de classes UML). Le modèle de chaque flux repose sur la reprise des composants mutualisés dans le modèle des objets de santé (MOS) et des nomenclatures associées. À l'issue de cette élaboration, il se peut que de nouveaux composants jusqu'alors inexistants dans le MOS aient été définis et soient intégrés par la suite au MOS.  
 - Annexe A : Une définition de chaque concept métier identifié à l'étape 4 est présentée. Une mise en correspondance entre ces concepts et ceux du MOS est également présentée.  
 - Annexe B : Les listes de codes associés à des attributs définis à l’étape 5 sont présentées.  
 - Annexe D : Des informations supplémentaires concernant cette étude métier sont présentées.
@@ -479,8 +471,7 @@ Les lecteurs cibles sont principalement des chefs de projets ainsi que toute per
 
 ### Organisation du contexte métier
 
-Ce chapitre présente la cartographie des processus du circuit DMI permettant son informatisation ainsi que son interopérabilité. La Traçabilité des DMI au sein d'un établissement de santé doit être assuré tout au long du circuit du DMI. Nous entendons par Traçabilité comme
-précisé dans la définition de la Table 1, le suivi de l’information du début jusqu’à la fin d’un processus. Cette traçabilité se décompose en plusieurs phases identifiées par les processus collaboratifs suivants :
+Ce chapitre présente la cartographie des processus du circuit DMI permettant son informatisation ainsi que son interopérabilité. La Traçabilité des DMI au sein d'un établissement de santé doit être assuré tout au long du circuit du DMI. Nous entendons par Traçabilité comme précisé dans la définition de la Table 1, le suivi de l’information du début jusqu’à la fin d’un processus. Cette traçabilité se décompose en plusieurs phases identifiées par les processus collaboratifs suivants :
 
 - Demander DMI : la demande du/des DMI est effectuée par le service utilisateur.
 - Commander DMI : la commande des DMI par le gestionnaire DMI (ou la PUI).
@@ -514,10 +505,7 @@ L'organisation du contexte métier de la traçabilité de DMI en établissement 
 
 ### Définition du processus collaboratif
 
-L’objectif de cette étape est de définir les processus métier collaboratifs identifiés dans le diagramme à l’étape 1. Cette modélisation est entreprise de façon macroscopique en représentant les
-processus par des diagrammes de cas d’utilisation UML.  
-Chaque acteurs (personnes physiques et morales) avec leur périmètre
-d'activité est décrit dans le paragraphe 3.13.
+L’objectif de cette étape est de définir les processus métier collaboratifs identifiés dans le diagramme à l’étape 1. Cette modélisation est entreprise de façon macroscopique en représentant les processus par des diagrammes de cas d’utilisation UML. Chaque acteurs (personnes physiques et morales) avec leur périmètre d'activité est décrit dans le paragraphe 3.13.
 
 #### "Cas d'utilisation "Demander DMI""
 
@@ -546,21 +534,13 @@ d'activité est décrit dans le paragraphe 3.13.
 <tbody>
 <tr>
 <td style="text-align: left;">Demander DMI</td>
-<td style="text-align: left;">Le service utilisateur effectue une
-demande de DMI (ou plusieurs) dans le cadre d'une intervention
-programmée ou dans le cadre du réapprovisionnement de son stock de DMI
-en dotation ou en dépôt vente. Cette demande doit être enregistrée au
-sein du logiciel de traçabilité des DMI.<br />
-Dans ce cas d'utilisation, le gestionnaire DMI analyse la demande au
-regard de la liste des dispositifs médicaux stériles implantables
-élaborés par la commission ou conférence médicale (COMEDIMS)
-d'établissement et dont l'utilisation est préconisée conformément à
-l'article R.6111-10 du code de la santé publique.</td>
+<td style="text-align: left;">Le service utilisateur effectue une demande de DMI (ou plusieurs) dans le cadre d'une intervention programmée ou dans le cadre du réapprovisionnement de son stock de DMI en dotation ou en dépôt vente. Cette demande doit être enregistrée au sein du logiciel de traçabilité des DMI.<br/>
+Dans ce cas d'utilisation, le gestionnaire DMI analyse la demande au regard de la liste des dispositifs médicaux stériles implantables élaborés par la commission ou conférence médicale (COMEDIMS) d'établissement et dont l'utilisation est préconisée conformément à l'article R.6111-10 du code de la santé publique.</td>
 </tr>
 </tbody>
 </table>
 
-Table 2 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### "Cas d'utilisation "Commander les DMI""
 
@@ -589,16 +569,13 @@ Table 2 Table des cas d'utilisation
 <tbody>
 <tr>
 <td style="text-align: left;">Commander les DMI</td>
-<td style="text-align: left;">Après validation par le gestionnaire DMI
-de la demande du service utilisateur, la PUI effectue la commande des
-DMI.<br />
-Le processus de commande des DMI gère les créations, les mises à jour ou
-les annulations de commandes.</td>
+<td style="text-align: left;">Après validation par le gestionnaire DMI de la demande du service utilisateur, la PUI effectue la commande des DMI.<br />
+Le processus de commande des DMI gère les créations, les mises à jour ou les annulations de commandes.</td>
 </tr>
 </tbody>
 </table>
 
-Table 3 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### "Cas d'utilisation "Réceptionner et contrôler les DMI""
 
@@ -617,7 +594,7 @@ Table 3 Table des cas d'utilisation
 |:---|:---|
 | Réceptionner et contrôler DMI | Le gestionnaire de réception assure l'admission des dispositifs commandés au sein de l'établissement. Il effectue une confrontation des bons de réception/livraison des DMI effectivement livrés. |
 
-Table 4 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### "Cas d'utilisation "Réceptionner le DMI""
 
@@ -636,7 +613,7 @@ Table 4 Table des cas d'utilisation
 |:---|:---|
 | Réceptionner le DMI | Le gestionnaire de réception assure également l'enregistrement des informations relatives aux DMI réceptionnés. Cette action nécessite l'utilisation d'un périphérique de douchage. Si aucune alerte sanitaire concerne les DMI reçus, le gestionnaire de réception enregistre l'entrée au stock au sein de l'établissement de santé des nouveaux DMI une fois la réception validée. |
 
-Table 5 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### "Cas d'utilisation "Délivrer les DMI au service utilisateur""
 
@@ -665,26 +642,15 @@ Table 5 Table des cas d'utilisation
 <tbody>
 <tr>
 <td style="text-align: left;">Délivrer DMI</td>
-<td style="text-align: left;">La délivrance de DMI est réalisée par le
-gestionnaire DMI (i.e.: PUI) à destination du service utilisateur. Le
-gestionnaire DMI enregistre la sortie au stock de la PUI des DMI
-délivrés au service utilisateur. C'est le gestionnaire de réception du
-service utilisateur qui effectue l'admission des dispositifs au sein du
-service.<br />
+<td style="text-align: left;">La délivrance de DMI est réalisée par le gestionnaire DMI (i.e.: PUI) à destination du service utilisateur. Le gestionnaire DMI enregistre la sortie au stock de la PUI des DMI délivrés au service utilisateur. C'est le gestionnaire de réception du service utilisateur qui effectue l'admission des dispositifs au sein du service.<br />
 <br />
-- Si la PUI gère les dispositifs en stock alors le gestionnaire DMI fait
-appel au service logistique pour effectuer le transport des dispositifs
-à destination du service utilisateur.<br />
-- Si la PUI gère les dispositifs hors stock ceux-ci étant physiquement
-dans le stock de proximité du service utilisateur mais sous la
-responsabilité de la PUI (informatiquement parlant les dispositifs sont
-considérés appartenir au stock de la PUI jusqu'à la délivrance) , le
-transport est dans ce cas inutile.</td>
+- Si la PUI gère les dispositifs en stock alors le gestionnaire DMI fait appel au service logistique pour effectuer le transport des dispositifs à destination du service utilisateur.<br />
+- Si la PUI gère les dispositifs hors stock ceux-ci étant physiquement dans le stock de proximité du service utilisateur mais sous la responsabilité de la PUI (informatiquement parlant les dispositifs sont considérés appartenir au stock de la PUI jusqu'à la délivrance) , le transport est dans ce cas inutile.</td>
 </tr>
 </tbody>
 </table>
 
-Table 6 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### "Cas d'utilisation "Transporter DMI au sein de l'établissement""
 
@@ -713,22 +679,14 @@ Table 6 Table des cas d'utilisation
 <tbody>
 <tr>
 <td style="text-align: left;">Transporter DMI</td>
-<td style="text-align: left;">Un contrat définissant les règles et
-délais de transport doit être rédigé entre la PUI, les services
-utilisateurs et le service logistique assurant la livraison. La
-livraison doit s'effectuer dans des conditions permettant d'assurer la
-bonne conservation et l'intégrité des DMI.<br />
-Les étapes de la livraison et le lieu de livraison sont tracés au sein
-du système d'information ce qui correspond à la traçabilité logistique.
-Les problèmes rencontrés lors de la livraison sont remontés à la PUI et
-enregistrés.<br />
-Le gestionnaire de réception service utilisateur assure la bonne
-réception des dispositifs au sein du service utilisateur.</td>
+<td style="text-align: left;">Un contrat définissant les règles et délais de transport doit être rédigé entre la PUI, les services utilisateurs et le service logistique assurant la livraison. La livraison doit s'effectuer dans des conditions permettant d'assurer la bonne conservation et l'intégrité des DMI.<br />
+Les étapes de la livraison et le lieu de livraison sont tracés au sein du système d'information ce qui correspond à la traçabilité logistique. Les problèmes rencontrés lors de la livraison sont remontés à la PUI et enregistrés.<br />
+Le gestionnaire de réception service utilisateur assure la bonne réception des dispositifs au sein du service utilisateur.</td>
 </tr>
 </tbody>
 </table>
 
-Table 7 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### "Cas d'utilisation "Réceptionner les DMI par le service utilisateur""
 
@@ -747,7 +705,7 @@ Table 7 Table des cas d'utilisation
 |:---|:---|
 | Réceptionner les DMI par le service utilisateur | Il s'agit pour le gestionnaire de réception du service utilisateur (ou cadre de l'unité de soins) d'enregistrer la réception de DMI dans les locaux de son service. Le cadre de l'unité de soins enregistre l'entrée en stock des DMI dans son service. Comme au sein de la PUI, les DMI sont détenus dans des conditions permettant d'assurer leur intégrité et leur stérilité. |
 
-Table 8 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### "Cas d'utilisation "Poser les DMI""
 
@@ -776,23 +734,14 @@ Table 8 Table des cas d'utilisation
 <tbody>
 <tr>
 <td style="text-align: left;">Poser DMI</td>
-<td style="text-align: left;">L'acte de pose de DMI est effectué par le
-service utilisateur chez la personne prise en charge dans le cadre d’une
-intervention chirurgicale ou médicale. Le service utilisateur trace les
-DMI posés. c'est à dire enregistre au sein du logiciel de traçabilité
-les informations nécessaires à la traçabilité de la pose des DMI (RPPS
-poseur, Finess Géographique, IPP patient, ...). Une traçabilité des DMI
-est réalisée en attribuant les lots concernés au numéro de séjour du
-patient.<br />
-Si un défaut survient lors de l'utilisation du DMI, l'équipe médicale
-doit déclarer cet événement au correspondant de matériovigilance. Il est
-nécessaire de tracer tous les DMI non implantés suite aux échecs de
-pose.</td>
+<td style="text-align: left;">L'acte de pose de DMI est effectué par le service utilisateur chez la personne prise en charge dans le cadre d’une intervention chirurgicale ou médicale. Le service utilisateur trace les DMI posés. c'est à dire enregistre au sein du logiciel de traçabilité les informations nécessaires à la traçabilité de la pose des DMI (RPPS
+poseur, Finess Géographique, IPP patient, ...). Une traçabilité des DMI est réalisée en attribuant les lots concernés au numéro de séjour du patient.<br />
+Si un défaut survient lors de l'utilisation du DMI, l'équipe médicale doit déclarer cet événement au correspondant de matériovigilance. Il est nécessaire de tracer tous les DMI non implantés suite aux échecs de pose.</td>
 </tr>
 </tbody>
 </table>
 
-Table 9 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### "Cas d'utilisation "Facturation du DMI""
 
@@ -821,23 +770,17 @@ Table 9 Table des cas d'utilisation
 <tbody>
 <tr>
 <td style="text-align: left;">Facturer DMI</td>
-<td style="text-align: left;">Lors du processus de pose du (des)
-dispositifs, le service utilisateur informe la PUI des consommations de
-DMI.<br />
-Le gestionnaire DMI assure durant ce processus les traitements engendrés
-par la consommation d'un DMI :<br />
-- traitement financier dans le cas d'un dépôt vente (temporaire ou
-permanent)<br />
-- et/ou une demande de réassort selon les règles de réassort en DMI
-auprès du fournisseur définies par l'établissement de santé.<br />
+<td style="text-align: left;">Lors du processus de pose du (des) dispositifs, le service utilisateur informe la PUI des consommations de DMI.<br />
+Le gestionnaire DMI assure durant ce processus les traitements engendrés par la consommation d'un DMI :<br />
+- traitement financier dans le cas d'un dépôt vente (temporaire ou permanent)<br />
+- et/ou une demande de réassort selon les règles de réassort en DMI auprès du fournisseur définies par l'établissement de santé.<br />
 <br />
-Les modalités de facturation doivent être intégrées au système de
-traçabilité des DMI.</td>
+Les modalités de facturation doivent être intégrées au système de traçabilité des DMI.</td>
 </tr>
 </tbody>
 </table>
 
-Table 10 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### "Cas d'utilisation "Tracer""
 
@@ -866,11 +809,7 @@ Table 10 Table des cas d'utilisation
 <tbody>
 <tr>
 <td style="text-align: left;">Tracer</td>
-<td style="text-align: left;">Ce processus permet de tracer un évènement
-au sein de l'établissement de santé. Cette traçabilité se déclenche dans
-plusieurs étapes afin de suivre le parcours DMI au sein de
-l’établissement de santé. Les évènements qui peuvent déclencher le
-processus de traçabilité de DMI sont les suivants:<br />
+<td style="text-align: left;">Ce processus permet de tracer un évènement au sein de l'établissement de santé. Cette traçabilité se déclenche dans plusieurs étapes afin de suivre le parcours DMI au sein de l’établissement de santé. Les évènements qui peuvent déclencher le processus de traçabilité de DMI sont les suivants:<br />
 <br />
 - Demande de DMI<br />
 - Commande de DMI<br />
@@ -881,15 +820,12 @@ processus de traçabilité de DMI sont les suivants:<br />
 - Consommation de DMI (posé/non posé)<br />
 - Facturation de DMI<br />
 <br />
-Ce processus réutilise le processus générique "Créer des traces" de
-l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude
-métier – Généricisation : Spécifications fonctionnelles des échanges
-Gestion des traces).</td>
+Ce processus réutilise le processus générique "Créer des traces" de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces).</td>
 </tr>
 </tbody>
 </table>
 
-Table 11 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### "Cas d'utilisation "Rechercher des traces""
 
@@ -918,18 +854,14 @@ Table 11 Table des cas d'utilisation
 <tbody>
 <tr>
 <td style="text-align: left;">RechercherTraces</td>
-<td style="text-align: left;">Un consommateur recherche les évènements
-de traçabilité liés à un ou plusieurs évènements de traçabilité.<br />
+<td style="text-align: left;">Un consommateur recherche les évènements de traçabilité liés à un ou plusieurs évènements de traçabilité.<br />
 <br />
-Ce processus réutilise le processus générique " Rechercher des traces"
-de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS
-Etude métier – Généricisation : Spécifications fonctionnelles des
-échanges Gestion des traces).</td>
+Ce processus réutilise le processus générique " Rechercher des traces" de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces).</td>
 </tr>
 </tbody>
 </table>
 
-Table 12 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### "Cas d'utilisation Consulter une trace"
 
@@ -948,7 +880,7 @@ Table 12 Table des cas d'utilisation
 |:---|:---|
 | ConsulterTrace | Ce processus réutilise le processus générique ""Consulter une trace"" de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces). |
 
-Table 13 Table des cas d'utilisation
+<p style="text-align: center;"> Table des cas d'utilisation </p>
 
 #### Acteurs
 
@@ -966,128 +898,67 @@ Table 13 Table des cas d'utilisation
 <tbody>
 <tr>
 <td style="text-align: left;">Source de traçabilité</td>
-<td style="text-align: left;">Il s’agit d’un acteur système qui envoie
-les informations de traçabilité liées au parcours du DMI au sein de
-l’établissement de santé.</td>
+<td style="text-align: left;">Il s’agit d’un acteur système qui envoie les informations de traçabilité liées au parcours du DMI au sein de l’établissement de santé.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Gestionnaire de traçabilité</td>
-<td style="text-align: left;">Il s’agit d’un acteur système (un système
-d'information ou un composant d'un système d'information) qui enregistre
-les informations de traçabilité liées au parcours du DMI au sein de
-l’établissement de santé. Le gestionnaire de traçabilité peut être, par
-exemple, un logiciel de traçabilité.<br />
+<td style="text-align: left;">Il s’agit d’un acteur système (un système d'information ou un composant d'un système d'information) qui enregistre les informations de traçabilité liées au parcours du DMI au sein de l’établissement de santé. Le gestionnaire de traçabilité peut être, par exemple, un logiciel de traçabilité.<br />
 <br />
-Les acteurs humains derrière les différents systèmes sont multiples
-selon le cycle de vie du DMI au sein de l’établissement de santé. Cela
-peut concerner les acteurs rattachés à la pharmacie, rattachés au
-plateau technique de pose, à la gestion de la réception, etc.<br />
+Les acteurs humains derrière les différents systèmes sont multiples selon le cycle de vie du DMI au sein de l’établissement de santé. Cela peut concerner les acteurs rattachés à la pharmacie, rattachés au plateau technique de pose, à la gestion de la réception, etc.<br />
 <br />
-Cette étude métier traite le gestionnaire de traçabilité comme un acteur
-à part pour une meilleure compréhension du processus. Ceci ne contraint
-pas la mise en œuvre de cet acteur en tant qu'une fonctionnalité interne
-au système d'information de chaque service (pharmacie, bloc, etc.). Dans
-ce cas, un module d'agrégation est nécessaire afin d'agréger les
-informations de traçabilité dans chaque système d'information afin pour
-en créer une vue générique sur la traçabilité de DMI le long de la
-chaine d'approvisionnement au sein d'un établissement de santé.</td>
+Cette étude métier traite le gestionnaire de traçabilité comme un acteur à part pour une meilleure compréhension du processus. Ceci ne contraint pas la mise en œuvre de cet acteur en tant qu'une fonctionnalité interne au système d'information de chaque service (pharmacie, bloc, etc.). Dans ce cas, un module d'agrégation est nécessaire afin d'agréger les informations de traçabilité dans chaque système d'information afin pour en créer une vue générique sur la traçabilité de DMI le long de la chaine d'approvisionnement au sein d'un établissement de santé.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Consommateur</td>
-<td style="text-align: left;">Il s'agit d'un acteur système interne ou
-externe habilité à accéder aux évènements de traçabilité des DMI.<br />
-Les acteurs humains derrière le consommateur sont multiples et peuvent
-être des personnes rattachées à la pharmacie, au plateau technique de
-pose, au service de comptabilité, etc.</td>
+<td style="text-align: left;">Il s'agit d'un acteur système interne ou externe habilité à accéder aux évènements de traçabilité des DMI.<br />
+Les acteurs humains derrière le consommateur sont multiples et peuvent être des personnes rattachées à la pharmacie, au plateau technique de pose, au service de comptabilité, etc.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Fournisseur</td>
-<td style="text-align: left;">Il s'agit de la personne morale
-responsable de la fourniture des DMI (fabricant ou distributeur)
-lorsqu'ils sont commandés par l'établissement de santé ou de la mise à
-disposition des DMI selon les termes de l'accord passé entre le
-fournisseur et l'établissement de santé.</td>
+<td style="text-align: left;">Il s'agit de la personne morale responsable de la fourniture des DMI (fabricant ou distributeur) lorsqu'ils sont commandés par l'établissement de santé ou de la mise à disposition des DMI selon les termes de l'accord passé entre le fournisseur et l'établissement de santé.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Gestionnaire DMI</td>
-<td style="text-align: left;">Le gestionnaire de DMI est un acteur
-système qui remplit plusieurs fonctions et qui assure la gestion et la
-traçabilité de DMI au sein de l'établissement de santé. Les
-responsabilités principales du gestionnaire DMI sont:<br />
+<td style="text-align: left;">Le gestionnaire de DMI est un acteur système qui remplit plusieurs fonctions et qui assure la gestion et la traçabilité de DMI au sein de l'établissement de santé. Les responsabilités principales du gestionnaire DMI sont:<br />
 <br />
-- Traiter la demande du service utilisateur d'un ou de plusieurs DMI
-pour une intervention chirurgicale ou médicale.<br />
-- Commander de DMI auprès du fournisseur. Dans ce rôle, le gestionnaire
-DMI gère les créations, les mises à jour ou les annulations des
-commandes. Il assure également le déclenchement du règlement de la
-facture. L’article. L.5126-5 du CSP précise que, dans le cadre des
-missions des PUI, les pharmaciens assurent les actes d’exécution des
-marchés, pour l’approvisionnement en produits pharmaceutiques :
-médicaments et dispositifs médicaux stériles (DMS) et qu’il ne s’agit
+- Traiter la demande du service utilisateur d'un ou de plusieurs DMI pour une intervention chirurgicale ou médicale.<br />
+- Commander de DMI auprès du fournisseur. Dans ce rôle, le gestionnaire DMI gère les créations, les mises à jour ou les annulations des commandes. Il assure également le déclenchement du règlement de la facture. L’article. L.5126-5 du CSP précise que, dans le cadre des missions des PUI, les pharmaciens assurent les actes d’exécution des marchés, pour l’approvisionnement en produits pharmaceutiques : médicaments et dispositifs médicaux stériles (DMS) et qu’il ne s’agit
 pas d’une délégation de compétence.<br />
-- Réceptionner le(s) DMI. Dans ce rôle, le gestionnaire DMI assure la
-réception et l’enregistrement des informations de DMI réceptionnés.
-L’admission des fournitures sera prononcée par le pharmacien responsable
-ou son représentant pour s’assurer de la conformité des produits avec
-les règles du Code de la santé publique (CSP) et du Code des marchés
+- Réceptionner le(s) DMI. Dans ce rôle, le gestionnaire DMI assure la réception et l’enregistrement des informations de DMI réceptionnés. L’admission des fournitures sera prononcée par le pharmacien responsable ou son représentant pour s’assurer de la conformité des produits avec les règles du Code de la santé publique (CSP) et du Code des marchés
 publics (CMP).<br />
-- Délivrer DMI au service utilisateur. Le gestionnaire DMI, dans ce
-rôle, assure la délivrance de DMI au plateau technique de pose. Il trace
-la sortie du stock.<br />
-- Déclencher l'autorisation de paiement: dans ce rôle, le gestionnaire
-DMI assure les traitements engendrés par la consommation d'un DMI. Ceci
-se caractérise par le déclenchement du traitement financier dans le cas
-d'un dépôt-vente (temporaire ou permanent), et/ou une demande de
-réassort selon les règles de réassort définies par l'établissement de
-santé. Ainsi, ce gestionnaire déclenche le règlement de la facture
-auprès du gestionnaire de comptabilité afin que le fournisseur procède à
-la facturation des DMI.<br />
+- Délivrer DMI au service utilisateur. Le gestionnaire DMI, dans ce rôle, assure la délivrance de DMI au plateau technique de pose. Il trace la sortie du stock.<br />
+- Déclencher l'autorisation de paiement: dans ce rôle, le gestionnaire DMI assure les traitements engendrés par la consommation d'un DMI. Ceci se caractérise par le déclenchement du traitement financier dans le cas d'un dépôt-vente (temporaire ou permanent), et/ou une demande de réassort selon les règles de réassort définies par l'établissement de
+santé. Ainsi, ce gestionnaire déclenche le règlement de la facture auprès du gestionnaire de comptabilité afin que le fournisseur procède à la facturation des DMI.<br />
 <br />
-Dans cette étude, l'acteur humain derrière le gestionnaire DMI est le
-magasinier, le préparateur en pharmacie ou le pharmacien responsable de
-la PUI.</td>
+Dans cette étude, l'acteur humain derrière le gestionnaire DMI est le magasinier, le préparateur en pharmacie ou le pharmacien responsable de la PUI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Gestionnaire de réception</td>
-<td style="text-align: left;">Il s’agit de la personne physique ou
-morale responsable du contrôle de la livraison de DMI lorsqu’ils sont
-commandés à un (des) fournisseur(s) par l’établissement de santé.</td>
+<td style="text-align: left;">Il s’agit de la personne physique ou morale responsable du contrôle de la livraison de DMI lorsqu’ils sont commandés à un (des) fournisseur(s) par l’établissement de santé.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Gestionnaire de réception service
-utilisateur</td>
-<td style="text-align: left;">Il s’agit de la personne physique ou
-morale (Agent de l'unité de soin ou Préparateur) responsable de
-réceptionner les DMI au sein du service utilisateur.</td>
+<td style="text-align: left;">Gestionnaire de réception service utilisateur</td>
+<td style="text-align: left;">Il s’agit de la personne physique ou morale (Agent de l'unité de soin ou Préparateur) responsable de réceptionner les DMI au sein du service utilisateur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Gestionnaire de comptabilité</td>
-<td style="text-align: left;">Le gestionnaire de comptabilité est un
-acteur système assurant le règlement du paiement du fournisseur de
-DMI.<br />
-L’acteur humain derrière la gestion comptable peut-être par exemple le
-service financier (trésorerie) ou le service achat de
+<td style="text-align: left;">Le gestionnaire de comptabilité est un acteur système assurant le règlement du paiement du fournisseur de DMI.<br />
+L’acteur humain derrière la gestion comptable peut-être par exemple le service financier (trésorerie) ou le service achat de
 l’établissement.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Service logistique</td>
-<td style="text-align: left;">Le service logistique assure le transport
-de la livraison des commandes destinées aux unités de soins ou toute
-autre unité (services médico-techniques, services administratifs et
-techniques, ...).</td>
+<td style="text-align: left;">Le service logistique assure le transport de la livraison des commandes destinées aux unités de soins ou toute autre unité (services médico-techniques, services administratifs et techniques, ...).</td>
 </tr>
 <tr>
 <td style="text-align: left;">Service utilisateur</td>
-<td style="text-align: left;">Il s’agit du service ayant la
-responsabilité de l'implantation du DMI chez le patient.<br />
-Il est identifié dans la structure de l'établissement de santé par le
-nom du service et le code U.F. de responsabilité médicale autorisée à
-poser le dispositif dans le patient.</td>
+<td style="text-align: left;">Il s’agit du service ayant la responsabilité de l'implantation du DMI chez le patient.<br />
+Il est identifié dans la structure de l'établissement de santé par le nom du service et le code U.F. de responsabilité médicale autorisée à poser le dispositif dans le patient.</td>
 </tr>
 </tbody>
 </table>
 
-Table 14 Table des acteurs
+<p style="text-align: center;"> Table des acteurs </p>
 
 ### Description du processus collaboratif et identification des flux
 
@@ -1126,34 +997,20 @@ Se référer au Tableau 14 pour la définition des acteurs.
 <tbody>
 <tr>
 <td style="text-align: left;">Initier une demande de DMI</td>
-<td style="text-align: left;">Cette action consiste à initier une
-demande d'un ou plusieurs DMI par le service utilisateur au gestionnaire
-DMI.<br />
-A noter que, sauf cas exceptionnel dûment justifié, le DMI demandé doit
-figurer dans le livret du médicament et du dispositif médical fixé par
-la COMEDIMS (Commission du Médicament et des Dispositifs Médicaux
-Stériles).</td>
+<td style="text-align: left;">Cette action consiste à initier une demande d'un ou plusieurs DMI par le service utilisateur au gestionnaire DMI.<br />
+A noter que, sauf cas exceptionnel dûment justifié, le DMI demandé doit figurer dans le livret du médicament et du dispositif médical fixé par la COMEDIMS (Commission du Médicament et des Dispositifs Médicaux Stériles).</td>
 </tr>
 <tr>
 <td style="text-align: left;">Traiter la réponse</td>
-<td style="text-align: left;">Le service utilisateur reçoit la réponse
-du gestionnaire DMI et la traite.</td>
+<td style="text-align: left;">Le service utilisateur reçoit la réponse du gestionnaire DMI et la traite.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Enregistrer la demande de DMI</td>
-<td style="text-align: left;">Cette action est détaillée dans le
-processus « Tracer » avec le service utilisateur qui représente, dans ce
-cas, la source de traçabilité. Celui-ci enregistre les informations
-nécessaires à la traçabilité de la demande des DMI par le service
-utilisateur et les envoie au gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Cette action est détaillée dans le processus « Tracer » avec le service utilisateur qui représente, dans ce cas, la source de traçabilité. Celui-ci enregistre les informations nécessaires à la traçabilité de la demande des DMI par le service utilisateur et les envoie au gestionnaire de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Enregistrer la réponse de la PUI</td>
-<td style="text-align: left;">Cette action est détaillée dans le
-processus « Tracer » avec le gestionnaire DMI qui représente, dans ce
-cas, la source de traçabilité. Celui-ci enregistre les informations
-nécessaires à la traçabilité de la réponse à la demande des DMI par le
-service utilisateur et les envoie au gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Cette action est détaillée dans le processus « Tracer » avec le gestionnaire DMI qui représente, dans ce cas, la source de traçabilité. Celui-ci enregistre les informations nécessaires à la traçabilité de la réponse à la demande des DMI par le service utilisateur et les envoie au gestionnaire de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Supprimer la demande DMI</td>
@@ -1162,7 +1019,7 @@ service utilisateur et les envoie au gestionnaire de traçabilité.</td>
 </tbody>
 </table>
 
-Table 15 Actions du Diagramme d'activité Demander DMI
+<p style="text-align: center;"> Actions du Diagramme d'activité Demander DMI </p>
 
 ##### Activités structurées
 
@@ -1180,40 +1037,25 @@ Table 15 Actions du Diagramme d'activité Demander DMI
 <tbody>
 <tr>
 <td style="text-align: left;">Traiter la demande de DMI</td>
-<td style="text-align: left;">Le gestionnaire DMI reçoit le flux de
-demande de DMI qui peut être soit une création, soit une mise à jour ou
-une suppression de demande de DMI.<br />
-- Pour la création/mise à jour de demande de DMI. Il traite le flux de
-demande en vérifiant la disponibilité en stock des DMI demandés.<br />
-Une réponse de la part du gestionnaire DMI informe le service
-utilisateur de la disponibilité ou de l'indisponibilité totale ou
-partielle en stock des DMI demandés.<br />
+<td style="text-align: left;">Le gestionnaire DMI reçoit le flux de demande de DMI qui peut être soit une création, soit une mise à jour ou une suppression de demande de DMI.<br />
+- Pour la création/mise à jour de demande de DMI. Il traite le flux de demande en vérifiant la disponibilité en stock des DMI demandés.<br />
+Une réponse de la part du gestionnaire DMI informe le service utilisateur de la disponibilité ou de l'indisponibilité totale ou partielle en stock des DMI demandés.<br />
 Deux cas sont possibles :<br />
 <br />
-1) Si la quantité demandée est inférieure ou égale à la quantité
-disponible au stock de la PUI :<br />
-Le gestionnaire DMI envoie les DMI demandés au service utilisateur selon
-le circuit de logistique interne de l’établissement. Le processus
-«Délivrer les DMI au service utilisateur» est alors déclenché.<br />
+1) Si la quantité demandée est inférieure ou égale à la quantité disponible au stock de la PUI :<br />
+Le gestionnaire DMI envoie les DMI demandés au service utilisateur selon le circuit de logistique interne de l’établissement. Le processus «Délivrer les DMI au service utilisateur» est alors déclenché.<br />
 <br />
-2) Si la quantité demandée est supérieure à la quantité disponible au
-stock de la PUI :<br />
-Le gestionnaire DMI crée une commande à destination du fournisseur pour
-les DMI manquants. Le processus « Commander les DMI » est alors
-déclenché.<br />
+2) Si la quantité demandée est supérieure à la quantité disponible au stock de la PUI :<br />
+Le gestionnaire DMI crée une commande à destination du fournisseur pour les DMI manquants. Le processus « Commander les DMI » est alors déclenché.<br />
 <br />
-La réponse véhicule la référence à demande initiale et informe le
-service utilisateur de la quantité disponible ainsi que la date de
-délivrance prévue pour chaque modèle DMI, en tenant compte si nécessaire
-du délai que prend la commande au fournisseur.<br />
+La réponse véhicule la référence à demande initiale et informe le service utilisateur de la quantité disponible ainsi que la date de délivrance prévue pour chaque modèle DMI, en tenant compte si nécessaire du délai que prend la commande au fournisseur.<br />
 <br />
-- Pour la suppression de la demande de DMI, le gestionnaire DMI annule
-la demande créée au préalable par le service utilisateur.</td>
+- Pour la suppression de la demande de DMI, le gestionnaire DMI annule la demande créée au préalable par le service utilisateur.</td>
 </tr>
 </tbody>
 </table>
 
-Table 16 Activités structurées du Diagramme d'activité Demander DMI
+<p style="text-align: center;"> Activités structurées du Diagramme d'activité Demander DMI </p>
 
 ##### Flux identifiés
 
@@ -1224,26 +1066,18 @@ Table 16 Activités structurées du Diagramme d'activité Demander DMI
 | Flux 1 - DemandeDMI | Ce flux porte les informations de création, de mise à jour ou de suppression d'une demande de DMI. |
 | Flux 1c - TracabiliteDemande | Ce flux permet d'enregistrer la demande de DMI au sein du gestionnaire de traçabilité. |
 
-Table 17 Flux identifiés du Diagramme d'activité Demander DMI
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Demander DMI </p>
 
 #### Commander DMI
 
 ##### Workflow de l'activité
 
-Le processus de commande de DMI est activé lorsqu’une des conditions
-ci-dessous est remplie :  
-- le Service Utilisateur souhaite préparer une intervention nécessitant
-une pose de DMI pour une personne prise en charge et les DMI ne sont pas
-disponibles en stock.  
-- le stock de DMI atteint le stock alerte ce qui déclenche le besoin de
-réassort qui peut être éventuellement automatique. Ces cas concernent le
-réapprovisionnement sur seuil.  
-- la date fixée pour le réassort est atteinte dans le cas d’un
-approvisionnement sur échéancier.  
+Le processus de commande de DMI est activé lorsqu’une des conditions ci-dessous est remplie :  
+- le Service Utilisateur souhaite préparer une intervention nécessitant une pose de DMI pour une personne prise en charge et les DMI ne sont pas disponibles en stock.  
+- le stock de DMI atteint le stock alerte ce qui déclenche le besoin de réassort qui peut être éventuellement automatique. Ces cas concernent le réapprovisionnement sur seuil.  
+- la date fixée pour le réassort est atteinte dans le cas d’un approvisionnement sur échéancier.  
   
-Ce processus permet d'identifier les flux définis dans le diagramme
-ci-après.  
-Se référer au Tableau 14 pour la définition des acteurs.
+Ce processus permet d'identifier les flux définis dans le diagramme ci-après.  
 
 <div class="figure" style="text-align: center;">
     <img src="diagramme_activiteCommanderDMI.png"
@@ -1272,24 +1106,17 @@ Se référer au Tableau 14 pour la définition des acteurs.
 <tbody>
 <tr>
 <td style="text-align: left;">Initier une commande</td>
-<td style="text-align: left;">Le gestionnaire DMI crée une commande sur
-la base de critères prédéfinis et l'envoie au fournisseur.<br />
-A noter que, sauf cas exceptionnel dûment justifié, le DMI demandé doit
-figurer dans le livret du médicament et du dispositif médical fixé par
-la COMEDIMS.</td>
+<td style="text-align: left;">Le gestionnaire DMI crée une commande sur la base de critères prédéfinis et l'envoie au fournisseur.<br />
+A noter que, sauf cas exceptionnel dûment justifié, le DMI demandé doit figurer dans le livret du médicament et du dispositif médical fixé par la COMEDIMS.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Enregistrer la commande de DMI</td>
-<td style="text-align: left;">Cette action est détaillée dans le
-processus « Tracer » avec le gestionnaire DMI qui représente, dans ce
-cas, la source de traçabilité. Celui-ci enregistre les informations
-nécessaires à la traçabilité de la commande des DMI par la PUI et les
-envoie au gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Cette action est détaillée dans le processus « Tracer » avec le gestionnaire DMI qui représente, dans ce cas, la source de traçabilité. Celui-ci enregistre les informations nécessaires à la traçabilité de la commande des DMI par la PUI et les envoie au gestionnaire de traçabilité.</td>
 </tr>
 </tbody>
 </table>
 
-Table 18 Actions du Diagramme d'activité Commander les DMI
+<p style="text-align: center;"> Actions du Diagramme d'activité Commander les DMI </p>
 
 ##### Activités structurées
 
@@ -1307,20 +1134,13 @@ Table 18 Actions du Diagramme d'activité Commander les DMI
 <tbody>
 <tr>
 <td style="text-align: left;">Traiter la commande</td>
-<td style="text-align: left;">Le fournisseur reçoit la commande et la
-traite. Il prépare les DMI commandés et les envoie via son circuit
-logistique au lieu de livraison précisé par le gestionnaire DMI.<br />
-<br />
-A préciser que les mécanismes d’identification des DMI par le
-fournisseur vis-à-vis du catalogue interne de l’établissement de santé
-sont hors périmètre de la présente étude. Ainsi, le(s) flux
-dématérialisé(s) engendrés par le circuit de livraison à l’établissement
-de santé ne sont pas spécifiés dans ce document.</td>
+<td style="text-align: left;">Le fournisseur reçoit la commande et la traite. Il prépare les DMI commandés et les envoie via son circuit logistique au lieu de livraison précisé par le gestionnaire DMI.<br />
+A préciser que les mécanismes d’identification des DMI par le fournisseur vis-à-vis du catalogue interne de l’établissement de santé sont hors périmètre de la présente étude. Ainsi, le(s) flux dématérialisé(s) engendrés par le circuit de livraison à l’établissement de santé ne sont pas spécifiés dans ce document.</td>
 </tr>
 </tbody>
 </table>
 
-Table 19 Activités structurées du Diagramme d'activité Commander les DMI
+<p style="text-align: center;"> Activités structurées du Diagramme d'activité Commander les DMI </p>
 
 ##### Flux identifiés
 
@@ -1329,15 +1149,13 @@ Table 19 Activités structurées du Diagramme d'activité Commander les DMI
 | Flux 3 - CommandeDMI | Ce flux contient les informations nécessaires pour que le gestionnaire DMI passe une commande auprès de son fournisseur. |
 | Flux 27 - TracabiliteCommande | Ce flux permet d'enregistrer la commande de DMI au sein du gestionnaire de traçabilité. |
 
-Table 20 Flux identifiés du Diagramme d'activité Commander les DMI
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Commander les DMI </p>
 
 #### Réceptionner et contrôler DMI
 
 ##### Workflow de l'activité
 
-Ce processus permet d'identifier les flux définis dans le diagramme
-ci-après.  
-Se référer au Tableau 14 pour la définition des acteurs.
+Ce processus permet d'identifier les flux définis dans le diagramme ci-après.  
 
 <div class="figure" style="text-align: center;">
     <img src="diagramme_activiteReceptionnerControler.png"
@@ -1359,7 +1177,7 @@ Se référer au Tableau 14 pour la définition des acteurs.
 | Enregistrer le rejet de la reception du (des) DMI | Cette action est détaillée dans le processus « Tracer » avec le gestionnaire de réception qui représente, dans ce cas, la source de traçabilité. Celui-ci enregistre les informations nécessaires à la traçabilité du rejet de la totalité de la livraison et les envoie au gestionnaire de traçabilité. |
 | Enregistrer la validité du rapprochement | Cette action est détaillée dans le processus « Tracer » avec le gestionnaire de réception qui représente, dans ce cas, la source de traçabilité. Celui-ci enregistre les informations nécessaires à la traçabilité de la validité de la totalité de la livraison par rapport au bon de livraison des DMI et les envoie au gestionnaire de traçabilité. |
 
-Table 21 Actions du Diagramme d'activité Réceptionner et contrôler DMI
+<p style="text-align: center;"> Actions du Diagramme d'activité Réceptionner et contrôler DMI </p>
 
 ##### Activités structurées
 
@@ -1379,18 +1197,12 @@ Table 21 Actions du Diagramme d'activité Réceptionner et contrôler DMI
 <td style="text-align: left;">Pour chaque DMI livré</td>
 <td style="text-align: left;">Par cette action, le gestionnaire de
 réception passe en revue la liste des DMI livrés.<br />
-<br />
-En s'assurant que le DMI livré n'est pas assujetti à une alerte
-sanitaire. Cette sous activité permet l'intégration de chaque DMI au
-sein d'une base de données "référentielle" qui doit être partagée par
-l'ensemble des services utilisateurs, et être utilisée par tous les
-logiciels d'aval (par exemple celui permettant de tracer sa pose).</td>
+En s'assurant que le DMI livré n'est pas assujetti à une alerte sanitaire. Cette sous activité permet l'intégration de chaque DMI au sein d'une base de données "référentielle" qui doit être partagée par l'ensemble des services utilisateurs, et être utilisée par tous les logiciels d'aval (par exemple celui permettant de tracer sa pose).</td>
 </tr>
 </tbody>
 </table>
 
-Table 22 Activités structurées du Diagramme d'activité Réceptionner et
-contrôler DMI
+<p style="text-align: center;"> Activités structurées du Diagramme d'activité Réceptionner et contrôler DMI </p>
 
 ##### Flux identifiés
 
@@ -1400,16 +1212,13 @@ contrôler DMI
 | Flux 5 - TracabiliteLivraisonValide | Ce flux permet au gestionnaire de réception de tracer la conformité de la totalité de la commande de DMI par rapport aux bons de livraison dans le gestionnaire de traçabilité. |
 | Flux 5a - TracabiliteLivraisonRejet | Ce flux permet au gestionnaire de réception de tracer l'incohérence de la livraison avec les bons de réception des DMI dans le gestionnaire de traçabilité. |
 
-Table 23 Flux identifiés du Diagramme d'activité Réceptionner et
-contrôler DMI
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Réceptionner et contrôler DMI </p>
 
 #### Réceptionner le DMI
 
 ##### Workflow de l'activité
 
-Ce processus permet d'identifier les flux définis dans le diagramme
-ci-après.  
-Se référer au Tableau 14 pour la définition des acteurs.
+Ce processus permet d'identifier les flux définis dans le diagramme ci-après.  
 
 <div class="figure" style="text-align: center;">
     <img src="diagramme_activiteReceptionnerDMI.png"
@@ -1437,45 +1246,26 @@ Se référer au Tableau 14 pour la définition des acteurs.
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Enregistrer l'entrée au stock au sein de
-l'établissement du DMI</td>
-<td style="text-align: left;">Cette action est détaillée dans le
-processus « Tracer » avec le gestionnaire de réception qui représente,
-dans ce cas, la source de traçabilité. Celui-ci enregistre les
-informations nécessaires à la traçabilité de l'entrée au stock au sein
-de l'établissement du DMI et les envoie au gestionnaire de
-traçabilité.<br />
-Que les DMI soient gérés en "stock" ou "hors-stock" par la PUI, les DMI
-sont sous la responsabilité de la PUI qui les enregistre dans son
-système d'information.</td>
+<td style="text-align: left;">Enregistrer l'entrée au stock au sein de l'établissement du DMI</td>
+<td style="text-align: left;">Cette action est détaillée dans le processus « Tracer » avec le gestionnaire de réception qui représente, dans ce  cas, la source de traçabilité. Celui-ci enregistre les informations nécessaires à la traçabilité de l'entrée au stock au sein de l'établissement du DMI et les envoie au gestionnaire de traçabilité.<br />
+Que les DMI soient gérés en "stock" ou "hors-stock" par la PUI, les DMI sont sous la responsabilité de la PUI qui les enregistre dans son système d'information.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Enregistrer le rejet du DMI</td>
-<td style="text-align: left;">Cette action est détaillée dans le
-processus « Tracer » avec le gestionnaire de réception qui représente,
-dans ce cas, la source de traçabilité. Celui-ci enregistre les
-informations nécessaires à la traçabilité du rejet de la réception du
-DMI et les envoie au gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Cette action est détaillée dans le processus « Tracer » avec le gestionnaire de réception qui représente, dans ce cas, la source de traçabilité. Celui-ci enregistre les informations nécessaires à la traçabilité du rejet de la réception du DMI et les envoie au gestionnaire de traçabilité.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Vérifier qu'aucune alerte sanitaire ne
-porte sur le DMI</td>
-<td style="text-align: left;">Cette action permet au gestionnaire de
-réception de contrôler qu'aucunes alertes ou rappels de lots ne
-concernent le DMI.</td>
+<td style="text-align: left;">Vérifier qu'aucune alerte sanitaire ne porte sur le DMI</td>
+<td style="text-align: left;">Cette action permet au gestionnaire de réception de contrôler qu'aucunes alertes ou rappels de lots ne concernent le DMI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Enregistrer la réception du DMI</td>
-<td style="text-align: left;">Cette action est détaillée dans le
-processus « Tracer » avec le gestionnaire de réception qui représente,
-dans ce cas, la source de traçabilité. Celui-ci enregistre les
-informations nécessaires à la traçabilité de la réception du DMI et les
-envoie au gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Cette action est détaillée dans le processus « Tracer » avec le gestionnaire de réception qui représente, dans ce cas, la source de traçabilité. Celui-ci enregistre les informations nécessaires à la traçabilité de la réception du DMI et les envoie au gestionnaire de traçabilité.</td>
 </tr>
 </tbody>
 </table>
 
-Table 24 Actions du Diagramme d'activité Réceptionner le DMI
+<p style="text-align: center;"> Actions du Diagramme d'activité Réceptionner le DMI </p>
 
 ##### Flux identifiés
 
@@ -1486,15 +1276,13 @@ Table 24 Actions du Diagramme d'activité Réceptionner le DMI
 | Flux 5d - TracabiliteReceptionDMI | Ce flux permet au gestionnaire de réception de tracer la réception du DMI au sein de l'établissement dans le gestionnaire de traçabilité. |
 | Flux 5c - TracabiliteEntreeStockDMI | Ce flux permet au gestionnaire de réception de tracer l'entrée au stock au sein de l'établissement du nouveau DMI dans le gestionnaire de traçabilité. |
 
-Table 25 Flux identifiés du Diagramme d'activité Réceptionner le DMI
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Réceptionner le DMI </p>
 
 #### Délivrer DMI au service utilisateur
 
 ##### Workflow de l'activité
 
-Ce processus permet d'identifier les flux définis dans le diagramme
-ci-après.  
-Se référer au Tableau 14 pour la définition des acteurs.
+Ce processus permet d'identifier les flux définis dans le diagramme ci-après.  
 
 <div class="figure" style="text-align: center;">
     <img src="diagramme_activiteDelivrerDMI.png"
@@ -1523,31 +1311,21 @@ Se référer au Tableau 14 pour la définition des acteurs.
 <tbody>
 <tr>
 <td style="text-align: left;">Délivrer le(s) DMI</td>
-<td style="text-align: left;">Le gestionnaire DMI délivre le(s) DMI
-demandé(s) à destination du service utilisateur.<br />
-L'ensemble des données relatives à la délivrance des DMI sont
-enregistrées par la PUI.</td>
+<td style="text-align: left;">Le gestionnaire DMI délivre le(s) DMI demandé(s) à destination du service utilisateur.<br />
+L'ensemble des données relatives à la délivrance des DMI sont enregistrées par la PUI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Tracer la délivrance du (des) DMI</td>
-<td style="text-align: left;">Le gestionnaire DMI trace la délivrance au
-service utilisateur du (des) DMI. Cette action est détaillée dans le
-processus « Tracer » avec le gestionnaire DMI qui représente, dans ce
-cas, la source de traçabilité.</td>
+<td style="text-align: left;">Le gestionnaire DMI trace la délivrance au service utilisateur du (des) DMI. Cette action est détaillée dans le processus « Tracer » avec le gestionnaire DMI qui représente, dans ce cas, la source de traçabilité.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Enregistrer la sortie du stock au sein de
-la PUI du (des) DMI</td>
-<td style="text-align: left;">Le gestionnaire DMI trace la sortie du
-stock de la PUI du (des) DMI. Cette action est détaillée dans le
-processus « Tracer » avec le gestionnaire DMI qui représente, dans ce
-cas, la source de traçabilité.</td>
+<td style="text-align: left;">Enregistrer la sortie du stock au sein de la PUI du (des) DMI</td>
+<td style="text-align: left;">Le gestionnaire DMI trace la sortie du stock de la PUI du (des) DMI. Cette action est détaillée dans le processus « Tracer » avec le gestionnaire DMI qui représente, dans ce cas, la source de traçabilité.</td>
 </tr>
 </tbody>
 </table>
 
-Table 26 Actions du Diagramme d'activité Délivrer DMI au Service
-Utilisateur
+<p style="text-align: center;"> Actions du Diagramme d'activité Délivrer DMI au Service Utilisateur </p>
 
 ##### Flux identifiés
 
@@ -1557,16 +1335,13 @@ Utilisateur
 | Flux 7 - TracabiliteDelivranceSU | Ce flux permet au service utilisateur de tracer la délivrance du (des) DMI au service utilisateur. |
 | Flux 6 - DelivranceSU | Ce flux porte les informations de délivrance des DMI au service utilisateur. |
 
-Table 27 Flux identifiés du Diagramme d'activité Délivrer DMI au Service
-Utilisateur
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Délivrer DMI au Service Utilisateur </p>
 
 #### Transporter DMI
 
 ##### Workflow de l'activité
 
-Ce processus permet d'identifier les flux définis dans le diagramme
-ci-après.  
-Se référer au Tableau 14 pour la définition des acteurs.
+Ce processus permet d'identifier les flux définis dans le diagramme ci-après.  
 
 <div class="figure" style="text-align: center;">
     <img src="input/images/diagramme_activiteTransporterDMI.png"
@@ -1594,33 +1369,25 @@ Se référer au Tableau 14 pour la définition des acteurs.
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Initier la livraison du (des) DMI à
-destination du service utilisateur</td>
-<td style="text-align: left;">Après la réalisation du processus de
-délivrance du (des) DMI au service utilisateur. Le gestionnaire DMI
-déclenche une demande de transport de celui(ceux)-ci auprès du service
-logistique de l'établissement.<br />
-Le service logistique assure le transport du (des) DMI. La livraison
-doit s'effectuer dans des conditions permettant d'assurer la bonne
+<td style="text-align: left;">Initier la livraison du (des) DMI à destination du service utilisateur</td>
+<td style="text-align: left;">Après la réalisation du processus de délivrance du (des) DMI au service utilisateur. Le gestionnaire DMI
+déclenche une demande de transport de celui(ceux)-ci auprès du service logistique de l'établissement.<br />
+Le service logistique assure le transport du (des) DMI. La livraison doit s'effectuer dans des conditions permettant d'assurer la bonne
 conservation et l'intégrité du (des) DMI.<br />
-L'anonymat des patients doit être respecté durant cette étape, lorsque
-le DMI est destiné à un patient particulier.</td>
+L'anonymat des patients doit être respecté durant cette étape, lorsque le DMI est destiné à un patient particulier.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Enregistrer le transport du (des) DMI</td>
-<td style="text-align: left;">Cette action est détaillée dans le
-processus « Tracer » avec le service logistique qui représente, dans ce
-cas, la source de traçabilité. Celui-ci enregistre les informations
-nécessaires à la traçabilité du transport du (des) DMI et les envoie au
+<td style="text-align: left;">Cette action est détaillée dans le processus « Tracer » avec le service logistique qui représente, dans ce
+cas, la source de traçabilité. Celui-ci enregistre les informations nécessaires à la traçabilité du transport du (des) DMI et les envoie au
 gestionnaire de traçabilité.<br />
-Les étapes de la livraison, le lieu de livraison ainsi que les incidents
-éventuels survenus durant le transport sont tracés au sein du système de
+Les étapes de la livraison, le lieu de livraison ainsi que les incidents éventuels survenus durant le transport sont tracés au sein du système de
 traçabilité.</td>
 </tr>
 </tbody>
 </table>
 
-Table 28 Actions du Diagramme d'activité Transporter DMI
+<p style="text-align: center;"> Actions du Diagramme d'activité Transporter DMI </p>
 
 ##### Flux identifiés
 
@@ -1638,28 +1405,23 @@ Table 28 Actions du Diagramme d'activité Transporter DMI
 <tbody>
 <tr>
 <td style="text-align: left;">Flux 8 - TransportDMI</td>
-<td style="text-align: left;">Ce flux porte les informations de
-livraison du (des) DMI à destination du service utilisateur.<br />
+<td style="text-align: left;">Ce flux porte les informations de livraison du (des) DMI à destination du service utilisateur.<br />
 Tout incident de transport est mentionné dans le flux.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 9 - TracabiliteTransportDMI</td>
-<td style="text-align: left;">Ce flux permet au gestionnaire DMI de
-tracer le transport du (des) DMI dans le gestionnaire de
-traçabilité.</td>
+<td style="text-align: left;">Ce flux permet au gestionnaire DMI de tracer le transport du (des) DMI dans le gestionnaire de traçabilité.</td>
 </tr>
 </tbody>
 </table>
 
-Table 29 Flux identifiés du Diagramme d'activité Transporter DMI
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Transporter DMI </p>
 
 #### Réceptionner DMI par le service utilisateur
 
 ##### Workflow de l'activité
 
-Ce processus permet d'identifier les flux définis dans le diagramme
-ci-après.  
-Se référer au Tableau 14 pour la définition des acteurs.
+Ce processus permet d'identifier les flux définis dans le diagramme ci-après.  
 
 <div class="figure" style="text-align: center;">
     <img src="diagramme_activiteReceptionnerDMIserviceUtilisateur.png"
@@ -1687,53 +1449,37 @@ Se référer au Tableau 14 pour la définition des acteurs.
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Livrer le(s) DMI commandé(s) au service
-utilisateur</td>
-<td style="text-align: left;">Le gestionnaire de réception du service
-utilisateur (SU) fait un rapprochement entre la demande réalisée auprès
-de la PUI et les DMI effectivement livrés au service utilisateur. Ce
-rapprochement est réalisé par le service utilisateur sur la base des
-données relatives à la délivrance, transmises par la PUI dans le système
-d’information.<br />
-Le gestionnaire de réception SU accepte ou refuse le DMI (par exemple en
-cas d'erreur de la PUI ou du transporteur, si le DMI réceptionné n'est
+<td style="text-align: left;">Livrer le(s) DMI commandé(s) au service utilisateur</td>
+<td style="text-align: left;">Le gestionnaire de réception du service utilisateur (SU) fait un rapprochement entre la demande réalisée auprès
+de la PUI et les DMI effectivement livrés au service utilisateur. Ce rapprochement est réalisé par le service utilisateur sur la base des
+données relatives à la délivrance, transmises par la PUI dans le système d’information.<br />
+Le gestionnaire de réception SU accepte ou refuse le DMI (par exemple en cas d'erreur de la PUI ou du transporteur, si le DMI réceptionné n'est
 pas conforme et/ou ne correspond pas au DMI qui avait été demandé).</td>
 </tr>
 <tr>
 <td style="text-align: left;">Réceptionner le (les) DMI</td>
-<td style="text-align: left;">Le gestionnaire de réception du service
-utilisateur enregistre la réception du (des) DMI dans ses locaux.</td>
+<td style="text-align: left;">Le gestionnaire de réception du service utilisateur enregistre la réception du (des) DMI dans ses locaux.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Tracer la réception du (des) DMI</td>
-<td style="text-align: left;">Le gestionnaire de réception du service
-utilisateur trace la réception du (des) DMI au sein du service
-utilisateur. Cette action est détaillée dans le processus « Tracer »
-avec le gestionnaire de réception du service utilisateur qui représente,
+<td style="text-align: left;">Le gestionnaire de réception du service utilisateur trace la réception du (des) DMI au sein du service
+utilisateur. Cette action est détaillée dans le processus « Tracer » avec le gestionnaire de réception du service utilisateur qui représente,
 dans ce cas, la source de traçabilité.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Enregistrer l'entrée au stock au sein du
-service utilisateur du (des) DMI</td>
-<td style="text-align: left;">Le gestionnaire de réception du service
-utilisateur enregistre le rejet du (des) DMI. Cette action est détaillée
-dans le processus « Tracer » avec le gestionnaire de réception du
-service utilisateur qui représente, dans ce cas, la source de
-traçabilité.</td>
+<td style="text-align: left;">Enregistrer l'entrée au stock au sein du service utilisateur du (des) DMI</td>
+<td style="text-align: left;">Le gestionnaire de réception du service utilisateur enregistre le rejet du (des) DMI. Cette action est détaillée
+dans le processus « Tracer » avec le gestionnaire de réception du service utilisateur qui représente, dans ce cas, la source de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Enregistrer le rejet du (des) DMI</td>
-<td style="text-align: left;">Le gestionnaire de réception du service
-utilisateur enregistre le rejet du (des) DMI. Cette action est détaillée
-dans le processus « Tracer » avec le gestionnaire de réception du
-service utilisateur qui représente, dans ce cas, la source de
-traçabilité.</td>
+<td style="text-align: left;">Le gestionnaire de réception du service utilisateur enregistre le rejet du (des) DMI. Cette action est détaillée
+dans le processus « Tracer » avec le gestionnaire de réception du service utilisateur qui représente, dans ce cas, la source de traçabilité.</td>
 </tr>
 </tbody>
 </table>
 
-Table 30 Actions du Diagramme d'activité Réceptionner DMI par le service
-utilisateur
+<p style="text-align: center;"> Actions du Diagramme d'activité Réceptionner DMI par le service utilisateur </p>
 
 ##### Flux identifiés
 
@@ -1744,8 +1490,7 @@ utilisateur
 | Flux 10 - ReceptionSU | Ce flux porte les informations de réception du (des) DMI au sein du service utilisateur. |
 | Flux 28 - TracabiliteRejetDMI | Ce flux permet au gestionnaire de réception du service utilisateur de tracer la cause du rejet de la réception du DMI dans le gestionnaire de traçabilité. |
 
-Table 31 Flux identifiés du Diagramme d'activité Réceptionner DMI par le
-service utilisateur
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Réceptionner DMI par le service utilisateur </p>
 
 #### Poser DMI 
 
@@ -1782,79 +1527,55 @@ Se référer au Tableau 14 pour la définition des acteurs.
 <tbody>
 <tr>
 <td style="text-align: left;">Poser le DMI chez le patient</td>
-<td style="text-align: left;">Le service utilisateur entreprend la pose
-du DMI chez le patient. Cette action donne lieu à la traçabilité de la
-pose ou de l'échec de pose, et la déclaration de la consommation du DMI
-à la PUI.<br />
-En cas d'échec de pose, le service utilisateur doit déclarer également
-les DMI dont la pose a échoué précisant le motif de l’échec de
-pose.</td>
+<td style="text-align: left;">Le service utilisateur entreprend la pose du DMI chez le patient. Cette action donne lieu à la traçabilité de la
+pose ou de l'échec de pose, et la déclaration de la consommation du DMI à la PUI.<br />
+En cas d'échec de pose, le service utilisateur doit déclarer également les DMI dont la pose a échoué précisant le motif de l’échec de pose.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Enregistrer le DMI posé</td>
-<td style="text-align: left;">Cette action est détaillée dans le
-processus « Tracer » avec le service utilisateur qui représente, dans ce
-cas, la source de traçabilité. Celui-ci enregistre les informations
-nécessaires à la traçabilité de la pose du DMI chez la personne prise en
+<td style="text-align: left;">Cette action est détaillée dans le processus « Tracer » avec le service utilisateur qui représente, dans ce
+cas, la source de traçabilité. Celui-ci enregistre les informations nécessaires à la traçabilité de la pose du DMI chez la personne prise en
 charge et les envoie au gestionnaire de traçabilité.<br />
 <br />
 Précision:<br />
-- Les informations d’identité du patient retrouvées dans le gestionnaire
-de traçabilité sont alimentées et mises à jour automatiquement à partir
-du référentiel d’identité des patients de l’établissement ou
-manuellement en scannant l’étiquette du patient (code barre avec le
-numéro de séjour). Les flux d’échanges concernant l’identité du patient
-sont hors périmètre de cette étude métier.</td>
+- Les informations d’identité du patient retrouvées dans le gestionnaire de traçabilité sont alimentées et mises à jour automatiquement à partir
+du référentiel d’identité des patients de l’établissement ou manuellement en scannant l’étiquette du patient (code barre avec le numéro de séjour). Les flux d’échanges concernant l’identité du patient sont hors périmètre de cette étude métier.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Déclarer l'echec de la pose du DMI</td>
-<td style="text-align: left;">Le service utilisateur trace l'échec de
-pose du DMI. Cette action est détaillée dans le processus « Tracer »
-avec le service utilisateur qui représente, dans ce cas, la source de
-traçabilité.<br />
-Pour tout défaut survenant lors de l'utilisation du DMI l'équipe
-médicale doit également déclarer cet événement au correspondant local de
+<td style="text-align: left;">Le service utilisateur trace l'échec de pose du DMI. Cette action est détaillée dans le processus « Tracer »
+avec le service utilisateur qui représente, dans ce cas, la source de traçabilité.<br />
+Pour tout défaut survenant lors de l'utilisation du DMI l'équipe médicale doit également déclarer cet événement au correspondant local de
 matériovigilance.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Vérifier le DMI au sein du plateau
 technique</td>
-<td style="text-align: left;">A la réception du DMI au plateau technique
-de pose, le service utilisateur contrôle :<br />
-- que le dispositif est bien celui prévu pour l'opération du
-patient,<br />
+<td style="text-align: left;">A la réception du DMI au plateau technique de pose, le service utilisateur contrôle :<br />
+- que le dispositif est bien celui prévu pour l'opération du patient,<br />
 - qu'aucunes alertes ou rappels de lots ne concernent le
 dispositif,<br />
 - que le dispositif n'est pas endommagé et qu'il est toujours
 stérile.<br />
 <br />
-Si ces critères sont satisfaits, alors le processus de pose continue.
-Dans le cas contraire, il y a arrêt de l'opération avec le déclenchement
-d'un évènement de trace.</td>
+Si ces critères sont satisfaits, alors le processus de pose continue. Dans le cas contraire, il y a arrêt de l'opération avec le déclenchement d'un évènement de trace.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Déclarer le refus d'utilisation du
-DMI</td>
-<td style="text-align: left;">Le service utilisateur trace le refus de
-l'utilisation du DMI pour l'opération chirurgicale. Cette action est
-détaillée dans le processus « Tracer » avec le service utilisateur qui
-représente, dans ce cas, la source de traçabilité.<br />
-Pour tout défaut survenant lors de l'utilisation du DMI l'équipe
-médicale doit également déclarer cet événement au correspondant local de
+<td style="text-align: left;">Déclarer le refus d'utilisation du DMI</td>
+<td style="text-align: left;">Le service utilisateur trace le refus de l'utilisation du DMI pour l'opération chirurgicale. Cette action est
+détaillée dans le processus « Tracer » avec le service utilisateur qui représente, dans ce cas, la source de traçabilité.<br />
+Pour tout défaut survenant lors de l'utilisation du DMI l'équipe médicale doit également déclarer cet événement au correspondant local de
 matériovigilance.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Enregistrer la sortie du stock au sein du
-service utilisateur du (des) DMI</td>
-<td style="text-align: left;">Le service utilisateur enregistre la
-sortie du stock du (des) DMI. Cette action est détaillée dans le
-processus « Tracer » avec le service utilisateur qui représente, dans ce
-cas, la source de traçabilité.</td>
+<td style="text-align: left;">Enregistrer la sortie du stock au sein du service utilisateur du (des) DMI</td>
+<td style="text-align: left;">Le service utilisateur enregistre la sortie du stock du (des) DMI. Cette action est détaillée dans le processus 
+« Tracer » avec le service utilisateur qui représente, dans ce cas, la source de traçabilité.</td>
 </tr>
 </tbody>
 </table>
 
-Table 32 Actions du Diagramme d'activité Poser DMI
+<p style="text-align: center;"> Actions du Diagramme d'activité Poser DMI </p>
 
 ##### Activités structurées
 
@@ -1873,18 +1594,15 @@ Table 32 Actions du Diagramme d'activité Poser DMI
 <tr>
 <td style="text-align: left;">Informer la PUI de la consommations du
 DMI</td>
-<td style="text-align: left;">Le service utilisateur informe de la
-consommation du DMI au gestionnaire DMI. Ce dernier peut déclencher la
-procédure financière dans le cas de DMI gérés en dépôt-vente (temporaire
-ou permanent), et/ou une demande de réassort selon les règles de
+<td style="text-align: left;">Le service utilisateur informe de la consommation du DMI au gestionnaire DMI. Ce dernier peut déclencher la
+procédure financière dans le cas de DMI gérés en dépôt-vente (temporaire ou permanent), et/ou une demande de réassort selon les règles de
 réassort définies par l'établissement de santé.<br />
-A noter que dans le cas des DMI gérés en dépôt vente, ceux-ci deviennent
-la propriété de l'établissement au moment de leur utilisation.</td>
+A noter que dans le cas des DMI gérés en dépôt vente, ceux-ci deviennent la propriété de l'établissement au moment de leur utilisation.</td>
 </tr>
 </tbody>
 </table>
 
-Table 33 Activités structurées du Diagramme d'activité Poser DMI
+<p style="text-align: center;"> Activités structurées du Diagramme d'activité Poser DMI </p>
 
 ##### Flux identifiés
 
@@ -1902,49 +1620,39 @@ Table 33 Activités structurées du Diagramme d'activité Poser DMI
 <tbody>
 <tr>
 <td style="text-align: left;">Flux 15 -TracabilitePose</td>
-<td style="text-align: left;">Ce flux permet au service utilisateur de
-tracer l'acte de pose du DMI chez le patient.</td>
+<td style="text-align: left;">Ce flux permet au service utilisateur de tracer l'acte de pose du DMI chez le patient.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 14 - TracabiliteEchecPose</td>
-<td style="text-align: left;">Ce flux porte les informations de
-traçabilité de l'échec de pose du DMI.</td>
+<td style="text-align: left;">Ce flux porte les informations de traçabilité de l'échec de pose du DMI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 13 - ConsommationDMI</td>
-<td style="text-align: left;">Ce flux permet au service
-utilisateur<br />
+<td style="text-align: left;">Ce flux permet au service utilisateur<br />
 - d'informer le gestionnaire DMI que le DMI est consommé,<br />
-- alimenter le dossier patient informatisé, le dossier pharmaceutique,
-la lettre de liaison, dossier médical partagé.</td>
+- alimenter le dossier patient informatisé, le dossier pharmaceutique, la lettre de liaison, dossier médical partagé.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 13a - TracabiliteRefusDMI</td>
-<td style="text-align: left;">Ce flux porte les informations de
-traçabilité du refus de l'utilisation du DMI au plateau technique.</td>
+<td style="text-align: left;">Ce flux porte les informations de traçabilité du refus de l'utilisation du DMI au plateau technique.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 30 - TracabiliteSortieStockSU</td>
-<td style="text-align: left;">Ce flux permet au service utilisateur de
-tracer la sortie du stock du service utilisateur du (des) DMI.</td>
+<td style="text-align: left;">Ce flux permet au service utilisateur de tracer la sortie du stock du service utilisateur du (des) DMI.</td>
 </tr>
 </tbody>
 </table>
 
-Table 34 Flux identifiés du Diagramme d'activité Poser DMI
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Poser DMI </p>
 
 #### Facturer DMI (dépôt-vente)
 
 ##### Workflow de l'activité
 
-Ce processus permet d'identifier les flux définis dans le diagramme
-ci-après.  
+Ce processus permet d'identifier les flux définis dans le diagramme ci-après.  
   
 Préconditions :  
-- Réception de l’information de pose des DMI (pose ou échec de pose)
-envoyée par le service utilisateur au gestionnaire DMI.  
-  
-Se référer au Tableau 14 pour la définition des acteurs.
+- Réception de l’information de pose des DMI (pose ou échec de pose) envoyée par le service utilisateur au gestionnaire DMI.  
 
 <div class="figure" style="text-align: center;">
     <img src="diagramme_activiteFacturerDMI_dv.png"
@@ -1973,54 +1681,43 @@ Se référer au Tableau 14 pour la définition des acteurs.
 <tbody>
 <tr>
 <td style="text-align: left;">Valider l'acquisition</td>
-<td style="text-align: left;">Le gestionnaire DMI informe le fournisseur
-de la consommation des DMI.</td>
+<td style="text-align: left;">Le gestionnaire DMI informe le fournisseur de la consommation des DMI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Facturer les DMI</td>
-<td style="text-align: left;">Sur la base des DMI déclarés comme
-consommés, le fournisseur établit la facture des DMI et la transmet au
+<td style="text-align: left;">Sur la base des DMI déclarés comme consommés, le fournisseur établit la facture des DMI et la transmet au
 gestionnaire DMI qui vérifie les éléments facturés.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Déclencher le paiement de la facture</td>
-<td style="text-align: left;">Le gestionnaire de comptabilité déclenche
-le processus de paiement de la facture.</td>
+<td style="text-align: left;">Le gestionnaire de comptabilité déclenche le processus de paiement de la facture.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Donner l'accord de paiement</td>
-<td style="text-align: left;">Le gestionnaire DMI donne au gestionnaire
-de comptabilité l’accord de paiement du fournisseur sur la base de la
+<td style="text-align: left;">Le gestionnaire DMI donne au gestionnaire de comptabilité l’accord de paiement du fournisseur sur la base de la
 facture transmise par ce dernier.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Enregistrer les modalités de
-facturation</td>
-<td style="text-align: left;">Le gestionnaire DMI trace les modalités de
-facturation du (des) DMI. Cette action est détaillée dans le processus «
-Tracer » avec le gestionnaire DMI qui représente, dans ce cas, la source
-de traçabilité.</td>
+<td style="text-align: left;">Enregistrer les modalités de facturation</td>
+<td style="text-align: left;">Le gestionnaire DMI trace les modalités de facturation du (des) DMI. Cette action est détaillée dans le processus «
+Tracer » avec le gestionnaire DMI qui représente, dans ce cas, la source de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Demander un réassort en DMI</td>
-<td style="text-align: left;">Le déclenchement de cette action dépend
-d'une part du mode de gestion du stock et d'autre part de la gestion des
+<td style="text-align: left;">Le déclenchement de cette action dépend d'une part du mode de gestion du stock et d'autre part de la gestion des
 réapprovisionnements de la PUI.<br />
-Le gestionnaire DMI effectue une demande de réassort en DMI auprès du
-fournisseur selon les règles de réassort définies par l'établissement de
+Le gestionnaire DMI effectue une demande de réassort en DMI auprès du fournisseur selon les règles de réassort définies par l'établissement de
 santé.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Enregistrer la demande de réassort</td>
-<td style="text-align: left;">Le gestionnaire DMI trace la demande de
-réassort en DMI. Cette action est détaillée dans le processus « Tracer »
-avec le gestionnaire DMI qui représente, dans ce cas, la source de
-traçabilité.</td>
+<td style="text-align: left;">Le gestionnaire DMI trace la demande de réassort en DMI. Cette action est détaillée dans le processus « Tracer »
+avec le gestionnaire DMI qui représente, dans ce cas, la source de traçabilité.</td>
 </tr>
 </tbody>
 </table>
 
-Table 35 Actions du Diagramme d'activité Facturer DMI (dépôt-vente)
+<p style="text-align: center;"> Actions du Diagramme d'activité Facturer DMI (dépôt-vente) </p>
 
 ##### Activités structurées
 
@@ -2028,8 +1725,7 @@ Table 35 Actions du Diagramme d'activité Facturer DMI (dépôt-vente)
 |:---|:---|
 | Réassort en DMI | Le pharmacien gérant de la PUI déclenche l'action "Demander un réassort en DMI". |
 
-Table 36 Activités structurées du Diagramme d'activité Facturer DMI
-(dépôt-vente)
+<p style="text-align: center;"> Activités structurées du Diagramme d'activité Facturer DMI (dépôt-vente) </p>
 
 ##### Flux identifiés
 
@@ -2041,21 +1737,16 @@ Table 36 Activités structurées du Diagramme d'activité Facturer DMI
 | Flux 18 - TracabiliteFacturationDMI | Ce flux porte les informations de traçabilité de la facturation du (des) DMI. |
 | Flux 17 - AutorisationPaiement | Ce flux permet au gestionnaire DMI de donner son accord (ou non) pour le paiement de la facture auprès du gestionnaire de comptabilité. |
 
-Table 37 Flux identifiés du Diagramme d'activité Facturer DMI
-(dépôt-vente)
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Facturer DMI (dépôt-vente) </p>
 
 #### Facturer DMI (achat)
 
 ##### Workflow de l'activité
 
-Ce processus permet d'identifier les flux définis dans le diagramme
-ci-après.  
+Ce processus permet d'identifier les flux définis dans le diagramme ci-après.  
   
 Préconditions:  
-Réception de l’information de validation de la réception des DMI envoyée
-par le gestionnaire DMI au gestionnaire de comptabilité.  
-  
-Se référer au Tableau 14 pour la définition des acteurs.
+Réception de l’information de validation de la réception des DMI envoyée par le gestionnaire DMI au gestionnaire de comptabilité.  
 
 <div class="figure" style="text-align: center;">
     <img src="diagramme_activiteFacturerDMI_achat.png"
@@ -2076,7 +1767,7 @@ Se référer au Tableau 14 pour la définition des acteurs.
 | Déclencher le paiement de la facture | Le gestionnaire de comptabilité déclenche le processus de paiement de la facture. |
 | Enregistrer les modalités de facturation | Le gestionnaire DMI trace les modalités de facturation du (des) DMI. Cette action est détaillée dans le processus « Tracer » avec le gestionnaire DMI qui représente, dans ce cas, la source de traçabilité. |
 
-Table 38 Actions du Diagramme d'activité Facturer DMI (achat)
+<p style="text-align: center;"> Actions du Diagramme d'activité Facturer DMI (achat) </p>
 
 ##### Flux identifiés
 
@@ -2085,15 +1776,13 @@ Table 38 Actions du Diagramme d'activité Facturer DMI (achat)
 | Flux 18 - TracabiliteFacturationDMI | Ce flux porte les informations de traçabilité de la facturation du (des) DMI |
 | Flux 17 : AutorisationPaiement | Ce flux permet au gestionnaire DMI de donner son accord (ou non) pour le paiement de la facture auprès du gestionnaire de comptabilité. |
 
-Table 39 Flux identifiés du Diagramme d'activité Facturer DMI (achat)
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Facturer DMI (achat) </p>
 
 #### Tracer
 
 ##### Workflow de l'activité
 
 Ce processus permet de modéliser la traçabilité d'un évènement.  
-  
-Se référer au Tableau 14 pour la définition des acteurs.
 
 <div class="figure" style="text-align: center;">
     <img src="diagramme_activiteTracer.png"
@@ -2113,7 +1802,7 @@ Se référer au Tableau 14 pour la définition des acteurs.
 | Envoyer les informations de traçabilité | Cette action consiste à envoyer, pour un évènement, les informations de traçabilité au gestionnaire de traçabilité. |
 | Enregistrer les informations de traçabilité | Cette action consiste à recevoir et enregistrer les informations de traçabilité du DMI. |
 
-Table 40 Actions du Diagramme d'activité Tracer
+<p style="text-align: center;"> Actions du Diagramme d'activité Tracer </p>
 
 ##### Flux identifiés
 
@@ -2121,16 +1810,13 @@ Table 40 Actions du Diagramme d'activité Tracer
 |:---|:---|
 | Flux 22 - TransmissionTrace | Ce flux permet de transmettre les informations de traçabilité d'un évènement. |
 
-Table 41 Flux identifiés du Diagramme d'activité Tracer
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Tracer </p>
 
 #### Rechercher des traces
 
 ##### Workflow de l'activité
 
-Ce processus permet d'identifier les flux définis dans le diagramme
-ci-après.  
-  
-Se référer au Tableau 14 pour la définition des acteurs.
+Ce processus permet d'identifier les flux définis dans le diagramme ci-après.  
 
 <div class="figure" style="text-align: center;">
     <img src="diagramme_activiteRechercheTrace.png"
@@ -2151,7 +1837,7 @@ Se référer au Tableau 14 pour la définition des acteurs.
 | Traiter la recherche des traces | Le gestionnaire de traçabilité reçoit et traite la recherche. |
 | Traiter le retour du gestionnaire de traçabilité | Le consommateur reçoit et traite le retour du gestionnaire de traçabilité. |
 
-Table 42 Actions du Diagramme d'activité Rechercher des traces
+<p style="text-align: center;"> Actions du Diagramme d'activité Rechercher des traces </p>
 
 ##### Flux identifiés
 
@@ -2160,16 +1846,13 @@ Table 42 Actions du Diagramme d'activité Rechercher des traces
 | Flux 23 - RechercheTraces | Ce flux porte les critères pour rechercher un ou plusieurs évènements de traçabilité |
 | Flux 24 - ReponseRechercheTraces | Ce flux porte les informations répondant à la requête du Flux 23. |
 
-Table 43 Flux identifiés du Diagramme d'activité Rechercher des traces
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Rechercher des traces </p>
 
 #### Consulter une trace
 
 ##### Workflow de l'activité
 
-Ce processus permet d'identifier les flux définis dans le diagramme
-ci-après.  
-  
-Se référer au Tableau 14 pour la définition des acteurs.
+Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
 
 <div class="figure" style="text-align: center;">
     <img src="diagramme_activiteConsulterTrace.png"
@@ -2190,7 +1873,7 @@ Se référer au Tableau 14 pour la définition des acteurs.
 | Traiter la demande de consultation d'une trace | Le gestionnaire de traçabilité reçoit et traite la demande de recherche de l'évènement de trace à consulter. |
 | Traiter le retour du gestionnaire de traçabilité | Le consommateur reçoit et traite le retour du gestionnaire de traçabilité. |
 
-Table 44 Actions du Diagramme d'activité Consulter une trace
+<p style="text-align: center;"> Actions du Diagramme d'activité Consulter une trace </p>
 
 ##### Flux identifiés
 
@@ -2199,7 +1882,7 @@ Table 44 Actions du Diagramme d'activité Consulter une trace
 | Flux 25 - ConsulterTrace | Ce flux porte les informations pour consulter un évènement de traçabilité. |
 | Flux 26 - ReponseConsulterTrace | Ce flux porte les informations répondant à la requête du Flux 25. |
 
-Table 45 Flux identifiés du Diagramme d'activité Consulter une trace
+<p style="text-align: center;"> Flux identifiés du Diagramme d'activité Consulter une trace </p>
 
 #### Synthèse des flux
 
@@ -2217,215 +1900,165 @@ Table 45 Flux identifiés du Diagramme d'activité Consulter une trace
 <tbody>
 <tr>
 <td style="text-align: left;">Flux 1 - DemandeDMI</td>
-<td style="text-align: left;">Ce flux porte les informations de
-création, de mise à jour ou de suppression d'une demande de DMI.</td>
+<td style="text-align: left;">Ce flux porte les informations de création, de mise à jour ou de suppression d'une demande de DMI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 1c - TracabiliteDemande</td>
-<td style="text-align: left;">Ce flux permet d'enregistrer la demande de
-DMI au sein du gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Ce flux permet d'enregistrer la demande de DMI au sein du gestionnaire de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 2 - ReponseDemandeDMI</td>
-<td style="text-align: left;">Ce flux permet au service utilisateur
-d'avoir des informations sur le traitement de leur demande.</td>
+<td style="text-align: left;">Ce flux permet au service utilisateur d'avoir des informations sur le traitement de leur demande.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 2a - TracabiliteReponse</td>
-<td style="text-align: left;">Ce flux permet d'enregistrer la réponse du
-gestionnaire DMI au sein du gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Ce flux permet d'enregistrer la réponse du gestionnaire DMI au sein du gestionnaire de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 3 - CommandeDMI</td>
-<td style="text-align: left;">Ce flux contient les informations
-nécessaires pour que le gestionnaire DMI passe une commande auprès de
+<td style="text-align: left;">Ce flux contient les informations nécessaires pour que le gestionnaire DMI passe une commande auprès de
 son fournisseur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 27 - TracabiliteCommande</td>
-<td style="text-align: left;">Ce flux permet d'enregistrer la commande
-de DMI au sein du gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Ce flux permet d'enregistrer la commande de DMI au sein du gestionnaire de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 4 - LivraisonDMI</td>
-<td style="text-align: left;">Ce flux porte les informations envoyées
-vers le gestionnaire de réception concernant la livraison par le
+<td style="text-align: left;">Ce flux porte les informations envoyées vers le gestionnaire de réception concernant la livraison par le
 fournisseur du (des) DMI. Cette livraison étant valide ou rejetée.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 5 - TracabiliteLivraisonValide</td>
-<td style="text-align: left;">Ce flux permet au gestionnaire de
-réception de tracer la conformité de la totalité de la commande de DMI
-par rapport aux bons de livraison dans le gestionnaire de
-traçabilité.</td>
+<td style="text-align: left;">Ce flux permet au gestionnaire de réception de tracer la conformité de la totalité de la commande de DMI
+par rapport aux bons de livraison dans le gestionnaire de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 5a - TracabiliteLivraisonRejet</td>
-<td style="text-align: left;">Ce flux permet au gestionnaire de
-réception de tracer l'incohérence de la livraison avec les bons de
-réception des DMI dans le gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Ce flux permet au gestionnaire de réception de tracer l'incohérence de la livraison avec les bons de réception des DMI dans le gestionnaire de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 5e - TracabiliteRejetDMI</td>
-<td style="text-align: left;">Ce flux permet au gestionnaire de
-réception de tracer la cause du rejet de la réception du DMI dans le
-gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Ce flux permet au gestionnaire de réception de tracer la cause du rejet de la réception du DMI dans le gestionnaire de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 5b - ReceptionUnitaireDMI</td>
-<td style="text-align: left;">Ce flux véhicule les informations du DMI
-livré pour qu'il soit délivré par le gestionnaire DMI.</td>
+<td style="text-align: left;">Ce flux véhicule les informations du DMI livré pour qu'il soit délivré par le gestionnaire DMI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 5d - TracabiliteReceptionDMI</td>
-<td style="text-align: left;">Ce flux permet au gestionnaire de
-réception de tracer la réception du DMI au sein de l'établissement dans
+<td style="text-align: left;">Ce flux permet au gestionnaire de réception de tracer la réception du DMI au sein de l'établissement dans
 le gestionnaire de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 5c - TracabiliteEntreeStockDMI</td>
-<td style="text-align: left;">Ce flux permet au gestionnaire de
-réception de tracer l'entrée au stock au sein de l'établissement du
-nouveau DMI dans le gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Ce flux permet au gestionnaire de réception de tracer l'entrée au stock au sein de l'établissement du nouveau DMI dans le gestionnaire de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 6a - TracabiliteSortieStock</td>
-<td style="text-align: left;">Ce flux permet au gestionnaire de DMI de
-tracer la sortie du stock de la PUI du (des) DMI délivrés.</td>
+<td style="text-align: left;">Ce flux permet au gestionnaire de DMI de tracer la sortie du stock de la PUI du (des) DMI délivrés.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 7 - TracabiliteDelivranceSU</td>
-<td style="text-align: left;">Ce flux permet au service utilisateur de
-tracer la délivrance du (des) DMI au service utilisateur.</td>
+<td style="text-align: left;">Ce flux permet au service utilisateur de tracer la délivrance du (des) DMI au service utilisateur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 6 - DelivranceSU</td>
-<td style="text-align: left;">Ce flux porte les informations de
-délivrance des DMI au service utilisateur.</td>
+<td style="text-align: left;">Ce flux porte les informations de délivrance des DMI au service utilisateur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 8 - TransportDMI</td>
-<td style="text-align: left;">Ce flux porte les informations de
-livraison du (des) DMI à destination du service utilisateur.<br />
+<td style="text-align: left;">Ce flux porte les informations de livraison du (des) DMI à destination du service utilisateur.<br />
 Tout incident de transport est mentionné dans le flux.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 9 - TracabiliteTransportDMI</td>
-<td style="text-align: left;">Ce flux permet au gestionnaire DMI de
-tracer le transport du (des) DMI dans le gestionnaire de
+<td style="text-align: left;">Ce flux permet au gestionnaire DMI de tracer le transport du (des) DMI dans le gestionnaire de
 traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 11 - TracabiliteEntreeStockSU</td>
-<td style="text-align: left;">Ce flux permet au gestionnaire de
-réception du service utilisateur de tracer l'entrée au stock du service
+<td style="text-align: left;">Ce flux permet au gestionnaire de réception du service utilisateur de tracer l'entrée au stock du service
 utilisateur du (des) DMI réceptionnés.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 12 - TracabiliteReceptionSU</td>
-<td style="text-align: left;">Ce flux permet au service utilisateur de
-tracer la réception du (des) DMI dans leurs locaux.</td>
+<td style="text-align: left;">Ce flux permet au service utilisateur de tracer la réception du (des) DMI dans leurs locaux.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 10 - ReceptionSU</td>
-<td style="text-align: left;">Ce flux porte les informations de
-réception du (des) DMI au sein du service utilisateur.</td>
+<td style="text-align: left;">Ce flux porte les informations de réception du (des) DMI au sein du service utilisateur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 28 - TracabiliteRejetDMI</td>
-<td style="text-align: left;">Ce flux permet au gestionnaire de
-réception du service utilisateur de tracer la cause du rejet de la
-réception du DMI dans le gestionnaire de traçabilité.</td>
+<td style="text-align: left;">Ce flux permet au gestionnaire de réception du service utilisateur de tracer la cause du rejet de la réception du DMI dans le gestionnaire de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 15 -TracabilitePose</td>
-<td style="text-align: left;">Ce flux permet au service utilisateur de
-tracer l'acte de pose du DMI chez le patient.</td>
+<td style="text-align: left;">Ce flux permet au service utilisateur de tracer l'acte de pose du DMI chez le patient.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 14 - TracabiliteEchecPose</td>
-<td style="text-align: left;">Ce flux porte les informations de
-traçabilité de l'échec de pose du DMI.</td>
+<td style="text-align: left;">Ce flux porte les informations de traçabilité de l'échec de pose du DMI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 13 - ConsommationDMI</td>
-<td style="text-align: left;">Ce flux permet au service
-utilisateur<br />
+<td style="text-align: left;">Ce flux permet au service utilisateur<br />
 - d'informer le gestionnaire DMI que le DMI est consommé,<br />
-- alimenter le dossier patient informatisé, le dossier pharmaceutique,
-la lettre de liaison, dossier médical partagé.</td>
+- alimenter le dossier patient informatisé, le dossier pharmaceutique, la lettre de liaison, dossier médical partagé.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 13a - TracabiliteRefusDMI</td>
-<td style="text-align: left;">Ce flux porte les informations de
-traçabilité du refus de l'utilisation du DMI au plateau technique.</td>
+<td style="text-align: left;">Ce flux porte les informations de traçabilité du refus de l'utilisation du DMI au plateau technique.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 30 - TracabiliteSortieStockSU</td>
-<td style="text-align: left;">Ce flux permet au service utilisateur de
-tracer la sortie du stock du service utilisateur du (des) DMI.</td>
+<td style="text-align: left;">Ce flux permet au service utilisateur de tracer la sortie du stock du service utilisateur du (des) DMI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 22 - TransmissionTrace</td>
-<td style="text-align: left;">Ce flux permet de transmettre les
-informations de traçabilité d'un évènement.</td>
+<td style="text-align: left;">Ce flux permet de transmettre les informations de traçabilité d'un évènement.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 23 - RechercheTraces</td>
-<td style="text-align: left;">Ce flux porte les critères pour rechercher
-un ou plusieurs évènements de traçabilité</td>
+<td style="text-align: left;">Ce flux porte les critères pour rechercher un ou plusieurs évènements de traçabilité</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 24 - ReponseRechercheTraces</td>
-<td style="text-align: left;">Ce flux porte les informations répondant à
-la requête du Flux 23.</td>
+<td style="text-align: left;">Ce flux porte les informations répondant à la requête du Flux 23.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 25 - ConsulterTrace</td>
-<td style="text-align: left;">Ce flux porte les informations pour
-consulter un évènement de traçabilité.</td>
+<td style="text-align: left;">Ce flux porte les informations pour consulter un évènement de traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Flux 26 - ReponseConsulterTrace</td>
-<td style="text-align: left;">Ce flux porte les informations répondant à
-la requête du Flux 25.</td>
+<td style="text-align: left;">Ce flux porte les informations répondant à la requête du Flux 25.</td>
 </tr>
 </tbody>
 </table>
 
-Table 46 Description du processus collaboratif et identification des
-flux
+<p style="text-align: center;"> Description du processus collaboratif et identification des flux </p>
 
 ### Elaboration des modèles hiérarchiques des flux structurés
 
-Les flux échangés par les acteurs lors des processus métier
-collaboratifs ont été identifiés, définis et décrits dans les étapes 1,
-2, 3 et 4.  
-Le but de cette étape est d'élaborer pour chaque flux décris dans
-l'épate 4, la modélisation des données. La liste de ces items
-intervenant dans la modélisation sont rendus opposables par l'arrêté du
-8 septembre 2021, applicable à compter du 26 mai 2022 (cf "Arrêté du 8
-septembre 2021 relatif au management de la qualité du circuit des
-dispositifs médicaux implantables dans les établissements de santé et
-les installations de chirurgie esthétique").  
+Les flux échangés par les acteurs lors des processus métier collaboratifs ont été identifiés, définis et décrits dans les étapes 1,
+2, 3 et 4. Le but de cette étape est d'élaborer pour chaque flux décris dans l'étape 4, la modélisation des données. La liste de ces items
+intervenant dans la modélisation sont rendus opposables par l'arrêté du 8 septembre 2021, applicable à compter du 26 mai 2022 (cf "Arrêté du 8
+septembre 2021 relatif au management de la qualité du circuit des dispositifs médicaux implantables dans les établissements de santé et
+les installations de chirurgie esthétique"). 
   
-Le modèle est formalisé par un diagramme de classes UML pour chaque flux
-faisant partie du périmètre de l’étude métier. La représentation
-formalisée du flux doit prendre en compte les trois exigences
-suivantes:  
-- les données sont modélisées en cohérence avec le Modèle des Objets de
-Santé (MOS) et les nomenclatures associées (NOS) gérés par l'ANS :  
+Le modèle est formalisé par un diagramme de classes UML pour chaque flux faisant partie du périmètre de l’étude métier. La représentation
+formalisée du flux doit prendre en compte les trois exigences suivantes:  
+- les données sont modélisées en cohérence avec le Modèle des Objets de Santé (MOS) et les nomenclatures associées (NOS) gérés par l'ANS :  
 MOS : https://esante.gouv.fr/interoperabilite/mos-nos  
 NOS: https://esante.gouv.fr/interoperabilite/mos-nos/nos  
-- réutilisation des types de données (classes) mis à disposition dans le
-MOS  
-- définition des associations, y compris leurs cardinalités, entre les
-classes en respectant les besoins métier.
+- réutilisation des types de données (classes) mis à disposition dans le MOS  
+- définition des associations, y compris leurs cardinalités, entre les classes en respectant les besoins métier.
 
 #### Flux 1 - DemandeDMI
 
-Cette section présente le diagramme de classes du Flux 1 - DemandeDMI.
-Ce flux concerne la création, la mise à jour ou la suppression d'une
+Cette section présente le diagramme de classes du Flux 1 - DemandeDMI. Ce flux concerne la création, la mise à jour ou la suppression d'une
 demande de DMI envoyée au gestionnaire DMI par le service utilisateur.
 
 <div class="figure" style="text-align: center;">
@@ -2455,53 +2088,42 @@ demande de DMI envoyée au gestionnaire DMI par le service utilisateur.
 <tbody>
 <tr>
 <td style="text-align: left;">reference : [1..1] Identifiant</td>
-<td style="text-align: left;">Référence unique de la demande (qui peut
-être une référence interne dans ce flux). Cet identifiant peut être
-généré automatique au moment de la soumission de la demande. Ainsi, il
-peut ne pas être contenu dans le flux de création d'une demande
-DMI.</td>
+<td style="text-align: left;">Référence unique de la demande (qui peut être une référence interne dans ce flux). Cet identifiant peut être
+généré automatique au moment de la soumission de la demande. Ainsi, il peut ne pas être contenu dans le flux de création d'une demande DMI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">natureDemande : [0..1] Texte</td>
-<td style="text-align: left;">Il s'agit de la nature de la demande de
-DMI. Dans ce flux, il s'agit d'une demande interne du service
-utilisateur.</td>
+<td style="text-align: left;">Il s'agit de la nature de la demande de DMI. Dans ce flux, il s'agit d'une demande interne du service utilisateur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">quantiteTotale : [1..1] Numerique</td>
-<td style="text-align: left;">Il s'agit de la quantité totale des DMI
-concernés par la demande.</td>
+<td style="text-align: left;">Il s'agit de la quantité totale des DMI concernés par la demande.</td>
 </tr>
 <tr>
 <td style="text-align: left;">dateDem : [1..1] DateHeure</td>
-<td style="text-align: left;">Il s'agit de la date de la demande par le
-service utilisateur.</td>
+<td style="text-align: left;">Il s'agit de la date de la demande par le service utilisateur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">supprDemande : [0..1] boolean</td>
-<td style="text-align: left;">Indicateur pour avertir le gestionnaire
-DMI que la demande de DMI est à supprimer.<br />
+<td style="text-align: left;">Indicateur pour avertir le gestionnaire DMI que la demande de DMI est à supprimer.<br />
 1 : la demande de DMI est supprimée, 0 : dans le cas contraire</td>
 </tr>
 <tr>
 <td style="text-align: left;">motifSuppr : [0..1] Texte</td>
-<td style="text-align: left;">Informations relatives à la suppression de
-la demande de DMI.</td>
+<td style="text-align: left;">Informations relatives à la suppression de la demande de DMI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">infoCompl : [0..1] Texte</td>
-<td style="text-align: left;">Toute information complémentaire
-concernant le traitement de la demande de DMI.</td>
+<td style="text-align: left;">Toute information complémentaire concernant le traitement de la demande de DMI.</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des classes et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 47 Attributs de la classe "Demande"
+<p style="text-align: center;"> Attributs de la classe "Demande" </p>
 
 ##### Classe "Ligne"
 
@@ -2511,12 +2133,11 @@ Table 47 Attributs de la classe "Demande"
 | dateUtilisation : \[0..1\] Date | Date prévue d'utilisation du DMI |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 48 Attributs de la classe "Ligne"
+<p style="text-align: center;"> Attributs de la classe "Ligne" </p>
 
 #### Flux 1c - TracabiliteDemande
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de
-la demande ou de la suppression de la demande (Flux 1) de DMI envoyée
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de la demande ou de la suppression de la demande (Flux 1) de DMI envoyée
 par le service utilisateur vers le gestionnaire DMI.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
@@ -2525,48 +2146,33 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du service utilisateur ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du service utilisateur ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « DEM » de la nomenclature «
-TRE_R254-TypeEvenement » pour la demande et « SDM » pour la suppression
-de la demande.  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « DEM » de la nomenclature « TRE_R254-TypeEvenement » pour la demande et « SDM » pour la suppression de la demande.  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :
 pour la première occurrence :  
-. identifiant correspond à l’identifiant du professionnel du service
-utilisateur.  
+. identifiant correspond à l’identifiant du professionnel du service utilisateur.  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
-pour la deuxième occurrence  
+pour la deuxième occurrence :
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 1  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 1   
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 1 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 1 encodé en binaire
 
 #### Flux 2 - ReponseDemandeDMI
 
-Cette section présente le diagramme de classes du Flux 2 -
-ReponseDemandeDMI. Il s'agit du flux de réponse de la part du
-gestionnaire DMI après avoir reçu la demande soit de création ou de mise
-à jour.
+Cette section présente le diagramme de classes du Flux 2 - ReponseDemandeDMI. Il s'agit du flux de réponse de la part du gestionnaire DMI après avoir reçu la demande soit de création ou de mise à jour.
 
 <div class="figure" style="text-align: center;">
     <img src="flux2_reponseDemandeDMI.png"
@@ -2589,7 +2195,7 @@ gestionnaire DMI après avoir reçu la demande soit de création ou de mise
 | infoCompl : \[0..1\] Texte | Toute information complémentaire concernant le traitement de la demande de DMI. |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 49 Attributs de la classe "Reponse"
+<p style="text-align: center;"> Attributs de la classe "Reponse" </p>
 
 ##### Classe "DetailReponse"
 
@@ -2599,12 +2205,11 @@ Table 49 Attributs de la classe "Reponse"
 | dateDelivrance : \[0..1\] Date | Il s'agit de la date prévue de délivrance du DMI par la PUI au service utilisateur. |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 50 Attributs de la classe "DetailReponse"
+<p style="text-align: center;"> Attributs de la classe "DetailReponse" </p>
 
 #### Flux 2a - TracabiliteReponse 
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de
-la réponse à la demande (Flux 2) de DMI.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de la réponse à la demande (Flux 2) de DMI.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -2616,16 +2221,12 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 système du gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « REP » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « REP » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
@@ -2633,22 +2234,17 @@ pour la deuxième occurrence
 . identifiant correspond à l’identifiant du service utilisateur.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 2  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 2  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 2 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 2 encodé en binaire
 
 #### Flux 3 - CommandeDMI
 
-Cette section présente le diagramme de classes du Flux 3 - CommandeDMI.
+Cette section présente le diagramme de classes du Flux 3 - CommandeDMI. 
 Ce flux concerne la soumission par le gestionnaire DMI de la commande de
 DMI auprès du fournisseur (fabricant ou distributeur).
 
@@ -2673,7 +2269,7 @@ DMI auprès du fournisseur (fabricant ou distributeur).
 | dateCmd : \[0..1\] DateHeure | Il s'agit de la date et heure de la soumission de la commande envoyée par le gestionnaire DMI. |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 51 Attributs de la classe "Commande"
+<p style="text-align: center;"> Attributs de la classe "Commande" </p>
 
 ##### Classe "Ligne"
 
@@ -2683,12 +2279,11 @@ Table 51 Attributs de la classe "Commande"
 | dateUtilisation : \[0..1\] Date | La date prévue d'utilisation du DMI |
 | metadonnee : \[1..1\] [Metadonnee](#classe-metadonnee) | Informations relatives à la gestion des classes et des données. |
 
-Table 52 Attributs de la classe "Ligne"
+<p style="text-align: center;"> Attributs de la classe "Ligne" </p>
 
 #### Flux 27 - TracabiliteCommande
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de
-la commande de DMI.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de la commande de DMI.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -2696,20 +2291,15 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire DMI ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « CDM » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « CDM » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
@@ -2717,18 +2307,13 @@ pour la deuxième occurrence
 . identifiant correspond à l’identifiant du fournisseur.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 3  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 3  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 3 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 3 encodé en binaire
 
 #### Flux 4 - LivraisonDMI 
 
