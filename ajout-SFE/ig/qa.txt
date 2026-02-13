@@ -3,7 +3,7 @@ ExampleIG : Validation Results
 
 err = 3, warn = 14, info = 17
 IG Publisher Version: 2.1.0
-Generated Fri Feb 13 13:57:08 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.[code]#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/[code])
+Generated Fri Feb 13 15:50:29 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.[code]#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/[code])
  Build Errors : 2 / 3 / 0
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 2 / 3
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 2 / 3
@@ -18,7 +18,7 @@ Generated Fri Feb 13 13:57:08 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.[code
 </table>
 == n/a ==
 ERROR: searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/div/img at Line 1933, column 6: The image source 'input/images/diagramme_activiteTransporterDMI.png' cannot be resolved
+ERROR: specifications_fonctionnelles.html#/html/body/div/div/div/div/div/div/img at Line 1708, column 6: The image source 'input/images/diagramme_activiteTransporterDMI.png' cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
