@@ -1,7 +1,6 @@
 Profile: DMI_Practitioner
 Parent: fr-core-practitioner
-Id: DMI_Practitioner
-* ^status = #draft
+Id: dmi-practitioner
 * meta 1..
 * identifier 1..
 * telecom 1..1

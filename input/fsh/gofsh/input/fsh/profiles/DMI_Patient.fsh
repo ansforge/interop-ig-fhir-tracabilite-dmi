@@ -1,7 +1,6 @@
 Profile: DMI_Patient
 Parent: fr-core-patient
-Id: DMI_Patient
-* ^status = #draft
+Id: dmi-patient
 * meta 1..
 * identifier 1..
 * telecom 1..

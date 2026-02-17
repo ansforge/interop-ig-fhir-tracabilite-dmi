@@ -1,6 +1,6 @@
 Profile: DMI_DeviceDefinition
 Parent: DeviceDefinition
-Id: DMI_DeviceDefinition
+Id: dmi-devicedefinition
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

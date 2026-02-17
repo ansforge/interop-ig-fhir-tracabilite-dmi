@@ -1,6 +1,6 @@
 Profile: DMI_Invoice
 Parent: Invoice
-Id: DMI_Invoice
+Id: dmi-invoice
 * meta 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

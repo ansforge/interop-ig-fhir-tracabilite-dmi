@@ -1,9 +1,5 @@
 Extension: DMI_Transport
-Id: DMI_Transport
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_Transport"
-* ^version = "1.0"
-* ^status = #draft
-* ^date = "2022-05-23"
+Id: dmi-ransport
 * ^context.type = #element
 * ^context.expression = "SupplyDelivery"
 * extension ^slicing.discriminator.type = #value

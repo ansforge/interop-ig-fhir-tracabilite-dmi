@@ -1,7 +1,3 @@
-Profile: DMI_partNumber
+Profile: DMI_PartNumber
 Parent: SearchParameter
-Id: DMI_partNumber
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_partNumber"
-* ^version = "1.0"
-* ^status = #draft
-* ^date = "2022-05-24"
+Id: dmi-part-number

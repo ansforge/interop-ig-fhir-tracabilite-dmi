@@ -1,6 +1,6 @@
 Profile: DMI_Device
 Parent: Device
-Id: DMI_Device
+Id: dmi-device
 * meta 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

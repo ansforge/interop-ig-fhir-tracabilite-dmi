@@ -1,5 +1,5 @@
 Extension: DMI_ClasseRisque
-Id: DMI_ClasseRisque
+Id: dmi-classe-risque
 Context: DeviceDefinition
 * value[x] only CodeableConcept
 * value[x] ^slicing.discriminator.type = #type

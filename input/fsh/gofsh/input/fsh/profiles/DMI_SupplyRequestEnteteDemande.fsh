@@ -1,13 +1,7 @@
 Profile: DMI_SupplyRequestEnteteDemande
 Parent: SupplyRequest
-Id: DMI_SupplyRequestEnteteDemande
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_SupplyRequestEnteteDemande"
-* ^version = "1.0"
-* ^status = #draft
-* ^date = "2022-11-21"
+Id: dmi-supplyrequest-entete-demande
 * meta 1..
-* meta.profile 1..1
-* meta.profile = "http://esante.gouv.fr/cisis/fhir/StructureDefinition/DMI_SupplyRequestEnteteDemande" (exactly)
 * identifier 1..1
 * item[x] only CodeableConcept
 * item[x] = $TRE_R254-TypeEvenement-FHIR.json#DEM "Creation demande" (exactly)

@@ -1,8 +1,6 @@
 Profile: DMI_Procedure
 Parent: Procedure
-Id: DMI_Procedure
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_Procedure"
-* ^status = #draft
+Id: dmi-procedure
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.text"
 * identifier ^slicing.rules = #open

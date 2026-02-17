@@ -1,12 +1,7 @@
 Profile: DMI_BundleTransmissionTraces
 Parent: Bundle
-Id: DMI_BundleTransmissionTraces
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_BundleTransmissionTraces"
-* ^version = "1.0"
-* ^status = #draft
+Id: dmi-bundle-transmission-traces
 * meta 1..
-* meta.profile 1..1
-* meta.profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_BundleRequest" (exactly)
 * type = #transaction (exactly)
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
@@ -34,7 +29,7 @@ Id: DMI_BundleTransmissionTraces
 * entry[Professionnel].resource 1..
 * entry[Professionnel].resource only DMI_Practitioner
 * entry[EntiteJuridique].resource 1..
-* entry[EntiteJuridique].resource only DMI_Organization_EJ
+* entry[EntiteJuridique].resource only DMI_OrganizationEJ
 * entry[OrganisationInterne].resource 1..
 * entry[OrganisationInterne].resource only DMI_OrganizationInterne
 * entry[Invoice].resource 1..
@@ -43,7 +38,7 @@ Id: DMI_BundleTransmissionTraces
 * entry[Procedure].resource only DMI_Procedure
 * entry[SupplyRequest].resource only DMI_SupplyRequestEnteteDemande or DMI_SupplyRequestEnteteCommande or DMI_SupplyRequestEnteteReponse
 * entry[SupplyDelivery].resource 1..
-* entry[SupplyDelivery].resource only DMI_SupplyDeliveryReceptionUnitaire or DMI_SupplyDeliveryEnteteReceptionDMI or DMI_SupplyDeliveryEnteteDelivrance or DMI_SupplyDeliveryEnteteLivraison or DMI_SupplyDeliveryLigne or $DMI_SupplyDeliveryEntreeStockDMI
+* entry[SupplyDelivery].resource only DMI_SupplyDeliveryReceptionUnitaire or DMI_SupplyDeliveryEnteteReceptionDMI or DMI_SupplyDeliveryEnteteDelivrance or DMI_SupplyDeliveryEnteteLivraison or DMI_SupplyDeliveryLigne or DMI_SupplyDeliveryEntreeStockDMI
 * entry[AuditEvent].resource 1..
 * entry[AuditEvent].resource only DMI_AuditEvent
 * entry[BundleRequest].resource 1..

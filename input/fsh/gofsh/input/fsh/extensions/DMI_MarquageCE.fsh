@@ -1,8 +1,5 @@
 Extension: DMI_MarquageCE
-Id: DMI_MarquageCE
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_MarquageCE"
-* ^version = "1.0"
-* ^status = #draft
+Id: dmi-marquage-ce
 * ^context.type = #element
 * ^context.expression = "Device"
 * extension ^slicing.discriminator.type = #value

@@ -1,8 +1,5 @@
 Extension: DMI_ReferenceOrganisationInterne
-Id: DMI_ReferenceOrganisationInterne
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_ReferenceOrganisationInterne"
-* ^version = "1.0"
-* ^status = #draft
+Id: dmi-reference-organisation-interne
 * ^context.type = #element
 * ^context.expression = "SupplyDelivery"
 * value[x] 1..

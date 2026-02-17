@@ -1,13 +1,7 @@
 Profile: DMI_SupplyDeliveryTransport
 Parent: SupplyDelivery
-Id: DMI_SupplyDeliveryTransport
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_SupplyDeliveryTransport"
-* ^version = "1.0"
-* ^status = #draft
-* ^date = "2022-05-25"
+Id: dmi-supplydelivery-transport
 * meta 1..
-* meta.profile 1..1
-* meta.profile = "http://esante.gouv.fr/cisis/fhir/StructureDefinition/DMI_SupplyDeliveryTransport" (exactly)
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

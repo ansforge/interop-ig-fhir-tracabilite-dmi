@@ -1,11 +1,14 @@
-Profile: DMI_Organization_EJ
+Profile: DMI_OrganizationEJ
 Parent: fr-core-organization
-Id: DMI_Organization_EJ
+Id: dmi-organization-ej
 * meta 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
+* extension contains 
+    DMI_IdentifiantLocalDistributeur named IdentifiantLocalDistributeur 0..* and
+    DMI_IdentifiantLocalFabricant named IdentifiantLocalFabricant 0..*
 * extension[IdentifiantLocalDistributeur] only DMI_IdentifiantLocalDistributeur
 * extension[IdentifiantLocalDistributeur] ^sliceName = "IdentifiantLocalDistributeur"
 * extension[IdentifiantLocalDistributeur] ^min = 0
@@ -22,7 +25,8 @@ Id: DMI_Organization_EJ
     IdNatStruct 1..1 and
     numSiren 1..1 and
     numFINESS 0..1 and
-    numeroTVAIntracommunautaire 0..1
+    numeroTVAIntracommunautaire 0..1 and
+    numeroSRN 0..*
 * identifier[IdNatStruct].type.text 1..
 * identifier[IdNatStruct].type.text = "IdNatStruct" (exactly)
 * identifier[numSiren].type.text 1..

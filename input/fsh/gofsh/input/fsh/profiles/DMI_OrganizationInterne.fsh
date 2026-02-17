@@ -1,8 +1,6 @@
 Profile: DMI_OrganizationInterne
 Parent: Organization
-Id: DMI_OrganizationInterne
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_OrganizationInterne"
-* ^status = #draft
+Id: dmi-organization-interne
 * meta 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -25,6 +23,6 @@ Id: DMI_OrganizationInterne
 * type contains
     TypeOrganizationInterne 1..1 and
     CategorieOrganisation 0..1
-* type[TypeOrganizationInterne] from $ (required)
+* type[TypeOrganizationInterne] from $TRE_R207-TypeOrganisationInterne (required)
 * type[TypeOrganizationInterne].id = "TypeOrganizationInterne" (exactly)
 * type[CategorieOrganisation] from $_1 (required)
