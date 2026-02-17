@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_BundleDelivery" />
+  <name value="DMI_BundleDelivery" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle.type">
+      <path value="Bundle.type" />
+      <fixedCode value="transaction" />
+    </element>
+    <element id="Bundle.entry">
+      <path value="Bundle.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="resource" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Bundle.entry:SupplyDelivery">
+      <path value="Bundle.entry" />
+      <sliceName value="SupplyDelivery" />
+    </element>
+    <element id="Bundle.entry:SupplyDelivery.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_SupplyDeliveryEnteteTransport" />
+        <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_SupplyDeliveryEnteteReceptionDMI" />
+        <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_SupplyRequestEnteteDelivrance" />
+        <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_SupplyRequestEnteteLivraison" />
+        <profile value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_SupplyRequestEnteteLigne" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

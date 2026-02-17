@@ -1,0 +1,8 @@
+canonical: http://esante.gouv.fr/ci-sis/fhir
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: esante.gouv.ci-sis.fhir
+name: EsanteGouvCi-sisFhir
+status: draft
+version: "1.0"

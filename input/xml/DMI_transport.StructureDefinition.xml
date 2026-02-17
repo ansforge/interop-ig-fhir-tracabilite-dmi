@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_Transport" />
+  <version value="1.0" />
+  <name value="DMI_Transport" />
+  <status value="draft" />
+  <date value="2022-05-23" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="SupplyDelivery" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="3" />
+    </element>
+    <element id="Extension.extension:refTransport">
+      <path value="Extension.extension" />
+      <sliceName value="refTransport" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:refTransport.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="refTransport" />
+    </element>
+    <element id="Extension.extension:refTransport.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+    <element id="Extension.extension:refDelivery">
+      <path value="Extension.extension" />
+      <sliceName value="refDelivery" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:refDelivery.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="refDelivery" />
+    </element>
+    <element id="Extension.extension:refDelivery.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+    <element id="Extension.extension:incident">
+      <path value="Extension.extension" />
+      <sliceName value="incident" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:incident.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="incident" />
+    </element>
+    <element id="Extension.extension:incident.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+    <element id="Extension.extension:detailIncident">
+      <path value="Extension.extension" />
+      <sliceName value="detailIncident" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:detailIncident.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="detailIncident" />
+    </element>
+    <element id="Extension.extension:detailIncident.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:text">
+      <path value="Extension.extension" />
+      <sliceName value="text" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:text.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="text" />
+    </element>
+    <element id="Extension.extension:text.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:meta">
+      <path value="Extension.extension" />
+      <sliceName value="meta" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:meta.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="meta" />
+    </element>
+    <element id="Extension.extension:meta.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Meta" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_Transport" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

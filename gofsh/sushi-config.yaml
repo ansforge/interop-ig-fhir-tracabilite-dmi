@@ -1,0 +1,8 @@
+canonical: https://interop.esante.gouv.fr/ig/fhir/[code]
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: ans.fhir.fr.[code]
+name: ExampleIG
+status: draft
+version: 0.1.0

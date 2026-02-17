@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/DMI_SupplyRequestEnteteCommande" />
+  <version value="1.0" />
+  <name value="DMI_SupplyRequestEnteteCommande" />
+  <status value="draft" />
+  <date value="2022-11-21" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="SupplyRequest" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/SupplyRequest" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="SupplyRequest.meta">
+      <path value="SupplyRequest.meta" />
+      <min value="1" />
+    </element>
+    <element id="SupplyRequest.meta.profile">
+      <path value="SupplyRequest.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="http://esante.gouv.fr/cisis/fhir/StructureDefinition/DMI_SupplyRequestEnteteCommande" />
+    </element>
+    <element id="SupplyRequest.identifier">
+      <path value="SupplyRequest.identifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="SupplyRequest.item[x]">
+      <path value="SupplyRequest.item[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR.json" />
+          <code value="CDM" />
+        </coding>
+      </fixedCodeableConcept>
+      <binding>
+        <strength value="example" />
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR.json" />
+      </binding>
+    </element>
+    <element id="SupplyRequest.requester">
+      <path value="SupplyRequest.requester" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="SupplyRequest.deliverTo">
+      <path value="SupplyRequest.deliverTo" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
