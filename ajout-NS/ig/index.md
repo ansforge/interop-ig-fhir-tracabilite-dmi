@@ -45,9 +45,14 @@ Toujours laisser l'onglet "Ressources de conformité" pour s'assurer d'une cohé
 
 Certaines ressources sémantiques de ce guide sont protégées par des droits de propriété intellectuelle couverte par les déclarations ci-dessous. L’utilisation de ces ressources est soumise à l’acceptation et au respect des conditions précisées dans la licence d’utilisation de chacune d’entre elle.
 
+* ISO
+
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](https://tx.hl7.org.au/fhir/ValueSet/ISO3166Part1): [CompetenceCS](CodeSystem-competence-code-system.md), [ExampleIG](index.md)... Show 7 more, [EyeColor](StructureDefinition-EyeColor.md), [EyeColorVS](ValueSet-EyeColorVS.md), [FrPatient](StructureDefinition-fr-patient.md), [MeltingPotVS](ValueSet-MeltingPotVS.md), [ModifiedAdministrativeGender](ValueSet-ModifiedAdministrativeGender.md), [TypeCarteCS](CodeSystem-type-carte-code-system.md) and [TypeCarteVS](ValueSet-TypeCarteVS.md)
+
+
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://tx.fhir.org/r4/ValueSet/snomedct): [EyeColor](StructureDefinition-EyeColor.md), [EyeColorVS](ValueSet-EyeColorVS.md) and [MeltingPotVS](ValueSet-MeltingPotVS.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [EyeColor](StructureDefinition-EyeColor.md), [EyeColorVS](ValueSet-EyeColorVS.md) and [MeltingPotVS](ValueSet-MeltingPotVS.md)
 
 
 
@@ -63,7 +68,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "ExampleIG",
   "title" : "ANS IG Example",
   "status" : "draft",
-  "date" : "2026-02-18T14:51:09+00:00",
+  "date" : "2026-02-18T15:53:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
