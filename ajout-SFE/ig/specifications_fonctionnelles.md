@@ -1117,7 +1117,7 @@ Cette section présente le diagramme de classes du Flux 4 - LivraisonDMI. Ce flu
 | motifRejet : [0..1] Texte | Information complémentaire décrivant le motif du rejet de la livraison par le gestionnaire de réception. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 53 Attributs de la classe "Livraison"
+ Attributs de la classe "Livraison" 
 
 #### Flux 5 - TracabiliteLivraisonValide
 
@@ -1172,8 +1172,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
  . identifiant correspond à l’identifiant du gestionnaire DMI.
  . role = récepteur de la trace (cet attribut est nomenclaturé).
 * deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :
- pour la première occurrence .
- . type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).
+ pour la première occurrence : . type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).
  . contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 4
  pour la deuxième occurrence :
  . type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).
@@ -1193,7 +1192,7 @@ Cette section présente le diagramme de classes du Flux 5b - ReceptionUnitaireDM
 | motifRejet : [0..1] Texte | Information complémentaire décrivant le motif du rejet de la réception du dispositif. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 54 Attributs de la classe "StatutReception"
+ Attributs de la classe "StatutReception"
 
 #### Flux 5c - TracabiliteEntreeStockDMI
 
@@ -1213,8 +1212,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 * deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :
  pour la première occurrence :
  . identifiant correspond à l’identifiant du gestionnaire de réception
- . role = émetteur de la trace (cet attribut est nomenclaturé).
- pour la deuxième occurrence
+ . role = émetteur de la trace (cet attribut est nomenclaturé). pour la deuxième occurrence
  . identifiant correspond à l’identifiant du gestionnaire DMI.
  . role = récepteur de la trace (cet attribut est nomenclaturé).
 * deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :
@@ -1301,7 +1299,7 @@ Cette section présente le diagramme de classes du Flux 6 - DelivranceSU. Ce flu
 | informationComplementaire : [0..1] Texte | Toutes informations complémentaires concernant la délivrance de DMI au service utilisateur. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 55 Attributs de la classe "Delivrance"
+ Attributs de la classe "Delivrance"
 
 #### Flux 6a - TracabiliteSortieStock
 
@@ -1382,7 +1380,7 @@ Cette section présente le diagramme de classes du Flux 8 - TransportDMI. Ce flu
 | informationComplementaire : [0..1] Texte | Toutes informations complémentaires concernant le transport du (des) DMI vers le gestionnaire de réception du service utilisateur. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 56 Attributs de la classe "Transport"
+ Attributs de la classe "Transport"
 
 #### Flux 9 - TracabiliteTransportDMI
 
@@ -1402,8 +1400,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 * deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :
  pour la première occurrence :
  . identifiant correspond à l’identifiant du gestionnaire DMI
- . role = émetteur de la trace (cet attribut est nomenclaturé).
- pour la deuxième occurrence
+ . role = émetteur de la trace (cet attribut est nomenclaturé). pour la deuxième occurrence
  . identifiant correspond à l’identifiant du service utilisateur.
  . role = récepteur de la trace (cet attribut est nomenclaturé).
 * deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :
@@ -1429,7 +1426,7 @@ Cette section présente le diagramme de classes du Flux 10 - ReceptionSU. Ce flu
 | quantiteReceptionnee : [0..1] Numerique | Il s'agit de la quantité totale des DMI réceptionnés. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 57 Attributs de la classe "ReceptionDMI"
+ Attributs de la classe "ReceptionDMI"
 
 ##### Classe "Ligne"
 
@@ -1438,9 +1435,9 @@ Table 57 Attributs de la classe "ReceptionDMI"
 | dateReceptionSU : [1..1] DateHeure | Date de reception du DMI |
 | receptionConforme : [1..1] boolean | Indicateur de la conformité du dispositif0 dispositif conforme1 dispositif non conforme (i.e. en cas d'erreur de la PUI ou du transporteur, si le DMI réceptionné n'est pas conforme et/ou ne correspond pas au DMI qui avait été demandé) . |
 | motifRejet : [0..1] Texte | Information complémentaire décrivant le motif du rejet de la réception du dispositif dans le service utilisateur. |
-| metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
+| metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des sclasses et des données. |
 
-Table 58 Attributs de la classe "Ligne"
+ Attributs de la classe "Ligne"
 
 #### Flux 11 - TracabiliteEntreeStock
 
@@ -1551,7 +1548,7 @@ Cette section présente le diagramme de classes du Flux 13 - ConsommationDMI. Ce
 | motifEchec : [0..1] Texte | Information complémentaire décrivant le motif de l'échec de la pose du dispositif. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 59 Attributs de la classe "InterventionMedicale"
+ Attributs de la classe "InterventionMedicale"
 
 #### Flux 30 - TracabiliteSortieStockSU
 
@@ -1723,7 +1720,7 @@ Cette section présente le diagramme de classes du Flux 17 - AutorisationPaiemen
 | devise : [0..1] Code | Devise de règlement de la facture |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 60 Attributs de la classe "Facture"
+ Attributs de la classe "Facture"
 
 ##### Classe "Ligne"
 
@@ -1732,7 +1729,7 @@ Table 60 Attributs de la classe "Facture"
 | dateAchat : [1..1] Date | Date d'achat du DMI par l'établissement. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 61 Attributs de la classe "Ligne"
+ Attributs de la classe "Ligne"
 
 #### Flux 18 - TracabiliteFacturationDMI
 
@@ -1766,6 +1763,13 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 
 #### Flux 22 - TransmissionTrace
 
+Ce flux correspond au « Flux 1 – TransmissionTrace » de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces).
+ Dans le flux « TransmissionTrace » : L’acteur « source de traces » envoie par la méthode POST la demande de traitement de création d’une trace constituée d’une ressource générique (transaction) qui contient :
+
+* Les attributs de l’événement
+* La description détaillée de l’événement au format non structuré
+* La description détaillée de l’événement au format structuré
+
 Les objets entrant dans la composition de ce flux (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces) correspondent à :
 
 * la classe Trace
@@ -1783,17 +1787,14 @@ La table ci-dessous qui liste ces paramètres n’est pas exhaustive.
 | | |
 | :--- | :--- |
 | Tous les paramètres génériques de l'étude (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces) | |
-| autreParametres | Paramètres à renseigner en fonction des flux métiers. Ceux-ci peuvent correspondre à :* 
-* 
-* 
-* 
-* 
-* 
-* 
+| autreParametres | Paramètres à renseigner en fonction des flux métiers. Ceux-ci peuvent correspondre à :* DispositifMedical/support/identifiantHRF (Identifiant du dispositif médical)
+* DispositifMedical/support/IUD-ID (Identifiant du modèle du dispositif médical)
+* DispositifMedical/support/IUD-IPNumLot (Numéro du lot auquel appartient le DM)
+* DispositifMedical/support/IUD-IPNumSerie (Numéro de série propre au DM)
+* DispositifMedical/codeEMDN (Code du dispositif médical)
+* DispositifMedical/referenceFabricant
+* Patient/identite/matriculeINS (Identifiant du patient national)
  |
-
-DispositifMedical/support/identifiantHRF(Identifiant du dispositif médical)DispositifMedical/support/IUD-ID(identifiant du modèle du dispositif médical)DispositifMedical/support/IUD-IPNumLot
- (Numéro du lot auquel appartient le DM)DispositifMedical/support/IUD-IPNumSerie (Numéro de série propre au DM)DispositifMedical/codeEMDN (Code du dispositif médical)DispositfMedical/referenceFabricantPatient/identite/matriculeINS (identifiant du patient national)
 
 #### Flux 24 - ReponseRechercheTraces
 
@@ -1829,7 +1830,7 @@ Adresse géopostale. Un emplacement auquel une personne ou une organisation peut
 | localite : [0..1] Texte | Localité ou Libellé du bureau distributeur CEDEX** Localité: Zone d'habitation, en général la commune d'implantation du destinataire. Elle est identifiée par son libellé INSEE sauf dans quelques cas où le libellé postal diffère du libellé INSEE, généralement pour lever des ambiguïtés.** Libellé du bureau distributeur CEDEX.Libellé du bureau distributeur c'est-à-dire (dans la très grande majorité des cas) le libellé de la commune siège du bureau CEDEX; la mention CEDEX doit obligatoirement suivre le libellé du bureau CEDEX; dans le cas où il existe plusieurs bureaux CEDEX pour une même entité ou commune, chaque bureau CEDEX sera identifié par un numéro (exemple : ROUBAIX CEDEX 2); ce numéro correspond au numéro d'arrondissement dans le cas des villes à arrondissements, à un numéro d'ordre dans les autres cas. |
 | metadonnee : [0..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 62 Attributs de la classe "Adresse"
+ Attributs de la classe "Adresse"
 
 ##### Classe "DispositifMedical"
 
@@ -1859,7 +1860,7 @@ Cette classe correspond à l'élaboration de la brique élémentaire du disposit
 | codeLPP : [0..1] Code | Code LPP du DM.Il s'agit d'un code national utilisé pour obtenir le remboursement par l'Assurance Maladie de certains DM (implantables ou invasifs non implantables) en sus des prestations d’hospitalisations à l’hôpital, ou le remboursement de certains produits et prestations en ville. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 63 Attributs de la classe "DispositifMedical"
+ Attributs de la classe "DispositifMedical"
 
 ##### Classe "MarquageCE"
 
@@ -1868,7 +1869,7 @@ Table 63 Attributs de la classe "DispositifMedical"
 | organismeNotifie : [0..1][EntiteJuridique](#classe-entitejuridique) | Données relatives à l’organisme notifié ayant accordé le marquage CE au DM, n’est pas obligatoire pour les DM de classe I (autocertification). |
 | libelleAutorisation : [1..1] Texte | Identification de l’autorisation qui a été délivrée par l’organisme règlementaire. Il s’agit en France, du numéro d’agrément sanitaire constitué :- de la lettre F (pour France)- du n° de codification du département- du n° de codification de la commune ou , pour Paris, Lyon et Marseille, de l’arrondissement,- du n° d’ordre de l’établissement dans la commune ou l’arrondissement- de la mention CEE (pour Communauté Economique EuropéenneExemple : F 22.049.01 CEE (arrêté du 6 nov 2000 : ministère de l’agriculture et de la pêche). |
 
-Table 64 Attributs de la classe "MarquageCE"
+ Attributs de la classe "MarquageCE"
 
 ##### Classe "SupportIUD"
 
@@ -1897,7 +1898,7 @@ La production d'un IUD comprenant:
 | identifiantIUD_Source : [0..1] Code | Une entrée codée indiquant comment l'IUD a été saisie: code à barre, RFID, manuellement, à partir de la carte d'implant d'un patient ...Le code renvoie à une terminologie définissant les différents types (cf. Value set HL7 FHIR Value Set http://hl7.org/fhir/ValueSet/udi-entry-type). |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 65 Attributs de la classe "SupportIUD"
+ Attributs de la classe "SupportIUD"
 
 ##### Classe "DimensionsDM"
 
@@ -1912,7 +1913,7 @@ Cette classe correspond aux dimensions cliniques du dispositif médical.
 | poids : [0..1] Mesure | Poids du dispositif. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 66 Attributs de la classe "DimensionsDM"
+ Attributs de la classe "DimensionsDM"
 
 ##### Classe "EntiteJuridique"
 
@@ -1928,7 +1929,7 @@ Table 66 Attributs de la classe "DimensionsDM"
 | adresseEJ : [0..1][Adresse](#classe-adresse) | Adresse géopostale de l'entité juridique. |
 | telecommunication : [0..*][Telecommunication](#classe-telecommunication) | Adresse(s) de télécommunication de l'entité juridique (numéro de téléphone, adresse email, URL, etc.). |
 
-Table 67 Attributs de la classe "EntiteJuridique"
+ Attributs de la classe "EntiteJuridique"
 
 ##### Classe "EntiteGeographique"
 
@@ -1944,7 +1945,7 @@ Table 67 Attributs de la classe "EntiteJuridique"
 | telecommunication : [0..1][Telecommunication](#classe-telecommunication) | Adresse(s) de télécommunication de l'entité géographique (numéro de téléphone, adresse email, URL, etc.). |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 68 Attributs de la classe "EntiteGeographique"
+ Attributs de la classe "EntiteGeographique"
 
 ##### Classe "Fabricant"
 
@@ -1956,7 +1957,7 @@ Cette classe regroupe les items pouvant caractériser le fabricant du dispositif
 | :--- | :--- |
 | identifiantLocalFabricant : [0..*] Identifiant | Identifiants affectés au fabricant dans les référentiels locaux (autres que ceux de la Commission Européenne). |
 
-Table 69 Attributs de la classe "Fabricant"
+ Attributs de la classe "Fabricant"
 
 ##### Classe "Distributeur"
 
@@ -1968,7 +1969,7 @@ Cette classe regroupe les items pouvant caractériser le distributeur du disposi
 | :--- | :--- |
 | identifiantLocalDistributeur : [0..*] Identifiant | Identifiants affectés au distributeur dans les référentiels locaux (autres que ceux de la Commission Européenne). |
 
-Table 70 Attributs de la classe "Distributeur"
+ Attributs de la classe "Distributeur"
 
 ##### Classe "Lieu"
 
@@ -1991,7 +1992,7 @@ Cas particulier de l'entité géographique : plusieurs lieux peuvent être assoc
 | telecommunication : [0..*][Telecommunication](#classe-telecommunication) | Adresse(s) de télécommunication du lieu (numéro de téléphone, adresse email, URL, etc.). |
 | metadonnee : [0..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 71 Attributs de la classe "Lieu"
+ Attributs de la classe "Lieu"
 
 ##### Classe "Metadonnee"
 
@@ -2006,7 +2007,7 @@ Elle permet aux applications consommatrices des flux d'identifier les créations
 | dateMiseJour : [1..1] DateHeure | Date de mise à jour de la dernière donnée mise à jour de l'objet. |
 | commentaire : [0..1] Texte | Commentaire qui peut être associé à chaque objet. |
 
-Table 72 Attributs de la classe "Metadonnee"
+ Attributs de la classe "Metadonnee"
 
 ##### Classe "OrganisationInterne"
 
@@ -2023,7 +2024,7 @@ Une organisation interne (OI) peut être composée d’autres organisations inte
 | lieu : [0..*] Lieu | Lieu(x) rattaché(s) à l'organisation interne. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 73 Attributs de la classe "OrganisationInterne"
+ Attributs de la classe "OrganisationInterne"
 
 ##### Classe "Patient"
 
@@ -2038,7 +2039,7 @@ Personne physique bénéficiaire de soins, d'examens ou d'actes de prévention.
 | telecommunication : [1..*][Telecommunication](#classe-telecommunication) | Adresse(s) de télécommunication de la personne prise en charge (numéro de téléphone, adresse email, URL, etc.). |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 74 Attributs de la classe "Patient"
+Attributs de la classe "Patient"
 
 ##### Classe "INS"
 
@@ -2054,7 +2055,7 @@ La classe INS est reprise de la classe INS du MOS (voir https://mos.esante.gouv.
 | dateNaissance : [0..1] Date | Date de naissance de la personne. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 75 Attributs de la classe "PersonnePhysique"
+Attributs de la classe "PersonnePhysique"
 
 ##### Classe "Professionnel"
 
@@ -2069,7 +2070,7 @@ Données d'identification pérennes d’une personne physique, qui travaille en 
 | telecommunication : [1..*][Telecommunication](#classe-telecommunication) | Adresse(s) de télécommunication du professionnel (numéro de téléphone, adresse email, URL, etc.). |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 76 Attributs de la classe "Professionnel"
+Attributs de la classe "Professionnel"
 
 ##### Classe "Telecommunication"
 
@@ -2082,7 +2083,7 @@ Adresse de télécommunication à laquelle une personne ou une organisation peut
 | utilisation : [0..1] Texte | Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.). |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 77 Attributs de la classe "Telecommunication"
+Attributs de la classe "Telecommunication"
 
 ### Annexes
 
