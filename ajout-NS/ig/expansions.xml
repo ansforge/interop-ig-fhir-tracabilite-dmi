@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a19f78a2-0e15-4e65-a29d-8465b5b202b7"/>
+  <id value="ede96bc7-a040-4ca3-ae28-5c1c08bd6923"/>
   <meta>
-    <lastUpdated value="2026-01-29T15:20:38.694+00:00"/>
+    <lastUpdated value="2026-02-18T14:51:09.569+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion de smt.esante.gouv.fr basée sur SNOMED CT édition 11000315107 21-Jun 2025
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621" title="Cliquer pour copier lURL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>Ce jeu de valeur (ValueSet) contient 3 concepts</p>
@@ -112,7 +112,7 @@
         <name value="EyeColorVS"/>
         <title value="EyeColor Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-29T15:20:38+00:00"/>
+        <date value="2026-02-18T14:51:09+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -121,8 +121,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:553d16e8-0fcb-4f32-afec-e8df21225238"/>
-          <timestamp value="2026-01-29T15:21:27+00:00"/>
+          <identifier value="urn:uuid:364bbe15-9af6-43c8-9014-09536cbedda5"/>
+          <timestamp value="2026-02-18T14:52:02+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -190,19 +190,19 @@
               <ul>
                 <li>SNOMED CT édition 11000315107 21-Jun 2025
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621" title="Cliquer pour copier lURL" class="btn-copy"> </button>
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>
                   <a href="CodeSystem-competence-code-system.html">codesystem Compétences CodeSystem v0.1.0 (CodeSystem)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/competence-code-system|0.1.0" title="Cliquer pour copier lURL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/competence-code-system|0.1.0" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>
                   <a href="CodeSystem-type-carte-code-system.html">codesystem Type de carte v0.1.0 (CodeSystem)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/type-carte-code-system|0.1.0" title="Cliquer pour copier lURL" class="btn-copy"> </button>
+                    <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/type-carte-code-system|0.1.0" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
                   </span>
                 </li>
               </ul>
@@ -384,7 +384,7 @@
         <name value="MeltingPotVS"/>
         <title value="Melting Pot Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-29T15:20:38+00:00"/>
+        <date value="2026-02-18T14:51:09+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -393,8 +393,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:064f6675-e5d9-4178-bd59-7fc8e76668c5"/>
-          <timestamp value="2026-01-29T15:21:27+00:00"/>
+          <identifier value="urn:uuid:c4df42ba-59e0-4752-a8ad-aa7ebbed35d5"/>
+          <timestamp value="2026-02-18T14:52:02+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -482,7 +482,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion effectuée en interne basée sur 
               <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html">codesystem AdministrativeGender v4.0.1 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://hl7.org/fhir/administrative-gender|4.0.1" title="Cliquer pour copier lURL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://hl7.org/fhir/administrative-gender|4.0.1" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>Ce jeu de valeur (ValueSet) contient 3 concepts</p>
@@ -578,7 +578,7 @@
         <name value="ModifiedAdministrativeGender"/>
         <title value="ModifiedAdministrativeGender"/>
         <status value="draft"/>
-        <date value="2026-01-29T15:20:38+00:00"/>
+        <date value="2026-02-18T14:51:09+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -587,8 +587,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7ba1fa95-4481-4e37-91a8-5b6b923bfdbd"/>
-          <timestamp value="2026-01-29T15:21:24+00:00"/>
+          <identifier value="urn:uuid:51fb0bb2-5fb6-4637-a89e-29f79d90e8bd"/>
+          <timestamp value="2026-02-18T14:51:59+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -638,7 +638,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion effectuée en interne basée sur 
               <a href="CodeSystem-type-carte-code-system.html">codesystem Type de carte v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/type-carte-code-system|0.1.0" title="Cliquer pour copier lURL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/type-carte-code-system|0.1.0" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>Ce jeu de valeur (ValueSet) contient 4 concepts</p>
@@ -755,7 +755,7 @@
         <name value="TypeCarteVS"/>
         <title value="Type Carte Value Set"/>
         <status value="draft"/>
-        <date value="2026-01-29T15:20:38+00:00"/>
+        <date value="2026-02-18T14:51:09+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -764,8 +764,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:687ea124-3649-4d3e-bf7c-8efa9ccc30aa"/>
-          <timestamp value="2026-01-29T15:21:27+00:00"/>
+          <identifier value="urn:uuid:229e1523-fbee-411c-a1c2-5aedb60cda48"/>
+          <timestamp value="2026-02-18T14:52:02+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>

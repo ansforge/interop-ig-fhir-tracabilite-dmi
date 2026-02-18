@@ -42,7 +42,7 @@ Ce besoin d’interopérabilité concerne la mise en œuvre d’un mécanisme qu
 
 Cette gestion du cycle de vie des dispositifs médicaux implantables ne fait pas partie de cette étude normes et standards ; elle se limite à la gestion des traces produites lors de ce cycle de vie.
 
-Il s’agit de fournir un mécanisme de création et de consultation des traces associées à un dispositif médical implantable de sa dispensation à son implantation, en passant par sa commande, la réception dans la pharmacie d’un établissement de soin et son transfert dans l’unité de soin implantant ce dispositif. Les cas d’utilisation métier sont donc (cf. [spécification fonctionnelle](specifications_fonctionnelles.md)) :
+Il s’agit de fournir un mécanisme de création et de consultation des traces associées à un dispositif médical implantable de sa dispensation sà son implantation, en passant par sa commande, la réception dans la pharmacie d’un établissement de soin et son transfert dans l’unité de soin implantant ce dispositif. Les cas d’utilisation métier sont donc (cf. [spécification fonctionnelle](specifications_fonctionnelles.md)) :
 
 * Tracer (Créer des traces)
 * Consulter une trace
@@ -125,11 +125,11 @@ Ce scénario décrit la demande « Consulter une trace », à partir du volet 
 
 ##### Conclusion
 
-Le mapping des acteurs / transactions et la description des flux spécifiés montrent que la démarche de concrétisation du volet générique « généricisation des traces » dans le contexte métier « traçabilité des dispositifs médicaux implantables en établissement de santé » est appropriée. Ce volet peut donc être utilisé pour spécifier techniquement le volet « traçabilité des dispositifs médicaux implantables en établissement de santé ».
+Le mapping des acteurs / transactions et la description des flux spécifiés montrent que la démarche de concrétisation du volet générique « généricisation des traces » dans le contexte métier « traçabilité des dispostifs médicaux implantables en établissement de santé » est appropriée. Ce volet peut donc être utilisé pour spécifier techniquement le volet « traçabilité des dispositifs médicaux implantables en établissement de santé ».
 
 #### Le domaine Device
 
-Le cadre technique IHE « Device » a pour objectif de spécifier des profils en lien direct avec la gestion des équipements mobiles (pace maker, pompe à infusion, oxymètre de pouls, etc.).
+Le cadre technique IHE « Device » a pour objectif de spécifier des profils en lien direct avec la gestion des équipements mobiles (pacemaker, pompe à infusion, oxymètre de pouls, etc.).
 
 Ces profils peuvent répondre à différents besoins : gestion, communication, monitoring, observation, etc. Ces différents profils peuvent émettre des traces. Par contre, à l’heure d’aujourd’hui, il n’existe pas de volet dédié à la gestion des traces de dispositifs médicaux implantables en établissement de santé.
 

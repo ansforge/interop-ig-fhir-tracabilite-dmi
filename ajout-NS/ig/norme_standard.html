@@ -189,7 +189,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">ANS IG Example - version de développement local (v0.1.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/[code]/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">ANS IG Example - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/[code]/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
   <h2>Normes et Standards</h2>
   
 
@@ -267,19 +267,13 @@ ressources FHIR suivantes sont notamment analysées :</p>
   </li>
 </ul>
 
-<p><a name="l469">​</a>L’analyse de ces standards ci-dessus n’est pas détaillée dans ce
-document car elle est disponible dans le document <a href="N&amp;S TDE">«&nbsp;Etude Normes &amp;
-Standards généricisation&nbsp;: gestion des traces&nbsp;»</a>. Pour rappel, cette
-étude Normes &amp; Standards propose de se baser sur une version
-«&nbsp;générique&nbsp;» de la gestion des traces du profil ATNA.</p>
+<p><a name="l469">​</a>L’analyse de ces standards ci-dessus n’est pas détaillée dans ce document car elle est disponible dans le document <a href="N&amp;S TDE">«&nbsp;Etude Normes &amp; Standards généricisation&nbsp;: gestion des traces&nbsp;»</a>. Pour rappel, cette étude Normes &amp; Standards propose de se baser sur une version «&nbsp;générique&nbsp;» de la gestion des traces du profil ATNA.</p>
 
 <div class="figure">
     <img src="contexte.png" alt="contexte" style="width:100%;" title="contexte"/>
 </div>
 
-<p><a name="l480">​</a>En complément de cette <a href="N&amp;S TDE">étude</a>, le présent document comprend
-l’analyse des standards suivants, spécifiques au métier de la gestion
-des dispositifs médicaux&nbsp;:</p>
+<p><a name="l480">​</a>En complément de cette <a href="N&amp;S TDE">étude</a>, le présent document comprend l’analyse des standards suivants, spécifiques au métier de la gestion des dispositifs médicaux&nbsp;:</p>
 
 <ul>
   <li>
@@ -293,27 +287,18 @@ des dispositifs médicaux&nbsp;:</p>
   </li>
 </ul>
 
-<p>Après un rappel synthétique du contexte en section 2, une description de
-chaque standard est présentée.</p>
+<p>Après un rappel synthétique du contexte en section 2, une description de chaque standard est présentée.</p>
 
-<p>Un tableau de synthèse reprend ces éléments afin d’en faciliter la
-comparaison ainsi qu’une analyse métier et technique sont fournis en
-section 4 et 5.</p>
+<p>Un tableau de synthèse reprend ces éléments afin d’en faciliter la comparaison ainsi qu’une analyse métier et technique sont fournis en section 4 et 5.</p>
 
-<p>A noter que cette étude se base sur le document «&nbsp;Organismes et
-Standards&nbsp;» [5] qui présente une description des organismes
-producteurs de standards ainsi que la manière dont ces standards sont
-gérés.</p>
+<p>A noter que cette étude se base sur le document «&nbsp;Organismes et Standards&nbsp;» [5] qui présente une description des organismes
+producteurs de standards ainsi que la manière dont ces standards sont gérés.</p>
 
 <h3 id="presentation-synthetique">Presentation synthetique</h3>
 
-<p>Cette étude s’insère dans le cadre du besoin d’interopérabilité
-«&nbsp;Traçabilité des Dispositifs Médicaux Implantables en Etablissement de
-Santé&nbsp;» (cf. <a href="specifications_fonctionnelles.html">spécification fonctionnelle</a>).</p>
+<p>Cette étude s’insère dans le cadre du besoin d’interopérabilité «&nbsp;Traçabilité des Dispositifs Médicaux Implantables en Etablissement de Santé&nbsp;» (cf. <a href="specifications_fonctionnelles.html">spécification fonctionnelle</a>).</p>
 
-<p>Ce besoin d’interopérabilité concerne la mise en œuvre d’un mécanisme
-qui permet de gérer la traçabilité des dispositifs médicaux implantables
-(DMI) tout au long de leur cycle de vie&nbsp;:</p>
+<p>Ce besoin d’interopérabilité concerne la mise en œuvre d’un mécanisme qui permet de gérer la traçabilité des dispositifs médicaux implantables (DMI) tout au long de leur cycle de vie&nbsp;:</p>
 
 <ul>
   <li>
@@ -330,15 +315,9 @@ qui permet de gérer la traçabilité des dispositifs médicaux implantables
   </li>
 </ul>
 
-<p>Cette gestion du cycle de vie des dispositifs médicaux implantables ne
-fait pas partie de cette étude normes et standards&nbsp;; elle se limite à la
-gestion des traces produites lors de ce cycle de vie.</p>
+<p>Cette gestion du cycle de vie des dispositifs médicaux implantables ne fait pas partie de cette étude normes et standards&nbsp;; elle se limite à la gestion des traces produites lors de ce cycle de vie.</p>
 
-<p>Il s’agit de fournir un mécanisme de création et de consultation des
-traces associées à un dispositif médical implantable de sa dispensation
-à son implantation, en passant par sa commande, la réception dans la
-pharmacie d’un établissement de soin et son transfert dans l’unité de
-soin implantant ce dispositif. Les cas d’utilisation métier sont donc
+<p>Il s’agit de fournir un mécanisme de création et de consultation des traces associées à un dispositif médical implantable de sa dispensation sà son implantation, en passant par sa commande, la réception dans la pharmacie d’un établissement de soin et son transfert dans l’unité de soin implantant ce dispositif. Les cas d’utilisation métier sont donc
 (cf. <a href="specifications_fonctionnelles.html">spécification fonctionnelle</a>)&nbsp;:</p>
 
 <ul>
@@ -353,12 +332,9 @@ soin implantant ce dispositif. Les cas d’utilisation métier sont donc
   </li>
 </ul>
 
-<p>Dans son processus de production des volets du CI-SIS, l’ANS a choisi de
-mutualiser certains «&nbsp;services&nbsp;» en les rendant «&nbsp;génériques&nbsp;». C’est le
-cas de la gestion des traces.</p>
+<p>Dans son processus de production des volets du CI-SIS, l’ANS a choisi de mutualiser certains «&nbsp;services&nbsp;» en les rendant «&nbsp;génériques&nbsp;». C’est le cas de la gestion des traces.</p>
 
-<p>Un volet générique «&nbsp;généricisation&nbsp;: gestion des traces&nbsp;» a donc été
-élaboré comprenant&nbsp;:</p>
+<p>Un volet générique «&nbsp;généricisation&nbsp;: gestion des traces&nbsp;» a donc été élaboré comprenant&nbsp;:</p>
 
 <ul>
   <li>
@@ -372,10 +348,7 @@ cas de la gestion des traces.</p>
   </li>
 </ul>
 
-<p>Ce document consiste donc à vérifier si ce volet générique est
-instanciable dans le cas de la traçabilité des dispositifs médicaux
-implantables en établissement de santé et s’il n’existe pas des normes
-et standards plus appropriés pour spécifier techniquement ce volet.</p>
+<p>Ce document consiste donc à vérifier si ce volet générique est instanciable dans le cas de la traçabilité des dispositifs médicaux implantables en établissement de santé et s’il n’existe pas des normes et standards plus appropriés pour spécifier techniquement ce volet.</p>
 
 <h3 id="les-standards">Les standards</h3>
 
@@ -383,8 +356,7 @@ et standards plus appropriés pour spécifier techniquement ce volet.</p>
 
 <h5 id="introduction-1">Introduction</h5>
 
-<p>Les documents suivants spécifient fonctionnellement et techniquement le
-volet «&nbsp;généricisation&nbsp;: gestion des traces&nbsp;»&nbsp;:</p>
+<p>Les documents suivants spécifient fonctionnellement et techniquement le volet «&nbsp;généricisation&nbsp;: gestion des traces&nbsp;»&nbsp;:</p>
 
 <ul>
   <li>
@@ -398,12 +370,9 @@ volet «&nbsp;généricisation&nbsp;: gestion des traces&nbsp;»&nbsp;:</p>
   </li>
 </ul>
 
-<p>Ce volet spécifie quels sont les acteurs, les transactions et les flux à
-implémenter pour gérer des traces d’un point de vue «&nbsp;générique&nbsp;».</p>
+<p>Ce volet spécifie quels sont les acteurs, les transactions et les flux à implémenter pour gérer des traces d’un point de vue «&nbsp;générique&nbsp;».</p>
 
-<p>L’étude métier «&nbsp;traçabilité des dispositifs médicaux implantables en
-établissement de santé’&nbsp;» a identifié les besoins suivant de gestion des
-traces&nbsp;:</p>
+<p>L’étude métier «&nbsp;traçabilité des dispositifs médicaux implantables en établissement de santé’&nbsp;» a identifié les besoins suivant de gestion des traces&nbsp;:</p>
 
 <ul>
   <li>Tracer (créer des traces)</li>
@@ -429,11 +398,7 @@ traces&nbsp;:</p>
     <img src="consulterTrace.png" alt="Consulter une trace" style="width:100%;" title="Consulter une trace"/>
 </div>
 
-<p>En mappant les acteurs et les transactions sur le profil générique
-«&nbsp;généricisation&nbsp;: gestion des traces&nbsp;», nous pouvons en déduire que ce
-volet est «&nbsp;instanciable&nbsp;» dans le cas métier de gestion de la
-«&nbsp;traçabilité des dispositifs médicaux implantables en établissement de
-santé&nbsp;»&nbsp;:</p>
+<p>En mappant les acteurs et les transactions sur le profil générique «&nbsp;généricisation&nbsp;: gestion des traces&nbsp;», nous pouvons en déduire que ce volet est «&nbsp;instanciable&nbsp;» dans le cas métier de gestion de la «&nbsp;traçabilité des dispositifs médicaux implantables en établissement de santé&nbsp;»&nbsp;:</p>
 
 <table style="width:100%;">
 <colgroup>
@@ -442,8 +407,7 @@ santé&nbsp;»&nbsp;:</p>
 </colgroup>
 <thead>
 <tr>
-<th>Volet «&nbsp;traçabilité des dispositifs médicaux implantables en
-établissement de santé&nbsp;»</th>
+<th>Volet «&nbsp;traçabilité des dispositifs médicaux implantables en établissement de santé&nbsp;»</th>
 <th>Volet «&nbsp;généricisation&nbsp;: gestion des traces&nbsp;»</th>
 </tr>
 </thead>
@@ -491,8 +455,7 @@ santé&nbsp;»&nbsp;:</p>
 
 <h6 id="tracer">Tracer</h6>
 
-<p>Ce scénario décrit la demande «&nbsp;Tracer&nbsp;» (Création d’une trace), à
-partir du volet générique.</p>
+<p>Ce scénario décrit la demande «&nbsp;Tracer&nbsp;» (Création d’une trace), à partir du volet générique.</p>
 
 <p>1)  En utilisant Syslog</p>
 
@@ -516,8 +479,7 @@ partir du volet générique.</p>
 
 <h6 id="rechercher-des-traces">Rechercher des traces</h6>
 
-<p>Ce scénario décrit la demande «&nbsp;Rechercher des traces&nbsp;», à partir du
-volet générique.</p>
+<p>Ce scénario décrit la demande «&nbsp;Rechercher des traces&nbsp;», à partir du volet générique.</p>
 
 <p>1)  En utilisant Syslog</p>
 
@@ -533,8 +495,7 @@ volet générique.</p>
 
 <h6 id="consulter-une-trace">Consulter une trace</h6>
 
-<p>Ce scénario décrit la demande «&nbsp;Consulter une trace&nbsp;», à partir du volet
-générique.</p>
+<p>Ce scénario décrit la demande «&nbsp;Consulter une trace&nbsp;», à partir du volet générique.</p>
 
 <p>1)  En utilisant Syslog</p>
 
@@ -550,98 +511,43 @@ générique.</p>
 
 <h5 id="conclusion">Conclusion</h5>
 
-<p>Le mapping des acteurs / transactions et la description des flux
-spécifiés montrent que la démarche de concrétisation du volet générique
-« généricisation des traces » dans le contexte métier « traçabilité des
-dispositifs médicaux implantables en établissement de santé » est
-appropriée. Ce volet peut donc être utilisé pour spécifier techniquement
-le volet « traçabilité des dispositifs médicaux implantables en
-établissement de santé ».</p>
+<p>Le mapping des acteurs / transactions et la description des flux spécifiés montrent que la démarche de concrétisation du volet générique « généricisation des traces » dans le contexte métier « traçabilité des dispostifs médicaux implantables en établissement de santé » est appropriée. Ce volet peut donc être utilisé pour spécifier techniquement le volet « traçabilité des dispositifs médicaux implantables en établissement de santé ».</p>
 
 <h4 id="le-domaine-device">Le domaine Device</h4>
 
-<p>Le cadre technique IHE «&nbsp;Device&nbsp;» a pour objectif de spécifier des
-profils en lien direct avec la gestion des équipements mobiles (pace
-maker, pompe à infusion, oxymètre de pouls, etc.).</p>
+<p>Le cadre technique IHE «&nbsp;Device&nbsp;» a pour objectif de spécifier des profils en lien direct avec la gestion des équipements mobiles (pacemaker, pompe à infusion, oxymètre de pouls, etc.).</p>
 
-<p>Ces profils peuvent répondre à différents besoins&nbsp;: gestion,
-communication, monitoring, observation, etc. Ces différents profils
-peuvent émettre des traces. Par contre, à l’heure d’aujourd’hui, il
-n’existe pas de volet dédié à la gestion des traces de dispositifs
-médicaux implantables en établissement de santé.</p>
+<p>Ces profils peuvent répondre à différents besoins&nbsp;: gestion, communication, monitoring, observation, etc. Ces différents profils peuvent émettre des traces. Par contre, à l’heure d’aujourd’hui, il n’existe pas de volet dédié à la gestion des traces de dispositifs médicaux implantables en établissement de santé.</p>
 
 <h4 id="profil-ihe-memdmc">Profil IHE MEMDMC</h4>
 
-<p><a href="https://wiki.ihe.net/index.php/MEM-DMC">IHE MEMDMC</a> : le profil MEMDMC – «&nbsp;Medical Equipment Management
-Device Management Communication&nbsp;» définit un profil de communication
-pour envoyer différentes informations sur un device (identification,
-information sur la version du matériel, du logiciel et du device, statut
-batterie et alimentation) en l’absence de moyens d’observation patient,
-de gestion d’alertes ou de notifications d’événements.</p>
+<p><a href="https://wiki.ihe.net/index.php/MEM-DMC">IHE MEMDMC</a> : le profil MEMDMC – «&nbsp;Medical Equipment Management Device Management Communication&nbsp;» définit un profil de communication pour envoyer différentes informations sur un device (identification,
+information sur la version du matériel, du logiciel et du device, statut batterie et alimentation) en l’absence de moyens d’observation patient, de gestion d’alertes ou de notifications d’événements.</p>
 
-<p>MEMDMC définit deux acteurs&nbsp;: «&nbsp;DMIR - Device Management Information
-Reporter&nbsp;» et «&nbsp;DMIC – Device Management Information Consumer&nbsp;».
-L’acteur DMIR peut aussi être un acteur dans différents profils et agir
-comme un acteur DEC DOR, ACM AR ou IPEC DOR. L’acteur DMIC peut être
-considéré comme un «&nbsp;CMMS – Computerized Maintenance Management System&nbsp;»
-ou un «&nbsp;CEMS - Clinical Equipment Management System&nbsp;» et il peut aussi
-être un acteur dans différents profils et agir comme un DEC DOC, ACM AM
-ou IPEC DOC. MEMDMC spécifie une transaction «&nbsp;DMIO Device Management
-Information Observation – PCD-15&nbsp;». Cette transaction est spécifiée en
-HL7 et est déclenchée sur l’événement trigger «&nbsp;ORU^R01^ORU_R01&nbsp;». Le
-message HL7 correspondant est un message «&nbsp;Observation&nbsp;».</p>
+<p>MEMDMC définit deux acteurs&nbsp;: «&nbsp;DMIR - Device Management Information Reporter&nbsp;» et «&nbsp;DMIC – Device Management Information Consumer&nbsp;». L’acteur DMIR peut aussi être un acteur dans différents profils et agir comme un acteur DEC DOR, ACM AR ou IPEC DOR. L’acteur DMIC peut être considéré comme un «&nbsp;CMMS – Computerized Maintenance Management System&nbsp;» ou un «&nbsp;CEMS - Clinical Equipment Management System&nbsp;» et il peut aussi être un acteur dans différents profils et agir comme un DEC DOC, ACM AM
+ou IPEC DOC. MEMDMC spécifie une transaction «&nbsp;DMIO Device Management Information Observation – PCD-15&nbsp;». Cette transaction est spécifiée en HL7 et est déclenchée sur l’événement trigger «&nbsp;ORU^R01^ORU_R01&nbsp;». Le message HL7 correspondant est un message «&nbsp;Observation&nbsp;».</p>
 
-<p>Le profil MEMDMC se focalise sur l’envoi de données provenant du device,
-indépendamment du fait que ce device soit associé à un patient. Ces
-données sont nécessaires pour la gestion de l’équipement.</p>
+<p>Le profil MEMDMC se focalise sur l’envoi de données provenant du device, indépendamment du fait que ce device soit associé à un patient. Ces données sont nécessaires pour la gestion de l’équipement.</p>
 
-<p>Ce profil est plutôt utilisé pour monitorer des informations provenant
-de l’équipement plutôt que de gérer des informations de traçabilité,
-notamment lors de la gestion du cycle de vie du device. Il n’est donc
-pas adapté pour adresser le besoin de gérer les traces des Dispositifs
-Médicaux Implantables.</p>
+<p>Ce profil est plutôt utilisé pour monitorer des informations provenant de l’équipement plutôt que de gérer des informations de traçabilité, notamment lors de la gestion du cycle de vie du device. Il n’est donc pas adapté pour adresser le besoin de gérer les traces des Dispositifs Médicaux Implantables.</p>
 
 <h4 id="le-profil-memls">Le profil MEMLS</h4>
 
-<p><a href="https://wiki.ihe.net/index.php/MEM-LS">IHE MEMLS</a>: le profil MEMLS – «&nbsp;Medical Equipment Management
-Location Services&nbsp;» définit un profil de communication pour envoyer des
-informations de localisation d’équipements et de personnes en l’absence
+<p><a href="https://wiki.ihe.net/index.php/MEM-LS">IHE MEMLS</a>: le profil MEMLS – «&nbsp;Medical Equipment Management Location Services&nbsp;» définit un profil de communication pour envoyer des informations de localisation d’équipements et de personnes en l’absence
 d’observations patients, d’alertes ou de notifications d’événements.</p>
 
-<p>MEMLS définit deux acteurs&nbsp;: «&nbsp;LOR – Location Observer Reporter&nbsp;» et
-«&nbsp;Location Observer Consumer&nbsp;». L’acteur LOR peut être vu comme un
-service de localisation («&nbsp;Location Services system&nbsp;»), en lien direct
-avec les systèmes de localisation sous-jacent (RFID – Radio Frequency
-Identification ou RTLS – Real Time Location Services). Il peut agir
-aussi comme un acteur DEC DOR, ACM AR ou IPEC DOR. L’acteur LOC peut
-être aussi acteur DEC DOC, ACM AM ou IPEC DOC. MEMLS spécifie une
-transaction «&nbsp;RLO Report Location Observation – PCD-16&nbsp;». Cette
-transaction est spécifiée en HL7 et est déclenchée sur l’événement
-trigger «&nbsp;ORU^R01^ORU_R01&nbsp;». Le message HL7 correspondant est un message
-«&nbsp;Observation&nbsp;».</p>
+<p>MEMLS définit deux acteurs&nbsp;: «&nbsp;LOR – Location Observer Reporter&nbsp;» et «&nbsp;Location Observer Consumer&nbsp;». L’acteur LOR peut être vu comme un service de localisation («&nbsp;Location Services system&nbsp;»), en lien direct avec les systèmes de localisation sous-jacent (RFID – Radio Frequency Identification ou RTLS – Real Time Location Services). Il peut agir aussi comme un acteur DEC DOR, ACM AR ou IPEC DOR. L’acteur LOC peut être aussi acteur DEC DOC, ACM AM ou IPEC DOC. MEMLS spécifie une transaction «&nbsp;RLO Report Location Observation – PCD-16&nbsp;». Cette transaction est spécifiée en HL7 et est déclenchée sur l’événement trigger «&nbsp;ORU^R01^ORU_R01&nbsp;». Le message HL7 correspondant est un message «&nbsp;Observation&nbsp;».</p>
 
-<p>Le profil MEMLS se focalise sur l’envoi de données de localisation d’un
-équipement et/ou d’une personne.</p>
+<p>Le profil MEMLS se focalise sur l’envoi de données de localisation d’un équipement et/ou d’une personne.</p>
 
-<p>Ce profil est plutôt utilisé pour envoyer des informations de
-localisation plutôt que de gérer des informations de traçabilité,
-notamment lors de la gestion du cycle de vie du device. Il n’est donc
-pas adapté pour adresser le besoin de gérer les traces des Dispositifs
-Médicaux Implantables.</p>
+<p>Ce profil est plutôt utilisé pour envoyer des informations de localisation plutôt que de gérer des informations de traçabilité,
+notamment lors de la gestion du cycle de vie du device. Il n’est donc pas adapté pour adresser le besoin de gérer les traces des Dispositifs Médicaux Implantables.</p>
 
 <h4 id="le-profil-pmdt">Le profil PMDT</h4>
 
-<p><a href="https://wiki.ihe.net/index.php/Point-of-Care_Medical_Device_Tracking_(PMDT)">IHE PMDT</a>&nbsp;: le profil PMDT – «&nbsp;Point of care Medical Device
-Tracking&nbsp;» définit un profil basé sur HL7 FHIR (STU3) pour collecter des
-informations provenant d’un dispositif médical en vue d’une utilisation
-ultérieure.</p>
+<p><a href="https://wiki.ihe.net/index.php/Point-of-Care_Medical_Device_Tracking_(PMDT)">IHE PMDT</a>&nbsp;: le profil PMDT – «&nbsp;Point of care Medical Device Tracking&nbsp;» définit un profil basé sur HL7 FHIR (STU3) pour collecter des informations provenant d’un dispositif médical en vue d’une utilisation ultérieure.</p>
 
-<p>PMDT définit trois acteurs&nbsp;: «&nbsp; Medical Device Reporter&nbsp;», «&nbsp;Medical
-Device Server&nbsp;» et «&nbsp;Medical Device Requester&nbsp;» et cinq transactions
-«&nbsp;Register Medical Device PCC-50&nbsp;», «&nbsp;Start Point-of-care Device
-Procedure PCC-52&nbsp;», «&nbsp;Complete Point-of-care Device Procedure PCC-53&nbsp;»,
-«&nbsp;Search Medical Device PCC-51&nbsp;» et «&nbsp;Search Point-of-care Device
-Procedure PCC-54&nbsp;».</p>
+<p>PMDT définit trois acteurs&nbsp;: «&nbsp; Medical Device Reporter&nbsp;», «&nbsp;Medical Device Server&nbsp;» et «&nbsp;Medical Device Requester&nbsp;» et cinq transactions «&nbsp;Register Medical Device PCC-50&nbsp;», «&nbsp;Start Point-of-care Device Procedure PCC-52&nbsp;», «&nbsp;Complete Point-of-care Device Procedure PCC-53&nbsp;», «&nbsp;Search Medical Device PCC-51&nbsp;» et «&nbsp;Search Point-of-care Device Procedure PCC-54&nbsp;».</p>
 
 <p>Ce profile PMDT se base sur les standards suivants :</p>
 
@@ -653,36 +559,21 @@ Procedure PCC-54&nbsp;».</p>
     <p><a href="https://www.fda.gov/media/96648/download">UDI Format by FDA-Accredited Issuing Agency Version 1.2</a></p>
   </li>
   <li>
-    <p>Clinical terminology consistent with ONC Health IT certified EHR
-systems (LOINC, SNOMED-CT, RxNorm)</p>
+    <p>Clinical terminology consistent with ONC Health IT certified EHR systems (LOINC, SNOMED-CT, RxNorm)</p>
   </li>
 </ul>
 
-<p>La transaction «&nbsp;Register Medical Device&nbsp;» est spécifiée par une requête
-«&nbsp;http PUT&nbsp;» de la ressource «&nbsp;Device&nbsp;». Cette ressource doit inclure la
-ressource «&nbsp;Patient&nbsp;» pour identifier le patient associé à
-l’enregistrement au niveau de l’unité de soin.</p>
+<p>La transaction «&nbsp;Register Medical Device&nbsp;» est spécifiée par une requête «&nbsp;http PUT&nbsp;» de la ressource «&nbsp;Device&nbsp;». Cette ressource doit inclure la ressource «&nbsp;Patient&nbsp;» pour identifier le patient associé à l’enregistrement au niveau de l’unité de soin.</p>
 
-<p>La transaction «&nbsp;Search Medical Device&nbsp;» est spécifiée par une requête
-«&nbsp;http GET&nbsp;» de la ressource «&nbsp;Device&nbsp;». La réponse est soit «&nbsp;vide&nbsp;»,
-soit l’ensemble des devices qui répondent aux critères de recherche,
-sous forme de bundle.</p>
+<p>La transaction «&nbsp;Search Medical Device&nbsp;» est spécifiée par une requête «&nbsp;http GET&nbsp;» de la ressource «&nbsp;Device&nbsp;». La réponse est soit «&nbsp;vide&nbsp;», soit l’ensemble des devices qui répondent aux critères de recherche, sous forme de bundle.</p>
 
-<p>La transaction «&nbsp;Start Point-of-care Device Procedure&nbsp;» est spécifiée
-par une requête «&nbsp;http PUT&nbsp;» de la ressource «&nbsp;Procedure&nbsp;».</p>
+<p>La transaction «&nbsp;Start Point-of-care Device Procedure&nbsp;» est spécifiée par une requête «&nbsp;http PUT&nbsp;» de la ressource «&nbsp;Procedure&nbsp;».</p>
 
-<p>La transaction «&nbsp;Complete Point-of-care Device Procedure&nbsp;» est spécifiée
-par une requête «&nbsp;http PUT&nbsp;» pour la mise à jour de la ressource avec le
-statut «&nbsp;completed&nbsp;». La ressource «&nbsp;Procedure&nbsp;» doit indiquer si c’est
-une procédure «&nbsp;opération&nbsp;», «&nbsp;monitoring&nbsp;» ou «&nbsp;traitement&nbsp;».</p>
+<p>La transaction «&nbsp;Complete Point-of-care Device Procedure&nbsp;» est spécifiée par une requête «&nbsp;http PUT&nbsp;» pour la mise à jour de la ressource avec le statut «&nbsp;completed&nbsp;». La ressource «&nbsp;Procedure&nbsp;» doit indiquer si c’est une procédure «&nbsp;opération&nbsp;», «&nbsp;monitoring&nbsp;» ou «&nbsp;traitement&nbsp;».</p>
 
-<p>La transaction «&nbsp;Search Point-of-care Device Procedure&nbsp;» est spécifiée
-par une requête «&nbsp;http GET&nbsp;» de la ressource «&nbsp;Procedure&nbsp;». La réponse
-est soit une erreur http «&nbsp;bad request&nbsp;» soit l’ensemble des procédures
-qui répondent aux critères de recherche, sous forme de bundle.</p>
+<p>La transaction «&nbsp;Search Point-of-care Device Procedure&nbsp;» est spécifiée par une requête «&nbsp;http GET&nbsp;» de la ressource «&nbsp;Procedure&nbsp;». La réponse est soit une erreur http «&nbsp;bad request&nbsp;» soit l’ensemble des procédures qui répondent aux critères de recherche, sous forme de bundle.</p>
 
-<p>En résumé, ce profil PMDT spécifie la création/modification/recherche de
-deux ressources&nbsp;:</p>
+<p>En résumé, ce profil PMDT spécifie la création/modification/recherche de deux ressources&nbsp;:</p>
 
 <ul>
   <li>
@@ -707,48 +598,24 @@ deux ressources&nbsp;:</p>
   </li>
 </ul>
 
-<p>Ce profil est plutôt utilisé pour enregistrer les actions réalisées lors
-de la gestion de dispositifs médicaux et non pas pour gérer les traces
-liées à ces actions. Néanmoins, les actions de gestion de traces peuvent
-être déclenchées par les différentes requêtes spécifiées dans ce profil
-et le «&nbsp;corps&nbsp;» (partie utile) de la trace peut être la ressource
-manipulée («&nbsp;tracer la création d’un device&nbsp;», «&nbsp;tracer la création /
-modification d’une procédure&nbsp;», etc.).</p>
+<p>Ce profil est plutôt utilisé pour enregistrer les actions réalisées lors de la gestion de dispositifs médicaux et non pas pour gérer les traces liées à ces actions. Néanmoins, les actions de gestion de traces peuvent être déclenchées par les différentes requêtes spécifiées dans ce profil et le «&nbsp;corps&nbsp;» (partie utile) de la trace peut être la ressource manipulée («&nbsp;tracer la création d’un device&nbsp;», «&nbsp;tracer la création / modification d’une procédure&nbsp;», etc.).</p>
 
 <h3 id="comparaison-des-standards-presentes">Comparaison des standards presentes</h3>
 
-<p><a name="l1032">​</a>Les nouveaux profils analysés dans ce document n’apportant d’éléments
-permettant de les choisir pour répondre au besoin d’interopérabilité de
-«&nbsp;traçabilité des dispositifs médicaux implantables en établissement de
-santé&nbsp;», il n’est pas nécessaire de compléter la «&nbsp;comparaison des
-standards&nbsp;» par rapport à celle présente dans le chapitre 4 du document
- <a href="N&amp;S TDE">«&nbsp;Etude Normes et Standards – généricisation&nbsp;: gestion des
-traces&nbsp;»</a>.</p>
+<p><a name="l1032">​</a>Les nouveaux profils analysés dans ce document n’apportant d’éléments permettant de les choisir pour répondre au besoin d’interopérabilité de «&nbsp;traçabilité des dispositifs médicaux implantables en établissement de santé&nbsp;», il n’est pas nécessaire de compléter la «&nbsp;comparaison des standards&nbsp;» par rapport à celle présente dans le chapitre 4 du document
+ <a href="N&amp;S TDE">«&nbsp;Etude Normes et Standards – généricisation&nbsp;: gestion des traces&nbsp;»</a>.</p>
 
 <h3 id="synthese-et-conclusion">Synthese et conclusion</h3>
 
-<p>Ce paragraphe présente la synthèse de l’étude normes et standards pour
-le volet «&nbsp;Traçabilité des dispositifs médicaux implantables en
-établissement de santé&nbsp;».</p>
+<p>Ce paragraphe présente la synthèse de l’étude normes et standards pour le volet «&nbsp;Traçabilité des dispositifs médicaux implantables en établissement de santé&nbsp;».</p>
 
 <h4 id="le-volet-généricisation--gestion-des-traces">Le volet "généricisation : gestion des traces"</h4>
 
-<p>La démarche de l’ANS de proposer un volet générique «&nbsp;généricisation&nbsp;:
-gestion des traces&nbsp;» avec la concrétisation lors de la prise en compte
-de besoins métier de traçabilité comme la traçabilité des dispositifs
-médicaux implantables est très pertinente et adaptée à cette étude
-normes et standards.</p>
+<p>La démarche de l’ANS de proposer un volet générique «&nbsp;généricisation&nbsp;: gestion des traces&nbsp;» avec la concrétisation lors de la prise en compte de besoins métier de traçabilité comme la traçabilité des dispositifs médicaux implantables est très pertinente et adaptée à cette étude normes et standards.</p>
 
-<p>Il sera possible de spécifier techniquement le volet «&nbsp;traçabilité des
-dispositifs médicaux implantables en établissement de santé&nbsp;» de la
-façon suivante&nbsp;: pour chaque trace générée lors du cycle de vie du
-dispositif médical implantable, spécifier le format de la partie utile
-de la trace.</p>
+<p>Il sera possible de spécifier techniquement le volet «&nbsp;traçabilité des dispositifs médicaux implantables en établissement de santé&nbsp;» de la façon suivante&nbsp;: pour chaque trace générée lors du cycle de vie du dispositif médical implantable, spécifier le format de la partie utile de la trace.</p>
 
-<p>Par exemple, pour le flux métier «&nbsp;Flux 13a – TracabilitéRefusDMI&nbsp;», il
-faudra spécifier techniquement «&nbsp;les informations de traçabilité de
-refus de l’utilisation du DMI au bloc opératoire&nbsp;», i.e. ce qui est
-décrit dans le chapitre 6.22 du document <a href="specifications_fonctionnelles.html">spécification fonctionnelle</a>.</p>
+<p>Par exemple, pour le flux métier «&nbsp;Flux 13a – TracabilitéRefusDMI&nbsp;», il faudra spécifier techniquement «&nbsp;les informations de traçabilité de refus de l’utilisation du DMI au bloc opératoire&nbsp;», i.e. ce qui est décrit dans le chapitre 6.22 du document <a href="specifications_fonctionnelles.html">spécification fonctionnelle</a>.</p>
 
 <p>Détail du flux&nbsp;:</p>
 
@@ -758,19 +625,16 @@ décrit dans le chapitre 6.22 du document <a href="specifications_fonctionnelles
 
     <ul>
       <li>
-        <p>typeEvenement correspondant au code 'NCO' ou 'PER' de la
-nomenclature TRE_254.</p>
+        <p>typeEvenement correspondant au code 'NCO' ou 'PER' de la nomenclature TRE_254.</p>
       </li>
       <li>
         <p>identifiantEvt correspond à la valeur d'identification du Flux 13.</p>
       </li>
       <li>
-        <p>dateOccurence correspond à la date/heure à laquelle le flux a été
-généré.</p>
+        <p>dateOccurence correspond à la date/heure à laquelle le flux a été généré.</p>
       </li>
       <li>
-        <p>dateDeclaration correspond à la date/heure à laquelle le flux a été
-transmis.</p>
+        <p>dateDeclaration correspond à la date/heure à laquelle le flux a été transmis.</p>
       </li>
       <li>
         <p>source correspond au service utilisateur.</p>
@@ -807,18 +671,11 @@ transmis.</p>
 
 <h4 id="les-profils-ihe-memdmc-memls-et-pmdt">Les profils IHE MEMDMC, MEMLS et PMDT</h4>
 
-<p>Ces trois profils sont orientés métier, dans la gestion des équipements
-médicaux&nbsp;; ils peuvent générer des traces mais ils ne spécifient pas la
-gestion des traces à proprement parler. Ces profils pourront donc faire
-appel au volet «&nbsp;traçabilité des dispositifs médicaux implantables en
-établissement de santé&nbsp;».</p>
+<p>Ces trois profils sont orientés métier, dans la gestion des équipements médicaux&nbsp;; ils peuvent générer des traces mais ils ne spécifient pas la gestion des traces à proprement parler. Ces profils pourront donc faire appel au volet «&nbsp;traçabilité des dispositifs médicaux implantables en établissement de santé&nbsp;».</p>
 
 <h4 id="conclusion-1">Conclusion</h4>
 
-<p>En conclusion, le volet générique « généricisation : gestion des traces
-» semble bien approprié pour permettre la spécification technique du
-volet « traçabilité des dispositifs médicaux implantables en
-établissement de santé ».</p>
+<p>En conclusion, le volet générique « généricisation : gestion des traces » semble bien approprié pour permettre la spécification technique du volet « traçabilité des dispositifs médicaux implantables en établissement de santé ».</p>
 
 
 
@@ -861,7 +718,7 @@ volet « traçabilité des dispositifs médicaux implantables en
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 15:20+0000">2026-01-29</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 18, 2026 14:51+0000">2026-02-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

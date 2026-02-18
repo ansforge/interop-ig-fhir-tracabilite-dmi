@@ -17,9 +17,9 @@ Generated $--. FHIR version $-- for ans.fhir.fr.[code]#$-- (canonical = https://
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ValueSet-TypeCarteVS : 0 / 1 / 2
 </table>
 == n/a ==
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/a at Line 271, column 52: The link 'N&S TDE' for "« Etude Normes & Standards généricisation : gestion des traces »" cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/a at Line 280, column 28: The link 'N&S TDE' for "étude" cannot be resolved
-ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/a at Line 725, column 3: The link 'N&S TDE' for "« Etude Normes et Standards – généricisation : gestion des traces »" cannot be resolved
+ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/a at Line 270, column 120: The link 'N&S TDE' for "« Etude Normes & Standards généricisation : gestion des traces »" cannot be resolved
+ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/a at Line 276, column 28: The link 'N&S TDE' for "étude" cannot be resolved
+ERROR: norme_standard.html#/html/body/div/div/div/div/div/p/a at Line 606, column 3: The link 'N&S TDE' for "« Etude Normes et Standards – généricisation : gestion des traces »" cannot be resolved
 ERROR: searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
