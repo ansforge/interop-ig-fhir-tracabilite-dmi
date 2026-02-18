@@ -195,7 +195,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">ANS IG Example - version de développement local (v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/[code]/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">ANS IG Example - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/[code]/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Flux 25 - ConsulterTrace</h2>
   
 
@@ -215,16 +215,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<p>Le Flux 25 « ConsultationTrace » permet au consommateur de demander la
-consultation d’une trace dont l’identifiant est connu au gestionnaire de
-traçabilité.</p>
+<p>Le Flux 25 « ConsultationTrace » permet au consommateur de demander la consultation d’une trace dont l’identifiant est connu au gestionnaire de traçabilité.</p>
 
-<p>Ce flux utilise l’interaction « read »[^11] de l’API REST de HL7 FHIR.
-Il s’agit d’une requête HTTP GET adressant la ressource auditEvent.</p>
+<p>Ce flux utilise l’interaction « read »[^11] de l’API REST de HL7 FHIR. Il s’agit d’une requête HTTP GET adressant la ressource auditEvent.</p>
 
-<p>La première étape de construction de ce flux consiste à récupérer
-l’identifiant de la ressource AuditEvent représentant la trace à
-consulter.</p>
+<p>La première étape de construction de ce flux consiste à récupérer l’identifiant de la ressource AuditEvent représentant la trace à consulter.</p>
 
 <p>Cet identifiant est utilisé dans la requête GET suivante :</p>
 
@@ -235,9 +230,7 @@ consulter.</p>
 <thead>
 <tr>
 <th><p>GET [base]/AuditEvent/[id]</p>
-<p>Où [base] est le point de contact défini par le gestionnaire de
-trace et [id] l’identifiant système de la ressource AuditEvent à
-consulter.</p></th>
+<p>Où [base] est le point de contact défini par le gestionnaire de trace et [id] l’identifiant système de la ressource AuditEvent à consulter.</p></th>
 </tr>
 </thead>
 <tbody>
@@ -285,7 +278,7 @@ consulter.</p></th>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 13:10+0000">2026-01-29</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 18, 2026 15:25+0000">2026-02-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

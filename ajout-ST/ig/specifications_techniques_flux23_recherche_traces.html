@@ -195,7 +195,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">ANS IG Example - version de développement local (v0.1.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/[code]/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">ANS IG Example - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/[code]/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
   <h2>Flux 23 - RechercheTraces</h2>
   
 
@@ -215,19 +215,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
 
-<p>Ce flux est utilisé par le consommateur pour faire une recherche de
-traces auprès du gestionnaire de traçabilité.</p>
+<p>Ce flux est utilisé par le consommateur pour faire une recherche de traces auprès du gestionnaire de traçabilité.</p>
 
-<p>Ce flux est construit selon les exigences de la transaction IHE
-ITI-81[^9] «&nbsp;Retrieve ATNA Audit Event&nbsp;» qui se base sur l’interaction
-«&nbsp;search&nbsp;»[^10] de l’API REST de FHIR. Il s’agit d’une requête HTTP GET
-adressant la ressource auditEvent.</p>
+<p>Ce flux est construit selon les exigences de la transaction IHE ITI-81[^9] «&nbsp;Retrieve ATNA Audit Event&nbsp;» qui se base sur l’interaction «&nbsp;search&nbsp;»[^10] de l’API REST de FHIR. Il s’agit d’une requête HTTP GET adressant la ressource auditEvent.</p>
 
-<p>La transaction [ITI-81] Retrieve ATNA Audit Event exige que la
-recherche de traces soit bornée dans le temps. C’est-à-dire que le
-paramètre de recherche «&nbsp;date&nbsp;» qui correspond à la date
-d’enregistrement de l’évènement est présent pour préciser une limite de
-temps (avant, après ou un intervalle).</p>
+<p>La transaction [ITI-81] Retrieve ATNA Audit Event exige que la recherche de traces soit bornée dans le temps. C’est-à-dire que le paramètre de recherche «&nbsp;date&nbsp;» qui correspond à la date d’enregistrement de l’évènement est présent pour préciser une limite de temps (avant, après ou un intervalle).</p>
 
 <p>La recherche est transmise de la façon suivante&nbsp;:</p>
 
@@ -240,11 +232,8 @@ temps (avant, après ou un intervalle).</p>
 <th><p>GET
 [base]/AuditEvent?date=ge[start-time]&amp;date=le[stop-time]&amp;&lt;query&gt;</p>
 <p>Où [base] est le point de contact FHIR du gestionnaire de traces,</p>
-<p>[start-time] et [stop-time] indique l’intervalle de temps dans lequel
-les traces sont recherchées (date se réfère à la date d’enregistrement
-de l’évènement).</p>
-<p><a name="l407">​</a>&lt;query&gt; représente les autres paramètres, sous la forme
-param=valeur, permettant d’affiner la recherche (Cf <a href="#_Flux_23_-">Tableau 13</a>).</p></th>
+<p>[start-time] et [stop-time] indique l’intervalle de temps dans lequel les traces sont recherchées (date se réfère à la date d’enregistrement de l’évènement).</p>
+<p><a name="l407">​</a>&lt;query&gt; représente les autres paramètres, sous la forme param=valeur, permettant d’affiner la recherche (Cf <a href="#_Flux_23_-">Tableau 13</a>).</p></th>
 </tr>
 </thead>
 <tbody>
@@ -292,7 +281,7 @@ param=valeur, permettant d’affiner la recherche (Cf <a href="#_Flux_23_-">Tabl
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 29, 2026 13:10+0000">2026-01-29</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 18, 2026 15:25+0000">2026-02-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

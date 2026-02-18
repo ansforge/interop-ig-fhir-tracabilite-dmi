@@ -35,7 +35,7 @@ Le tableau ci-dessous liste les profils utilisés pour les ressources mentionné
 | AuditEvent | TDE_AuditEvent | 1.0 | Profil défini dans le volet générique « Traçabilité d’événements » |
 | Patient | [DMI_Patient](https://simplifier.net/frenchprofiledfhirar/frpatient) | 1.0 | Profil créé dans le cadre de ce volet étendant le profil français « FrPatient » publié par Interop’Santé |
 | Practitioner | DMI_Practitioner | 1.0 | Profil créé dans le cadre de ce volet étendant le profil « FrPractitionner» publié par Interop’Sante |
-| PractitionerRole | [DMI_PractitionerRole](https://simplifier.net/modelisationdesstructuresetdesprofessionnels/practitionerroleprofessionalrolerass) | 1.0 | Profil créé dans le cadre de ce volet étendant le profil « PractitionnerRoleProfessionalRoleRASS » de l’annuaire national représentant un professionnel |
+| PractitionerRole | [DMI_PractitionerRole](https://simplifier.net/modelisationdesstructuresetdesprofessionnels practitionerroleprofessionalrolerass) | 1.0 | Profil créé dans le cadre de ce volet étendant le profil « PractitionnerRoleProfessionalRoleRASS » de l’annuaire national représentant un professionnel |
 | Organization | DMI_Organization_EJ | 1.0 | Profil créé dans le cadre de ce volet étendant le profil « FrOrganization ». Ce profil est utilisé pour représenter le fabricant et les distributeurs des DM. |
 | DMI_OrganizationInterne | 1.0 | Profil créé dans le cadre de ce volet permettant de représenter l’organisation interne (Service utilisateur). | |
 | Device | DMI_Device | 1.0 | Profil créé dans le cadre de ce volet permet de représenter une instance physique d’un dispositif médical. |
@@ -50,7 +50,7 @@ Le tableau ci-dessous liste les profils utilisés pour les ressources mentionné
 | DMI_SupplyDeliveryTransport | 1.0 | Profil créé dans le cadre de ce volet permet de représenter les informations de transports des dispositifs médicaux. | |
 | DMI_SupplyDeliveryEnteteReceptionDMI | 1.0 | Profil créé dans le cadre de ce volet permet de représenter l’entête des informations de réception des dispositifs médicaux. | |
 | DMI_SupplyDeliveryReceptionUnitaire | 1.0 | Profil créé dans le cadre de ce volet permet de représenter les informations de réception d’un dispositif médical. | |
-| Procedure | DMI_Procedure | 1.0 | Profil créé dans le cadre de ce volet permet représenter l’l’intervention clinique ou chirurgicale implantant un dispositif médical. |
+| Procedure | DMI_Procedure | 1.0 | Profil créé dans le cadre de ce volet permet représenter l’intervention clinique ou chirurgicale implantant un dispositif médical. |
 | Invoice | DMI_Invoice | 1.0 | Profil créé dans le cadre de ce volet permet de représenter la facturation de dispositifs médicaux. |
 | Bundle | DMI_BundleRequest | 1.0 | Profil créé dans le cadre de ce volet permet de transmettre au serveur l’ensemble des ressources permettant une commande, une demande et la réponse à la demande d’un DMI |
 | DMI_BundleDelivery | 1.0 | Profil créé dans le cadre de ce volet permet de transmettre au serveur l’ensemble des ressources permettant la réception, la délivrance et la livraison d’un DMI | |

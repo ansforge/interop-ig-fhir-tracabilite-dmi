@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/EyeColor | *Version*:0.1.0 |
-| Draft as of 2026-01-29 | *Computable Name*:EyeColor |
+| Draft as of 2026-02-18 | *Computable Name*:EyeColor |
 
 Eye color extension
 
@@ -19,9 +19,9 @@ Eye color extension
 
 **Utilisations:**
 
-* Utiliser ce Extension: [Patient français](StructureDefinition-fr-patient.md)
+* Utilise ce/t/te Extension: [Patient français](StructureDefinition-fr-patient.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.[code]|current/StructureDefinition/EyeColor)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.[code]|current/StructureDefinition/EyeColor)
 
 ### Formal Views of Extension Content
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-EyeColor.csv), [Exce
   "version" : "0.1.0",
   "name" : "EyeColor",
   "status" : "draft",
-  "date" : "2026-01-29T13:10:46+00:00",
+  "date" : "2026-02-18T15:25:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
