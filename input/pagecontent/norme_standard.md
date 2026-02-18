@@ -110,20 +110,20 @@ L’étude métier « traçabilité des dispositifs médicaux implantables en �
 
 - Tracer (créer des traces)
 
-<div class="figure">
-    <img src="creerTrace.png" alt="Créer des traces" title="Tracer" style="width:100%;">
+<div class="figure" style="text-align: center;">
+    <img src="creerTrace.png" alt="Créer des traces" title="Tracer" style="width:50%;">
 </div>
 
 - Rechercher des traces
 
-<div class="figure">
-    <img src="rechercherTrace.png" alt="Rechercher des traces" title="Rechercher des traces" style="width:100%;">
+<div class="figure" style="text-align: center;">
+    <img src="rechercherTrace.png" alt="Rechercher des traces" title="Rechercher des traces" style="width:50%;">
 </div>
 
 - Consulter une trace
 
-<div class="figure">
-    <img src="consulterTrace.png" alt="Consulter une trace" title="Consulter une trace" style="width:100%;">
+<div class="figure" style="text-align: center;">
+    <img src="consulterTrace.png" alt="Consulter une trace" title="Consulter une trace" style="width:50%;">
 </div>
 
 En mappant les acteurs et les transactions sur le profil générique « généricisation : gestion des traces », nous pouvons en déduire que ce volet est « instanciable » dans le cas métier de gestion de la « traçabilité des dispositifs médicaux implantables en établissement de santé » :
@@ -187,22 +187,22 @@ Ce scénario décrit la demande « Tracer » (Création d’une trace), à par
 
 1)  En utilisant Syslog
 
-<div class="figure">
-    <img src="tracerSyslog.png" alt="Tracer Syslog" title="Tracer Syslog" style="width:100%;">
+<div class="figure" style="text-align: center;">
+    <img src="tracerSyslog.png" alt="Tracer Syslog" title="Tracer Syslog" style="width:50%;">
 </div>
 
 2)  En utilisant HL7 FHIR
 
 Dans le cas de la transmission d’une seule trace
 
-<div class="figure">
-    <img src="transmissionTrace.png" alt="Transmission trace" title="Transmission trace" style="width:100%;">
+<div class="figure" style="text-align: center;">
+    <img src="transmissionTrace.png" alt="Transmission trace" title="Transmission trace" style="width:50%;">
 </div>
 
 Dans le cas de la transmission de plusieurs traces
 
-<div class="figure">
-    <img src="transmissionTraces.png" alt="Transmission traces" title="Transmission traces" style="width:100%;">
+<div class="figure" style="text-align: center;">
+    <img src="transmissionTraces.png" alt="Transmission traces" title="Transmission traces" style="width:50%;">
 </div>
 
 ###### Rechercher des traces
@@ -211,14 +211,14 @@ Ce scénario décrit la demande « Rechercher des traces », à partir du vole
 
 1)  En utilisant Syslog
 
-<div class="figure">
-    <img src="rechercheTraceSyslog.png" alt="Recherche trace syslog" title="Recherche trace syslog" style="width:100%;">
+<div class="figure" style="text-align: center;">
+    <img src="rechercheTraceSyslog.png" alt="Recherche trace syslog" title="Recherche trace syslog" style="width:50%;">
 </div>
 
 2)  En utilisant HL7 FHIR
 
-<div class="figure">
-    <img src="rechercheTrace.png" alt="Recherche trace" title="Recherche trace" style="width:100%;">
+<div class="figure" style="text-align: center;">
+    <img src="rechercheTrace.png" alt="Recherche trace" title="Recherche trace" style="width:50%;">
 </div>
 
 ###### Consulter une trace
@@ -227,14 +227,14 @@ Ce scénario décrit la demande « Consulter une trace », à partir du volet 
 
 1)  En utilisant Syslog
 
-<div class="figure">
-    <img src="consulterTraceSyslog.png" alt="Consulter trace syslog" title="Consulter trace syslog" style="width:100%;">
+<div class="figure" style="text-align: center;">
+    <img src="consulterTraceSyslog.png" alt="Consulter trace syslog" title="Consulter trace syslog" style="width:50%;">
 </div>
 
 2)  En utilisant HL7 FHIR
 
-<div class="figure">
-    <img src="consulterTraceFHIR.png" alt="Consulter trace" title="Consulter trace" style="width:100%;">
+<div class="figure" style="text-align: center;">
+    <img src="consulterTraceFHIR.png" alt="Consulter trace" title="Consulter trace" style="width:50%;">
 </div>
 
 ##### Conclusion
