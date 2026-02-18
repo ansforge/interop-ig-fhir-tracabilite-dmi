@@ -38,7 +38,7 @@ Id: dmi-bundle-transmission-traces
 * entry[Procedure].resource only DMIProcedure
 * entry[SupplyRequest].resource only DMISupplyRequestEnteteDemande or DMISupplyRequestEnteteCommande or DMISupplyRequestEnteteReponse
 * entry[SupplyDelivery].resource 1..
-* entry[SupplyDelivery].resource only DMISupplyDeliveryReceptionUnitaire or DMISupplyDeliveryEnteteReceptionDMI or DMISupplyDeliveryEnteteDelivrance or DMISupplyDeliveryEnteteLivraison or DMISupplyDeliveryLigne
+* entry[SupplyDelivery].resource only DMISupplyDeliveryReceptionUnitaire or DMISupplyDeliveryEnteteReception or DMISupplyDeliveryEnteteDelivrance or DMISupplyDeliveryEnteteLivraison or DMISupplyDeliveryLigne
 * entry[AuditEvent].resource 1..
 * entry[AuditEvent].resource only DMIAuditEvent
 * entry[BundleRequest].resource 1..

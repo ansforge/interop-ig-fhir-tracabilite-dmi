@@ -1,6 +1,6 @@
-Profile: DMISupplyDeliveryEnteteReceptionDMI
+Profile: DMISupplyDeliveryEnteteReception
 Parent: SupplyDelivery
-Id: dmi-supplydelivery-enteter-reception-dmi
+Id: dmi-supplydelivery-enteter-reception
 * meta 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

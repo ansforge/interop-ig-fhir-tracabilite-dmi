@@ -7,4 +7,4 @@ Id: dmi-bundledelivery
 * entry ^slicing.rules = #open
 * entry contains SupplyDelivery 0..*
 * entry[SupplyDelivery].resource 1..
-* entry[SupplyDelivery].resource only DMISupplyDeliveryTransport or DMISupplyDeliveryEnteteReceptionDMI or DMISupplyDeliveryEnteteDelivrance or DMISupplyDeliveryEnteteLivraison or DMISupplyDeliveryLigne
+* entry[SupplyDelivery].resource only DMISupplyDeliveryTransport or DMISupplyDeliveryEnteteReception or DMISupplyDeliveryEnteteDelivrance or DMISupplyDeliveryEnteteLivraison or DMISupplyDeliveryLigne
