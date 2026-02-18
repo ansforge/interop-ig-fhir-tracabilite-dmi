@@ -1,3 +1,3 @@
 Profile: DMI_AuditEvent
-Parent: TDE_AuditEvent
+Parent: TDEAuditEvent
 Id: dmi-auditevent
