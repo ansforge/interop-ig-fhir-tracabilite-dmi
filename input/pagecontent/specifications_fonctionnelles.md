@@ -2342,15 +2342,14 @@ Ce flux concerne la réception des DMI par le gestionnaire de réception.
 | motifRejet : \[0..1\] Texte | Information complémentaire décrivant le motif du rejet de la livraison par le gestionnaire de réception. |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 53 Attributs de la classe "Livraison"
+<p style="text-align: center;"> Attributs de la classe "Livraison" </p>
 
 #### Flux 5 - TracabiliteLivraisonValide
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de
-la conformité de la livraison de DMI.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de la conformité de la livraison de DMI.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
-  
+
 - la classe Trace avec l’attribut :  
 . identifiant : identifiant de la trace.  
   
@@ -2359,16 +2358,12 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 système du gestionnaire de réception ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « REC » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « REC » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire de réception.  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
@@ -2376,23 +2371,17 @@ pour la deuxième occurrence
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 4  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 4  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 4 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 4 encodé en binaire
 
 #### Flux 5a - TracabiliteLivraisonRejet
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité du
-rejet de la livraison de DMI.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité du rejet de la livraison de DMI.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -2400,20 +2389,15 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire de réception ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire de réception ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « NRE » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « NRE » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire de réception.  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
@@ -2421,24 +2405,17 @@ pour la deuxième occurrence
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
-pour la première occurrence .  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 4  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
+pour la première occurrence : 
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 4  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 4 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 4 encodé en binaire
 
 #### Flux 5b - ReceptionUnitaireDMI
 
-Cette section présente le diagramme de classes du Flux 5b -
-ReceptionUnitaireDM. Ce flux concerne les DMI réceptionnés par le
-gestionnaire de réception.
+Cette section présente le diagramme de classes du Flux 5b - ReceptionUnitaireDM. Ce flux concerne les DMI réceptionnés par le gestionnaire de réception.
 
 <div class="figure" style="text-align: center;">
     <img src="flux5b_receptionUnitaireDMI.png"
@@ -2467,31 +2444,26 @@ gestionnaire de réception.
 <tbody>
 <tr>
 <td style="text-align: left;">receptionConforme : [1..1] boolean</td>
-<td style="text-align: left;">Indicateur de la conformité du
-dispositif<br />
-0 dispositif conforme (i.e. non périmé, ne faisant l'objet d'aucune
-alerte ou retrait de lot, ou autre non-conformité)<br />
+<td style="text-align: left;">Indicateur de la conformité du dispositif<br />
+0 dispositif conforme (i.e. non périmé, ne faisant l'objet d'aucune alerte ou retrait de lot, ou autre non-conformité)<br /> 
 1 dispositif non conforme.</td>
 </tr>
 <tr>
 <td style="text-align: left;">motifRejet : [0..1] Texte</td>
-<td style="text-align: left;">Information complémentaire décrivant le
-motif du rejet de la réception du dispositif.</td>
+<td style="text-align: left;">Information complémentaire décrivant le motif du rejet de la réception du dispositif.</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des classes et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 54 Attributs de la classe "StatutReception"
+<p style="text-align: center;"> Attributs de la classe "StatutReception"</p>
 
 #### Flux 5c - TracabiliteEntreeStockDMI
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de
-l'entrée en stock du DMI.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de l'entrée en stock du DMI.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -2499,44 +2471,32 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire DMI ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « ESD » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « ESD » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire de réception  
-. role = émetteur de la trace (cet attribut est nomenclaturé).  
-pour la deuxième occurrence  
+. role = émetteur de la trace (cet attribut est nomenclaturé).   pour la deuxième occurrence  
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 5b  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 5b  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 5b encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 5b encodé en binaire
 
 #### Flux 5d - TracabiliteReceptionDMI
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de
-la réception unitaire du DMI.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de la réception unitaire du DMI.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -2544,20 +2504,15 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire DMI ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « REC » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « REC » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire de réception  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
@@ -2565,23 +2520,17 @@ pour la deuxième occurrence
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 5b  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 5b  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 5b encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 5b encodé en binaire
 
 #### Flux 5e - TracabiliteRejetDMI
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité du
-rejet de la réception unitaire du DM.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité du rejet de la réception unitaire du DM.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -2589,20 +2538,15 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire DMI ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « NCO » ou « PER » de la
-nomenclature « TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « NCO » ou « PER » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire de réception  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
@@ -2610,25 +2554,18 @@ pour la deuxième occurrence
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 5b  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 5b  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 5b encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 5b encodé en binaire
 
 #### Flux 6 - DelivranceSU
 
 Cette section présente le diagramme de classes du Flux 6 - DelivranceSU.
-Ce flux concerne l'envoie des informations nécessaires au gestionnaire
-de réception du service utilisateur concernant les DMI délivrés par la
-PUI.
+Ce flux concerne l'envoie des informations nécessaires au gestionnaire de réception du service utilisateur concernant les DMI délivrés par la PUI.
 
 <div class="figure" style="text-align: center;">
     <img src="flux6_delivrerSU.png"
@@ -2651,12 +2588,11 @@ PUI.
 | informationComplementaire : \[0..1\] Texte | Toutes informations complémentaires concernant la délivrance de DMI au service utilisateur. |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 55 Attributs de la classe "Delivrance"
+<p style="text-align: center;"> Attributs de la classe "Delivrance"</p>
 
 ####  Flux 6a - TracabiliteSortieStock
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de
-la sortie du stock de la PUI du (des) DMI.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de la sortie du stock de la PUI du (des) DMI.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -2664,45 +2600,33 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire DMI ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « SSD » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « SSD » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire DMI  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
 pour la deuxième occurrence  
-. identifiant correspond à l’identifiant du gestionnaire de réception
-service utilisateur.  
+. identifiant correspond à l’identifiant du gestionnaire de réception service utilisateur.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 6  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 6  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 6 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 6 encodé en binaire
 
 #### Flux 7 - TracabiliteDelivranceSU
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de
-la délivrance du (des) DMI.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de la délivrance du (des) DMI.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -2710,47 +2634,34 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire DMI ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « DEL » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « DEL » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire DMI  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
 pour la deuxième occurrence  
-. identifiant correspond à l’identifiant du gestionnaire de réception
-service utilisateur.  
+. identifiant correspond à l’identifiant du gestionnaire de réception service utilisateur.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 6  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 6  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 6 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 6 encodé en binaire
 
 #### Flux 8 - TransportDMI 
 
 Cette section présente le diagramme de classes du Flux 8 - TransportDMI.
-Ce flux concerne l'envoie des informations nécessaires au gestionnaire
-de réception du service utilisateur concernant le transport des DMI qui
-sont acheminés.
+Ce flux concerne l'envoie des informations nécessaires au gestionnaire de réception du service utilisateur concernant le transport des DMI qui sont acheminés.
 
 <div class="figure" style="text-align: center;">
     <img src="flux8_transportDMI.png"
@@ -2778,62 +2689,49 @@ sont acheminés.
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">referenceTransport : [1..1]
-Identifiant</td>
-<td style="text-align: left;">Référence unique du transport (qui peut
-être une référence interne).</td>
+<td style="text-align: left;">referenceTransport : [1..1] Identifiant</td>
+<td style="text-align: left;">Référence unique du transport (qui peut être une référence interne).</td>
 </tr>
 <tr>
-<td style="text-align: left;">referenceDelivrance : [1..1]
-Identifiant</td>
-<td style="text-align: left;">Référence de la délivrance du (des) DMI
-associée à ce transport.</td>
+<td style="text-align: left;">referenceDelivrance : [1..1] Identifiant</td>
+<td style="text-align: left;">Référence de la délivrance du (des) DMI associée à ce transport.</td>
 </tr>
 <tr>
 <td style="text-align: left;">dateDelivrance : [1..1] DateHeure</td>
-<td style="text-align: left;">Date de délivrance au service
-utilisateur.</td>
+<td style="text-align: left;">Date de délivrance au service utilisateur.</td>
 </tr>
 <tr>
-<td style="text-align: left;">quantiteTransportee : [1..1]
-Numerique</td>
-<td style="text-align: left;">Il s'agit de la quantité totale des DMI
-transportés par le service logistique vers le gestionnaire de réception
+<td style="text-align: left;">quantiteTransportee : [1..1] Numerique</td>
+<td style="text-align: left;">Il s'agit de la quantité totale des DMI transportés par le service logistique vers le gestionnaire de réception
 du service utilisateur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IncidentTransport : [0..1] boolean</td>
-<td style="text-align: left;">Indicateur de la conformité du transport
-du (des) dispositif(s)<br />
+<td style="text-align: left;">Indicateur de la conformité du transport du (des) dispositif(s)<br />
 0 aucun incident durant le transport du (des) dispositif(s).<br />
 1 incident survenu durant le transport du (des) dispositif(s).</td>
 </tr>
 <tr>
 <td style="text-align: left;">detailIncident : [0..1] Texte</td>
-<td style="text-align: left;">Information complémentaire décrivant
-l'incident survenu sur le(s) dispositif(s) pendant le transport.</td>
+<td style="text-align: left;">Information complémentaire décrivant l'incident survenu sur le(s) dispositif(s) pendant le transport.</td>
 </tr>
 <tr>
 <td style="text-align: left;">informationComplementaire : [0..1]
 Texte</td>
-<td style="text-align: left;">Toutes informations complémentaires
-concernant le transport du (des) DMI vers le gestionnaire de réception
-du service utilisateur.</td>
+<td style="text-align: left;">Toutes informations complémentaires concernant le transport du (des) DMI vers le gestionnaire de réception du service utilisateur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des classes et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 56 Attributs de la classe "Transport"
+<p style="text-align: center;"> Attributs de la classe "Transport"</p>
 
 #### Flux 9 - TracabiliteTransportDMI
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité du
-transport du (des) DMI délivrés au service utilisateur.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité du transport du (des) DMI délivrés au service utilisateur.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -2841,39 +2739,28 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire DMI ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « TRA » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « TRA » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire DMI  
-. role = émetteur de la trace (cet attribut est nomenclaturé).  
-pour la deuxième occurrence  
+. role = émetteur de la trace (cet attribut est nomenclaturé).   pour la deuxième occurrence  
 . identifiant correspond à l’identifiant du service utilisateur.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 8  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 8  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 8 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 8 encodé en binaire
 
 #### Flux 10 - ReceptionSU
 
@@ -2901,7 +2788,7 @@ utilisateur concernant la réception des DMI dans ses locaux.
 | quantiteReceptionnee : \[0..1\] Numerique | Il s'agit de la quantité totale des DMI réceptionnés. |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 57 Attributs de la classe "ReceptionDMI"
+<p style="text-align: center;"> Attributs de la classe "ReceptionDMI"</p>
 
 ##### Classe "Ligne"
 
@@ -2923,33 +2810,26 @@ Table 57 Attributs de la classe "ReceptionDMI"
 </tr>
 <tr>
 <td style="text-align: left;">receptionConforme : [1..1] boolean</td>
-<td style="text-align: left;">Indicateur de la conformité du
-dispositif<br />
+<td style="text-align: left;">Indicateur de la conformité du dispositif<br />
 0 dispositif conforme<br />
-1 dispositif non conforme (i.e. en cas d'erreur de la PUI ou du
-transporteur, si le DMI réceptionné n'est pas conforme et/ou ne
-correspond pas au DMI qui avait été demandé) .</td>
+1 dispositif non conforme (i.e. en cas d'erreur de la PUI ou du transporteur, si le DMI réceptionné n'est pas conforme et/ou ne correspond pas au DMI qui avait été demandé) .</td>
 </tr>
 <tr>
 <td style="text-align: left;">motifRejet : [0..1] Texte</td>
-<td style="text-align: left;">Information complémentaire décrivant le
-motif du rejet de la réception du dispositif dans le service
-utilisateur.</td>
+<td style="text-align: left;">Information complémentaire décrivant le motif du rejet de la réception du dispositif dans le service utilisateur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des sclasses et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 58 Attributs de la classe "Ligne"
+<p style="text-align: center;"> Attributs de la classe "Ligne"</p>
 
 #### Flux 11 - TracabiliteEntreeStock
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité
-pour l'entrée en stock du (des) DMI au sein du service utilisateur.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité pour l'entrée en stock du (des) DMI au sein du service utilisateur.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -2957,46 +2837,33 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire de réception du service utilisateur ayant émis
-la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire de réception du service utilisateur ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « ESD » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « ESD » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. identifiant correspond à l’identifiant du gestionnaire de réception
-service utilisateur  
+. identifiant correspond à l’identifiant du gestionnaire de réception service utilisateur  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
 pour la deuxième occurrence  
 . identifiant correspond à l’identifiant du service utilisateur.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 10  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 10  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 10 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 10 encodé en binaire
 
 #### Flux 12 - TracabiliteReceptionSU
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité
-pour la réception du (des) DMI au sein du service utilisateur.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité pour la réception du (des) DMI au sein du service utilisateur.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -3004,46 +2871,33 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire de réception du service utilisateur ayant émis
-la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire de réception du service utilisateur ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « REC » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « REC » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. identifiant correspond à l’identifiant du gestionnaire de réception
-service utilisateur  
+. identifiant correspond à l’identifiant du gestionnaire de réception service utilisateur  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
 pour la deuxième occurrence  
 . identifiant correspond à l’identifiant du service utilisateur.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 10  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 10  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 10 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 10 encodé en binaire
 
 #### Flux 28 - TracabiliteRejetDMI
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité du
-rejet de la réception du DM au sein du service utilisateur.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité du rejet de la réception du DM au sein du service utilisateur.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -3051,47 +2905,33 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire DMI ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « NCO » ou « PER » de la
-nomenclature « TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « NCO » ou « PER » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. identifiant correspond à l’identifiant du gestionnaire de réception
-service utilisateur  
+. identifiant correspond à l’identifiant du gestionnaire de réception service utilisateur  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
 pour la deuxième occurrence  
 . identifiant correspond à l’identifiant du service utilisateur.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 10  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 10  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 10 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 10 encodé en binaire
 
 #### Flux 13 - ConsommationDMI
 
-Cette section présente le diagramme de classes du Flux 13 -
-ConsommationDMI. Ce flux concerne l'envoie des informations nécessaires
-au gestionnaire DMI concernant la pose du (des) DMI par le service
-utilisateur chez un patient.
+Cette section présente le diagramme de classes du Flux 13 - ConsommationDMI. Ce flux concerne l'envoie des informations nécessaires au gestionnaire DMI concernant la pose du (des) DMI par le service utilisateur chez un patient.
 
 <div class="figure" style="text-align: center;">
     <img src="flux13_consommationDMI.png"
@@ -3120,23 +2960,19 @@ utilisateur chez un patient.
 <tbody>
 <tr>
 <td style="text-align: left;">idIntervention : [1..1] Identifiant</td>
-<td style="text-align: left;">Identifiant de l’intervention
-médicale.</td>
+<td style="text-align: left;">Identifiant de l’intervention médicale.</td>
 </tr>
 <tr>
 <td style="text-align: left;">numSejour : [0..1] Identifiant</td>
-<td style="text-align: left;">Numéro de séjour correspondant à
-l’intervention médicale.</td>
+<td style="text-align: left;">Numéro de séjour correspondant à l’intervention médicale.</td>
 </tr>
 <tr>
 <td style="text-align: left;">typeIntervention : [0..1] Code</td>
-<td style="text-align: left;">Code spécifiant le type
-d’intervention.</td>
+<td style="text-align: left;">Code spécifiant le type d’intervention.</td>
 </tr>
 <tr>
 <td style="text-align: left;">dateIntervention : [1..1] DateHeure</td>
-<td style="text-align: left;">Date/heure à laquelle l’intervention a eu
-lieu.</td>
+<td style="text-align: left;">Date/heure à laquelle l’intervention a eu lieu.</td>
 </tr>
 <tr>
 <td style="text-align: left;">emplacementDMI : [0..1] Texte</td>
@@ -3144,49 +2980,40 @@ lieu.</td>
 </tr>
 <tr>
 <td style="text-align: left;">poseConforme : [1..1] boolean</td>
-<td style="text-align: left;">Indicateur de la conformité de la pose du
-dispositif<br />
+<td style="text-align: left;">Indicateur de la conformité de la pose du dispositif<br />
 0 aucun échec de pose pour ce dispositif.<br />
 1 échec de la pose du dispositif.</td>
 </tr>
 <tr>
 <td style="text-align: left;">motifEchec : [0..1] Texte</td>
-<td style="text-align: left;">Information complémentaire décrivant le
-motif de l'échec de la pose du dispositif.</td>
+<td style="text-align: left;">Information complémentaire décrivant le motif de l'échec de la pose du dispositif.</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des classes et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 59 Attributs de la classe "InterventionMedicale"
+<p style="text-align: center;"> Attributs de la classe "InterventionMedicale"</p>
 
 ####  Flux 30 - TracabiliteSortieStockSU
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de
-la sortie du stock du (des) DMI du service utilisateur.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de la sortie du stock du (des) DMI du service utilisateur.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
 - la classe Trace avec l’attribut :  
 . identifiant : identifiant de la trace.  
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-système du gestionnaire DMI ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au système du gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « SSD » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « SSD » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du service utilisateur  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
@@ -3194,24 +3021,17 @@ pour la deuxième occurrence
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 13  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 13  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 13 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 13 encodé en binaire
 
 #### Flux 13a - TracabiliteRefusDMI
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité du
-refus de la part du service utilisateur d'utiliser le DMI durant
-l'opération.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité du refus de la part du service utilisateur d'utiliser le DMI durant l'opération.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -3219,20 +3039,15 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-service utilisateur ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au service utilisateur ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « NCO » ou « PER » de la
-nomenclature « TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « NCO » ou « PER » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du service utilisateur  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
@@ -3240,23 +3055,17 @@ pour la deuxième occurrence
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 13  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 13  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 13 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 13 encodé en binaire
 
 #### Flux 14 - TracabiliteEchecPose
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de
-l'échec de pose du DMI durant l'opération.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité de l'échec de pose du DMI durant l'opération.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -3264,20 +3073,15 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-service utilisateur ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au service utilisateur ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « ECH » ou « NCO » ou « PER » de
-la nomenclature « TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « ECH » ou « NCO » ou « PER » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du service utilisateur  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
@@ -3285,23 +3089,17 @@ pour la deuxième occurrence
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 13  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 13  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 13 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 13 encodé en binaire
 
 #### Flux 15 -TracabilitePose
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité
-pour la pose du DMI chez le patient pendant l'opération.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité pour la pose du DMI chez le patient pendant l'opération.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -3309,20 +3107,15 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-service utilisateur ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au service utilisateur ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « POS » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « POS » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du service utilisateur  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
@@ -3330,23 +3123,17 @@ pour la deuxième occurrence
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 13  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 13  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 13 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 13 encodé en binaire
 
 #### Flux 16a - TracabiliteReassortDMI
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité
-pour le réassort en DMI.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité pour le réassort en DMI.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -3354,20 +3141,15 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-gestionnaire DMI ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « REA » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « REA » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
@@ -3375,25 +3157,17 @@ pour la deuxième occurrence
 . identifiant correspond à l’identifiant du fournisseur.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
   
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 3  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 3  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 3 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 3 encodé en binaire
 
 #### Flux 17 - AutorisationPaiement
 
-Cette section présente le diagramme de classes du Flux 17 -
-AutorisationPaiement. Ce flux concerne l'envoie des informations
-nécessaires au gestionnaire de compatibilité afin de régler la facture
-auprès du fournisseur.
+Cette section présente le diagramme de classes du Flux 17 - AutorisationPaiement. Ce flux concerne l'envoie des informations nécessaires au gestionnaire de compatibilité afin de régler la facture auprès du fournisseur.
 
 <div class="figure" style="text-align: center;">
     <img src="flux17_authorisationPaiement.png"
@@ -3420,7 +3194,7 @@ auprès du fournisseur.
 | devise : \[0..1\] Code | Devise de règlement de la facture |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 60 Attributs de la classe "Facture"
+<p style="text-align: center;"> Attributs de la classe "Facture"</p>
 
 ##### Classe "Ligne"
 
@@ -3429,12 +3203,11 @@ Table 60 Attributs de la classe "Facture"
 | dateAchat : \[1..1\] Date | Date d'achat du DMI par l'établissement. |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 61 Attributs de la classe "Ligne"
+<p style="text-align: center;"> Attributs de la classe "Ligne"</p>
 
 #### Flux 18 - TracabiliteFacturationDMI
 
-Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité
-pour le paiement de la facture de DMI.  
+Ce flux concerne l'enregistrement dans le gestionnaire de traçabilité pour le paiement de la facture de DMI.  
   
 Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :  
   
@@ -3442,58 +3215,40 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 . identifiant : identifiant de la trace.  
   
 - la classe SourceTrace avec l’attribut :  
-. identifiant : identifiant de la source de la trace qui correspond au
-gestionnaire DMI ayant émis la trace.  
+. identifiant : identifiant de la source de la trace qui correspond au gestionnaire DMI ayant émis la trace.  
   
 - la classe Evenement dont les attributs sont définis par :  
-. typeEvenement correspondant au code « AUT » de la nomenclature «
-TRE_R254-TypeEvenement ».  
-. occurence correspond à la date/heure à laquelle le flux a été
-généré.  
-. declaration correspond à la date/heure à laquelle le flux a été
-transmis.  
+. typeEvenement correspondant au code « AUT » de la nomenclature « TRE_R254-TypeEvenement ».  
+. occurence correspond à la date/heure à laquelle le flux a été généré.  
+. declaration correspond à la date/heure à laquelle le flux a été transmis.  
 . description correspond à la description textuelle de l'évènement.  
   
-- deux occurrences de la classe ActeurEvenement dont les attributs sont
-définis par :  
+- deux occurrences de la classe ActeurEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
 . identifiant correspond à l’identifiant du gestionnaire DMI.  
 . role = émetteur de la trace (cet attribut est nomenclaturé).  
 pour la deuxième occurrence  
-. identifiant correspond à l’identifiant du gestionnaire de
-comptabilité.  
+. identifiant correspond à l’identifiant du gestionnaire de comptabilité.  
 . role = récepteur de la trace (cet attribut est nomenclaturé).  
-  
-- deux occurrences de la classe ObjetEvenement dont les attributs sont
-définis par :  
+
+- deux occurrences de la classe ObjetEvenement dont les attributs sont définis par :  
 pour la première occurrence :  
-. type correspond au type de l’objet = « Structuré » (cet attribut est
-nomenclaturé).  
-. contenu correspond à l'ensemble des classes correspondant au contenu
-structuré du Flux 17  
+. type correspond au type de l’objet = « Structuré » (cet attribut est nomenclaturé).  
+. contenu correspond à l'ensemble des classes correspondant au contenu structuré du Flux 17  
 pour la deuxième occurrence :  
-. type correspond au type de l’objet = « Non structuré » (cet attribut
-est nomenclaturé).  
-. contenu correspond aux informations métiers du Flux 17 encodé en
-binaire
+. type correspond au type de l’objet = « Non structuré » (cet attribut est nomenclaturé).  
+. contenu correspond aux informations métiers du Flux 17 encodé en binaire
 
 #### Flux 22 - TransmissionTrace
 
-Ce flux correspond au « Flux 1 – TransmissionTrace » de l’étude métier
-du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier –
-Généricisation : Spécifications fonctionnelles des échanges Gestion des
-traces).  
-Dans le flux « TransmissionTrace » : L’acteur « source de traces »
-envoie par la méthode POST la demande de traitement de création d’une
-trace constituée d’une ressource générique (transaction) qui contient
-:  
+Ce flux correspond au « Flux 1 – TransmissionTrace » de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier –
+Généricisation : Spécifications fonctionnelles des échanges Gestion des traces).  
+Dans le flux « TransmissionTrace » : L’acteur « source de traces » envoie par la méthode POST la demande de traitement de création d’une trace constituée d’une ressource générique (transaction) qui contient :  
 - Les attributs de l’événement  
 - La description détaillée de l’événement au format non structuré  
 - La description détaillée de l’événement au format structuré  
   
-Les objets entrant dans la composition de ce flux (cf. CI-SIS Etude
-métier – Généricisation : Spécifications fonctionnelles des échanges
-Gestion des traces) correspondent à :  
+Les objets entrant dans la composition de ce flux (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces) correspondent à :  
 - la classe Trace  
 - la classe SourceTrace  
 - la classe Evenement  
@@ -3502,89 +3257,67 @@ Gestion des traces) correspondent à :
 
 #### Flux 23 - RechercheTraces
 
-Ce flux correspond au « Flux 4 – RechercheTraces » de l’étude métier du
-volet « Traçabilité d’événements » (cf. CI-SIS Etude métier –
-Généricisation : Spécifications fonctionnelles des échanges Gestion des
-traces). Les paramètres de recherche génériques sont ici complétés en
+Ce flux correspond au « Flux 4 – RechercheTraces » de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces). Les paramètres de recherche génériques sont ici complétés en
 fonction des flux métiers de cette étude.
 
 La table ci-dessous qui liste ces paramètres n’est pas exhaustive.
 
 <table style="width:91%;">
-<colgroup>
-<col style="width: 37%" />
-<col style="width: 53%" />
-</colgroup>
-<thead>
-<tr>
-<th style="text-align: center;">Classe/attribut</th>
-<th style="text-align: center;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="2" style="text-align: left;">Tous les paramètres génériques
-de l'étude (cf. CI-SIS Etude métier – Généricisation : Spécifications
-fonctionnelles des échanges Gestion des traces)</td>
-</tr>
-<tr>
-<td style="text-align: left;">autreParametres</td>
-<td style="text-align: left;"><p>Paramètres à renseigner en fonction des
-flux métiers. Ceux-ci peuvent correspondre à :</p>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul></td>
-</tr>
-</tbody>
+  <colgroup>
+    <col style="width: 37%" />
+    <col style="width: 53%" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th style="text-align: center;">Classe/attribut</th>
+      <th style="text-align: center;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="text-align: left;">
+        Tous les paramètres génériques de l'étude (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces)
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">autreParametres</td>
+      <td style="text-align: left;">
+        <p>Paramètres à renseigner en fonction des flux métiers. Ceux-ci peuvent correspondre à :</p>
+        <ul>
+          <li>DispositifMedical/support/identifiantHRF (Identifiant du dispositif médical)</li>
+          <li>DispositifMedical/support/IUD-ID (Identifiant du modèle du dispositif médical)</li>
+          <li>DispositifMedical/support/IUD-IPNumLot (Numéro du lot auquel appartient le DM)</li>
+          <li>DispositifMedical/support/IUD-IPNumSerie (Numéro de série propre au DM)</li>
+          <li>DispositifMedical/codeEMDN (Code du dispositif médical)</li>
+          <li>DispositifMedical/referenceFabricant</li>
+          <li>Patient/identite/matriculeINS (Identifiant du patient national)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
 </table>
-
-DispositifMedical/support/identifiantHRF(Identifiant du dispositif
-médical)DispositifMedical/support/IUD-ID(identifiant du modèle du
-dispositif médical)DispositifMedical/support/IUD-IPNumLot  
-(Numéro du lot auquel appartient le
-DM)DispositifMedical/support/IUD-IPNumSerie (Numéro de série propre au
-DM)DispositifMedical/codeEMDN (Code du dispositif
-médical)DispositfMedical/referenceFabricantPatient/identite/matriculeINS
-(identifiant du patient national)
 
 #### Flux 24 - ReponseRechercheTraces
 
-Ce flux correspond au « Flux 5 - ReponseRechercheTraces» de l’étude
-métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier –
-Généricisation : Spécifications fonctionnelles des échanges Gestion des
-traces). Le modèle du flux est identique au Flux 22 de cette étude à la
-différence que la recherche peut ne retourner aucune source, une seule
-ou plusieurs.
+Ce flux correspond au « Flux 5 - ReponseRechercheTraces» de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier –
+Généricisation : Spécifications fonctionnelles des échanges Gestion des traces). Le modèle du flux est identique au Flux 22 de cette étude à la
+différence que la recherche peut ne retourner aucune source, une seule ou plusieurs.
 
 #### Flux 25 - ConsulterTrace
 
-Ce flux correspond au « Flux 2 - ConsultationTrace» de l’étude métier du
-volet « Traçabilité d’événements » (cf. CI-SIS Etude métier –
-Généricisation : Spécifications fonctionnelles des échanges Gestion des
-traces).
+Ce flux correspond au « Flux 2 - ConsultationTrace» de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces).
 
 #### Flux 26 - ReponseConsulterTrace
 
-Ce flux correspond au « Flux 3 - ReponseConsultationTrace» de l’étude
-métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier –
-Généricisation : Spécifications fonctionnelles des échanges Gestion des
-traces). Le modèle du flux est identique au Flux 22 de cette étude à la
-différence que la consultation peut ne retourner aucune source, une
-seule ou plusieurs.
+Ce flux correspond au « Flux 3 - ReponseConsultationTrace» de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier –
+Généricisation : Spécifications fonctionnelles des échanges Gestion des traces). Le modèle du flux est identique au Flux 22 de cette étude à la
+différence que la consultation peut ne retourner aucune source, une seule ou plusieurs.
 
 #### Classes communes aux flux
 
 ##### Classe "Adresse"
 
-Adresse géopostale. Un emplacement auquel une personne ou une
-organisation peut être trouvée ou être atteinte, d'après la norme NF Z
-10-011.
+Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011.
 
 <table>
 <colgroup>
@@ -3599,51 +3332,35 @@ organisation peut être trouvée ou être atteinte, d'après la norme NF Z
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">identificationDestinataire : [0..1]
-Texte</td>
-<td style="text-align: left;">Eléments d'identification du destinataire
-c’est-à-dire la personne physique ou morale à qui un envoi est
-adressé.<br />
+<td style="text-align: left;">identificationDestinataire : [0..1] Texte</td>
+<td style="text-align: left;">Eléments d'identification du destinataire c’est-à-dire la personne physique ou morale à qui un envoi est adressé.<br />
 1) Le destinataire est une personne physique :<br />
-* Qualité: civilité ou condition sociale, civile, juridique ou titre
-sous lequel une partie figure dans un acte juridique.<br />
+* Qualité: civilité ou condition sociale, civile, juridique ou titre sous lequel une partie figure dans un acte juridique.<br />
 * Prénom<br />
 * Nom<br />
-* Titre: désignation honorifique exprimant une distinction de rang, une
-dignité (titres nobiliaires, religieux, militaires, etc.).<br />
+* Titre: désignation honorifique exprimant une distinction de rang, une dignité (titres nobiliaires, religieux, militaires, etc.).<br />
 * Profession, fonction<br />
-Une personne physique peut être désignée soit par son nom et
-éventuellement son prénom, soit par son nom et sa fonction ou sa
-profession, enfin, dans certains cas particuliers, par ses seuls titres,
-fonction ou profession.<br />
+Une personne physique peut être désignée soit par son nom et éventuellement son prénom, soit par son nom et sa fonction ou sa profession, enfin, dans certains cas particuliers, par ses seuls titres, fonction ou profession.<br />
 2) Le destinataire est une personne morale :<br />
-* Forme juridique: Indication du statut juridique de la personne morale
-: SA, SARL, GIE, Société civile, Mutuelle, Association, Fondation,
-etc.<br />
+* Forme juridique: Indication du statut juridique de la personne morale : SA, SARL, GIE, Société civile, Mutuelle, Association, Fondation, etc.<br />
 * Raison ou dénomination sociale<br />
 * Domaine d'activité<br />
 * Enseigne commerciale<br />
 * Nom commercial<br />
-* Subdivision au sein de l'entreprise (Direction, service, etc.) ou
-organisation interne de la personne morale (fonctionnelle ou
-géographique).<br />
-Une personne morale peut être désignée au moins par sa raison sociale,
-son enseigne ou nom commercial.</td>
+* Subdivision au sein de l'entreprise (Direction, service, etc.) ou organisation interne de la personne morale (fonctionnelle ou géographique).<br />
+Une personne morale peut être désignée au moins par sa raison sociale, son enseigne ou nom commercial.</td>
 </tr>
 <tr>
 <td style="text-align: left;">identificationDomicilie : [0..1]
 Texte</td>
-<td style="text-align: left;">Eléments d'identification du domicilié
-c’est-à-dire le titulaire du domicile du destinataire (lieu ordinaire
-d'habitation, demeure légale et habituelle)<br />
+<td style="text-align: left;">Eléments d'identification du domicilié c’est-à-dire le titulaire du domicile du destinataire (lieu ordinaire d'habitation, demeure légale et habituelle)<br />
 1) Le domicilié est une personne physique:<br />
 * Qualité<br />
 * Prénom<br />
 * Nom<br />
 * Titre<br />
 * Profession, fonction<br />
-Les éléments d'identification du domicilié sont précédés de la mention
-«chez»<br />
+Les éléments d'identification du domicilié sont précédés de la mention «chez»<br />
 2) Le domicilié est une personne morale:<br />
 * Forme juridique<br />
 * Dénomination sociale<br />
@@ -3653,138 +3370,91 @@ Les éléments d'identification du domicilié sont précédés de la mention
 </tr>
 <tr>
 <td style="text-align: left;">pointRemise : [0..1] Texte</td>
-<td style="text-align: left;">Lieu où le destinataire prend possession
-de son courrier. Il est matérialisé, dans la plupart des cas, par la
+<td style="text-align: left;">Lieu où le destinataire prend possession de son courrier. Il est matérialisé, dans la plupart des cas, par la
 présence<br />
 d'une boîte aux lettres; il est constitué des éléments suivants :<br />
-* Local ou logement : Numéro ou désignation d'appartement, logement,
-pièce, bureau, local commercial ou industriel<br />
-* Accès au local ou au logement: indications de couloir, d'étage ou de
-niveau<br />
-* Boîte aux lettres : Numéro voire dénomination (éventuellement
-CIDEX)<br />
-* Accès à la boîte à lettres: si nécessaire,: identification du couloir
-d'accès, de la batterie de boîtes s'il en existe plusieurs<br />
-* Code acheminement interne à l'entreprise (CAIE): Codification
-identifiant le découpage au sein de l'entreprise en vue du traitement de
-courrier par les services dédiés internes à l'entreprise. Les
-informations d'identification du domicilié (Chez M.X) pourraient figurer
+* Local ou logement : Numéro ou désignation d'appartement, logement, pièce, bureau, local commercial ou industriel<br />
+* Accès au local ou au logement: indications de couloir, d'étage ou de niveau<br />
+* Boîte aux lettres : Numéro voire dénomination (éventuellement CIDEX)<br />
+* Accès à la boîte à lettres: si nécessaire,: identification du couloir d'accès, de la batterie de boîtes s'il en existe plusieurs<br />
+* Code acheminement interne à l'entreprise (CAIE): Codification identifiant le découpage au sein de l'entreprise en vue du traitement de
+courrier par les services dédiés internes à l'entreprise. Les informations d'identification du domicilié (Chez M.X) pourraient figurer
 dans cet attribut.</td>
 </tr>
 <tr>
 <td style="text-align: left;">complementPointGeographique : [0..1]
 Texte</td>
-<td style="text-align: left;">Un complément de l'adresse au point
-géographique constitué des éléments suivants:<br />
-* Bâtiment: les bâtiments sont désignés par leur type (bâtiment,
-immeuble, tour,...), éventuellement des mentions d'orientation (est,
-ouest,...), une dénomination littérale ou une numérotation; exemple:
-Tour DELTA<br />
-* Accès au bâtiment: l'accès au bâtiment est identifié par un numéro,
-une lettre, une combinaison alphanumérique. Ces éléments identifient une
+<td style="text-align: left;">Un complément de l'adresse au point géographique constitué des éléments suivants:<br />
+* Bâtiment: les bâtiments sont désignés par leur type (bâtiment, immeuble, tour,...), éventuellement des mentions d'orientation (est,
+ouest,...), une dénomination littérale ou une numérotation; exemple: Tour DELTA<br />
+* Accès au bâtiment: l'accès au bâtiment est identifié par un numéro, une lettre, une combinaison alphanumérique. Ces éléments identifient une
 entrée, porte, etc.; exemple: Entrée A<br />
-* Ensemble immobilier: ensemble d'habitations reliées à la voie publique
-par un ou plusieurs points d'accès (résidence, zone<br />
+* Ensemble immobilier: ensemble d'habitations reliées à la voie publique par un ou plusieurs points d'accès (résidence, zone<br />
 industrielle,...); exemple: Résidence des Fleurs.</td>
 </tr>
 <tr>
 <td style="text-align: left;">numeroVoie : [0..1] Texte</td>
-<td style="text-align: left;">Un numéro dans la voie; dans les cas de
-numérotation sans extension, il est composé de 0 à 4 caractères
+<td style="text-align: left;">Un numéro dans la voie; dans les cas de numérotation sans extension, il est composé de 0 à 4 caractères
 numériques au maximum.</td>
 </tr>
 <tr>
 <td style="text-align: left;">extension : [0..1] Texte</td>
-<td style="text-align: left;">Extension ou indice de répétition: mention
-bis, ter, quater, ...ou une lettre A, B, C, D, etc. lorsque ce caractère
+<td style="text-align: left;">Extension ou indice de répétition: mention bis, ter, quater, ...ou une lettre A, B, C, D, etc. lorsque ce caractère
 complète une numérotation de voirie.</td>
 </tr>
 <tr>
-<td style="text-align: left;">typeVoie : [0..1] <a
-href="http://mos.asipsante.fr/NOS/PDF/TRE_R35-TypeVoie.tabs.pdf">Code
-&lt;&lt;TRE_R35-TypeVoie&gt;&gt;</a></td>
-<td style="text-align: left;">Type de voie : rue, avenue, boulevard,
-etc.<br />
-Attribut obsolète et non conforme à la norme postale en vigueur qui
-définit cette information comme faisant partie de l'attribut
-libelleVoie. Il apparait dans la classe Adresse uniquement parce que des
-systèmes existants l'utilisent encore.<br />
-Les valeurs de ce code sont répertoriées dans la nomenclature
-TRE_R35-TypeVoie.</td>
+<td style="text-align: left;">typeVoie : [0..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R35-TypeVoie.tabs.pdf">Code &lt;&lt;TRE_R35-TypeVoie&gt;&gt;</a></td>
+<td style="text-align: left;">Type de voie : rue, avenue, boulevard, etc.<br />
+Attribut obsolète et non conforme à la norme postale en vigueur qui définit cette information comme faisant partie de l'attribut libelleVoie. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore.<br />
+Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R35-TypeVoie.</td>
 </tr>
 <tr>
 <td style="text-align: left;">libelleVoie : [0..1] Texte</td>
-<td style="text-align: left;">Appellation qui est donnée à la voie par
-les municipalités. Ce libellé figure in extenso ou en abrégé sur les
+<td style="text-align: left;">Appellation qui est donnée à la voie par les municipalités. Ce libellé figure in extenso ou en abrégé sur les
 plaques aux différents angles de chaque rue.<br />
 Synonyme: nom de la voie</td>
 </tr>
 <tr>
 <td style="text-align: left;">lieuDit : [0..1] Texte</td>
-<td style="text-align: left;">Lieu qui porte un nom rappelant une
-particularité topographique ou historique et qui, souvent, constitue un
-écart d'une commune (un écart est une petite agglomération distincte du
-centre de la commune à laquelle elle appartient).</td>
+<td style="text-align: left;">Lieu qui porte un nom rappelant une particularité topographique ou historique et qui, souvent, constitue un
+écart d'une commune (un écart est une petite agglomération distincte du centre de la commune à laquelle elle appartient).</td>
 </tr>
 <tr>
 <td style="text-align: left;">mentionDistribution : [0..1] Texte</td>
-<td style="text-align: left;">Mentions particulières de distribution. Il
-s'agit de mentions identifiant le service proposé par La Poste au
-destinataire. Ces mentions sont formées d'un libellé et d'un numéro de
-séparation (exemple : BP 42534).</td>
+<td style="text-align: left;">Mentions particulières de distribution. Il s'agit de mentions identifiant le service proposé par La Poste au
+destinataire. Ces mentions sont formées d'un libellé et d'un numéro de séparation (exemple : BP 42534).</td>
 </tr>
 <tr>
 <td style="text-align: left;">codePostal : [0..1] Code</td>
-<td style="text-align: left;">Code Postal : Code Postal ou code postal
-spécifique CEDEX<br />
-* Code postal: Un code à 5 chiffres servant à l'acheminement et/ou à la
-distribution des envois. Il identifie un bureau distributeur dans la
+<td style="text-align: left;">Code Postal : Code Postal ou code postal spécifique CEDEX<br />
+* Code postal: Un code à 5 chiffres servant à l'acheminement et/ou à la distribution des envois. Il identifie un bureau distributeur dans la
 chaîne de traitement du courrier.<br />
-* Code CEDEX (Courrier d'Entreprise à Distribution Exceptionnelle); le
-CEDEX est une modalité d'acheminement du courrier associée à des
-services particuliers de distribution offerts aux entreprises
-caractérisées par un adressage spécifique; le code postal spécifique
-CEDEX est un code attribué aux organismes, entreprises, services publics
-recevant un fort trafic. Il identifie un client ou un ensemble de
-clients. Il est positionné aux lieu et place du code postal général dans
-le cas des adresses CEDEX. Ainsi, un code peut être associé à un client
-(code individuel) ou partagé entre plusieurs clients (code
-collectif).</td>
+* Code CEDEX (Courrier d'Entreprise à Distribution Exceptionnelle); le CEDEX est une modalité d'acheminement du courrier associée à des
+services particuliers de distribution offerts aux entreprises caractérisées par un adressage spécifique; le code postal spécifique CEDEX est un code attribué aux organismes, entreprises, services publics recevant un fort trafic. Il identifie un client ou un ensemble de clients. Il est positionné aux lieu et place du code postal général dans le cas des adresses CEDEX. Ainsi, un code peut être associé à un client (code individuel) ou partagé entre plusieurs clients (code collectif).</td>
 </tr>
 <tr>
 <td style="text-align: left;">localite : [0..1] Texte</td>
-<td style="text-align: left;">Localité ou Libellé du bureau distributeur
-CEDEX<br />
-** Localité: Zone d'habitation, en général la commune d'implantation du
-destinataire. Elle est identifiée par son libellé INSEE sauf dans
-quelques cas où le libellé postal diffère du libellé INSEE, généralement
-pour lever des ambiguïtés.<br />
+<td style="text-align: left;">Localité ou Libellé du bureau distributeur CEDEX<br />
+** Localité: Zone d'habitation, en général la commune d'implantation du destinataire. Elle est identifiée par son libellé INSEE sauf dans
+quelques cas où le libellé postal diffère du libellé INSEE, généralement pour lever des ambiguïtés.<br />
 ** Libellé du bureau distributeur CEDEX.<br />
-Libellé du bureau distributeur c'est-à-dire (dans la très grande
-majorité des cas) le libellé de la commune siège du bureau CEDEX; la
-mention CEDEX doit obligatoirement suivre le libellé du bureau CEDEX;
-dans le cas où il existe plusieurs bureaux CEDEX pour une même entité ou
-commune, chaque bureau CEDEX sera identifié par un numéro (exemple :
-ROUBAIX CEDEX 2); ce numéro correspond au numéro d'arrondissement dans
-le cas des villes à arrondissements, à un numéro d'ordre dans les autres
-cas.</td>
+Libellé du bureau distributeur c'est-à-dire (dans la très grande majorité des cas) le libellé de la commune siège du bureau CEDEX; la
+mention CEDEX doit obligatoirement suivre le libellé du bureau CEDEX; dans le cas où il existe plusieurs bureaux CEDEX pour une même entité ou
+commune, chaque bureau CEDEX sera identifié par un numéro (exemple : ROUBAIX CEDEX 2); ce numéro correspond au numéro d'arrondissement dans
+le cas des villes à arrondissements, à un numéro d'ordre dans les autres cas.</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [0..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des classes et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 62 Attributs de la classe "Adresse"
+<p style="text-align: center;"> Attributs de la classe "Adresse"</p>
 
 ##### Classe "DispositifMedical"
 
-Cette classe correspond à l'élaboration de la brique élémentaire du
-dispositif médical (DM). Cette modélisation a été réalisée en
-collaboration avec les Groupes de Travail « Dispositifs Médicaux »
-pilotés par Interop’Santé/PHAST/ANS depuis 2019.
+Cette classe correspond à l'élaboration de la brique élémentaire du dispositif médical (DM). Cette modélisation a été réalisée en collaboration avec les Groupes de Travail « Dispositifs Médicaux » pilotés par Interop’Santé/PHAST/ANS depuis 2019.
 
 <table>
 <colgroup>
@@ -3801,44 +3471,30 @@ pilotés par Interop’Santé/PHAST/ANS depuis 2019.
 <tr>
 <td style="text-align: left;">support : [0..1] <a
 href="#classe-supportiud">SupportIUD</a></td>
-<td style="text-align: left;">Le support IUD est la manière dont l'IUD
-est communiqué grâce à l'AIDC et, le cas échéant, son marquage en
-clair.<br />
-Parmi les supports IUD, on trouve notamment les codes à barres
-unidimensionnels ou linéaires, les codes à barres à deux dimensions/code
-QR, les identifiants RFID.</td>
+<td style="text-align: left;">Le support IUD est la manière dont l'IUD est communiqué grâce à l'AIDC et, le cas échéant, son marquage en clair.<br />
+Parmi les supports IUD, on trouve notamment les codes à barres unidimensionnels ou linéaires, les codes à barres à deux dimensions/code QR, les identifiants RFID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">identifiantLocalDM : [0..*]
-Identifiant</td>
-<td style="text-align: left;">Identifiants affectés au dispositif
-médical dans les référentiels locaux.</td>
+<td style="text-align: left;">identifiantLocalDM : [0..*] Identifiant</td>
+<td style="text-align: left;">Identifiants affectés au dispositif médical dans les référentiels locaux.</td>
 </tr>
 <tr>
 <td style="text-align: left;">classeRisque : [0..1] Code</td>
-<td style="text-align: left;">Classe de risque du dispositif. Les
-dispositifs sont répartis en classe I, classe IIa, classe IIb et classe
-III en fonction de la destination des dispositifs et des risques qui
-leur sont inhérents. La classification est effectuée conformément à
+<td style="text-align: left;">Classe de risque du dispositif. Les dispositifs sont répartis en classe I, classe IIa, classe IIb et classe
+III en fonction de la destination des dispositifs et des risques qui leur sont inhérents. La classification est effectuée conformément à
 l'annexe VIII du Règlement (UE) 2017/745.</td>
 </tr>
 <tr>
-<td style="text-align: left;">marquageCE : [0..1] <a
-href="#classe-marquagece">MarquageCE</a></td>
-<td style="text-align: left;">Précise si le DM a obtenu le arquage CE et
-renvoie vers l'organisme ayant accordé le marquage CE au DM.</td>
+<td style="text-align: left;">marquageCE : [0..1] <a href="#classe-marquagece">MarquageCE</a></td>
+<td style="text-align: left;">Précise si le DM a obtenu le arquage CE et renvoie vers l'organisme ayant accordé le marquage CE au DM.</td>
 </tr>
 <tr>
-<td style="text-align: left;">referenceFabricant : [0..1]
-Identifiant</td>
-<td style="text-align: left;">Référence du dispositif médical ou numéro
-dans le catalogue du fabricant.</td>
+<td style="text-align: left;">referenceFabricant : [0..1] Identifiant</td>
+<td style="text-align: left;">Référence du dispositif médical ou numéro dans le catalogue du fabricant.</td>
 </tr>
 <tr>
-<td style="text-align: left;">referenceDistributeur : [0..1]
-Identifiant</td>
-<td style="text-align: left;">Référence du dispositif médical ou numéro
-dans le catalogue du distributeur.</td>
+<td style="text-align: left;">referenceDistributeur : [0..1] Identifiant</td>
+<td style="text-align: left;">Référence du dispositif médical ou numéro dans le catalogue du distributeur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">modele : [0..1] Texte</td>
@@ -3846,93 +3502,68 @@ dans le catalogue du distributeur.</td>
 </tr>
 <tr>
 <td style="text-align: left;">nomCommercial : [0..1] Texte</td>
-<td style="text-align: left;">Dénomination commerciale du dispositif
-médical.</td>
+<td style="text-align: left;">Dénomination commerciale du dispositif médical.</td>
 </tr>
 <tr>
 <td style="text-align: left;">codeEMDN : [0..1] Code</td>
-<td style="text-align: left;">Code du dispositif médical dans la
-nomenclature EMDN (European Medical Device Nomenclature).</td>
+<td style="text-align: left;">Code du dispositif médical dans la nomenclature EMDN (European Medical Device Nomenclature).</td>
 </tr>
 <tr>
 <td style="text-align: left;">usageUnique : [0..1] Indicateur</td>
-<td style="text-align: left;">Indicateur pour spécifier si le dispositif
-est à usage unique.<br />
+<td style="text-align: left;">Indicateur pour spécifier si le dispositif est à usage unique.<br />
 1 : dispositif à usage unique, 0 : dans le cas contraire.</td>
 </tr>
 <tr>
 <td style="text-align: left;">nbReutilisation : [0..1] integer</td>
-<td style="text-align: left;">Le nombre limité de réutilisations du
-dispositif médical.</td>
+<td style="text-align: left;">Le nombre limité de réutilisations du dispositif médical.</td>
 </tr>
 <tr>
 <td style="text-align: left;">emballageSterile : [0..1] Indicateur</td>
-<td style="text-align: left;">Indicateur pour spécifier si le dispositif
-a un emballage stérile.<br />
+<td style="text-align: left;">Indicateur pour spécifier si le dispositif a un emballage stérile.<br />
 1 : dispositif stérile, 0 : dans le cas contraire.</td>
 </tr>
 <tr>
-<td style="text-align: left;">sterilisationAvantUtilisation : [0..1]
-Indicateur</td>
-<td style="text-align: left;">Indicateur pour spécifier si le dispositif
-doit être stérilisé avant utilisation.<br />
+<td style="text-align: left;">sterilisationAvantUtilisation : [0..1] Indicateur</td>
+<td style="text-align: left;">Indicateur pour spécifier si le dispositif doit être stérilisé avant utilisation.<br />
 1 : dispositif doit être stérilisé, 0 : dans le cas contraire.</td>
 </tr>
 <tr>
 <td style="text-align: left;">contientLatex : [0..1] Indicateur</td>
-<td style="text-align: left;">Indicateur pour spécifier si le dispositif
-contient du latex.<br />
+<td style="text-align: left;">Indicateur pour spécifier si le dispositif contient du latex.<br />
 1 : dispositif contient du latex, 0 : dans le cas contraire.</td>
 </tr>
 <tr>
 <td style="text-align: left;">CMR1A1B : [0..1] Indicateur</td>
-<td style="text-align: left;">Indicateur pour spécifier si le dispositif
-contient des substances CMR IA et IB.<br />
-1 : dispositif contient des substances CMR 1A et 1B, 0 : dans le cas
-contraire.</td>
+<td style="text-align: left;">Indicateur pour spécifier si le dispositif contient des substances CMR IA et IB.<br />
+1 : dispositif contient des substances CMR 1A et 1B, 0 : dans le cas contraire.</td>
 </tr>
 <tr>
 <td style="text-align: left;">implantable : [0..1] Indicateur</td>
-<td style="text-align: left;">Indicateur pour spécifier si le dispositif
-est implantable.<br />
+<td style="text-align: left;">Indicateur pour spécifier si le dispositif est implantable.<br />
 1 : dispositif implantable, 0 : dans le cas contraire.</td>
 </tr>
 <tr>
 <td style="text-align: left;">actif : [0..1] Indicateur</td>
-<td style="text-align: left;">Indicateur pour spécifier si le dispositif
-est actif.<br />
-L’article 2 partie 4 du Règlement (UE) 2017/745 du 5 avril 2017 définit
-les dispositifs actifs comme "tout dispositif dont le fonctionnement
-dépend d'une source d'énergie autre que celle générée par le corps
-humain à cette fin ou par la pesanteur et agissant par modification de
-la densité de cette énergie ou par conversion de celle-ci. Les
-dispositifs destinés à la transmission d'énergie, de substances ou
-d'autres éléments, sans modification significative, entre un dispositif
-actif et le patient ne sont pas réputés être des dispositifs actifs. Les
+<td style="text-align: left;">Indicateur pour spécifier si le dispositif est actif.<br />
+L’article 2 partie 4 du Règlement (UE) 2017/745 du 5 avril 2017 définit les dispositifs actifs comme "tout dispositif dont le fonctionnement
+dépend d'une source d'énergie autre que celle générée par le corps humain à cette fin ou par la pesanteur et agissant par modification de
+la densité de cette énergie ou par conversion de celle-ci. Les dispositifs destinés à la transmission d'énergie, de substances ou d'autres éléments, sans modification significative, entre un dispositif actif et le patient ne sont pas réputés être des dispositifs actifs. Les
 logiciels sont aussi réputés être des dispositifs actifs."<br />
 1 : dispositif actif, 0 : dans le cas contraire.</td>
 </tr>
 <tr>
 <td style="text-align: left;">irmCompatible : [0..1] Code</td>
-<td style="text-align: left;">La norme ASTM (American Society for
-Testing and Materials ) F2503 distingue 3 niveaux de compatibilité IRM
+<td style="text-align: left;">La norme ASTM (American Society for Testing and Materials ) F2503 distingue 3 niveaux de compatibilité IRM
 d’un dispositif médical :<br />
-‒ « MR Safe » (IRM compatible sans conditions) : dispositifs pouvant
-être introduits dans tout type d’IRM sans risque (matériau non
+‒ « MR Safe » (IRM compatible sans conditions) : dispositifs pouvant être introduits dans tout type d’IRM sans risque (matériau non
 conducteur, non métallique, non magnétique) ;<br />
-‒ « MR Unsafe » (non IRM compatible) : dispositifs engendrant un risque
-pour le patient lors de son introduction dans l’IRM ;<br />
-‒ « MR Conditional » (IRM compatible sous conditions) : dispositifs
-pouvant être introduits dans l’IRM sous des conditions précises pré
-spécifiées par le fabricant. Seul le respect de toutes ces conditions
-pourra permettre la réalisation d’une IRM sans risque. Cela revient à
-évaluer les conditions dans lesquelles un dispositif médical n’est pas
-dangereux dans un environnement à résonance magnétique.<br />
+‒ « MR Unsafe » (non IRM compatible) : dispositifs engendrant un risque pour le patient lors de son introduction dans l’IRM ;<br />
+‒ « MR Conditional » (IRM compatible sous conditions) : dispositifs pouvant être introduits dans l’IRM sous des conditions précises pré
+spécifiées par le fabricant. Seul le respect de toutes ces conditions pourra permettre la réalisation d’une IRM sans risque. Cela revient à
+évaluer les conditions dans lesquelles un dispositif médical n’est pas dangereux dans un environnement à résonance magnétique.<br />
 <br />
-La FDA recommande que tous les Dispositifs Médicaux Implantables Actifs
-(DMIA) soient classés « MR Conditional » (IRM compatible sous
-conditions) ou « MR Unsafe » (non IRM compatible) selon les cas, compte
-tenu de la présence de composants électroniques conducteurs. Autrement
+La FDA recommande que tous les Dispositifs Médicaux Implantables Actifs (DMIA) soient classés « MR Conditional » (IRM compatible sous
+conditions) ou « MR Unsafe » (non IRM compatible) selon les cas, compte tenu de la présence de composants électroniques conducteurs. Autrement
 dit, un DMIA ne doit jamais être considéré comme « MR Safe ».<br />
 <br />
 La création de la nomenclature associée est en cours.</td>
@@ -3945,20 +3576,17 @@ href="#classe-dimensionsdm">DimensionsDM</a></td>
 <tr>
 <td style="text-align: left;">codeLPP : [0..1] Code</td>
 <td style="text-align: left;">Code LPP du DM.<br />
-Il s'agit d'un code national utilisé pour obtenir le remboursement par
-l'Assurance Maladie de certains DM (implantables ou invasifs non
-implantables) en sus des prestations d’hospitalisations à l’hôpital, ou
-le remboursement de certains produits et prestations en ville.</td>
+Il s'agit d'un code national utilisé pour obtenir le remboursement par l'Assurance Maladie de certains DM (implantables ou invasifs non
+implantables) en sus des prestations d’hospitalisations à l’hôpital, ou le remboursement de certains produits et prestations en ville.</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des classes et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 63 Attributs de la classe "DispositifMedical"
+<p style="text-align: center;"> Attributs de la classe "DispositifMedical"</p>
 
 ##### Classe "MarquageCE"
 
@@ -3977,53 +3605,40 @@ Table 63 Attributs de la classe "DispositifMedical"
 <tr>
 <td style="text-align: left;">organismeNotifie : [0..1] <a
 href="#classe-entitejuridique">EntiteJuridique</a></td>
-<td style="text-align: left;">Données relatives à l’organisme notifié
-ayant accordé le marquage CE au DM, n’est pas obligatoire pour les DM de
-classe I (autocertification).</td>
+<td style="text-align: left;">Données relatives à l’organisme notifié ayant accordé le marquage CE au DM, n’est pas obligatoire pour les DM de classe I (autocertification).</td>
 </tr>
 <tr>
 <td style="text-align: left;">libelleAutorisation : [1..1] Texte</td>
-<td style="text-align: left;">Identification de l’autorisation qui a été
-délivrée par l’organisme règlementaire. Il s’agit en France, du numéro
+<td style="text-align: left;">Identification de l’autorisation qui a été délivrée par l’organisme règlementaire. Il s’agit en France, du numéro
 d’agrément sanitaire constitué :<br />
 - de la lettre F (pour France)<br />
 - du n° de codification du département<br />
-- du n° de codification de la commune ou , pour Paris, Lyon et
-Marseille, de l’arrondissement,<br />
-- du n° d’ordre de l’établissement dans la commune ou
-l’arrondissement<br />
+- du n° de codification de la commune ou , pour Paris, Lyon et Marseille, de l’arrondissement,<br />
+- du n° d’ordre de l’établissement dans la commune ou l’arrondissement<br />
 - de la mention CEE (pour Communauté Economique Européenne<br />
-Exemple : F 22.049.01 CEE (arrêté du 6 nov 2000 : ministère de
-l’agriculture et de la pêche).</td>
+Exemple : F 22.049.01 CEE (arrêté du 6 nov 2000 : ministère de l’agriculture et de la pêche).</td>
 </tr>
 </tbody>
 </table>
 
-Table 64 Attributs de la classe "MarquageCE"
+<p style="text-align: center;"> Attributs de la classe "MarquageCE"</p>
 
 ##### Classe "SupportIUD"
 
-Le support IUD (transcription AIDC et marquage en clair de l'IUD) est
-apposé sur l'étiquette ou sur le dispositif proprement dit et sur tous
-les niveaux de conditionnement supérieurs du dispositif. Les conteneurs
-de transport ne font pas partie des niveaux de conditionnement
+Le support IUD (transcription AIDC et marquage en clair de l'IUD) est apposé sur l'étiquette ou sur le dispositif proprement dit et sur tous
+les niveaux de conditionnement supérieurs du dispositif. Les conteneurs de transport ne font pas partie des niveaux de conditionnement
 supérieurs.
 
-L’article 27 partie 3 du Règlement (UE) 2017/745 du 5 avril 2017 définit
-le système d'identification unique des dispositifs (IUD).
+L’article 27 partie 3 du Règlement (UE) 2017/745 du 5 avril 2017 définit le système d'identification unique des dispositifs (IUD).
 
-Ce système permet l'identification et facilite la traçabilité des
-dispositifs autres que les dispositifs sur mesure et les dispositifs
+Ce système permet l'identification et facilite la traçabilité des dispositifs autres que les dispositifs sur mesure et les dispositifs
 faisant l'objet d'une investigation.
 
 La production d'un IUD comprenant:
 
-\*\* un identifiant «dispositif» IUD (IUD-ID), propre à un fabricant et
-à un dispositif ;
+\*\* un identifiant «dispositif» IUD (IUD-ID), propre à un fabricant et à un dispositif ;
 
-\*\* un identifiant «production» IUD (IUD-IP), qui identifie l'unité de
-production du dispositif et, le cas échéant, les dispositifs
-conditionnés.
+\*\* un identifiant «production» IUD (IUD-IP), qui identifie l'unité de production du dispositif et, le cas échéant, les dispositifs conditionnés.
 
 <table>
 <colgroup>
@@ -4039,84 +3654,63 @@ conditionnés.
 <tbody>
 <tr>
 <td style="text-align: left;">IUD-ID : [0..1] Identifiant</td>
-<td style="text-align: left;">L'IUD-ID est un code numérique ou
-alphanumérique unique propre à un modèle de dispositif qui sert
-également de clé d'accès aux informations stockées dans une base de
-données IUD.</td>
+<td style="text-align: left;">L'IUD-ID est un code numérique ou alphanumérique unique propre à un modèle de dispositif qui sert également de clé d'accès aux informations stockées dans une base de données IUD.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IUD-IPNumSerie : [0..1] Identifiant</td>
 <td style="text-align: left;">Numéro de série du DM.<br />
-Au sein d'un lot de fabrication, un DM peut être affecté d'un numéro de
-série unique permettant une meilleure traçabilité.</td>
+Au sein d'un lot de fabrication, un DM peut être affecté d'un numéro de série unique permettant une meilleure traçabilité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IUD-IPNumLot : [0..1] Identifiant</td>
-<td style="text-align: left;">Numéro du lot auquel appartient le
-DM.<br />
-Après l'entrée en application du Règlement (UE) 2017/745, le numéro de
-lot du DM constitue un type d’IUD-IP. L’affectation d’un numéro de lot
-ou d’un numéro de série est obligatoire pour les DMI marqués CE au titre
-du règlement.</td>
+<td style="text-align: left;">Numéro du lot auquel appartient le DM.<br />
+Après l'entrée en application du Règlement (UE) 2017/745, le numéro de lot du DM constitue un type d’IUD-IP. L’affectation d’un numéro de lot
+ou d’un numéro de série est obligatoire pour les DMI marqués CE au titre du règlement.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IUD-IPIdLogiciel : [0..1] Identifiant</td>
 <td style="text-align: left;">Identifiant du logiciel.<br />
-L'IUD est attribué au niveau du système du logiciel. Seuls les logiciels
-qui sont disponibles en soi dans le commerce et ceux qui constituent un
+L'IUD est attribué au niveau du système du logiciel. Seuls les logiciels qui sont disponibles en soi dans le commerce et ceux qui constituent un
 dispositif à part entière sont soumis à cette exigence.<br />
-L'identification du logiciel est considérée comme un mécanisme de
-contrôle de la fabrication et est indiquée dans l'IUD-IP</td>
+L'identification du logiciel est considérée comme un mécanisme de contrôle de la fabrication et est indiquée dans l'IUD-IP</td>
 </tr>
 <tr>
 <td style="text-align: left;">IUD-IPDateFabrication : [0..1] Date</td>
-<td style="text-align: left;">Après l'entrée en application du Règlement
-(UE) 2017/745, la date de fabrication constitue un type d’IUD-IP.</td>
+<td style="text-align: left;">Après l'entrée en application du Règlement (UE) 2017/745, la date de fabrication constitue un type d’IUD-IP.</td>
 </tr>
 <tr>
 <td style="text-align: left;">IUD-IPDateExpiration : [0..1] Date</td>
-<td style="text-align: left;">Après l'entrée en application du Règlement
-(UE) 2017/745, la date d’expiration constitue un type d’IUD-IP.</td>
+<td style="text-align: left;">Après l'entrée en application du Règlement (UE) 2017/745, la date d’expiration constitue un type d’IUD-IP.</td>
 </tr>
 <tr>
 <td style="text-align: left;">identifiantIUD_HRF : [0..1] Texte</td>
-<td style="text-align: left;">Transcription HRF ("Human-Readable
-Format") de l'identifiant complet IUD du dispositif médical, tel qu’il
-apparaît en clair sur le dispositif ou son conditionnement.<br />
+<td style="text-align: left;">Transcription HRF ("Human-Readable Format") de l'identifiant complet IUD du dispositif médical, tel qu’il apparaît en clair sur le dispositif ou son conditionnement.<br />
 <br />
-Si les identifiants « dispositif » (IUD-ID) et « production » (IUD-IP)
-sont symbolisés dans des codes-barres différents, concaténer les chaînes
+Si les identifiants « dispositif » (IUD-ID) et « production » (IUD-IP) sont symbolisés dans des codes-barres différents, concaténer les chaînes
 de caractères en commençant par l’IUD-ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">identifiantIUD_AIDC : [0..1]
-ObjetBinaire</td>
-<td style="text-align: left;">Transcription AIDC (partie encodée lisible
-par les techniques d'identification et de capture automatique des
+<td style="text-align: left;">identifiantIUD_AIDC : [0..1] ObjetBinaire</td>
+<td style="text-align: left;">Transcription AIDC (partie encodée lisible par les techniques d'identification et de capture automatique des
 données) de l'identifiant complet IUD du dispositif médical.<br />
 <br />
-Si les identifiants « dispositif » (IUD-ID) et « production » (IUD-IP)
-sont symbolisés dans des codes-barres différents, concaténer les chaînes
+Si les identifiants « dispositif » (IUD-ID) et « production » (IUD-IP) sont symbolisés dans des codes-barres différents, concaténer les chaînes
 de caractères en commençant par l’IUD-ID.</td>
 </tr>
 <tr>
 <td style="text-align: left;">identifiantIUD_Source : [0..1] Code</td>
-<td style="text-align: left;">Une entrée codée indiquant comment l'IUD a
-été saisie: code à barre, RFID, manuellement, à partir de la carte
+<td style="text-align: left;">Une entrée codée indiquant comment l'IUD a été saisie: code à barre, RFID, manuellement, à partir de la carte
 d'implant d'un patient ...<br />
-Le code renvoie à une terminologie définissant les différents types (cf.
-Value set HL7 FHIR Value Set
-http://hl7.org/fhir/ValueSet/udi-entry-type).</td>
+Le code renvoie à une terminologie définissant les différents types (cf. Value set HL7 FHIR Value Set http://hl7.org/fhir/ValueSet/udi-entry-type).</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des classes et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 65 Attributs de la classe "SupportIUD"
+<p style="text-align: center;"> Attributs de la classe "SupportIUD"</p>
 
 ##### Classe "DimensionsDM"
 
@@ -4131,7 +3725,7 @@ Cette classe correspond aux dimensions cliniques du dispositif médical.
 | poids : \[0..1\] Mesure | Poids du dispositif. |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 66 Attributs de la classe "DimensionsDM"
+<p style="text-align: center;"> Attributs de la classe "DimensionsDM"</p>
 
 ##### Classe "EntiteJuridique"
 
@@ -4149,84 +3743,60 @@ Table 66 Attributs de la classe "DimensionsDM"
 <tbody>
 <tr>
 <td style="text-align: left;">idNat_Struct : [1..1] Identifiant</td>
-<td style="text-align: left;">Identification nationale de l'Entité
-juridique initiée pour les besoins du SI-CPS.<br />
-Cette identification est obtenue par la concaténation du type
-d'identifiant national de structure (provenant de la nomenclature
-TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la
-structure:<br />
-** 1 + N° FINESS (entité juridique et entité géographique
-indéterminées);<br />
+<td style="text-align: left;">Identification nationale de l'Entité juridique initiée pour les besoins du SI-CPS.<br />
+Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure:<br />
+** 1 + N° FINESS (entité juridique et entité géographique indéterminées);<br />
 ** 2 + N° Siren.</td>
 </tr>
 <tr>
 <td style="text-align: left;">numSiren : [1..1] Identifiant</td>
-<td style="text-align: left;">Le numéro Siren est le numéro unique
-d'identification attribué à chaque entreprise ou organisme par
-l'INSEE.</td>
+<td style="text-align: left;">Le numéro Siren est le numéro unique d'identification attribué à chaque entreprise ou organisme par l'INSEE.</td>
 </tr>
 <tr>
 <td style="text-align: left;">numFINESS : [0..1] Identifiant</td>
-<td style="text-align: left;">Identifiant FINESS de l'entité juridique
-attribué lors de sa création.<br />
-Les personnes morales identifiées par des numéros FINESS sont également
-dotées de numéros Siren. Le numéro FINESS étant porteur intrinsèquement
+<td style="text-align: left;">Identifiant FINESS de l'entité juridique attribué lors de sa création.<br />
+Les personnes morales identifiées par des numéros FINESS sont également dotées de numéros Siren. Le numéro FINESS étant porteur intrinsèquement
 de liens avec le domaine sanitaire ou le domaine médico-social.</td>
 </tr>
 <tr>
-<td style="text-align: left;">numeroTVAIntracommunautaire : [0..1]
-Identifiant</td>
-<td style="text-align: left;">Le numéro de TVA intracommunautaire est un
-numéro d'identification individuel. Il est délivré par l'administration
-fiscale du pays de domiciliation de l'entreprise concernée au moment de
-son immatriculation ou de sa déclaration d'activité.</td>
+<td style="text-align: left;">numeroTVAIntracommunautaire : [0..1] Identifiant</td>
+<td style="text-align: left;">Le numéro de TVA intracommunautaire est un numéro d'identification individuel. Il est délivré par l'administration
+fiscale du pays de domiciliation de l'entreprise concernée au moment de son immatriculation ou de sa déclaration d'activité.</td>
 </tr>
 <tr>
 <td style="text-align: left;">numeroSRN : [0..*] Identifiant</td>
-<td style="text-align: left;">Numéro d'enregistrement unique (Single
-Registration Number - SRN) de l’acteur EUDAMED.<br />
-Un acteur est un opérateur économique dont le rôle vis-à-vis du
-dispositif médical est enregistré dans la base de données EUDAMED
-:<br />
+<td style="text-align: left;">Numéro d'enregistrement unique (Single Registration Number - SRN) de l’acteur EUDAMED.<br />
+Un acteur est un opérateur économique dont le rôle vis-à-vis du dispositif médical est enregistré dans la base de données EUDAMED :<br />
 **MF : Fabricant<br />
 **AR : Mandataire<br />
 **IM : Importateur<br />
 **PR : Assembleur<br />
-Ce numéro est construit sur la base du numéro de tva
-intracommunautaire.<br />
+Ce numéro est construit sur la base du numéro de tva intracommunautaire.<br />
 <br />
-Il est à noter que l’obligation de s’enregistrer dans EUDAMED ne
-concerne pas les distributeurs, qui par conséquent n’auront pas de
-SRN.</td>
+Il est à noter que l’obligation de s’enregistrer dans EUDAMED ne concerne pas les distributeurs, qui par conséquent n’auront pas de SRN.</td>
 </tr>
 <tr>
 <td style="text-align: left;">raisonSociale : [1..1] Texte</td>
-<td style="text-align: left;">La raison sociale est le nom de l'entité
-juridique.<br />
-Il s’agit par exemple de la dénomination usuelle du fabricant ou du
-distributeur du dispositif médical.</td>
+<td style="text-align: left;">La raison sociale est le nom de l'entité juridique.<br />
+Il s’agit par exemple de la dénomination usuelle du fabricant ou du distributeur du dispositif médical.</td>
 </tr>
 <tr>
 <td style="text-align: left;">raisonSocialeLongue : [0..1] Texte</td>
-<td style="text-align: left;">Raison sociale complète de l'entité
-juridique (acronymes, sigles ou abréviations développées).</td>
+<td style="text-align: left;">Raison sociale complète de l'entité juridique (acronymes, sigles ou abréviations développées).</td>
 </tr>
 <tr>
 <td style="text-align: left;">adresseEJ : [0..1] <a
 href="#classe-adresse">Adresse</a></td>
-<td style="text-align: left;">Adresse géopostale de l'entité
-juridique.</td>
+<td style="text-align: left;">Adresse géopostale de l'entité juridique.</td>
 </tr>
 <tr>
-<td style="text-align: left;">telecommunication : [0..*] <a
-href="#classe-telecommunication">Telecommunication</a></td>
-<td style="text-align: left;">Adresse(s) de télécommunication de
-l'entité juridique (numéro de téléphone, adresse email, URL, etc.).</td>
+<td style="text-align: left;">telecommunication : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
+<td style="text-align: left;">Adresse(s) de télécommunication de l'entité juridique (numéro de téléphone, adresse email, URL, etc.).</td>
 </tr>
 </tbody>
 </table>
 
-Table 67 Attributs de la classe "EntiteJuridique"
+<p style="text-align: center;"> Attributs de la classe "EntiteJuridique"</p>
 
 ##### Classe "EntiteGeographique"
 
@@ -4244,14 +3814,9 @@ Table 67 Attributs de la classe "EntiteJuridique"
 <tbody>
 <tr>
 <td style="text-align: left;">idNat_Struct : [1..1] Identifiant</td>
-<td style="text-align: left;">Identification nationale de l'Entité
-Géographique définie dans le CI-SIS.<br />
-Cette identification est obtenue par la concaténation du type
-d'identifiant national de structure (provenant de la nomenclature
-TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la
-structure.<br />
-Pour une Entité Géographiques, IdNat_Struct peut prendre les valeurs
-suivantes :<br />
+<td style="text-align: left;">Identification nationale de l'Entité Géographique définie dans le CI-SIS.<br />
+Cette identification est obtenue par la concaténation du type d'identifiant national de structure (provenant de la nomenclature TRE_G07-TypeIdentifiantStructure) et de l'identifiant de la structure.<br />
+Pour une Entité Géographiques, IdNat_Struct peut prendre les valeurs suivantes :<br />
 ** 0 + Identifiant cabinet ADELI<br />
 ** 1 + N° FINESS de l'entité géographique<br />
 ** 3 + N° SIRET<br />
@@ -4259,113 +3824,89 @@ suivantes :<br />
 </tr>
 <tr>
 <td style="text-align: left;">numFINESS : [1..1] Identifiant</td>
-<td style="text-align: left;">Numéro FINESS de l'entité
-géographique.<br />
-Le numéro FINESS étant porteur intrinsèquement de liens avec le domaine
-sanitaire ou le domaine médico-social, il est, s'il existe, à
-privilégier pour l’identification des entités géographiques en tant
-qu’acteurs sanitaires et médico-sociaux par rapport au numéro SIRET
-(Référentiel d’identification des acteurs sanitaires et médico-sociaux -
-Politique Générale de Sécurité des Systèmes d’Information de Santé
+<td style="text-align: left;">Numéro FINESS de l'entité géographique.<br />
+Le numéro FINESS étant porteur intrinsèquement de liens avec le domaine sanitaire ou le domaine médico-social, il est, s'il existe, à
+privilégier pour l’identification des entités géographiques en tant qu’acteurs sanitaires et médico-sociaux par rapport au numéro SIRET
+(Référentiel d’identification des acteurs sanitaires et médico-sociaux - Politique Générale de Sécurité des Systèmes d’Information de Santé
 (PGSSI-S)).<br />
-A chaque EG (établissement) est attribué un numéro FINESS qui est
-composé de 9 caractères numériques, tels que :<br />
-** Position 1-2 : numéro du département d'implantation ("2A", "2B" pour
-la Corse; "97" pour les départements d’Outre-mer; "98" pour
-Mayotte);<br />
+A chaque EG (établissement) est attribué un numéro FINESS qui est composé de 9 caractères numériques, tels que :<br />
+** Position 1-2 : numéro du département d'implantation ("2A", "2B" pour la Corse; "97" pour les départements d’Outre-mer; "98" pour Mayotte);<br />
 ** Position 3 : "0";<br />
-** Position 4-8: "1" pour Guadeloupe, "2" pour Martinique, "3" pour
-Guyane, "4" pour Réunion, "5" pour Saint-Pierre-et-Miquelon + numéro
+** Position 4-8: "1" pour Guadeloupe, "2" pour Martinique, "3" pour Guyane, "4" pour Réunion, "5" pour Saint-Pierre-et-Miquelon + numéro
 d'ordre de 4 chiffres;<br />
-** Position 4-8 : numéro d’ordre de 5 chiffres pour tous les autres
-départements;<br />
+** Position 4-8 : numéro d’ordre de 5 chiffres pour tous les autres départements;<br />
 ** Position 9 : clé de Luhn calculée automatiquement.</td>
 </tr>
 <tr>
 <td style="text-align: left;">numSiret : [0..1] Identifiant</td>
-<td style="text-align: left;">Le numéro Siret est le numéro unique
-d'identification, attribué par l'INSEE, à chaque entité
-géographique.</td>
+<td style="text-align: left;">Le numéro Siret est le numéro unique d'identification, attribué par l'INSEE, à chaque entité géographique.</td>
 </tr>
 <tr>
 <td style="text-align: left;">denominationEG : [0..1] Texte</td>
-<td style="text-align: left;">Nom sous lequel l'entité géographique
-exerce son activité.<br />
-Dans le cas d'un établissement enregistré dans le FINESS, cet attribut
-correspond à la notion de "raison sociale d'un établissement" renseignée
+<td style="text-align: left;">Nom sous lequel l'entité géographique exerce son activité.<br />
+Dans le cas d'un établissement enregistré dans le FINESS, cet attribut correspond à la notion de "raison sociale d'un établissement" renseignée
 dans le FINESS.</td>
 </tr>
 <tr>
 <td style="text-align: left;">denominationEGLongue : [0..1] Texte</td>
-<td style="text-align: left;">Nom, sous sa forme la plus longue et
-complète, sous lequel l'entité géographique exerce son activité
+<td style="text-align: left;">Nom, sous sa forme la plus longue et complète, sous lequel l'entité géographique exerce son activité
 (acronymes, sigles ou abréviations développés).</td>
 </tr>
 <tr>
 <td style="text-align: left;">adresseEG : [0..1] <a
 href="#classe-adresse">Adresse</a></td>
-<td style="text-align: left;">Adresse(s) géopostale(s) de l'entité
-géographique en fonction de l'usage (adresse administrative, adresse
+<td style="text-align: left;">Adresse(s) géopostale(s) de l'entité géographique en fonction de l'usage (adresse administrative, adresse
 entrée des véhicules, adresse entrée piétonne, etc.).<br />
-L'implantation géographique peut également être décrite au travers de la
-classe Lieu.</td>
+L'implantation géographique peut également être décrite au travers de la classe Lieu.</td>
 </tr>
 <tr>
 <td style="text-align: left;">implantationGeographique : [0..1]
 Lieu</td>
-<td style="text-align: left;">Implantation géographique de l’EG sur un
-lieu connu.</td>
+<td style="text-align: left;">Implantation géographique de l’EG sur un lieu connu.</td>
 </tr>
 <tr>
 <td style="text-align: left;">telecommunication : [0..1] <a
 href="#classe-telecommunication">Telecommunication</a></td>
-<td style="text-align: left;">Adresse(s) de télécommunication de
-l'entité géographique (numéro de téléphone, adresse email, URL,
-etc.).</td>
+<td style="text-align: left;">Adresse(s) de télécommunication de l'entité géographique (numéro de téléphone, adresse email, URL, etc.).</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des classes et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 68 Attributs de la classe "EntiteGeographique"
+<p style="text-align: center;"> Attributs de la classe "EntiteGeographique"</p>
 
 ##### Classe "Fabricant"
 
 \*\* Classe spécialisée, hérite de le classe EntiteJuridique
 
-Cette classe regroupe les items pouvant caractériser le fabricant du
-dispositif médical.
+Cette classe regroupe les items pouvant caractériser le fabricant du dispositif médical.
 
 | Nom | Description |
 |:---|:---|
 | identifiantLocalFabricant : \[0..\*\] Identifiant | Identifiants affectés au fabricant dans les référentiels locaux (autres que ceux de la Commission Européenne). |
 
-Table 69 Attributs de la classe "Fabricant"
+<p style="text-align: center;"> Attributs de la classe "Fabricant"</p>
 
 ##### Classe "Distributeur"
 
 \*\* Classe spécialisée, hérite de le classe EntiteJuridique
 
-Cette classe regroupe les items pouvant caractériser le distributeur du
-dispositif médical.
+Cette classe regroupe les items pouvant caractériser le distributeur du dispositif médical.
 
 | Nom | Description |
 |:---|:---|
 | identifiantLocalDistributeur : \[0..\*\] Identifiant | Identifiants affectés au distributeur dans les référentiels locaux (autres que ceux de la Commission Européenne). |
 
-Table 70 Attributs de la classe "Distributeur"
+<p style="text-align: center;"> Attributs de la classe "Distributeur"</p>
 
 ##### Classe "Lieu"
 
-Informations relatives à une portion déterminée de l'espace, fixe ou
-mobile du point de vue de son affectation ou de ce qui s'y passe.
+Informations relatives à une portion déterminée de l'espace, fixe ou mobile du point de vue de son affectation ou de ce qui s'y passe.
 
-Cas particulier de l'entité géographique : plusieurs lieux peuvent être
-associés à une même EG, ils peuvent décrire, à la fois, son adresse et
+Cas particulier de l'entité géographique : plusieurs lieux peuvent être associés à une même EG, ils peuvent décrire, à la fois, son adresse et
 des lieux spécifiques à l'EG.
 
 <table>
@@ -4386,119 +3927,87 @@ des lieux spécifiques à l'EG.
 </tr>
 <tr>
 <td style="text-align: left;">nom : [0..1] Texte</td>
-<td style="text-align: left;">Nom, exprimé sous la forme de texte, du
-lieu.</td>
+<td style="text-align: left;">Nom, exprimé sous la forme de texte, du lieu.</td>
 </tr>
 <tr>
 <td style="text-align: left;">description : [0..1] Texte</td>
-<td style="text-align: left;">Description textuelle du lieu, indiquant
-comment l'atteindre.</td>
+<td style="text-align: left;">Description textuelle du lieu, indiquant comment l'atteindre.</td>
 </tr>
 <tr>
 <td style="text-align: left;">typeLieu : [0..1] Code</td>
-<td style="text-align: left;">Information catégorisant physiquement le
-lieu, par exemple un bâtiment, un véhicule, une chambre, une route,
-etc.</td>
+<td style="text-align: left;">Information catégorisant physiquement le lieu, par exemple un bâtiment, un véhicule, une chambre, une route, etc.</td>
 </tr>
 <tr>
 <td style="text-align: left;">fonctionLieu : [0..1] Code</td>
-<td style="text-align: left;">Fonction à laquelle le lieu est dédié. Par
-exemple, le lieu d'implantation d'une entité géographique ou la salle de
+<td style="text-align: left;">Fonction à laquelle le lieu est dédié. Par exemple, le lieu d'implantation d'une entité géographique ou la salle de
 prélèvements dans un service.</td>
 </tr>
 <tr>
-<td style="text-align: left;">statut : [0..1] <a
-href="http://mos.asipsante.fr/NOS/PDF/TRE_R203-StatutLieu.tabs.pdf">Code
+<td style="text-align: left;">statut : [0..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R203-StatutLieu.tabs.pdf">Code
 &lt;&lt;TRE_R203-StatutLieu&gt;&gt;</a></td>
-<td style="text-align: left;">Le statut indique si le lieu est
-opérationnel, fermé temporairement ou fermé définitivement.<br />
+<td style="text-align: left;">Le statut indique si le lieu est opérationnel, fermé temporairement ou fermé définitivement.<br />
 Quelques exemples de codes :<br />
 ** FD : Fermé définitivement;<br />
 ** FT : Fermé temporairement;<br />
 ** OP : Opérationnel.<br />
-Les valeurs de ce code sont répertoriées dans la nomenclature
-TRE_R203-StatutLieu.</td>
+Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R203-StatutLieu.</td>
 </tr>
 <tr>
-<td style="text-align: left;">accessibiliteLieu : [0..1] <a
-href="http://mos.asipsante.fr/NOS/PDF/TRE_R202-AccessibiliteLieu.tabs.pdf">Code
+<td style="text-align: left;">accessibiliteLieu : [0..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R202-AccessibiliteLieu.tabs.pdf">Code
 &lt;&lt;TRE_R202-AccessibiliteLieu&gt;&gt;</a></td>
-<td style="text-align: left;">Information précisant dans quelle mesure
-le lieu est conforme aux dispositions règlementaires relatives à
-l’accessibilité des établissements recevant du public (ex : accessible,
-non accessible, sur demande, non communiqué, etc.).<br />
-Rappel sur l'obligation d'accessibilité des établissements recevant du
-public (ERP) aux personnes handicapées (service-public.fr):<br />
-Les établissements ouverts au public (magasin, bureau, hôtel, etc.)
-doivent être accessibles aux personnes handicapées. Les établissements
-recevant du public (ERP) non conformes aux règles d'accessibilité sont
-tenus de s'inscrire à un Agenda d'Accessibilité Programmée (Ad'AP) qui
+<td style="text-align: left;">Information précisant dans quelle mesure le lieu est conforme aux dispositions règlementaires relatives à
+l’accessibilité des établissements recevant du public (ex : accessible, non accessible, sur demande, non communiqué, etc.).<br />
+Rappel sur l'obligation d'accessibilité des établissements recevant du public (ERP) aux personnes handicapées (service-public.fr):<br />
+Les établissements ouverts au public (magasin, bureau, hôtel, etc.) doivent être accessibles aux personnes handicapées. Les établissements
+recevant du public (ERP) non conformes aux règles d'accessibilité sont tenus de s'inscrire à un Agenda d'Accessibilité Programmée (Ad'AP) qui
 permet d'engager les travaux nécessaires dans un délai limité.<br />
 Règles d'accessibilité:<br />
-Les normes d'accessibilité doivent permettre aux personnes handicapées
-de circuler avec la plus grande autonomie possible, d'accéder aux locaux
-et équipements, d'utiliser les équipements et les prestations, de se
-repérer et de communiquer.<br />
-L'accès concerne tout type de handicap (moteur, visuel, auditif,
-mental...).<br />
-Les conditions d'accès doivent être les mêmes que pour les personnes
-valides ou, à défaut, présenter une qualité d'usage équivalente.<br />
-L'accessibilité de ces établissements et de leurs abords concerne
-:<br />
+Les normes d'accessibilité doivent permettre aux personnes handicapées de circuler avec la plus grande autonomie possible, d'accéder aux locaux
+et équipements, d'utiliser les équipements et les prestations, de se repérer et de communiquer.<br />
+L'accès concerne tout type de handicap (moteur, visuel, auditif, mental...).<br />
+Les conditions d'accès doivent être les mêmes que pour les personnes valides ou, à défaut, présenter une qualité d'usage équivalente.<br />
+L'accessibilité de ces établissements et de leurs abords concerne :<br />
 ** les cheminements extérieurs,<br />
 ** le stationnement des véhicules,<br />
 ** les conditions d'accès et d'accueil dans les bâtiments,<br />
-** les circulations horizontales et verticales à l'intérieur des
-bâtiments,<br />
+** les circulations horizontales et verticales à l'intérieur des bâtiments,<br />
 ** les locaux intérieurs et les sanitaires ouverts au public,<br />
 ** les portes, les sas intérieurs et les sorties,<br />
 ** les revêtements des sols et des parois,<br />
-** les équipements et mobiliers intérieurs et extérieurs susceptibles
-d'y être installés (dispositifs d'éclairage et d'information des
+** les équipements et mobiliers intérieurs et extérieurs susceptibles d'y être installés (dispositifs d'éclairage et d'information des
 usagers, par exemple).<br />
-Les valeurs de ce code sont répertoriées dans la nomenclature
-TRE_R202-AccessibiliteLieu.</td>
+Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R202-AccessibiliteLieu.</td>
 </tr>
 <tr>
-<td style="text-align: left;">communeCOG : [0..1] <a
-href="http://mos.asipsante.fr/NOS/PDF/TRE_R13-CommuneOM.tabs.pdf">Code
-&lt;&lt;TRE_R13-CommuneOM&gt;&gt;</a></td>
-<td style="text-align: left;">Code officiel géographique (COG) de la
-commune dans laquelle le lieu est situé.</td>
+<td style="text-align: left;">communeCOG : [0..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R13-CommuneOM.tabs.pdf">Code &lt;&lt;TRE_R13-CommuneOM&gt;&gt;</a></td>
+<td style="text-align: left;">Code officiel géographique (COG) de la commune dans laquelle le lieu est situé.</td>
 </tr>
 <tr>
-<td style="text-align: left;">adresse : [0..1] <a
-href="#classe-adresse">Adresse</a></td>
+<td style="text-align: left;">adresse : [0..1] <a href="#classe-adresse">Adresse</a></td>
 <td style="text-align: left;">Adresse géopostale du lieu.</td>
 </tr>
 <tr>
-<td style="text-align: left;">coordonneeGeographique : [0..1]
-CoordonneeGeographique</td>
+<td style="text-align: left;">coordonneeGeographique : [0..1] CoordonneeGeographique</td>
 <td style="text-align: left;">Coordonnées géographiques du lieu.</td>
 </tr>
 <tr>
-<td style="text-align: left;">telecommunication : [0..*] <a
-href="#classe-telecommunication">Telecommunication</a></td>
-<td style="text-align: left;">Adresse(s) de télécommunication du lieu
-(numéro de téléphone, adresse email, URL, etc.).</td>
+<td style="text-align: left;">telecommunication : [0..*] <a href="#classe-telecommunication">Telecommunication</a></td>
+<td style="text-align: left;">Adresse(s) de télécommunication du lieu (numéro de téléphone, adresse email, URL, etc.).</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [0..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des classes et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 71 Attributs de la classe "Lieu"
+<p style="text-align: center;"> Attributs de la classe "Lieu"</p>
 
 ##### Classe "Metadonnee"
 
-Cette classe contient les attributs inhérents et communs à toutes les
-classes des flux.
+Cette classe contient les attributs inhérents et communs à toutes les classes des flux.
 
-Elle permet aux applications consommatrices des flux d'identifier les
-créations, les modifications et les suppressions d’objets.
+Elle permet aux applications consommatrices des flux d'identifier les créations, les modifications et les suppressions d’objets.
 
 | Nom | Description |
 |:---|:---|
@@ -4507,21 +4016,15 @@ créations, les modifications et les suppressions d’objets.
 | dateMiseJour : \[1..1\] DateHeure | Date de mise à jour de la dernière donnée mise à jour de l'objet. |
 | commentaire : \[0..1\] Texte | Commentaire qui peut être associé à chaque objet. |
 
-Table 72 Attributs de la classe "Metadonnee"
+<p style="text-align: center;"> Attributs de la classe "Metadonnee"</p>
 
 ##### Classe "OrganisationInterne"
 
-La PUI, le service utilisateur sont modélisés par la classe
-OrganisationInterne (OI) (voir MOS) qui est une classe abstraite
-contenant les attributs inhérents et communs aux classes décrivant des
-structures organisationnelles (ou organisations internes), portant des
+La PUI, le service utilisateur sont modélisés par la classe OrganisationInterne (OI) (voir MOS) qui est une classe abstraite contenant les attributs inhérents et communs aux classes décrivant des structures organisationnelles (ou organisations internes), portant des
 activités sur un lieu au sein d'une entité géographique.
 
-Une organisation interne (OI) peut être composée d’autres organisations
-internes. Par exemple, un pôle peut être composé de structures internes
-(ou services), une structure interne peut être composée d'unités
-fonctionnelles, une unité fonctionnelle peut être composée d'unités
-élémentaires.
+Une organisation interne (OI) peut être composée d’autres organisations internes. Par exemple, un pôle peut être composé de structures internes
+(ou services), une structure interne peut être composée d'unités fonctionnelles, une unité fonctionnelle peut être composée d'unités élémentaires.
 
 <table>
 <colgroup>
@@ -4537,51 +4040,40 @@ fonctionnelles, une unité fonctionnelle peut être composée d'unités
 <tbody>
 <tr>
 <td style="text-align: left;">identifiantOI : [1..1] Identifiant</td>
-<td style="text-align: left;">Identifiant de l'organisation interne,
-unique et persistant au niveau national.</td>
+<td style="text-align: left;">Identifiant de l'organisation interne, unique et persistant au niveau national.</td>
 </tr>
 <tr>
 <td style="text-align: left;">nom : [0..1] Texte</td>
 <td style="text-align: left;">Nom de l'organisation interne.</td>
 </tr>
 <tr>
-<td style="text-align: left;">typeOI : [1..1] <a
-href="http://mos.asipsante.fr/NOS/PDF/TRE_R207-TypeOrganisationInterne.tabs.pdf">Code
+<td style="text-align: left;">typeOI : [1..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R207-TypeOrganisationInterne.tabs.pdf">Code
 &lt;&lt;TRE_R207-TypeOrganisationInterne&gt;&gt;</a></td>
-<td style="text-align: left;">Type d'organisation interne (pôle,
-structure interne ou service, unité fonctionnelle, unité élémentaire,
-etc.).</td>
+<td style="text-align: left;">Type d'organisation interne (pôle, structure interne ou service, unité fonctionnelle, unité élémentaire, etc.).</td>
 </tr>
 <tr>
-<td style="text-align: left;">categorieOrganisation : [0..1] <a
-href="http://mos.asipsante.fr/NOS/PDF/TRE_R244-CategorieOrganisation.tabs.pdf">Code
+<td style="text-align: left;">categorieOrganisation : [0..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R244-CategorieOrganisation.tabs.pdf">Code
 &lt;&lt;TRE_R244-CategorieOrganisation&gt;&gt;</a></td>
-<td style="text-align: left;">La catégorie d'organisation caractérise la
-nature particulière d’une organisation liée à un agrément, un personnel
-spécialement formé, un environnement particulièrement adapté à l'état de
-santé des patients, etc.<br />
-Les valeurs de ce code sont répertoriées dans la nomenclature
-TRE_R244-CategorieOrganisation.</td>
+<td style="text-align: left;">La catégorie d'organisation caractérise la nature particulière d’une organisation liée à un agrément, un personnel
+spécialement formé, un environnement particulièrement adapté à l'état de santé des patients, etc.<br />
+Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R244-CategorieOrganisation.</td>
 </tr>
 <tr>
 <td style="text-align: left;">lieu : [0..*] Lieu</td>
-<td style="text-align: left;">Lieu(x) rattaché(s) à l'organisation
-interne.</td>
+<td style="text-align: left;">Lieu(x) rattaché(s) à l'organisation interne.</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des classes et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 73 Attributs de la classe "OrganisationInterne"
+<p style="text-align: center;"> Attributs de la classe "OrganisationInterne"</p>
 
 ##### Classe "Patient"
 
-Personne physique bénéficiaire de soins, d'examens ou d'actes de
-prévention.
+Personne physique bénéficiaire de soins, d'examens ou d'actes de prévention.
 
 | Nom | Description |
 |:---|:---|
@@ -4592,12 +4084,11 @@ prévention.
 | telecommunication : \[1..\*\] [Telecommunication](#classe-telecommunication) | Adresse(s) de télécommunication de la personne prise en charge (numéro de téléphone, adresse email, URL, etc.). |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 74 Attributs de la classe "Patient"
+<p style="text-align: center;">Attributs de la classe "Patient"</p>
 
 ##### Classe "INS"
 
-La classe INS est reprise de la classe INS du MOS (voir
-https://mos.esante.gouv.fr)
+La classe INS est reprise de la classe INS du MOS (voir https://mos.esante.gouv.fr)
 
 ##### Classe "PersonnePhysique"
 
@@ -4609,14 +4100,12 @@ https://mos.esante.gouv.fr)
 | dateNaissance : \[0..1\] Date | Date de naissance de la personne. |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 75 Attributs de la classe "PersonnePhysique"
+<p style="text-align: center;">Attributs de la classe "PersonnePhysique"</p>
 
 ##### Classe "Professionnel"
 
-Données d'identification pérennes d’une personne physique, qui travaille
-en tant que professionnel (professionnel enregistré dans RPPS ou ADELI),
-personnel autorisé ou personnel d’établissement, dans les domaines
-sanitaire, médico-social et social.
+Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS ou ADELI),
+personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.
 
 <table>
 <colgroup>
@@ -4632,95 +4121,64 @@ sanitaire, médico-social et social.
 <tbody>
 <tr>
 <td style="text-align: left;">idNat_PS : [1..1] Identifiant</td>
-<td style="text-align: left;">Identification nationale principale du
-professionnel initiée pour les besoins du SI-CPS.<br />
-Cette identification est obtenue par la concaténation du type
-d'identifiant national de personne (provenant de la nomenclature
-TRE_G08-TypeIdentifiantPersonne) et de l'identifiant de la personne
-physique provenant, selon le type d’identifiant, soit d’un référentiel
-national, soit d’un référentiel local propre à la structure d’exercice
-de la personne physique:<br />
+<td style="text-align: left;">Identification nationale principale du professionnel initiée pour les besoins du SI-CPS.<br />
+Cette identification est obtenue par la concaténation du type d'identifiant national de personne (provenant de la nomenclature TRE_G08-TypeIdentifiantPersonne) et de l'identifiant de la personne physique provenant, selon le type d’identifiant, soit d’un référentiel
+national, soit d’un référentiel local propre à la structure d’exercice de la personne physique:<br />
 ** 0 + N° ADELI du professionnel<br />
-Ex : 0123456789 : identification nationale d’un professionnel identifié
-par un n° ADELI = 123456789;<br />
-** 1 + Identifiant cabinet ADELI/identifiant interne du professionnel
-employé au sein d’un cabinet<br />
-Ex : 112345678901/00001 : identification nationale d’un employé dans un
-cabinet libéral:<br />
-- le titulaire du cabinet est un professionnel identifié par un n° ADELI
-= 123456789<br />
-- le cabinet est identifié par un ADELI-rang = 12345678901 (01 = n° de
-rang du cabinet du même professionnel sur 2 caractères)<br />
+Ex : 0123456789 : identification nationale d’un professionnel identifié par un n° ADELI = 123456789;<br />
+** 1 + Identifiant cabinet ADELI/identifiant interne du professionnel employé au sein d’un cabinet<br />
+Ex : 112345678901/00001 : identification nationale d’un employé dans un cabinet libéral:<br />
+- le titulaire du cabinet est un professionnel identifié par un n° ADELI = 123456789<br />
+- le cabinet est identifié par un ADELI-rang = 12345678901 (01 = n° de rang du cabinet du même professionnel sur 2 caractères)<br />
 - l’identifiant interne de l’employé dans la structure = 00001;<br />
-** 3 + N° FINESS/identifiant interne du professionnel employé au sein
-d’une structure FINESS;<br />
-** 4 + N° Siren/identifiant interne du professionnel employé au sein
-d’une structure Siren (NB: pas d'utilisation identifiée de cette
+** 3 + N° FINESS/identifiant interne du professionnel employé au sein d’une structure FINESS;<br />
+** 4 + N° Siren/identifiant interne du professionnel employé au sein d’une structure Siren (NB: pas d'utilisation identifiée de cette
 construction);<br />
-** 5 + N° Siret/identifiant interne du professionnel employé au sein
-d’une structure Siret;<br />
-** 6 + Identifiant cabinet RPPS/ identifiant interne du professionnel
-employé au sein d’un cabinet<br />
-- le cabinet est identifié par un RPPS-rang à 14 caractères (numéro RPPS
-du professionnel + rang sur 2 caractères + clé de Luhn);<br />
+** 5 + N° Siret/identifiant interne du professionnel employé au sein d’une structure Siret;<br />
+** 6 + Identifiant cabinet RPPS/ identifiant interne du professionnel employé au sein d’un cabinet<br />
+- le cabinet est identifié par un RPPS-rang à 14 caractères (numéro RPPS du professionnel + rang sur 2 caractères + clé de Luhn);<br />
 ** 8 + N° RPPS du professionnel ou de l’étudiant;<br />
-Ex : 810005678901 : identification nationale d’un professionnel ou d’un
-étudiant identifié par un n° RPPS = 10005678901<br />
-Le numéro RPPS est un identifiant pérenne, constitué de 11 caractères
-non significatifs (numéro d’ordre sur 10 caractères + clé de Luhn sur 1
+Ex : 810005678901 : identification nationale d’un professionnel ou d’un étudiant identifié par un n° RPPS = 10005678901<br />
+Le numéro RPPS est un identifiant pérenne, constitué de 11 caractères non significatifs (numéro d’ordre sur 10 caractères + clé de Luhn sur 1
 caractère);</td>
 </tr>
 <tr>
 <td style="text-align: left;">idPP : [1..1] Identifiant</td>
-<td style="text-align: left;">Identifiant national de la personne
-physique:<br />
+<td style="text-align: left;">Identifiant national de la personne physique:<br />
 ** Pour les professionnels de santé: Numéro RPPS ou ADELI.<br />
 ** Pour les étudiants: Numéro RPPS depuis 2017.<br />
-Remarque, le numéro SIRIUS ou le numéro Etudiant (identifiant ordinal
-dont les règles de génération sont propres à chaque ordre) peuvent
-subsister dans certaines cartes et systèmes pendant la période
-transitoire de généralisation du numéro RPPS.<br />
-** Pour les acteurs non professionnels de santé employés d’une structure
-: l’identifiant est composé de l’identifiant principal de la structure
+Remarque, le numéro SIRIUS ou le numéro Etudiant (identifiant ordinal dont les règles de génération sont propres à chaque ordre) peuvent
+subsister dans certaines cartes et systèmes pendant la période transitoire de généralisation du numéro RPPS.<br />
+** Pour les acteurs non professionnels de santé employés d’une structure : l’identifiant est composé de l’identifiant principal de la structure
 et de l’identifiant interne attribué par la structure.</td>
 </tr>
 <tr>
-<td style="text-align: left;">personne : [0..1] <a
-href="#classe-personnephysique">PersonnePhysique</a></td>
+<td style="text-align: left;">personne : [0..1] <a href="#classe-personnephysique">PersonnePhysique</a></td>
 <td style="text-align: left;">Identité civile du professionnel.</td>
 </tr>
 <tr>
-<td style="text-align: left;">adresseCorrespondance : [0..*] <a
-href="#classe-adresse">Adresse</a></td>
-<td style="text-align: left;">Adresse(s) de correspondance permettant de
-contacter les professionnels:<br />
-** lorsque les structures ne sont pas identifiées : cas des remplaçants
-ou des professionnels venant de s’inscrire mais non encore
-installés;<br />
+<td style="text-align: left;">adresseCorrespondance : [0..*] <a href="#classe-adresse">Adresse</a></td>
+<td style="text-align: left;">Adresse(s) de correspondance permettant de contacter les professionnels:<br />
+** lorsque les structures ne sont pas identifiées : cas des remplaçants ou des professionnels venant de s’inscrire mais non encore installés;<br />
 ** hors de leurs lieux d’exercice, s’ils le souhaitent.<br />
-Remarque système RPPS : La première occurrence correspond aux
-coordonnées de correspondance du RPPS.</td>
+Remarque système RPPS : La première occurrence correspond aux coordonnées de correspondance du RPPS.</td>
 </tr>
 <tr>
-<td style="text-align: left;">telecommunication : [1..*] <a
-href="#classe-telecommunication">Telecommunication</a></td>
-<td style="text-align: left;">Adresse(s) de télécommunication du
-professionnel (numéro de téléphone, adresse email, URL, etc.).</td>
+<td style="text-align: left;">telecommunication : [1..*] <a href="#classe-telecommunication">Telecommunication</a></td>
+<td style="text-align: left;">Adresse(s) de télécommunication du professionnel (numéro de téléphone, adresse email, URL, etc.).</td>
 </tr>
 <tr>
 <td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
-<td style="text-align: left;">Informations relatives à la gestion des
-classes et des données.</td>
+<td style="text-align: left;">Informations relatives à la gestion des classes et des données.</td>
 </tr>
 </tbody>
 </table>
 
-Table 76 Attributs de la classe "Professionnel"
+<p style="text-align: center;">Attributs de la classe "Professionnel"</p>
 
 ##### Classe "Telecommunication"
 
-Adresse de télécommunication à laquelle une personne ou une organisation
-peut être contactée (téléphone, fax, e-mail, URL, etc.).
+Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée (téléphone, fax, e-mail, URL, etc.).
 
 | Nom | Description |
 |:---|:---|
@@ -4729,7 +4187,7 @@ peut être contactée (téléphone, fax, e-mail, URL, etc.).
 | utilisation : \[0..1\] Texte | Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.). |
 | metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
-Table 77 Attributs de la classe "Telecommunication"
+<p style="text-align: center;">Attributs de la classe "Telecommunication"</p>
 
 ### Annexes
 
