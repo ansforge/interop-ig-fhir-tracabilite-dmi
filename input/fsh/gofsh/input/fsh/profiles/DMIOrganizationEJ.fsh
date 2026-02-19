@@ -1,7 +1,6 @@
 Profile: DMIOrganizationEJ
 Parent: fr-core-organization
 Id: dmi-organization-ej
-* meta 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

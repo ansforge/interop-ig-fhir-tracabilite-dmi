@@ -1,7 +1,6 @@
 Profile: DMISupplyRequestEnteteDemande
 Parent: SupplyRequest
 Id: dmi-supplyrequest-entete-demande
-* meta 1..
 * identifier 1..1
 * item[x] only CodeableConcept
 * item[x] = $TRE_R254-TypeEvenement-FHIR.json#DEM "Creation demande" (exactly)

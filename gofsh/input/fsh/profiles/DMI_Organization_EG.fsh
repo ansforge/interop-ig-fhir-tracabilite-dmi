@@ -2,7 +2,6 @@ Profile: DMI_Organization_EG
 Parent: $FrOrganization
 Id: DMI_Organization_EG
 * ^status = #draft
-* meta 1..
 * identifier 1..
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.text"

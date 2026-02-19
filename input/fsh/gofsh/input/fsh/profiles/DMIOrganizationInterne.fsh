@@ -1,7 +1,6 @@
 Profile: DMIOrganizationInterne
 Parent: Organization
 Id: dmi-organization-interne
-* meta 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

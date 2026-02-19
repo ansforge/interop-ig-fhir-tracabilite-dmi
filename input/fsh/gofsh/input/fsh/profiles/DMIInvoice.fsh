@@ -1,7 +1,6 @@
 Profile: DMIInvoice
 Parent: Invoice
 Id: dmi-invoice
-* meta 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

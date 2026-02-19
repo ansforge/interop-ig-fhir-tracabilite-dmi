@@ -1,7 +1,6 @@
 Profile: DMISupplyDeliveryEnteteLivraison
 Parent: SupplyDelivery
 Id: dmi-supplydelivery-entete-livraison
-* meta 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

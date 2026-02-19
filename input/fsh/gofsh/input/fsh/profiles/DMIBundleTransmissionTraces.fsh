@@ -1,7 +1,6 @@
 Profile: DMIBundleTransmissionTraces
 Parent: Bundle
 Id: dmi-bundle-transmission-traces
-* meta 1..
 * type = #transaction (exactly)
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"

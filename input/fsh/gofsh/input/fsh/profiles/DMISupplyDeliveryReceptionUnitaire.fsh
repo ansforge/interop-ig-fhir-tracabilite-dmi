@@ -1,7 +1,6 @@
 Profile: DMISupplyDeliveryReceptionUnitaire
 Parent: SupplyDelivery
 Id: dmi-supplydelivery-reception-unitaire
-* meta 1..
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
