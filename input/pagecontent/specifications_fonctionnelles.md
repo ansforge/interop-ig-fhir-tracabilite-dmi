@@ -496,7 +496,7 @@ L'organisation du contexte métier de la traçabilité de DMI en établissement 
     <img src="diag_paquetage.png"
     alt="Diagramme de paquetage"
     title="Diagramme de paquetage"
-    style="width:5.74528in;height:2.95283in">
+    style="width:8in;height:4in">
 
     <p>
     Diagramme de paquetage recensant les processus identifiés 
@@ -513,7 +513,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
     <img src="cas_utilisation_demanderDMI.png"
     alt="Cas d'utilisation Demander DMI"
     title="Cas d'utilisation Demander DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:2in">
 
     <p>
     Cas d'utilisation "Demander DMI"
@@ -548,7 +548,7 @@ Dans ce cas d'utilisation, le gestionnaire DMI analyse la demande au regard de l
     <img src="cas_utilisation_commanderDMI.png"
     alt="Cas d'utilisation Commander les DMI"
     title="Cas d'utilisation Commander les DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:2in">
 
     <p>
     Cas d'utilisation "Commander les DMI"
@@ -583,7 +583,7 @@ Le processus de commande des DMI gère les créations, les mises à jour ou les 
     <img src="cas_utilisationReceptionnerControlerDMI.png"
     alt="Cas d'utilisation Réceptionner et contrôler les DMI"
     title="Cas d'utilisation Réceptionner et contrôler les DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:3in">
 
     <p>
     Cas d'utilisation "Réceptionner et contrôler les DMI"
@@ -602,7 +602,7 @@ Le processus de commande des DMI gère les créations, les mises à jour ou les 
     <img src="cas_utilisationReceptionnerDMI.png"
     alt="Cas d'utilisation Réceptionner le DMI"
     title="Cas d'utilisation Réceptionner le DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:2in">
 
     <p>
     Cas d'utilisation "Réceptionner le DMI"
@@ -621,7 +621,7 @@ Le processus de commande des DMI gère les créations, les mises à jour ou les 
     <img src="cas_utilisationDelivrerDMI.png"
     alt="Cas d'utilisation Délivrer les DMI au service utilisateur"
     title="Cas d'utilisation Délivrer les DMI au service utilisateur"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:3in">
 
     <p>
     Cas d'utilisation "Délivrer les DMI au service utilisateur"
@@ -658,7 +658,7 @@ Le processus de commande des DMI gère les créations, les mises à jour ou les 
     <img src="cas_utilisationTransporterDMI.png"
     alt="Cas d'utilisation Transporter DMI au sein de l'établissement"
     title="Cas d'utilisation Transporter DMI au sein de l'établissement"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:2in">
 
     <p>
     Cas d'utilisation "Transporter DMI au sein de l'établissement"
@@ -694,7 +694,7 @@ Le gestionnaire de réception service utilisateur assure la bonne réception des
     <img src="cas_utilisationReceptionnerDMIserviceUtilisateur.png"
     alt="Cas d'utilisation Réceptionner les DMI par le service utilisateur"
     title="Cas d'utilisation Réceptionner les DMI par le service utilisateur"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:2in">
 
     <p>
     Cas d'utilisation "Réceptionner les DMI par le service utilisateur"
@@ -713,7 +713,7 @@ Le gestionnaire de réception service utilisateur assure la bonne réception des
     <img src="cas_utilisationPoserDMI.png"
     alt="Cas d'utilisation Poser les DMI"
     title="Cas d'utilisation Poser les DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:2in">
 
     <p>
     Cas d'utilisation "Poser les DMI"
@@ -749,7 +749,7 @@ Si un défaut survient lors de l'utilisation du DMI, l'équipe médicale doit d�
     <img src="cas_utilisationFacturerDMI.png"
     alt="Cas d'utilisation Facturation du DMI"
     title="Cas d'utilisation Facturation du DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:3in">
 
     <p>
     Cas d'utilisation "Facturation du DMI"
@@ -788,7 +788,7 @@ Les modalités de facturation doivent être intégrées au système de traçabil
     <img src="cas_utilisationTracerDMI.png"
     alt="Cas d'utilisation Tracer"
     title="Cas d'utilisation Tracer"
-    style="width:5.74528in;height:2.95283in">
+    style="width:5in;height:1.5in">
 
     <p>
     Cas d'utilisation "Tracer"
@@ -833,7 +833,7 @@ Ce processus réutilise le processus générique "Créer des traces" de l’étu
     <img src="cas_utilisationRechercheTrace.png"
     alt="Cas d'utilisation Rechercher des traces"
     title="Cas d'utilisation Rechercher des traces"
-    style="width:5.74528in;height:2.95283in">
+    style="width:5in;height:1.5in">
 
     <p>
     Cas d'utilisation "Rechercher des traces"
@@ -869,7 +869,7 @@ Ce processus réutilise le processus générique " Rechercher des traces" de l�
     <img src="cas_utilisationConsulterTrace.png"
     alt="Cas d'utilisation Consulter une trace"
     title="Cas d'utilisation Consulter une trace"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:2in">
 
     <p>
     Cas d'utilisation Consulter une trace
@@ -974,7 +974,7 @@ Se référer au Tableau 14 pour la définition des acteurs.
     <img src="diagramme_activiteDemanderDMI.png"
     alt="Diagramme d'activité Demander DMI"
     title="Diagramme d'activité Demander DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6.5in;height:3.5in">
 
     <p>
     Diagramme d'activité Demander DMI
@@ -1083,7 +1083,7 @@ Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
     <img src="diagramme_activiteCommanderDMI.png"
     alt="Diagramme d'activité Commander les DMI"
     title="Diagramme d'activité Commander les DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:3in">
 
     <p>
     Diagramme d'activité Commander les DMI
@@ -1161,7 +1161,7 @@ Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
     <img src="diagramme_activiteReceptionnerControler.png"
     alt="Diagramme d'activité Réceptionner et contrôler DMI"
     title="Diagramme d'activité Réceptionner et contrôler DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6.5in;height:3.5in">
 
     <p>
     Diagramme d'activité Réceptionner et contrôler DMI
@@ -1224,7 +1224,7 @@ Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
     <img src="diagramme_activiteReceptionnerDMI.png"
     alt="Diagramme d'activité Réceptionner le DMI"
     title="Diagramme d'activité Réceptionner le DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6.5in;height:3.5in">
 
     <p>
     Diagramme d'activité Réceptionner le DMI
@@ -1288,7 +1288,7 @@ Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
     <img src="diagramme_activiteDelivrerDMI.png"
     alt="Diagramme d'activité Délivrer DMI au Service Utilisateur"
     title="Diagramme d'activité Délivrer DMI au Service Utilisateur"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6.5in;height:3.5in">
 
     <p>
     Diagramme d'activité Délivrer DMI au Service Utilisateur
@@ -1344,10 +1344,10 @@ L'ensemble des données relatives à la délivrance des DMI sont enregistrées p
 Ce processus permet d'identifier les flux définis dans le diagramme ci-après.  
 
 <div class="figure" style="text-align: center;">
-    <img src="input/images/diagramme_activiteTransporterDMI.png"
+    <img src="diagramme_activiteTransporterDMI.png"
     alt="Diagramme d'activité Transporter DMI"
     title="Diagramme d'activité Transporter DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6.5in;height:3.5in">
 
     <p>
     Diagramme d'activité Transporter DMI
@@ -1427,7 +1427,7 @@ Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
     <img src="diagramme_activiteReceptionnerDMIserviceUtilisateur.png"
     alt="Diagramme d'activité Réceptionner DMI par le service utilisateur"
     title="Diagramme d'activité Réceptionner DMI par le service utilisateur"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6.5in;height:3.5in">
 
     <p>
     Diagramme d'activité Réceptionner DMI par le service utilisateur
@@ -1504,7 +1504,7 @@ Se référer au Tableau 14 pour la définition des acteurs.
     <img src="diagramme_activitePoserDMI.png"
     alt="Diagramme d'activité Poser DMI"
     title="Diagramme d'activité Poser DMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:8in;height:5in">
 
     <p>
     Diagramme d'activité Poser DMI
@@ -1658,7 +1658,7 @@ Préconditions :
     <img src="diagramme_activiteFacturerDMI_dv.png"
     alt="Diagramme d'activité Facturer DMI (dépôt-vente)"
     title="Diagramme d'activité Facturer DMI (dépôt-vente)"
-    style="width:5.74528in;height:2.95283in">
+    style="width:8in;height:5in">
 
     <p>
     Diagramme d'activité Facturer DMI (dépôt-vente)
@@ -1752,7 +1752,7 @@ Réception de l’information de validation de la réception des DMI envoyée pa
     <img src="diagramme_activiteFacturerDMI_achat.png"
     alt="Diagramme d'activité Facturer DMI (achat)"
     title="Diagramme d'activité Facturer DMI (achat)"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6.5in;height:3.5in">
 
     <p>
     Diagramme d'activité Facturer DMI (achat)
@@ -1788,7 +1788,7 @@ Ce processus permet de modéliser la traçabilité d'un évènement.
     <img src="diagramme_activiteTracer.png"
     alt="Diagramme d'activité Tracer"
     title="Diagramme d'activité Tracer"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:3in">
 
     <p>
     Diagramme d'activité Tracer
@@ -1822,7 +1822,7 @@ Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
     <img src="diagramme_activiteRechercheTrace.png"
     alt="Diagramme d'activité Rechercher des traces"
     title="Diagramme d'activité Rechercher des traces"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6.5in;height:4in">
 
     <p>
     Diagramme d'activité Rechercher des traces
@@ -1858,7 +1858,7 @@ Ce processus permet d'identifier les flux définis dans le diagramme ci-après.
     <img src="diagramme_activiteConsulterTrace.png"
     alt="Diagramme d'activité Consulter une trace"
     title="Diagramme d'activité Consulter une trace"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6.5in;height:4in">
 
     <p>
     Diagramme d'activité Consulter une trace
@@ -2065,7 +2065,7 @@ demande de DMI envoyée au gestionnaire DMI par le service utilisateur.
     <img src="flux1_demandeDMI.png"
     alt="Flux 1 - DemandeDMI"
     title="Flux 1 - DemandeDMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:9in;height:5in">
 
     <p>
     Flux 1 - DemandeDMI
@@ -2178,7 +2178,7 @@ Cette section présente le diagramme de classes du Flux 2 - ReponseDemandeDMI. I
     <img src="flux2_reponseDemandeDMI.png"
     alt="Flux 2 - ReponseDemandeDMI"
     title="Flux 2 - ReponseDemandeDMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:6in;height:3in">
 
     <p>
     Flux 1 - DemandeDMI
@@ -2252,7 +2252,7 @@ DMI auprès du fournisseur (fabricant ou distributeur).
     <img src="flux3_commandeDMI.png"
     alt="Flux 3 - CommandeDMI"
     title="Flux 3 - CommandeDMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:9in;height:5in">
 
     <p>
     Flux 3 - CommandeDMI
@@ -2324,7 +2324,7 @@ Ce flux concerne la réception des DMI par le gestionnaire de réception.
     <img src="flux4_livraisonDMI.png"
     alt="Flux 4 - LivraisonDMI"
     title="Flux 4 - LivraisonDMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:9in;height:5in">
 
     <p>
     Flux 4 - LivraisonDMI
@@ -2421,7 +2421,7 @@ Cette section présente le diagramme de classes du Flux 5b - ReceptionUnitaireDM
     <img src="flux5b_receptionUnitaireDMI.png"
     alt="Flux 5b - ReceptionUnitaireDMI"
     title="Flux 5b - ReceptionUnitaireDMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:9in;height:5in">
 
     <p>
     Flux 5b - ReceptionUnitaireDMI
@@ -2571,7 +2571,7 @@ Ce flux concerne l'envoie des informations nécessaires au gestionnaire de réce
     <img src="flux6_delivrerSU.png"
     alt="Flux 6 - DelivrerSU"
     title="Flux 6 - DelivrerSU"
-    style="width:5.74528in;height:2.95283in">
+    style="width:9in;height:5in">
 
     <p>
     Flux 6 - DelivrerSU
@@ -2667,7 +2667,7 @@ Ce flux concerne l'envoie des informations nécessaires au gestionnaire de réce
     <img src="flux8_transportDMI.png"
     alt="Flux 8 - TransportDMI"
     title="Flux 8 - TransportDMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:8in;height:4in">
 
     <p>
     Flux 8 - TransportDMI
@@ -2772,7 +2772,7 @@ utilisateur concernant la réception des DMI dans ses locaux.
     <img src="flux10_receptionSU.png"
     alt="Flux 10 - ReceptionSU"
     title="Flux 10 - ReceptionSU"
-    style="width:5.74528in;height:2.95283in">
+    style="width:9in;height:5in">
 
     <p>
     Flux 10 - ReceptionSU
@@ -2937,7 +2937,7 @@ Cette section présente le diagramme de classes du Flux 13 - ConsommationDMI. Ce
     <img src="flux13_consommationDMI.png"
     alt="Flux 13 - ConsommationDMI"
     title="Flux 13 - ConsommationDMI"
-    style="width:5.74528in;height:2.95283in">
+    style="width:9in;height:5in">
 
     <p>
     Flux 13 - ConsommationDMI
@@ -3173,7 +3173,7 @@ Cette section présente le diagramme de classes du Flux 17 - AutorisationPaiemen
     <img src="flux17_authorisationPaiement.png"
     alt="Flux 17 - AutorisationPaiement"
     title="Flux 17 - AutorisationPaiement"
-    style="width:5.74528in;height:2.95283in">
+    style="width:9in;height:5in">
 
     <p>
     Flux 17 - AutorisationPaiement
