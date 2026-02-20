@@ -7,6 +7,8 @@
 
 ### Introduction
 
+Étude du 11/2019, avec dernière mise à jour en 10/2020; les conclusions de cette étude reflètent l’état de l’art disponible à cette date.
+
 Ce document regroupe l’analyse des standards identifiés comme potentiellement adaptés pour la mise en œuvre, de la « traçabilité des dispositifs médicaux implantables en établissement de santé » relative à la [spécification fonctionnelle](specifications_fonctionnelles.md) :
 
 * Le standard HL7 FHIR R4 (**Fast Healthcare Interoperability Resources**). Pour le besoin d’interopérabilité « Traçabilité des dispositifs médicaux implantables en établissement de santé », les ressources FHIR suivantes sont notamment analysées :

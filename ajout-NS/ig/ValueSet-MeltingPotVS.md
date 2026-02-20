@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/[code]/ValueSet/MeltingPotVS | *Version*:0.1.0 |
-| Draft as of 2026-02-18 | *Computable Name*:MeltingPotVS |
+| Draft as of 2026-02-20 | *Computable Name*:MeltingPotVS |
 
  
 Melting Pot Value Set. 
@@ -50,57 +50,43 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "name" : "MeltingPotVS",
   "title" : "Melting Pot Value Set",
   "status" : "draft",
-  "date" : "2026-02-18T15:53:06+00:00",
+  "date" : "2026-02-20T14:31:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Melting Pot Value Set.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "405738005",
-            "display" : "Blue color (qualifier value)"
-          },
-          {
-            "code" : "371254008"
-          }
-        ]
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "405738005",
+        "display" : "Blue color (qualifier value)"
       },
       {
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/competence-code-system",
-        "concept" : [
-          {
-            "code" : "C01"
-          }
-        ]
-      },
-      {
-        "system" : "https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/type-carte-code-system"
-      }
-    ]
+        "code" : "371254008"
+      }]
+    },
+    {
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/competence-code-system",
+      "concept" : [{
+        "code" : "C01"
+      }]
+    },
+    {
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/type-carte-code-system"
+    }]
   }
 }
 
