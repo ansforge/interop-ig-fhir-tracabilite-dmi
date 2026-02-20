@@ -53,7 +53,7 @@ et dont l'action principale voulue dans ou sur le corps humain n'est pas obtenue
 |  | Pharmacie à usage intérieur. |
 |  | Infirmier de bloc opératoire diplômé d’état |
 
-Table 1 : Quelques définitions utilisées dans cette étude
+Quelques définitions utilisées dans cette étude
 
 #### Exemples de cas d'usage
 
@@ -988,7 +988,7 @@ Ce flux est un cas particulier du "Flux 22 - TransmissionTrace" avec :
 
 Cette section présente le diagramme de classes du Flux 2 - ReponseDemandeDMI. Il s'agit du flux de réponse de la part du gestionnaire DMI après avoir reçu la demande soit de création ou de mise à jour.
 
- Flux 1 - DemandeDMI 
+ Flux 2 - ReponseDemandeDMI 
 
 ##### Classe "Reponse"
 
@@ -2084,145 +2084,4 @@ Adresse de télécommunication à laquelle une personne ou une organisation peut
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
 Attributs de la classe "Telecommunication"
-
-### Annexes
-
-#### Annexe A - Identification des concepts
-
-##### Définition des concepts métier
-
-| | |
-| :--- | :--- |
-| Commande/CommandeLivree/Demande/Delivrance/Reception | Eléments nécessaires pour identifier un besoin ou engager une transaction commerciale |
-| Ligne (de commande) | Identification d’une référence dans la commande |
-| OrganisationInterne | structures organisationnelles portant des activités sur un lieu au sein d'une entité géographique |
-| Evènementavec les éléments métiers (Trace/SourceTrace/ActeurEvenement/ObjetEvenement) | Une action nécessitant une traçabilité est définie par, à minima, une date et un type (réception DMI, Envoi DMI vers plateau technique de pose, etc.).Les évènements qui déclenchent le processus de traçabilité de DMI sont les suivants:* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-Demande de DMICommande de DMIRéception de DMI Entree et Sortie StockDélivrance au service utilisateurConsommation de DMIDestérilisation par erreurTaille inadaptéeErreur de côtéAutres éléments sur une non-utilisation de DMI à cause d’un rejet technique ou sanitaireDemande de réassort en DMIAutorisation de paiement de la facture des DMIUn évènement peut déclencher une notification. |
-| Fournisseur | Il s’agit de la personne morale responsable de la fourniture des DMI lorsqu’ils sont commandés par l’établissement de santé ou de la mise à disposition des DMI selon les termes de l’accord passé entre le fournisseur et l’établissement de santé.Le terme fournisseur correspond dans cette étude au fabricant ou au distributeur.Remarques : Les données à enregistrer seront différentes s’il s’agit d’un distributeur ou d’un fabricant. Il doit être possible d’identifier le fabricant, le mandataire et l’importateur pour tout DMI afin de permettre le reporting des effets indésirables graves et de matériovigilance. |
-| EntiteGeographique | L’Entité Géographique (EG) correspond à la notion d’établissement. |
-| EntiteJuridique | L’Entité Juridique (EJ) liée au dispositif médical représente le fabricant ou le distributeur du dispositif. |
-| Dispositif Médical (DM) | Se référer à la Table 1 de ce document. |
-| Lieu | Informations relatives à une portion déterminée de l'espace |
-| InterventionMedicale | Une intervention clinique ou chirurgicale qui implante d’un DMI impliquant au moins un professionnel de santé et un patient. |
-| Patient | Personne physique bénéficiaire de soins, d'examens ou d'actes de prévention |
-| INS | INS a pour signification « Identité nationale de santé » |
-| Professionnel | Personne physique travaillant en tant que professionnel |
-| PersonnePhysique | Une personne physique est un individu titulaire de droits et d'obligations caractérisé par une identité civile. |
-| Facture | Document qui atteste de l'achat ou de la vente de biens ou services.  |
-
-##### Mapping MOS
-
-| | | |
-| :--- | :--- | :--- |
-| Commande/CommandeLivree/Demande/Delivrance/Transport/Reception/ |  |  |
-| Ligne (de commande) |  |  |
-| Organisation Interne | OrganisationInterne | Restriction |
-| Evenement | Evenement | Extension |
-| Trace/SourceTrace/ActeurEvenement/ObjetEvenement |  |  |
-| Fournisseur (fabricant, distributeur de DM) | EntiteJuridique | Extension |
-| EntiteGeographique | EntiteGeographique | Restriction |
-| Dispositif Médical (DM) / Dispositif Médical Implantable (DMI) | DispositifMedical | Restriction |
-| Lieu | Lieu | Restriction |
-| InterventionMedicale |  |  |
-| Patient | PersonnePriseCharge | Restriction |
-| INS | INS | Restriction |
-| Professionnel | Professionnel | Restriction |
-| PersonnePhysique | PersonnePhysique | Restriction |
-| Facture |  |  |
-
-#### Annexe B - Nomenclatures
-
-##### Codes associés aux types d'évènements de traçabilité
-
-La terminologie de référence TRE_R254-TypeEvenement[1](#fn:7) des nomenclatures des objets de santé évolue pour inclure les évènements de traçabilité identifiés dans cette étude.
-
-| | | | | |
-| :--- | :--- | :--- | :--- | :--- |
-| **1.2.250.1.213.1.1.4.337** | DEM | Demande de dispositifs médicaux à la pharmacie de l’établissement de santé. | DEM | Demande de dispositifs médicaux à la pharmacie de l’établissement de santé |
-| **1.2.250.1.213.1.1.4.337** | REP | Réponse de la pharmacie de l’établissement de santé au service responsable de la demande. | REP | Réponse de la pharmacie au service responsable de la demande. |
-| **1.2.250.1.213.1.1.4.337** | SDM | Suppression de la demande de dispositif médicaux | SDM | Suppression de la demande de dispositif médicaux |
-| **1.2.250.1.213.1.1.4.337** | CDM | Commande de dispositifs médicaux | CDM | Commande de dispositifs médicaux |
-| **1.2.250.1.213.1.1.4.337** | REC | Réception valide du dispositif médical par l’établissement de santé | REC | Réception valide du dispositif médical par l’établissement de santé |
-| **1.2.250.1.213.1.1.4.337** | NRE | Réception non valide du dispositif médical par l’établissement de santé | NRE | Réception non valide du dispositif médical par l’établissement de santé |
-| **1.2.250.1.213.1.1.4.337** | ESD | Entrée de stock des dispositifs médicaux au sein de l’établissement de santé | ESD | Entrée de stock des dispositifs médicaux au sein de l’établissement de santé |
-| **1.2.250.1.213.1.1.4.337** | SSD | Sortie de stock des dispositifs médicaux | SSD | Sortie de stock des dispositifs médicaux |
-| **1.2.250.1.213.1.1.4.337** | DEL | Délivrance des dispositifs médicaux au service en charge de la pose chez le patient | DEL | Délivrance des dispositifs médicaux |
-| **1.2.250.1.213.1.1.4.337** | TRA | Transport des dispositifs médicaux | TRA | Transport des dispositifs médicaux |
-| **1.2.250.1.213.1.1.4.337** | POS | Pose du dispositif médical | POS | Pose du dispositif médical |
-| **1.2.250.1.213.1.1.4.337** | NCO | Dispositif médical non-conforme, présentant un risque inacceptable pour la santé et la sécurité | NCO | DM non-conforme, avec un risque inacceptable pour la santé et la sécurité |
-| **1.2.250.1.213.1.1.4.337** | PER | Dispositif médical périmé | PER | Dispositif médical périmé |
-| **1.2.250.1.213.1.1.4.337** | ECH | Echec de pose du dispositif médical | ECH | Echec de pose du dispositif médical |
-| **1.2.250.1.213.1.1.4.337** | REA | Demande de réassort en dispositifs médicaux | REA | Demande de réassort en DM |
-| **1.2.250.1.213.1.1.4.337** | AUT | Autorisation de paiement de la facture des dispositifs médicaux | AUT | Autorisation de paiement de la facture des dispositifs médicaux |
-
-#### Annexe D - Informations Connexes
-
-##### Modèle de fichier FICHCOMP DMI
-
-Ci-dessous, un modèle de fichier FICHCOMP DMI au format 2009 à 2016 :
-
-| | | | | |
-| :--- | :--- | :--- | :--- | :--- |
-| VARIABLES | **Taille** | **Début** | **Fin** | **Remarques** |
-| N° FINESS | 9 | 1 | 9 |  |
-| Type de prestation | 2 | 10 | 11 | 02 |
-| Année période | 4 | 12 | 15 |  |
-| N° période (mois) | 2 | 16 | 17 |  |
-| N° d'index du RSA | 10 | 18 | 27 |  |
-| Code LPP | 9 | 28 | 36 |  |
-| Nombre posé | 10 | 37 | 46 |  |
-| Prix d'achat multiplié par le nombre posé | 10 | 47 | 56 | 7+3 |
-| Mois de la date de pose (si renseignée) | 2 | 57 | 58 |  |
-| Année de la date de pose | 4 | 59 | 62 |  |
-
-Table 70 Modèle de fichier FICHCOMP
-
-Ce fichier a connu un nombre d’évolutions à partir de 2016 et notamment une nouvelle définition des variables :
-
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-
-**N° FINESS :** Numéro identifiant de l’établissement **Type de prestation :** 02 « Dispositifs médicaux implantables »**Année période :** AAAA (Année de traitement du fichier)**N° période (mois) :** 01 à 12. Correspond à la période du 1er janvier à la fin du mois considéré. La saisie est cumulative.**N° d'index du RSA :** lié au RSA du même séjour par un numéro d’index**Code LPP :** La L.P.P est la liste des produits et prestations remboursables par l’assurance maladie. Ces derniers sont identifiés par code de référence LPP est à 7 caractères numériques. Le 1er et 2nd caractères de code de référence LPP correspond respectivement au titre et chapitre de la nomenclature. Les 4 caractères suivants sont aléatoires. Le 7ème caractère correspond à la clé (modulo 11). **Nombre posé :** 10+0**Prix d'achat multiplié par le nombre posé :** 7+3 (Partie entière sur 7 caractères numériques et partie décimale sur 3)**Mois de la date de pose :** 01 à 12 (sachant que « 01 » correspond au mois de janvier de l’année considérée et « 12 » au mois de décembre)**Année de la date de pose :** AAAA
-
-##### Modèle de fichier RSF
-
-Le format RSF de l’ATIH est accessible ici : [https://www.atih.sante.fr/nouveau-format-du-rsf](https://www.atih.sante.fr/nouveau-format-du-rsf)
-
-##### Glossaire
-
-| | |
-| :--- | :--- |
-| **CI-SIS** | Cadre d’interopérabilité des systèmes d’information de santé |
-| **CSP** | Code de la santé publique |
-| **DMI** | Dispositif médical implantable |
-| **GHS** | Groupe homogène de séjours |
-| **HCL** | Hospices civils de Lyon |
-| **IPP** | Identifiant permanent du patient |
-| **IADE** | Infirmier anesthésiste diplômé d’état   |
-| **IBODE** | Infirmier bloc opératoire diplômé d’état  |
-| **LPP** | Liste des produits et prestations |
-| **MOS** | Modèle des objets de santé |
-| **PUI** | Pharmacie à usage intérieur |
-| **T2A** | Tarification à l’activité |
-
-1. http://mos.asipsante.fr/NOS/PDF/TRE_R254-TypeEvenement.tabs.pdf [↩](#fnref:7)
 

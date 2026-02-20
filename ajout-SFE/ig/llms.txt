@@ -3,16 +3,16 @@
 ## Pages
 
 * [Accueil](index.md)
-* [Specifications Techniques](specifications_techniques.md)
+* [Historique des versions](change-log.md)
+* [Flux 02](st_flux2.md)
 * [Flux 01](st_flux1.md)
-* [Volume 1 - Étude fonctionnelle](specifications_fonctionnelles.md)
 * [Artifacts Summary](artifacts.md)
+* [Specifications Techniques](specifications_techniques.md)
+* [Sécurité](securite.md)
+* [Autres Ressources](autres_ressources.md)
+* [Volume 1 - Étude fonctionnelle](specifications_fonctionnelles.md)
 * [Vue d'ensemble](construction_des_flux.md)
 * [Téléchargements et usages](downloads.md)
-* [Autres Ressources](autres_ressources.md)
-* [Flux 02](st_flux2.md)
-* [Historique des versions](change-log.md)
-* [Sécurité](securite.md)
 
 ## Resources
 
