@@ -23,14 +23,14 @@ Id: dmi-devicedefinition
     SterilisationAvantUtilisation 0..1 and
     Implantable 0..1 and
     Actif 0..1
-* property[UsageUnique].type.text = "UsageUnique" 
-* property[NbReutilisation].type.text 1..
-* property[NbReutilisation].type.text = "NbReutilisation" 
-* property[EmballageSterile].type.text 1..
-* property[EmballageSterile].type.text = "EmballageSterile" 
-* property[SterilisationAvantUtilisation].type.text 1..
-* property[SterilisationAvantUtilisation].type.text = "SterilisationAvantUtilisation" 
-* property[Implantable].type.text 1..
-* property[Implantable].type.text = "Implantable" 
-* property[Actif].type.text 1..
-* property[Actif].type.text = "Actif" 
+* property[UsageUnique].type = DMIDeviceDefinitionProperty#UsageUnique
+* property[NbReutilisation].type 1..
+* property[NbReutilisation].type = DMIDeviceDefinitionProperty#NbReutilisation 
+* property[EmballageSterile].type 1..
+* property[EmballageSterile].type = DMIDeviceDefinitionProperty#EmballageSterile
+* property[SterilisationAvantUtilisation].type 1..
+* property[SterilisationAvantUtilisation].type = DMIDeviceDefinitionProperty#SterilisationAvantUtilisation
+* property[Implantable].type 1..
+* property[Implantable].type = DMIDeviceDefinitionProperty#Implantable 
+* property[Actif].type 1..
+* property[Actif].type = DMIDeviceDefinitionProperty#Actif

@@ -4,18 +4,11 @@ Id: dmi-organization-ej
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension ^min = 0
 * extension contains 
     DMIIdentifiantLocalDistributeur named IdentifiantLocalDistributeur 0..* and
     DMIIdentifiantLocalFabricant named IdentifiantLocalFabricant 0..*
 * extension[IdentifiantLocalDistributeur] only DMIIdentifiantLocalDistributeur
-* extension[IdentifiantLocalDistributeur] ^sliceName = "IdentifiantLocalDistributeur"
-* extension[IdentifiantLocalDistributeur] ^min = 0
-* extension[IdentifiantLocalDistributeur] ^isModifier = false
 * extension[IdentifiantLocalFabricant] only DMIIdentifiantLocalFabricant
-* extension[IdentifiantLocalFabricant] ^sliceName = "IdentifiantLocalFabricant"
-* extension[IdentifiantLocalFabricant] ^min = 0
-* extension[IdentifiantLocalFabricant] ^isModifier = false
 * identifier 1..
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.text"
@@ -26,17 +19,10 @@ Id: dmi-organization-ej
     numFINESS 0..1 and
     numeroTVAIntracommunautaire 0..1 and
     numeroSRN 0..*
-* identifier[IdNatStruct].type.text 1..
-* identifier[IdNatStruct].type.text = "IdNatStruct" 
-* identifier[numSiren].type.text 1..
-* identifier[numSiren].type.text = "numSiren" 
-* identifier[numFINESS].type.text 1..
-* identifier[numFINESS].type.text = "numFINESS" 
 * identifier[numeroTVAIntracommunautaire].type.text 1..
-* identifier[numeroTVAIntracommunautaire].type.text = "numeroTVAIntracommunautaire" 
-* identifier[numeroSRN] ^sliceName = "numeroSRN"
-* identifier[numeroSRN].type.text 1..
-* identifier[numeroSRN].type.text = "numeroSRN" 
+* identifier[numeroTVAIntracommunautaire].type = DMIOrganizationIdentifier#numeroTVAIntracommunautaire
+* identifier[numeroSRN].type 1..
+* identifier[numeroSRN].type = DMIOrganizationIdentifier#numeroSRN
 * name 1..
 * alias ..1
 * address ..1
