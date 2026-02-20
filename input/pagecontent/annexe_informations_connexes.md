@@ -115,8 +115,7 @@ mois considéré. La saisie est cumulative.
 - **Année de la date de pose :** AAAA
 
 
-##### Modèle de fichier RSF
+### Modèle de fichier RSF
 
 Le format RSF de l’ATIH est accessible ici :
 <https://www.atih.sante.fr/nouveau-format-du-rsf>
-

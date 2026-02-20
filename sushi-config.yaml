@@ -37,6 +37,12 @@ pages:
         title: Historique des versions
     autres_ressources.md:
         title: Autres Ressources
+        annexe_identification_concepts.md:
+            title: Identification des concepts
+        annexe_informations_connexes.md:
+            title: Informations connexes
+        annexe_nomenclature.md:
+            title: Nomenclature
         securite.md:
             title: Sécurité
         downloads.md:
@@ -51,6 +57,9 @@ menu:
         Flux 02: st_flux2.html
     Ressources de conformité: artifacts.html
     Autres ressources:
+        Identification des concepts: annexe_identification_concepts.html
+        Informations connexes: annexe_informations_connexes.html
+        Nomenclature: annexe_nomenclature.html
         Sécurité: securite.html
         Téléchargements et usage: downloads.html
         "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
