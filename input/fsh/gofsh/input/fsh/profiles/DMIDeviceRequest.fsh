@@ -3,5 +3,5 @@ Parent: DeviceRequest
 Id: dmi-devicerequest
 * basedOn 1..1
 * basedOn only Reference(SupplyRequest)
-* intent = #order (exactly)
+* intent = #order 
 * subject only Reference(Device)

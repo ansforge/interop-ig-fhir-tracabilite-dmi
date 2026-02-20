@@ -1,7 +1,7 @@
 Profile: DMIBundleRequest
 Parent: Bundle
 Id: dmi-bundle-request
-* type = #transaction (exactly)
+* type = #transaction 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open

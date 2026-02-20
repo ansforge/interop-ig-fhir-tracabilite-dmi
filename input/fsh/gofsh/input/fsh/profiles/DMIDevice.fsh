@@ -8,6 +8,4 @@ Id: dmi-device
 * extension contains
     DMIIPIdLogiciel named IPIdLogiciel 0..1 and
     DMIMarquageCE named MarquageCE 0..1
-* extension[IPIdLogiciel] ^isModifier = false
-* extension[MarquageCE] ^isModifier = false
 * definition only Reference(DMIDeviceDefinition)

@@ -8,10 +8,10 @@ Id: dmi-procedure
     idIntervention 1..1 and
     numSejour 0..1
 * identifier[idIntervention].type.text 1..
-* identifier[idIntervention].type.text = "idIntervention" (exactly)
+* identifier[idIntervention].type.text = "idIntervention" 
 * identifier[idIntervention].value 1..
 * identifier[numSejour].type.text 1..
-* identifier[numSejour].type.text = "numSejour" (exactly)
+* identifier[numSejour].type.text = "numSejour" 
 * identifier[numSejour].value 1..
 * performed[x] 1..
 * performed[x] only dateTime

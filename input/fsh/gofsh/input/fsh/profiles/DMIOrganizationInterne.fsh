@@ -23,5 +23,5 @@ Id: dmi-organization-interne
     TypeOrganizationInterne 1..1 and
     CategorieOrganisation 0..1
 * type[TypeOrganizationInterne] from $TRE_R207-TypeOrganisationInterne (required)
-* type[TypeOrganizationInterne].id = "TypeOrganizationInterne" (exactly)
+* type[TypeOrganizationInterne].id = "TypeOrganizationInterne" 
 * type[CategorieOrganisation] from $_1 (required)

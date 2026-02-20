@@ -27,16 +27,16 @@ Id: dmi-organization-ej
     numeroTVAIntracommunautaire 0..1 and
     numeroSRN 0..*
 * identifier[IdNatStruct].type.text 1..
-* identifier[IdNatStruct].type.text = "IdNatStruct" (exactly)
+* identifier[IdNatStruct].type.text = "IdNatStruct" 
 * identifier[numSiren].type.text 1..
-* identifier[numSiren].type.text = "numSiren" (exactly)
+* identifier[numSiren].type.text = "numSiren" 
 * identifier[numFINESS].type.text 1..
-* identifier[numFINESS].type.text = "numFINESS" (exactly)
+* identifier[numFINESS].type.text = "numFINESS" 
 * identifier[numeroTVAIntracommunautaire].type.text 1..
-* identifier[numeroTVAIntracommunautaire].type.text = "numeroTVAIntracommunautaire" (exactly)
+* identifier[numeroTVAIntracommunautaire].type.text = "numeroTVAIntracommunautaire" 
 * identifier[numeroSRN] ^sliceName = "numeroSRN"
 * identifier[numeroSRN].type.text 1..
-* identifier[numeroSRN].type.text = "numeroSRN" (exactly)
+* identifier[numeroSRN].type.text = "numeroSRN" 
 * name 1..
 * alias ..1
 * address ..1

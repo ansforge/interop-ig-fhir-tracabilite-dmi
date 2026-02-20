@@ -1,7 +1,7 @@
 Profile: DMIBundleDelivery
 Parent: Bundle
 Id: dmi-bundledelivery
-* type = #transaction (exactly)
+* type = #transaction 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open

@@ -1,7 +1,7 @@
 Profile: DMIBundleTransmissionTraces
 Parent: Bundle
 Id: dmi-bundle-transmission-traces
-* type = #transaction (exactly)
+* type = #transaction 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
@@ -39,7 +39,7 @@ Id: dmi-bundle-transmission-traces
 * entry[SupplyDelivery].resource 1..
 * entry[SupplyDelivery].resource only DMISupplyDeliveryReceptionUnitaire or DMISupplyDeliveryEnteteReception or DMISupplyDeliveryEnteteDelivrance or DMISupplyDeliveryEnteteLivraison or DMISupplyDeliveryLigne
 * entry[AuditEvent].resource 1..
-* entry[AuditEvent].resource only DMIAuditEvent
+* entry[AuditEvent].resource only TDEAuditEvent
 * entry[BundleRequest].resource 1..
 * entry[BundleRequest].resource only DMIBundleRequest
 * entry[BundleDelivery].resource only DMIBundleDelivery

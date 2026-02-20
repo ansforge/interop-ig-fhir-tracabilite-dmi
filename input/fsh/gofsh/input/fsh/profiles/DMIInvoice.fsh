@@ -15,8 +15,8 @@ Id: dmi-invoice
     refFacture 1..1 and
     refCommande 1..1
 * identifier[refFacture].type.text 1..
-* identifier[refFacture].type.text = "refFacture" (exactly)
+* identifier[refFacture].type.text = "refFacture" 
 * identifier[refFacture].value 1..
 * identifier[refCommande].type.coding 1..1
-* identifier[refCommande].type.text = "refCommande" (exactly)
+* identifier[refCommande].type.text = "refCommande" 
 * identifier[refCommande].value 1..
