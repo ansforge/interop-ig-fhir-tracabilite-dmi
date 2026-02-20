@@ -33,10 +33,10 @@ Le tableau ci-dessous liste les profils utilisés pour les ressources mentionné
 | | | | |
 | :--- | :--- | :--- | :--- |
 | AuditEvent | TDE_AuditEvent | 1.0 | Profil défini dans le volet générique « Traçabilité d’événements » |
-| Patient | [DMI_Patient](https://simplifier.net/frenchprofiledfhirar/frpatient) | 1.0 | Profil créé dans le cadre de ce volet étendant le profil français « FrPatient » publié par Interop’Santé |
-| Practitioner | DMI_Practitioner | 1.0 | Profil créé dans le cadre de ce volet étendant le profil « FrPractitionner» publié par Interop’Sante |
-| PractitionerRole | [DMI_PractitionerRole](https://simplifier.net/modelisationdesstructuresetdesprofessionnels practitionerroleprofessionalrolerass) | 1.0 | Profil créé dans le cadre de ce volet étendant le profil « PractitionnerRoleProfessionalRoleRASS » de l’annuaire national représentant un professionnel |
-| Organization | DMI_Organization_EJ | 1.0 | Profil créé dans le cadre de ce volet étendant le profil « FrOrganization ». Ce profil est utilisé pour représenter le fabricant et les distributeurs des DM. |
+| Patient | DMI_Patient</a> | 1.0 | Profil créé dans le cadre de ce volet étendant le profil français « FRCorePatientINSProfile » publié par Interop’Santé |
+| Practitioner | DMI_Practitioner | 1.0 | Profil créé dans le cadre de ce volet étendant le profil « FRCorePractitionerProfile » publié par Interop’Sante |
+| PractitionerRole | DMI_PractitionerRole</a> | 1.0 | Profil créé dans le cadre de ce volet étendant le profil « PractitionnerRoleProfessionalRoleRASS » de l’annuaire national représentant un professionnel |
+| Organization | DMI_Organization_EJ | 1.0 | Profil créé dans le cadre de ce volet étendant le profil « FRCoreOrganizationProfile ». Ce profil est utilisé pour représenter le fabricant et les distributeurs des DM. |
 | DMI_OrganizationInterne | 1.0 | Profil créé dans le cadre de ce volet permettant de représenter l’organisation interne (Service utilisateur). | |
 | Device | DMI_Device | 1.0 | Profil créé dans le cadre de ce volet permet de représenter une instance physique d’un dispositif médical. |
 | DeviceDefinition | DMI_DeviceDefinition | 1.0 | Profil créé dans le cadre de ce volet permet de représenter un modèle de dispositif médical. |
@@ -57,20 +57,4 @@ Le tableau ci-dessous liste les profils utilisés pour les ressources mentionné
 | DMI_BundleTransmissionTraces | 1.0 | Profil créé dans le cadre de ce volet permet de transmettre l’ensemble des ressources au serveur | |
 
  Profils utilisés pour les ressources 
-
-### ANNEXE 2 : GLOSSAIRE
-
-| | |
-| :--- | :--- |
-| API | Application Programming Interface |
-| ANS | Agence du Numérique en Santé |
-| CI-SIS | Cadre d’Interopérabilité des Systèmes d’Information de Santé |
-| FHIR | Fast Healthcare Interoperability Resources |
-| HL7 | Health Level 7 |
-| DMI | Dispositif médical implantable |
-| HTTP | HyperText Transfer Protocol |
-| JDV | Jeu De valeurs |
-| JSON | JavaScript Object Notation |
-| REST | Representational State Transfer |
-| TRE | Terminologie de Référence |
 

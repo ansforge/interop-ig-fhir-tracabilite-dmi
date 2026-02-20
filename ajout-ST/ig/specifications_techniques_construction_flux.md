@@ -40,14 +40,14 @@ Les flux transmettant les informations de traçabilité d’un évènement sont 
 * Flux 28 – TracabiliteRejetDMI
 * Flux 30 - TracabiliteSortieStockSU
 
-Ils sont construits selon les exigences de la transaction IHE ITI-20[^5] « Record Audit Event » dans sa version HL7 FHIR où une seule trace est transmise à la fois : « Send Audit Resource Request Message - FHIR Feed Interaction ».
+Ils sont construits selon les exigences de la transaction [IHE ITI-20](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) « Record Audit Event » dans sa version HL7 FHIR où une seule trace est transmise à la fois : « Send Audit Resource Request Message - FHIR Feed Interaction ».
 
-Ce flux se base sur l’interaction « create »[^6] de l’API REST de FHIR. Il s’agit d’une requête HTTP POST dont le corps de la requête est une ressource Bundle suivant le profil DMI_BundleTransmissionTraces :
+Ce flux se base sur [l’interaction « create »](https://www.hl7.org/fhir/http.html#create) de l’API REST de FHIR. Il s’agit d’une requête HTTP POST dont le corps de la requête est une ressource Bundle suivant le profil DMI_BundleTransmissionTraces :
 
 |
 |
 
-Si la transaction a été correctement effectuée et donc que la création du cercle de soins est correctement effectuée, un code HTTP 200 **ok** est retourné[^7]. Un Bundle de type transaction-response doit être renvoyé dans le corps de la réponse[^8]. Ce dernier doit contenir les ressources telles qu’elles ont été créées par le gestionnaire ou, a minima, les identifiants logiques des ressources ayant été attribués par le gestionnaire (dans Bundle.entry.fullUrl et/ou Bundle.entry.resource.id).
+Si la transaction a été correctement effectuée et donc que la création du cercle de soins est correctement effectuée, un code [HTTP 200 **ok**](https://www.hl7.org/fhir/http.html#trules) est retourné. Un Bundle de type transaction-response doit être renvoyé dans le [corps de la réponse](https://www.hl7.org/fhir/http.html#transaction-response). Ce dernier doit contenir les ressources telles qu’elles ont été créées par le gestionnaire ou, a minima, les identifiants logiques des ressources ayant été attribués par le gestionnaire (dans Bundle.entry.fullUrl et/ou Bundle.entry.resource.id).
 
 Sinon, un code HTTP 500 **Internal Server Error** est retourné avec une ressource OperationOutcome contenant le détail des erreurs et avertissements résultant du traitement des entrées du Bundle.
 
