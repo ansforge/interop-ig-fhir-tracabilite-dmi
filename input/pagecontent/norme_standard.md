@@ -1,5 +1,9 @@
 ### Introduction
 
+<div class="dragon" style="width: 65%">
+Étude du 11/2019, avec dernière mise à jour en 10/2020; les conclusions de cette étude reflètent l’état de l’art disponible à cette date.
+</div>
+
 Ce document regroupe l’analyse des standards identifiés comme
 potentiellement adaptés pour la mise en œuvre, de la « traçabilité des
 dispositifs médicaux implantables en établissement de santé » relative à
