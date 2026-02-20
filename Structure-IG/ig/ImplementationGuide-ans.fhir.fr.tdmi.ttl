@@ -17,11 +17,11 @@
      fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi"^^xsd:anyURI ;
      fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "3.0.0"] ; # 
   fhir:name [ fhir:v "TDMI"] ; # 
   fhir:title [ fhir:v "Traçabilité des Dispositifs Médicaux Implantables"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-13T08:45:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-20T16:36:35+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
