@@ -58,19 +58,19 @@ Le tableau ci-dessous liste les profils utilisés pour les ressources mentionné
 </tr>
 <tr>
 <td>Patient</td>
-<td><a href="https://simplifier.net/frenchprofiledfhirar/frpatient">DMI_Patient</a></td>
+<td>DMI_Patient</a></td>
 <td>1.0</td>
-<td>Profil créé dans le cadre de ce volet étendant le profil français « FrPatient » publié par Interop’Santé</td>
+<td>Profil créé dans le cadre de ce volet étendant le profil français « FRCorePatientINSProfile » publié par Interop’Santé</td>
 </tr>
 <tr>
 <td>Practitioner</td>
 <td>DMI_Practitioner</td>
 <td>1.0</td>
-<td>Profil créé dans le cadre de ce volet étendant le profil « FrPractitionner» publié par Interop’Sante</td>
+<td>Profil créé dans le cadre de ce volet étendant le profil « FRCorePractitionerProfile » publié par Interop’Sante</td>
 </tr>
 <tr>
 <td>PractitionerRole</td>
-<td><a href="https://simplifier.net/modelisationdesstructuresetdesprofessionnels practitionerroleprofessionalrolerass">DMI_PractitionerRole</a></td>
+<td>DMI_PractitionerRole</a></td>
 <td>1.0</td>
 <td>Profil créé dans le cadre de ce volet étendant le profil « PractitionnerRoleProfessionalRoleRASS » de l’annuaire national
 représentant un professionnel</td>
@@ -79,7 +79,7 @@ représentant un professionnel</td>
 <td rowspan="2">Organization</td>
 <td>DMI_Organization_EJ</td>
 <td>1.0</td>
-<td>Profil créé dans le cadre de ce volet étendant le profil « FrOrganization ». Ce profil est utilisé pour représenter le fabricant et les distributeurs des DM.</td>
+<td>Profil créé dans le cadre de ce volet étendant le profil « FRCoreOrganizationProfile ». Ce profil est utilisé pour représenter le fabricant et les distributeurs des DM.</td>
 </tr>
 <tr>
 <td>DMI_OrganizationInterne</td>
@@ -186,19 +186,3 @@ médical.</td>
 <p style="text-align: center;">
 Profils utilisés pour les ressources
 </p>
-
-### ANNEXE 2 : GLOSSAIRE
-
-| Sigle / Acronyme | Signification |
-|----|----|
-| API | Application Programming Interface |
-| ANS | Agence du Numérique en Santé |
-| CI-SIS | Cadre d’Interopérabilité des Systèmes d’Information de Santé |
-| FHIR | Fast Healthcare Interoperability Resources |
-| HL7 | Health Level 7 |
-| DMI | Dispositif médical implantable |
-| HTTP | HyperText Transfer Protocol |
-| JDV | Jeu De valeurs |
-| JSON | JavaScript Object Notation |
-| REST | Representational State Transfer |
-| TRE | Terminologie de Référence |
