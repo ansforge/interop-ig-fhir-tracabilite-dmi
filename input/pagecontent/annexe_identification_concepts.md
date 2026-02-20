@@ -1,6 +1,4 @@
-#### Annexe A - Identification des concepts
-
-##### Définition des concepts métier
+### Définition des concepts métier
 
 <table>
 <colgroup>

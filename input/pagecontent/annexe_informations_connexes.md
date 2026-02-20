@@ -1,4 +1,4 @@
-##### Modèle de fichier FICHCOMP DMI
+### Modèle de fichier FICHCOMP DMI
 
 Ci-dessous, un modèle de fichier FICHCOMP DMI au format 2009 à 2016 :
 

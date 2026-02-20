@@ -1,4 +1,4 @@
-##### Codes associés aux types d'évènements de traçabilité
+### Codes associés aux types d'évènements de traçabilité
 
 La terminologie de référence [TRE_R254-TypeEvenement](https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R254-TypeEvenement.html) des
 nomenclatures des objets de santé évolue pour inclure les évènements de
