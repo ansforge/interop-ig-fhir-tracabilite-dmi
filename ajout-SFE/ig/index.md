@@ -63,7 +63,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "ExampleIG",
   "title" : "ANS IG Example",
   "status" : "draft",
-  "date" : "2026-02-20T14:49:22+00:00",
+  "date" : "2026-02-20T15:00:57+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -895,6 +895,33 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "title" : "Autres Ressources",
         "generation" : "markdown",
         "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "annexe_identification_concepts.html"
+          }],
+          "nameUrl" : "annexe_identification_concepts.html",
+          "title" : "Identification des concepts",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "annexe_informations_connexes.html"
+          }],
+          "nameUrl" : "annexe_informations_connexes.html",
+          "title" : "Informations connexes",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "annexe_nomenclature.html"
+          }],
+          "nameUrl" : "annexe_nomenclature.html",
+          "title" : "Nomenclature",
+          "generation" : "markdown"
+        },
+        {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "securite.html"

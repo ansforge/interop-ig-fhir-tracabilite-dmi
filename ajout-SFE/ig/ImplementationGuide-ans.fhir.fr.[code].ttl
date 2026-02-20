@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "ExampleIG"] ; # 
   fhir:title [ fhir:v "ANS IG Example"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-20T14:49:22+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-20T15:00:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1761,6 +1761,63 @@
          fhir:title [ fhir:v "Autres Ressources" ] ;
          fhir:generation [ fhir:v "markdown" ] ;
          fhir:page ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "annexe_identification_concepts.html"^^xsd:anyURI ;
+               fhir:l fhir:annexe_identification_concepts.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "annexe_identification_concepts.html"^^xsd:anyURI ;
+             fhir:l fhir:annexe_identification_concepts.html
+           ] ;
+           fhir:title [ fhir:v "Identification des concepts" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "annexe_informations_connexes.html"^^xsd:anyURI ;
+               fhir:l fhir:annexe_informations_connexes.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "annexe_informations_connexes.html"^^xsd:anyURI ;
+             fhir:l fhir:annexe_informations_connexes.html
+           ] ;
+           fhir:title [ fhir:v "Informations connexes" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "annexe_nomenclature.html"^^xsd:anyURI ;
+               fhir:l fhir:annexe_nomenclature.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "annexe_nomenclature.html"^^xsd:anyURI ;
+             fhir:l fhir:annexe_nomenclature.html
+           ] ;
+           fhir:title [ fhir:v "Nomenclature" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
            fhir:extension ( [
              fhir:url [
                fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;

@@ -10,7 +10,7 @@
   <name value="ExampleIG"/>
   <title value="ANS IG Example"/>
   <status value="draft"/>
-  <date value="2026-02-20T14:49:22+00:00"/>
+  <date value="2026-02-20T15:00:57+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -655,6 +655,30 @@
         <nameUrl value="autres_ressources.html"/>
         <title value="Autres Ressources"/>
         <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="annexe_identification_concepts.html"/>
+          </extension>
+          <nameUrl value="annexe_identification_concepts.html"/>
+          <title value="Identification des concepts"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="annexe_informations_connexes.html"/>
+          </extension>
+          <nameUrl value="annexe_informations_connexes.html"/>
+          <title value="Informations connexes"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="annexe_nomenclature.html"/>
+          </extension>
+          <nameUrl value="annexe_nomenclature.html"/>
+          <title value="Nomenclature"/>
+          <generation value="markdown"/>
+        </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="securite.html"/>
