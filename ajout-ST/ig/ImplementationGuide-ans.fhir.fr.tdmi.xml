@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ans.fhir.fr.[code]"/>
+  <id value="ans.fhir.fr.tdmi"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.fhir.fr.[code]</b></p><a name="ans.fhir.fr.[code]"> </a><a name="hcans.fhir.fr.[code]"> </a><h2>ExampleIG</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/[code]/ImplementationGuide/ans.fhir.fr.[code]</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tdmi</b></p><a name="ans.fhir.fr.tdmi"> </a><a name="hcans.fhir.fr.tdmi"> </a><h2>TDMI</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi</pre></div>
   </text>
-  <url value="https://interop.esante.gouv.fr/ig/fhir/[code]/ImplementationGuide/ans.fhir.fr.[code]"/>
-  <version value="0.1.0"/>
-  <name value="ExampleIG"/>
-  <title value="ANS IG Example"/>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi"/>
+  <version value="3.0.0"/>
+  <name value="TDMI"/>
+  <title value="Traçabilité des Dispositifs Médicaux Implantables"/>
   <status value="draft"/>
-  <date value="2026-02-20T12:56:59+00:00"/>
+  <date value="2026-02-23T09:39:59+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -26,7 +26,7 @@
       <display value="FRANCE"/>
     </coding>
   </jurisdiction>
-  <packageId value="ans.fhir.fr.[code]"/>
+  <packageId value="ans.fhir.fr.tdmi"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
@@ -139,7 +139,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://interop.esante.gouv.fr/ig/fhir/[code]/history.html"/>
+        <valueString value="https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -363,7 +363,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://interop.esante.gouv.fr/ig/fhir/[code]/history.html"/>
+        <valueString value="https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -486,105 +486,6 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/competence-code-system"/>
-      </reference>
-      <name value="Compétences CodeSystem"/>
-      <description value="Compétences des professionnels de santé."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/EyeColor"/>
-      </reference>
-      <name value="EyeColor"/>
-      <description value="Eye color extension"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EyeColorVS"/>
-      </reference>
-      <name value="EyeColor Value Set"/>
-      <description value="Different eye colors."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/frpatient-exemple"/>
-      </reference>
-      <name value="frpatient-exemple"/>
-      <description value="Exemple d'un patient français"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/fr-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MeltingPotVS"/>
-      </reference>
-      <name value="Melting Pot Value Set"/>
-      <description value="Melting Pot Value Set."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ModifiedAdministrativeGender"/>
-      </reference>
-      <name value="ModifiedAdministrativeGender"/>
-      <description value="AdministrativeGender without unknown code"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-patient"/>
-      </reference>
-      <name value="Patient français"/>
-      <description value="Description du patient français"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/TypeCarteVS"/>
-      </reference>
-      <name value="Type Carte Value Set"/>
-      <description value="Type Carte Value Set."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/type-carte-code-system"/>
-      </reference>
-      <name value="Type de carte"/>
-      <description value="Type de carte professionnelle et personnelle."/>
-      <exampleBoolean value="false"/>
-    </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
         <valueUrl value="toc.html"/>
@@ -605,16 +506,8 @@
           <valueUrl value="specifications_fonctionnelles.html"/>
         </extension>
         <nameUrl value="specifications_fonctionnelles.html"/>
-        <title value="Specifications Fonctionnelles"/>
+        <title value="Volume 1 - Etude fonctionnelle"/>
         <generation value="markdown"/>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="sf1.html"/>
-          </extension>
-          <nameUrl value="sf1.html"/>
-          <title value="Vue d'ensemble"/>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -666,19 +559,27 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="change-log.html"/>
-        </extension>
-        <nameUrl value="change-log.html"/>
-        <title value="Historique des versions"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="autres_ressources.html"/>
         </extension>
         <nameUrl value="autres_ressources.html"/>
         <title value="Autres Ressources"/>
         <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="norme_standard.html"/>
+          </extension>
+          <nameUrl value="norme_standard.html"/>
+          <title value="Normes et Standards"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="glossaire.html"/>
+          </extension>
+          <nameUrl value="glossaire.html"/>
+          <title value="Glossaire"/>
+          <generation value="markdown"/>
+        </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="securite.html"/>
@@ -695,6 +596,14 @@
           <title value="Téléchargements et usages"/>
           <generation value="markdown"/>
         </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="change-log.html"/>
+        </extension>
+        <nameUrl value="change-log.html"/>
+        <title value="Historique des versions"/>
+        <generation value="markdown"/>
       </page>
     </page>
     <parameter>

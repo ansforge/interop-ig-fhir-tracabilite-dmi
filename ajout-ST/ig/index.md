@@ -1,4 +1,4 @@
-# Accueil - ANS IG Example v0.1.0
+# Accueil - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -7,35 +7,76 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/[code]/ImplementationGuide/ans.fhir.fr.[code] | *Version*:0.1.0 |
-| Draft as of 2026-02-20 | *Computable Name*:ExampleIG |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi | *Version*:3.0.0 |
+| Draft as of 2026-02-23 | *Computable Name*:TDMI |
 
  **Brief description of this Implementation Guide**
- [Add a brief description of this IG in English] 
+ This Implementation Guide defines the functional and technical framework for implementing traceability of Implantable Medical Devices (IMDs) within French healthcare institutions, in compliance with the CI SIS interoperability framework. It specifies how traceability events related to the IMD lifecycle including ordering, reception, stock management, implantation, and invoicing are created, transmitted, searched, and consulted using HL7 FHIR R4 resources and profiles, based on the generic Event Traceability framework (IHE ATNA / RESTful ATNA). 
 
 > Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/fhir/[code - ig]
 
 ### Introduction
 
-Définir ici de quoi parle l'IG (En termes non expert, compréhensible par un patient). Rajouter également les détails techniques sur le contexte et le besoin de cet IG
+Ce guide d’implémentation (IG) décrit les mécanismes d’interopérabilité permettant d’assurer la traçabilité des dispositifs médicaux implantables (DMI) au sein d’un établissement de santé.
 
-Les principales sections de l'IG sont :
+La traçabilité couvre l’ensemble du cycle de vie du DMI dans l’établissement, depuis sa réception jusqu’à sa pose chez le patient, ainsi que les évènements associés à sa gestion logistique, sanitaire et financière.
 
-* Le contexte de l'IG, quelle problématique il résout
-* Ce que les Implémenteurs doivent mettre en place
-* Un onglet "Ressources de conformité" pour s'assurer d'un schéma global entre tous les IGs
+Elle vise à répondre aux exigences réglementaires nationales et européennes relatives à la traçabilité des dispositifs médicaux implantables, notamment en matière de matériovigilance et d’enregistrement de l’Identifiant Unique du Dispositif (IUD).
+
+Sur le plan technique, cet IG s’inscrit dans le cadre du Cadre d’Interopérabilité des Systèmes d’Information de Santé (CI-SIS) et constitue une instanciation du volet générique « Traçabilité d’évènements ».
+ Il repose sur le profil IHE ATNA et son supplément RESTful ATNA, ainsi que sur l’utilisation de la ressource HL7 FHIR R4 AuditEvent et des ressources métier associées.
+
+Ce guide formalise les règles nécessaires à :
+
+* la création et la transmission des traces d’évènements liés aux DMI,
+* la recherche de traces selon des critères métier,
+* la consultation détaillée d’une trace.
 
 ### Périmètre du projet
 
-Définir en quelques lignes en anglais quel est le périmètre du projet
+Cet IG définit le périmètre fonctionnel et technique de la mise en œuvre de la traçabilité des dispositifs médicaux implantables dans le cadre du CI-SIS.
 
-Toujours laisser l'onglet "Ressources de conformité" pour s'assurer d'une cohérence globales entre tous les IGs
+Il couvre les évènements de traçabilité relatifs aux principales étapes du circuit du DMI en établissement de santé, notamment :
 
-### Auteurs et contributeurs
+* la demande et la commande,
+* la réception et le contrôle,
+* l’entrée et la sortie de stock,
+* la délivrance au service utilisateur,
+* le transport interne,
+* la réception par le service utilisateur,
+* la pose chez le patient,
+* le refus ou l’échec de pose,
+* le réassort,
+* la facturation.
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | prenom.nom@address.email |
+L’IG spécifie :
+
+* les acteurs impliqués (source de traçabilité, gestionnaire de traçabilité, consommateur),
+* les flux d’échange associés,
+* les ressources FHIR profilées utilisées,
+* les règles d’interopérabilité applicables.
+
+Ne sont pas couverts par cet IG :
+
+* l’organisation interne des processus métiers au sein des établissements,
+* les modalités de gestion locale des stocks,
+* les aspects fonctionnels du dossier patient hors données strictement nécessaires à la traçabilité.
+
+Le périmètre se limite aux mécanismes d’échange interopérables nécessaires à la gestion des traces, conformément au cadre CI-SIS.
+
+### Standards utilisés
+
+Les données véhiculées dans ce volet ainsi que les interactions entre les systèmes reposent sur le standard HL7 FHIR Release 4.
+
+Les interactions font référence à un certain nombre de ressources du standard ainsi qu’aux spécifications de l’API REST FHIR, basées sur le protocole HTTP dans sa version sécurisée HTTPS. Les syntaxes retenues sont la syntaxe XML et JSON.
+
+#### Ressources FHIR profilées
+
+Les ressources profilées dans le cadre de ce guide d'implémentation sont les suivantes :
+
+| | | |
+| :--- | :--- | :--- |
+| Profil parent | Profil | Description |
 
 ### Dépendances
 
@@ -43,12 +84,7 @@ Toujours laisser l'onglet "Ressources de conformité" pour s'assurer d'une cohé
 
 ### Propriété intellectuelle
 
-Certaines ressources sémantiques de ce guide sont protégées par des droits de propriété intellectuelle couverte par les déclarations ci-dessous. L’utilisation de ces ressources est soumise à l’acceptation et au respect des conditions précisées dans la licence d’utilisation de chacune d’entre elle.
-
-* This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
-
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://tx.fhir.org/r4/ValueSet/snomedct): [EyeColor](StructureDefinition-EyeColor.md), [EyeColorVS](ValueSet-EyeColorVS.md) and [MeltingPotVS](ValueSet-MeltingPotVS.md)
-
+Pas d'usage de PI externe (autre que celles de la spécification FHIR)
 
 
 
@@ -57,13 +93,13 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 ```json
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "ans.fhir.fr.[code]",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/[code]/ImplementationGuide/ans.fhir.fr.[code]",
-  "version" : "0.1.0",
-  "name" : "ExampleIG",
-  "title" : "ANS IG Example",
+  "id" : "ans.fhir.fr.tdmi",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi",
+  "version" : "3.0.0",
+  "name" : "TDMI",
+  "title" : "Traçabilité des Dispositifs Médicaux Implantables",
   "status" : "draft",
-  "date" : "2026-02-20T12:56:59+00:00",
+  "date" : "2026-02-23T09:39:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -79,7 +115,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       "display" : "FRANCE"
     }]
   }],
-  "packageId" : "ans.fhir.fr.[code]",
+  "packageId" : "ans.fhir.fr.tdmi",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -231,7 +267,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       },
       {
         "url" : "value",
-        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/[code]/history.html"
+        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -538,7 +574,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       },
       {
         "url" : "value",
-        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/[code]/history.html"
+        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -707,114 +743,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
-    "resource" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/competence-code-system"
-      },
-      "name" : "Compétences CodeSystem",
-      "description" : "Compétences des professionnels de santé.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EyeColor"
-      },
-      "name" : "EyeColor",
-      "description" : "Eye color extension",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/EyeColorVS"
-      },
-      "name" : "EyeColor Value Set",
-      "description" : "Different eye colors.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/frpatient-exemple"
-      },
-      "name" : "frpatient-exemple",
-      "description" : "Exemple d'un patient français",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/fr-patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/MeltingPotVS"
-      },
-      "name" : "Melting Pot Value Set",
-      "description" : "Melting Pot Value Set.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ModifiedAdministrativeGender"
-      },
-      "name" : "ModifiedAdministrativeGender",
-      "description" : "AdministrativeGender without unknown code",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-patient"
-      },
-      "name" : "Patient français",
-      "description" : "Description du patient français",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TypeCarteVS"
-      },
-      "name" : "Type Carte Value Set",
-      "description" : "Type Carte Value Set.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/type-carte-code-system"
-      },
-      "name" : "Type de carte",
-      "description" : "Type de carte professionnelle et personnelle.",
-      "exampleBoolean" : false
-    }],
     "page" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
@@ -838,17 +766,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "valueUrl" : "specifications_fonctionnelles.html"
         }],
         "nameUrl" : "specifications_fonctionnelles.html",
-        "title" : "Specifications Fonctionnelles",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "sf1.html"
-          }],
-          "nameUrl" : "sf1.html",
-          "title" : "Vue d'ensemble",
-          "generation" : "markdown"
-        }]
+        "title" : "Volume 1 - Etude fonctionnelle",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
@@ -907,21 +826,30 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "change-log.html"
-        }],
-        "nameUrl" : "change-log.html",
-        "title" : "Historique des versions",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "autres_ressources.html"
         }],
         "nameUrl" : "autres_ressources.html",
         "title" : "Autres Ressources",
         "generation" : "markdown",
         "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "norme_standard.html"
+          }],
+          "nameUrl" : "norme_standard.html",
+          "title" : "Normes et Standards",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "glossaire.html"
+          }],
+          "nameUrl" : "glossaire.html",
+          "title" : "Glossaire",
+          "generation" : "markdown"
+        },
+        {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "securite.html"
@@ -939,6 +867,15 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "title" : "Téléchargements et usages",
           "generation" : "markdown"
         }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "change-log.html"
+        }],
+        "nameUrl" : "change-log.html",
+        "title" : "Historique des versions",
+        "generation" : "markdown"
       }]
     },
     "parameter" : [{

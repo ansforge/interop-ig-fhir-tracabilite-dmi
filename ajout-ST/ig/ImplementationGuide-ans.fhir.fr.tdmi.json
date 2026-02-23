@@ -1,16 +1,16 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "ans.fhir.fr.[code]",
+  "id" : "ans.fhir.fr.tdmi",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.[code]</b></p><a name=\"ans.fhir.fr.[code]\"> </a><a name=\"hcans.fhir.fr.[code]\"> </a><h2>ExampleIG</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/[code]/ImplementationGuide/ans.fhir.fr.[code]</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.tdmi</b></p><a name=\"ans.fhir.fr.tdmi\"> </a><a name=\"hcans.fhir.fr.tdmi\"> </a><h2>TDMI</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi</pre></div>"
   },
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/[code]/ImplementationGuide/ans.fhir.fr.[code]",
-  "version" : "0.1.0",
-  "name" : "ExampleIG",
-  "title" : "ANS IG Example",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi",
+  "version" : "3.0.0",
+  "name" : "TDMI",
+  "title" : "Traçabilité des Dispositifs Médicaux Implantables",
   "status" : "draft",
-  "date" : "2026-02-20T12:56:59+00:00",
+  "date" : "2026-02-23T09:39:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -26,7 +26,7 @@
       "display" : "FRANCE"
     }]
   }],
-  "packageId" : "ans.fhir.fr.[code]",
+  "packageId" : "ans.fhir.fr.tdmi",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -178,7 +178,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/[code]/history.html"
+        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -485,7 +485,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/[code]/history.html"
+        "valueString" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -654,114 +654,6 @@
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
-    "resource" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/competence-code-system"
-      },
-      "name" : "Compétences CodeSystem",
-      "description" : "Compétences des professionnels de santé.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EyeColor"
-      },
-      "name" : "EyeColor",
-      "description" : "Eye color extension",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/EyeColorVS"
-      },
-      "name" : "EyeColor Value Set",
-      "description" : "Different eye colors.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/frpatient-exemple"
-      },
-      "name" : "frpatient-exemple",
-      "description" : "Exemple d'un patient français",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/fr-patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/MeltingPotVS"
-      },
-      "name" : "Melting Pot Value Set",
-      "description" : "Melting Pot Value Set.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ModifiedAdministrativeGender"
-      },
-      "name" : "ModifiedAdministrativeGender",
-      "description" : "AdministrativeGender without unknown code",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-patient"
-      },
-      "name" : "Patient français",
-      "description" : "Description du patient français",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TypeCarteVS"
-      },
-      "name" : "Type Carte Value Set",
-      "description" : "Type Carte Value Set.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/type-carte-code-system"
-      },
-      "name" : "Type de carte",
-      "description" : "Type de carte professionnelle et personnelle.",
-      "exampleBoolean" : false
-    }],
     "page" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
@@ -785,17 +677,8 @@
           "valueUrl" : "specifications_fonctionnelles.html"
         }],
         "nameUrl" : "specifications_fonctionnelles.html",
-        "title" : "Specifications Fonctionnelles",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "sf1.html"
-          }],
-          "nameUrl" : "sf1.html",
-          "title" : "Vue d'ensemble",
-          "generation" : "markdown"
-        }]
+        "title" : "Volume 1 - Etude fonctionnelle",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
@@ -854,21 +737,30 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "change-log.html"
-        }],
-        "nameUrl" : "change-log.html",
-        "title" : "Historique des versions",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "autres_ressources.html"
         }],
         "nameUrl" : "autres_ressources.html",
         "title" : "Autres Ressources",
         "generation" : "markdown",
         "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "norme_standard.html"
+          }],
+          "nameUrl" : "norme_standard.html",
+          "title" : "Normes et Standards",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "glossaire.html"
+          }],
+          "nameUrl" : "glossaire.html",
+          "title" : "Glossaire",
+          "generation" : "markdown"
+        },
+        {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "securite.html"
@@ -886,6 +778,15 @@
           "title" : "Téléchargements et usages",
           "generation" : "markdown"
         }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "change-log.html"
+        }],
+        "nameUrl" : "change-log.html",
+        "title" : "Historique des versions",
+        "generation" : "markdown"
       }]
     },
     "parameter" : [{

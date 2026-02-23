@@ -1,13 +1,9 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - ANS IG Example v0.1.0</title>
+    <title>Normes et Standards - Traçabilité des Dispositifs Médicaux Implantables v3.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"4.1"}
+    h3,h4,h5,h6{--heading-prefix:"4.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -66,9 +62,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">ANS IG Example</span>
+          <p><span style="font-size:12pt;font-weight:bold">Traçabilité des Dispositifs Médicaux Implantables</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">3.0.0 - ci-build
 
 
 
@@ -103,7 +99,7 @@
     <a href="index.html">Accueil</a>
   </li>
   <li>
-    <a href="index.html">Volume 1 - Etude fonctionnelle</a>
+    <a href="specifications_fonctionnelles.html">Volume 1 - Etude fonctionnelle</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2 - Détail des transactions
@@ -130,14 +126,17 @@
       </li>
     </ul>
   </li>
-  <li>
-    <a href="artifacts.html">Ressources de conformité</a>
-  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 3 - Annexes
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+      <li>
+        <a href="norme_standard.html">Normes et Standards</a>
+      </li>
+      <li>
+        <a href="glossaire.html">Glossaire</a>
+      </li>
       <li>
         <a href="securite.html">Sécurité</a>
       </li>
@@ -151,6 +150,9 @@
         <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
       </li>
     </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li>
     <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
@@ -170,11 +172,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='autres_ressources.html'><b>Autres Ressources</b></a></li><li><b>Normes et Standards</b></li>
 
           <span style="float:right;">
 
+            <a href="autres_ressources.html">&lt;prev</a> | 
+
             <a href="#bottom">bottom</a>
+
+          | <a href="glossaire.html">next&gt;</a>
 
           </span>
 
@@ -187,9 +193,16 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-<div style="counter-reset: section 10" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">ANS IG Example - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/[code]/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Traçabilité des Dispositifs Médicaux Implantables - version de développement local (intégration continue v3.0.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <h2>Normes et Standards</h2>
   
 
 
@@ -199,47 +212,19 @@
 
 
 
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="CodeSystem-type-carte-code-system.html">Narrative Content</a>
-  </li>
 
 
 
-  
-    <li>
-      <a href="CodeSystem-type-carte-code-system.xml.html">XML</a>
-    </li>
-  
 
-
-  
-    <li>
-      <a href="CodeSystem-type-carte-code-system.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="CodeSystem-type-carte-code-system.ttl.html">TTL</a>
-    </li>
-  
-
-
-
-</ul>
-
-
-  <a name="root"> </a>
-  <h2 id="root">: TypeCarteCS - Change History</h2>
-  <p>History of changes for type-carte-code-system .</p>
-
-  
-
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
+
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -247,8 +232,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
 <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
@@ -261,7 +244,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <span style="visibility:hidden">&lt;prev</span>
+                <a href="autres_ressources.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -269,7 +252,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <span style="visibility:hidden">next&gt;</span>
+                <a href="glossaire.html">next&gt;</a>
 
               </td>
             </tr>
@@ -279,12 +262,12 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.[code]#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 20, 2026 12:56+0000">2026-02-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 23, 2026 09:39+0000">2026-02-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/[code]/history.html">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html">Historique des versions</a>
 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
 
