@@ -1,5 +1,5 @@
 Profile: DMIOrganizationInterne
-Parent: FrOrganization
+Parent: fr-core-organization
 Id: dmi-organization-interne
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -9,7 +9,7 @@ Id: dmi-organization-interne
     DMIIdentifiantLocalFabricant named IdentifiantLocalFabricant 0..* and
     DMIOrganizationLocation named OrganizationLocation 0..*
 * type ^slicing.discriminator.type = #value
-* type ^slicing.discriminator.path = "id"
+* type ^slicing.discriminator.path = "coding.system"
 * type ^slicing.rules = #open
 * type contains
     TypeOrganizationInterne 1..1 and

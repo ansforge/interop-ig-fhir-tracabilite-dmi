@@ -2,16 +2,16 @@ Profile: DMIProcedure
 Parent: Procedure
 Id: dmi-procedure
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "type.text"
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     idIntervention 1..1 and
     numSejour 0..1
-* identifier[idIntervention].type.text 1..
-* identifier[idIntervention].type.text = "idIntervention" 
+* identifier[idIntervention].type 1..
+* identifier[idIntervention].type = DMIProcedureIdentifier#idIntervention" 
 * identifier[idIntervention].value 1..
-* identifier[numSejour].type.text 1..
-* identifier[numSejour].type.text = "numSejour" 
+* identifier[numSejour].type 1..
+* identifier[numSejour].type = DMIProcedureIdentifier#numSejour" 
 * identifier[numSejour].value 1..
 * performed[x] 1..
 * performed[x] only dateTime

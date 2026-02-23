@@ -11,7 +11,7 @@ Id: dmi-organization-ej
 * extension[IdentifiantLocalFabricant] only DMIIdentifiantLocalFabricant
 * identifier 1..
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "type.text"
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     IdNatStruct 1..1 and
@@ -19,7 +19,7 @@ Id: dmi-organization-ej
     numFINESS 0..1 and
     numeroTVAIntracommunautaire 0..1 and
     numeroSRN 0..*
-* identifier[numeroTVAIntracommunautaire].type.text 1..
+* identifier[numeroTVAIntracommunautaire].type 1..
 * identifier[numeroTVAIntracommunautaire].type = DMIOrganizationIdentifier#numeroTVAIntracommunautaire
 * identifier[numeroSRN].type 1..
 * identifier[numeroSRN].type = DMIOrganizationIdentifier#numeroSRN

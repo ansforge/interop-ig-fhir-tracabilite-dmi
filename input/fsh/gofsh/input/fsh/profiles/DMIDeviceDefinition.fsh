@@ -14,7 +14,7 @@ Id: dmi-devicedefinition
 * physicalCharacteristics.extension ^slicing.rules = #open
 * physicalCharacteristics.extension contains DMIInternalDiameter named InternalDiameter 0..1
 * property ^slicing.discriminator.type = #value
-* property ^slicing.discriminator.path = "type.text"
+* property ^slicing.discriminator.path = "type"
 * property ^slicing.rules = #open
 * property contains
     UsageUnique 0..1 and

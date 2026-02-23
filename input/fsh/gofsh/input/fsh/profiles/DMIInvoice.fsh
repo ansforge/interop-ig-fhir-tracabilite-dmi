@@ -7,7 +7,7 @@ Id: dmi-invoice
 * extension contains DMIFacture named Facture 0..1
 * identifier 1..
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "type.text"
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     refFacture 1..1 and
