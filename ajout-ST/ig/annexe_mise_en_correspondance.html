@@ -237,10 +237,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#flux-14--tracabiliteechecpose" id="markdown-toc-flux-14--tracabiliteechecpose">Flux 14 – TracabiliteEchecPose </a></li>
   <li><a href="#flux-16a--tracabilitereassortdmi" id="markdown-toc-flux-16a--tracabilitereassortdmi">Flux 16a – TracabiliteReassortDMI </a></li>
   <li><a href="#flux-18--tracabilitefacturationdmi" id="markdown-toc-flux-18--tracabilitefacturationdmi">Flux 18 – TracabiliteFacturationDMI </a></li>
-  <li><a href="#flux-23---recherchetraces" id="markdown-toc-flux-23---recherchetraces">Flux 23 - RechercheTraces</a></li>
-  <li><a href="#flux-24--reponserecherchetraces" id="markdown-toc-flux-24--reponserecherchetraces">Flux 24 – ReponseRechercheTraces</a></li>
-  <li><a href="#flux-25--consultertrace" id="markdown-toc-flux-25--consultertrace">Flux 25 – ConsulterTrace</a></li>
-  <li><a href="#flux-26--reponseconsultertrace" id="markdown-toc-flux-26--reponseconsultertrace">Flux 26 – ReponseConsulterTrace</a></li>
 </ul>
 
 </div>
@@ -1380,137 +1376,112 @@ flux 11</p>
 
 <h3 id="flux-15--tracabilitepose">Flux 15 -TracabilitePose</h3>
 
-<p>Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :</p>
+<p>Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes
+Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :</p>
 
-<table class="grid">
-  <thead>
-    <tr>
-      <th colspan="2">Éléments métier</th>
-      <th colspan="2">Éléments FHIR</th>
-    </tr>
-    <tr>
-      <th>Nom classes</th>
-      <th>Nom attributs</th>
-      <th>Ressource</th>
-      <th>Élément</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Trace [1..1]</td>
-      <td>Cf <a href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
-      <td>Cf <a href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
-      <td>Cf <a href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
-    </tr>
-    <tr>
-      <td>SourceTrace [1..1]</td>
-      <td>Cf Tableau Flux 22</td>
-      <td>Cf Tableau Flux 22</td>
-      <td>Cf Tableau Flux 22</td>
-    </tr>
-    <tr>
-      <td>Événement [1..1]</td>
-      <td>Cf Tableau Flux 22</td>
-      <td>Cf Tableau Flux 22</td>
-      <td>Cf Tableau Flux 22</td>
-    </tr>
-    <tr>
-      <td>ActeurEvenement [0..2]</td>
-      <td>Cf Tableau Flux 22</td>
-      <td>Cf Tableau Flux 22</td>
-      <td>Cf Tableau Flux 22</td>
-    </tr>
-    <tr>
-      <td>ObjetEvenement [0..*]</td>
-      <td>type [0..1] Code</td>
-      <td>AuditEvent</td>
-      <td>entity.type [0..1] Coding</td>
-    </tr>
-    <tr>
-      <td>ObjetEvenement [0..*]</td>
-      <td>Contenu [0..1] ObjetBinaire (Intervention médicale)</td>
-      <td>AuditEvent</td>
-      <td>entity.what [0..1] Reference (Procedure)</td>
-    </tr>
-    <tr>
-      <td>InterventionMedicale [1..1]</td>
-      <td>idIntervention [1..1] Identifiant</td>
-      <td>Procedure</td>
-      <td>identifier [0..*] Identifier</td>
-    </tr>
-    <tr>
-      <td>InterventionMedicale [1..1]</td>
-      <td>numSejour [0..1] Identifiant</td>
-      <td>Procedure</td>
-      <td>identifier [0..*] Identifier</td>
-    </tr>
-    <tr>
-      <td>InterventionMedicale [1..1]</td>
-      <td>typeIntervention [0..1] Code</td>
-      <td>Procedure</td>
-      <td>category [0..1] CodeableConcept</td>
-    </tr>
-    <tr>
-      <td>InterventionMedicale [1..1]</td>
-      <td>dateIntervention [1..1] DateHeure</td>
-      <td>Procedure</td>
-      <td>performedDateTime [0..1] dateTime</td>
-    </tr>
-    <tr>
-      <td>InterventionMedicale [1..1]</td>
-      <td>emplacementDMI [1..1] Texte</td>
-      <td>Procedure</td>
-      <td>bodySite [0..*] CodeableConcept</td>
-    </tr>
-    <tr>
-      <td>InterventionMedicale [1..1]</td>
-      <td>poseConforme [1..1] Boolean</td>
-      <td>Procedure</td>
-      <td>complication [0..*] CodeableConcept</td>
-    </tr>
-    <tr>
-      <td>InterventionMedicale [1..1]</td>
-      <td>motifEchec [0..1] Texte</td>
-      <td>Procedure</td>
-      <td>complication [0..*] CodeableConcept</td>
-    </tr>
-    <tr>
-      <td>InterventionMedicale [1..1]</td>
-      <td>metadonnee [1..1] Metadonnee</td>
-      <td>Procedure</td>
-      <td>meta [0..1] Meta</td>
-    </tr>
-    <tr>
-      <td>InterventionMedicale [1..1]</td>
-      <td>Professionnel [1..1]</td>
-      <td>Procedure</td>
-      <td>performer.actor [1..1] Reference (Practitioner | PractitionerRole)</td>
-    </tr>
-    <tr>
-      <td>InterventionMedicale [1..1]</td>
-      <td>OrganisationInterne [1..1]</td>
-      <td>Procedure</td>
-      <td>performer.onBehalfOf [0..1] Reference (Organization)</td>
-    </tr>
-    <tr>
-      <td>InterventionMedicale [1..1]</td>
-      <td>DispositifMedical [1..1]</td>
-      <td>Procedure</td>
-      <td>focalDevice.manipulated [1..1] Reference (Device)</td>
-    </tr>
-    <tr>
-      <td>ObjetEvenement [0..*]</td>
-      <td>type [0..1] Code</td>
-      <td>AuditEvent</td>
-      <td>entity.type [0..1] Coding</td>
-    </tr>
-    <tr>
-      <td>ObjetEvenement [0..*]</td>
-      <td>Contenu [0..1] ObjetBinaire (contenu non structuré)</td>
-      <td>AuditEvent</td>
-      <td>entity.detail.valueBase64Binary [1..1]</td>
-    </tr>
-  </tbody>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 20%" />
+<col style="width: 18%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: left;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire Le contenu de l’ObjetEvenement est une intervention
+médicale. Cet élément est décrit dans une partie spécifique « InterventionMedicale ».</td>
+<td style="text-align: center;">entity[0..*].what [0..1] Reference (Procedure)</td>
+</tr>
+<tr>
+<td rowspan="11" style="text-align: left;">InterventionMedicale
+[1..1]</td>
+<td style="text-align: left;">idIntervention : [1..1] Identifiant</td>
+<td rowspan="11" style="text-align: left;">Procedure (Pour l’élément InterventionMedicale on va créer une ressource Procedure suivant le profil DMI_Procedure)</td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">numSejour : [0..1] Identifiant</td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">typeIntervention : [0..1] Code</td>
+<td style="text-align: center;">category [0..1] CodeableConcept</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateIntervention : [1..1] DateHeure</td>
+<td style="text-align: center;">performedDateTime [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">emplacementDMI : [1..1] Texte</td>
+<td style="text-align: center;">bodySite [0..*] CodeableConcept</td>
+</tr>
+<tr>
+<td style="text-align: left;">poseConforme : [1..1] Boolean</td>
+<td rowspan="2" style="text-align: center;">Complication [0..*]
+CodeableConcept</td>
+</tr>
+<tr>
+<td style="text-align: left;">motifEchec : [0..1] Texte</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Professionnel : [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrganisationInterne : [1..1]</td>
+<td style="text-align: center;">performer [0..*].onBehalfOf Reference (Organization)</td>
+</tr>
+<tr>
+<td style="text-align: left;">DispositifMedical : [1.1]</td>
+<td style="text-align: center;"><p>focalDevice[0..*].manipulated [1..1] Reference</p>
+<p>(Device)</p></td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;">Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de l’intervention médicale)</td>
+<td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
+</tr>
+</tbody>
 </table>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux 15</p>
@@ -1533,221 +1504,315 @@ flux 11</p>
 
 <h3 id="flux-18--tracabilitefacturationdmi">Flux 18 – TracabiliteFacturationDMI </h3>
 
-<p>Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :</p>
+<p>Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes
+Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :</p>
 
-<table class="grid">
-  <thead>
-    <tr>
-      <th colspan="2">Éléments métier</th>
-      <th colspan="2">Éléments FHIR</th>
-    </tr>
-    <tr>
-      <th>Nom classes</th>
-      <th>Nom attributs</th>
-      <th>Ressource</th>
-      <th>Élément</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Trace [1..1]</td>
-      <td>Cf <a href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
-      <td>Cf Tableau Flux 22</td>
-      <td>Cf Tableau Flux 22</td>
-    </tr>
-    <tr><td>SourceTrace [1..1]</td><td>Cf Tableau Flux 22</td><td>Cf Tableau Flux 22</td><td>Cf Tableau Flux 22</td></tr>
-    <tr><td>Événement [1..1]</td><td>Cf Tableau Flux 22</td><td>Cf Tableau Flux 22</td><td>Cf Tableau Flux 22</td></tr>
-    <tr><td>ActeurEvenement [0..2]</td><td>Cf Tableau Flux 22</td><td>Cf Tableau Flux 22</td><td>Cf Tableau Flux 22</td></tr>
-    <tr>
-      <td>ObjetEvenement [0..*]</td>
-      <td>type [0..1] Code</td>
-      <td>AuditEvent</td>
-      <td>entity.type [0..1] Coding</td>
-    </tr>
-    <tr>
-      <td>ObjetEvenement [0..*]</td>
-      <td>Contenu [0..1] ObjetBinaire (Facture)</td>
-      <td>AuditEvent</td>
-      <td>entity.what [0..1] Reference (Invoice)</td>
-    </tr>
-    <tr><td>Facture [1..1]</td><td>refFacture [1..1] Identifiant</td><td>Invoice</td><td>identifier [0..*] Identifier</td></tr>
-    <tr><td>Facture [1..1]</td><td>facture [0..1] ObjetBinaire</td><td>Invoice</td><td>Extension : DMI_Facture [0..1] Reference (Binary)</td></tr>
-    <tr><td>Facture [1..1]</td><td>typeFacture [0..1] Code</td><td>Invoice</td><td>type [0..1] CodeableConcept</td></tr>
-    <tr><td>Facture [1..1]</td><td>refCommande [1..1] Identifiant</td><td>Invoice</td><td>identifier [0..*] Identifier</td></tr>
-    <tr><td>Facture [1..1]</td><td>dateEmission [0..1] Date</td><td>Invoice</td><td>date [0..1] dateTime</td></tr>
-    <tr><td>Facture [1..1]</td><td>instructionPaiement [0..1] Texte</td><td>Invoice</td><td>paymentTerms [0..1] markdown</td></tr>
-    <tr><td>Facture [1..1]</td><td>montantTotal [0..1] Numérique</td><td>Invoice</td><td>totalNet [0..1] Money</td></tr>
-    <tr><td>Facture [1..1]</td><td>Devise [0..1] code</td><td>Invoice</td><td>totalNet.currency [0..1] code</td></tr>
-    <tr><td>Facture [1..1]</td><td>metadonnee [1..1] Metadonnee</td><td>Invoice</td><td>meta [0..1] Meta</td></tr>
-    <tr><td>Facture [1..1]</td><td>Ligne [1..*]</td><td>Invoice</td><td>Voir section “Ligne”</td></tr>
-    <tr><td>Ligne [1..*]</td><td>dateAchat [1..1] Date</td><td>Invoice</td><td>lineItem.chargeItemReference.occurrenceDateTime [0..1]</td></tr>
-    <tr><td>Ligne [1..*]</td><td>metadonnee [1..1] Metadonnee</td><td>Invoice</td><td>meta [0..1] Meta</td></tr>
-    <tr><td>Ligne [1..*]</td><td>DispositifMedical [1..1]</td><td>Invoice</td><td>lineItem.chargeItem.chargeItem.productReference [0..1]</td></tr>
-    <tr><td>ObjetEvenement [0..*]</td><td>type [0..1] Code</td><td>AuditEvent</td><td>entity.type [0..1] Coding</td></tr>
-    <tr><td>ObjetEvenement [0..*]</td><td>Contenu [0..1] ObjetBinaire (non structuré)</td><td>AuditEvent</td><td>entity.detail.valueBase64Binary [1..1]</td></tr>
-  </tbody>
+<table style="width:95%;">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 26%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: left;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire (Le contenu de l’ObjetEvenement est une facture. Cet
+élément est décrit dans une partie spécifique « Facture ».)</td> <td style="text-align: center;">entity[0..*].what [0..1] Reference
+(Invoice)</td>
+</tr>
+<tr>
+<td rowspan="10" style="text-align: left;">Facture [1..1]</td>
+<td style="text-align: left;">refFacture : [1..1] Identifiant</td>
+<td rowspan="10" style="text-align: left;">Invoice (Pour l’élémentFacture on va créer une ressource Invoice suivant le profil DMI_Invoice)</td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">facture : [0..1] ObjetBinaire</td>
+<td style="text-align: center;"><em>Extension : DMI_Facture [0..1]
+Reference (Binary)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">typeFacture : [0..1] Code</td>
+<td style="text-align: center;">type [0..1] CodeableConcept</td>
+</tr>
+<tr>
+<td style="text-align: left;">refCommande : [1..1] Identifiant</td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateEmission : [0..1] Date</td>
+<td style="text-align: center;">date [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">instructionPaiement : [0..1] Texte</td>
+<td style="text-align: center;">paymentTerms [0..1] markdown</td>
+</tr>
+<tr>
+<td style="text-align: left;">montantTotal : [0..1] Numerique</td>
+<td style="text-align: center;">totalNet [0..1] Money</td>
+</tr>
+<tr>
+<td style="text-align: left;">Devise [0..1] code</td>
+<td style="text-align: center;">totalNet[0..1].currency [0..1] code</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ligne : [1.*] 
+<td style="text-align: center;">L’élément ligne est décrit dans une
+partie spécifique “Ligne”</td>
+&lt;/tr&gt;
+<tr>
+<td rowspan="3" style="text-align: left;">Ligne [1..*]</td>
+<td style="text-align: left;">dateAchat : [1..1] Date</td>
+<td rowspan="3" style="text-align: center;">Invoice</td>
+<td style="text-align: center;">lineItem[0..*].chargeItemReference[1..1].occurenceDateTime[0..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;">DispositifMedical : [1..1]</td>
+<td style="text-align: center;">lineItem [0..*].chargeItem [1..1].chargeItem.productReference [0..1]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;">Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la facture)</td>
+<td style="text-align: center;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
+</tr>
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux 18</p>
+
+### Flux 23 - RechercheTraces
+
+Ce flux intervient lorsque le consommateur effectue une recherche de
+traces d’un ou de plusieurs DMI se trouvant dans l’établissement de
+santé auprès du gestionnaire de traçabilité en précisant les critères de
+sa recherche.
+
+Il correspond au « Flux 4 -RechercheTraces » du volet « Traçabilité des
+évènements ».
+
+Ci-dessous les critères de recherches. Les critères apparaissant *en
+italique et en rouge* correspondent à des paramètres de recherche créés
+pour répondre au besoin :
+
+<table>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 11%" />
+<col style="width: 23%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2" style="text-align: center;">Critère de recherche
+SFE</th>
+<th colspan="3" style="text-align: center;">Paramètre de recherche</th>
+</tr>
+<tr>
+<th style="text-align: center;">Ressource</th>
+<th style="text-align: center;">Paramètre identifié dans le volet
+« Généricisation : Traçabilité des évènements  »</th>
+<th style="text-align: center;">Paramètre supplémentaire identifié par
+ce volet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Evenement/typeEvenement</td>
+<td rowspan="8" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">type : token</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Evenement/declaration</td>
+<td style="text-align: center;">date : date</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Evenement/sousTypeEvenement</td>
+<td style="text-align: center;">subtype : token</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td rowspan="4" style="text-align: center;">ActeurEvenement/identifiant</td>
+<td style="text-align: center;">agent : reference</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">agent-name : string</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">altId : token</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">patient : reference</td>
+</tr>
+<tr>
+<td style="text-align: center;">ActeurEvenement/role</td>
+<td style="text-align: center;">agent-role : token</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/support/IUD-ID</td>
+<td rowspan="6" style="text-align: center;">Device</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Device-udi-di : String</td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/support/identifiantHRF</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><table style="width:15%;">
+<colgroup>
+<col style="width: 0%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Device-udi-carrier</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
 </table>
-
-<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux 15</p>
-
-<h3 id="flux-23---recherchetraces">Flux 23 - RechercheTraces</h3>
-
-<p>Ce flux intervient lorsque le consommateur effectue une recherche de traces d’un ou de plusieurs DMI se trouvant dans l’établissement de santé auprès du gestionnaire de traçabilité en précisant les critères de sa recherche.</p>
-
-<p>Il correspond au « Flux 4 -RechercheTraces » du volet « Traçabilité des évènements ».</p>
-
-<p>Ci-dessous les critères de recherches. Les critères apparaissant <em>en italique et en rouge</em> correspondent à des paramètres de recherche créés pour répondre au besoin :</p>
-
-<table class="grid">
-  <thead>
-    <tr>
-      <th>Critère de recherche SFE</th>
-      <th>Ressource</th>
-      <th>Paramètre identifié</th>
-      <th>Paramètre supplémentaire</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Evenement/typeEvenement</td>
-      <td>AuditEvent</td>
-      <td>type : token</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Evenement/declaration</td>
-      <td>AuditEvent</td>
-      <td>date : date</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Evenement/sousTypeEvenement</td>
-      <td>AuditEvent</td>
-      <td>subtype : token</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>ActeurEvenement/identifiant</td>
-      <td>AuditEvent</td>
-      <td>agent : reference</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>ActeurEvenement/identifiant</td>
-      <td>AuditEvent</td>
-      <td>agent-name : string</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>ActeurEvenement/identifiant</td>
-      <td>AuditEvent</td>
-      <td>altId : token</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>ActeurEvenement/identifiant</td>
-      <td>AuditEvent</td>
-      <td></td>
-      <td>patient : reference</td>
-    </tr>
-    <tr>
-      <td>ActeurEvenement/role</td>
-      <td>AuditEvent</td>
-      <td>agent-role : token</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>DispositifMedical/support/IUD-ID</td>
-      <td>Device</td>
-      <td></td>
-      <td>Device-udi-di : String</td>
-    </tr>
-    <tr>
-      <td>DispositifMedical/support/identifiantHRF</td>
-      <td>Device</td>
-      <td></td>
-      <td>Device-udi-carrier : String</td>
-    </tr>
-    <tr>
-      <td>DispositifMedical/referenceFabricant</td>
-      <td>Device</td>
-      <td></td>
-      <td>manufacturer : String</td>
-    </tr>
-    <tr>
-      <td>DispositifMedical/support/IUD-IPNumLot</td>
-      <td>Device</td>
-      <td></td>
-      <td>DMI_Device_lotNumber : string</td>
-    </tr>
-    <tr>
-      <td>DispositifMedical/support/IUD-IPNumSerie</td>
-      <td>Device</td>
-      <td></td>
-      <td>DMI_Device_serialNumber : string</td>
-    </tr>
-    <tr>
-      <td>DispositifMedical/codeEMDN</td>
-      <td>Device</td>
-      <td></td>
-      <td>DMI_Device_definition-type : token</td>
-    </tr>
-    <tr>
-      <td>Patient/identite/matriculeINS</td>
-      <td>Patient</td>
-      <td></td>
-      <td>DMI_Patient_INS : token</td>
-    </tr>
-
-  </tbody>
+<p>: String</p></td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/referenceFabricant</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">manufacturer: String</td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/support/IUD-IPNumLot</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>DMI_Device_lotNumber :
+string</em></td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/support/IUD-IPNumSerie</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>DMI_Device_serialNumber :
+string</em></td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/codeEMDN</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>DMI_Device_definition-type :
+token</em></td>
+</tr>
+<tr>
+<td style="text-align: center;">Patient/identite/matriculeINS</td>
+<td style="text-align: center;">Patient</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>DMI_Patient_INS : token</em></td>
+</tr>
+</tbody>
 </table>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standards du flux 23</p>
 
-<h3 id="flux-24--reponserecherchetraces">Flux 24 – ReponseRechercheTraces</h3>
+### Flux 24 – ReponseRechercheTraces 
 
-<p>Il s’agit du résultat de la recherche de traces retourné par le gestionnaire de traçabilté. La recherche de traces retourne une ressource Bundle de type SearchSet contenant les ressources AuditEvent correspondant aux critères de recherche fournis par le consommateur.</p>
+Il s’agit du résultat de la recherche de traces retourné par le
+gestionnaire de traçabilté. La recherche de traces retourne une
+ressource Bundle de type SearchSet contenant les ressources AuditEvent
+correspondant aux critères de recherche fournis par le consommateur.
 
-<p>Il correspond au « Flux 5 -ReponseRechercheTraces » du volet « Traçabilité des évènements ».</p>
+Il correspond au « Flux 5 -ReponseRechercheTraces » du volet
+« Traçabilité des évènements ».
 
-<h3 id="flux-25--consultertrace">Flux 25 – ConsulterTrace</h3>
+### Flux 25 – ConsulterTrace 
 
-<p>Ce flux intervient lorsque le consommateur demande à consulter la trace d’un évènement auprès du gestionnaire de traçabilité.</p>
+Ce flux intervient lorsque le consommateur demande à consulter la trace
+d’un évènement auprès du gestionnaire de traçabilité.
 
-<p>Il correspond au « Flux 2 -ConsultationTrace » du volet « Traçabilité des évènements » :</p>
+Il correspond au « Flux 2 -ConsultationTrace » du volet « Traçabilité
+des évènements » :
 
-<table class="grid">
-  <thead>
-    <tr>
-      <th colspan="2">Éléments métier</th>
-      <th colspan="2">Éléments FHIR</th>
-    </tr>
-    <tr>
-      <th>Nom classes</th>
-      <th>Nom attributs</th>
-      <th>Ressource</th>
-      <th>Élément</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Trace</td>
-      <td>identifiant [0..1] : Identifiant</td>
-      <td>AuditEvent</td>
-      <td>id [1..1] id</td>
-    </tr>
-  </tbody>
+<table style="width:89%;">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 26%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace</td>
+<td style="text-align: left;">identifiant [0..1] : Identifiant</td>
+<td style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">id [1..1] id</td>
+</tr>
+</tbody>
 </table>
 
-<p style="text-align:center;">Mise en correspondance des contenus métiers/standards du flux 25</p>
+### Flux 26 – ReponseConsulterTrace
 
-<h3 id="flux-26--reponseconsultertrace">Flux 26 – ReponseConsulterTrace</h3>
+Il s’agit du résultat de la demande de consultation de la trace d’un évènement retourné par le gestionnaire de traçabilité. Le corps de la réponse est la ressource AuditEvent identifiée lors de la demande.
 
-<p>Il s’agit du résultat de la demande de consultation de la trace d’un évènement retourné par le gestionnaire de traçabilité. Le corps de la réponse est la ressource AuditEvent identifiée lors de la demande.</p>
+Il correspond au « Flux 3 - ReponseConsultationTrace » du volet
+« Traçabilité des évènements ».
 
-<p>Il correspond au « Flux 3 - ReponseConsultationTrace » du volet
-« Traçabilité des évènements ».</p>
-
+</td></tr></tbody></table>
 
 
 
@@ -1789,7 +1854,7 @@ flux 11</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 18:53+0000">2026-02-24</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 20:40+0000">2026-02-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
