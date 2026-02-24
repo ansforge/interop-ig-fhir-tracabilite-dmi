@@ -117,9 +117,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <tr>
 <td style="text-align: left;">Trace [1..1]</td>
 <td rowspan="4" style="text-align: left;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td colspan="2" rowspan="4" style="text-align: center;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceTrace [1..1]</td>
@@ -137,16 +137,13 @@ href="#flux-22-transmissiontrace">Tableau 2</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire <a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire (Le contenu de l’ObjetEvenement est une demande. Cet élément est décrit dans une partie spécifique « Demande »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
 </tr>
 <tr>
 <td rowspan="2" style="text-align: left;">Demande [1..1]</td>
 <td style="text-align: left;">EntêteDemande [1..1]</td>
-<td rowspan="2" style="text-align: center;">Bundle<a href="#fn2"
-class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></td>
+<td rowspan="2" style="text-align: center;">Bundle (Suit le profil DMI_BundleRequest)</td>
 <td rowspan="2" style="text-align: center;">Entry [0..*] BackboneElement</td>
 </tr>
 <tr>
@@ -155,9 +152,7 @@ role="doc-noteref"><sup>2</sup></a></td>
 <tr>
 <td rowspan="10" style="text-align: left;">EntêteDemande [1..1]</td>
 <td style="text-align: left;">reference : [1..1] Identifiant</td>
-<td rowspan="10" style="text-align: center;">SupplyRequest<a href="#fn3"
-class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></td>
+<td rowspan="10" style="text-align: center;">SupplyRequest (Suit le profil DMI_SupplyRequestEnteteDemande)</td>
 <td style="text-align: center;">identifier [0..*] Identifier</td>
 </tr>
 <tr>
@@ -190,23 +185,17 @@ role="doc-noteref"><sup>3</sup></a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;">Professionnel [1..1]<a href="#fn4"
-class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a></td>
+<td style="text-align: left;">Professionnel [1..1]</td>
 <td style="text-align: center;">Requester[0..1] Reference(Practitioner)</td>
 </tr>
 <tr>
-<td style="text-align: left;">OrganisationInterne [1..1]<a href="#fn5"
-class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a></td>
+<td style="text-align: left;">OrganisationInterne [1..1]</td>
 <td style="text-align: center;">deliverTo[0..1]Reference (Organization)</td>
 </tr>
 <tr>
 <td rowspan="7" style="text-align: left;">LigneDemande [1..*]</td>
 <td style="text-align: left;">IdLigneAssocieeEntete [0..1]</td>
-<td rowspan="7" style="text-align: center;">DeviceRequest<a href="#fn6"
-class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a></td>
+<td rowspan="7" style="text-align: center;">DeviceRequest (Pour chaque occurrence de l’élément LigneDemande on va créer une ressource DeviceRequest suivant le profil DMI_DeviceRequest)</td>
 <td style="text-align: center;">groupIdentifier [0..1] Identifier</td>
 </tr>
 <tr>
@@ -214,9 +203,7 @@ role="doc-noteref"><sup>6</sup></a></td>
 <td style="text-align: left;">basedOn [0..1] Reference (SupplyRequest)</td>
 </tr>
 <tr>
-<td style="text-align: left;">DispositifMedical [1..1]<a href="#fn7"
-class="footnote-ref" id="fnref7"
-role="doc-noteref"><sup>7</sup></a></td>
+<td style="text-align: left;">DispositifMedical [1..1]</td>
 <td style="text-align: center;">Subject [1..1] Reference (<a
 href="http://hl7.org/fhir/patient.html">Patient</a> | <a
 href="http://hl7.org/fhir/group.html">Group</a> | <a
@@ -247,37 +234,11 @@ href="http://hl7.org/fhir/device.html">Device</a>)</td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1] :</strong> ObjetBinaire<a href="#fn8" class="footnote-ref" id="fnref8"
-role="doc-noteref"><sup>8</sup></a></td>
+<td style="text-align: left;"><strong>Contenu [0..1] :</strong> ObjetBinaire Le contenu de l’ObjetEvenement est le contenu non structuré de la demande</td>
 <td style="text-align: left;">entity[0..*].detail [0..1].valueBase64Binary [1..1] base64Binary </td>
 </tr>
 </tbody>
 </table>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Le contenu de l’ObjetEvenement est une demande. Cet élément est décrit dans une partie spécifique « Demande ».<a
-href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Suit le profil DMI_BundleRequest<a href="#fnref2"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Suit le profil DMI_SupplyRequestEnteteDemande<a
-href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Le détail du professionnel est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.11 Professionnel </a>».<a href="#fnref4" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Le détail de l’organisationInterne est décrit dans une
-partie spécifique « <a href="#classe-dispositifmedical">7.5
-OrganisationInterne </a>» .<a href="#fnref5" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Pour chaque occurrence de l’élément LigneDemande on va créer une ressource DeviceRequest suivant le profil DMI_DeviceRequest<a
-href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Le détail du dispositif médical est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.1
-DispositifMedical </a>» .<a href="#fnref7" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la demande.<a href="#fnref8" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux 1c</p>
 
@@ -308,9 +269,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <tr>
 <td style="text-align: left;">Trace [1..1]</td>
 <td rowspan="4" style="text-align: left;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau FLux 22</a></td>
 <td colspan="2" rowspan="4" style="text-align: center;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau FLux 22</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceTrace [1..1]</td>
@@ -328,18 +289,14 @@ href="#flux-22-transmissiontrace">Tableau 2</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1]</strong>
-ObjetBinaire <a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: left;"><strong>Contenu [0..1] (Le contenu de l’ObjetEvenement est une « Reponse ». Cet élément est décrit dans une partie spécifique « Reponse »)</td>
 <td style="text-align: left;">entity[0..*].what [0..1] Reference
 (Bundle)</td>
 </tr>
 <tr>
 <td rowspan="2" style="text-align: left;">Reponse [1..1]</td>
 <td style="text-align: left;">EntêteReponse [1..1]</td>
-<td rowspan="2" style="text-align: left;">Bundle<a href="#fn2"
-class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></td>
+<td rowspan="2" style="text-align: left;">Bundle (Suit le profil DMI_BundleRequest)</td>
 <td rowspan="2" style="text-align: left;">Entry [0..*]
 BackboneElement</td>
 </tr>
@@ -349,9 +306,7 @@ BackboneElement</td>
 <tr>
 <td rowspan="6" style="text-align: left;">EntêteReponse [1..1]</td>
 <td style="text-align: left;">reference : [1..1] Identifiant</td>
-<td rowspan="6" style="text-align: left;">SupplyRequest<a href="#fn3"
-class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></td>
+<td rowspan="6" style="text-align: left;">SupplyRequest (Suit le profil DMI_SupplyRequestEnteteReponse)</td>
 <td style="text-align: left;">identifier [0..*] Identifier</td>
 </tr>
 <tr>
@@ -380,9 +335,7 @@ CodeableConcept</p>
 <td rowspan="7" style="text-align: left;">DetailReponse [1..*]</td>
 <td style="text-align: left;">IdDetailReponseAssocieEnteteReponse
 [0..1]</td>
-<td rowspan="7" style="text-align: center;">DeviceRequest<a href="#fn4"
-class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a></td>
+<td rowspan="7" style="text-align: center;">DeviceRequest (Pour chaque occurrence de l’élément DetailReponse on va créer une ressource DeviceRequest suivant le profil DMI_DeviceRequest)</td>
 <td style="text-align: left;">groupIdentifier [0..1] Identifier</td>
 </tr>
 <tr>
@@ -407,9 +360,7 @@ role="doc-noteref"><sup>4</sup></a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;">DispositifMedical [1..1]<a href="#fn5"
-class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a></td>
+<td style="text-align: left;">DispositifMedical [1..1]</td>
 <td style="text-align: center;">Subject [1..1] Reference (<a
 href="http://hl7.org/fhir/patient.html">Patient</a> | <a
 href="http://hl7.org/fhir/group.html">Group</a> | <a
@@ -423,24 +374,11 @@ href="http://hl7.org/fhir/device.html">Device</a>)</td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] ObjetBinaire</strong><a href="#fn6" class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a></td>
+<td style="text-align: left;"><strong>Contenu : [0..1] ObjetBinaire</strong> (Le contenu de l’ObjetEvenement est le contenu non structuré de la « Reponse »)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary  [1..1] base64Binary </td>
 </tr>
 </tbody>
 </table>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Le contenu de l’ObjetEvenement est une « Reponse ». Cet élément est décrit dans une partie spécifique « Reponse ».<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Suit le profil DMI_BundleRequest<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Suit le profil DMI_SupplyRequestEnteteReponse<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Pour chaque occurrence de l’élément DetailReponse on va créer une ressource DeviceRequest suivant le profil DMI_DeviceRequest<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>La ligne est décrite dans une partie spécifique « <a href="#classe-dispositifmedical">7.1 DispositifMedical </a>» .<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la « Reponse ».<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
 2a</p>
@@ -472,9 +410,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace », précé
 <tr>
 <td style="text-align: left;">Trace [1..1]</td>
 <td rowspan="4" style="text-align: left;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau FLux 22</a></td>
 <td colspan="2" rowspan="4" style="text-align: center;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceTrace [1..1]</td>
@@ -492,16 +430,13 @@ href="#flux-22-transmissiontrace">Tableau 2</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] ObjetBinaire</strong><a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: left;"><strong>Contenu : [0..1] ObjetBinaire (Le contenu de l’ObjetEvenement est une commande. Cet élément est décrit dans une partie spécifique « Commande »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
 </tr>
 <tr>
 <td rowspan="2" style="text-align: left;">Commande [1..1]</td>
 <td style="text-align: left;">EntêteCommande [1..1]</td>
-<td rowspan="2" style="text-align: center;">Bundle<a href="#fn2"
-class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></td>
+<td rowspan="2" style="text-align: center;">Bundle (Suit le profil DMI_BundleRequest)</td>
 <td rowspan="2" style="text-align: center;">Entry [0..*] BackboneElement</td>
 </tr>
 <tr>
@@ -510,9 +445,7 @@ role="doc-noteref"><sup>2</sup></a></td>
 <tr>
 <td rowspan="8" style="text-align: left;">EntêteCommande [1..1]</td>
 <td style="text-align: left;">refCommande : [1..1] Identifiant</td>
-<td rowspan="8" style="text-align: center;">SupplyRequest<a href="#fn3"
-class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></td>
+<td rowspan="8" style="text-align: center;">SupplyRequest (Suit le profil DMI_SupplyRequestEnteteCommande)</td>
 <td style="text-align: center;">identifier [0..*] Identifier</td>
 </tr>
 <tr>
@@ -537,22 +470,17 @@ role="doc-noteref"><sup>3</sup></a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>OrganisationInterne [0..1]</strong> <a href="#fn4" class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a></td>
+<td style="text-align: left;"><strong>OrganisationInterne [0..1] </td>
 <td style="text-align: center;">deliverTo[0..1] Reference(Organization)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Professionnel [0..1]</strong><a
-href="#fn5" class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a></td>
+<td style="text-align: left;"><strong>Professionnel [0..1]></td>
 <td style="text-align: center;">Requester[0..1] Reference(Practitioner)</td>
 </tr>
 <tr>
 <td rowspan="7" style="text-align: left;">LigneCommande [1..*]</td>
 <td style="text-align: left;">IdLigneAssocieeEnteteCommande [0..1]</td>
-<td rowspan="7" style="text-align: center;">DeviceRequest<a href="#fn6"
-class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a></td>
+<td rowspan="7" style="text-align: center;">DeviceRequest (Pour chaque occurrence de l’élément LigneCommande on va créer une ressource DeviceRequest suivant le profil DMI_DeviceRequest)</td>
 <td style="text-align: center;">groupIdentifier [0..1] Identifier</td>
 </tr>
 <tr>
@@ -560,9 +488,7 @@ role="doc-noteref"><sup>6</sup></a></td>
 <td style="text-align: center;">basedOn [0..1] Reference (SupplyRequest)</td>
 </tr>
 <tr>
-<td style="text-align: left;">DispositifMedical [1..1]<a href="#fn7"
-class="footnote-ref" id="fnref7"
-role="doc-noteref"><sup>7</sup></a></td>
+<td style="text-align: left;">DispositifMedical [1..1]</td>
 <td style="text-align: center;">Subject [1..1] Reference (<a
 href="http://hl7.org/fhir/patient.html">Patient</a> | <a
 href="http://hl7.org/fhir/group.html">Group</a> | <a
@@ -570,7 +496,7 @@ href="http://hl7.org/fhir/location.html">Location</a> | <a
 href="http://hl7.org/fhir/device.html">Device</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;">TypeLigneCommande [1..1</td>
+<td style="text-align: left;">TypeLigneCommande [1..1]</td>
 <td style="text-align: center;">Intent [1..1] Code</td>
 </tr>
 <tr>
@@ -593,26 +519,11 @@ dateTime</td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1]:</strong> ObjetBinaire <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></td>
+<td style="text-align: left;"><strong>Contenu [0..1]:</strong> ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la commande)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1] base64Binary</td>
 </tr>
 </tbody>
 </table>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Le contenu de l’ObjetEvenement est une commande. Cet élément est décrit dans une partie spécifique « Commande ».<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Suit le profil DMI_BundleRequest<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Suit le profil DMI_SupplyRequestEnteteCommande<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Le détail de l’organisation interne est décrit dans une partie spécifique « 7.5 OrganisationInterne ».<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Le détail du professionnel est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.11 Professionnel </a>».<a href="#fnref5" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Pour chaque occurrence de l’élément LigneCommande on va créer une ressource DeviceRequest suivant le profil DMI_DeviceRequest<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Le détail du dipositif médical est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.1 DispositifMedical </a>».<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la commande.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
 27</p>
@@ -644,9 +555,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <tr>
 <td style="text-align: left;">Trace [1..1]</td>
 <td rowspan="4" style="text-align: left;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td colspan="2" rowspan="4" style="text-align: center;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceTrace [1..1]</td>
@@ -664,16 +575,13 @@ href="#flux-22-transmissiontrace">Tableau 2</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire</strong><a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire</strong> (Le contenu de l’ObjetEvenement est une livraison. Cet élément est décrit dans une partie spécifique « Livraison »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
 </tr>
 <tr>
 <td rowspan="2" style="text-align: left;">Livraison [1..1]</td>
 <td style="text-align: left;">EnteteLivraison [1..1]</td>
-<td rowspan="2" style="text-align: left;">Bundle<a href="#fn2"
-class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></td>
+<td rowspan="2" style="text-align: left;">Bundle (Suit le profil DMI_BundleDelivery)</td>
 <td rowspan="2" style="text-align: center;">Entry [0..*] BackboneElement</td>
 </tr>
 <tr>
@@ -682,9 +590,7 @@ role="doc-noteref"><sup>2</sup></a></td>
 <tr>
 <td rowspan="8" style="text-align: left;">EnteteLivraison [1..1]</td>
 <td style="text-align: left;">referenceCommande : [1..1] Identifiant</td>
-<td rowspan="8" style="text-align: left;">SupplyDelivery<a href="#fn3"
-class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></td>
+<td rowspan="8" style="text-align: left;">SupplyDelivery (Suit le profil DMI_SupplyDeliveryEntêteLivraison)</td>
 <td style="text-align: center;">basedOn [0..*] Reference (SupplyRequest)</td>
 </tr>
 <tr>
@@ -708,23 +614,18 @@ role="doc-noteref"><sup>3</sup></a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Professionnel [1..1]</strong><a
-href="#fn4" class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a></td>
+<td style="text-align: left;"><strong>Professionnel [1..1]</td>
 <td style="text-align: center;"><p>Receiver [0..*] Reference</p>
 <p>(Practitioner | PractitionerRole)</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>OrganisationInterne [1..1]</strong> <a href="#fn5" class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a></td>
+<td style="text-align: left;"><strong>OrganisationInterne [1..1]</strong></td>
 <td style="text-align: center;"><em>Extension : DMI_ReferenceOrganisationInterne[1..1]Reference (Organization)</em></td>
 </tr>
 <tr>
 <td rowspan="6" style="text-align: left;">LigneLivraison [1..*]</td>
 <td style="text-align: left;">ReferenceCommandeAssociee [1..1]</td>
-<td rowspan="6" style="text-align: center;">SupplyDelivery<a href="#fn6"
-class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a></td>
+<td rowspan="6" style="text-align: center;">SupplyDelivery (Pour chaque occurrence de l’élément LigneLivraison on va créer une ressource SupplyDelivery suivant le profil DMI_SupplyDeliveryLigne)</td>
 <td style="text-align: center;">basedOn[0..*] Reference (SupplyRequest)</td>
 </tr>
 <tr>
@@ -744,8 +645,7 @@ role="doc-noteref"><sup>6</sup></a></td>
 <td style="text-align: center;">text [0..1] Narrative</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..*]</strong><a href="#fn7" class="footnote-ref" id="fnref7"
-role="doc-noteref"><sup>7</sup></a></td>
+<td style="text-align: left;"><strong>DispositifMedical [1..*]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
 </tr>
@@ -756,28 +656,11 @@ role="doc-noteref"><sup>7</sup></a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : Objet binaire [0..1]</strong><a href="#fn8" class="footnote-ref" id="fnref8"
-role="doc-noteref"><sup>8</sup></a></td>
+<td style="text-align: left;"><strong>Contenu : Objet binaire [0..1] (Le contenu de l’ObjetEvenement est le contenu non structuré de la « Livraison »)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valuebase64Binary </td>
 </tr>
 </tbody>
 </table>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Le contenu de l’ObjetEvenement est une livraison. Cet élément est décrit dans une partie spécifique « Livraison ».<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Suit le profil DMI_BundleDelivery<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Suit le profil DMI_SupplyDeliveryEntêteLivraison<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Le détail du professionnel est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.11 Professionnel </a>».<a href="#fnref4" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Le détail de l’organisation interne est décrit dans une partie spécifique « 7.5 OrganisationInterne ».<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Pour chaque occurrence de l’élément LigneLivraison on va créer une ressource SupplyDelivery suivant le profil DMI_SupplyDeliveryLigne<a href="#fnref6" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Le détail du dispositif médical est décrit dans une partie spécifique « 7.1 DispositifMedical ».<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la « Livraison ».<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
 5</p>
@@ -814,9 +697,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <tr>
 <td style="text-align: left;">Trace [1..1]</td>
 <td rowspan="4" style="text-align: left;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td colspan="2" rowspan="4" style="text-align: center;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceTrace [1..1]</td>
@@ -834,34 +717,27 @@ href="#flux-22-transmissiontrace">Tableau 2</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1]ObjetBinaire</strong><a href="#fn1" class="footnote-ref"
-id="fnref1" role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: left;"><strong>Contenu : [0..1]ObjetBinaire</strong> (Le contenu de l’ObjetEvenement est l’ensemble des éléments Cet élément est décrit dans une partie spécifique « ReceptionUnitaire »)</td>
 <td style="text-align: left;">entity[0..*].what [0..1] Reference (SupplyDelivery)</td>
 </tr>
 <tr>
 <td rowspan="4" style="text-align: left;">ReceptionUnitaire [1..1]</td>
 <td style="text-align: left;">StatutReception [1..1]</td>
-<td rowspan="7" style="text-align: center;">SupplyDelivery<a href="#fn2"
-class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></td>
+<td rowspan="7" style="text-align: center;">SupplyDelivery (Suit le profil DMI_SupplyDeliveryReceptionUnitaire)</td>
 <td style="text-align: left;">Cet élément est décrit dans une partie spécifique « StatutReception ».</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Professionnel [1..1]</strong><a
-href="#fn3" class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></td>
+<td style="text-align: left;"><strong>Professionnel [1..1]</td>
 <td style="text-align: center;"><p>Receiver [0..*] Reference</p>
 <p>(Practitioner | PractitionerRole)</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>OrganisationInterne [1..1]</strong> <a href="#fn4" class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a></td>
+<td style="text-align: left;"><strong>OrganisationInterne [1..1]</td>
 <td style="text-align: left;"><em>Extension : DMI_ReferenceOrganisationInterne[1..1] Reference
 (Organization)</em></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..1]</strong><a href="#fn5" class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a></td>
+<td style="text-align: left;"><strong>DispositifMedical [1..1]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
 </tr>
@@ -885,29 +761,11 @@ role="doc-noteref"><sup>5</sup></a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu: [0..1] ObjetBinaire</strong><a href="#fn6" class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a></td>
+<td style="text-align: left;"><strong>Contenu: [0..1] ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la « ReceptionUnitaire »)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
 </table>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Le contenu de l’ObjetEvenement est l’ensemble des éléments Cet élément est décrit dans une partie spécifique « ReceptionUnitaire ».<a href="#fnref1" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Suit le profil DMI_SupplyDeliveryReceptionUnitaire<a
-href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Le détail du professionnel est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.11 Professionnel </a>».<a href="#fnref3" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Le détail de l’organisation interne est décrit dans une partie spécifique « 7.5 OrganisationInterne ».<a href="#fnref4"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Le détail du dispositif médical est décrit dans une partie spécifique « 7.1 DispositifMedical ».<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la « ReceptionUnitaire ».<a href="#fnref6"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 ### Flux 5d – TracabiliteReceptionDMI
 
@@ -944,9 +802,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <tr>
 <td style="text-align: left;">Trace [1..1]</td>
 <td rowspan="4" style="text-align: left;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td colspan="2" rowspan="4" style="text-align: center;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceTrace [1..1]</td>
@@ -964,16 +822,13 @@ href="#flux-22-transmissiontrace">Tableau 2</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] ObjetBinaire</strong><a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: left;"><strong>Contenu : [0..1] ObjetBinaire</strong> (Le contenu de l’ObjetEvenement est une délivrance. Cet élément est décrit dans une partie spécifique « Delivrance »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
 </tr>
 <tr>
 <td rowspan="2" style="text-align: left;">Délivrance [1..1]</td>
 <td style="text-align: left;">EntêteDelivrance [1..1]</td>
-<td rowspan="2" style="text-align: left;">Bundle<a href="#fn2"
-class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></td>
+<td rowspan="2" style="text-align: left;">Bundle (Suit le profil DMI_BundleDelivery)</td>
 <td style="text-align: center;">Entry [0..*] BackboneElement</td>
 </tr>
 <tr>
@@ -983,9 +838,7 @@ role="doc-noteref"><sup>2</sup></a></td>
 <tr>
 <td rowspan="7" style="text-align: left;">EntêteDelivrance [1..1]</td>
 <td style="text-align: left;">referenceDelivrance : [1..1] Identifiant</td>
-<td rowspan="7" style="text-align: left;">SupplyDelivery<a href="#fn3"
-class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></td>
+<td rowspan="7" style="text-align: left;">SupplyDelivery (Suit le profil DMI_SupplyDeliveryEnteteDelivrance)</td>
 <td style="text-align: center;">identifier [0..*] Identifier</td>
 </tr>
 <tr>
@@ -1005,9 +858,7 @@ role="doc-noteref"><sup>3</sup></a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;">OrganisationInterne [1..1]<a href="#fn4"
-class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a></td>
+<td style="text-align: left;">OrganisationInterne [1..1]</td>
 <td style="text-align: center;">Extension : DMI_ReferenceOrganisationInterne[1..1]Reference (Organization)</td>
 </tr>
 <tr>
@@ -1017,9 +868,7 @@ role="doc-noteref"><sup>4</sup></a></td>
 <tr>
 <td rowspan="5" style="text-align: left;">LigneDelivrance [1..*]</td>
 <td style="text-align: left;">ReferenceDemandeAssociee [1..1]</td>
-<td rowspan="5" style="text-align: center;">SupplyDelivery<a href="#fn5"
-class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a></td>
+<td rowspan="5" style="text-align: center;">SupplyDelivery (Pour chaque occurrence de l’élément LigneDelivrance on va créer une ressource SupplyDelivery suivant le profil DMI_SupplyDeliveryLigne)</td>
 <td style="text-align: center;">basedOn[0..*] Reference (SupplyRequest)</td>
 </tr>
 <tr>
@@ -1036,8 +885,7 @@ Texte</td>
 <td style="text-align: center;">text [0..1] Narrative</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..1]</strong><a href="#fn6" class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a></td>
+<td style="text-align: left;"><strong>DispositifMedical [1..1]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
 </tr>
@@ -1048,29 +896,11 @@ role="doc-noteref"><sup>6</sup></a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1]ObjetBinaire</strong> <a href="#fn7" class="footnote-ref"
-id="fnref7" role="doc-noteref"><sup>7</sup></a></td>
+<td style="text-align: left;"><strong>Contenu : [0..1]ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la délivrance)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
 </table>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Le contenu de l’ObjetEvenement est une délivrance. Cet élément est décrit dans une partie spécifique « Delivrance ».<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Suit le profil DMI_BundleDelivery<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Suit le profil DMI_SupplyDeliveryEnteteDelivrance<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Le détail de l’organisation interne est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.5 OrganisationInterne </a>».<a href="#fnref4" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Pour chaque occurrence de l’élément LigneDelivrance on va créer une ressource SupplyDelivery suivant le profil DMI_SupplyDeliveryLigne<a href="#fnref5" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Le détail du dispositif médical est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.1 DispositifMedical </a>».<a href="#fnref6" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la délivrance.<a href="#fnref7" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
 6a</p>
@@ -1106,9 +936,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <tr>
 <td style="text-align: left;">Trace [1..1]</td>
 <td rowspan="4" style="text-align: left;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td colspan="2" rowspan="4" style="text-align: center;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceTrace [1..1]</td>
@@ -1126,16 +956,13 @@ href="#flux-22-transmissiontrace">Tableau 2</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1]ObjetBinaire</strong> <a href="#fn1" class="footnote-ref"
-id="fnref1" role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: left;"><strong>Contenu : [0..1]ObjetBinaire (Le contenu de l’ObjetEvenement est un transport. Cet élément est décrit dans une partie spécifique « Transport »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (SupplyDelivery)</td>
 </tr>
 <tr>
 <td rowspan="9" style="text-align: left;">Transport [1..1]</td>
 <td style="text-align: left;">referenceTransport : [1..1] Identifiant</td>
-<td rowspan="9" style="text-align: center;">SupplyDelivery<a href="#fn2"
-class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></td>
+<td rowspan="9" style="text-align: center;">SupplyDelivery (Suit le profil DMI_SupplyDeliveryTransport)</td>
 <td style="text-align: center;"><em>Extension(Complex) : DMI_transport[0..1].refTransport [1..1] Identifier</em></td>
 </tr>
 <tr>
@@ -1167,9 +994,7 @@ role="doc-noteref"><sup>2</sup></a></td>
 <td style="text-align: center;"><em>Extension(Complex) : DMI_transport[0..1].meta [1..1] Meta</em></td>
 </tr>
 <tr>
-<td style="text-align: left;">Professionnel [1..1]<a href="#fn3"
-class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></td>
+<td style="text-align: left;">Professionnel [1..1]</td>
 <td style="text-align: center;">Receiver [0..*] Reference (Practitionner, PractitionnerRole)</td>
 </tr>
 <tr>
@@ -1179,23 +1004,11 @@ role="doc-noteref"><sup>3</sup></a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1] : Objet binaire</strong><a href="#fn4" class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a></td>
+<td style="text-align: left;"><strong>Contenu [0..1] : Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré du transport)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
 </table>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Le contenu de l’ObjetEvenement est un transport. Cet élément est décrit dans une partie spécifique « Transport ».<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Suit le profil DMI_SupplyDeliveryTransport<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Le détail du professionnel est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.11 Professionnel </a>».<a href="#fnref3" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Le contenu de l’ObjetEvenement est le contenu non structuré du transport.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
 9</p>
@@ -1227,9 +1040,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <tr>
 <td style="text-align: left;">Trace [1..1]</td>
 <td rowspan="4" style="text-align: left;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau FLux 22</a></td>
 <td colspan="2" rowspan="4" style="text-align: center;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceTrace [1..1]</td>
@@ -1247,16 +1060,13 @@ href="#flux-22-transmissiontrace">Tableau 2</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire</strong><a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est la réception du DMI. Cet élément est décrit dans une partie spécifique « ReceptionDMI »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
 </tr>
 <tr>
 <td rowspan="2" style="text-align: left;">ReceptionDMI [1..1]</td>
 <td style="text-align: left;">EntêteReceptionDMI [1..1]</td>
-<td rowspan="2" style="text-align: center;">Bundle<a href="#fn2"
-class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></td>
+<td rowspan="2" style="text-align: center;">Bundle (Suit le profil DMI_BundleDelivery)</td>
 <td style="text-align: center;">Entry [0..*] BackboneElement</td>
 </tr>
 <tr>
@@ -1266,9 +1076,7 @@ role="doc-noteref"><sup>2</sup></a></td>
 <tr>
 <td rowspan="7" style="text-align: left;">EntêteReceptionDMI [1..1]</td>
 <td style="text-align: left;">referenceReception : [1..1] Identifiant</td>
-<td rowspan="7" style="text-align: center;">SupplyDelivery<a href="#fn3"
-class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></td>
+<td rowspan="7" style="text-align: center;">SupplyDelivery (Suit le profil DMI_SupplyDeliveryEntêteReceptionDMI)</td>
 <td style="text-align: center;">identifier [0..*] Identifier</td>
 </tr>
 <tr>
@@ -1284,11 +1092,11 @@ role="doc-noteref"><sup>3</sup></a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>OrganisationInterne [1..1]</strong><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></td>
+<td style="text-align: left;"><strong>OrganisationInterne [1..1]</td>
 <td style="text-align: center;"><em>Extension : DMI_ReferenceOrganisationInterne[1..1]Reference (Organization)</em></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Professionnel [1..1]</strong><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></td>
+<td style="text-align: left;"><strong>Professionnel [1..1]</td>
 <td style="text-align: center;"><p>receiver [0..*] Reference</p>
 <p>(Practitioner | PractitionerRole)</p></td>
 </tr>
@@ -1299,9 +1107,7 @@ role="doc-noteref"><sup>3</sup></a></td>
 <tr>
 <td rowspan="7" style="text-align: left;">LigneReceptionDMI [1..*]</td>
 <td style="text-align: left;">ReferenceDemandeAssociee [1..1]</td>
-<td rowspan="7" style="text-align: center;">SupplyDelivery<a href="#fn6"
-class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a></td>
+<td rowspan="7" style="text-align: center;">SupplyDelivery (Pour chaque occurrence de l’élément LigneReceptionDMI on va créer une ressource SupplyDelivery suivant le profil DMI_SupplyDeliveryLigne)</td>
 <td style="text-align: center;">basedOn[0..*] Reference (SupplyRequest)</td>
 </tr>
 <tr>
@@ -1325,8 +1131,7 @@ role="doc-noteref"><sup>6</sup></a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..1]</strong><a href="#fn7" class="footnote-ref" id="fnref7"
-role="doc-noteref"><sup>7</sup></a></td>
+<td style="text-align: left;"><strong>DispositifMedical [1..1]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
 </tr>
@@ -1337,34 +1142,11 @@ role="doc-noteref"><sup>7</sup></a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu[0..1] Objet binaire</strong><a href="#fn8" class="footnote-ref" id="fnref8"
-role="doc-noteref"><sup>8</sup></a></td>
+<td style="text-align: left;"><strong>Contenu[0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la réception)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
 </table>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Le contenu de l’ObjetEvenement est la réception du DMI. Cet élément est décrit dans une partie spécifique « ReceptionDMI ».<a
-href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Suit le profil DMI_BundleDelivery<a href="#fnref2"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Suit le profil DMI_SupplyDeliveryEntêteReceptionDMI<a
-href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Le détail de l’organisation interne est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.5 OrganisationInterne </a>».<a href="#fnref4" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Le détail du professionnel est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.11</a> Professionnel».<a href="#fnref5" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Pour chaque occurrence de l’élément LigneReceptionDMI on va créer une ressource SupplyDelivery suivant le profil DMI_SupplyDeliveryLigne<a href="#fnref6" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Le détail du dispositif médical est décrit dans une partie spécifique « <a href="#classe-dispositifmedical">7.1 DispositifMedical </a>».<a href="#fnref7" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la réception.<a href="#fnref8" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du
 flux 11</p>
@@ -1405,9 +1187,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <tr>
 <td style="text-align: left;">Trace [1..1]</td>
 <td rowspan="4" style="text-align: left;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td colspan="2" rowspan="4" style="text-align: center;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceTrace [1..1]</td>
@@ -1425,16 +1207,13 @@ href="#flux-22-transmissiontrace">Tableau 2</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire <a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire (Le contenu de l’ObjetEvenement est une intervention médicale. Cet élément est décrit dans une partie spécifique « InterventionMedicale »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (Procedure)</td>
 </tr>
 <tr>
 <td rowspan="11" style="text-align: left;">InterventionMedicale [1..1]</td>
 <td style="text-align: left;">idIntervention : [1..1] Identifiant</td>
-<td rowspan="11" style="text-align: left;">Procedure<a href="#fn2"
-class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></td>
+<td rowspan="11" style="text-align: left;">Procedure (Pour l’élément InterventionMedicale on va créer une ressource Procedure suivant le profil DMI_Procedure)</td>
 <td style="text-align: center;">identifier [0..*] Identifier</td>
 </tr>
 <tr>
@@ -1465,24 +1244,18 @@ role="doc-noteref"><sup>2</sup></a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;">Professionnel : [1..1]<a href="#fn3"
-class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></td>
+<td style="text-align: left;">Professionnel : [1..1]</td>
 <td style="text-align: center;"><p>performer[0..*].actor [1..1] Reference</p>
 <p>(<a href="https://hl7.org/FHIR/practitioner.html">Practitioner</a> |
 <a
 href="https://hl7.org/FHIR/practitionerrole.html">PractitionerRole</a>)</p></td>
 </tr>
 <tr>
-<td style="text-align: left;">OrganisationInterne : [1..1]<a href="#fn4"
-class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a></td>
+<td style="text-align: left;">OrganisationInterne : [1..1]</td>
 <td style="text-align: center;">performer [0..*].onBehalfOf Reference (Organization)</td>
 </tr>
 <tr>
-<td style="text-align: left;">DispositifMedical : [1.1].<a href="#fn5"
-class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a></td>
+<td style="text-align: left;">DispositifMedical : [1.1].</td>
 <td style="text-align: center;"><p>focalDevice[0..*].manipulated [1..1] Reference</p>
 <p>(Device)</p></td>
 </tr>
@@ -1493,30 +1266,11 @@ role="doc-noteref"><sup>5</sup></a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire</strong> <a href="#fn6" class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a></td>
+<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de l’intervention médicale)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
 </table>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Le contenu de l’ObjetEvenement est une intervention médicale. Cet élément est décrit dans une partie spécifique « InterventionMedicale ».<a href="#fnref1" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Pour l’élément InterventionMedicale on va créer une ressource Procedure suivant le profil DMI_Procedure<a href="#fnref2"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Le détail du professionnel est décrit dans une partie spécifique «7.11 Professionnel ».<a href="#fnref3" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Le détail de l’organisation interne est décrit dans une partie spécifique «7.5 OrganisationInterne ».<a href="#fnref4"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Le détail du dispositif médical est décrit dans une partie spécifique « 7.1 DispositifMedical».<a href="#fnref5"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de l’intervention médicale.<a href="#fnref6"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 ### Flux 13a – TracabiliteRefusDMI 
 
@@ -1562,9 +1316,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <tr>
 <td style="text-align: left;">Trace [1..1]</td>
 <td rowspan="4" style="text-align: left;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau FLux 22</a></td>
 <td colspan="2" rowspan="4" style="text-align: center;">Cf <a
-href="#flux-22-transmissiontrace">Tableau 2</a></td>
+href="#flux-22-transmissiontrace">Tableau FLux 22</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">SourceTrace [1..1]</td>
@@ -1582,16 +1336,13 @@ href="#flux-22-transmissiontrace">Tableau 2</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire <a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire (Le contenu de l’ObjetEvenement est une facture. Cet élément est décrit dans une partie spécifique « Facture »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (Invoice)</td>
 </tr>
 <tr>
 <td rowspan="10" style="text-align: left;">Facture [1..1]</td>
 <td style="text-align: left;">refFacture : [1..1] Identifiant</td>
-<td rowspan="10" style="text-align: left;">Invoice<a href="#fn2"
-class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></td>
+<td rowspan="10" style="text-align: left;">Invoice (Pour l’élémentFacture on va créer une ressource Invoice suivant le profil DMI_Invoice)</td>
 <td style="text-align: center;">identifier [0..*] Identifier</td>
 </tr>
 <tr>
@@ -1627,10 +1378,8 @@ role="doc-noteref"><sup>2</sup></a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ligne : [1.*]</strong><a
-href="#fn3" class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a><strong>.</strong></td>
-<td style="text-align: center;">L’élément ligne est décrit dans une partie spécifique “Ligne”</td>
+<td style="text-align: left;"><strong>Ligne : [1.*](Cet élément est décrit dans une partie spécifique « Ligne »</td>
+<td style="text-align: center;">L’élément ligne est décrit dans une partie spécifique “Ligne”)</td>
 </tr>
 <tr>
 <td rowspan="3" style="text-align: left;">Ligne [1..*]</td>
@@ -1644,9 +1393,7 @@ style="text-align: center;">lineItem[0..*].chargeItemReference[1..1].occurenceDa
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;">DispositifMedical : [1..1]<a href="#fn4"
-class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a></td>
+<td style="text-align: left;">DispositifMedical : [1..1]</td>
 <td style="text-align: center;">lineItem [0..*].chargeItem [1..1].chargeItem.productReference [0..1]</td>
 </tr>
 <tr>
@@ -1656,34 +1403,11 @@ role="doc-noteref"><sup>4</sup></a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire</strong><a href="#fn5" class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a></td>
+<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la facture)</td>
 <td style="text-align: center;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
 </table>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>Le contenu de l’ObjetEvenement est une facture. Cet
-élément est décrit dans une partie spécifique « Facture ».<a
-href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Pour l’élémentFacture on va créer une ressource Invoice
-suivant le profil DMI_Invoice<a href="#fnref2" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Cet élément est décrit dans une partie spécifique
-« Ligne ».<a href="#fnref3" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Le détail du dispositif médical est décrit dans une
-partie spécifique « <a href="#classe-dispositifmedical">7.1</a>
-DispositifMedical».<a href="#fnref4" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Le contenu de l’ObjetEvenement est le contenu non
-structuré de la facture.<a href="#fnref5" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 ### Flux 23 - RechercheTraces
 
@@ -1773,9 +1497,6 @@ style="text-align: center;">DispositifMedical/support/identifiantHRF</td>
 <th style="text-align: center;">Device-udi-carrier</th>
 </tr>
 </thead>
-<tbody>
-</tbody>
-</table>
 <p>: String</p></td>
 </tr>
 <tr>
