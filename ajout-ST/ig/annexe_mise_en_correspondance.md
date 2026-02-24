@@ -201,6 +201,8 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 | ObjetEvenement [0..*] | type [0..1] Code | AuditEvent | entity[0..*].type [0..1] Coding |
 | Contenu: [0..1] ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la « ReceptionUnitaire ») | entity[0..*].detail [0..1]. valueBase64Binary [1..1] | | |
 
+Mise en correspondance des contenus métiers/standard du flux 5c
+
 ### Flux 5d – TracabiliteReceptionDMI
 
 Ce flux reprend les mêmes éléments que le flux 5c.
@@ -292,7 +294,32 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 | quantiteReceptionnee : [0..1] Numerique | suppliedItem[0..1].quantity [0..1] SimpleQuantity | | |
 | metadonnee : [1..1] Metadonnee | meta [0..1] Meta | | |
 | OrganisationInterne [1..1] | **Extension : DMI_ReferenceOrganisationInterne[1..1]Reference (Organization)** | | |
-| **Professionnel [1..1]</td> receiver [0..*] Reference (Practitioner | PractitionerRole) </tr>  LigneReceptionDMI [1.*] Cet élément est décrit dans une partie spécifique “LigneReceptionDMI”   LigneReceptionDMI [1..*] ReferenceDemandeAssociee [1..1] SupplyDelivery (Pour chaque occurrence de l’élément LigneReceptionDMI on va créer une ressource SupplyDelivery suivant le profil DMI_SupplyDeliveryLigne) basedOn[0..*] Reference (SupplyRequest)   ReferenceEntêteReceptionDMI [1..1] Part of [0..*] Reference(SupplyDelivery)   dateReceptionSU [1..1] DateHeure Occurrence [0..1].occurenceDateTime dateTime   receptionConforme : [1..1] boolean Status [0..1] code   motifRejet : [0..1] Texte text [0..1] Narrative   Metadonnee [1..1] : Metadonnee meta [0..1] Meta   DispositifMedical [1..1] suppliedItem[0..1].itemReference [0..1] Reference (Medication | Substance | Device)   ObjetEvenement [0..*] type [0..1] Code AuditEvent entity[0..*].type [0..1] Coding   Contenu[0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la réception) entity[0..*].detail [0..1]. valueBase64Binary [1..1]  </tbody> </table> Mise en correspondance des contenus métiers/standard du flux 11 ### Flux 12 – TracabiliteReceptionSU  Ce flux reprend les mêmes éléments que le flux 11. ### Flux 28- TracabiliteRejetDMI Ce flux reprend les mêmes éléments que le flux 11. ### Flux 15 -TracabilitePose Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement : 
+| Professionnel [1..1] | receiver [0..*] Reference(Practitioner | PractitionerRole) | | |
+| LigneReceptionDMI [1.*] | Cet élément est décrit dans une partie spécifique “LigneReceptionDMI” | | |
+| LigneReceptionDMI [1..*] | ReferenceDemandeAssociee [1..1] | SupplyDelivery (Pour chaque occurrence de l’élément LigneReceptionDMI on va créer une ressource SupplyDelivery suivant le profil DMI_SupplyDeliveryLigne) | basedOn[0..*] Reference (SupplyRequest) |
+| ReferenceEntêteReceptionDMI [1..1] | Part of [0..*] Reference(SupplyDelivery) | | |
+| dateReceptionSU [1..1] DateHeure | Occurrence [0..1].occurenceDateTime dateTime | | |
+| receptionConforme : [1..1] boolean | Status [0..1] code | | |
+| motifRejet : [0..1] Texte | text [0..1] Narrative | | |
+| Metadonnee [1..1] : Metadonnee | meta [0..1] Meta | | |
+| DispositifMedical [1..1] | suppliedItem[0..1].itemReference [0..1] Reference(Medication | Substance | Device) | | |
+| ObjetEvenement [0..*] | type [0..1] Code | AuditEvent | entity[0..*].type [0..1] Coding |
+| Contenu[0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la réception) | entity[0..*].detail [0..1]. valueBase64Binary [1..1] | | |
+
+Mise en correspondance des contenus métiers/standard du flux 11
+
+### Flux 12 – TracabiliteReceptionSU 
+
+Ce flux reprend les mêmes éléments que le flux 11.
+
+### Flux 28- TracabiliteRejetDMI
+
+Ce flux reprend les mêmes éléments que le flux 11.
+
+### Flux 15 -TracabilitePose
+
+Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :
+
 | | | | |
 | :--- | :--- | :--- | :--- |
 | **Nom classes** | **Nom attributs** | **Ressource** | **Elément** |
@@ -310,12 +337,7 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 | poseConforme : [1..1] Boolean | Complication [0..*] CodeableConcept | | |
 | motifEchec : [0..1] Texte | | | |
 | metadonnee : [1..1] Metadonnee | meta [0..1] Meta | | |
-| Professionnel : [1..1] | performer[0..*].actor [1..1] Reference([Practitioner](https://hl7.org/FHIR/practitioner.html) | [PractitionerRole](https://hl7.org/FHIR/practitionerrole.html)) | | |
-| OrganisationInterne : [1..1] | performer [0..*].onBehalfOf Reference (Organization) | | |
-| DispositifMedical : [1.1]. | focalDevice[0..*].manipulated [1..1] Reference(Device) | | |
-| ObjetEvenement [0..*] | type [0..1] Code | AuditEvent | entity[0..*].type [0..1] Coding |
-| Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de l’intervention médicale) | entity[0..*].detail [0..1]. valueBase64Binary [1..1] | | |
- ### Flux 13a – TracabiliteRefusDMI  Ce flux reprend les mêmes éléments que le flux 15. ### Flux 30 – TracabiliteSortieStockSU Ce flux reprend les mêmes éléments que le flux 15. ### Flux 14 – TracabiliteEchecPose  Ce flux reprend les mêmes éléments que le flux 15. ### Flux 16a – TracabiliteReassortDMI  Ce flux reprend les mêmes éléments que le flux 27. ### Flux 18 – TracabiliteFacturationDMI  Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement : 
+| Professionnel : [1..1] | performer[0..*].actor [1..1] Reference</tr> OrganisationInterne : [1..1] performer [0..*].onBehalfOf Reference (Organization)  DispositifMedical : [1.1]. focalDevice[0..*].manipulated [1..1] Reference (Device)  ObjetEvenement [0..*] type [0..1] Code AuditEvent entity[0..*].type [0..1] Coding  Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de l’intervention médicale) entity[0..*].detail [0..1]. valueBase64Binary [1..1] </tbody> </table>Mise en correspondance des contenus métiers/standard du flux 15### Flux 13a – TracabiliteRefusDMI  Ce flux reprend les mêmes éléments que le flux 15. ### Flux 30 – TracabiliteSortieStockSU Ce flux reprend les mêmes éléments que le flux 15. ### Flux 14 – TracabiliteEchecPose  Ce flux reprend les mêmes éléments que le flux 15. ### Flux 16a – TracabiliteReassortDMI  Ce flux reprend les mêmes éléments que le flux 27. ### Flux 18 – TracabiliteFacturationDMI  Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :
 | | | | |
 | :--- | :--- | :--- | :--- |
 | **Nom classes** | **Nom attributs** | **Ressource** | **Elément** |
@@ -340,7 +362,7 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 | DispositifMedical : [1..1] | lineItem [0..*].chargeItem [1..1].chargeItem.productReference [0..1] | | |
 | ObjetEvenement [0..*] | type [0..1] Code | AuditEvent | entity[0..*].type [0..1] Coding |
 | Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la facture) | entity[0..*].detail [0..1]. valueBase64Binary [1..1] | | |
- ### Flux 23 - RechercheTraces Ce flux intervient lorsque le consommateur effectue une recherche de traces d’un ou de plusieurs DMI se trouvant dans l’établissement de santé auprès du gestionnaire de traçabilité en précisant les critères de sa recherche. Il correspond au « Flux 4 -RechercheTraces » du volet « Traçabilité des évènements ». Ci-dessous les critères de recherches. Les critères apparaissant *en italique et en rouge* correspondent à des paramètres de recherche créés pour répondre au besoin : 
+Mise en correspondance des contenus métiers/standard du flux 18### Flux 23 - RechercheTraces Ce flux intervient lorsque le consommateur effectue une recherche de traces d’un ou de plusieurs DMI se trouvant dans l’établissement de santé auprès du gestionnaire de traçabilité en précisant les critères de sa recherche. Il correspond au « Flux 4 -RechercheTraces » du volet « Traçabilité des évènements ». Ci-dessous les critères de recherches. Les critères apparaissant *en italique et en rouge* correspondent à des paramètres de recherche créés pour répondre au besoin :
 | | | | |
 | :--- | :--- | :--- | :--- |
 | Ressource | Paramètre identifié dans le volet « Généricisation : Traçabilité des évènements  » | Paramètre supplémentaire identifié par ce volet | |
@@ -361,11 +383,11 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 | DispositifMedical/support/IUD-IPNumSerie |  | **DMI_Device_serialNumber : string** | |
 | DispositifMedical/codeEMDN |  | **DMI_Device_definition-type : token** | |
 | Patient/identite/matriculeINS | Patient |  | **DMI_Patient_INS : token** |
-### Flux 24 – ReponseRechercheTraces Il s’agit du résultat de la recherche de traces retourné par le gestionnaire de traçabilté. La recherche de traces retourne une ressource Bundle de type SearchSet contenant les ressources AuditEvent correspondant aux critères de recherche fournis par le consommateur. Il correspond au « Flux 5 -ReponseRechercheTraces » du volet « Traçabilité des évènements ». ### Flux 25 – ConsulterTrace Ce flux intervient lorsque le consommateur demande à consulter la trace d’un évènement auprès du gestionnaire de traçabilité. Il correspond au « Flux 2 -ConsultationTrace » du volet « Traçabilité des évènements » :
+Mise en correspondance des contenus métiers/standards du flux 23### Flux 24 – ReponseRechercheTraces Il s’agit du résultat de la recherche de traces retourné par le gestionnaire de traçabilté. La recherche de traces retourne une ressource Bundle de type SearchSet contenant les ressources AuditEvent correspondant aux critères de recherche fournis par le consommateur. Il correspond au « Flux 5 -ReponseRechercheTraces » du volet « Traçabilité des évènements ». ### Flux 25 – ConsulterTrace Ce flux intervient lorsque le consommateur demande à consulter la trace d’un évènement auprès du gestionnaire de traçabilité. Il correspond au « Flux 2 -ConsultationTrace » du volet « Traçabilité des évènements » :
 | | | | |
 | :--- | :--- | :--- | :--- |
 | **Nom classes** | **Nom attributs** | **Ressource** | **Elément** |
 | Trace | identifiant [0..1] : Identifiant | AuditEvent | id [1..1] id |
 Mise en correspondance des contenus métiers/standards du flux 25### Flux 26 – ReponseConsulterTrace Il s’agit du résultat de la demande de consultation de la trace d’un évènement retourné par le gestionnaire de traçabilité. Le corps de la réponse est la ressource AuditEvent identifiée lors de la demande. Il correspond au « Flux 3 - ReponseConsultationTrace » du volet « Traçabilité des évènements ». | |
-** | | | |
+ | | |
 
