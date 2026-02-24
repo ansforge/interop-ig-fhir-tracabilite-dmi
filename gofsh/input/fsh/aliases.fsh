@@ -1,1 +1,0 @@
-Alias: $FrOrganization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
