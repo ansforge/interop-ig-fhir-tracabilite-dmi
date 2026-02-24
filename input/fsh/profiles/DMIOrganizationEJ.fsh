@@ -11,11 +11,11 @@ Id: dmi-organization-ej
 * extension[IdentifiantLocalFabricant] only DMIIdentifiantLocalFabricant
 * identifier 2..
 * identifier contains
-    IdNatStruct 1..1 and
-    numSiren 1..1 and
-    numFINESS 0..1 and
     numeroTVAIntracommunautaire 0..1 and
     numeroSRN 0..*
+* identifier[idNatSt] 1..1
+* identifier[siren] 1..1
+* identifier[finess] 0..1
 * identifier[numeroTVAIntracommunautaire].type 1..
 * identifier[numeroTVAIntracommunautaire].type = DMIDiscriminator#numeroTVAIntracommunautaire
 * identifier[numeroSRN].type 1..

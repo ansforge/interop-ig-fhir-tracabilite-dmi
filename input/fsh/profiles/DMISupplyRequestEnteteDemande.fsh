@@ -13,7 +13,7 @@ Id: dmi-supplyrequest-entete-demande
 * itemCodeableConcept.coding[CreationDemande].code 1..
 * itemCodeableConcept.coding[CreationDemande].code = $TRE_R254-TypeEvenement-FHIR#DEM
 * itemCodeableConcept.coding[SuppressionDemande].code 1..
-* itemCodeableConcept.coding[SuppressionDemande] = $TRE_R254-TypeEvenement-FHIR#SDM
+* itemCodeableConcept.coding[SuppressionDemande].code = $TRE_R254-TypeEvenement-FHIR#SDM
 
 * requester 1..
 * requester only Reference(Practitioner)
