@@ -1,64 +1,270 @@
-ExampleIG : Validation Results
+TDMI : Validation Results
 =========================================
 
-err = 3, warn = 14, info = 17
-IG Publisher Version: 2.0.30
-Generated Fri Jan 30 13:29:58 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.[code]#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/[code])
- Build Errors : 1 / 3 / 0
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 2 / 3
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 2 / 3
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.[code] : 3 / 0 / 2
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/Patient-frpatient-exemple : 0 / 1 / 1
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-EyeColor : 0 / 2 / 2
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-fr-patient : 0 / 0 / 5
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ValueSet-EyeColorVS : 0 / 1 / 3
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ValueSet-MeltingPotVS : 0 / 1 / 4
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ValueSet-ModifiedAdministrativeGender : 0 / 1 / 2
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ValueSet-TypeCarteVS : 0 / 1 / 2
+err = 43, warn = 93, info = 34
+IG Publisher Version: 2.1.1
+Generated Tue Feb 24 10:14:02 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tdmi#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi)
+ Build Errors : 7 / 38 / 0
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/CodeSystem-dmi-discriminator : 1 / 0 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi : 2 / 0 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-DMI-Device-definition-type : 1 / 0 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-DMI-Device-lotNumber : 1 / 0 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-DMI-Device-serialNumber : 1 / 0 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-DMI-Patient-INS : 1 / 0 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-bundle-request : 1 / 1 / 2
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-bundle-transmission-traces : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-bundledelivery : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-classe-risque : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-code-emdn : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-code-lpp : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-device : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-devicedefinition : 1 / 1 / 13
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-devicerequest : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-facture : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-identifiant-local-distributeur : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-identifiant-local-fabricant : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-internal-diameter : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-invoice : 1 / 1 / 5
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-ip-id-logiciel : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-marquage-ce : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-nom-distributeur : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-organization-ej : 1 / 2 / 8
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-organization-interne : 1 / 2 / 4
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-organization-location : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-patient : 1 / 8 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-practitioner : 1 / 7 / 2
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-procedure : 1 / 1 / 5
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-reference-distributeur : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-reference-fabricant : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-reference-organisation-interne : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-supplydelivery-entete-delivrance : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-supplydelivery-entete-livraison : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-supplydelivery-enteter-reception : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-supplydelivery-ligne : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-supplydelivery-reception-unitaire : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-supplydelivery-transport : 1 / 1 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-supplyrequest-entete-commande : 1 / 5 / 1
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-supplyrequest-entete-demande : 1 / 1 / 3
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-supplyrequest-entetereponse : 1 / 1 / 3
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-transport : 1 / 1 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-bundledelivery.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-bundle-request.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-bundle-transmission-traces.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-device.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-devicedefinition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-devicerequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-invoice.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-organization-ej.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-organization-interne.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-practitioner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-procedure.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-supplydelivery-entete-delivrance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-supplydelivery-entete-livraison.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-supplydelivery-enteter-reception.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-supplydelivery-ligne.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-supplydelivery-reception-unitaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-supplydelivery-transport.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-supplyrequest-entete-commande.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-supplyrequest-entete-demande.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-supplyrequest-entetereponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-classe-risque.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-code-emdn.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-code-lpp.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-facture.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-ip-id-logiciel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-identifiant-local-distributeur.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-identifiant-local-fabricant.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-internal-diameter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-marquage-ce.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-nom-distributeur.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-organization-location.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-reference-distributeur.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-reference-organisation-interne.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dmi-transport.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 243, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 244, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 252, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 253, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
 ERROR: searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/CodeSystem-competence-code-system.json ==
-INFORMATION: CodeSystem/competence-code-system: CodeSystem.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
-INFORMATION: CodeSystem/competence-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/competence-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/competence-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-== fsh-generated/resources/CodeSystem-type-carte-code-system.json ==
-INFORMATION: CodeSystem/type-carte-code-system: CodeSystem.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
-INFORMATION: CodeSystem/type-carte-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/type-carte-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/type-carte-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-== fsh-generated/resources/ImplementationGuide-ans.fhir.fr.[code].json ==
-ERROR: ImplementationGuide/ans.fhir.fr.[code]: ImplementationGuide.id: Invalid Resource id: Invalid Characters ('ans.fhir.fr.[code]')
-INFORMATION: ImplementationGuide/ans.fhir.fr.[code]: ImplementationGuide.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
-ERROR: ImplementationGuide/ans.fhir.fr.[code]: ImplementationGuide.packageId: id value 'ans.fhir.fr.[code]' is not valid
-ERROR: ImplementationGuide/ans.fhir.fr.[code]: ImplementationGuide.definition.extension[27].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
-== fsh-generated/resources/Patient-frpatient-exemple.json ==
-WARNING: Patient/frpatient-exemple: Patient.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
-== fsh-generated/resources/StructureDefinition-EyeColor.json ==
-INFORMATION: StructureDefinition/EyeColor: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
-WARNING: StructureDefinition/EyeColor: StructureDefinition.context[0]: Review the extension type for EyeColor: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/EyeColor'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-fr-patient.json ==
-INFORMATION: StructureDefinition/fr-patient: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
-INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-INFORMATION: StructureDefinition/fr-patient: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.element[10].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-== fsh-generated/resources/ValueSet-EyeColorVS.json ==
-INFORMATION: ValueSet/EyeColorVS: ValueSet.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
-INFORMATION: ValueSet/EyeColorVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://smt.esante.gouv.fr/fhir does not support batch validation (tests version < 1.7.8)
-WARNING: ValueSet/EyeColorVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-MeltingPotVS.json ==
-INFORMATION: ValueSet/MeltingPotVS: ValueSet.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
-INFORMATION: ValueSet/MeltingPotVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://smt.esante.gouv.fr/fhir does not support batch validation (tests version < 1.7.8)
-INFORMATION: ValueSet/MeltingPotVS: ValueSet.compose.include[1].concept[0]: Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/competence-code-system|0.1.0
-WARNING: ValueSet/MeltingPotVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-ModifiedAdministrativeGender.json ==
-INFORMATION: ValueSet/ModifiedAdministrativeGender: ValueSet.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
-WARNING: ValueSet/ModifiedAdministrativeGender: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-TypeCarteVS.json ==
-INFORMATION: ValueSet/TypeCarteVS: ValueSet.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
-WARNING: ValueSet/TypeCarteVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-dmi-discriminator.json ==
+ERROR: CodeSystem/dmi-discriminator: CodeSystem.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+== fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi.json ==
+ERROR: ImplementationGuide/ans.fhir.fr.tdmi: ImplementationGuide.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+ERROR: ImplementationGuide/ans.fhir.fr.tdmi: ImplementationGuide.definition.extension[27].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
+== fsh-generated/resources/SearchParameter-DMI-Device-definition-type.json ==
+ERROR: SearchParameter/DMI-Device-definition-type: SearchParameter.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+== fsh-generated/resources/SearchParameter-DMI-Device-lotNumber.json ==
+ERROR: SearchParameter/DMI-Device-lotNumber: SearchParameter.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+== fsh-generated/resources/SearchParameter-DMI-Device-serialNumber.json ==
+ERROR: SearchParameter/DMI-Device-serialNumber: SearchParameter.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+== fsh-generated/resources/SearchParameter-DMI-Patient-INS.json ==
+ERROR: SearchParameter/DMI-Patient-INS: SearchParameter.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+== fsh-generated/resources/StructureDefinition-dmi-bundle-request.json ==
+ERROR: StructureDefinition/dmi-bundle-request: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+INFORMATION: StructureDefinition/dmi-bundle-request: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-request'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-bundle-transmission-traces.json ==
+ERROR: StructureDefinition/dmi-bundle-transmission-traces: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-transmission-traces'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-bundledelivery.json ==
+ERROR: StructureDefinition/dmi-bundledelivery: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-classe-risque.json ==
+ERROR: StructureDefinition/dmi-classe-risque: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-classe-risque'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-code-emdn.json ==
+ERROR: StructureDefinition/dmi-code-emdn: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-code-lpp.json ==
+ERROR: StructureDefinition/dmi-code-lpp: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-lpp'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-device.json ==
+ERROR: StructureDefinition/dmi-device: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-device'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-devicedefinition.json ==
+ERROR: StructureDefinition/dmi-devicedefinition: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[72].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[79].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[86].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[93].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[100].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[107].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[17].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicedefinition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-devicerequest.json ==
+ERROR: StructureDefinition/dmi-devicerequest: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-facture.json ==
+ERROR: StructureDefinition/dmi-facture: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-facture'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-identifiant-local-distributeur.json ==
+ERROR: StructureDefinition/dmi-identifiant-local-distributeur: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-distributeur'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-identifiant-local-fabricant.json ==
+ERROR: StructureDefinition/dmi-identifiant-local-fabricant: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-fabricant'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-internal-diameter.json ==
+ERROR: StructureDefinition/dmi-internal-diameter: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-internal-diameter'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-invoice.json ==
+ERROR: StructureDefinition/dmi-invoice: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.snapshot.element[24].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-ip-id-logiciel.json ==
+ERROR: StructureDefinition/dmi-ip-id-logiciel: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-ip-id-logiciel'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-marquage-ce.json ==
+ERROR: StructureDefinition/dmi-marquage-ce: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-marquage-ce'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-nom-distributeur.json ==
+ERROR: StructureDefinition/dmi-nom-distributeur: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-nom-distributeur'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-organization-ej.json ==
+ERROR: StructureDefinition/dmi-organization-ej: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition/dmi-organization-ej: StructureDefinition.snapshot.element[19].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/organization-period'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/organization-period' to 'http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0'
+INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.snapshot.element[96].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.snapshot.element[105].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.snapshot.element[23].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.snapshot.element[111].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-ej'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-organization-interne.json ==
+ERROR: StructureDefinition/dmi-organization-interne: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition/dmi-organization-interne: StructureDefinition.snapshot.element[19].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/organization-period'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/organization-period' to 'http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0'
+INFORMATION: StructureDefinition/dmi-organization-interne: StructureDefinition.snapshot.element[24].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/dmi-organization-interne: StructureDefinition.snapshot.element[99].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-organization-location.json ==
+ERROR: StructureDefinition/dmi-organization-location: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-location'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-patient.json ==
+WARNING: DMIPatient.telecom.Patient.telecom.system: Binding https://mos.esante.gouv.fr/NOS/TRE_R200-CanalCommunication/ could not be located
+WARNING: DMIPatient.Patient.address.type: Binding https://mos.esante.gouv.fr/NOS/TRE_R35-TypeVoie/ could not be located
+ERROR: StructureDefinition/dmi-patient: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition/dmi-patient: StructureDefinition.snapshot.element[21].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace' to 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0'
+WARNING: StructureDefinition/dmi-patient: StructureDefinition.snapshot.element[100].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R200-CanalCommunication/'
+WARNING: StructureDefinition/dmi-patient: StructureDefinition.snapshot.element[113].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R35-TypeVoie/'
+WARNING: StructureDefinition/dmi-patient: StructureDefinition.differential.element[2].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R200-CanalCommunication/'
+WARNING: StructureDefinition/dmi-patient: StructureDefinition.differential.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R35-TypeVoie/'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-practitioner.json ==
+WARNING: DMIPractitioner.telecom.Practitioner.telecom.system: Binding https://mos.esante.gouv.fr/NOS/TRE_R200-CanalCommunication/ could not be located
+WARNING: DMIPractitioner.Practitioner.address.type: Binding https://mos.esante.gouv.fr/NOS/TRE_R35-TypeVoie/ could not be located
+ERROR: StructureDefinition/dmi-practitioner: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition/dmi-practitioner: StructureDefinition.snapshot.element[53].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R200-CanalCommunication/'
+WARNING: StructureDefinition/dmi-practitioner: StructureDefinition.snapshot.element[63].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R35-TypeVoie/'
+WARNING: StructureDefinition/dmi-practitioner: StructureDefinition.differential.element[2].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R200-CanalCommunication/'
+WARNING: StructureDefinition/dmi-practitioner: StructureDefinition.differential.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R35-TypeVoie/'
+INFORMATION: StructureDefinition/dmi-practitioner: StructureDefinition.snapshot.element[19].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-practitioner'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-procedure.json ==
+ERROR: StructureDefinition/dmi-procedure: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+INFORMATION: StructureDefinition/dmi-procedure: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-procedure: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-procedure: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-procedure: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-procedure'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-reference-distributeur.json ==
+ERROR: StructureDefinition/dmi-reference-distributeur: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-distributeur'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-reference-fabricant.json ==
+ERROR: StructureDefinition/dmi-reference-fabricant: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-fabricant'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-reference-organisation-interne.json ==
+ERROR: StructureDefinition/dmi-reference-organisation-interne: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-organisation-interne'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dmi-supplydelivery-entete-delivrance.json ==
+ERROR: StructureDefinition/dmi-supplydelivery-entete-delivrance: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-delivrance'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-supplydelivery-entete-livraison.json ==
+ERROR: StructureDefinition/dmi-supplydelivery-entete-livraison: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-livraison'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-supplydelivery-enteter-reception.json ==
+ERROR: StructureDefinition/dmi-supplydelivery-enteter-reception: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-enteter-reception'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-supplydelivery-ligne.json ==
+ERROR: StructureDefinition/dmi-supplydelivery-ligne: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-ligne'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-supplydelivery-reception-unitaire.json ==
+ERROR: StructureDefinition/dmi-supplydelivery-reception-unitaire: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-reception-unitaire'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-supplydelivery-transport.json ==
+ERROR: StructureDefinition/dmi-supplydelivery-transport: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-supplyrequest-entete-commande.json ==
+ERROR: StructureDefinition/dmi-supplyrequest-entete-commande: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition/dmi-supplyrequest-entete-commande: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): Unable to check whether the code is in the value set '' because the code system https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR was not found
+WARNING: StructureDefinition/dmi-supplyrequest-entete-commande: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/dmi-supplyrequest-entete-commande: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Unable to check whether the code is in the value set '' because the code system https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR was not found
+WARNING: StructureDefinition/dmi-supplyrequest-entete-commande: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR' could not be found, so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-commande'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-supplyrequest-entete-demande.json ==
+ERROR: StructureDefinition/dmi-supplyrequest-entete-demande: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+INFORMATION: StructureDefinition/dmi-supplyrequest-entete-demande: StructureDefinition.snapshot.element[25].pattern.ofType(Coding).system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/dmi-supplyrequest-entete-demande: StructureDefinition.differential.element[5].pattern.ofType(Coding).system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR' could not be found, so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-supplyrequest-entetereponse.json ==
+ERROR: StructureDefinition/dmi-supplyrequest-entetereponse: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+INFORMATION: StructureDefinition/dmi-supplyrequest-entetereponse: StructureDefinition.snapshot.element[25].pattern.ofType(Coding).system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/dmi-supplyrequest-entetereponse: StructureDefinition.differential.element[5].pattern.ofType(Coding).system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR' could not be found, so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entetereponse'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dmi-transport.json ==
+ERROR: StructureDefinition/dmi-transport: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr'. Default display is 'France'
+WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-transport'): The Implementation Guide contains no examples for this extension

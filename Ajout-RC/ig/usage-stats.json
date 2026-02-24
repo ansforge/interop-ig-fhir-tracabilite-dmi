@@ -1,22 +1,326 @@
 {
-  "package": "ans.fhir.fr.[code]",
-  "version": "0.1.0",
+  "package": "ans.fhir.fr.tdmi",
+  "version": "3.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
     {
-      "url": "https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/EyeColor",
-      "title": "EyeColor",
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-classe-risque",
+      "title": "DMIClasseRisque",
       "types": [
-        "CodeableConcept"
+        "code"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn",
+      "title": "DMICodeEMDN",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-lpp",
+      "title": "DMICodeLPP",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-facture",
+      "title": "DMIFacture",
+      "types": [
+        "base64Binary"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-distributeur",
+      "title": "DMIIdentifiantLocalDistributeur",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-fabricant",
+      "title": "DMIIdentifiantLocalFabricant",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-internal-diameter",
+      "title": "DMIInternalDiameter",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-ip-id-logiciel",
+      "title": "DMIIPIdLogiciel",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-marquage-ce",
+      "title": "DMIMarquageCE",
+      "types": [
+        "Reference",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-nom-distributeur",
+      "title": "DMINomDistributeur",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-location",
+      "title": "DMIOrganizationLocation",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-distributeur",
+      "title": "DMIReferenceDistributeur",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-fabricant",
+      "title": "Extension DMI referenceFabricant",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-organisation-interne",
+      "title": "DMIReferenceOrganisationInterne",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-transport",
+      "title": "DMITransport",
+      "types": [
+        "Identifier",
+        "Identifier",
+        "code",
+        "string",
+        "string",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     }
   ],
   "profiles": {
+    "Bundle": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-request",
+        "title": "DMIBundleRequest"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-transmission-traces",
+        "title": "DMIBundleTransmissionTraces"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery",
+        "title": "DMIBundleDelivery"
+      }
+    ],
+    "Device": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-device",
+        "title": "DMIDevice"
+      }
+    ],
+    "DeviceDefinition": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicedefinition",
+        "title": "DMIDeviceDefinition"
+      }
+    ],
+    "DeviceRequest": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest",
+        "title": "DMIDeviceRequest"
+      }
+    ],
+    "Invoice": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice",
+        "title": "DMIInvoice"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-ej",
+        "title": "DMIOrganizationEJ"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne",
+        "title": "DMIOrganizationInterne"
+      }
+    ],
     "Patient": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/fr-patient",
-        "title": "Patient français"
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient",
+        "title": "DMIPatient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-practitioner",
+        "title": "DMIPractitioner"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-procedure",
+        "title": "DMIProcedure"
+      }
+    ],
+    "SupplyDelivery": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-delivrance",
+        "title": "DMISupplyDeliveryEnteteDelivrance"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-livraison",
+        "title": "DMISupplyDeliveryEnteteLivraison"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-enteter-reception",
+        "title": "DMISupplyDeliveryEnteteReception"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-ligne",
+        "title": "DMISupplyDeliveryLigne"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-reception-unitaire",
+        "title": "DMISupplyDeliveryReceptionUnitaire"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport",
+        "title": "DMISupplyDeliveryTransport"
+      }
+    ],
+    "SupplyRequest": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-commande",
+        "title": "DMISupplyRequestEnteteCommande"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande",
+        "title": "DMISupplyRequestEnteteDemande"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entetereponse",
+        "title": "DMISupplyRequestEnteteReponse"
       }
     ]
   },
@@ -32,6 +336,15 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/organization-period": [
+      "Organization"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -62,8 +375,79 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/[code]/StructureDefinition/EyeColor": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code": [
+      "Patient.address",
+      "Practitioner.address"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment": [
+      "Patient.contact"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type": [
+      "Patient.telecom",
+      "Practitioner.telecom"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
       "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
+      "Patient.name"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier": [
+      "Patient.contact"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty": [
+      "Practitioner"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-classe-risque": [
+      "DeviceDefinition"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn": [
+      "DeviceDefinition"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-facture": [
+      "Invoice"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-distributeur": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-fabricant": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-internal-diameter": [
+      "DeviceDefinition.physicalCharacteristics"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-ip-id-logiciel": [
+      "Device"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-marquage-ce": [
+      "Device"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-location": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-distributeur": [
+      "DeviceDefinition"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-organisation-interne": [
+      "SupplyDelivery"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-transport": [
+      "SupplyDelivery"
     ]
   }
 }

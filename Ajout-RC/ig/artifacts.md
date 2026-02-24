@@ -1,4 +1,4 @@
-# Artifacts Summary - ANS IG Example v0.1.0
+# Artifacts Summary - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -7,13 +7,44 @@
 
 This page provides a list of the FHIR artifacts defined as part of this implementation guide.
 
+### Behavior: Search Parameters 
+
+These define the properties by which a RESTful server can be searched. They can also be used for sorting and including related resources.
+
+| | |
+| :--- | :--- |
+| [SearchParameter DMI Device definitionType](SearchParameter-DMI-Device-definition-type.md) | Permet la recherche sur le type de définition du DMI |
+| [SearchParameter DMI Device lotNumber](SearchParameter-DMI-Device-lotNumber.md) | Permet de faire une recherche sur le numéro de lot du DMI |
+| [SearchParameter DMI Device serialNumber](SearchParameter-DMI-Device-serialNumber.md) | Permet la recherche sur le numéro de série du DMI |
+| [SearchParameter DMI Patient INS](SearchParameter-DMI-Patient-INS.md) | Permet la recherche sur le code EMDN |
+
 ### Structures: Resource Profiles 
 
 These define constraints on FHIR resources for systems conforming to this implementation guide.
 
-| | |
-| :--- | :--- |
-| [Patient français](StructureDefinition-fr-patient.md) | Description du patient français |
+| |
+| :--- |
+| [DMIBundleDelivery](StructureDefinition-dmi-bundledelivery.md) |
+| [DMIBundleRequest](StructureDefinition-dmi-bundle-request.md) |
+| [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md) |
+| [DMIDevice](StructureDefinition-dmi-device.md) |
+| [DMIDeviceDefinition](StructureDefinition-dmi-devicedefinition.md) |
+| [DMIDeviceRequest](StructureDefinition-dmi-devicerequest.md) |
+| [DMIInvoice](StructureDefinition-dmi-invoice.md) |
+| [DMIOrganizationEJ](StructureDefinition-dmi-organization-ej.md) |
+| [DMIOrganizationInterne](StructureDefinition-dmi-organization-interne.md) |
+| [DMIPatient](StructureDefinition-dmi-patient.md) |
+| [DMIPractitioner](StructureDefinition-dmi-practitioner.md) |
+| [DMIProcedure](StructureDefinition-dmi-procedure.md) |
+| [DMISupplyDeliveryEnteteDelivrance](StructureDefinition-dmi-supplydelivery-entete-delivrance.md) |
+| [DMISupplyDeliveryEnteteLivraison](StructureDefinition-dmi-supplydelivery-entete-livraison.md) |
+| [DMISupplyDeliveryEnteteReception](StructureDefinition-dmi-supplydelivery-enteter-reception.md) |
+| [DMISupplyDeliveryLigne](StructureDefinition-dmi-supplydelivery-ligne.md) |
+| [DMISupplyDeliveryReceptionUnitaire](StructureDefinition-dmi-supplydelivery-reception-unitaire.md) |
+| [DMISupplyDeliveryTransport](StructureDefinition-dmi-supplydelivery-transport.md) |
+| [DMISupplyRequestEnteteCommande](StructureDefinition-dmi-supplyrequest-entete-commande.md) |
+| [DMISupplyRequestEnteteDemande](StructureDefinition-dmi-supplyrequest-entete-demande.md) |
+| [DMISupplyRequestEnteteReponse](StructureDefinition-dmi-supplyrequest-entetereponse.md) |
 
 ### Structures: Extension Definitions 
 
@@ -21,18 +52,21 @@ These define constraints on FHIR data types for systems conforming to this imple
 
 | | |
 | :--- | :--- |
-| [EyeColor](StructureDefinition-EyeColor.md) | Eye color extension |
-
-### Terminology: Value Sets 
-
-These define sets of codes used by systems conforming to this implementation guide.
-
-| | |
-| :--- | :--- |
-| [EyeColor Value Set](ValueSet-EyeColorVS.md) | Different eye colors. |
-| [Melting Pot Value Set](ValueSet-MeltingPotVS.md) | Melting Pot Value Set. |
-| [ModifiedAdministrativeGender](ValueSet-ModifiedAdministrativeGender.md) | AdministrativeGender without unknown code |
-| [Type Carte Value Set](ValueSet-TypeCarteVS.md) | Type Carte Value Set. |
+| [DMIClasseRisque](StructureDefinition-dmi-classe-risque.md) |  |
+| [DMICodeEMDN](StructureDefinition-dmi-code-emdn.md) |  |
+| [DMICodeLPP](StructureDefinition-dmi-code-lpp.md) |  |
+| [DMIFacture](StructureDefinition-dmi-facture.md) |  |
+| [DMIIPIdLogiciel](StructureDefinition-dmi-ip-id-logiciel.md) |  |
+| [DMIIdentifiantLocalDistributeur](StructureDefinition-dmi-identifiant-local-distributeur.md) |  |
+| [DMIIdentifiantLocalFabricant](StructureDefinition-dmi-identifiant-local-fabricant.md) |  |
+| [DMIInternalDiameter](StructureDefinition-dmi-internal-diameter.md) |  |
+| [DMIMarquageCE](StructureDefinition-dmi-marquage-ce.md) |  |
+| [DMINomDistributeur](StructureDefinition-dmi-nom-distributeur.md) |  |
+| [DMIOrganizationLocation](StructureDefinition-dmi-organization-location.md) |  |
+| [DMIReferenceDistributeur](StructureDefinition-dmi-reference-distributeur.md) |  |
+| [DMIReferenceOrganisationInterne](StructureDefinition-dmi-reference-organisation-interne.md) |  |
+| [DMITransport](StructureDefinition-dmi-transport.md) |  |
+| [Extension DMI referenceFabricant](StructureDefinition-dmi-reference-fabricant.md) | Extension pour référencer l'organisation fabricant du DMI |
 
 ### Terminology: Code Systems 
 
@@ -40,14 +74,5 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
-| [Compétences CodeSystem](CodeSystem-competence-code-system.md) | Compétences des professionnels de santé. |
-| [Type de carte](CodeSystem-type-carte-code-system.md) | Type de carte professionnelle et personnelle. |
-
-### Example: Example Instances 
-
-These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.
-
-| | |
-| :--- | :--- |
-| [frpatient-exemple](Patient-frpatient-exemple.md) | Exemple d'un patient français |
+| [DMI Discriminator](CodeSystem-dmi-discriminator.md) | CodeSystem définissant les codes discriminants. |
 

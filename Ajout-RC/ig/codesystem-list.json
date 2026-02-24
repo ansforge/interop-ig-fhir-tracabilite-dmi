@@ -1,20 +1,10 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/competence-code-system",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CompetenceCS",
-      "title" : "Compétences CodeSystem",
-      "description" : "Compétences des professionnels de santé."
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/[code]/CodeSystem/type-carte-code-system",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TypeCarteCS",
-      "title" : "Type de carte",
-      "description" : "Type de carte professionnelle et personnelle."
-    }
-  ]
+  "codeSystems" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "DMIDiscriminator",
+    "title" : "DMI Discriminator",
+    "description" : "CodeSystem définissant les codes discriminants."
+  }]
 }
