@@ -289,7 +289,7 @@ href="#flux-22-transmissiontrace">Tableau FLux 22</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1] (Le contenu de l’ObjetEvenement est une « Reponse ». Cet élément est décrit dans une partie spécifique « Reponse »)</td>
+<td style="text-align: left;">Contenu [0..1] (Le contenu de l’ObjetEvenement est une « Reponse ». Cet élément est décrit dans une partie spécifique « Reponse »)</td>
 <td style="text-align: left;">entity[0..*].what [0..1] Reference
 (Bundle)</td>
 </tr>
@@ -430,7 +430,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] ObjetBinaire (Le contenu de l’ObjetEvenement est une commande. Cet élément est décrit dans une partie spécifique « Commande »)</td>
+<td style="text-align: left;">Contenu : [0..1] ObjetBinaire (Le contenu de l’ObjetEvenement est une commande. Cet élément est décrit dans une partie spécifique « Commande »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
 </tr>
 <tr>
@@ -470,11 +470,11 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>OrganisationInterne [0..1] </td>
+<td style="text-align: left;">OrganisationInterne [0..1] </td>
 <td style="text-align: center;">deliverTo[0..1] Reference(Organization)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Professionnel [0..1]></td>
+<td style="text-align: left;">Professionnel [0..1]></td>
 <td style="text-align: center;">Requester[0..1] Reference(Practitioner)</td>
 </tr>
 <tr>
@@ -614,7 +614,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Professionnel [1..1]</td>
+<td style="text-align: left;">Professionnel [1..1]</td>
 <td style="text-align: center;"><p>Receiver [0..*] Reference</p>
 <p>(Practitioner | PractitionerRole)</p></td>
 </tr>
@@ -645,7 +645,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">text [0..1] Narrative</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..*]</td>
+<td style="text-align: left;">DispositifMedical [1..*]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
 </tr>
@@ -656,7 +656,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : Objet binaire [0..1] (Le contenu de l’ObjetEvenement est le contenu non structuré de la « Livraison »)</td>
+<td style="text-align: left;">Contenu : Objet binaire [0..1] (Le contenu de l’ObjetEvenement est le contenu non structuré de la « Livraison »)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valuebase64Binary </td>
 </tr>
 </tbody>
@@ -727,17 +727,17 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: left;">Cet élément est décrit dans une partie spécifique « StatutReception ».</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Professionnel [1..1]</td>
+<td style="text-align: left;">Professionnel [1..1]</td>
 <td style="text-align: center;"><p>Receiver [0..*] Reference</p>
 <p>(Practitioner | PractitionerRole)</p></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>OrganisationInterne [1..1]</td>
+<td style="text-align: left;">OrganisationInterne [1..1]</td>
 <td style="text-align: left;"><em>Extension : DMI_ReferenceOrganisationInterne[1..1] Reference
 (Organization)</em></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..1]</td>
+<td style="text-align: left;">DispositifMedical [1..1]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
 </tr>
@@ -761,7 +761,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu: [0..1] ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la « ReceptionUnitaire »)</td>
+<td style="text-align: left;">Contenu: [0..1] ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la « ReceptionUnitaire »)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
@@ -885,7 +885,7 @@ Texte</td>
 <td style="text-align: center;">text [0..1] Narrative</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..1]</td>
+<td style="text-align: left;">DispositifMedical [1..1]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
 </tr>
@@ -896,7 +896,7 @@ Texte</td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1]ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la délivrance)</td>
+<td style="text-align: left;">Contenu : [0..1]ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la délivrance)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
@@ -956,7 +956,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1]ObjetBinaire (Le contenu de l’ObjetEvenement est un transport. Cet élément est décrit dans une partie spécifique « Transport »)</td>
+<td style="text-align: left;">Contenu : [0..1]ObjetBinaire (Le contenu de l’ObjetEvenement est un transport. Cet élément est décrit dans une partie spécifique « Transport »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (SupplyDelivery)</td>
 </tr>
 <tr>
@@ -1004,7 +1004,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1] : Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré du transport)</td>
+<td style="text-align: left;">Contenu [0..1] : Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré du transport)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
@@ -1060,7 +1060,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est la réception du DMI. Cet élément est décrit dans une partie spécifique « ReceptionDMI »)</td>
+<td style="text-align: left;">Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est la réception du DMI. Cet élément est décrit dans une partie spécifique « ReceptionDMI »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
 </tr>
 <tr>
@@ -1092,7 +1092,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>OrganisationInterne [1..1]</td>
+<td style="text-align: left;">OrganisationInterne [1..1]</td>
 <td style="text-align: center;"><em>Extension : DMI_ReferenceOrganisationInterne[1..1]Reference (Organization)</em></td>
 </tr>
 <tr>
@@ -1131,7 +1131,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..1]</td>
+<td style="text-align: left;">DispositifMedical [1..1]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
 </tr>
@@ -1142,7 +1142,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu[0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la réception)</td>
+<td style="text-align: left;">Contenu[0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la réception)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
@@ -1266,7 +1266,7 @@ href="https://hl7.org/FHIR/practitionerrole.html">PractitionerRole</a>)</p></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de l’intervention médicale)</td>
+<td style="text-align: left;">Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de l’intervention médicale)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
@@ -1378,7 +1378,7 @@ href="#flux-22-transmissiontrace">Tableau FLux 22</a></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ligne : [1.*](Cet élément est décrit dans une partie spécifique « Ligne »</td>
+<td style="text-align: left;">Ligne : [1.*](Cet élément est décrit dans une partie spécifique « Ligne »</td>
 <td style="text-align: center;">L’élément ligne est décrit dans une partie spécifique “Ligne”)</td>
 </tr>
 <tr>
@@ -1403,7 +1403,7 @@ style="text-align: center;">lineItem[0..*].chargeItemReference[1..1].occurenceDa
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la facture)</td>
+<td style="text-align: left;">Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la facture)</td>
 <td style="text-align: center;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
 </tbody>
