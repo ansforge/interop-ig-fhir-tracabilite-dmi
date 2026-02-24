@@ -219,6 +219,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#flux-22-transmissiontrace" id="markdown-toc-flux-22-transmissiontrace">Flux 22 : TransmissionTrace</a></li>
   <li><a href="#flux-1c--tracabilitedemande" id="markdown-toc-flux-1c--tracabilitedemande">Flux 1c – TracabiliteDemande</a></li>
   <li><a href="#flux-2a---tracabilitéreponse" id="markdown-toc-flux-2a---tracabilitéreponse">Flux 2a - TracabilitéReponse</a></li>
+  <li><a href="#flux-27--tracabilitecommande" id="markdown-toc-flux-27--tracabilitecommande">Flux 27 – TracabiliteCommande</a></li>
+  <li><a href="#flux-5--tracabilitelivraisonvalide" id="markdown-toc-flux-5--tracabilitelivraisonvalide">Flux 5 – TracabiliteLivraisonValide</a></li>
+  <li><a href="#flux-5a---tracabilitelivraisonrejet" id="markdown-toc-flux-5a---tracabilitelivraisonrejet">Flux 5a - TracabiliteLivraisonRejet</a></li>
+  <li><a href="#flux-5c--tracabiliteentreestockdmi" id="markdown-toc-flux-5c--tracabiliteentreestockdmi">Flux 5c – TracabiliteEntreeStockDMI</a></li>
+  <li><a href="#flux-5d--tracabilitereceptiondmi" id="markdown-toc-flux-5d--tracabilitereceptiondmi">Flux 5d – TracabiliteReceptionDMI</a></li>
+  <li><a href="#flux-5e--tracabiliterejetdmi" id="markdown-toc-flux-5e--tracabiliterejetdmi">Flux 5e – TracabiliteRejetDMI </a></li>
+  <li><a href="#flux-6a--tracabilitesortiestock" id="markdown-toc-flux-6a--tracabilitesortiestock">Flux 6a – TracabiliteSortieStock </a></li>
+  <li><a href="#flux-7--tracabilitedelivrancesu" id="markdown-toc-flux-7--tracabilitedelivrancesu">Flux 7 – TracabiliteDelivranceSU </a></li>
+  <li><a href="#flux-9--tracabilitetransportdmi" id="markdown-toc-flux-9--tracabilitetransportdmi">Flux 9 – TracabiliteTransportDMI </a></li>
+  <li><a href="#flux-11--tracabiliteentrestock" id="markdown-toc-flux-11--tracabiliteentrestock">Flux 11 – TracabiliteEntreStock </a></li>
 </ul>
 
 </div>
@@ -505,10 +515,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1] (Le contenu de l’ObjetEvenement est une « Reponse ». Cet élément est décrit dans une partie spécifique « Reponse »)&lt;/td&gt;
+<td style="text-align: left;">Contenu [0..1] (Le contenu de l’ObjetEvenement est une « Reponse ». Cet élément est décrit dans une partie spécifique « Reponse »)</td>
 <td style="text-align: left;">entity[0..*].what [0..1] Reference
 (Bundle)</td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td rowspan="2" style="text-align: left;">Reponse [1..1]</td>
 <td style="text-align: left;">EntêteReponse [1..1]</td>
@@ -589,15 +599,15 @@ CodeableConcept</p>
 <td style="text-align: left;"><strong>Contenu : [0..1] ObjetBinaire</strong> (Le contenu de l’ObjetEvenement est le contenu non structuré de la « Reponse »)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary  [1..1] base64Binary </td>
 </tr>
-&lt;/tbody&gt;
-&lt;/table&gt;
+</tbody>
+</table>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
 2a</p>
 
-### Flux 27 – TracabiliteCommande
+<h3 id="flux-27--tracabilitecommande">Flux 27 – TracabiliteCommande</h3>
 
-Ce flux est un cas particulier du « Flux 22 – TransmissionTrace », précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement, ObjetEvenement.
+<p>Ce flux est un cas particulier du « Flux 22 – TransmissionTrace », précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement, ObjetEvenement.</p>
 
 <table style="width:89%;">
 <colgroup>
@@ -640,9 +650,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace », précé
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] ObjetBinaire (Le contenu de l’ObjetEvenement est une commande. Cet élément est décrit dans une partie spécifique « Commande »)&lt;/td&gt;
+<td style="text-align: left;">Contenu : [0..1] ObjetBinaire (Le contenu de l’ObjetEvenement est une commande. Cet élément est décrit dans une partie spécifique « Commande »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td rowspan="2" style="text-align: left;">Commande [1..1]</td>
 <td style="text-align: left;">EntêteCommande [1..1]</td>
@@ -680,13 +690,13 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace », précé
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>OrganisationInterne [0..1] &lt;/td&gt;
+<td style="text-align: left;">OrganisationInterne [0..1] </td>
 <td style="text-align: center;">deliverTo[0..1] Reference(Organization)</td>
-&lt;/tr&gt;
+</tr>
 <tr>
-<td style="text-align: left;"><strong>Professionnel [0..1]&gt;&lt;/td&gt;
+<td style="text-align: left;">Professionnel [0..1]&gt;</td>
 <td style="text-align: center;">Requester[0..1] Reference(Practitioner)</td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td rowspan="7" style="text-align: left;">LigneCommande [1..*]</td>
 <td style="text-align: left;">IdLigneAssocieeEnteteCommande [0..1]</td>
@@ -728,15 +738,15 @@ dateTime</td>
 <td style="text-align: left;"><strong>Contenu [0..1]:</strong> ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la commande)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1] base64Binary</td>
 </tr>
-&lt;/tbody&gt;
-&lt;/table&gt;
+</tbody>
+</table>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
 27</p>
 
-### Flux 5 – TracabiliteLivraisonValide
+<h3 id="flux-5--tracabilitelivraisonvalide">Flux 5 – TracabiliteLivraisonValide</h3>
 
-Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :
+<p>Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :</p>
 
 <table style="width:89%;">
 <colgroup>
@@ -818,10 +828,10 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Professionnel [1..1]&lt;/td&gt;
+<td style="text-align: left;">Professionnel [1..1]</td>
 <td style="text-align: center;"><p>Receiver [0..*] Reference</p>
 <p>(Practitioner | PractitionerRole)</p></td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td style="text-align: left;"><strong>OrganisationInterne [1..1]</strong></td>
 <td style="text-align: center;"><em>Extension : DMI_ReferenceOrganisationInterne[1..1]Reference (Organization)</em></td>
@@ -849,10 +859,10 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">text [0..1] Narrative</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..*]&lt;/td&gt;
+<td style="text-align: left;">DispositifMedical [1..*]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
 <td style="text-align: left;">type [0..1] Code</td>
@@ -860,22 +870,22 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : Objet binaire [0..1] (Le contenu de l’ObjetEvenement est le contenu non structuré de la « Livraison »)&lt;/td&gt;
+<td style="text-align: left;">Contenu : Objet binaire [0..1] (Le contenu de l’ObjetEvenement est le contenu non structuré de la « Livraison »)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valuebase64Binary </td>
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+</tr>
+</tbody>
+</table>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
 5</p>
 
-### Flux 5a - TracabiliteLivraisonRejet 
+<h3 id="flux-5a---tracabilitelivraisonrejet">Flux 5a - TracabiliteLivraisonRejet</h3>
 
-Ce flux reprend les mêmes éléments que le flux 5
+<p>Ce flux reprend les mêmes éléments que le flux 5</p>
 
-### Flux 5c – TracabiliteEntreeStockDMI 
+<h3 id="flux-5c--tracabiliteentreestockdmi">Flux 5c – TracabiliteEntreeStockDMI</h3>
 
-Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :
+<p>Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :</p>
 
 <table>
 <caption><p>Tableau 7 : Mise en correspondance des contenus métiers/standard du flux 5c</p></caption>
@@ -929,20 +939,20 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: left;">Cet élément est décrit dans une partie spécifique « StatutReception ».</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Professionnel [1..1]&lt;/td&gt;
+<td style="text-align: left;">Professionnel [1..1]</td>
 <td style="text-align: center;"><p>Receiver [0..*] Reference</p>
 <p>(Practitioner | PractitionerRole)</p></td>
-&lt;/tr&gt;
+</tr>
 <tr>
-<td style="text-align: left;"><strong>OrganisationInterne [1..1]&lt;/td&gt;
+<td style="text-align: left;">OrganisationInterne [1..1]</td>
 <td style="text-align: left;"><em>Extension : DMI_ReferenceOrganisationInterne[1..1] Reference
 (Organization)</em></td>
-&lt;/tr&gt;
+</tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..1]&lt;/td&gt;
+<td style="text-align: left;">DispositifMedical [1..1]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td rowspan="3" style="text-align: left;">StatutReception [1..1]</td>
 <td style="text-align: left;">receptionConforme : [1..1] boolean</td>
@@ -963,23 +973,23 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu: [0..1] ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la « ReceptionUnitaire »)&lt;/td&gt;
+<td style="text-align: left;">Contenu: [0..1] ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la « ReceptionUnitaire »)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+</tr>
+</tbody>
+</table>
 
-### Flux 5d – TracabiliteReceptionDMI
+<h3 id="flux-5d--tracabilitereceptiondmi">Flux 5d – TracabiliteReceptionDMI</h3>
 
-Ce flux reprend les mêmes éléments que le flux 5c.
+<p>Ce flux reprend les mêmes éléments que le flux 5c.</p>
 
-### Flux 5e – TracabiliteRejetDMI  
+<h3 id="flux-5e--tracabiliterejetdmi">Flux 5e – TracabiliteRejetDMI </h3>
 
-Ce flux reprend les mêmes éléments que le flux 5c.
+<p>Ce flux reprend les mêmes éléments que le flux 5c.</p>
 
-### Flux 6a – TracabiliteSortieStock 
+<h3 id="flux-6a--tracabilitesortiestock">Flux 6a – TracabiliteSortieStock </h3>
 
-Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :
+<p>Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :</p>
 
 <table style="width:89%;">
 <colgroup>
@@ -1085,10 +1095,10 @@ Texte</td>
 <td style="text-align: center;">text [0..1] Narrative</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..1]&lt;/td&gt;
+<td style="text-align: left;">DispositifMedical [1..1]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
 <td style="text-align: left;">type [0..1] Code</td>
@@ -1096,22 +1106,22 @@ Texte</td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1]ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la délivrance)&lt;/td&gt;
+<td style="text-align: left;">Contenu : [0..1]ObjetBinaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la délivrance)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+</tr>
+</tbody>
+</table>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
 6a</p>
 
-### Flux 7 – TracabiliteDelivranceSU 
+<h3 id="flux-7--tracabilitedelivrancesu">Flux 7 – TracabiliteDelivranceSU </h3>
 
-Ce flux reprend les mêmes éléments que le flux 6a.
+<p>Ce flux reprend les mêmes éléments que le flux 6a.</p>
 
-### Flux 9 – TracabiliteTransportDMI 
+<h3 id="flux-9--tracabilitetransportdmi">Flux 9 – TracabiliteTransportDMI </h3>
 
-Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :
+<p>Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :</p>
 
 <table style="width:89%;">
 <colgroup>
@@ -1154,9 +1164,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1]ObjetBinaire (Le contenu de l’ObjetEvenement est un transport. Cet élément est décrit dans une partie spécifique « Transport »)&lt;/td&gt;
+<td style="text-align: left;">Contenu : [0..1]ObjetBinaire (Le contenu de l’ObjetEvenement est un transport. Cet élément est décrit dans une partie spécifique « Transport »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (SupplyDelivery)</td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td rowspan="9" style="text-align: left;">Transport [1..1]</td>
 <td style="text-align: left;">referenceTransport : [1..1] Identifiant</td>
@@ -1202,18 +1212,18 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1] : Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré du transport)&lt;/td&gt;
+<td style="text-align: left;">Contenu [0..1] : Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré du transport)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+</tr>
+</tbody>
+</table>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
 9</p>
 
-### Flux 11 – TracabiliteEntreStock 
+<h3 id="flux-11--tracabiliteentrestock">Flux 11 – TracabiliteEntreStock </h3>
 
-Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :
+<p>Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :</p>
 
 <table style="width:96%;">
 <colgroup>
@@ -1256,9 +1266,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est la réception du DMI. Cet élément est décrit dans une partie spécifique « ReceptionDMI »)&lt;/td&gt;
+<td style="text-align: left;">Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est la réception du DMI. Cet élément est décrit dans une partie spécifique « ReceptionDMI »)</td>
 <td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td rowspan="2" style="text-align: left;">ReceptionDMI [1..1]</td>
 <td style="text-align: left;">EntêteReceptionDMI [1..1]</td>
@@ -1288,9 +1298,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>OrganisationInterne [1..1]&lt;/td&gt;
+<td style="text-align: left;">OrganisationInterne [1..1]</td>
 <td style="text-align: center;"><em>Extension : DMI_ReferenceOrganisationInterne[1..1]Reference (Organization)</em></td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td style="text-align: left;"><strong>Professionnel [1..1]&lt;/td&gt;
 <td style="text-align: center;"><p>receiver [0..*] Reference</p>
@@ -1327,10 +1337,10 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>DispositifMedical [1..1]&lt;/td&gt;
+<td style="text-align: left;">DispositifMedical [1..1]</td>
 <td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
 <p>(Medication | Substance | Device)</p></td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
 <td style="text-align: left;">type [0..1] Code</td>
@@ -1338,9 +1348,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu[0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la réception)&lt;/td&gt;
+<td style="text-align: left;">Contenu[0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la réception)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
-&lt;/tr&gt;
+</tr>
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -1459,11 +1469,11 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de l’intervention médicale)&lt;/td&gt;
+<td style="text-align: left;">Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de l’intervention médicale)</td>
 <td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+</tr>
+</tbody>
+</table>
 
 ### Flux 13a – TracabiliteRefusDMI 
 
@@ -1569,9 +1579,9 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ligne : [1.*](Cet élément est décrit dans une partie spécifique « Ligne »&lt;/td&gt;
+<td style="text-align: left;">Ligne : [1.*](Cet élément est décrit dans une partie spécifique « Ligne »</td>
 <td style="text-align: center;">L’élément ligne est décrit dans une partie spécifique “Ligne”)</td>
-&lt;/tr&gt;
+</tr>
 <tr>
 <td rowspan="3" style="text-align: left;">Ligne [1..*]</td>
 <td style="text-align: left;">dateAchat : [1..1] Date</td>
@@ -1593,11 +1603,11 @@ Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précéd
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la facture)&lt;/td&gt;
+<td style="text-align: left;">Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la facture)</td>
 <td style="text-align: center;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+</tr>
+</tbody>
+</table>
 
 ### Flux 23 - RechercheTraces
 
@@ -1767,7 +1777,7 @@ Il s’agit du résultat de la demande de consultation de la trace d’un évèn
 Il correspond au « Flux 3 - ReponseConsultationTrace » du volet
 « Traçabilité des évènements ».
 
-</td></tr></tbody></table></strong></td></tr></strong></td></tr></tbody></table></strong></td></tr></tbody></table></strong></td></tr></strong></td></tr></strong></td></tr></strong></td></tr></strong></td></tr></tbody></table></strong></td></tr></strong></td></tr></tbody></table></strong></td></tr></strong></td></tr></tbody></table></strong></td></tr></strong></td></tr></strong></td></tr></strong></td></tr></tbody></table></strong></td></tr></strong></td></tr></strong></td></tr></tbody></table></strong></td></tr></strong></td></tr></strong></td></tr></tbody></table></strong></td></tr></tbody></table>
+</td></tr></tbody></table></strong></td></tr></tbody></table>
 
 
 
@@ -1809,7 +1819,7 @@ Il correspond au « Flux 3 - ReponseConsultationTrace » du volet
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 15:22+0000">2026-02-24</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 17:10+0000">2026-02-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
