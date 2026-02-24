@@ -1,0 +1,2099 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Mise en correspondance - Traçabilité des Dispositifs Médicaux Implantables v3.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"4.2"}
+    h3,h4,h5,h6{--heading-prefix:"4.2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+  </div>
+  <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
+    <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
+    <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Traçabilité des Dispositifs Médicaux Implantables</span>
+            <br/>
+            <span style="display:inline-block;">3.0.0 - ci-build
+
+
+
+  FRANCE
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="specifications_fonctionnelles.html">Volume 1 - Etude fonctionnelle</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 2 - Détail des transactions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="specifications_techniques_introduction.html">Introduction</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_construction_flux.html">Construction des flux</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_flux23_flux24.html">Flux 23 - Flux 24</a>
+      </li>
+      <li>
+        <a href="specifications_techniques_flux25_flux26.html">Flux 25- Flux 26</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 3 - Annexes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="norme_standard.html">Normes et Standards</a>
+      </li>
+      <li>
+        <a href="annexe_mise_en_correspondance.html">Mise en correspondance</a>
+      </li>
+      <li>
+        <a href="glossaire.html">Glossaire</a>
+      </li>
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+      <li>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a href="https://esante.gouv.fr/" target="_blank">Site de l'ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li>
+    <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation</a>
+  </li>
+  <li>
+    <a href="change-log.html">Historique</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="autres_ressources.html"><b>Autres Ressources</b></a></li><li><b>Mise en correspondance</b></li>
+
+          <span style="float:right;">
+
+            <a href="norme_standard.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="glossaire.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Traçabilité des Dispositifs Médicaux Implantables - version de développement local (intégration continue v3.0.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
+  <h2>Mise en correspondance</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#flux-22-transmissiontrace" id="markdown-toc-flux-22-transmissiontrace">Flux 22&nbsp;: TransmissionTrace</a></li>
+  <li><a href="#flux-1c--tracabilitedemande" id="markdown-toc-flux-1c--tracabilitedemande">Flux 1c – TracabiliteDemande</a></li>
+  <li><a href="#flux-2a---tracabilitéreponse" id="markdown-toc-flux-2a---tracabilitéreponse">Flux 2a - TracabilitéReponse</a></li>
+  <li><a href="#flux-27--tracabilitecommande" id="markdown-toc-flux-27--tracabilitecommande">Flux 27 – TracabiliteCommande</a></li>
+  <li><a href="#flux-5--tracabilitelivraisonvalide" id="markdown-toc-flux-5--tracabilitelivraisonvalide">Flux 5 – TracabiliteLivraisonValide</a></li>
+  <li><a href="#flux-5a---tracabilitelivraisonrejet" id="markdown-toc-flux-5a---tracabilitelivraisonrejet">Flux 5a - TracabiliteLivraisonRejet</a></li>
+  <li><a href="#flux-5c--tracabiliteentreestockdmi" id="markdown-toc-flux-5c--tracabiliteentreestockdmi">Flux 5c – TracabiliteEntreeStockDMI</a></li>
+  <li><a href="#flux-5d--tracabilitereceptiondmi" id="markdown-toc-flux-5d--tracabilitereceptiondmi">Flux 5d – TracabiliteReceptionDMI</a></li>
+  <li><a href="#flux-5e--tracabiliterejetdmi" id="markdown-toc-flux-5e--tracabiliterejetdmi">Flux 5e – TracabiliteRejetDMI&nbsp;</a></li>
+  <li><a href="#flux-6a--tracabilitesortiestock" id="markdown-toc-flux-6a--tracabilitesortiestock">Flux 6a – TracabiliteSortieStock&nbsp;</a></li>
+  <li><a href="#flux-7--tracabilitedelivrancesu" id="markdown-toc-flux-7--tracabilitedelivrancesu">Flux 7 – TracabiliteDelivranceSU&nbsp;</a></li>
+  <li><a href="#flux-9--tracabilitetransportdmi" id="markdown-toc-flux-9--tracabilitetransportdmi">Flux 9 – TracabiliteTransportDMI&nbsp;</a></li>
+  <li><a href="#flux-11--tracabiliteentrestock" id="markdown-toc-flux-11--tracabiliteentrestock">Flux 11 – TracabiliteEntreStock&nbsp;</a></li>
+  <li><a href="#flux-12--tracabilitereceptionsu" id="markdown-toc-flux-12--tracabilitereceptionsu">Flux 12 – TracabiliteReceptionSU&nbsp;</a></li>
+  <li><a href="#flux-28--tracabiliterejetdmi" id="markdown-toc-flux-28--tracabiliterejetdmi">Flux 28- TracabiliteRejetDMI</a></li>
+  <li><a href="#flux-15--tracabilitepose" id="markdown-toc-flux-15--tracabilitepose">Flux 15 -TracabilitePose</a></li>
+  <li><a href="#flux-13a--tracabiliterefusdmi" id="markdown-toc-flux-13a--tracabiliterefusdmi">Flux 13a – TracabiliteRefusDMI&nbsp;</a></li>
+  <li><a href="#flux-30--tracabilitesortiestocksu" id="markdown-toc-flux-30--tracabilitesortiestocksu">Flux 30 – TracabiliteSortieStockSU</a></li>
+  <li><a href="#flux-14--tracabiliteechecpose" id="markdown-toc-flux-14--tracabiliteechecpose">Flux 14 – TracabiliteEchecPose&nbsp;</a></li>
+  <li><a href="#flux-16a--tracabilitereassortdmi" id="markdown-toc-flux-16a--tracabilitereassortdmi">Flux 16a – TracabiliteReassortDMI&nbsp;</a></li>
+  <li><a href="#flux-18--tracabilitefacturationdmi" id="markdown-toc-flux-18--tracabilitefacturationdmi">Flux 18 – TracabiliteFacturationDMI&nbsp;</a></li>
+  <li><a href="#flux-23---recherchetraces" id="markdown-toc-flux-23---recherchetraces">Flux 23 - RechercheTraces</a></li>
+  <li><a href="#flux-24--reponserecherchetraces" id="markdown-toc-flux-24--reponserecherchetraces">Flux 24 – ReponseRechercheTraces</a></li>
+  <li><a href="#flux-25--consultertrace" id="markdown-toc-flux-25--consultertrace">Flux 25 – ConsulterTrace</a></li>
+  <li><a href="#flux-26--reponseconsultertrace" id="markdown-toc-flux-26--reponseconsultertrace">Flux 26 – ReponseConsulterTrace</a></li>
+</ul>
+
+</div>
+<h3 id="flux-22-transmissiontrace">Flux 22&nbsp;: TransmissionTrace</h3>
+
+<p>Ce flux permet à la source de traçabilité de transmettre les informations de traçabilité du DMI pour un évènement au gestionnaire de traçabilité.</p>
+
+<p>Il correspond au «&nbsp;Flux 1 -TransmissionTrace&nbsp;» du volet «&nbsp;Traçabilité des événements&nbsp;»&nbsp;avec la ressource profilée TDE_AuditEvent :</p>
+
+<table style="width:89%;">
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 26%"/>
+<col style="width: 18%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td style="text-align: left;">identifiant [0..1]&nbsp;: Identifiant</td>
+<td rowspan="11" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">id [0..1] id</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+<td style="text-align: left;">identifiant [0..1]&nbsp;: Identifiant</td>
+<td style="text-align: center;"><p>source[1..1].observer[1..1]. identifier [0..*] Identifier</p>
+<p>Reference (PractitionerRole|Practitioner| Organization|Device|Patient|RelatedPerson)</p></td>
+</tr>
+<tr>
+<td rowspan="5" style="text-align: left;">Événement [1..1]</td>
+<td style="text-align: left;">typeEvenement [0..1] Code</td>
+<td style="text-align: center;"><p>type [1..1] Coding</p>
+<p><em>TRE R254-TypeEvenement</em></p></td>
+</tr>
+<tr>
+<td style="text-align: left;">sousTypeEvenement [0..1] Code</td>
+<td style="text-align: center;"><p>subtype [0..1] Coding</p>
+<p><em>N’est pas utilisé dans le context de ce volet.</em></p></td>
+</tr>
+<tr>
+<td style="text-align: left;">occurence [0..1] DateHeure</td>
+<td style="text-align: center;">period[0..1].start [1..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">declaration [0..1] DateHeure</td>
+<td style="text-align: center;">recorded [1..1] instant</td>
+</tr>
+<tr>
+<td style="text-align: left;">description [0..1] Texte</td>
+<td style="text-align: center;">outcomeDesc [0..1] string</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ActeurEvenement [0..2]</td>
+<td style="text-align: left;">identifiant [1..1] Identifiant</td>
+<td style="text-align: center;"><p>agent[1..2].who[1..1].</p>
+<p>Reference (PractitionerRole|Practitioner|Organization| Device|Patient|RelatedPerson)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">role [1..1] Code</td>
+<td style="text-align: left;">agent[1..2].role [0..*] CodeableConcept</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;">contenu [0..1] ObjetBinaire</td>
+<td style="text-align: center;"><p>entity[0..*].what [0..1] reference “Any”</p>
+<p>ou entity[0..*].detail [0..*] BackBoneElement</p></td>
+</tr>
+</tbody>
+</table>
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux 22</p>
+
+<p>Le contenu de l’évènement (ObjetEvenement) varie en fonction du cas d’utilisation. Il sera détaillé dans les flux suivants.</p>
+
+<p>Le contenu peut être structuré et ainsi transporter les classes des objets métiers. Le contenu peut aussi être non-structuré et ainsi transporter les informations métiers encodés en binaire.</p>
+
+<p>Si possible il faut privilégier l’utilisation d’un contenu structuré.</p>
+
+<h3 id="flux-1c--tracabilitedemande">Flux 1c – TracabiliteDemande</h3>
+
+<p>Ce flux est un cas particulier du «&nbsp;Flux 22 – TransmissionTrace&nbsp;» précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement&nbsp;:</p>
+
+<table style="width:95%;">
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 26%"/>
+<col style="width: 14%"/>
+<col style="width: 34%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: left;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire <a role="doc-noteref" href="#fn1" id="fnref1" class="footnote-ref"><sup>1</sup></a></td>
+<td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">Demande [1..1]</td>
+<td style="text-align: left;">EntêteDemande [1..1]</td>
+<td rowspan="2" style="text-align: center;">Bundle<a role="doc-noteref" href="#fn2" id="fnref2" class="footnote-ref"><sup>2</sup></a></td>
+<td rowspan="2" style="text-align: center;">Entry [0..*] BackboneElement</td>
+</tr>
+<tr>
+<td style="text-align: left;">LigneDemande [1..*]</td>
+</tr>
+<tr>
+<td rowspan="10" style="text-align: left;">EntêteDemande [1..1]</td>
+<td style="text-align: left;">reference : [1..1] Identifiant</td>
+<td rowspan="10" style="text-align: center;">SupplyRequest<a role="doc-noteref" href="#fn3" id="fnref3" class="footnote-ref"><sup>3</sup></a></td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">natureDemande : [0..1] Texte</td>
+<td style="text-align: center;">category [0..1] codeableConcept</td>
+</tr>
+<tr>
+<td style="text-align: left;">quantiteTotale : [0..1] Numerique</td>
+<td style="text-align: center;">quantity [1..1] Quantity</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateDem : [0..1] Date</td>
+<td style="text-align: center;">authoredOn [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">supprDemande : [0..1] boolean</td>
+<td style="text-align: center;">status [0..1] code</td>
+</tr>
+<tr>
+<td style="text-align: left;">motifSuppr : [0..1] Texte</td>
+<td style="text-align: center;">text [0..1] Narrative</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type événement [0..1]&nbsp;: Code</td>
+<td style="text-align: center;"><p>Item [1..1].itemCodeableConcept CodeableConcept</p>
+<p>TRE_R254-TypeEvenement</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee [1..1]&nbsp;: Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Professionnel [1..1]<a role="doc-noteref" href="#fn4" id="fnref4" class="footnote-ref"><sup>4</sup></a></td>
+<td style="text-align: center;">Requester[0..1] Reference(Practitioner)</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrganisationInterne [1..1]<a role="doc-noteref" href="#fn5" id="fnref5" class="footnote-ref"><sup>5</sup></a></td>
+<td style="text-align: center;">deliverTo[0..1]Reference (Organization)</td>
+</tr>
+<tr>
+<td rowspan="7" style="text-align: left;">LigneDemande [1..*]</td>
+<td style="text-align: left;">IdLigneAssocieeEntete [0..1]</td>
+<td rowspan="7" style="text-align: center;">DeviceRequest<a role="doc-noteref" href="#fn6" id="fnref6" class="footnote-ref"><sup>6</sup></a></td>
+<td style="text-align: center;">groupIdentifier [0..1] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnteteDemandeAssociee [1..1]</td>
+<td style="text-align: left;">basedOn [0..1] Reference (SupplyRequest)</td>
+</tr>
+<tr>
+<td style="text-align: left;">DispositifMedical [1..1]<a role="doc-noteref" href="#fn7" id="fnref7" class="footnote-ref"><sup>7</sup></a></td>
+<td style="text-align: center;">Subject [1..1] Reference (<a href="http://hl7.org/fhir/patient.html">Patient</a> | <a href="http://hl7.org/fhir/group.html">Group</a> | <a href="http://hl7.org/fhir/location.html">Location</a> | <a href="http://hl7.org/fhir/device.html">Device</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">TypeLigneDemande [1..1]</td>
+<td style="text-align: center;">Intent [1..1] Code</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateUtilisation [0..1] Date</td>
+<td style="text-align: center;">OccurenceDateTime [0..1] Date</td>
+</tr>
+<tr>
+<td style="text-align: left;">Metadonne&nbsp;: [1..1] Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;">NomDispositifDemande [1..1]</td>
+<td style="text-align: center;"><p>code [1..1].codeCodeableConcept.text</p>
+<p>String</p></td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu [0..1]&nbsp;:</strong> ObjetBinaire<a role="doc-noteref" href="#fn8" id="fnref8" class="footnote-ref"><sup>8</sup></a></td>
+<td style="text-align: left;">entity[0..*].detail [0..1].valueBase64Binary [1..1] base64Binary&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<section role="doc-endnotes" id="footnotes" class="footnotes footnotes-end-of-document">
+<hr/>
+<ol>
+<li id="fn1"><p>Le contenu de l’ObjetEvenement est une demande. Cet élément est décrit dans une partie spécifique «&nbsp;Demande&nbsp;».<a role="doc-backlink" href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Suit le profil DMI_BundleRequest<a role="doc-backlink" href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Suit le profil DMI_SupplyRequestEnteteDemande<a role="doc-backlink" href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p><a name="l1081">​</a>Le détail du professionnel est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.11 Professionnel&nbsp;</a>».<a role="doc-backlink" href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p><a name="l1090">​</a>Le détail de l’organisationInterne est décrit dans une
+partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.5
+OrganisationInterne&nbsp;</a>» .<a role="doc-backlink" href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Pour chaque occurrence de l’élément LigneDemande on va créer une ressource DeviceRequest suivant le profil DMI_DeviceRequest<a role="doc-backlink" href="#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p><a name="l1105">​</a>Le détail du dispositif médical est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.1
+DispositifMedical&nbsp;</a>» .<a role="doc-backlink" href="#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la demande.<a role="doc-backlink" href="#fnref8" class="footnote-back">↩︎</a></p></li>
+</ol>
+</section>
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux 1c</p>
+
+<h3 id="flux-2a---tracabilitéreponse">Flux 2a - TracabilitéReponse</h3>
+
+<p>Ce flux est un cas particulier du «&nbsp;Flux 22 – TransmissionTrace&nbsp;» précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement&nbsp;:</p>
+
+<table style="width:96%;">
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 26%"/>
+<col style="width: 18%"/>
+<col style="width: 32%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: left;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu [0..1]</strong>
+ObjetBinaire <a role="doc-noteref" href="#fn1" id="fnref1" class="footnote-ref"><sup>1</sup></a></td>
+<td style="text-align: left;">entity[0..*].what [0..1] Reference
+(Bundle)</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">Reponse [1..1]</td>
+<td style="text-align: left;">EntêteReponse [1..1]</td>
+<td rowspan="2" style="text-align: left;">Bundle<a role="doc-noteref" href="#fn2" id="fnref2" class="footnote-ref"><sup>2</sup></a></td>
+<td rowspan="2" style="text-align: left;">Entry [0..*]
+BackboneElement</td>
+</tr>
+<tr>
+<td style="text-align: left;">DetailReponse [1..*]</td>
+</tr>
+<tr>
+<td rowspan="6" style="text-align: left;">EntêteReponse [1..1]</td>
+<td style="text-align: left;">reference : [1..1] Identifiant</td>
+<td rowspan="6" style="text-align: left;">SupplyRequest<a role="doc-noteref" href="#fn3" id="fnref3" class="footnote-ref"><sup>3</sup></a></td>
+<td style="text-align: left;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateDem : [0..1] Date</td>
+<td style="text-align: left;">authoredOn [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">quantiteTotale : [0..1] Numerique</td>
+<td style="text-align: left;">quantity [1..1] Quantity</td>
+</tr>
+<tr>
+<td style="text-align: left;">infoCompl : [0..1] Texte</td>
+<td style="text-align: left;">text [0..1] Narrative</td>
+</tr>
+<tr>
+<td style="text-align: left;">TypeEvenement [1..1] Code</td>
+<td style="text-align: left;"><p>Item [1..1].itemCodeableConcept
+CodeableConcept</p>
+<p>TRE_R254-TypeEvenement</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee [1..1]&nbsp;: Metadonnee</td>
+<td style="text-align: left;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td rowspan="7" style="text-align: left;">DetailReponse [1..*]</td>
+<td style="text-align: left;">IdDetailReponseAssocieEnteteReponse
+[0..1]</td>
+<td rowspan="7" style="text-align: center;">DeviceRequest<a role="doc-noteref" href="#fn4" id="fnref4" class="footnote-ref"><sup>4</sup></a></td>
+<td style="text-align: left;">groupIdentifier [0..1] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">EntêteReponseAssociee [0..1]</td>
+<td style="text-align: left;">basedOn [0..1] Reference (SupplyRequest)</td>
+</tr>
+<tr>
+<td style="text-align: left;">NomDispostifDemande [1..1]</td>
+<td style="text-align: left;"><p>code [1..1].codeCodeableConcept.text</p>
+<p>String</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">TypeDetailReponse [1..1]</td>
+<td style="text-align: center;">Intent [1..1] Code</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateDelivrance : [0..1] Date</td>
+<td style="text-align: center;">occurenceDateTime [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee [1..1]&nbsp;: Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;">DispositifMedical [1..1]<a role="doc-noteref" href="#fn5" id="fnref5" class="footnote-ref"><sup>5</sup></a></td>
+<td style="text-align: center;">Subject [1..1] Reference (<a href="http://hl7.org/fhir/patient.html">Patient</a> | <a href="http://hl7.org/fhir/group.html">Group</a> | <a href="http://hl7.org/fhir/location.html">Location</a> | <a href="http://hl7.org/fhir/device.html">Device</a>)</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu&nbsp;: [0..1] ObjetBinaire</strong><a role="doc-noteref" href="#fn6" id="fnref6" class="footnote-ref"><sup>6</sup></a></td>
+<td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary&nbsp; [1..1] base64Binary&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<section role="doc-endnotes" id="footnotes" class="footnotes footnotes-end-of-document">
+<hr/>
+<ol>
+<li id="fn1"><p>Le contenu de l’ObjetEvenement est une «&nbsp;Reponse&nbsp;». Cet élément est décrit dans une partie spécifique «&nbsp;Reponse&nbsp;».<a role="doc-backlink" href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Suit le profil DMI_BundleRequest<a role="doc-backlink" href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Suit le profil DMI_SupplyRequestEnteteReponse<a role="doc-backlink" href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Pour chaque occurrence de l’élément DetailReponse on va créer une ressource DeviceRequest suivant le profil DMI_DeviceRequest<a role="doc-backlink" href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p><a name="l1482">​</a>La ligne est décrite dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.1 DispositifMedical&nbsp;</a>» .<a role="doc-backlink" href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la «&nbsp;Reponse&nbsp;».<a role="doc-backlink" href="#fnref6" class="footnote-back">↩︎</a></p></li>
+</ol>
+</section>
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
+2a</p>
+
+<h3 id="flux-27--tracabilitecommande">Flux 27 – TracabiliteCommande</h3>
+
+<p>Ce flux est un cas particulier du «&nbsp;Flux 22 – TransmissionTrace&nbsp;», précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement, ObjetEvenement.</p>
+
+<table style="width:89%;">
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 26%"/>
+<col style="width: 18%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: left;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu&nbsp;: [0..1] ObjetBinaire</strong><a role="doc-noteref" href="#fn1" id="fnref1" class="footnote-ref"><sup>1</sup></a></td>
+<td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">Commande [1..1]</td>
+<td style="text-align: left;">EntêteCommande [1..1]</td>
+<td rowspan="2" style="text-align: center;">Bundle<a role="doc-noteref" href="#fn2" id="fnref2" class="footnote-ref"><sup>2</sup></a></td>
+<td rowspan="2" style="text-align: center;">Entry [0..*] BackboneElement</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ligne [1..*]</td>
+</tr>
+<tr>
+<td rowspan="8" style="text-align: left;">EntêteCommande [1..1]</td>
+<td style="text-align: left;">refCommande : [1..1] Identifiant</td>
+<td rowspan="8" style="text-align: center;">SupplyRequest<a role="doc-noteref" href="#fn3" id="fnref3" class="footnote-ref"><sup>3</sup></a></td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">type : [0..1] Code</td>
+<td style="text-align: center;">category [0..1] CodeableConcept</td>
+</tr>
+<tr>
+<td style="text-align: left;">quantiteTotale : [0..1] Numerique</td>
+<td style="text-align: center;">quantity [1..1] Quantity</td>
+</tr>
+<tr>
+<td style="text-align: left;">date : [0..1] DateHeure</td>
+<td style="text-align: center;">authoredOn [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">TypeEvenement [1..1] Code</td>
+<td style="text-align: center;"><p>Item [1..1].itemCodeableConcept CodeableConcept</p>
+<p>TRE_R254-TypeEvenement</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee [1..1]&nbsp;: Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OrganisationInterne [0..1]</strong> <a role="doc-noteref" href="#fn4" id="fnref4" class="footnote-ref"><sup>4</sup></a></td>
+<td style="text-align: center;">deliverTo[0..1] Reference(Organization)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Professionnel [0..1]</strong><a role="doc-noteref" href="#fn5" id="fnref5" class="footnote-ref"><sup>5</sup></a></td>
+<td style="text-align: center;">Requester[0..1] Reference(Practitioner)</td>
+</tr>
+<tr>
+<td rowspan="7" style="text-align: left;">LigneCommande [1..*]</td>
+<td style="text-align: left;">IdLigneAssocieeEnteteCommande [0..1]</td>
+<td rowspan="7" style="text-align: center;">DeviceRequest<a role="doc-noteref" href="#fn6" id="fnref6" class="footnote-ref"><sup>6</sup></a></td>
+<td style="text-align: center;">groupIdentifier [0..1] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">EnteteCommandeAssociee [1..1]</td>
+<td style="text-align: center;">basedOn [0..1] Reference (SupplyRequest)</td>
+</tr>
+<tr>
+<td style="text-align: left;">DispositifMedical [1..1]<a role="doc-noteref" href="#fn7" id="fnref7" class="footnote-ref"><sup>7</sup></a></td>
+<td style="text-align: center;">Subject [1..1] Reference (<a href="http://hl7.org/fhir/patient.html">Patient</a> | <a href="http://hl7.org/fhir/group.html">Group</a> | <a href="http://hl7.org/fhir/location.html">Location</a> | <a href="http://hl7.org/fhir/device.html">Device</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">TypeLigneCommande [1..1</td>
+<td style="text-align: center;">Intent [1..1] Code</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateUtilisation&nbsp;: [0..1] Date</td>
+<td style="text-align: center;">Occurrence [0..1].occurenceDateTime
+dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;">DispostifCommande [1..1]</td>
+<td style="text-align: center;">code[1..1].codeReference Reference(Device)</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu [0..1]:</strong> ObjetBinaire <a role="doc-noteref" href="#fn8" id="fnref8" class="footnote-ref"><sup>8</sup></a></td>
+<td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary [1..1] base64Binary</td>
+</tr>
+</tbody>
+</table>
+<section role="doc-endnotes" id="footnotes" class="footnotes footnotes-end-of-document">
+<hr/>
+<ol>
+<li id="fn1"><p>Le contenu de l’ObjetEvenement est une commande. Cet élément est décrit dans une partie spécifique «&nbsp;Commande&nbsp;».<a role="doc-backlink" href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Suit le profil DMI_BundleRequest<a role="doc-backlink" href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Suit le profil DMI_SupplyRequestEnteteCommande<a role="doc-backlink" href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Le détail de l’organisation interne est décrit dans une partie spécifique «&nbsp;7.5 OrganisationInterne&nbsp;».<a role="doc-backlink" href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p><a name="l1882">​</a>Le détail du professionnel est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.11 Professionnel&nbsp;</a>».<a role="doc-backlink" href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Pour chaque occurrence de l’élément LigneCommande on va créer une ressource DeviceRequest suivant le profil DMI_DeviceRequest<a role="doc-backlink" href="#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p><a name="l1897">​</a>Le détail du dipositif médical est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.1 DispositifMedical&nbsp;</a>».<a role="doc-backlink" href="#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la commande.<a role="doc-backlink" href="#fnref8" class="footnote-back">↩︎</a></p></li>
+</ol>
+</section>
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
+27</p>
+
+<h3 id="flux-5--tracabilitelivraisonvalide">Flux 5 – TracabiliteLivraisonValide</h3>
+
+<p>Ce flux est un cas particulier du «&nbsp;Flux 22 – TransmissionTrace&nbsp;» précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement&nbsp;:</p>
+
+<table style="width:89%;">
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 26%"/>
+<col style="width: 18%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: left;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu&nbsp;: [0..1] Objet binaire</strong><a role="doc-noteref" href="#fn1" id="fnref1" class="footnote-ref"><sup>1</sup></a></td>
+<td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">Livraison [1..1]</td>
+<td style="text-align: left;">EnteteLivraison [1..1]</td>
+<td rowspan="2" style="text-align: left;">Bundle<a role="doc-noteref" href="#fn2" id="fnref2" class="footnote-ref"><sup>2</sup></a></td>
+<td rowspan="2" style="text-align: center;">Entry [0..*] BackboneElement</td>
+</tr>
+<tr>
+<td style="text-align: left;">LigneLivraison [1..*]</td>
+</tr>
+<tr>
+<td rowspan="8" style="text-align: left;">EnteteLivraison [1..1]</td>
+<td style="text-align: left;">referenceCommande : [1..1] Identifiant</td>
+<td rowspan="8" style="text-align: left;">SupplyDelivery<a role="doc-noteref" href="#fn3" id="fnref3" class="footnote-ref"><sup>3</sup></a></td>
+<td style="text-align: center;">basedOn [0..*] Reference (SupplyRequest)</td>
+</tr>
+<tr>
+<td style="text-align: left;">quantiteTotale : [0..1] Numerique</td>
+<td style="text-align: center;">suppliedItem[0..1].quantity [0..1] SimpleQuantity</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateLivraison : [1..1] DateHeure</td>
+<td style="text-align: center;">occurrenceDateTime [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">livraisonConforme : [0..1] boolean</td>
+<td style="text-align: center;">status [0..1] code</td>
+</tr>
+<tr>
+<td style="text-align: left;">motifRejet : [0..1] Texte</td>
+<td style="text-align: center;">text [0..1] Narrative</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee [1..1]&nbsp;: Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Professionnel [1..1]</strong><a role="doc-noteref" href="#fn4" id="fnref4" class="footnote-ref"><sup>4</sup></a></td>
+<td style="text-align: center;"><p>Receiver [0..*] Reference</p>
+<p>(Practitioner | PractitionerRole)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OrganisationInterne [1..1]</strong> <a role="doc-noteref" href="#fn5" id="fnref5" class="footnote-ref"><sup>5</sup></a></td>
+<td style="text-align: center;"><em>Extension&nbsp;: DMI_ReferenceOrganisationInterne[1..1]Reference (Organization)</em></td>
+</tr>
+<tr>
+<td rowspan="6" style="text-align: left;">LigneLivraison [1..*]</td>
+<td style="text-align: left;">ReferenceCommandeAssociee [1..1]</td>
+<td rowspan="6" style="text-align: center;">SupplyDelivery<a role="doc-noteref" href="#fn6" id="fnref6" class="footnote-ref"><sup>6</sup></a></td>
+<td style="text-align: center;">basedOn[0..*] Reference (SupplyRequest)</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReferenceEntêteLivraison [1..1]</td>
+<td style="text-align: center;">Part of [0..*] Reference (SupplyDelivery)</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateLivraison : [1..1] DateHeure</td>
+<td style="text-align: center;">occurrenceDateTime [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">livraisonConforme : [0..1] boolean</td>
+<td style="text-align: center;">status [0..1] code</td>
+</tr>
+<tr>
+<td style="text-align: left;">motifRejet : [0..1] Texte</td>
+<td style="text-align: center;">text [0..1] Narrative</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DispositifMedical [1..*]</strong><a role="doc-noteref" href="#fn7" id="fnref7" class="footnote-ref"><sup>7</sup></a></td>
+<td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
+<p>(Medication | Substance | Device)</p></td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu&nbsp;: Objet binaire [0..1]</strong><a role="doc-noteref" href="#fn8" id="fnref8" class="footnote-ref"><sup>8</sup></a></td>
+<td style="text-align: left;">entity[0..*].detail [0..1]. valuebase64Binary&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<section role="doc-endnotes" id="footnotes" class="footnotes footnotes-end-of-document">
+<hr/>
+<ol>
+<li id="fn1"><p>Le contenu de l’ObjetEvenement est une livraison. Cet élément est décrit dans une partie spécifique «&nbsp;Livraison&nbsp;».<a role="doc-backlink" href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Suit le profil DMI_BundleDelivery<a role="doc-backlink" href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Suit le profil DMI_SupplyDeliveryEntêteLivraison<a role="doc-backlink" href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p><a name="l2275">​</a>Le détail du professionnel est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.11 Professionnel&nbsp;</a>».<a role="doc-backlink" href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Le détail de l’organisation interne est décrit dans une partie spécifique «&nbsp;7.5 OrganisationInterne&nbsp;».<a role="doc-backlink" href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Pour chaque occurrence de l’élément LigneLivraison on va créer une ressource SupplyDelivery suivant le profil DMI_SupplyDeliveryLigne<a role="doc-backlink" href="#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>Le détail du dispositif médical est décrit dans une partie spécifique «&nbsp;7.1&nbsp;DispositifMedical&nbsp;».<a role="doc-backlink" href="#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la «&nbsp;Livraison&nbsp;».<a role="doc-backlink" href="#fnref8" class="footnote-back">↩︎</a></p></li>
+</ol>
+</section>
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
+5</p>
+
+<h3 id="flux-5a---tracabilitelivraisonrejet">Flux 5a - TracabiliteLivraisonRejet</h3>
+
+<p>Ce flux reprend les mêmes éléments que le flux 5</p>
+
+<h3 id="flux-5c--tracabiliteentreestockdmi">Flux 5c – TracabiliteEntreeStockDMI</h3>
+
+<p>Ce flux est un cas particulier du «&nbsp;Flux 22 – TransmissionTrace&nbsp;» précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement&nbsp;:</p>
+
+<table>
+<caption><p>Tableau 7 : Mise en correspondance des contenus métiers/standard du flux 5c</p></caption>
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 26%"/>
+<col style="width: 20%"/>
+<col style="width: 34%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu&nbsp;: [0..1]ObjetBinaire</strong><a role="doc-noteref" href="#fn1" id="fnref1" class="footnote-ref"><sup>1</sup></a></td>
+<td style="text-align: left;">entity[0..*].what [0..1] Reference (SupplyDelivery)</td>
+</tr>
+<tr>
+<td rowspan="4" style="text-align: left;">ReceptionUnitaire [1..1]</td>
+<td style="text-align: left;">StatutReception&nbsp;[1..1]</td>
+<td rowspan="7" style="text-align: center;">SupplyDelivery<a role="doc-noteref" href="#fn2" id="fnref2" class="footnote-ref"><sup>2</sup></a></td>
+<td style="text-align: left;">Cet élément est décrit dans une partie spécifique «&nbsp;StatutReception ».</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Professionnel [1..1]</strong><a role="doc-noteref" href="#fn3" id="fnref3" class="footnote-ref"><sup>3</sup></a></td>
+<td style="text-align: center;"><p>Receiver [0..*] Reference</p>
+<p>(Practitioner | PractitionerRole)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OrganisationInterne [1..1]</strong> <a role="doc-noteref" href="#fn4" id="fnref4" class="footnote-ref"><sup>4</sup></a></td>
+<td style="text-align: left;"><em>Extension&nbsp;: DMI_ReferenceOrganisationInterne[1..1] Reference
+(Organization)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DispositifMedical [1..1]</strong><a role="doc-noteref" href="#fn5" id="fnref5" class="footnote-ref"><sup>5</sup></a></td>
+<td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
+<p>(Medication | Substance | Device)</p></td>
+</tr>
+<tr>
+<td rowspan="3" style="text-align: left;">StatutReception&nbsp;[1..1]</td>
+<td style="text-align: left;">receptionConforme : [1..1] boolean</td>
+<td style="text-align: center;">statut [0..1] code</td>
+</tr>
+<tr>
+<td style="text-align: left;">motifRejet : [0..1] Texte</td>
+<td style="text-align: center;">text [0..1] Narrative</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu: [0..1] ObjetBinaire</strong><a role="doc-noteref" href="#fn6" id="fnref6" class="footnote-ref"><sup>6</sup></a></td>
+<td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary&nbsp;[1..1]</td>
+</tr>
+</tbody>
+</table>
+<section role="doc-endnotes" id="footnotes" class="footnotes footnotes-end-of-document">
+<hr/>
+<ol>
+<li id="fn1"><p>Le contenu de l’ObjetEvenement est l’ensemble des éléments Cet élément est décrit dans une partie spécifique «&nbsp;ReceptionUnitaire&nbsp;».<a role="doc-backlink" href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Suit le profil DMI_SupplyDeliveryReceptionUnitaire<a role="doc-backlink" href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p><a name="l2582">​</a>Le détail du professionnel est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.11 Professionnel&nbsp;</a>».<a role="doc-backlink" href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Le détail de l’organisation interne est décrit dans une partie spécifique «&nbsp;7.5 OrganisationInterne&nbsp;».<a role="doc-backlink" href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Le détail du dispositif médical est décrit dans une partie spécifique «&nbsp;7.1&nbsp;DispositifMedical&nbsp;».<a role="doc-backlink" href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la «&nbsp;ReceptionUnitaire&nbsp;».<a role="doc-backlink" href="#fnref6" class="footnote-back">↩︎</a></p></li>
+</ol>
+</section>
+
+<h3 id="flux-5d--tracabilitereceptiondmi">Flux 5d – TracabiliteReceptionDMI</h3>
+
+<p>Ce flux reprend les mêmes éléments que le flux 5c.</p>
+
+<h3 id="flux-5e--tracabiliterejetdmi">Flux 5e – TracabiliteRejetDMI&nbsp;</h3>
+
+<p>Ce flux reprend les mêmes éléments que le flux 5c.</p>
+
+<h3 id="flux-6a--tracabilitesortiestock">Flux 6a – TracabiliteSortieStock&nbsp;</h3>
+
+<p>Ce flux est un cas particulier du «&nbsp;Flux 22 – TransmissionTrace&nbsp;» précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement&nbsp;:</p>
+
+<table style="width:89%;">
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 26%"/>
+<col style="width: 18%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: left;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu&nbsp;: [0..1] ObjetBinaire</strong><a role="doc-noteref" href="#fn1" id="fnref1" class="footnote-ref"><sup>1</sup></a></td>
+<td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">Délivrance [1..1]</td>
+<td style="text-align: left;">EntêteDelivrance [1..1]</td>
+<td rowspan="2" style="text-align: left;">Bundle<a role="doc-noteref" href="#fn2" id="fnref2" class="footnote-ref"><sup>2</sup></a></td>
+<td style="text-align: center;">Entry [0..*] BackboneElement</td>
+</tr>
+<tr>
+<td style="text-align: left;">LigneDelivrance [1..*]</td>
+<td style="text-align: center;">Entry [0..*] BackboneElement</td>
+</tr>
+<tr>
+<td rowspan="7" style="text-align: left;">EntêteDelivrance [1..1]</td>
+<td style="text-align: left;">referenceDelivrance : [1..1] Identifiant</td>
+<td rowspan="7" style="text-align: left;">SupplyDelivery<a role="doc-noteref" href="#fn3" id="fnref3" class="footnote-ref"><sup>3</sup></a></td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateDelivrance : [0..1] Date</td>
+<td style="text-align: center;">occurrenceDateTime [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">quantiteDelivree : [0..1] Numerique</td>
+<td style="text-align: center;">suppliedItem[0..1].quantity [0..1] SimpleQuantity</td>
+</tr>
+<tr>
+<td style="text-align: left;">informationComplementaire : [0..1] Texte</td>
+<td style="text-align: center;">text [0..1] Narrative</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee [1..1]&nbsp;: Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;">OrganisationInterne [1..1]<a role="doc-noteref" href="#fn4" id="fnref4" class="footnote-ref"><sup>4</sup></a></td>
+<td style="text-align: center;">Extension&nbsp;: DMI_ReferenceOrganisationInterne[1..1]Reference (Organization)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LigneDelivrance [1..*]</td>
+<td style="text-align: center;">Cet élément est décrit dans une partie spécifique «&nbsp;LigneDelivrance&nbsp;».</td>
+</tr>
+<tr>
+<td rowspan="5" style="text-align: left;">LigneDelivrance [1..*]</td>
+<td style="text-align: left;">ReferenceDemandeAssociee [1..1]</td>
+<td rowspan="5" style="text-align: center;">SupplyDelivery<a role="doc-noteref" href="#fn5" id="fnref5" class="footnote-ref"><sup>5</sup></a></td>
+<td style="text-align: center;">basedOn[0..*] Reference (SupplyRequest)</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReferenceEntêteDelivrance [1..1]</td>
+<td style="text-align: center;">Part of [0..*] Reference(SupplyDelivery)</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateDelivrance : [1..1] DateHeure</td>
+<td style="text-align: center;">occurrenceDateTime [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">informationComplementaire : [0..1]
+Texte</td>
+<td style="text-align: center;">text [0..1] Narrative</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DispositifMedical [1..1]</strong><a role="doc-noteref" href="#fn6" id="fnref6" class="footnote-ref"><sup>6</sup></a></td>
+<td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
+<p>(Medication | Substance | Device)</p></td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu&nbsp;: [0..1]ObjetBinaire</strong> <a role="doc-noteref" href="#fn7" id="fnref7" class="footnote-ref"><sup>7</sup></a></td>
+<td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary&nbsp;[1..1]</td>
+</tr>
+</tbody>
+</table>
+<section role="doc-endnotes" id="footnotes" class="footnotes footnotes-end-of-document">
+<hr/>
+<ol>
+<li id="fn1"><p>Le contenu de l’ObjetEvenement est une délivrance. Cet élément est décrit dans une partie spécifique «&nbsp;Delivrance&nbsp;».<a role="doc-backlink" href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Suit le profil DMI_BundleDelivery<a role="doc-backlink" href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Suit le profil DMI_SupplyDeliveryEnteteDelivrance<a role="doc-backlink" href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p><a name="l2956">​</a>Le détail de l’organisation interne est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.5 OrganisationInterne&nbsp;</a>».<a role="doc-backlink" href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Pour chaque occurrence de l’élément LigneDelivrance on va créer une ressource SupplyDelivery suivant le profil DMI_SupplyDeliveryLigne<a role="doc-backlink" href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p><a name="l2971">​</a>Le détail du dispositif médical est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.1 DispositifMedical&nbsp;</a>».<a role="doc-backlink" href="#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la délivrance.<a role="doc-backlink" href="#fnref7" class="footnote-back">↩︎</a></p></li>
+</ol>
+</section>
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
+6a</p>
+
+<h3 id="flux-7--tracabilitedelivrancesu">Flux 7 – TracabiliteDelivranceSU&nbsp;</h3>
+
+<p>Ce flux reprend les mêmes éléments que le flux 6a.</p>
+
+<h3 id="flux-9--tracabilitetransportdmi">Flux 9 – TracabiliteTransportDMI&nbsp;</h3>
+
+<p>Ce flux est un cas particulier du «&nbsp;Flux 22 – TransmissionTrace&nbsp;» précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement&nbsp;:</p>
+
+<table style="width:89%;">
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 26%"/>
+<col style="width: 17%"/>
+<col style="width: 24%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: left;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu&nbsp;: [0..1]ObjetBinaire</strong> <a role="doc-noteref" href="#fn1" id="fnref1" class="footnote-ref"><sup>1</sup></a></td>
+<td style="text-align: center;">entity[0..*].what [0..1] Reference (SupplyDelivery)</td>
+</tr>
+<tr>
+<td rowspan="9" style="text-align: left;">Transport [1..1]</td>
+<td style="text-align: left;">referenceTransport : [1..1] Identifiant</td>
+<td rowspan="9" style="text-align: center;">SupplyDelivery<a role="doc-noteref" href="#fn2" id="fnref2" class="footnote-ref"><sup>2</sup></a></td>
+<td style="text-align: center;"><em>Extension(Complex) : DMI_transport[0..1].refTransport [1..1] Identifier</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">referenceDelivrance : [1..1] Identifiant</td>
+<td style="text-align: center;"><em>Extension(Complex) : DMI_transport[0..1].refDelivery [1..1] Identifier</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">dateDelivrance : [0..1] Date</td>
+<td style="text-align: center;">occurence [0..1].occurenceDateTime dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">quantiteTransportee : [0..1] Numerique</td>
+<td style="text-align: center;">suppliedItem [0..1].quantity SimpleQuantity</td>
+</tr>
+<tr>
+<td style="text-align: left;">IncidentTransport : [0..1] boolean</td>
+<td style="text-align: center;"><em>Extension(Complex) : DMI_transport[0..1].incident [0..1] code</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">detailIncident : [0..1] Texte</td>
+<td style="text-align: center;"><em>Extension(Complex) : DMI_transport[0..1].detailIncident [0..1] string</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">informationComplementaire : [0..1] Texte</td>
+<td style="text-align: center;"><em>Extension(Complex) : DMI_transport[0..1].text [0..1] string</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
+<td style="text-align: center;"><em>Extension(Complex) : DMI_transport[0..1].meta [1..1] Meta</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Professionnel [1..1]<a role="doc-noteref" href="#fn3" id="fnref3" class="footnote-ref"><sup>3</sup></a></td>
+<td style="text-align: center;">Receiver [0..*] Reference (Practitionner, PractitionnerRole)</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu [0..1]&nbsp;: Objet binaire</strong><a role="doc-noteref" href="#fn4" id="fnref4" class="footnote-ref"><sup>4</sup></a></td>
+<td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary&nbsp;[1..1]</td>
+</tr>
+</tbody>
+</table>
+<section role="doc-endnotes" id="footnotes" class="footnotes footnotes-end-of-document">
+<hr/>
+<ol>
+<li id="fn1"><p>Le contenu de l’ObjetEvenement est un transport. Cet élément est décrit dans une partie spécifique «&nbsp;Transport&nbsp;».<a role="doc-backlink" href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Suit le profil DMI_SupplyDeliveryTransport<a role="doc-backlink" href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p><a name="l3259">​</a>Le détail du professionnel est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.11 Professionnel&nbsp;</a>».<a role="doc-backlink" href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Le contenu de l’ObjetEvenement est le contenu non structuré du transport.<a role="doc-backlink" href="#fnref4" class="footnote-back">↩︎</a></p></li>
+</ol>
+</section>
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux
+9</p>
+
+<h3 id="flux-11--tracabiliteentrestock">Flux 11 – TracabiliteEntreStock&nbsp;</h3>
+
+<p>Ce flux est un cas particulier du «&nbsp;Flux 22 – TransmissionTrace&nbsp;» précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement&nbsp;:</p>
+
+<table style="width:96%;">
+<colgroup>
+<col style="width: 22%"/>
+<col style="width: 23%"/>
+<col style="width: 18%"/>
+<col style="width: 32%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: left;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu&nbsp;: [0..1] Objet binaire</strong><a role="doc-noteref" href="#fn1" id="fnref1" class="footnote-ref"><sup>1</sup></a></td>
+<td style="text-align: center;">entity[0..*].what [0..1] Reference (Bundle)</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ReceptionDMI [1..1]</td>
+<td style="text-align: left;">EntêteReceptionDMI [1..1]</td>
+<td rowspan="2" style="text-align: center;">Bundle<a role="doc-noteref" href="#fn2" id="fnref2" class="footnote-ref"><sup>2</sup></a></td>
+<td style="text-align: center;">Entry [0..*] BackboneElement</td>
+</tr>
+<tr>
+<td style="text-align: left;">LigneReceptionDMI [1..*]</td>
+<td style="text-align: center;">Entry [0..*] BackboneElement</td>
+</tr>
+<tr>
+<td rowspan="7" style="text-align: left;">EntêteReceptionDMI [1..1]</td>
+<td style="text-align: left;">referenceReception : [1..1] Identifiant</td>
+<td rowspan="7" style="text-align: center;">SupplyDelivery<a role="doc-noteref" href="#fn3" id="fnref3" class="footnote-ref"><sup>3</sup></a></td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">referenceDelivrance : [1..1] Identifiant</td>
+<td style="text-align: center;">basedOn [0..1] Reference (SupplyDelivery)</td>
+</tr>
+<tr>
+<td style="text-align: left;">quantiteReceptionnee : [0..1] Numerique</td>
+<td style="text-align: center;">suppliedItem[0..1].quantity [0..1] SimpleQuantity</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OrganisationInterne [1..1]</strong><a role="doc-noteref" href="#fn4" id="fnref4" class="footnote-ref"><sup>4</sup></a></td>
+<td style="text-align: center;"><em>Extension&nbsp;: DMI_ReferenceOrganisationInterne[1..1]Reference (Organization)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Professionnel [1..1]</strong><a role="doc-noteref" href="#fn5" id="fnref5" class="footnote-ref"><sup>5</sup></a></td>
+<td style="text-align: center;"><p>receiver [0..*] Reference</p>
+<p>(Practitioner | PractitionerRole)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">LigneReceptionDMI [1.*]</td>
+<td style="text-align: center;">Cet élément est décrit dans une partie spécifique “LigneReceptionDMI”</td>
+</tr>
+<tr>
+<td rowspan="7" style="text-align: left;">LigneReceptionDMI [1..*]</td>
+<td style="text-align: left;">ReferenceDemandeAssociee [1..1]</td>
+<td rowspan="7" style="text-align: center;">SupplyDelivery<a role="doc-noteref" href="#fn6" id="fnref6" class="footnote-ref"><sup>6</sup></a></td>
+<td style="text-align: center;">basedOn[0..*] Reference (SupplyRequest)</td>
+</tr>
+<tr>
+<td style="text-align: left;">ReferenceEntêteReceptionDMI [1..1]</td>
+<td style="text-align: center;">Part of [0..*] Reference(SupplyDelivery)</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateReceptionSU [1..1] DateHeure</td>
+<td style="text-align: center;">Occurrence [0..1].occurenceDateTime dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">receptionConforme : [1..1] boolean</td>
+<td style="text-align: center;">Status [0..1] code</td>
+</tr>
+<tr>
+<td style="text-align: left;">motifRejet : [0..1] Texte</td>
+<td style="text-align: center;">text [0..1] Narrative</td>
+</tr>
+<tr>
+<td style="text-align: left;">Metadonnee [1..1] : Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DispositifMedical [1..1]</strong><a role="doc-noteref" href="#fn7" id="fnref7" class="footnote-ref"><sup>7</sup></a></td>
+<td style="text-align: center;"><p>suppliedItem[0..1].itemReference [0..1] Reference</p>
+<p>(Medication | Substance | Device)</p></td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu[0..1] Objet binaire</strong><a role="doc-noteref" href="#fn8" id="fnref8" class="footnote-ref"><sup>8</sup></a></td>
+<td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary&nbsp;[1..1]</td>
+</tr>
+</tbody>
+</table>
+<section role="doc-endnotes" id="footnotes" class="footnotes footnotes-end-of-document">
+<hr/>
+<ol>
+<li id="fn1"><p>Le contenu de l’ObjetEvenement est la réception du DMI. Cet élément est décrit dans une partie spécifique «&nbsp;ReceptionDMI&nbsp;».<a role="doc-backlink" href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Suit le profil DMI_BundleDelivery<a role="doc-backlink" href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Suit le profil DMI_SupplyDeliveryEntêteReceptionDMI<a role="doc-backlink" href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p><a name="l3639">​</a>Le détail de l’organisation interne est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.5 OrganisationInterne&nbsp;</a>».<a role="doc-backlink" href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p><a name="l3648">​</a>Le détail du professionnel est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.11</a> Professionnel».<a role="doc-backlink" href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Pour chaque occurrence de l’élément LigneReceptionDMI on va créer une ressource SupplyDelivery suivant le profil DMI_SupplyDeliveryLigne<a role="doc-backlink" href="#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p><a name="l3663">​</a>Le détail du dispositif médical est décrit dans une partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.1 DispositifMedical&nbsp;</a>».<a role="doc-backlink" href="#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de la réception.<a role="doc-backlink" href="#fnref8" class="footnote-back">↩︎</a></p></li>
+</ol>
+</section>
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du
+flux 11</p>
+
+<h3 id="flux-12--tracabilitereceptionsu">Flux 12 – TracabiliteReceptionSU&nbsp;</h3>
+
+<p>Ce flux reprend les mêmes éléments que le flux 11.</p>
+
+<h3 id="flux-28--tracabiliterejetdmi">Flux 28- TracabiliteRejetDMI</h3>
+
+<p>Ce flux reprend les mêmes éléments que le flux 11.</p>
+
+<h3 id="flux-15--tracabilitepose">Flux 15 -TracabilitePose</h3>
+
+<p>Ce flux est un cas particulier du «&nbsp;Flux 22 – TransmissionTrace&nbsp;» précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement&nbsp;:</p>
+
+<table>
+<caption><p>Tableau 11 : Mise en correspondance des contenus métiers/standard du flux 15</p></caption>
+<colgroup>
+<col style="width: 22%"/>
+<col style="width: 20%"/>
+<col style="width: 18%"/>
+<col style="width: 38%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: left;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire <a role="doc-noteref" href="#fn1" id="fnref1" class="footnote-ref"><sup>1</sup></a></td>
+<td style="text-align: center;">entity[0..*].what [0..1] Reference (Procedure)</td>
+</tr>
+<tr>
+<td rowspan="11" style="text-align: left;">InterventionMedicale [1..1]</td>
+<td style="text-align: left;">idIntervention : [1..1] Identifiant</td>
+<td rowspan="11" style="text-align: left;">Procedure<a role="doc-noteref" href="#fn2" id="fnref2" class="footnote-ref"><sup>2</sup></a></td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">numSejour : [0..1] Identifiant</td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">typeIntervention : [0..1] Code</td>
+<td style="text-align: center;">category [0..1] CodeableConcept</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateIntervention : [1..1] DateHeure</td>
+<td style="text-align: center;">performedDateTime [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">emplacementDMI : [1..1] Texte</td>
+<td style="text-align: center;">bodySite [0..*] CodeableConcept</td>
+</tr>
+<tr>
+<td style="text-align: left;">poseConforme : [1..1] Boolean</td>
+<td rowspan="2" style="text-align: center;">Complication [0..*] CodeableConcept</td>
+</tr>
+<tr>
+<td style="text-align: left;">motifEchec&nbsp;: [0..1] Texte</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Professionnel&nbsp;: [1..1]<a role="doc-noteref" href="#fn3" id="fnref3" class="footnote-ref"><sup>3</sup></a></td>
+<td style="text-align: center;"><p>performer[0..*].actor [1..1] Reference</p>
+<p>(<a href="https://hl7.org/FHIR/practitioner.html">Practitioner</a> |
+<a href="https://hl7.org/FHIR/practitionerrole.html">PractitionerRole</a>)</p></td>
+</tr>
+<tr>
+<td style="text-align: left;">OrganisationInterne&nbsp;: [1..1]<a role="doc-noteref" href="#fn4" id="fnref4" class="footnote-ref"><sup>4</sup></a></td>
+<td style="text-align: center;">performer [0..*].onBehalfOf Reference (Organization)</td>
+</tr>
+<tr>
+<td style="text-align: left;">DispositifMedical&nbsp;: [1.1].<a role="doc-noteref" href="#fn5" id="fnref5" class="footnote-ref"><sup>5</sup></a></td>
+<td style="text-align: center;"><p>focalDevice[0..*].manipulated [1..1] Reference</p>
+<p>(Device)</p></td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu&nbsp;: [0..1] Objet binaire</strong> <a role="doc-noteref" href="#fn6" id="fnref6" class="footnote-ref"><sup>6</sup></a></td>
+<td style="text-align: left;">entity[0..*].detail [0..1]. valueBase64Binary&nbsp;[1..1]</td>
+</tr>
+</tbody>
+</table>
+<section role="doc-endnotes" id="footnotes" class="footnotes footnotes-end-of-document">
+<hr/>
+<ol>
+<li id="fn1"><p>Le contenu de l’ObjetEvenement est une intervention médicale. Cet élément est décrit dans une partie spécifique «&nbsp;InterventionMedicale&nbsp;».<a role="doc-backlink" href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Pour l’élément InterventionMedicale on va créer une ressource Procedure suivant le profil DMI_Procedure<a role="doc-backlink" href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Le détail du professionnel est décrit dans une partie spécifique «7.11 Professionnel ».<a role="doc-backlink" href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Le détail de l’organisation interne est décrit dans une partie spécifique «7.5 OrganisationInterne ».<a role="doc-backlink" href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Le détail du dispositif médical est décrit dans une partie spécifique «&nbsp;7.1 DispositifMedical».<a role="doc-backlink" href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Le contenu de l’ObjetEvenement est le contenu non structuré de l’intervention médicale.<a role="doc-backlink" href="#fnref6" class="footnote-back">↩︎</a></p></li>
+</ol>
+</section>
+
+<h3 id="flux-13a--tracabiliterefusdmi">Flux 13a – TracabiliteRefusDMI&nbsp;</h3>
+
+<p>Ce flux reprend les mêmes éléments que le flux 15.</p>
+
+<h3 id="flux-30--tracabilitesortiestocksu">Flux 30 – TracabiliteSortieStockSU</h3>
+
+<p>Ce flux reprend les mêmes éléments que le flux 15.</p>
+
+<h3 id="flux-14--tracabiliteechecpose">Flux 14 – TracabiliteEchecPose&nbsp;</h3>
+
+<p>Ce flux reprend les mêmes éléments que le flux 15.</p>
+
+<h3 id="flux-16a--tracabilitereassortdmi">Flux 16a – TracabiliteReassortDMI&nbsp;</h3>
+
+<p>Ce flux reprend les mêmes éléments que le flux 27.</p>
+
+<h3 id="flux-18--tracabilitefacturationdmi">Flux 18 – TracabiliteFacturationDMI&nbsp;</h3>
+
+<p>Ce flux est un cas particulier du «&nbsp;Flux 22 – TransmissionTrace&nbsp;» précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement&nbsp;:</p>
+
+<table style="width:95%;">
+<caption><p><span id="_Flux_23_-" class="anchor"></span>Tableau 13 : Mise en correspondance des contenus métiers/standard du flux 18</p></caption>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 26%"/>
+<col style="width: 18%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace [1..1]</td>
+<td rowspan="4" style="text-align: left;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+<td colspan="2" rowspan="4" style="text-align: center;">Cf <a href="#flux-22-transmissiontrace">Tableau 2</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceTrace [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Événement [1..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActeurEvenement [0..2]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: left;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire <a role="doc-noteref" href="#fn1" id="fnref1" class="footnote-ref"><sup>1</sup></a></td>
+<td style="text-align: center;">entity[0..*].what [0..1] Reference (Invoice)</td>
+</tr>
+<tr>
+<td rowspan="10" style="text-align: left;">Facture [1..1]</td>
+<td style="text-align: left;">refFacture : [1..1] Identifiant</td>
+<td rowspan="10" style="text-align: left;">Invoice<a role="doc-noteref" href="#fn2" id="fnref2" class="footnote-ref"><sup>2</sup></a></td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">facture : [0..1] ObjetBinaire</td>
+<td style="text-align: center;"><em>Extension : DMI_Facture [0..1] Reference (Binary)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">typeFacture : [0..1] Code</td>
+<td style="text-align: center;">type [0..1] CodeableConcept</td>
+</tr>
+<tr>
+<td style="text-align: left;">refCommande : [1..1] Identifiant</td>
+<td style="text-align: center;">identifier [0..*] Identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">dateEmission : [0..1] Date</td>
+<td style="text-align: center;">date [0..1] dateTime</td>
+</tr>
+<tr>
+<td style="text-align: left;">instructionPaiement : [0..1] Texte</td>
+<td style="text-align: center;">paymentTerms [0..1] markdown</td>
+</tr>
+<tr>
+<td style="text-align: left;">montantTotal : [0..1] Numerique</td>
+<td style="text-align: center;">totalNet [0..1] Money</td>
+</tr>
+<tr>
+<td style="text-align: left;">Devise [0..1] code</td>
+<td style="text-align: center;">totalNet[0..1].currency [0..1] code</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ligne&nbsp;: [1.*]</strong><a role="doc-noteref" href="#fn3" id="fnref3" class="footnote-ref"><sup>3</sup></a><strong>.</strong></td>
+<td style="text-align: center;">L’élément ligne est décrit dans une partie spécifique “Ligne”</td>
+</tr>
+<tr>
+<td rowspan="3" style="text-align: left;">Ligne [1..*]</td>
+<td style="text-align: left;">dateAchat&nbsp;: [1..1] Date</td>
+<td rowspan="3" style="text-align: center;">Invoice</td>
+<td style="text-align: center;">lineItem[0..*].chargeItemReference[1..1].occurenceDateTime[0..1]</td>
+</tr>
+<tr>
+<td style="text-align: left;">metadonnee : [1..1] Metadonnee</td>
+<td style="text-align: center;">meta [0..1] Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;">DispositifMedical&nbsp;: [1..1]<a role="doc-noteref" href="#fn4" id="fnref4" class="footnote-ref"><sup>4</sup></a></td>
+<td style="text-align: center;">lineItem [0..*].chargeItem [1..1].chargeItem.productReference [0..1]</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: left;">ObjetEvenement [0..*]</td>
+<td style="text-align: left;">type [0..1] Code</td>
+<td rowspan="2" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Contenu&nbsp;: [0..1] Objet binaire</strong><a role="doc-noteref" href="#fn5" id="fnref5" class="footnote-ref"><sup>5</sup></a></td>
+<td style="text-align: center;">entity[0..*].detail [0..1]. valueBase64Binary&nbsp;[1..1]</td>
+</tr>
+</tbody>
+</table>
+<section role="doc-endnotes" id="footnotes" class="footnotes footnotes-end-of-document">
+<hr/>
+<ol>
+<li id="fn1"><p>Le contenu de l’ObjetEvenement est une facture. Cet
+élément est décrit dans une partie spécifique «&nbsp;Facture&nbsp;».<a role="doc-backlink" href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Pour l’élémentFacture on va créer une ressource Invoice
+suivant le profil DMI_Invoice<a role="doc-backlink" href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Cet élément est décrit dans une partie spécifique
+«&nbsp;Ligne&nbsp;».<a role="doc-backlink" href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p><a name="l4357">​</a>Le détail du dispositif médical est décrit dans une
+partie spécifique «&nbsp;<a href="#classe-dispositifmedical">7.1</a>
+DispositifMedical».<a role="doc-backlink" href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Le contenu de l’ObjetEvenement est le contenu non
+structuré de la facture.<a role="doc-backlink" href="#fnref5" class="footnote-back">↩︎</a></p></li>
+</ol>
+</section>
+
+<h3 id="flux-23---recherchetraces">Flux 23 - RechercheTraces</h3>
+
+<p>Ce flux intervient lorsque le consommateur effectue une recherche de traces d’un ou de plusieurs DMI se trouvant dans l’établissement de santé auprès du gestionnaire de traçabilité en précisant les critères de sa recherche.</p>
+
+<p>Il correspond au «&nbsp;Flux 4 -RechercheTraces&nbsp;» du volet «&nbsp;Traçabilité des évènements&nbsp;».</p>
+
+<p>Ci-dessous les critères de recherches. Les critères apparaissant <em>en italique et en rouge</em> correspondent à des paramètres de recherche créés pour répondre au besoin&nbsp;:</p>
+
+<table>
+<caption><p>Tableau 14 : Mise en correspondance des contenus métiers/standards du flux 23</p></caption>
+<colgroup>
+<col style="width: 34%"/>
+<col style="width: 11%"/>
+<col style="width: 23%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2" style="text-align: center;">Critère de recherche SFE</th>
+<th colspan="3" style="text-align: center;">Paramètre de recherche</th>
+</tr>
+<tr>
+<th style="text-align: center;">Ressource</th>
+<th style="text-align: center;">Paramètre identifié dans le volet «&nbsp;Généricisation&nbsp;: Traçabilité des évènements&nbsp; »</th>
+<th style="text-align: center;">Paramètre supplémentaire identifié par ce volet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Evenement/typeEvenement</td>
+<td rowspan="8" style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">type&nbsp;: token</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Evenement/declaration</td>
+<td style="text-align: center;">date&nbsp;: date</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Evenement/sousTypeEvenement</td>
+<td style="text-align: center;">subtype&nbsp;: token</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td rowspan="4" style="text-align: center;">ActeurEvenement/identifiant</td>
+<td style="text-align: center;">agent&nbsp;: reference</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">agent-name&nbsp;: string</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">altId&nbsp;: token</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">patient&nbsp;: reference</td>
+</tr>
+<tr>
+<td style="text-align: center;">ActeurEvenement/role</td>
+<td style="text-align: center;">agent-role&nbsp;: token</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/support/IUD-ID</td>
+<td rowspan="6" style="text-align: center;">Device</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Device-udi-di&nbsp;: String</td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/support/identifiantHRF</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><table style="width:15%;">
+<colgroup>
+<col style="width: 0%"/>
+<col style="width: 14%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Device-udi-carrier</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>: String</p></td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/referenceFabricant</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">manufacturer: String</td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/support/IUD-IPNumLot</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>DMI_Device_lotNumber&nbsp;: string</em></td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/support/IUD-IPNumSerie</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>DMI_Device_serialNumber&nbsp;: string</em></td>
+</tr>
+<tr>
+<td style="text-align: center;">DispositifMedical/codeEMDN</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>DMI_Device_definition-type&nbsp;: token</em></td>
+</tr>
+<tr>
+<td style="text-align: center;">Patient/identite/matriculeINS</td>
+<td style="text-align: center;">Patient</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><em>DMI_Patient_INS&nbsp;: token</em></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="flux-24--reponserecherchetraces">Flux 24 – ReponseRechercheTraces</h3>
+
+<p>Il s’agit du résultat de la recherche de traces retourné par le gestionnaire de traçabilté. La recherche de traces retourne une ressource Bundle de type SearchSet contenant les ressources AuditEvent correspondant aux critères de recherche fournis par le consommateur.</p>
+
+<p>Il correspond au «&nbsp;Flux 5 -ReponseRechercheTraces&nbsp;» du volet «&nbsp;Traçabilité des évènements&nbsp;».</p>
+
+<h3 id="flux-25--consultertrace">Flux 25 – ConsulterTrace</h3>
+
+<p>Ce flux intervient lorsque le consommateur demande à consulter la trace d’un évènement auprès du gestionnaire de traçabilité.</p>
+
+<p>Il correspond au «&nbsp;Flux 2 -ConsultationTrace&nbsp;» du volet «&nbsp;Traçabilité des évènements&nbsp;»&nbsp;:</p>
+
+<table style="width:89%;">
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 26%"/>
+<col style="width: 18%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;">Éléments métier</th>
+<th colspan="2" style="text-align: center;">Éléments FHIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Nom classes</strong></td>
+<td style="text-align: left;"><strong>Nom attributs</strong></td>
+<td style="text-align: center;"><strong>Ressource</strong></td>
+<td style="text-align: center;"><strong>Elément</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trace</td>
+<td style="text-align: left;">identifiant [0..1]&nbsp;: Identifiant</td>
+<td style="text-align: center;">AuditEvent</td>
+<td style="text-align: center;">id [1..1] id</td>
+</tr>
+</tbody>
+</table>
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standards du
+flux 25</p>
+
+<h3 id="flux-26--reponseconsultertrace">Flux 26 – ReponseConsulterTrace</h3>
+
+<p>Il s’agit du résultat de la demande de consultation de la trace d’un évènement retourné par le gestionnaire de traçabilité. Le corps de la réponse est la ressource AuditEvent identifiée lors de la demande.</p>
+
+<p>Il correspond au «&nbsp;Flux 3 - ReponseConsultationTrace&nbsp;» du volet
+«&nbsp;Traçabilité des évènements&nbsp;».</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+<script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="norme_standard.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="glossaire.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 14:37+0000">2026-02-24</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html" target="_blank">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new" target="_blank">New Issue</a>
+
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+
+    <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+    <!-- Fin ajout ANS -->
+
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+
+    <!-- Analytics Below
+  ================================================== -->
+
+
+    <!-- AJOUT ANS -->
+
+<footer role="contentinfo" class="footer footer-principal">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+            <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+                <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li> -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+      <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>

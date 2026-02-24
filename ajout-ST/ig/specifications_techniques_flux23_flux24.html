@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Flux 23 - RechercheTraces - Traçabilité des Dispositifs Médicaux Implantables v3.0.0</title>
+    <title>Flux 23 - Flux 24 - Traçabilité des Dispositifs Médicaux Implantables v3.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -113,16 +113,10 @@
         <a href="specifications_techniques_construction_flux.html">Construction des flux</a>
       </li>
       <li>
-        <a href="specifications_techniques_flux23_recherche_traces.html">RechercheTraces</a>
+        <a href="specifications_techniques_flux23_flux24.html">Flux 23 - Flux 24</a>
       </li>
       <li>
-        <a href="specifications_techniques_flux24_reponse_recherche_traces.html">RéponseRechercheTraces</a>
-      </li>
-      <li>
-        <a href="specifications_techniques_flux25_consulter_trace.html">ConsulterTrace</a>
-      </li>
-      <li>
-        <a href="specifications_techniques_flux26_reponse_consulter_trace.html">ReponseConsulterTrace</a>
+        <a href="specifications_techniques_flux25_flux26.html">Flux 25- Flux 26</a>
       </li>
     </ul>
   </li>
@@ -133,6 +127,9 @@
     <ul class="dropdown-menu">
       <li>
         <a href="norme_standard.html">Normes et Standards</a>
+      </li>
+      <li>
+        <a href="annexe_mise_en_correspondance.html">Mise en correspondance</a>
       </li>
       <li>
         <a href="glossaire.html">Glossaire</a>
@@ -172,7 +169,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="specifications_techniques_introduction.html"><b>Volume 2 - Détail des transactions</b></a></li><li><b>Flux 23 - RechercheTraces</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="specifications_techniques_introduction.html"><b>Volume 2 - Détail des transactions</b></a></li><li><b>Flux 23 - Flux 24</b></li>
 
           <span style="float:right;">
 
@@ -180,7 +177,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="specifications_techniques_flux24_reponse_recherche_traces.html">next&gt;</a>
+          | <a href="specifications_techniques_flux25_flux26.html">next&gt;</a>
 
           </span>
 
@@ -202,7 +199,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Traçabilité des Dispositifs Médicaux Implantables - version de développement local (intégration continue v3.0.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
-  <h2>Flux 23 - RechercheTraces</h2>
+  <h2>Flux 23 - Flux 24</h2>
   
 
 
@@ -217,9 +214,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#flux-23---recherchetraces" id="markdown-toc-flux-23---recherchetraces">Flux 23 - RechercheTraces</a></li>
+  <li><a href="#flux-24---reponserecherchetraces" id="markdown-toc-flux-24---reponserecherchetraces">Flux 24 - ReponseRechercheTraces</a></li>
+</ul>
+
 </div>
+<h3 id="flux-23---recherchetraces">Flux 23 - RechercheTraces</h3>
 
 <p>Ce flux est utilisé par le consommateur pour faire une recherche de traces auprès du gestionnaire de traçabilité.</p>
 
@@ -239,12 +241,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 [base]/AuditEvent?date=ge[start-time]&amp;date=le[stop-time]&amp;&lt;query&gt;</p>
 <p>Où [base] est le point de contact FHIR du gestionnaire de traces,</p>
 <p>[start-time] et [stop-time] indique l’intervalle de temps dans lequel les traces sont recherchées (date se réfère à la date d’enregistrement de l’évènement).</p>
-<p><a name="l422">​</a>&lt;query&gt; représente les autres paramètres, sous la forme param=valeur, permettant d’affiner la recherche (Cf <a href="#_Flux_23_-">Tableau 13</a>).</p></th>
+<p><a name="l428">​</a>&lt;query&gt; représente les autres paramètres, sous la forme param=valeur, permettant d’affiner la recherche (Cf <a href="#_Flux_23_-">Tableau 13</a>).</p></th>
 </tr>
 </thead>
 <tbody>
 </tbody>
 </table>
+
+<h3 id="flux-24---reponserecherchetraces">Flux 24 - ReponseRechercheTraces</h3>
+
+<p>Ce flux véhicule le résultat de la recherche de traces.</p>
+
+<p>Dans le contexte d’un échange basé sur le standard HL7 FHIR, ce flux est basé sur les ressources FHIR Bundle, AuditEvent et OperationOutcome (en cas d’erreur) telles qu’utilisées dans la transaction IHE ITI-81 «&nbsp;Retrieve ATNA Audit Event&nbsp;».</p>
+
+<p>Conformément au supplément RESTful ATNA du profil IHE ATNA, la réponse retournée par le Gestionnaire de trace au Consommateur de traces est composée d’un Bundle de ressources AuditEvent.</p>
+
+<p>La ressource Bundle de type search set constituera alors le corps de la réponse HTTP 200 ok.</p>
+
+<p>Pour des informations sur les autres codes HTTP (HTTP status code) retournés en cas d’échec, consultez la documentation relative à l’interaction «&nbsp;read&nbsp;» de l’API REST FHIR.</p>
 
 
 
@@ -277,7 +291,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&nbsp;
 
-                <a href="specifications_techniques_flux24_reponse_recherche_traces.html">next&gt;</a>
+                <a href="specifications_techniques_flux25_flux26.html">next&gt;</a>
 
               </td>
             </tr>
@@ -287,7 +301,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 11:00+0000">2026-02-24</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 14:37+0000">2026-02-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

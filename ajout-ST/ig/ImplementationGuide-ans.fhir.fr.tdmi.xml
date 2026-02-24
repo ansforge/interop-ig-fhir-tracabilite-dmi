@@ -10,7 +10,7 @@
   <name value="TDMI"/>
   <title value="Traçabilité des Dispositifs Médicaux Implantables"/>
   <status value="draft"/>
-  <date value="2026-02-24T11:00:06+00:00"/>
+  <date value="2026-02-24T14:37:50+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -526,34 +526,18 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="specifications_techniques_flux23_recherche_traces.html"/>
+            <valueUrl value="specifications_techniques_flux23_flux24.html"/>
           </extension>
-          <nameUrl value="specifications_techniques_flux23_recherche_traces.html"/>
-          <title value="Flux 23 - RechercheTraces"/>
+          <nameUrl value="specifications_techniques_flux23_flux24.html"/>
+          <title value="Flux 23 - Flux 24"/>
           <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="specifications_techniques_flux24_reponse_recherche_traces.html"/>
+            <valueUrl value="specifications_techniques_flux25_flux26.html"/>
           </extension>
-          <nameUrl value="specifications_techniques_flux24_reponse_recherche_traces.html"/>
-          <title value="Flux 24 - RéponseRechercheTraces"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="specifications_techniques_flux25_consulter_trace.html"/>
-          </extension>
-          <nameUrl value="specifications_techniques_flux25_consulter_trace.html"/>
-          <title value="Flux 25 - ConsulterTrace"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="specifications_techniques_flux26_reponse_consulter_trace.html"/>
-          </extension>
-          <nameUrl value="specifications_techniques_flux26_reponse_consulter_trace.html"/>
-          <title value="Flux 26 - ReponseConsulterTrace"/>
+          <nameUrl value="specifications_techniques_flux25_flux26.html"/>
+          <title value="Flux 25 - Flux 26"/>
           <generation value="markdown"/>
         </page>
       </page>
@@ -570,6 +554,14 @@
           </extension>
           <nameUrl value="norme_standard.html"/>
           <title value="Normes et Standards"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="annexe_mise_en_correspondance.html"/>
+          </extension>
+          <nameUrl value="annexe_mise_en_correspondance.html"/>
+          <title value="Mise en correspondance"/>
           <generation value="markdown"/>
         </page>
         <page>

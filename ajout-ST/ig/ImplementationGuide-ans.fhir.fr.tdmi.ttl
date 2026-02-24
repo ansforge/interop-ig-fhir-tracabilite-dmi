@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDMI"] ; # 
   fhir:title [ fhir:v "Traçabilité des Dispositifs Médicaux Implantables"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-24T11:00:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-24T14:37:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1500,16 +1500,16 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "specifications_techniques_flux23_recherche_traces.html"^^xsd:anyURI ;
-               fhir:l fhir:specifications_techniques_flux23_recherche_traces.html
+               fhir:v "specifications_techniques_flux23_flux24.html"^^xsd:anyURI ;
+               fhir:l fhir:specifications_techniques_flux23_flux24.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "specifications_techniques_flux23_recherche_traces.html"^^xsd:anyURI ;
-             fhir:l fhir:specifications_techniques_flux23_recherche_traces.html
+             fhir:v "specifications_techniques_flux23_flux24.html"^^xsd:anyURI ;
+             fhir:l fhir:specifications_techniques_flux23_flux24.html
            ] ;
-           fhir:title [ fhir:v "Flux 23 - RechercheTraces" ] ;
+           fhir:title [ fhir:v "Flux 23 - Flux 24" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -1519,54 +1519,16 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "specifications_techniques_flux24_reponse_recherche_traces.html"^^xsd:anyURI ;
-               fhir:l fhir:specifications_techniques_flux24_reponse_recherche_traces.html
+               fhir:v "specifications_techniques_flux25_flux26.html"^^xsd:anyURI ;
+               fhir:l fhir:specifications_techniques_flux25_flux26.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "specifications_techniques_flux24_reponse_recherche_traces.html"^^xsd:anyURI ;
-             fhir:l fhir:specifications_techniques_flux24_reponse_recherche_traces.html
+             fhir:v "specifications_techniques_flux25_flux26.html"^^xsd:anyURI ;
+             fhir:l fhir:specifications_techniques_flux25_flux26.html
            ] ;
-           fhir:title [ fhir:v "Flux 24 - RéponseRechercheTraces" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-             ] ;
-             fhir:value [
-               a fhir:Url ;
-               fhir:v "specifications_techniques_flux25_consulter_trace.html"^^xsd:anyURI ;
-               fhir:l fhir:specifications_techniques_flux25_consulter_trace.html
-             ]
-           ] ) ;
-           fhir:name [
-             a fhir:Url ;
-             fhir:v "specifications_techniques_flux25_consulter_trace.html"^^xsd:anyURI ;
-             fhir:l fhir:specifications_techniques_flux25_consulter_trace.html
-           ] ;
-           fhir:title [ fhir:v "Flux 25 - ConsulterTrace" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-             ] ;
-             fhir:value [
-               a fhir:Url ;
-               fhir:v "specifications_techniques_flux26_reponse_consulter_trace.html"^^xsd:anyURI ;
-               fhir:l fhir:specifications_techniques_flux26_reponse_consulter_trace.html
-             ]
-           ] ) ;
-           fhir:name [
-             a fhir:Url ;
-             fhir:v "specifications_techniques_flux26_reponse_consulter_trace.html"^^xsd:anyURI ;
-             fhir:l fhir:specifications_techniques_flux26_reponse_consulter_trace.html
-           ] ;
-           fhir:title [ fhir:v "Flux 26 - ReponseConsulterTrace" ] ;
+           fhir:title [ fhir:v "Flux 25 - Flux 26" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [
@@ -1606,6 +1568,25 @@
              fhir:l fhir:norme_standard.html
            ] ;
            fhir:title [ fhir:v "Normes et Standards" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "annexe_mise_en_correspondance.html"^^xsd:anyURI ;
+               fhir:l fhir:annexe_mise_en_correspondance.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "annexe_mise_en_correspondance.html"^^xsd:anyURI ;
+             fhir:l fhir:annexe_mise_en_correspondance.html
+           ] ;
+           fhir:title [ fhir:v "Mise en correspondance" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [

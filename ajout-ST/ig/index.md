@@ -99,7 +99,7 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
   "name" : "TDMI",
   "title" : "Traçabilité des Dispositifs Médicaux Implantables",
   "status" : "draft",
-  "date" : "2026-02-24T11:00:06+00:00",
+  "date" : "2026-02-24T14:37:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -789,37 +789,19 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "specifications_techniques_flux23_recherche_traces.html"
+            "valueUrl" : "specifications_techniques_flux23_flux24.html"
           }],
-          "nameUrl" : "specifications_techniques_flux23_recherche_traces.html",
-          "title" : "Flux 23 - RechercheTraces",
+          "nameUrl" : "specifications_techniques_flux23_flux24.html",
+          "title" : "Flux 23 - Flux 24",
           "generation" : "markdown"
         },
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "specifications_techniques_flux24_reponse_recherche_traces.html"
+            "valueUrl" : "specifications_techniques_flux25_flux26.html"
           }],
-          "nameUrl" : "specifications_techniques_flux24_reponse_recherche_traces.html",
-          "title" : "Flux 24 - RéponseRechercheTraces",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "specifications_techniques_flux25_consulter_trace.html"
-          }],
-          "nameUrl" : "specifications_techniques_flux25_consulter_trace.html",
-          "title" : "Flux 25 - ConsulterTrace",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "specifications_techniques_flux26_reponse_consulter_trace.html"
-          }],
-          "nameUrl" : "specifications_techniques_flux26_reponse_consulter_trace.html",
-          "title" : "Flux 26 - ReponseConsulterTrace",
+          "nameUrl" : "specifications_techniques_flux25_flux26.html",
+          "title" : "Flux 25 - Flux 26",
           "generation" : "markdown"
         }]
       },
@@ -838,6 +820,15 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
           }],
           "nameUrl" : "norme_standard.html",
           "title" : "Normes et Standards",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "annexe_mise_en_correspondance.html"
+          }],
+          "nameUrl" : "annexe_mise_en_correspondance.html",
+          "title" : "Mise en correspondance",
           "generation" : "markdown"
         },
         {
