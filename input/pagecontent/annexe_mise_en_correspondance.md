@@ -1485,23 +1485,9 @@ style="text-align: center;">ActeurEvenement/identifiant</td>
 <td style="text-align: center;">Device-udi-di : String</td>
 </tr>
 <tr>
-<td
-style="text-align: center;">DispositifMedical/support/identifiantHRF</td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">DispositifMedical/support/identifiantHRF</td>
+<td style="text-align: center;">Device-udi-carrier</td>
 <td style="text-align: center;"><table style="width:15%;">
-<colgroup>
-<col style="width: 0%" />
-<col style="width: 14%" />
-</colgroup>
-<thead>
-<tr>
-<th style="text-align: left;"></th>
-<th style="text-align: center;">Device-udi-carrier</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
 <p>: String</p></td>
 </tr>
 <tr>
