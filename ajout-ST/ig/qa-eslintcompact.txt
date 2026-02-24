@@ -1,22 +1,6 @@
 TDMI
 =========================================
 
-Generic: line 0, col 0, Warning - Illegal HTML: Illegal HTML element: section (INVALID)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.11 Professionnel " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.5 OrganisationInterne " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.1 DispositifMedical " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.1 DispositifMedical " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.11 Professionnel " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.1 DispositifMedical " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.11 Professionnel " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.11 Professionnel " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.5 OrganisationInterne " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.1 DispositifMedical " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.11 Professionnel " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.5 OrganisationInterne " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.11" cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.1 DispositifMedical " cannot be resolved (valid targets: 111 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link '#classe-dispositifmedical' for "7.1" cannot be resolved (valid targets: 111 targets) (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved (NOTFOUND)
@@ -33,5 +17,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'expansion-params.xhtml' is 
 /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi.json: line 1, col 15283, Error - ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1) (STRUCTURE)
 /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi.json: line 1, col 6625, Error - No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters' (INVALID)
 
-err = 3, warn = 4, info = 1
+err = 3, warn = 3, info = 1
 IG Publisher Version: 2.1.1

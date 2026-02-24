@@ -1,53 +1,68 @@
 {
-  "date" : "Tue, 24 Feb, 2026 14:37:50 +0000",
+  "date" : "Tue, 24 Feb, 2026 15:22:07 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [{
     "name" : "/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi.json",
     "size" : 3605,
     "processes" : [{
       "activity" : "load",
-      "start" : 24,
-      "length" : 39
+      "start" : 23,
+      "length" : 29
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 25,
-      "length" : 17
+      "start" : 24,
+      "length" : 19
     },
     {
       "activity" : "generateNarratives",
-      "start" : 25,
-      "length" : 80
+      "start" : 24,
+      "length" : 84
     },
     {
       "activity" : "validate",
-      "start" : 25,
-      "length" : 4622
+      "start" : 24,
+      "length" : 5249
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 29,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 29,
+      "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 30,
-      "length" : 87
+      "start" : 29,
+      "length" : 80
     },
     {
       "activity" : "generate2",
-      "start" : 33,
-      "length" : 75
+      "start" : 32,
+      "length" : 71
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 37,
+      "start" : 36,
       "length" : 3
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 39,
-      "length" : 3
+      "start" : 38,
+      "length" : 2
     }]
   },
   {
     "name" : "/fsh-generated/includes/menu.xml",
-    "size" : 2804
+    "size" : 2804,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/data/features.yml",
@@ -58,40 +73,40 @@
     "size" : 6151,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 33,
+      "start" : 32,
       "length" : 1
     }]
   },
   {
     "name" : "/input/pagecontent/glossaire.md",
-    "size" : 520,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 33,
-      "length" : 1
-    }]
+    "size" : 520
   },
   {
     "name" : "/input/pagecontent/annexe_mise_en_correspondance.md",
-    "size" : 78853,
+    "size" : 62839,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 33,
-      "length" : 8
+      "start" : 32,
+      "length" : 3
     }]
   },
   {
     "name" : "/input/pagecontent/tests.md",
-    "size" : 1184,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 33,
-      "length" : 1
-    }]
+    "size" : 1184
   },
   {
     "name" : "/input/pagecontent/norme_standard.md",
-    "size" : 0
+    "size" : 0,
+    "processes" : [{
+      "activity" : "scan",
+      "start" : 24,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/sf1.md",
@@ -111,12 +126,7 @@
   },
   {
     "name" : "/input/pagecontent/construction_des_flux.md",
-    "size" : 205,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 33,
-      "length" : 1
-    }]
+    "size" : 205
   },
   {
     "name" : "/input/pagecontent/specifications_techniques_flux25_flux26.md",
@@ -126,36 +136,26 @@
     "name" : "/input/pagecontent/specifications_techniques_construction_flux.md",
     "size" : 3250,
     "processes" : [{
-      "activity" : "load-configure",
-      "start" : 25,
+      "activity" : "generate2",
+      "start" : 32,
       "length" : 1
     }]
   },
   {
     "name" : "/input/pagecontent/downloads.md",
-    "size" : 1727,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 33,
-      "length" : 1
-    }]
+    "size" : 1727
   },
   {
     "name" : "/input/pagecontent/change-log.md",
-    "size" : 330,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 25,
-      "length" : 1
-    }]
+    "size" : 330
   },
   {
     "name" : "/input/pagecontent/index.md",
     "size" : 5512,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 33,
-      "length" : 4
+      "start" : 32,
+      "length" : 3
     }]
   },
   {
@@ -176,7 +176,12 @@
   },
   {
     "name" : "/input/images/anImage.png",
-    "size" : 36288
+    "size" : 36288,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/images/diagramme_sequence_flux.png",
@@ -188,11 +193,6 @@
   },
   {
     "name" : "/temp/pages/_includes/artifacts.xml",
-    "size" : 600,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 33,
-      "length" : 1
-    }]
+    "size" : 600
   }]
 }

@@ -1,29 +1,13 @@
 TDMI : Validation Results
 =========================================
 
-err = 3, warn = 4, info = 1
+err = 3, warn = 3, info = 1
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tdmi#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi)
- Build Errors : 23 / 4 / 0
+ Build Errors : 8 / 3 / 0
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi : 3 / 0 / 2
 </table>
 == n/a ==
-WARNING: /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/output/annexe_mise_en_correspondance.html: Illegal HTML: Illegal HTML element: section
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 488, column 85: The link '#classe-dispositifmedical' for "7.11 Professionnel " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 490, column 22: The link '#classe-dispositifmedical' for "7.5 OrganisationInterne " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 493, column 90: The link '#classe-dispositifmedical' for "7.1 DispositifMedical " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 640, column 68: The link '#classe-dispositifmedical' for "7.1 DispositifMedical " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 790, column 85: The link '#classe-dispositifmedical' for "7.11 Professionnel " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 792, column 89: The link '#classe-dispositifmedical' for "7.1 DispositifMedical " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 937, column 85: The link '#classe-dispositifmedical' for "7.11 Professionnel " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 1052, column 85: The link '#classe-dispositifmedical' for "7.11 Professionnel " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 1197, column 94: The link '#classe-dispositifmedical' for "7.5 OrganisationInterne " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 1199, column 90: The link '#classe-dispositifmedical' for "7.1 DispositifMedical " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 1314, column 85: The link '#classe-dispositifmedical' for "7.11 Professionnel " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 1460, column 94: The link '#classe-dispositifmedical' for "7.5 OrganisationInterne " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 1461, column 85: The link '#classe-dispositifmedical' for "7.11" cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 1463, column 90: The link '#classe-dispositifmedical' for "7.1 DispositifMedical " cannot be resolved (valid targets: 111 targets)
-ERROR: annexe_mise_en_correspondance.html#/html/body/div/div/div/div/div/section/ol/li/p/a at Line 1743, column 22: The link '#classe-dispositifmedical' for "7.1" cannot be resolved (valid targets: 111 targets)
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 240, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 241, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 242, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
