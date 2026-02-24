@@ -40,7 +40,7 @@ Permet de faire une recherche sur le numéro de lot du DMI
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "code" : "lotNumber",

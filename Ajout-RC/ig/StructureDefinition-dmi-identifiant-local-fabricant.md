@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-identifiant-loca
   "version" : "3.0.0",
   "name" : "DMIIdentifiantLocalFabricant",
   "status" : "draft",
-  "date" : "2026-02-24T10:11:35+00:00",
+  "date" : "2026-02-24T10:44:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-identifiant-loca
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",

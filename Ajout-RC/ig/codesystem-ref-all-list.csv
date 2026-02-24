@@ -1,8 +1,6 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-http://hl7.org/fhir/address-use,4.0.1,active,"2.16.840.1.113883.4.642.4.68",AddressUse,AddressUse,"The use of an address.","ValueSet/address-use"
 http://hl7.org/fhir/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.4.2",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","ValueSet/administrative-gender"
 http://hl7.org/fhir/bundle-type,4.0.1,active,"2.16.840.1.113883.4.642.4.621",BundleType,BundleType,"Indicates the purpose of a bundle - how it is intended to be used.","ValueSet/bundle-type"
-http://hl7.org/fhir/contact-point-use,4.0.1,active,"2.16.840.1.113883.4.642.4.74",ContactPointUse,ContactPointUse,"Use of contact point.","ValueSet/contact-point-use"
 http://hl7.org/fhir/device-nametype,4.0.1,draft,"2.16.840.1.113883.4.642.4.1084",DeviceNameType,DeviceNameType,"The type of name the device is referred by.","ValueSet/device-nametype"
 http://hl7.org/fhir/device-status,4.0.1,draft,"2.16.840.1.113883.4.642.4.210",FHIRDeviceStatus,FHIRDeviceStatus,"The availability status of the device.","ValueSet/device-status"
 http://hl7.org/fhir/event-status,4.0.1,draft,"2.16.840.1.113883.4.642.4.110",EventStatus,EventStatus,"Codes identifying the lifecycle stage of an event.","ValueSet/event-status"

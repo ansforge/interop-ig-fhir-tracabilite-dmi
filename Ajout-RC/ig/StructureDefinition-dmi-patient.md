@@ -37,7 +37,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-patient.csv), [E
   "version" : "3.0.0",
   "name" : "DMIPatient",
   "status" : "draft",
-  "date" : "2026-02-24T10:11:35+00:00",
+  "date" : "2026-02-24T10:44:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-patient.csv), [E
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "fhirVersion" : "4.0.1",
@@ -94,22 +94,6 @@ Other representations of profile: [CSV](StructureDefinition-dmi-patient.csv), [E
       "id" : "Patient.telecom",
       "path" : "Patient.telecom",
       "min" : 1
-    },
-    {
-      "id" : "Patient.telecom.system",
-      "path" : "Patient.telecom.system",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R200-CanalCommunication/"
-      }
-    },
-    {
-      "id" : "Patient.address.type",
-      "path" : "Patient.address.type",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R35-TypeVoie/"
-      }
     }]
   }
 }

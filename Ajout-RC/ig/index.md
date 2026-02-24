@@ -111,7 +111,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "TDMI",
   "title" : "Traçabilité des Dispositifs Médicaux Implantables",
   "status" : "draft",
-  "date" : "2026-02-24T10:11:35+00:00",
+  "date" : "2026-02-24T10:44:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -124,7 +124,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "packageId" : "ans.fhir.fr.tdmi",

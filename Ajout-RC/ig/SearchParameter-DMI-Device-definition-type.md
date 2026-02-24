@@ -40,7 +40,7 @@ Permet la recherche sur le type de définition du DMI
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "code" : "definitionType",

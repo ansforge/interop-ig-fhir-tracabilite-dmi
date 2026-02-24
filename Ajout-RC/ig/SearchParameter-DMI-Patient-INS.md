@@ -26,7 +26,7 @@ Permet la recherche sur le code EMDN
   "version" : "3.0.0",
   "name" : "DMI_Patient_INS",
   "status" : "draft",
-  "date" : "2026-02-24T10:11:35+00:00",
+  "date" : "2026-02-24T10:44:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -40,7 +40,7 @@ Permet la recherche sur le code EMDN
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "code" : "INS",

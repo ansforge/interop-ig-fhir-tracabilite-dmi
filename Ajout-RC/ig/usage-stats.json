@@ -375,16 +375,8 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code": [
-      "Patient.address",
-      "Practitioner.address"
-    ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment": [
       "Patient.contact"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type": [
-      "Patient.telecom",
-      "Practitioner.telecom"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
       "Patient"
