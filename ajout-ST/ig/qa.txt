@@ -3,7 +3,7 @@ TDMI : Validation Results
 
 err = 3, warn = 3, info = 1
 IG Publisher Version: 2.1.1
-Generated Tue Feb 24 20:49:52 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tdmi#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi)
+Generated Tue Feb 24 20:58:19 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tdmi#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi)
  Build Errors : 8 / 3 / 0
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi : 3 / 0 / 2
 </table>

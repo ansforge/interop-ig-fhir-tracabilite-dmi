@@ -1,63 +1,53 @@
 {
-  "date" : "Tue, 24 Feb, 2026 20:49:00 +0000",
+  "date" : "Tue, 24 Feb, 2026 20:57:44 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [{
     "name" : "/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi.json",
     "size" : 3605,
     "processes" : [{
       "activity" : "load",
-      "start" : 32,
-      "length" : 33
+      "start" : 22,
+      "length" : 29
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 33,
-      "length" : 20
+      "start" : 22,
+      "length" : 16
     },
     {
       "activity" : "generateNarratives",
-      "start" : 33,
-      "length" : 80
+      "start" : 22,
+      "length" : 84
     },
     {
       "activity" : "validate",
-      "start" : 33,
-      "length" : 7895
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 41,
-      "length" : 1
+      "start" : 22,
+      "length" : 4141
     },
     {
       "activity" : "generate1",
-      "start" : 41,
-      "length" : 80
+      "start" : 27,
+      "length" : 73
     },
     {
       "activity" : "generate2",
-      "start" : 45,
-      "length" : 80
+      "start" : 29,
+      "length" : 62
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 49,
-      "length" : 3
+      "start" : 33,
+      "length" : 2
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 52,
-      "length" : 3
+      "start" : 35,
+      "length" : 1
     }]
   },
   {
     "name" : "/fsh-generated/includes/menu.xml",
-    "size" : 2804,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 45,
-      "length" : 1
-    }]
+    "size" : 2804
   },
   {
     "name" : "/input/data/features.yml",
@@ -68,7 +58,7 @@
     "size" : 6151,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 45,
+      "start" : 29,
       "length" : 1
     }]
   },
@@ -78,11 +68,11 @@
   },
   {
     "name" : "/input/pagecontent/annexe_mise_en_correspondance.md",
-    "size" : 62293,
+    "size" : 62089,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 45,
-      "length" : 7
+      "start" : 29,
+      "length" : 8
     }]
   },
   {
@@ -102,7 +92,7 @@
     "size" : 2378,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 45,
+      "start" : 29,
       "length" : 1
     }]
   },
@@ -127,18 +117,13 @@
     "size" : 3250,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 45,
+      "start" : 29,
       "length" : 1
     }]
   },
   {
     "name" : "/input/pagecontent/downloads.md",
-    "size" : 1727,
-    "processes" : [{
-      "activity" : "scan",
-      "start" : 33,
-      "length" : 1
-    }]
+    "size" : 1727
   },
   {
     "name" : "/input/pagecontent/change-log.md",
@@ -149,7 +134,7 @@
     "size" : 5512,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 45,
+      "start" : 29,
       "length" : 4
     }]
   },
@@ -167,12 +152,7 @@
   },
   {
     "name" : "/input/images",
-    "size" : 0,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 45,
-      "length" : 1
-    }]
+    "size" : 0
   },
   {
     "name" : "/input/images/anImage.png",
@@ -180,7 +160,12 @@
   },
   {
     "name" : "/input/images/diagramme_sequence_flux.png",
-    "size" : 33118
+    "size" : 33118,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 29,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/images/ci-sis-logo.png",
