@@ -99,7 +99,7 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
   "name" : "TDMI",
   "title" : "Traçabilité des Dispositifs Médicaux Implantables",
   "status" : "draft",
-  "date" : "2026-02-24T18:40:44+00:00",
+  "date" : "2026-02-24T18:53:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
