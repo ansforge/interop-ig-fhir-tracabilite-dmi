@@ -14,6 +14,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md) and [DMIBundleDelivery](StructureDefinition-dmi-bundledelivery.md)
+* Exemples pour ce/t/te Profil: [SupplyDelivery/dmi-supplydelivery-entete-delivrance-example](SupplyDelivery-dmi-supplydelivery-entete-delivrance-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-supplydelivery-entete-delivrance)
 
@@ -37,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplydelivery-e
   "version" : "3.0.0",
   "name" : "DMISupplyDeliveryEnteteDelivrance",
   "status" : "draft",
-  "date" : "2026-02-24T10:44:05+00:00",
+  "date" : "2026-02-24T16:11:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

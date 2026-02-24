@@ -18,6 +18,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [DMIOrganizationEJ](StructureDefinition-dmi-organization-ej.md) and [DMIOrganizationInterne](StructureDefinition-dmi-organization-interne.md)
+* Exemples pour ce/t/te Extension: [DMI Organization EJ Example Name](Organization-dmi-organization-ej-example.md) and [DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-identifiant-local-distributeur)
 
@@ -43,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-identifiant-loca
   "version" : "3.0.0",
   "name" : "DMIIdentifiantLocalDistributeur",
   "status" : "draft",
-  "date" : "2026-02-24T10:44:05+00:00",
+  "date" : "2026-02-24T16:11:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

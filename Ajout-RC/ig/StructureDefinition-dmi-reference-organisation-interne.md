@@ -18,6 +18,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [DMISupplyDeliveryEnteteDelivrance](StructureDefinition-dmi-supplydelivery-entete-delivrance.md), [DMISupplyDeliveryEnteteLivraison](StructureDefinition-dmi-supplydelivery-entete-livraison.md), [DMISupplyDeliveryEnteteReception](StructureDefinition-dmi-supplydelivery-enteter-reception.md), [DMISupplyDeliveryLigne](StructureDefinition-dmi-supplydelivery-ligne.md)... Show 2 more, [DMISupplyDeliveryReceptionUnitaire](StructureDefinition-dmi-supplydelivery-reception-unitaire.md) and [DMISupplyDeliveryTransport](StructureDefinition-dmi-supplydelivery-transport.md)
+* Exemples pour ce/t/te Extension: [Bundle/dmi-bundle-delivery-example](Bundle-dmi-bundle-delivery-example.md), [SupplyDelivery/dmi-supplydelivery-entete-delivrance-example](SupplyDelivery-dmi-supplydelivery-entete-delivrance-example.md), [SupplyDelivery/dmi-supplydelivery-entete-livraison-example](SupplyDelivery-dmi-supplydelivery-entete-livraison-example.md), [SupplyDelivery/dmi-supplydelivery-entete-reception-example](SupplyDelivery-dmi-supplydelivery-entete-reception-example.md)... Show 3 more, [SupplyDelivery/dmi-supplydelivery-ligne-example](SupplyDelivery-dmi-supplydelivery-ligne-example.md), [SupplyDelivery/dmi-supplydelivery-reception-unitaire-example](SupplyDelivery-dmi-supplydelivery-reception-unitaire-example.md) and [SupplyDelivery/dmi-supplydelivery-transport-example](SupplyDelivery-dmi-supplydelivery-transport-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-reference-organisation-interne)
 
@@ -43,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-reference-organi
   "version" : "3.0.0",
   "name" : "DMIReferenceOrganisationInterne",
   "status" : "draft",
-  "date" : "2026-02-24T10:44:05+00:00",
+  "date" : "2026-02-24T16:11:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

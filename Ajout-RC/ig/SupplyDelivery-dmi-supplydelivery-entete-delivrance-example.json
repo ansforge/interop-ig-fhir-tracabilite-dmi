@@ -1,0 +1,24 @@
+{
+  "resourceType" : "SupplyDelivery",
+  "id" : "dmi-supplydelivery-entete-delivrance-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-delivrance"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Supply Livraison dmi-supplydelivery-entete-delivrance-example</b></p><a name=\"dmi-supplydelivery-entete-delivrance-example\"> </a><a name=\"hcdmi-supplydelivery-entete-delivrance-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-supplydelivery-entete-delivrance.html\">DMISupplyDeliveryEnteteDelivrance</a></p></div><p><b>DMIReferenceOrganisationInterne</b>: <a href=\"Organization-dmi-organization-interne-example.html\">Organization DMI Organization Interne Example Name</a></p><p><b>identifier</b>: identifier-dmi-supplydelivery-entete-delivrance-example</p><p><b>basedOn</b>: <a href=\"SupplyRequest-dmi-supplyrequest-entete-commande-example.html\">SupplyRequest : identifier = identifier-dmi-supplyrequest-entete-commande-example; item[x] = Commande de dispositifs médicaux; quantity = 2</a></p><p><b>occurrence</b>: 2026-02-24</p></div>"
+  },
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-organisation-interne",
+    "valueReference" : {
+      "reference" : "Organization/dmi-organization-interne-example"
+    }
+  }],
+  "identifier" : [{
+    "value" : "identifier-dmi-supplydelivery-entete-delivrance-example"
+  }],
+  "basedOn" : [{
+    "reference" : "SupplyRequest/dmi-supplyrequest-entete-commande-example"
+  }],
+  "occurrenceDateTime" : "2026-02-24"
+}

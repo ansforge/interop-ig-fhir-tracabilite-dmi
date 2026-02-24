@@ -18,6 +18,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [DMISupplyDeliveryTransport](StructureDefinition-dmi-supplydelivery-transport.md)
+* Exemples pour ce/t/te Extension: [Bundle/dmi-bundle-delivery-example](Bundle-dmi-bundle-delivery-example.md) and [SupplyDelivery/dmi-supplydelivery-transport-example](SupplyDelivery-dmi-supplydelivery-transport-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-transport)
 
@@ -43,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-transport.csv), 
   "version" : "3.0.0",
   "name" : "DMITransport",
   "status" : "draft",
-  "date" : "2026-02-24T10:44:05+00:00",
+  "date" : "2026-02-24T16:11:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

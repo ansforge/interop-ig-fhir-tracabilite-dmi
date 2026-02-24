@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "dmi-practitioner-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Praticien dmi-practitioner-example</b></p><a name=\"dmi-practitioner-example\"> </a><a name=\"hcdmi-practitioner-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-practitioner.html\">DMIPractitioner</a></p></div><p><b>identifier</b>: <code>http://www.acme.com/identifiers</code>/identifier-dmi-practitioner-example</p><p><b>telecom</b>: <a href=\"mailto:dmi-practitioner-example@example.com\">dmi-practitioner-example@example.com</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://www.acme.com/identifiers",
+    "value" : "identifier-dmi-practitioner-example"
+  }],
+  "telecom" : [{
+    "system" : "email",
+    "value" : "dmi-practitioner-example@example.com"
+  }]
+}

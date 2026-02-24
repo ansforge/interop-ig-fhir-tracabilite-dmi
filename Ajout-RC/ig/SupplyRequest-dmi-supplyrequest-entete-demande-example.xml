@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SupplyRequest xmlns="http://hl7.org/fhir">
+  <id value="dmi-supplyrequest-entete-demande-example"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Demande d'approvisionnement dmi-supplyrequest-entete-demande-example</b></p><a name="dmi-supplyrequest-entete-demande-example"> </a><a name="hcdmi-supplyrequest-entete-demande-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-dmi-supplyrequest-entete-demande.html">DMISupplyRequestEnteteDemande</a></p></div><p><b>identifier</b>: identifier-dmi-supplyrequest-entete-demande-example</p><p><b>item</b>: <span title="Codes :{https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR DEM}">Demande de dispositifs médicaux à la pharmacie de l'établissement de santé</span></p><p><b>quantity</b>: 2</p><p><b>requester</b>: <a href="Practitioner-dmi-practitioner-example.html">Practitioner : identifier = http://www.acme.com/identifiers#identifier-dmi-practitioner-example; telecom = dmi-practitioner-example@example.com</a></p><p><b>deliverTo</b>: <a href="Organization-dmi-organization-interne-example.html">Organization DMI Organization Interne Example Name</a></p></div>
+  </text>
+  <identifier>
+    <value value="identifier-dmi-supplyrequest-entete-demande-example"/>
+  </identifier>
+  <itemCodeableConcept>
+    <coding>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR"/>
+      <code value="DEM"/>
+      <display value="Demande de dispositifs médicaux à la pharmacie de l'établissement de santé"/>
+    </coding>
+  </itemCodeableConcept>
+  <quantity>
+    <value value="2"/>
+  </quantity>
+  <requester>
+    <reference value="Practitioner/dmi-practitioner-example"/>
+  </requester>
+  <deliverTo>
+    <reference value="Organization/dmi-organization-interne-example"/>
+  </deliverTo>
+</SupplyRequest>

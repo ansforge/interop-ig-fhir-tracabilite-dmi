@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyRequest/dmi-supplyrequest-entete-commande-example> a fhir:SupplyRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dmi-supplyrequest-entete-commande-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-commande"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-commande>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Demande d'approvisionnement dmi-supplyrequest-entete-commande-example</b></p><a name=\"dmi-supplyrequest-entete-commande-example\"> </a><a name=\"hcdmi-supplyrequest-entete-commande-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-supplyrequest-entete-commande.html\">DMISupplyRequestEnteteCommande</a></p></div><p><b>identifier</b>: identifier-dmi-supplyrequest-entete-commande-example</p><p><b>item</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR CDM}\">Commande de dispositifs médicaux</span></p><p><b>quantity</b>: 2</p><p><b>requester</b>: <a href=\"Practitioner-dmi-practitioner-example.html\">Practitioner : identifier = http://www.acme.com/identifiers#identifier-dmi-practitioner-example; telecom = dmi-practitioner-example@example.com</a></p><p><b>deliverTo</b>: <a href=\"Organization-dmi-organization-interne-example.html\">Organization DMI Organization Interne Example Name</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "identifier-dmi-supplyrequest-entete-commande-example" ]
+  ] ) ; # 
+  fhir:item [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR"^^xsd:anyURI ;
+         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR>
+       ] ;
+       fhir:code [ fhir:v "CDM" ] ;
+       fhir:display [ fhir:v "Commande de dispositifs médicaux" ]
+     ] )
+  ] ; # 
+  fhir:quantity [
+     fhir:value [ fhir:v "2"^^xsd:decimal ]
+  ] ; # 
+  fhir:requester [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Practitioner/dmi-practitioner-example> ;
+     fhir:reference [ fhir:v "Practitioner/dmi-practitioner-example" ]
+  ] ; # 
+  fhir:deliverTo [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Organization/dmi-organization-interne-example> ;
+     fhir:reference [ fhir:v "Organization/dmi-organization-interne-example" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

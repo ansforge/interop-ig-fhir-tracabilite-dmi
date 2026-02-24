@@ -76,3 +76,32 @@ These define new code systems used by systems conforming to this implementation 
 | :--- | :--- |
 | [DMI Discriminator](CodeSystem-dmi-discriminator.md) | CodeSystem définissant les codes discriminants. |
 
+### Example: Example Instances 
+
+These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.
+
+| |
+| :--- |
+| [dmi-bundle-delivery-example](Bundle-dmi-bundle-delivery-example.md) |
+| [dmi-bundle-request-example](Bundle-dmi-bundle-request-example.md) |
+| [dmi-bundle-transmission-traces-example](Bundle-dmi-bundle-transmission-traces-example.md) |
+| [dmi-device-example](Device-dmi-device-example.md) |
+| [dmi-devicedefinition-example](DeviceDefinition-dmi-devicedefinition-example.md) |
+| [dmi-devicerequest-example](DeviceRequest-dmi-devicerequest-example.md) |
+| [dmi-invoice-example](Invoice-dmi-invoice-example.md) |
+| [dmi-organization-ej-example](Organization-dmi-organization-ej-example.md) |
+| [dmi-organization-interne-example](Organization-dmi-organization-interne-example.md) |
+| [dmi-patient-example](Patient-dmi-patient-example.md) |
+| [dmi-practitioner-example](Practitioner-dmi-practitioner-example.md) |
+| [dmi-procedure-example](Procedure-dmi-procedure-example.md) |
+| [dmi-supplydelivery-entete-delivrance-example](SupplyDelivery-dmi-supplydelivery-entete-delivrance-example.md) |
+| [dmi-supplydelivery-entete-livraison-example](SupplyDelivery-dmi-supplydelivery-entete-livraison-example.md) |
+| [dmi-supplydelivery-entete-reception-example](SupplyDelivery-dmi-supplydelivery-entete-reception-example.md) |
+| [dmi-supplydelivery-ligne-example](SupplyDelivery-dmi-supplydelivery-ligne-example.md) |
+| [dmi-supplydelivery-reception-unitaire-example](SupplyDelivery-dmi-supplydelivery-reception-unitaire-example.md) |
+| [dmi-supplydelivery-transport-example](SupplyDelivery-dmi-supplydelivery-transport-example.md) |
+| [dmi-supplyrequest-entete-commande-example](SupplyRequest-dmi-supplyrequest-entete-commande-example.md) |
+| [dmi-supplyrequest-entete-demande-example](SupplyRequest-dmi-supplyrequest-entete-demande-example.md) |
+| [dmi-supplyrequest-entete-reponse-example](SupplyRequest-dmi-supplyrequest-entete-reponse-example.md) |
+| [tde-auditevent-example](AuditEvent-tde-auditevent-example.md) |
+

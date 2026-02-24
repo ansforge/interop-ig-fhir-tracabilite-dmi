@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="dmi-patient-example"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Patient dmi-patient-example</b></p><a name="dmi-patient-example"> </a><a name="hcdmi-patient-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-dmi-patient.html">DMIPatient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Patient Anonyme (sexe non précisé), Date de Naissance inconnue ( identifier-dmi-patient-example)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Moyens de contacter le Patient">Coordonnées</td><td colspan="3"><a href="mailto:dmi-patient-example@example.com">dmi-patient-example@example.com</a></td></tr></table></div>
+  </text>
+  <identifier>
+    <value value="identifier-dmi-patient-example"/>
+  </identifier>
+  <telecom>
+    <system value="email"/>
+    <value value="dmi-patient-example@example.com"/>
+  </telecom>
+</Patient>

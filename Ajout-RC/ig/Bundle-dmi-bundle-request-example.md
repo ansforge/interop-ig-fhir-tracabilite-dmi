@@ -1,0 +1,88 @@
+# dmi-bundle-request-example - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **dmi-bundle-request-example**
+
+## Example Bundle: dmi-bundle-request-example
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "dmi-bundle-request-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-request"]
+  },
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "https://test-server.fr/SupplyRequest/dmi-supplyrequest-entete-reponse-example",
+    "resource" : {
+      "resourceType" : "SupplyRequest",
+      "id" : "dmi-supplyrequest-entete-reponse-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entetereponse"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"SupplyRequest_dmi-supplyrequest-entete-reponse-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : Demande d'approvisionnement dmi-supplyrequest-entete-reponse-example</b></p><a name=\"dmi-supplyrequest-entete-reponse-example\"> </a><a name=\"hcdmi-supplyrequest-entete-reponse-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-supplyrequest-entetereponse.html\">DMISupplyRequestEnteteReponse</a></p></div><p><b>identifier</b>: identifier-dmi-supplyrequest-entete-reponse-example</p><p><b>item</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR SDM}\">Suppression de la demande de dispositif médicaux</span></p><p><b>quantity</b>: 2</p><p><b>requester</b>: <a href=\"Practitioner-dmi-practitioner-example.html\">Practitioner : identifier = http://www.acme.com/identifiers#identifier-dmi-practitioner-example; telecom = dmi-practitioner-example@example.com</a></p><p><b>deliverTo</b>: <a href=\"Organization-dmi-organization-interne-example.html\">Organization DMI Organization Interne Example Name</a></p></div>"
+      },
+      "identifier" : [{
+        "value" : "identifier-dmi-supplyrequest-entete-reponse-example"
+      }],
+      "itemCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR",
+          "code" : "SDM",
+          "display" : "Suppression de la demande de dispositif médicaux"
+        }]
+      },
+      "quantity" : {
+        "value" : 2
+      },
+      "requester" : {
+        "reference" : "Practitioner/dmi-practitioner-example"
+      },
+      "deliverTo" : {
+        "reference" : "Organization/dmi-organization-interne-example"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "DMISupplyRequestEnteteReponse"
+    }
+  },
+  {
+    "fullUrl" : "https://test-server.fr/DeviceRequest/dmi-devicerequest-example",
+    "resource" : {
+      "resourceType" : "DeviceRequest",
+      "id" : "dmi-devicerequest-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DeviceRequest_dmi-devicerequest-example\"> </a><p class=\"res-header-id\"><b>Narratif généré : DemandeUtilisationDispositif dmi-devicerequest-example</b></p><a name=\"dmi-devicerequest-example\"> </a><a name=\"hcdmi-devicerequest-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-devicerequest.html\">DMIDeviceRequest</a></p></div><p><b>basedOn</b>: <a href=\"SupplyRequest-dmi-supplyrequest-entete-commande-example.html\">SupplyRequest : identifier = identifier-dmi-supplyrequest-entete-commande-example; item[x] = Commande de dispositifs médicaux; quantity = 2</a></p><p><b>intent</b>: Order</p><p><b>code</b>: <a href=\"Device-dmi-device-example.html\">Device : extension = IPIdLogiciel example,</a></p><p><b>subject</b>: <a href=\"Device-dmi-device-example.html\">Device : extension = IPIdLogiciel example,</a></p></div>"
+      },
+      "basedOn" : [{
+        "reference" : "SupplyRequest/dmi-supplyrequest-entete-commande-example"
+      }],
+      "intent" : "order",
+      "codeReference" : {
+        "reference" : "Device/dmi-device-example"
+      },
+      "subject" : {
+        "reference" : "Device/dmi-device-example"
+      }
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "DMIDeviceRequest"
+    }
+  }]
+}
+
+```

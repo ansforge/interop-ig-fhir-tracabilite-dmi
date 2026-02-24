@@ -10,7 +10,7 @@
   "name" : "TDMI",
   "title" : "Traçabilité des Dispositifs Médicaux Implantables",
   "status" : "draft",
-  "date" : "2026-02-24T10:44:05+00:00",
+  "date" : "2026-02-24T16:11:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -681,6 +681,237 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/dmi-bundle-delivery-example"
+      },
+      "name" : "dmi-bundle-delivery-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/dmi-bundle-request-example"
+      },
+      "name" : "dmi-bundle-request-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/dmi-bundle-transmission-traces-example"
+      },
+      "name" : "dmi-bundle-transmission-traces-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-transmission-traces"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/dmi-device-example"
+      },
+      "name" : "dmi-device-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-device"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DeviceDefinition"
+      }],
+      "reference" : {
+        "reference" : "DeviceDefinition/dmi-devicedefinition-example"
+      },
+      "name" : "dmi-devicedefinition-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicedefinition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DeviceRequest"
+      }],
+      "reference" : {
+        "reference" : "DeviceRequest/dmi-devicerequest-example"
+      },
+      "name" : "dmi-devicerequest-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Invoice"
+      }],
+      "reference" : {
+        "reference" : "Invoice/dmi-invoice-example"
+      },
+      "name" : "dmi-invoice-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/dmi-organization-ej-example"
+      },
+      "name" : "dmi-organization-ej-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-ej"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/dmi-organization-interne-example"
+      },
+      "name" : "dmi-organization-interne-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/dmi-patient-example"
+      },
+      "name" : "dmi-patient-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/dmi-practitioner-example"
+      },
+      "name" : "dmi-practitioner-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/dmi-procedure-example"
+      },
+      "name" : "dmi-procedure-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SupplyDelivery"
+      }],
+      "reference" : {
+        "reference" : "SupplyDelivery/dmi-supplydelivery-entete-delivrance-example"
+      },
+      "name" : "dmi-supplydelivery-entete-delivrance-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-delivrance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SupplyDelivery"
+      }],
+      "reference" : {
+        "reference" : "SupplyDelivery/dmi-supplydelivery-entete-livraison-example"
+      },
+      "name" : "dmi-supplydelivery-entete-livraison-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-livraison"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SupplyDelivery"
+      }],
+      "reference" : {
+        "reference" : "SupplyDelivery/dmi-supplydelivery-entete-reception-example"
+      },
+      "name" : "dmi-supplydelivery-entete-reception-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-enteter-reception"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SupplyDelivery"
+      }],
+      "reference" : {
+        "reference" : "SupplyDelivery/dmi-supplydelivery-ligne-example"
+      },
+      "name" : "dmi-supplydelivery-ligne-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-ligne"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SupplyDelivery"
+      }],
+      "reference" : {
+        "reference" : "SupplyDelivery/dmi-supplydelivery-reception-unitaire-example"
+      },
+      "name" : "dmi-supplydelivery-reception-unitaire-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-reception-unitaire"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SupplyDelivery"
+      }],
+      "reference" : {
+        "reference" : "SupplyDelivery/dmi-supplydelivery-transport-example"
+      },
+      "name" : "dmi-supplydelivery-transport-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SupplyRequest"
+      }],
+      "reference" : {
+        "reference" : "SupplyRequest/dmi-supplyrequest-entete-commande-example"
+      },
+      "name" : "dmi-supplyrequest-entete-commande-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-commande"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SupplyRequest"
+      }],
+      "reference" : {
+        "reference" : "SupplyRequest/dmi-supplyrequest-entete-demande-example"
+      },
+      "name" : "dmi-supplyrequest-entete-demande-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SupplyRequest"
+      }],
+      "reference" : {
+        "reference" : "SupplyRequest/dmi-supplyrequest-entete-reponse-example"
+      },
+      "name" : "dmi-supplyrequest-entete-reponse-example",
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entetereponse"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1122,6 +1353,17 @@
       "name" : "SearchParameter DMI Patient INS",
       "description" : "Permet la recherche sur le code EMDN",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AuditEvent"
+      }],
+      "reference" : {
+        "reference" : "AuditEvent/tde-auditevent-example"
+      },
+      "name" : "tde-auditevent-example",
+      "exampleBoolean" : true
     }],
     "page" : {
       "extension" : [{

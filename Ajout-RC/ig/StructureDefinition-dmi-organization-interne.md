@@ -15,6 +15,7 @@
 
 * Utilise ce/t/te Profil: [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md)
 * Référence ce Profil: [DMIReferenceOrganisationInterne](StructureDefinition-dmi-reference-organisation-interne.md)
+* Exemples pour ce/t/te Profil: [DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-organization-interne)
 
@@ -38,7 +39,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-organization-int
   "version" : "3.0.0",
   "name" : "DMIOrganizationInterne",
   "status" : "draft",
-  "date" : "2026-02-24T10:44:05+00:00",
+  "date" : "2026-02-24T16:11:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

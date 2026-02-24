@@ -14,6 +14,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Profil: [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md)
+* Exemples pour ce/t/te Profil: [DMI Organization EJ Example Name](Organization-dmi-organization-ej-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-organization-ej)
 
@@ -37,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-organization-ej.
   "version" : "3.0.0",
   "name" : "DMIOrganizationEJ",
   "status" : "draft",
-  "date" : "2026-02-24T10:44:05+00:00",
+  "date" : "2026-02-24T16:11:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -108,24 +109,22 @@ Other representations of profile: [CSV](StructureDefinition-dmi-organization-ej.
       "min" : 2
     },
     {
-      "id" : "Organization.identifier:IdNatStruct",
+      "id" : "Organization.identifier:idNatSt",
       "path" : "Organization.identifier",
-      "sliceName" : "IdNatStruct",
+      "sliceName" : "idNatSt",
+      "min" : 1
+    },
+    {
+      "id" : "Organization.identifier:siren",
+      "path" : "Organization.identifier",
+      "sliceName" : "siren",
       "min" : 1,
       "max" : "1"
     },
     {
-      "id" : "Organization.identifier:numSiren",
+      "id" : "Organization.identifier:finess",
       "path" : "Organization.identifier",
-      "sliceName" : "numSiren",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Organization.identifier:numFINESS",
-      "path" : "Organization.identifier",
-      "sliceName" : "numFINESS",
-      "min" : 0,
+      "sliceName" : "finess",
       "max" : "1"
     },
     {
