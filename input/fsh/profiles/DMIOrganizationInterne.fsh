@@ -12,4 +12,4 @@ Id: dmi-organization-interne
     TypeOrganizationInterne 1..1 and
     CategorieOrganisation 0..1
 * type[TypeOrganizationInterne].coding.system = $TRE_R207-TypeOrganisationInterne
-* type[CategorieOrganisation].coding.system = $_1 
+* type[CategorieOrganisation].coding.system = $TRE_R244-CategorieOrganisation 
