@@ -1336,9 +1336,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire (Le contenu de l’ObjetEvenement est une facture. Cet
-élément est décrit dans une partie spécifique « Facture ».)</td> <td style="text-align: center;">entity[0..*].what [0..1] Reference
-(Invoice)</td>
+<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire (Le contenu de l’ObjetEvenement est une facture. Cet élément est décrit dans une partie spécifique « Facture ».)</td> <td style="text-align: center;">entity[0..*].what [0..1] Reference (Invoice)</td>
 </tr>
 <tr>
 <td rowspan="10" style="text-align: left;">Facture [1..1]</td>
@@ -1380,9 +1378,8 @@ Reference (Binary)</em></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;">Ligne : [1.*] 
-<td style="text-align: center;">L’élément ligne est décrit dans une
-partie spécifique “Ligne”</td>
+<td style="text-align: left;">Ligne : [1.*] (Cet élément est décrit dans une partie spécifique « Ligne ».) </td>
+<td style="text-align: center;">L’élément ligne est décrit dans une partie spécifique “Ligne”</td>
 </tr>
 <tr>
 <td rowspan="3" style="text-align: left;">Ligne [1..*]</td>
@@ -1416,17 +1413,11 @@ style="text-align: center;">lineItem[0..*].chargeItemReference[1..1].occurenceDa
 
 ### Flux 23 - RechercheTraces
 
-Ce flux intervient lorsque le consommateur effectue une recherche de
-traces d’un ou de plusieurs DMI se trouvant dans l’établissement de
-santé auprès du gestionnaire de traçabilité en précisant les critères de
-sa recherche.
+Ce flux intervient lorsque le consommateur effectue une recherche de traces d’un ou de plusieurs DMI se trouvant dans l’établissement de santé auprès du gestionnaire de traçabilité en précisant les critères de sa recherche.
 
-Il correspond au « Flux 4 -RechercheTraces » du volet « Traçabilité des
-évènements ».
+Il correspond au « Flux 4 -RechercheTraces » du volet « Traçabilité des évènements ».
 
-Ci-dessous les critères de recherches. Les critères apparaissant *en
-italique et en rouge* correspondent à des paramètres de recherche créés
-pour répondre au besoin :
+Ci-dessous les critères de recherches. Les critères apparaissant *en italique et en rouge* correspondent à des paramètres de recherche créés pour répondre au besoin :
 
 <table>
 <colgroup>
@@ -1443,10 +1434,8 @@ SFE</th>
 </tr>
 <tr>
 <th style="text-align: center;">Ressource</th>
-<th style="text-align: center;">Paramètre identifié dans le volet
-« Généricisation : Traçabilité des évènements  »</th>
-<th style="text-align: center;">Paramètre supplémentaire identifié par
-ce volet</th>
+<th style="text-align: center;">Paramètre identifié dans le volet « Généricisation : Traçabilité des évènements  »</th>
+<th style="text-align: center;">Paramètre supplémentaire identifié par ce volet</th>
 </tr>
 </thead>
 <tbody>
@@ -1525,21 +1514,18 @@ style="text-align: center;">DispositifMedical/referenceFabricant</td>
 <td
 style="text-align: center;">DispositifMedical/support/IUD-IPNumLot</td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"><em>DMI_Device_lotNumber :
-string</em></td>
+<td style="text-align: center;"><em>DMI_Device_lotNumber : string</em></td>
 </tr>
 <tr>
 <td
 style="text-align: center;">DispositifMedical/support/IUD-IPNumSerie</td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"><em>DMI_Device_serialNumber :
-string</em></td>
+<td style="text-align: center;"><em>DMI_Device_serialNumber : string</em></td>
 </tr>
 <tr>
 <td style="text-align: center;">DispositifMedical/codeEMDN</td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"><em>DMI_Device_definition-type :
-token</em></td>
+<td style="text-align: center;"><em>DMI_Device_definition-type : token</em></td>
 </tr>
 <tr>
 <td style="text-align: center;">Patient/identite/matriculeINS</td>
