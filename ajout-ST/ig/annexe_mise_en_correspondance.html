@@ -237,6 +237,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#flux-14--tracabiliteechecpose" id="markdown-toc-flux-14--tracabiliteechecpose">Flux 14 – TracabiliteEchecPose </a></li>
   <li><a href="#flux-16a--tracabilitereassortdmi" id="markdown-toc-flux-16a--tracabilitereassortdmi">Flux 16a – TracabiliteReassortDMI </a></li>
   <li><a href="#flux-18--tracabilitefacturationdmi" id="markdown-toc-flux-18--tracabilitefacturationdmi">Flux 18 – TracabiliteFacturationDMI </a></li>
+  <li><a href="#flux-23---recherchetraces" id="markdown-toc-flux-23---recherchetraces">Flux 23 - RechercheTraces</a></li>
+  <li><a href="#flux-24--reponserecherchetraces" id="markdown-toc-flux-24--reponserecherchetraces">Flux 24 – ReponseRechercheTraces</a></li>
+  <li><a href="#flux-25--consultertrace" id="markdown-toc-flux-25--consultertrace">Flux 25 – ConsulterTrace</a></li>
+  <li><a href="#flux-26--reponseconsultertrace" id="markdown-toc-flux-26--reponseconsultertrace">Flux 26 – ReponseConsulterTrace</a></li>
 </ul>
 
 </div>
@@ -1548,9 +1552,7 @@ Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de 
 <td style="text-align: center;">entity[0..*].type [0..1] Coding</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire (Le contenu de l’ObjetEvenement est une facture. Cet
-élément est décrit dans une partie spécifique « Facture ».)</td> <td style="text-align: center;">entity[0..*].what [0..1] Reference
-(Invoice)</td>
+<td style="text-align: left;"><strong>Contenu [0..1]</strong> ObjetBinaire (Le contenu de l’ObjetEvenement est une facture. Cet élément est décrit dans une partie spécifique « Facture ».)</td> <td style="text-align: center;">entity[0..*].what [0..1] Reference (Invoice)</td>
 </tr>
 <tr>
 <td rowspan="10" style="text-align: left;">Facture [1..1]</td>
@@ -1592,10 +1594,9 @@ Reference (Binary)</em></td>
 <td style="text-align: center;">meta [0..1] Meta</td>
 </tr>
 <tr>
-<td style="text-align: left;">Ligne : [1.*] 
-<td style="text-align: center;">L’élément ligne est décrit dans une
-partie spécifique “Ligne”</td>
-&lt;/tr&gt;
+<td style="text-align: left;">Ligne : [1.*] (Cet élément est décrit dans une partie spécifique « Ligne ».) </td>
+<td style="text-align: center;">L’élément ligne est décrit dans une partie spécifique “Ligne”</td>
+</tr>
 <tr>
 <td rowspan="3" style="text-align: left;">Ligne [1..*]</td>
 <td style="text-align: left;">dateAchat : [1..1] Date</td>
@@ -1620,24 +1621,18 @@ partie spécifique “Ligne”</td>
 <td style="text-align: left;">Contenu : [0..1] Objet binaire (Le contenu de l’ObjetEvenement est le contenu non structuré de la facture)</td>
 <td style="text-align: center;">entity[0..*].detail [0..1]. valueBase64Binary [1..1]</td>
 </tr>
-&lt;/tbody&gt;
-&lt;/table&gt;
+</tbody>
+</table>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux 18</p>
 
-### Flux 23 - RechercheTraces
+<h3 id="flux-23---recherchetraces">Flux 23 - RechercheTraces</h3>
 
-Ce flux intervient lorsque le consommateur effectue une recherche de
-traces d’un ou de plusieurs DMI se trouvant dans l’établissement de
-santé auprès du gestionnaire de traçabilité en précisant les critères de
-sa recherche.
+<p>Ce flux intervient lorsque le consommateur effectue une recherche de traces d’un ou de plusieurs DMI se trouvant dans l’établissement de santé auprès du gestionnaire de traçabilité en précisant les critères de sa recherche.</p>
 
-Il correspond au « Flux 4 -RechercheTraces » du volet « Traçabilité des
-évènements ».
+<p>Il correspond au « Flux 4 -RechercheTraces » du volet « Traçabilité des évènements ».</p>
 
-Ci-dessous les critères de recherches. Les critères apparaissant *en
-italique et en rouge* correspondent à des paramètres de recherche créés
-pour répondre au besoin :
+<p>Ci-dessous les critères de recherches. Les critères apparaissant <em>en italique et en rouge</em> correspondent à des paramètres de recherche créés pour répondre au besoin :</p>
 
 <table>
 <colgroup>
@@ -1654,10 +1649,8 @@ SFE</th>
 </tr>
 <tr>
 <th style="text-align: center;">Ressource</th>
-<th style="text-align: center;">Paramètre identifié dans le volet
-« Généricisation : Traçabilité des évènements  »</th>
-<th style="text-align: center;">Paramètre supplémentaire identifié par
-ce volet</th>
+<th style="text-align: center;">Paramètre identifié dans le volet « Généricisation : Traçabilité des évènements  »</th>
+<th style="text-align: center;">Paramètre supplémentaire identifié par ce volet</th>
 </tr>
 </thead>
 <tbody>
@@ -1732,20 +1725,17 @@ ce volet</th>
 <tr>
 <td style="text-align: center;">DispositifMedical/support/IUD-IPNumLot</td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"><em>DMI_Device_lotNumber :
-string</em></td>
+<td style="text-align: center;"><em>DMI_Device_lotNumber : string</em></td>
 </tr>
 <tr>
 <td style="text-align: center;">DispositifMedical/support/IUD-IPNumSerie</td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"><em>DMI_Device_serialNumber :
-string</em></td>
+<td style="text-align: center;"><em>DMI_Device_serialNumber : string</em></td>
 </tr>
 <tr>
 <td style="text-align: center;">DispositifMedical/codeEMDN</td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"><em>DMI_Device_definition-type :
-token</em></td>
+<td style="text-align: center;"><em>DMI_Device_definition-type : token</em></td>
 </tr>
 <tr>
 <td style="text-align: center;">Patient/identite/matriculeINS</td>
@@ -1758,23 +1748,23 @@ token</em></td>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standards du flux 23</p>
 
-### Flux 24 – ReponseRechercheTraces 
+<h3 id="flux-24--reponserecherchetraces">Flux 24 – ReponseRechercheTraces</h3>
 
-Il s’agit du résultat de la recherche de traces retourné par le
+<p>Il s’agit du résultat de la recherche de traces retourné par le
 gestionnaire de traçabilté. La recherche de traces retourne une
 ressource Bundle de type SearchSet contenant les ressources AuditEvent
-correspondant aux critères de recherche fournis par le consommateur.
+correspondant aux critères de recherche fournis par le consommateur.</p>
 
-Il correspond au « Flux 5 -ReponseRechercheTraces » du volet
-« Traçabilité des évènements ».
+<p>Il correspond au « Flux 5 -ReponseRechercheTraces » du volet
+« Traçabilité des évènements ».</p>
 
-### Flux 25 – ConsulterTrace 
+<h3 id="flux-25--consultertrace">Flux 25 – ConsulterTrace</h3>
 
-Ce flux intervient lorsque le consommateur demande à consulter la trace
-d’un évènement auprès du gestionnaire de traçabilité.
+<p>Ce flux intervient lorsque le consommateur demande à consulter la trace
+d’un évènement auprès du gestionnaire de traçabilité.</p>
 
-Il correspond au « Flux 2 -ConsultationTrace » du volet « Traçabilité
-des évènements » :
+<p>Il correspond au « Flux 2 -ConsultationTrace » du volet « Traçabilité
+des évènements » :</p>
 
 <table style="width:89%;">
 <colgroup>
@@ -1805,14 +1795,13 @@ des évènements » :
 </tbody>
 </table>
 
-### Flux 26 – ReponseConsulterTrace
+<h3 id="flux-26--reponseconsultertrace">Flux 26 – ReponseConsulterTrace</h3>
 
-Il s’agit du résultat de la demande de consultation de la trace d’un évènement retourné par le gestionnaire de traçabilité. Le corps de la réponse est la ressource AuditEvent identifiée lors de la demande.
+<p>Il s’agit du résultat de la demande de consultation de la trace d’un évènement retourné par le gestionnaire de traçabilité. Le corps de la réponse est la ressource AuditEvent identifiée lors de la demande.</p>
 
-Il correspond au « Flux 3 - ReponseConsultationTrace » du volet
-« Traçabilité des évènements ».
+<p>Il correspond au « Flux 3 - ReponseConsultationTrace » du volet
+« Traçabilité des évènements ».</p>
 
-</td></tr></tbody></table>
 
 
 
@@ -1854,7 +1843,7 @@ Il correspond au « Flux 3 - ReponseConsultationTrace » du volet
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 20:40+0000">2026-02-24</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 20:49+0000">2026-02-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
