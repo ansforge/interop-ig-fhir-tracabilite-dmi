@@ -411,19 +411,36 @@ Ci-dessous les critères de recherches. Les critères apparaissant **en italique
 | altId : token |  | | |
 |  | patient : reference | | |
 | ActeurEvenement/role | agent-role : token |  | |
-| DispositifMedical/support/IUD-ID | Device |  | Device-udi-di : String |
-| DispositifMedical/support/identifiantHRF | Device-udi-carrier | 
-| | | | |
-| :--- | :--- | :--- | :--- |
+| DispositifMedical/support/IUD-ID | Device |  | Device-udi-carrier : String |
+| DispositifMedical/support/identifiantHRF |  | Device-udi-carrier : String | |
 | DispositifMedical/referenceFabricant |  | manufacturer: String | |
 | DispositifMedical/support/IUD-IPNumLot |  | **DMI_Device_lotNumber : string** | |
 | DispositifMedical/support/IUD-IPNumSerie |  | **DMI_Device_serialNumber : string** | |
 | DispositifMedical/codeEMDN |  | **DMI_Device_definition-type : token** | |
 | Patient/identite/matriculeINS | Patient |  | **DMI_Patient_INS : token** |
-Mise en correspondance des contenus métiers/standards du flux 23### Flux 24 – ReponseRechercheTraces Il s’agit du résultat de la recherche de traces retourné par le gestionnaire de traçabilté. La recherche de traces retourne une ressource Bundle de type SearchSet contenant les ressources AuditEvent correspondant aux critères de recherche fournis par le consommateur. Il correspond au « Flux 5 -ReponseRechercheTraces » du volet « Traçabilité des évènements ». ### Flux 25 – ConsulterTrace Ce flux intervient lorsque le consommateur demande à consulter la trace d’un évènement auprès du gestionnaire de traçabilité. Il correspond au « Flux 2 -ConsultationTrace » du volet « Traçabilité des évènements » :
+
+Mise en correspondance des contenus métiers/standards du flux 23
+
+### Flux 24 – ReponseRechercheTraces
+
+Il s’agit du résultat de la recherche de traces retourné par le gestionnaire de traçabilté. La recherche de traces retourne une ressource Bundle de type SearchSet contenant les ressources AuditEvent correspondant aux critères de recherche fournis par le consommateur.
+
+Il correspond au « Flux 5 -ReponseRechercheTraces » du volet « Traçabilité des évènements ».
+
+### Flux 25 – ConsulterTrace
+
+Ce flux intervient lorsque le consommateur demande à consulter la trace d’un évènement auprès du gestionnaire de traçabilité.
+
+Il correspond au « Flux 2 -ConsultationTrace » du volet « Traçabilité des évènements » :
+
 | | | | |
 | :--- | :--- | :--- | :--- |
 | **Nom classes** | **Nom attributs** | **Ressource** | **Elément** |
 | Trace | identifiant [0..1] : Identifiant | AuditEvent | id [1..1] id |
-### Flux 26 – ReponseConsulterTrace Il s’agit du résultat de la demande de consultation de la trace d’un évènement retourné par le gestionnaire de traçabilité. Le corps de la réponse est la ressource AuditEvent identifiée lors de la demande. Il correspond au « Flux 3 - ReponseConsultationTrace » du volet « Traçabilité des évènements ». | |
+
+### Flux 26 – ReponseConsulterTrace
+
+Il s’agit du résultat de la demande de consultation de la trace d’un évènement retourné par le gestionnaire de traçabilité. Le corps de la réponse est la ressource AuditEvent identifiée lors de la demande.
+
+Il correspond au « Flux 3 - ReponseConsultationTrace » du volet « Traçabilité des évènements ».
 

@@ -238,6 +238,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#flux-16a--tracabilitereassortdmi" id="markdown-toc-flux-16a--tracabilitereassortdmi">Flux 16a – TracabiliteReassortDMI </a></li>
   <li><a href="#flux-18--tracabilitefacturationdmi" id="markdown-toc-flux-18--tracabilitefacturationdmi">Flux 18 – TracabiliteFacturationDMI </a></li>
   <li><a href="#flux-23---recherchetraces" id="markdown-toc-flux-23---recherchetraces">Flux 23 - RechercheTraces</a></li>
+  <li><a href="#flux-24--reponserecherchetraces" id="markdown-toc-flux-24--reponserecherchetraces">Flux 24 – ReponseRechercheTraces</a></li>
+  <li><a href="#flux-25--consultertrace" id="markdown-toc-flux-25--consultertrace">Flux 25 – ConsulterTrace</a></li>
+  <li><a href="#flux-26--reponseconsultertrace" id="markdown-toc-flux-26--reponseconsultertrace">Flux 26 – ReponseConsulterTrace</a></li>
 </ul>
 
 </div>
@@ -1640,8 +1643,7 @@ Reference (Binary)</em></td>
 </colgroup>
 <thead>
 <tr>
-<th rowspan="2" style="text-align: center;">Critère de recherche
-SFE</th>
+<th rowspan="2" style="text-align: center;">Critère de recherche SFE</th>
 <th colspan="3" style="text-align: center;">Paramètre de recherche</th>
 </tr>
 <tr>
@@ -1693,14 +1695,13 @@ SFE</th>
 <td style="text-align: center;">DispositifMedical/support/IUD-ID</td>
 <td rowspan="6" style="text-align: center;">Device</td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;">Device-udi-di : String</td>
+<td style="text-align: center;">Device-udi-carrier : String</td>
 </tr>
 <tr>
 <td style="text-align: center;">DispositifMedical/support/identifiantHRF</td>
-<td style="text-align: center;">Device-udi-carrier</td>
-<td style="text-align: center;"><table style="width:15%;">
-<p>: String</p>&lt;/td&gt;
-&lt;/tr&gt;
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Device-udi-carrier : String</td>
+</tr>
 <tr>
 <td style="text-align: center;">DispositifMedical/referenceFabricant</td>
 <td style="text-align: center;"></td>
@@ -1727,28 +1728,28 @@ SFE</th>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><em>DMI_Patient_INS : token</em></td>
 </tr>
-&lt;/tbody&gt;
+</tbody>
 </table>
 
 <p style="text-align:center;">Mise en correspondance des contenus métiers/standards du flux 23</p>
 
-### Flux 24 – ReponseRechercheTraces 
+<h3 id="flux-24--reponserecherchetraces">Flux 24 – ReponseRechercheTraces</h3>
 
-Il s’agit du résultat de la recherche de traces retourné par le
+<p>Il s’agit du résultat de la recherche de traces retourné par le
 gestionnaire de traçabilté. La recherche de traces retourne une
 ressource Bundle de type SearchSet contenant les ressources AuditEvent
-correspondant aux critères de recherche fournis par le consommateur.
+correspondant aux critères de recherche fournis par le consommateur.</p>
 
-Il correspond au « Flux 5 -ReponseRechercheTraces » du volet
-« Traçabilité des évènements ».
+<p>Il correspond au « Flux 5 -ReponseRechercheTraces » du volet
+« Traçabilité des évènements ».</p>
 
-### Flux 25 – ConsulterTrace 
+<h3 id="flux-25--consultertrace">Flux 25 – ConsulterTrace</h3>
 
-Ce flux intervient lorsque le consommateur demande à consulter la trace
-d’un évènement auprès du gestionnaire de traçabilité.
+<p>Ce flux intervient lorsque le consommateur demande à consulter la trace
+d’un évènement auprès du gestionnaire de traçabilité.</p>
 
-Il correspond au « Flux 2 -ConsultationTrace » du volet « Traçabilité
-des évènements » :
+<p>Il correspond au « Flux 2 -ConsultationTrace » du volet « Traçabilité
+des évènements » :</p>
 
 <table style="width:89%;">
 <colgroup>
@@ -1779,14 +1780,13 @@ des évènements » :
 </tbody>
 </table>
 
-### Flux 26 – ReponseConsulterTrace
+<h3 id="flux-26--reponseconsultertrace">Flux 26 – ReponseConsulterTrace</h3>
 
-Il s’agit du résultat de la demande de consultation de la trace d’un évènement retourné par le gestionnaire de traçabilité. Le corps de la réponse est la ressource AuditEvent identifiée lors de la demande.
+<p>Il s’agit du résultat de la demande de consultation de la trace d’un évènement retourné par le gestionnaire de traçabilité. Le corps de la réponse est la ressource AuditEvent identifiée lors de la demande.</p>
 
-Il correspond au « Flux 3 - ReponseConsultationTrace » du volet
-« Traçabilité des évènements ».
+<p>Il correspond au « Flux 3 - ReponseConsultationTrace » du volet
+« Traçabilité des évènements ».</p>
 
-</td></tr></tbody></table>
 
 
 
@@ -1828,7 +1828,7 @@ Il correspond au « Flux 3 - ReponseConsultationTrace » du volet
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 20:57+0000">2026-02-24</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 21:08+0000">2026-02-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
