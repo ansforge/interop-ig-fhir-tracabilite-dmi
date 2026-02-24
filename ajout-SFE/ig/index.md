@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi | *Version*:3.0.0 |
-| Draft as of 2026-02-23 | *Computable Name*:TDMI |
+| Draft as of 2026-02-24 | *Computable Name*:TDMI |
 
  **Brief description of this Implementation Guide**
  This Implementation Guide defines the functional and technical framework for implementing traceability of Implantable Medical Devices (IMDs) within French healthcare institutions, in compliance with the CI SIS interoperability framework. It specifies how traceability events related to the IMD lifecycle including ordering, reception, stock management, implantation, and invoicing are created, transmitted, searched, and consulted using HL7 FHIR R4 resources and profiles, based on the generic Event Traceability framework (IHE ATNA / RESTful ATNA). 
@@ -99,7 +99,7 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
   "name" : "TDMI",
   "title" : "Traçabilité des Dispositifs Médicaux Implantables",
   "status" : "draft",
-  "date" : "2026-02-23T09:43:28+00:00",
+  "date" : "2026-02-24T10:00:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
