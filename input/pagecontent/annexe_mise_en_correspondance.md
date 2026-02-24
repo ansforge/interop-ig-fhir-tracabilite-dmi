@@ -1428,8 +1428,7 @@ Ci-dessous les critères de recherches. Les critères apparaissant *en italique 
 </colgroup>
 <thead>
 <tr>
-<th rowspan="2" style="text-align: center;">Critère de recherche
-SFE</th>
+<th rowspan="2" style="text-align: center;">Critère de recherche SFE</th>
 <th colspan="3" style="text-align: center;">Paramètre de recherche</th>
 </tr>
 <tr>
@@ -1482,13 +1481,12 @@ style="text-align: center;">ActeurEvenement/identifiant</td>
 <td style="text-align: center;">DispositifMedical/support/IUD-ID</td>
 <td rowspan="6" style="text-align: center;">Device</td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;">Device-udi-di : String</td>
+<td style="text-align: center;">Device-udi-carrier : String</td>
 </tr>
 <tr>
 <td style="text-align: center;">DispositifMedical/support/identifiantHRF</td>
-<td style="text-align: center;">Device-udi-carrier</td>
-<td style="text-align: center;"><table style="width:15%;">
-<p>: String</p></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Device-udi-carrier : String</td>
 </tr>
 <tr>
 <td
