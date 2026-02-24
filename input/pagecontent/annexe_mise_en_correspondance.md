@@ -674,7 +674,6 @@ Ce flux reprend les mêmes éléments que le flux 5
 Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :
 
 <table>
-<caption><p>Tableau 7 : Mise en correspondance des contenus métiers/standard du flux 5c</p></caption>
 <colgroup>
 <col style="width: 19%" />
 <col style="width: 26%" />
@@ -766,6 +765,8 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 </tr>
 </tbody>
 </table>
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux 5c</p>
 
 ### Flux 5d – TracabiliteReceptionDMI
 
@@ -1096,7 +1097,7 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <td style="text-align: center;"><em>Extension : DMI_ReferenceOrganisationInterne[1..1]Reference (Organization)</em></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Professionnel [1..1]</td>
+<td style="text-align: left;">Professionnel [1..1]</td>
 <td style="text-align: center;"><p>receiver [0..*] Reference</p>
 <p>(Practitioner | PractitionerRole)</p></td>
 </tr>
@@ -1164,7 +1165,6 @@ Ce flux reprend les mêmes éléments que le flux 11.
 Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :
 
 <table>
-<caption><p>Tableau 11 : Mise en correspondance des contenus métiers/standard du flux 15</p></caption>
 <colgroup>
 <col style="width: 22%" />
 <col style="width: 20%" />
@@ -1246,9 +1246,6 @@ href="#flux-22-transmissiontrace">Tableau Flux 22</a></td>
 <tr>
 <td style="text-align: left;">Professionnel : [1..1]</td>
 <td style="text-align: center;"><p>performer[0..*].actor [1..1] Reference</p>
-<p>(<a href="https://hl7.org/FHIR/practitioner.html">Practitioner</a> |
-<a
-href="https://hl7.org/FHIR/practitionerrole.html">PractitionerRole</a>)</p></td>
 </tr>
 <tr>
 <td style="text-align: left;">OrganisationInterne : [1..1]</td>
@@ -1272,6 +1269,8 @@ href="https://hl7.org/FHIR/practitionerrole.html">PractitionerRole</a>)</p></td>
 </tbody>
 </table>
 
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux 15</p>
+
 ### Flux 13a – TracabiliteRefusDMI 
 
 Ce flux reprend les mêmes éléments que le flux 15.
@@ -1293,7 +1292,6 @@ Ce flux reprend les mêmes éléments que le flux 27.
 Ce flux est un cas particulier du « Flux 22 – TransmissionTrace » précédemment présenté. Il reprend tel quel la structure des classes Trace, SourceTrace, Evenement, ActeurEvenement et spécifie deux occurrences de la classe ObjetEvenement :
 
 <table style="width:95%;">
-<caption><p><span id="_Flux_23_-" class="anchor"></span>Tableau 13 : Mise en correspondance des contenus métiers/standard du flux 18</p></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 26%" />
@@ -1409,6 +1407,8 @@ style="text-align: center;">lineItem[0..*].chargeItemReference[1..1].occurenceDa
 </tbody>
 </table>
 
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standard du flux 18</p>
+
 ### Flux 23 - RechercheTraces
 
 Ce flux intervient lorsque le consommateur effectue une recherche de traces d’un ou de plusieurs DMI se trouvant dans l’établissement de santé auprès du gestionnaire de traçabilité en précisant les critères de sa recherche.
@@ -1418,7 +1418,6 @@ Il correspond au « Flux 4 -RechercheTraces » du volet « Traçabilité des 
 Ci-dessous les critères de recherches. Les critères apparaissant *en italique et en rouge* correspondent à des paramètres de recherche créés pour répondre au besoin :
 
 <table>
-<caption><p>Tableau 14 : Mise en correspondance des contenus métiers/standards du flux 23</p></caption>
 <colgroup>
 <col style="width: 34%" />
 <col style="width: 11%" />
@@ -1530,6 +1529,8 @@ style="text-align: center;">DispositifMedical/support/IUD-IPNumSerie</td>
 </tr>
 </tbody>
 </table>
+
+<p style="text-align:center;">Mise en correspondance des contenus métiers/standards du flux 23</p>
 
 ### Flux 24 – ReponseRechercheTraces 
 
