@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-serialNumber | *Version*:3.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber | *Version*:3.0.0 |
 | Draft as of 2022-05-24 | *Computable Name*:DMI_Device_serialNumber |
 
  
@@ -21,8 +21,8 @@ Permet la recherche sur le numéro de série du DMI
 ```json
 {
   "resourceType" : "SearchParameter",
-  "id" : "DMI-Device-serialNumber",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-serialNumber",
+  "id" : "dmi-device-serialNumber",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber",
   "version" : "3.0.0",
   "name" : "DMI_Device_serialNumber",
   "status" : "draft",
@@ -45,7 +45,8 @@ Permet la recherche sur le numéro de série du DMI
   }],
   "code" : "serialNumber",
   "base" : ["Device"],
-  "type" : "string"
+  "type" : "string",
+  "expression" : "Device.serialNumber"
 }
 
 ```

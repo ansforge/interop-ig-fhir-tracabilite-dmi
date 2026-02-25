@@ -90,7 +90,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.0.2/CodeSystem-ISO3166Part1.html): [DMIBundleDelivery](StructureDefinition-dmi-bundledelivery.md), [DMIBundleRequest](StructureDefinition-dmi-bundle-request.md)... Show 40 more, [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md), [DMIClasseRisque](StructureDefinition-dmi-classe-risque.md), [DMICodeEMDN](StructureDefinition-dmi-code-emdn.md), [DMICodeLPP](StructureDefinition-dmi-code-lpp.md), [DMIDevice](StructureDefinition-dmi-device.md), [DMIDeviceDefinition](StructureDefinition-dmi-devicedefinition.md), [DMIDeviceRequest](StructureDefinition-dmi-devicerequest.md), [DMIDiscriminator](CodeSystem-dmi-discriminator.md), [DMIFacture](StructureDefinition-dmi-facture.md), [DMIIPIdLogiciel](StructureDefinition-dmi-ip-id-logiciel.md), [DMIIdentifiantLocalDistributeur](StructureDefinition-dmi-identifiant-local-distributeur.md), [DMIIdentifiantLocalFabricant](StructureDefinition-dmi-identifiant-local-fabricant.md), [DMIInternalDiameter](StructureDefinition-dmi-internal-diameter.md), [DMIInvoice](StructureDefinition-dmi-invoice.md), [DMIMarquageCE](StructureDefinition-dmi-marquage-ce.md), [DMINomDistributeur](StructureDefinition-dmi-nom-distributeur.md), [DMIOrganizationEJ](StructureDefinition-dmi-organization-ej.md), [DMIOrganizationInterne](StructureDefinition-dmi-organization-interne.md), [DMIOrganizationLocation](StructureDefinition-dmi-organization-location.md), [DMIPatient](StructureDefinition-dmi-patient.md), [DMIPractitioner](StructureDefinition-dmi-practitioner.md), [DMIProcedure](StructureDefinition-dmi-procedure.md), [DMIReferenceDistributeur](StructureDefinition-dmi-reference-distributeur.md), [DMIReferenceFabricant](StructureDefinition-dmi-reference-fabricant.md), [DMIReferenceOrganisationInterne](StructureDefinition-dmi-reference-organisation-interne.md), [DMISupplyDeliveryEnteteDelivrance](StructureDefinition-dmi-supplydelivery-entete-delivrance.md), [DMISupplyDeliveryEnteteLivraison](StructureDefinition-dmi-supplydelivery-entete-livraison.md), [DMISupplyDeliveryEnteteReception](StructureDefinition-dmi-supplydelivery-enteter-reception.md), [DMISupplyDeliveryLigne](StructureDefinition-dmi-supplydelivery-ligne.md), [DMISupplyDeliveryReceptionUnitaire](StructureDefinition-dmi-supplydelivery-reception-unitaire.md), [DMISupplyDeliveryTransport](StructureDefinition-dmi-supplydelivery-transport.md), [DMISupplyRequestEnteteCommande](StructureDefinition-dmi-supplyrequest-entete-commande.md), [DMISupplyRequestEnteteDemande](StructureDefinition-dmi-supplyrequest-entete-demande.md), [DMISupplyRequestEnteteReponse](StructureDefinition-dmi-supplyrequest-entetereponse.md), [DMITransport](StructureDefinition-dmi-transport.md), [DMI_Device_definitionType](SearchParameter-DMI-Device-definition-type.md), [DMI_Device_lotNumber](SearchParameter-DMI-Device-lotNumber.md), [DMI_Device_serialNumber](SearchParameter-DMI-Device-serialNumber.md), [DMI_Patient_INS](SearchParameter-DMI-Patient-INS.md) and [TDMI](index.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.0.2/CodeSystem-ISO3166Part1.html): [DMIBundleDelivery](StructureDefinition-dmi-bundledelivery.md), [DMIBundleRequest](StructureDefinition-dmi-bundle-request.md)... Show 40 more, [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md), [DMIClasseRisque](StructureDefinition-dmi-classe-risque.md), [DMICodeEMDN](StructureDefinition-dmi-code-emdn.md), [DMICodeLPP](StructureDefinition-dmi-code-lpp.md), [DMIDevice](StructureDefinition-dmi-device.md), [DMIDeviceDefinition](StructureDefinition-dmi-devicedefinition.md), [DMIDeviceRequest](StructureDefinition-dmi-devicerequest.md), [DMIDiscriminator](CodeSystem-dmi-discriminator.md), [DMIFacture](StructureDefinition-dmi-facture.md), [DMIIPIdLogiciel](StructureDefinition-dmi-ip-id-logiciel.md), [DMIIdentifiantLocalDistributeur](StructureDefinition-dmi-identifiant-local-distributeur.md), [DMIIdentifiantLocalFabricant](StructureDefinition-dmi-identifiant-local-fabricant.md), [DMIInternalDiameter](StructureDefinition-dmi-internal-diameter.md), [DMIInvoice](StructureDefinition-dmi-invoice.md), [DMIMarquageCE](StructureDefinition-dmi-marquage-ce.md), [DMINomDistributeur](StructureDefinition-dmi-nom-distributeur.md), [DMIOrganizationEJ](StructureDefinition-dmi-organization-ej.md), [DMIOrganizationInterne](StructureDefinition-dmi-organization-interne.md), [DMIOrganizationLocation](StructureDefinition-dmi-organization-location.md), [DMIPatient](StructureDefinition-dmi-patient.md), [DMIPractitioner](StructureDefinition-dmi-practitioner.md), [DMIProcedure](StructureDefinition-dmi-procedure.md), [DMIReferenceDistributeur](StructureDefinition-dmi-reference-distributeur.md), [DMIReferenceFabricant](StructureDefinition-dmi-reference-fabricant.md), [DMIReferenceOrganisationInterne](StructureDefinition-dmi-reference-organisation-interne.md), [DMISupplyDeliveryEnteteDelivrance](StructureDefinition-dmi-supplydelivery-entete-delivrance.md), [DMISupplyDeliveryEnteteLivraison](StructureDefinition-dmi-supplydelivery-entete-livraison.md), [DMISupplyDeliveryEnteteReception](StructureDefinition-dmi-supplydelivery-enteter-reception.md), [DMISupplyDeliveryLigne](StructureDefinition-dmi-supplydelivery-ligne.md), [DMISupplyDeliveryReceptionUnitaire](StructureDefinition-dmi-supplydelivery-reception-unitaire.md), [DMISupplyDeliveryTransport](StructureDefinition-dmi-supplydelivery-transport.md), [DMISupplyRequestEnteteCommande](StructureDefinition-dmi-supplyrequest-entete-commande.md), [DMISupplyRequestEnteteDemande](StructureDefinition-dmi-supplyrequest-entete-demande.md), [DMISupplyRequestEnteteReponse](StructureDefinition-dmi-supplyrequest-entetereponse.md), [DMITransport](StructureDefinition-dmi-transport.md), [DMI_Device_definitionType](SearchParameter-dmi-device-definition-type.md), [DMI_Device_lotNumber](SearchParameter-dmi-device-lotNumber.md), [DMI_Device_serialNumber](SearchParameter-dmi-device-serialNumber.md), [DMI_Patient_INS](SearchParameter-DMI-Patient-INS.md) and [TDMI](index.md)
 
 
 * These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright © 2011 by the National Electrical Manufacturers Association.
@@ -121,7 +121,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "TDMI",
   "title" : "Traçabilité des Dispositifs Médicaux Implantables",
   "status" : "draft",
-  "date" : "2026-02-25T08:15:31+00:00",
+  "date" : "2026-02-25T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -1458,10 +1458,10 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/DMI-Device-definition-type"
+        "reference" : "SearchParameter/dmi-device-definition-type"
       },
       "name" : "SearchParameter DMI Device definitionType",
-      "description" : "Permet la recherche sur le type de définition du DMI",
+      "description" : "Permet la recherche sur le Code EMDN",
       "exampleBoolean" : false
     },
     {
@@ -1470,7 +1470,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/DMI-Device-lotNumber"
+        "reference" : "SearchParameter/dmi-device-lotNumber"
       },
       "name" : "SearchParameter DMI Device lotNumber",
       "description" : "Permet de faire une recherche sur le numéro de lot du DMI",
@@ -1482,7 +1482,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/DMI-Device-serialNumber"
+        "reference" : "SearchParameter/dmi-device-serialNumber"
       },
       "name" : "SearchParameter DMI Device serialNumber",
       "description" : "Permet la recherche sur le numéro de série du DMI",
@@ -1497,7 +1497,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "reference" : "SearchParameter/DMI-Patient-INS"
       },
       "name" : "SearchParameter DMI Patient INS",
-      "description" : "Permet la recherche sur le code EMDN",
+      "description" : "Permet la recherche sur l'ins du patient",
       "exampleBoolean" : false
     },
     {

@@ -13,10 +13,10 @@ These define the properties by which a RESTful server can be searched. They can 
 
 | | |
 | :--- | :--- |
-| [SearchParameter DMI Device definitionType](SearchParameter-DMI-Device-definition-type.md) | Permet la recherche sur le type de définition du DMI |
-| [SearchParameter DMI Device lotNumber](SearchParameter-DMI-Device-lotNumber.md) | Permet de faire une recherche sur le numéro de lot du DMI |
-| [SearchParameter DMI Device serialNumber](SearchParameter-DMI-Device-serialNumber.md) | Permet la recherche sur le numéro de série du DMI |
-| [SearchParameter DMI Patient INS](SearchParameter-DMI-Patient-INS.md) | Permet la recherche sur le code EMDN |
+| [SearchParameter DMI Device definitionType](SearchParameter-dmi-device-definition-type.md) | Permet la recherche sur le Code EMDN |
+| [SearchParameter DMI Device lotNumber](SearchParameter-dmi-device-lotNumber.md) | Permet de faire une recherche sur le numéro de lot du DMI |
+| [SearchParameter DMI Device serialNumber](SearchParameter-dmi-device-serialNumber.md) | Permet la recherche sur le numéro de série du DMI |
+| [SearchParameter DMI Patient INS](SearchParameter-DMI-Patient-INS.md) | Permet la recherche sur l'ins du patient |
 
 ### Structures: Resource Profiles 
 

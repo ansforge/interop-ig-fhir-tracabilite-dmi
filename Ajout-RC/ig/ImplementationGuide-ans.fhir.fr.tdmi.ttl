@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDMI"] ; # 
   fhir:title [ fhir:v "Traçabilité des Dispositifs Médicaux Implantables"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-25T08:15:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-25T08:31:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -2643,11 +2643,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-definition-type> ;
-         fhir:reference [ fhir:v "SearchParameter/DMI-Device-definition-type" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-definition-type> ;
+         fhir:reference [ fhir:v "SearchParameter/dmi-device-definition-type" ]
        ] ;
        fhir:name [ fhir:v "SearchParameter DMI Device definitionType" ] ;
-       fhir:description [ fhir:v "Permet la recherche sur le type de définition du DMI" ] ;
+       fhir:description [ fhir:v "Permet la recherche sur le Code EMDN" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2664,8 +2664,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-lotNumber> ;
-         fhir:reference [ fhir:v "SearchParameter/DMI-Device-lotNumber" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-lotNumber> ;
+         fhir:reference [ fhir:v "SearchParameter/dmi-device-lotNumber" ]
        ] ;
        fhir:name [ fhir:v "SearchParameter DMI Device lotNumber" ] ;
        fhir:description [ fhir:v "Permet de faire une recherche sur le numéro de lot du DMI" ] ;
@@ -2685,8 +2685,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-serialNumber> ;
-         fhir:reference [ fhir:v "SearchParameter/DMI-Device-serialNumber" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber> ;
+         fhir:reference [ fhir:v "SearchParameter/dmi-device-serialNumber" ]
        ] ;
        fhir:name [ fhir:v "SearchParameter DMI Device serialNumber" ] ;
        fhir:description [ fhir:v "Permet la recherche sur le numéro de série du DMI" ] ;
@@ -2710,7 +2710,7 @@
          fhir:reference [ fhir:v "SearchParameter/DMI-Patient-INS" ]
        ] ;
        fhir:name [ fhir:v "SearchParameter DMI Patient INS" ] ;
-       fhir:description [ fhir:v "Permet la recherche sur le code EMDN" ] ;
+       fhir:description [ fhir:v "Permet la recherche sur l'ins du patient" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

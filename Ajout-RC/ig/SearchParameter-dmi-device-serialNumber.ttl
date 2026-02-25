@@ -6,16 +6,16 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-serialNumber> a fhir:SearchParameter ;
+<https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber> a fhir:SearchParameter ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "DMI-Device-serialNumber"] ; # 
+  fhir:id [ fhir:v "dmi-device-serialNumber"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ParamètreRecherche DMI-Device-serialNumber</b></p><a name=\"DMI-Device-serialNumber\"> </a><a name=\"hcDMI-Device-serialNumber\"> </a><h2>DMI_Device_serialNumber</h2><p>Paramètre <code>serialNumber</code>:<code>string</code></p><div><p>Permet la recherche sur le numéro de série du DMI</p>\n</div><table class=\"grid\"><tr><td>Ressource</td><td><a href=\"http://hl7.org/fhir/R4/device.html\">Device</a></td></tr><tr><td>Expression</td><td>(aucun)</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd : C'est au serveur de décider si le paramètre peut se répéter pour spécifier plusieurs valeurs qui doivent toutes être vraies</li><li>multipleOr : C'est au serveur de décider si le paramètre peut avoir plusieurs valeurs (séparées par des virgules) dont au moins une doit être vraie</li></ul></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ParamètreRecherche dmi-device-serialNumber</b></p><a name=\"dmi-device-serialNumber\"> </a><a name=\"hcdmi-device-serialNumber\"> </a><h2>DMI_Device_serialNumber</h2><p>Paramètre <code>serialNumber</code>:<code>string</code></p><div><p>Permet la recherche sur le numéro de série du DMI</p>\n</div><table class=\"grid\"><tr><td>Ressource</td><td><a href=\"http://hl7.org/fhir/R4/device.html\">Device</a></td></tr><tr><td>Expression</td><td><code>Device.serialNumber</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd : C'est au serveur de décider si le paramètre peut se répéter pour spécifier plusieurs valeurs qui doivent toutes être vraies</li><li>multipleOr : C'est au serveur de décider si le paramètre peut avoir plusieurs valeurs (séparées par des virgules) dont au moins une doit être vraie</li></ul></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
-     fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-serialNumber"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-serialNumber>
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber>
   ] ; # 
   fhir:version [ fhir:v "3.0.0"] ; # 
   fhir:name [ fhir:v "DMI_Device_serialNumber"] ; # 
@@ -42,7 +42,8 @@
   ] ) ; # 
   fhir:code [ fhir:v "serialNumber"] ; # 
   fhir:base ( [ fhir:v "Device"] ) ; # 
-  fhir:type [ fhir:v "string"] . # 
+  fhir:type [ fhir:v "string"] ; # 
+  fhir:expression [ fhir:v "Device.serialNumber"] . # 
 
 # -------------------------------------------------------------------------------------
 

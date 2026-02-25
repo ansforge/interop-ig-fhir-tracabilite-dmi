@@ -12,7 +12,7 @@
 | Draft as of 2026-02-25 | *Computable Name*:DMI_Patient_INS |
 
  
-Permet la recherche sur le code EMDN 
+Permet la recherche sur l'ins du patient 
 
 
 
@@ -26,7 +26,7 @@ Permet la recherche sur le code EMDN
   "version" : "3.0.0",
   "name" : "DMI_Patient_INS",
   "status" : "draft",
-  "date" : "2026-02-25T08:15:31+00:00",
+  "date" : "2026-02-25T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -35,7 +35,7 @@ Permet la recherche sur le code EMDN
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Permet la recherche sur le code EMDN",
+  "description" : "Permet la recherche sur l'ins du patient",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -43,10 +43,10 @@ Permet la recherche sur le code EMDN
       "display" : "France"
     }]
   }],
-  "code" : "INS",
+  "code" : "ins",
   "base" : ["Patient"],
   "type" : "token",
-  "expression" : "Patient.identifier.where(use='official').value"
+  "expression" : "Patient.identifier.where(type.coding.code='INS-C').value"
 }
 
 ```

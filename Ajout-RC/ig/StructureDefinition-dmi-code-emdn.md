@@ -20,6 +20,7 @@ Extension créée dans ce volet pour représenter le code EMDN.
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [DMI DeviceDefinition](StructureDefinition-dmi-devicedefinition.md)
+* Paramètres de recherche utilisant ce Extension: [DMI_Device_definitionType](SearchParameter-dmi-device-definition-type.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-code-emdn)
 
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-code-emdn.csv), 
   "name" : "DMICodeEMDN",
   "title" : "DMI Code EMDN",
   "status" : "draft",
-  "date" : "2026-02-25T08:15:31+00:00",
+  "date" : "2026-02-25T08:31:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -73,7 +74,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-code-emdn.csv), 
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "DeviceDefinition"
+    "expression" : "Device"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",

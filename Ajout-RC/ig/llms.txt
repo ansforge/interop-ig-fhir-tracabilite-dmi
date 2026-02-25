@@ -72,10 +72,10 @@
 
 ### SearchParameters
 
-* [DMI_Device_definitionType](SearchParameter-DMI-Device-definition-type.md)
-* [DMI_Device_lotNumber](SearchParameter-DMI-Device-lotNumber.md)
-* [DMI_Device_serialNumber](SearchParameter-DMI-Device-serialNumber.md)
 * [DMI_Patient_INS](SearchParameter-DMI-Patient-INS.md)
+* [DMI_Device_definitionType](SearchParameter-dmi-device-definition-type.md)
+* [DMI_Device_lotNumber](SearchParameter-dmi-device-lotNumber.md)
+* [DMI_Device_serialNumber](SearchParameter-dmi-device-serialNumber.md)
 
 ### Examples
 

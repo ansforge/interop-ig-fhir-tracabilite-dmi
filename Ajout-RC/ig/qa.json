@@ -6,14 +6,14 @@
   "status" : "draft",
   "package-id" : "ans.fhir.fr.tdmi",
   "ig-ver" : "3.0.0",
-  "date" : "Wed, 25 Feb, 2026 08:15:31 +0000",
-  "dateISO8601" : "2026-02-25T08:15:31+00:00",
-  "errs" : 3,
-  "warnings" : 52,
+  "date" : "Wed, 25 Feb, 2026 08:31:26 +0000",
+  "dateISO8601" : "2026-02-25T08:31:26+00:00",
+  "errs" : 4,
+  "warnings" : 53,
   "hints" : 90,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2627424336
+  "maxMemory" : 3012640832
 }

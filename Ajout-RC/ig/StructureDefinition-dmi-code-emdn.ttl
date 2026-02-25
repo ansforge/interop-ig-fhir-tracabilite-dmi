@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "DMICodeEMDN"] ; # 
   fhir:title [ fhir:v "DMI Code EMDN"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-25T08:15:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-25T08:31:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -54,7 +54,7 @@
   fhir:abstract [ fhir:v false] ; # 
   fhir:context ( [
      fhir:type [ fhir:v "element" ] ;
-     fhir:expression [ fhir:v "DeviceDefinition" ]
+     fhir:expression [ fhir:v "Device" ]
   ] ) ; # 
   fhir:type [
      fhir:v "Extension"^^xsd:anyURI ;

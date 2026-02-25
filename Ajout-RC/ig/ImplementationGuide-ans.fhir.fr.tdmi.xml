@@ -10,7 +10,7 @@
   <name value="TDMI"/>
   <title value="Traçabilité des Dispositifs Médicaux Implantables"/>
   <status value="draft"/>
-  <date value="2026-02-25T08:15:31+00:00"/>
+  <date value="2026-02-25T08:31:26+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -1118,10 +1118,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/DMI-Device-definition-type"/>
+        <reference value="SearchParameter/dmi-device-definition-type"/>
       </reference>
       <name value="SearchParameter DMI Device definitionType"/>
-      <description value="Permet la recherche sur le type de définition du DMI"/>
+      <description value="Permet la recherche sur le Code EMDN"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1129,7 +1129,7 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/DMI-Device-lotNumber"/>
+        <reference value="SearchParameter/dmi-device-lotNumber"/>
       </reference>
       <name value="SearchParameter DMI Device lotNumber"/>
       <description value="Permet de faire une recherche sur le numéro de lot du DMI"/>
@@ -1140,7 +1140,7 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/DMI-Device-serialNumber"/>
+        <reference value="SearchParameter/dmi-device-serialNumber"/>
       </reference>
       <name value="SearchParameter DMI Device serialNumber"/>
       <description value="Permet la recherche sur le numéro de série du DMI"/>
@@ -1154,7 +1154,7 @@
         <reference value="SearchParameter/DMI-Patient-INS"/>
       </reference>
       <name value="SearchParameter DMI Patient INS"/>
-      <description value="Permet la recherche sur le code EMDN"/>
+      <description value="Permet la recherche sur l'ins du patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

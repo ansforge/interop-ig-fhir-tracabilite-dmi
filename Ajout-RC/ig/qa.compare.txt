@@ -1,7 +1,7 @@
 TDMI : Validation Results
 =========================================
 
-err = 3, warn = 52, info = 90
+err = 4, warn = 53, info = 90
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tdmi#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi)
  Build Errors : 0 / 25 / 0
@@ -20,10 +20,10 @@ Generated $--. FHIR version $-- for ans.fhir.fr.tdmi#$-- (canonical = https://in
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/Patient-dmi-patient-example : 0 / 0 / 3
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/Practitioner-dmi-practitioner-example : 0 / 0 / 3
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/Procedure-dmi-procedure-example : 0 / 0 / 2
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-DMI-Device-definition-type : 0 / 0 / 2
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-DMI-Device-lotNumber : 0 / 0 / 2
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-DMI-Device-serialNumber : 0 / 0 / 2
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-DMI-Patient-INS : 0 / 0 / 2
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-DMI-Patient-INS : 0 / 1 / 2
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-dmi-device-definition-type : 1 / 0 / 2
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-dmi-device-lotNumber : 0 / 0 / 2
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/SearchParameter-dmi-device-serialNumber : 0 / 0 / 2
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-bundle-request : 0 / 0 / 3
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-bundle-transmission-traces : 0 / 0 / 2
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-bundledelivery : 0 / 0 / 2
@@ -142,14 +142,16 @@ INFORMATION: Practitioner/dmi-practitioner-example: Practitioner.identifier[0]: 
 INFORMATION: Practitioner/dmi-practitioner-example: Practitioner.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-practitioner|3.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Procedure-dmi-procedure-example.json ==
 INFORMATION: Procedure/dmi-procedure-example: Procedure.identifier[0].type: Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-== fsh-generated/resources/SearchParameter-DMI-Device-definition-type.json ==
-INFORMATION: SearchParameter/DMI-Device-definition-type: SearchParameter.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
-== fsh-generated/resources/SearchParameter-DMI-Device-lotNumber.json ==
-INFORMATION: SearchParameter/DMI-Device-lotNumber: SearchParameter.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
-== fsh-generated/resources/SearchParameter-DMI-Device-serialNumber.json ==
-INFORMATION: SearchParameter/DMI-Device-serialNumber: SearchParameter.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 == fsh-generated/resources/SearchParameter-DMI-Patient-INS.json ==
 INFORMATION: SearchParameter/DMI-Patient-INS: SearchParameter.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
+WARNING: SearchParameter/DMI-Patient-INS: SearchParameter.expression: The left side is inherently a collection, and so the expression 'type.coding.code = 'INS-C'' may fail or return false if there is more than one item in the content being evaluated
+== fsh-generated/resources/SearchParameter-dmi-device-definition-type.json ==
+INFORMATION: SearchParameter/dmi-device-definition-type: SearchParameter.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
+ERROR: SearchParameter/dmi-device-definition-type: SearchParameter.expression: Error in search expression 'Device.extension('https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn').valueCode': Error evaluating FHIRPath expression: The name 'valueCode' is not valid for any of the possible types: [https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn] (@char 99)
+== fsh-generated/resources/SearchParameter-dmi-device-lotNumber.json ==
+INFORMATION: SearchParameter/dmi-device-lotNumber: SearchParameter.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
+== fsh-generated/resources/SearchParameter-dmi-device-serialNumber.json ==
+INFORMATION: SearchParameter/dmi-device-serialNumber: SearchParameter.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 == fsh-generated/resources/StructureDefinition-dmi-bundle-request.json ==
 INFORMATION: StructureDefinition/dmi-bundle-request: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 INFORMATION: StructureDefinition/dmi-bundle-request: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated

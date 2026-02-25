@@ -13,32 +13,32 @@
   "name" : "TDMI"
 },
 {
-  "id" : "DMI-Device-definition-type",
-  "type" : "SearchParameter",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-definition-type",
-  "version" : "3.0.0",
-  "name" : "DMI_Device_definitionType"
-},
-{
-  "id" : "DMI-Device-lotNumber",
-  "type" : "SearchParameter",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-lotNumber",
-  "version" : "3.0.0",
-  "name" : "DMI_Device_lotNumber"
-},
-{
-  "id" : "DMI-Device-serialNumber",
-  "type" : "SearchParameter",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-serialNumber",
-  "version" : "3.0.0",
-  "name" : "DMI_Device_serialNumber"
-},
-{
   "id" : "DMI-Patient-INS",
   "type" : "SearchParameter",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Patient-INS",
   "version" : "3.0.0",
   "name" : "DMI_Patient_INS"
+},
+{
+  "id" : "dmi-device-definition-type",
+  "type" : "SearchParameter",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-definition-type",
+  "version" : "3.0.0",
+  "name" : "DMI_Device_definitionType"
+},
+{
+  "id" : "dmi-device-lotNumber",
+  "type" : "SearchParameter",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-lotNumber",
+  "version" : "3.0.0",
+  "name" : "DMI_Device_lotNumber"
+},
+{
+  "id" : "dmi-device-serialNumber",
+  "type" : "SearchParameter",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber",
+  "version" : "3.0.0",
+  "name" : "DMI_Device_serialNumber"
 },
 {
   "id" : "dmi-bundle-request",

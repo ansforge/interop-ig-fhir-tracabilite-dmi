@@ -8,11 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-definition-type | *Version*:3.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-definition-type | *Version*:3.0.0 |
 | Draft as of 2022-05-24 | *Computable Name*:DMI_Device_definitionType |
 
  
-Permet la recherche sur le type de définition du DMI 
+Permet la recherche sur le Code EMDN 
 
 
 
@@ -21,8 +21,8 @@ Permet la recherche sur le type de définition du DMI
 ```json
 {
   "resourceType" : "SearchParameter",
-  "id" : "DMI-Device-definition-type",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-definition-type",
+  "id" : "dmi-device-definition-type",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-definition-type",
   "version" : "3.0.0",
   "name" : "DMI_Device_definitionType",
   "status" : "draft",
@@ -35,7 +35,7 @@ Permet la recherche sur le type de définition du DMI
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Permet la recherche sur le type de définition du DMI",
+  "description" : "Permet la recherche sur le Code EMDN",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -45,7 +45,8 @@ Permet la recherche sur le type de définition du DMI
   }],
   "code" : "definitionType",
   "base" : ["Device"],
-  "type" : "token"
+  "type" : "token",
+  "expression" : "Device.extension('https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn').valueCode"
 }
 
 ```

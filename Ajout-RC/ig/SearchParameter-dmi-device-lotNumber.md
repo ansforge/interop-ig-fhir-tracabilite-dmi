@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-lotNumber | *Version*:3.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-lotNumber | *Version*:3.0.0 |
 | Draft as of 2022-05-24 | *Computable Name*:DMI_Device_lotNumber |
 
  
@@ -21,8 +21,8 @@ Permet de faire une recherche sur le numéro de lot du DMI
 ```json
 {
   "resourceType" : "SearchParameter",
-  "id" : "DMI-Device-lotNumber",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Device-lotNumber",
+  "id" : "dmi-device-lotNumber",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-lotNumber",
   "version" : "3.0.0",
   "name" : "DMI_Device_lotNumber",
   "status" : "draft",
@@ -45,7 +45,8 @@ Permet de faire une recherche sur le numéro de lot du DMI
   }],
   "code" : "lotNumber",
   "base" : ["Device"],
-  "type" : "string"
+  "type" : "string",
+  "expression" : "Device.lotNumber"
 }
 
 ```
