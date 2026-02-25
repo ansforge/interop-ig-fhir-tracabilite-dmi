@@ -1,6 +1,9 @@
 Profile: DMISupplyDeliveryEnteteLivraison
 Parent: SupplyDelivery
 Id: dmi-supplydelivery-entete-livraison
+Title: "DMI SupplyDelivery Entete Livraison"
+Description: "Profil créé dans le cadre de ce volet pour représenter l’entête des informations de livraison de dispositifs médicaux."
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

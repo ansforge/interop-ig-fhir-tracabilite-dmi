@@ -1,5 +1,8 @@
 Extension: DMITransport
 Id: dmi-transport
+Title: "DMI Transport"
+Description: "Extension créée dans ce volet pour représenter le transport."
+
 * ^context.type = #element
 * ^context.expression = "SupplyDelivery"
 * extension ^slicing.discriminator.type = #value

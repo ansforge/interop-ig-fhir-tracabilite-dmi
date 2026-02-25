@@ -1,6 +1,9 @@
 Profile: DMISupplyRequestEnteteReponse
 Parent: SupplyRequest
 Id: dmi-supplyrequest-entetereponse
+Title: "DMI SupplyRequest Entete Reponse"
+Description: "Profil créé dans le cadre de ce volet pour transporter les informations générales de la réponse à une demande de création ou de mise à jour de DMI."
+
 * identifier 1..1
 * item[x] only CodeableConcept
 * itemCodeableConcept.coding ^slicing.discriminator.type = #value

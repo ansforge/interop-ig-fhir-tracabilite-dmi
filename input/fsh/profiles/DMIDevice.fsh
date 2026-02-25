@@ -1,6 +1,10 @@
 Profile: DMIDevice
 Parent: Device
 Id: dmi-device
+Title: "DMI Device"
+Description: "Profil créé dans le cadre de ce volet pour représenter une instance physique d’un dispositif médical." 
+
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

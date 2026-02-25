@@ -1,6 +1,9 @@
 Profile: DMISupplyRequestEnteteDemande
 Parent: SupplyRequest
 Id: dmi-supplyrequest-entete-demande
+Title: "DMI SupplyRequest Entete Demande"
+Description: "Profil créé dans le cadre de ce volet pour transporter les informations générales d’une demande de dispositif médical."
+
 * identifier 1..1
 * item[x] only CodeableConcept
 * itemCodeableConcept.coding ^slicing.discriminator.type = #value

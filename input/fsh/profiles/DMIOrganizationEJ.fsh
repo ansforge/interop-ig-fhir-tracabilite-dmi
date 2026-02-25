@@ -1,6 +1,9 @@
 Profile: DMIOrganizationEJ
 Parent: fr-core-organization
 Id: dmi-organization-ej
+Title: "DMI Organization EJ"
+Description: "Profil créé dans le cadre de ce volet étendant le profil « FrOrganization ». Ce profil est utilisé pour représenter le fabricant et les distributeurs des DM."
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

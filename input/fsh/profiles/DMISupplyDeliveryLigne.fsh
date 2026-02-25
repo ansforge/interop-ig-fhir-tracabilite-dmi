@@ -1,6 +1,9 @@
 Profile: DMISupplyDeliveryLigne
 Parent: SupplyDelivery
 Id: dmi-supplydelivery-ligne
+Title: "DMI SupplyDelivery Ligne"
+Description: "Profil créé dans le cadre de ce volet pour représenter une ligne de livraison, de délivrance."
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
