@@ -4,7 +4,7 @@
   <id value="dmi-device-definition-type"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ParamètreRecherche dmi-device-definition-type</b></p><a name="dmi-device-definition-type"> </a><a name="hcdmi-device-definition-type"> </a><h2>DMI_Device_definitionType</h2><p>Paramètre <code>definitionType</code>:<code>token</code></p><div><p>Permet la recherche sur le Code EMDN</p>
-</div><table class="grid"><tr><td>Ressource</td><td><a href="http://hl7.org/fhir/R4/device.html">Device</a></td></tr><tr><td>Expression</td><td><code>Device.extension('https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn').valueCode</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd : C'est au serveur de décider si le paramètre peut se répéter pour spécifier plusieurs valeurs qui doivent toutes être vraies</li><li>multipleOr : C'est au serveur de décider si le paramètre peut avoir plusieurs valeurs (séparées par des virgules) dont au moins une doit être vraie</li></ul></td></tr></table></div>
+</div><table class="grid"><tr><td>Ressource</td><td><a href="http://hl7.org/fhir/R4/device.html">Device</a></td></tr><tr><td>Expression</td><td><code>Device.extension('https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn').value</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd : C'est au serveur de décider si le paramètre peut se répéter pour spécifier plusieurs valeurs qui doivent toutes être vraies</li><li>multipleOr : C'est au serveur de décider si le paramètre peut avoir plusieurs valeurs (séparées par des virgules) dont au moins une doit être vraie</li></ul></td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-definition-type"/>
   <version value="3.0.0"/>
@@ -30,5 +30,5 @@
   <code value="definitionType"/>
   <base value="Device"/>
   <type value="token"/>
-  <expression value="Device.extension('https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn').valueCode"/>
+  <expression value="Device.extension('https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn').value"/>
 </SearchParameter>

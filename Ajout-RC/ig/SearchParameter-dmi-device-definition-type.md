@@ -46,7 +46,7 @@ Permet la recherche sur le Code EMDN
   "code" : "definitionType",
   "base" : ["Device"],
   "type" : "token",
-  "expression" : "Device.extension('https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn').valueCode"
+  "expression" : "Device.extension('https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn').value"
 }
 
 ```
