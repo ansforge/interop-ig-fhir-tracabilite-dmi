@@ -1,5 +1,4 @@
 Extension: DMICodeEMDN
 Id: dmi-code-emdn
-* ^context.type = #element
-* ^context.expression = "DeviceDefinition"
+Context: Device
 * value[x] only code

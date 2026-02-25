@@ -1,4 +1,4 @@
-Instance: DMI-Device-lotNumber
+Instance: dmi-device-lotNumber
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "SearchParameter DMI Device lotNumber"
@@ -9,3 +9,4 @@ Description: "Permet de faire une recherche sur le numéro de lot du DMI"
 * code = #lotNumber
 * base = #Device
 * type = #string
+* expression = "Device.lotNumber"

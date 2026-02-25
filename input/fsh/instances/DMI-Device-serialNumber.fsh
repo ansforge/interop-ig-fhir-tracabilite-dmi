@@ -1,4 +1,4 @@
-Instance: DMI-Device-serialNumber
+Instance: dmi-device-serialNumber
 InstanceOf: SearchParameter
 Usage: #definition
 Title: "SearchParameter DMI Device serialNumber"
@@ -9,3 +9,4 @@ Description: "Permet la recherche sur le numéro de série du DMI"
 * code = #serialNumber
 * base = #Device
 * type = #string
+* expression = "Device.serialNumber"
