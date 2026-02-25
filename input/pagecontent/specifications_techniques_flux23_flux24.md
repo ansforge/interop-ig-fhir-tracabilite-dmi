@@ -2,7 +2,7 @@
 
 Ce flux est utilisé par le consommateur pour faire une recherche de traces auprès du gestionnaire de traçabilité.
 
-Ce flux est construit selon les exigences de la transaction [IHE ITI-81](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) « Retrieve ATNA Audit Event » qui se base sur [l’interaction « search »](https://www.hl7.org/fhir/http.html#search) de l’API REST de FHIR. Il s’agit d’une requête HTTP GET adressant la ressource auditEvent.
+Ce flux est construit selon les exigences de la transaction [IHE ITI-81](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf) « Retrieve ATNA Audit Event » qui se base sur [l’interaction « search »](https://www.hl7.org/fhir/R4/http.html#search) de l’API REST de FHIR. Il s’agit d’une requête HTTP GET adressant la ressource auditEvent.
 
 La transaction \[ITI-81\] Retrieve ATNA Audit Event exige que la recherche de traces soit bornée dans le temps. C’est-à-dire que le paramètre de recherche « date » qui correspond à la date d’enregistrement de l’évènement est présent pour préciser une limite de temps (avant, après ou un intervalle).
 
