@@ -507,7 +507,7 @@ L'organisation du contexte métier de la traçabilité de DMI en établissement 
 
 L’objectif de cette étape est de définir les processus métier collaboratifs identifiés dans le diagramme à l’étape 1. Cette modélisation est entreprise de façon macroscopique en représentant les processus par des diagrammes de cas d’utilisation UML. Chaque acteurs (personnes physiques et morales) avec leur périmètre d'activité est décrit dans le paragraphe 3.13.
 
-#### "Cas d'utilisation "Demander DMI""
+#### Cas d'utilisation "Demander DMI"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisation_demanderDMI.png"
@@ -542,7 +542,7 @@ Dans ce cas d'utilisation, le gestionnaire DMI analyse la demande au regard de l
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
-#### "Cas d'utilisation "Commander les DMI""
+#### Cas d'utilisation "Commander les DMI"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisation_commanderDMI.png"
@@ -577,7 +577,7 @@ Le processus de commande des DMI gère les créations, les mises à jour ou les 
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
-#### "Cas d'utilisation "Réceptionner et contrôler les DMI""
+#### Cas d'utilisation "Réceptionner et contrôler les DMI"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisationReceptionnerControlerDMI.png"
@@ -596,7 +596,7 @@ Le processus de commande des DMI gère les créations, les mises à jour ou les 
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
-#### "Cas d'utilisation "Réceptionner le DMI""
+#### Cas d'utilisation "Réceptionner le DMI"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisationReceptionnerDMI.png"
@@ -615,7 +615,7 @@ Le processus de commande des DMI gère les créations, les mises à jour ou les 
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
-#### "Cas d'utilisation "Délivrer les DMI au service utilisateur""
+#### Cas d'utilisation "Délivrer les DMI au service utilisateur"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisationDelivrerDMI.png"
@@ -688,7 +688,7 @@ Le gestionnaire de réception service utilisateur assure la bonne réception des
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
-#### "Cas d'utilisation "Réceptionner les DMI par le service utilisateur""
+#### Cas d'utilisation "Réceptionner les DMI par le service utilisateur"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisationReceptionnerDMIserviceUtilisateur.png"
@@ -707,7 +707,7 @@ Le gestionnaire de réception service utilisateur assure la bonne réception des
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
-#### "Cas d'utilisation "Poser les DMI""
+#### Cas d'utilisation "Poser les DMI"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisationPoserDMI.png"
@@ -743,7 +743,7 @@ Si un défaut survient lors de l'utilisation du DMI, l'équipe médicale doit d�
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
-#### "Cas d'utilisation "Facturation du DMI""
+#### Cas d'utilisation "Facturation du DMI"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisationFacturerDMI.png"
@@ -782,7 +782,7 @@ Les modalités de facturation doivent être intégrées au système de traçabil
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
-#### "Cas d'utilisation "Tracer""
+#### Cas d'utilisation "Tracer"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisationTracerDMI.png"
