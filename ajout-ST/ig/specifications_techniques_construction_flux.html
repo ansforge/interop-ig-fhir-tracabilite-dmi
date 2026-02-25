@@ -303,7 +303,7 @@ Diagramme de séquence des flux
 
 <p>Ils sont construits selon les exigences de la transaction <a href="https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf">IHE ITI-20</a> « Record Audit Event » dans sa version HL7 FHIR où une seule trace est transmise à la fois : « Send Audit Resource Request Message - FHIR Feed Interaction ».</p>
 
-<p>Ce flux se base sur <a href="https://www.hl7.org/fhir/http.html#create">l’interaction « create »</a> de l’API REST de FHIR. Il s’agit d’une requête HTTP POST dont le corps de la requête est une ressource Bundle suivant le profil DMI_BundleTransmissionTraces :</p>
+<p>Ce flux se base sur <a href="https://www.hl7.org/fhir/R4/http.html#create">l’interaction « create »</a> de l’API REST de FHIR. Il s’agit d’une requête HTTP POST dont le corps de la requête est une ressource Bundle suivant le profil DMI_BundleTransmissionTraces :</p>
 
 <table style="width:100%;">
 <colgroup>
@@ -319,7 +319,7 @@ Diagramme de séquence des flux
 </tbody>
 </table>
 
-<p>Si la transaction a été correctement effectuée et donc que la création du cercle de soins est correctement effectuée, un code <a href="https://www.hl7.org/fhir/http.html#trules">HTTP 200 <em>ok</em></a> est retourné. Un Bundle de type transaction-response doit être renvoyé dans le <a href="https://www.hl7.org/fhir/http.html#transaction-response">corps de la réponse</a>. Ce dernier doit contenir les ressources telles qu’elles ont été créées par le gestionnaire ou, a minima, les identifiants logiques des ressources ayant été attribués par le gestionnaire (dans Bundle.entry.fullUrl et/ou Bundle.entry.resource.id).</p>
+<p>Si la transaction a été correctement effectuée et donc que la création du cercle de soins est correctement effectuée, un code <a href="https://www.hl7.org/fhir/R4/http.html#trules">HTTP 200 <em>ok</em></a> est retourné. Un Bundle de type transaction-response doit être renvoyé dans le <a href="https://www.hl7.org/fhir/R4/http.html#transaction-response">corps de la réponse</a>. Ce dernier doit contenir les ressources telles qu’elles ont été créées par le gestionnaire ou, a minima, les identifiants logiques des ressources ayant été attribués par le gestionnaire (dans Bundle.entry.fullUrl et/ou Bundle.entry.resource.id).</p>
 
 <p>Sinon, un code HTTP 500 <em>Internal Server Error</em> est retourné avec une ressource OperationOutcome contenant le détail des erreurs et avertissements résultant du traitement des entrées du Bundle.</p>
 
@@ -364,7 +364,7 @@ Diagramme de séquence des flux
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 24, 2026 21:08+0000">2026-02-24</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 25, 2026 15:16+0000">2026-02-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

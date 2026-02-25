@@ -10,7 +10,7 @@
 
 Le Flux 25 « ConsultationTrace » permet au consommateur de demander la consultation d’une trace dont l’identifiant est connu au gestionnaire de traçabilité.
 
-Ce flux utilise [l’interaction « read »](https://www.hl7.org/fhir/http.html#read) de l’API REST de HL7 FHIR. Il s’agit d’une requête HTTP GET adressant la ressource auditEvent.
+Ce flux utilise [l’interaction « read »](https://www.hl7.org/fhir/R4/http.html#read) de l’API REST de HL7 FHIR. Il s’agit d’une requête HTTP GET adressant la ressource auditEvent.
 
 La première étape de construction de ce flux consiste à récupérer l’identifiant de la ressource AuditEvent représentant la trace à consulter.
 
