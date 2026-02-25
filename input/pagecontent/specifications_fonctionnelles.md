@@ -652,7 +652,7 @@ Le processus de commande des DMI gère les créations, les mises à jour ou les 
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
-#### "Cas d'utilisation "Transporter DMI au sein de l'établissement""
+#### Cas d'utilisation "Transporter DMI au sein de l'établissement"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisationTransporterDMI.png"
@@ -827,7 +827,7 @@ Ce processus réutilise le processus générique "Créer des traces" de l’étu
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
-#### "Cas d'utilisation "Rechercher des traces""
+#### Cas d'utilisation "Rechercher des traces"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisationRechercheTrace.png"
@@ -863,7 +863,7 @@ Ce processus réutilise le processus générique " Rechercher des traces" de l�
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
-#### "Cas d'utilisation Consulter une trace"
+#### Cas d'utilisation "Consulter une trace"
 
 <div class="figure" style="text-align: center;">
     <img src="cas_utilisationConsulterTrace.png"
@@ -878,7 +878,7 @@ Ce processus réutilise le processus générique " Rechercher des traces" de l�
 
 | Cas d'utilisation | Description |
 |:---|:---|
-| ConsulterTrace | Ce processus réutilise le processus générique ""Consulter une trace"" de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces). |
+| ConsulterTrace | Ce processus réutilise le processus générique "Consulter une trace" de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces). |
 
 <p style="text-align: center;"> Table des cas d'utilisation </p>
 
@@ -3403,7 +3403,7 @@ numériques au maximum.</td>
 complète une numérotation de voirie.</td>
 </tr>
 <tr>
-<td style="text-align: left;">typeVoie : [0..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R35-TypeVoie.tabs.pdf">Code &lt;&lt;TRE_R35-TypeVoie&gt;&gt;</a></td>
+<td style="text-align: left;">typeVoie : [0..1] <a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R207-TypeOrganisationInterne.html">Code &lt;&lt;TRE_R35-TypeVoie&gt;&gt;</a></td>
 <td style="text-align: left;">Type de voie : rue, avenue, boulevard, etc.<br />
 Attribut obsolète et non conforme à la norme postale en vigueur qui définit cette information comme faisant partie de l'attribut libelleVoie. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore.<br />
 Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R35-TypeVoie.</td>
@@ -3943,7 +3943,7 @@ des lieux spécifiques à l'EG.
 prélèvements dans un service.</td>
 </tr>
 <tr>
-<td style="text-align: left;">statut : [0..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R203-StatutLieu.tabs.pdf">Code
+<td style="text-align: left;">statut : [0..1] <a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R203-StatutLieu.html">Code
 &lt;&lt;TRE_R203-StatutLieu&gt;&gt;</a></td>
 <td style="text-align: left;">Le statut indique si le lieu est opérationnel, fermé temporairement ou fermé définitivement.<br />
 Quelques exemples de codes :<br />
@@ -3953,7 +3953,7 @@ Quelques exemples de codes :<br />
 Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R203-StatutLieu.</td>
 </tr>
 <tr>
-<td style="text-align: left;">accessibiliteLieu : [0..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R202-AccessibiliteLieu.tabs.pdf">Code
+<td style="text-align: left;">accessibiliteLieu : [0..1] <a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R202-AccessibiliteLieu.html">Code
 &lt;&lt;TRE_R202-AccessibiliteLieu&gt;&gt;</a></td>
 <td style="text-align: left;">Information précisant dans quelle mesure le lieu est conforme aux dispositions règlementaires relatives à
 l’accessibilité des établissements recevant du public (ex : accessible, non accessible, sur demande, non communiqué, etc.).<br />
@@ -3979,7 +3979,7 @@ usagers, par exemple).<br />
 Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R202-AccessibiliteLieu.</td>
 </tr>
 <tr>
-<td style="text-align: left;">communeCOG : [0..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R13-CommuneOM.tabs.pdf">Code &lt;&lt;TRE_R13-CommuneOM&gt;&gt;</a></td>
+<td style="text-align: left;">communeCOG : [0..1] <a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R13-CommuneOM.html">Code &lt;&lt;TRE_R13-CommuneOM&gt;&gt;</a></td>
 <td style="text-align: left;">Code officiel géographique (COG) de la commune dans laquelle le lieu est situé.</td>
 </tr>
 <tr>
@@ -4047,12 +4047,12 @@ Une organisation interne (OI) peut être composée d’autres organisations inte
 <td style="text-align: left;">Nom de l'organisation interne.</td>
 </tr>
 <tr>
-<td style="text-align: left;">typeOI : [1..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R207-TypeOrganisationInterne.tabs.pdf">Code
+<td style="text-align: left;">typeOI : [1..1] <a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R207-TypeOrganisationInterne.html">Code
 &lt;&lt;TRE_R207-TypeOrganisationInterne&gt;&gt;</a></td>
 <td style="text-align: left;">Type d'organisation interne (pôle, structure interne ou service, unité fonctionnelle, unité élémentaire, etc.).</td>
 </tr>
 <tr>
-<td style="text-align: left;">categorieOrganisation : [0..1] <a href="http://mos.asipsante.fr/NOS/PDF/TRE_R244-CategorieOrganisation.tabs.pdf">Code
+<td style="text-align: left;">categorieOrganisation : [0..1] <a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R244-CategorieOrganisation.html">Code
 &lt;&lt;TRE_R244-CategorieOrganisation&gt;&gt;</a></td>
 <td style="text-align: left;">La catégorie d'organisation caractérise la nature particulière d’une organisation liée à un agrément, un personnel
 spécialement formé, un environnement particulièrement adapté à l'état de santé des patients, etc.<br />
