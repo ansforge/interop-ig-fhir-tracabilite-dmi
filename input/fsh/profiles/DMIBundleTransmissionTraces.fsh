@@ -1,6 +1,9 @@
 Profile: DMIBundleTransmissionTraces
 Parent: Bundle
 Id: dmi-bundle-transmission-traces
+Title: "DMI Bundle Transmission Traces"
+Description: "Profil créé dans le cadre de ce volet pour transmettre l’ensemble des ressources au serveur." 
+
 * type = #transaction 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"

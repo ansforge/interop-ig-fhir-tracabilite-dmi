@@ -1,6 +1,9 @@
 Profile: DMISupplyDeliveryTransport
 Parent: SupplyDelivery
 Id: dmi-supplydelivery-transport
+Title: "DMI SupplyDelivery Transport"
+Description: "Profil créé dans le cadre de ce volet pour représenter les informations de transports des dispositifs médicaux."
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

@@ -1,6 +1,9 @@
 Profile: DMISupplyDeliveryReceptionUnitaire
 Parent: SupplyDelivery
 Id: dmi-supplydelivery-reception-unitaire
+Title: "DMI SupplyDelivery Reception Unitaire"
+Description: "Profil créé dans le cadre de ce volet pour représenter les informations de réception d’un dispositif médical."
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

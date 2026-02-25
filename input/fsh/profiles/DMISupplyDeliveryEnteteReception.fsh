@@ -1,6 +1,9 @@
 Profile: DMISupplyDeliveryEnteteReception
 Parent: SupplyDelivery
 Id: dmi-supplydelivery-enteter-reception
+Title: "DMI SupplyDelivery Entete Reception"
+Description: "Profil créé dans le cadre de ce volet pour représenter l’entête des informations de réception des dispositifs médicaux."
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

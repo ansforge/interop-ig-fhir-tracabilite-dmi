@@ -1,6 +1,9 @@
 Profile: DMIInvoice
 Parent: Invoice
 Id: dmi-invoice
+Title: "DMI Invoice"
+Description: "Profil créé dans le cadre de ce volet pour représenter la facturation de dispositifs médicaux."
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

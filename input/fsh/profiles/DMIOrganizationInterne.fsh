@@ -1,6 +1,10 @@
 Profile: DMIOrganizationInterne
 Parent: fr-core-organization
 Id: dmi-organization-interne
+Title: "DMI Organization Interne"
+Description: "Profil créé dans le cadre de ce volet permettant de représenter l’organisation interne (Service utilisateur)."
+
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

@@ -1,5 +1,8 @@
 Extension: DMIMarquageCE
 Id: dmi-marquage-ce
+Title: "DMI Marquage CE"
+Description: "Extension créée dans ce volet pour représenter le marquage CE."
+
 * ^context.type = #element
 * ^context.expression = "Device"
 * extension ^slicing.discriminator.type = #value

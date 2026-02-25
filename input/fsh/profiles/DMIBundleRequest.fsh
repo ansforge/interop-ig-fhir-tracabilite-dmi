@@ -1,6 +1,10 @@
 Profile: DMIBundleRequest
 Parent: Bundle
 Id: dmi-bundle-request
+Title: "DMI Bundle Request"
+Description: "Profil créé dans le cadre de ce volet pour transmettre au serveur l’ensemble des ressources permettant une commande, une demande et la réponse à la demande d’un DMI." 
+
+
 * type = #transaction 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
