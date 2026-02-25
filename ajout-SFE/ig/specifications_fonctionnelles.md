@@ -306,7 +306,7 @@ L'organisation du contexte métier de la traçabilité de DMI en établissement 
 
 L’objectif de cette étape est de définir les processus métier collaboratifs identifiés dans le diagramme à l’étape 1. Cette modélisation est entreprise de façon macroscopique en représentant les processus par des diagrammes de cas d’utilisation UML. Chaque acteurs (personnes physiques et morales) avec leur périmètre d'activité est décrit dans le paragraphe 3.13.
 
-#### "Cas d'utilisation "Demander DMI""
+#### Cas d'utilisation "Demander DMI"
 
  Cas d'utilisation "Demander DMI" 
 
@@ -316,7 +316,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
  Table des cas d'utilisation 
 
-#### "Cas d'utilisation "Commander les DMI""
+#### Cas d'utilisation "Commander les DMI"
 
  Cas d'utilisation "Commander les DMI" 
 
@@ -326,7 +326,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
  Table des cas d'utilisation 
 
-#### "Cas d'utilisation "Réceptionner et contrôler les DMI""
+#### Cas d'utilisation "Réceptionner et contrôler les DMI"
 
  Cas d'utilisation "Réceptionner et contrôler les DMI" 
 
@@ -336,7 +336,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
  Table des cas d'utilisation 
 
-#### "Cas d'utilisation "Réceptionner le DMI""
+#### Cas d'utilisation "Réceptionner le DMI"
 
  Cas d'utilisation "Réceptionner le DMI" 
 
@@ -346,7 +346,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
  Table des cas d'utilisation 
 
-#### "Cas d'utilisation "Délivrer les DMI au service utilisateur""
+#### Cas d'utilisation "Délivrer les DMI au service utilisateur"
 
  Cas d'utilisation "Délivrer les DMI au service utilisateur" 
 
@@ -366,7 +366,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
  Table des cas d'utilisation 
 
-#### "Cas d'utilisation "Réceptionner les DMI par le service utilisateur""
+#### Cas d'utilisation "Réceptionner les DMI par le service utilisateur"
 
  Cas d'utilisation "Réceptionner les DMI par le service utilisateur" 
 
@@ -376,7 +376,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
  Table des cas d'utilisation 
 
-#### "Cas d'utilisation "Poser les DMI""
+#### Cas d'utilisation "Poser les DMI"
 
  Cas d'utilisation "Poser les DMI" 
 
@@ -386,7 +386,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
  Table des cas d'utilisation 
 
-#### "Cas d'utilisation "Facturation du DMI""
+#### Cas d'utilisation "Facturation du DMI"
 
  Cas d'utilisation "Facturation du DMI" 
 
@@ -396,7 +396,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
  Table des cas d'utilisation 
 
-#### "Cas d'utilisation "Tracer""
+#### Cas d'utilisation "Tracer"
 
  Cas d'utilisation "Tracer" 
 
