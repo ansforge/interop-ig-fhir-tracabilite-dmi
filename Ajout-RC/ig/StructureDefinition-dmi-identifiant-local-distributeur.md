@@ -1,15 +1,17 @@
-# DMIIdentifiantLocalDistributeur - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Identifiant Local Distributeur - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMIIdentifiantLocalDistributeur**
+* **DMI Identifiant Local Distributeur**
 
-## Extension: DMIIdentifiantLocalDistributeur 
+## Extension: DMI Identifiant Local Distributeur 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-distributeur | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIIdentifiantLocalDistributeur |
+| Draft as of 2026-02-25 | *Computable Name*:DMIIdentifiantLocalDistributeur |
+
+Extension créée dans ce volet pour représenter l'identifiant local distributeur.
 
 **Context of Use**
 
@@ -17,7 +19,7 @@
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [DMIOrganizationEJ](StructureDefinition-dmi-organization-ej.md) and [DMIOrganizationInterne](StructureDefinition-dmi-organization-interne.md)
+* Utilise ce/t/te Extension: [DMI Organization EJ](StructureDefinition-dmi-organization-ej.md) and [DMI Organization Interne](StructureDefinition-dmi-organization-interne.md)
 * Exemples pour ce/t/te Extension: [DMI Organization EJ Example Name](Organization-dmi-organization-ej-example.md) and [DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-identifiant-local-distributeur)
@@ -43,8 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-identifiant-loca
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-distributeur",
   "version" : "3.0.0",
   "name" : "DMIIdentifiantLocalDistributeur",
+  "title" : "DMI Identifiant Local Distributeur",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -53,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-identifiant-loca
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Extension créée dans ce volet pour représenter l'identifiant local distributeur.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -77,6 +81,12 @@ Other representations of profile: [CSV](StructureDefinition-dmi-identifiant-loca
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "DMI Identifiant Local Distributeur",
+      "definition" : "Extension créée dans ce volet pour représenter l'identifiant local distributeur."
+    },
+    {
       "id" : "Extension.extension",
       "path" : "Extension.extension",
       "max" : "0"

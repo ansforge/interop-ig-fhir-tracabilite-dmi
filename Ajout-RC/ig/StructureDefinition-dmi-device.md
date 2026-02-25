@@ -1,19 +1,22 @@
-# DMIDevice - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Device - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMIDevice**
+* **DMI Device**
 
-## Resource Profile: DMIDevice 
+## Resource Profile: DMI Device 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-device | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIDevice |
+| Draft as of 2026-02-25 | *Computable Name*:DMIDevice |
+
+ 
+Profil créé dans le cadre de ce volet pour représenter une instance physique d’un dispositif médical. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil: [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md)
+* Utilise ce/t/te Profil: [DMI Bundle Transmission Traces](StructureDefinition-dmi-bundle-transmission-traces.md)
 * Exemples pour ce/t/te Profil: [Device/dmi-device-example](Device-dmi-device-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-device)
@@ -37,8 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-device.csv), [Ex
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-device",
   "version" : "3.0.0",
   "name" : "DMIDevice",
+  "title" : "DMI Device",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -47,6 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-device.csv), [Ex
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil créé dans le cadre de ce volet pour représenter une instance physique d’un dispositif médical.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

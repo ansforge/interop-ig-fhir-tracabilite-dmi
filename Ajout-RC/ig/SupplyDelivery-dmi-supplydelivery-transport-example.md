@@ -6,11 +6,11 @@
 
 ## Example SupplyDelivery: dmi-supplydelivery-transport-example
 
-Profil: [DMISupplyDeliveryTransport](StructureDefinition-dmi-supplydelivery-transport.md)
+Profil: [DMI SupplyDelivery Transport](StructureDefinition-dmi-supplydelivery-transport.md)
 
-**DMIReferenceOrganisationInterne**: [Organization DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
+**DMI Reference Organisation Interne**: [Organization DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
 
-> **DMITransport**
+> **DMI Transport**
 * refTransport: identifier-reftransport-example
 * refDelivery: identifier-refdelivery-example
 * meta: Pas d'affichage pour Meta (versionId : meta-versionid-example)

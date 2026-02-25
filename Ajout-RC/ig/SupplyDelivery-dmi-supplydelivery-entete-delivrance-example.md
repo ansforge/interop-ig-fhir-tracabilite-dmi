@@ -6,9 +6,9 @@
 
 ## Example SupplyDelivery: dmi-supplydelivery-entete-delivrance-example
 
-Profil: [DMISupplyDeliveryEnteteDelivrance](StructureDefinition-dmi-supplydelivery-entete-delivrance.md)
+Profil: [DMI SupplyDelivery Entete Delivrance](StructureDefinition-dmi-supplydelivery-entete-delivrance.md)
 
-**DMIReferenceOrganisationInterne**: [Organization DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
+**DMI Reference Organisation Interne**: [Organization DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
 
 **identifier**: identifier-dmi-supplydelivery-entete-delivrance-example
 

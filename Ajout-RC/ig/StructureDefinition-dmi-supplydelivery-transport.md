@@ -1,19 +1,22 @@
-# DMISupplyDeliveryTransport - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI SupplyDelivery Transport - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMISupplyDeliveryTransport**
+* **DMI SupplyDelivery Transport**
 
-## Resource Profile: DMISupplyDeliveryTransport 
+## Resource Profile: DMI SupplyDelivery Transport 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMISupplyDeliveryTransport |
+| Draft as of 2026-02-25 | *Computable Name*:DMISupplyDeliveryTransport |
+
+ 
+Profil créé dans le cadre de ce volet pour représenter les informations de transports des dispositifs médicaux. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil: [DMIBundleDelivery](StructureDefinition-dmi-bundledelivery.md)
+* Utilise ce/t/te Profil: [DMI Bundle Delivery](StructureDefinition-dmi-bundledelivery.md)
 * Exemples pour ce/t/te Profil: [SupplyDelivery/dmi-supplydelivery-transport-example](SupplyDelivery-dmi-supplydelivery-transport-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-supplydelivery-transport)
@@ -37,8 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplydelivery-t
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport",
   "version" : "3.0.0",
   "name" : "DMISupplyDeliveryTransport",
+  "title" : "DMI SupplyDelivery Transport",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -47,6 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplydelivery-t
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil créé dans le cadre de ce volet pour représenter les informations de transports des dispositifs médicaux.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

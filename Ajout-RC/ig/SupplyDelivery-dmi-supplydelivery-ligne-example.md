@@ -6,9 +6,9 @@
 
 ## Example SupplyDelivery: dmi-supplydelivery-ligne-example
 
-Profil: [DMISupplyDeliveryLigne](StructureDefinition-dmi-supplydelivery-ligne.md)
+Profil: [DMI SupplyDelivery Ligne](StructureDefinition-dmi-supplydelivery-ligne.md)
 
-**DMIReferenceOrganisationInterne**: [Organization DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
+**DMI Reference Organisation Interne**: [Organization DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
 
 **identifier**: identifier-dmi-supplydelivery-ligne-example
 

@@ -6,9 +6,9 @@
 
 ## Example Organization: dmi-organization-ej-example
 
-Profil: [DMIOrganizationEJ](StructureDefinition-dmi-organization-ej.md)
+Profil: [DMI Organization EJ](StructureDefinition-dmi-organization-ej.md)
 
-**DMIIdentifiantLocalDistributeur**: identifiant-local-distributeur-example-ej
+**DMI Identifiant Local Distributeur**: identifiant-local-distributeur-example-ej
 
 **identifier**: Identification nationale de structure définie par l’ANS dans le CI_SIS/identifer-idnatst-example, Identification de l'organisation au SIREN/identifer-siren-example
 

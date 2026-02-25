@@ -1,15 +1,17 @@
-# DMIIPIdLogiciel - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI IP Id logiciel - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMIIPIdLogiciel**
+* **DMI IP Id logiciel**
 
-## Extension: DMIIPIdLogiciel 
+## Extension: DMI IP Id logiciel 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-ip-id-logiciel | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIIPIdLogiciel |
+| Draft as of 2026-02-25 | *Computable Name*:DMIIPIdLogiciel |
+
+Extension créée dans ce volet pour représenter l'IP Id logiciel.
 
 **Context of Use**
 
@@ -17,7 +19,7 @@
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [DMIDevice](StructureDefinition-dmi-device.md)
+* Utilise ce/t/te Extension: [DMI Device](StructureDefinition-dmi-device.md)
 * Exemples pour ce/t/te Extension: [Bundle/dmi-bundle-transmission-traces-example](Bundle-dmi-bundle-transmission-traces-example.md) and [Device/dmi-device-example](Device-dmi-device-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-ip-id-logiciel)
@@ -43,8 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-ip-id-logiciel.c
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-ip-id-logiciel",
   "version" : "3.0.0",
   "name" : "DMIIPIdLogiciel",
+  "title" : "DMI IP Id logiciel",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -53,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-ip-id-logiciel.c
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Extension créée dans ce volet pour représenter l'IP Id logiciel.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -77,6 +81,12 @@ Other representations of profile: [CSV](StructureDefinition-dmi-ip-id-logiciel.c
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "DMI IP Id logiciel",
+      "definition" : "Extension créée dans ce volet pour représenter l'IP Id logiciel."
+    },
+    {
       "id" : "Extension.extension",
       "path" : "Extension.extension",
       "max" : "0"

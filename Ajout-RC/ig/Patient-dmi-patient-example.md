@@ -6,7 +6,7 @@
 
 ## Example Patient: dmi-patient-example
 
-Profil: [DMIPatient](StructureDefinition-dmi-patient.md)
+Profil: [DMI Patient](StructureDefinition-dmi-patient.md)
 
 Patient Anonyme (sexe non précisé), Date de Naissance inconnue ( identifier-dmi-patient-example)
 

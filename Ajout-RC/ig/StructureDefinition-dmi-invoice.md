@@ -1,19 +1,22 @@
-# DMIInvoice - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Invoice - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMIInvoice**
+* **DMI Invoice**
 
-## Resource Profile: DMIInvoice 
+## Resource Profile: DMI Invoice 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIInvoice |
+| Draft as of 2026-02-25 | *Computable Name*:DMIInvoice |
+
+ 
+Profil créé dans le cadre de ce volet pour représenter la facturation de dispositifs médicaux. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil: [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md)
+* Utilise ce/t/te Profil: [DMI Bundle Transmission Traces](StructureDefinition-dmi-bundle-transmission-traces.md)
 * Exemples pour ce/t/te Profil: [Invoice/dmi-invoice-example](Invoice-dmi-invoice-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-invoice)
@@ -37,8 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-invoice.csv), [E
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice",
   "version" : "3.0.0",
   "name" : "DMIInvoice",
+  "title" : "DMI Invoice",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -47,6 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-invoice.csv), [E
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil créé dans le cadre de ce volet pour représenter la facturation de dispositifs médicaux.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

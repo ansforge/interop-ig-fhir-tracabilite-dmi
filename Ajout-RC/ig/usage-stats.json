@@ -6,63 +6,63 @@
   "extensions": [
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-classe-risque",
-      "title": "DMIClasseRisque",
+      "title": "DMI Classe Risque",
       "types": [
         "code"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn",
-      "title": "DMICodeEMDN",
+      "title": "DMI Code EMDN",
       "types": [
         "code"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-lpp",
-      "title": "DMICodeLPP",
+      "title": "DMI Code LPP",
       "types": [
         "code"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-facture",
-      "title": "DMIFacture",
+      "title": "DMI Facture",
       "types": [
         "base64Binary"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-distributeur",
-      "title": "DMIIdentifiantLocalDistributeur",
+      "title": "DMI Identifiant Local Distributeur",
       "types": [
         "Identifier"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-fabricant",
-      "title": "DMIIdentifiantLocalFabricant",
+      "title": "DMI Identifiant Local Fabricant",
       "types": [
         "Identifier"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-internal-diameter",
-      "title": "DMIInternalDiameter",
+      "title": "DMI Internal Diameter",
       "types": [
         "code"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-ip-id-logiciel",
-      "title": "DMIIPIdLogiciel",
+      "title": "DMI IP Id logiciel",
       "types": [
         "string"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-marquage-ce",
-      "title": "DMIMarquageCE",
+      "title": "DMI Marquage CE",
       "types": [
         "Reference",
         "string",
@@ -120,42 +120,42 @@
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-nom-distributeur",
-      "title": "DMINomDistributeur",
+      "title": "DMI Nom Distributeur",
       "types": [
         "string"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-location",
-      "title": "DMIOrganizationLocation",
+      "title": "DMI Organization Location",
       "types": [
         "Reference"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-distributeur",
-      "title": "DMIReferenceDistributeur",
+      "title": "DMI Reference Distributeur",
       "types": [
         "Identifier"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-fabricant",
-      "title": "Extension DMI referenceFabricant",
+      "title": "Extension DMI Reference Fabricant",
       "types": [
         "Reference"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-organisation-interne",
-      "title": "DMIReferenceOrganisationInterne",
+      "title": "DMI Reference Organisation Interne",
       "types": [
         "Reference"
       ]
     },
     {
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-transport",
-      "title": "DMITransport",
+      "title": "DMI Transport",
       "types": [
         "Identifier",
         "Identifier",
@@ -220,107 +220,107 @@
     "Bundle": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-request",
-        "title": "DMIBundleRequest"
+        "title": "DMI Bundle Request"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-transmission-traces",
-        "title": "DMIBundleTransmissionTraces"
+        "title": "DMI Bundle Transmission Traces"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery",
-        "title": "DMIBundleDelivery"
+        "title": "DMI Bundle Delivery"
       }
     ],
     "Device": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-device",
-        "title": "DMIDevice"
+        "title": "DMI Device"
       }
     ],
     "DeviceDefinition": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicedefinition",
-        "title": "DMIDeviceDefinition"
+        "title": "DMI DeviceDefinition"
       }
     ],
     "DeviceRequest": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest",
-        "title": "DMIDeviceRequest"
+        "title": "DMI DeviceRequest"
       }
     ],
     "Invoice": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice",
-        "title": "DMIInvoice"
+        "title": "DMI Invoice"
       }
     ],
     "Organization": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-ej",
-        "title": "DMIOrganizationEJ"
+        "title": "DMI Organization EJ"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne",
-        "title": "DMIOrganizationInterne"
+        "title": "DMI Organization Interne"
       }
     ],
     "Patient": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient",
-        "title": "DMIPatient"
+        "title": "DMI Patient"
       }
     ],
     "Practitioner": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-practitioner",
-        "title": "DMIPractitioner"
+        "title": "DMI Practitioner"
       }
     ],
     "Procedure": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-procedure",
-        "title": "DMIProcedure"
+        "title": "DMI Procedure"
       }
     ],
     "SupplyDelivery": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-delivrance",
-        "title": "DMISupplyDeliveryEnteteDelivrance"
+        "title": "DMI SupplyDelivery Entete Delivrance"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-livraison",
-        "title": "DMISupplyDeliveryEnteteLivraison"
+        "title": "DMI SupplyDelivery Entete Livraison"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-enteter-reception",
-        "title": "DMISupplyDeliveryEnteteReception"
+        "title": "DMI SupplyDelivery Entete Reception"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-ligne",
-        "title": "DMISupplyDeliveryLigne"
+        "title": "DMI SupplyDelivery Ligne"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-reception-unitaire",
-        "title": "DMISupplyDeliveryReceptionUnitaire"
+        "title": "DMI SupplyDelivery Reception Unitaire"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport",
-        "title": "DMISupplyDeliveryTransport"
+        "title": "DMI SupplyDelivery Transport"
       }
     ],
     "SupplyRequest": [
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-commande",
-        "title": "DMISupplyRequestEnteteCommande"
+        "title": "DMI SupplyRequest Entete Commande"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande",
-        "title": "DMISupplyRequestEnteteDemande"
+        "title": "DMI SupplyRequest Entete Demande"
       },
       {
         "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entetereponse",
-        "title": "DMISupplyRequestEnteteReponse"
+        "title": "DMI SupplyRequest Entete Reponse"
       }
     ]
   },

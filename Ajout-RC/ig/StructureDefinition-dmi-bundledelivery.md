@@ -1,19 +1,22 @@
-# DMIBundleDelivery - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Bundle Delivery - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMIBundleDelivery**
+* **DMI Bundle Delivery**
 
-## Resource Profile: DMIBundleDelivery 
+## Resource Profile: DMI Bundle Delivery 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIBundleDelivery |
+| Draft as of 2026-02-25 | *Computable Name*:DMIBundleDelivery |
+
+ 
+Profil créé dans le cadre de ce volet pour transmettre au serveur l’ensemble des ressources permettant la réception, la délivrance et la livraison d’un DMI. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil: [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md)
+* Utilise ce/t/te Profil: [DMI Bundle Transmission Traces](StructureDefinition-dmi-bundle-transmission-traces.md)
 * Exemples pour ce/t/te Profil: [Bundle/dmi-bundle-delivery-example](Bundle-dmi-bundle-delivery-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-bundledelivery)
@@ -37,8 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-bundledelivery.c
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery",
   "version" : "3.0.0",
   "name" : "DMIBundleDelivery",
+  "title" : "DMI Bundle Delivery",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -47,6 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-bundledelivery.c
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil créé dans le cadre de ce volet pour transmettre au serveur l’ensemble des ressources permettant la réception, la délivrance et la livraison d’un DMI.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

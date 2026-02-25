@@ -1,15 +1,17 @@
-# DMIIdentifiantLocalFabricant - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Identifiant Local Fabricant - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMIIdentifiantLocalFabricant**
+* **DMI Identifiant Local Fabricant**
 
-## Extension: DMIIdentifiantLocalFabricant 
+## Extension: DMI Identifiant Local Fabricant 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-fabricant | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIIdentifiantLocalFabricant |
+| Draft as of 2026-02-25 | *Computable Name*:DMIIdentifiantLocalFabricant |
+
+Extension créée dans ce volet pour représenter l'identifiant local fabricant.
 
 **Context of Use**
 
@@ -17,7 +19,7 @@
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [DMIOrganizationEJ](StructureDefinition-dmi-organization-ej.md) and [DMIOrganizationInterne](StructureDefinition-dmi-organization-interne.md)
+* Utilise ce/t/te Extension: [DMI Organization EJ](StructureDefinition-dmi-organization-ej.md) and [DMI Organization Interne](StructureDefinition-dmi-organization-interne.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-identifiant-local-fabricant)
 
@@ -42,8 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-identifiant-loca
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-fabricant",
   "version" : "3.0.0",
   "name" : "DMIIdentifiantLocalFabricant",
+  "title" : "DMI Identifiant Local Fabricant",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -52,6 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-identifiant-loca
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Extension créée dans ce volet pour représenter l'identifiant local fabricant.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -76,6 +80,12 @@ Other representations of profile: [CSV](StructureDefinition-dmi-identifiant-loca
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "DMI Identifiant Local Fabricant",
+      "definition" : "Extension créée dans ce volet pour représenter l'identifiant local fabricant."
+    },
+    {
       "id" : "Extension.extension",
       "path" : "Extension.extension",
       "max" : "0"

@@ -1,19 +1,22 @@
-# DMISupplyRequestEnteteDemande - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI SupplyRequest Entete Demande - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMISupplyRequestEnteteDemande**
+* **DMI SupplyRequest Entete Demande**
 
-## Resource Profile: DMISupplyRequestEnteteDemande 
+## Resource Profile: DMI SupplyRequest Entete Demande 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMISupplyRequestEnteteDemande |
+| Draft as of 2026-02-25 | *Computable Name*:DMISupplyRequestEnteteDemande |
+
+ 
+Profil créé dans le cadre de ce volet pour transporter les informations générales d’une demande de dispositif médical. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil: [DMIBundleRequest](StructureDefinition-dmi-bundle-request.md) and [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md)
+* Utilise ce/t/te Profil: [DMI Bundle Request](StructureDefinition-dmi-bundle-request.md) and [DMI Bundle Transmission Traces](StructureDefinition-dmi-bundle-transmission-traces.md)
 * Exemples pour ce/t/te Profil: [SupplyRequest/dmi-supplyrequest-entete-demande-example](SupplyRequest-dmi-supplyrequest-entete-demande-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-supplyrequest-entete-demande)
@@ -37,8 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplyrequest-en
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande",
   "version" : "3.0.0",
   "name" : "DMISupplyRequestEnteteDemande",
+  "title" : "DMI SupplyRequest Entete Demande",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -47,6 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplyrequest-en
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil créé dans le cadre de ce volet pour transporter les informations générales d’une demande de dispositif médical.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

@@ -6,7 +6,7 @@
     <profile value="https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Invoice dmi-invoice-example</b></p><a name="dmi-invoice-example"> </a><a name="hcdmi-invoice-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-dmi-invoice.html">DMIInvoice</a></p></div><p><b>identifier</b>: reference Facture/identifier-refFacture-example, reference Commande/identifier-refCommande-example</p><p><b>status</b>: draft</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Invoice dmi-invoice-example</b></p><a name="dmi-invoice-example"> </a><a name="hcdmi-invoice-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-dmi-invoice.html">DMI Invoice</a></p></div><p><b>identifier</b>: reference Facture/identifier-refFacture-example, reference Commande/identifier-refCommande-example</p><p><b>status</b>: draft</p></div>
   </text>
   <identifier>
     <type>

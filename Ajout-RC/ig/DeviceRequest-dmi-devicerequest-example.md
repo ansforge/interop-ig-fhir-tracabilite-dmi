@@ -6,7 +6,7 @@
 
 ## Example DeviceRequest: dmi-devicerequest-example
 
-Profil: [DMIDeviceRequest](StructureDefinition-dmi-devicerequest.md)
+Profil: [DMI DeviceRequest](StructureDefinition-dmi-devicerequest.md)
 
 **basedOn**: [SupplyRequest : identifier = identifier-dmi-supplyrequest-entete-commande-example; item[x] = Commande de dispositifs médicaux; quantity = 2](SupplyRequest-dmi-supplyrequest-entete-commande-example.md)
 

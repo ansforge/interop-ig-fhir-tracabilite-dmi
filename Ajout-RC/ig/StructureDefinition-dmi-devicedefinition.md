@@ -1,20 +1,23 @@
-# DMIDeviceDefinition - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI DeviceDefinition - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMIDeviceDefinition**
+* **DMI DeviceDefinition**
 
-## Resource Profile: DMIDeviceDefinition 
+## Resource Profile: DMI DeviceDefinition 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicedefinition | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIDeviceDefinition |
+| Draft as of 2026-02-25 | *Computable Name*:DMIDeviceDefinition |
+
+ 
+Profil créé dans le cadre de ce volet pour représenter un modèle de dispositif médical. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil: [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md)
-* Référence ce Profil: [DMIDevice](StructureDefinition-dmi-device.md)
+* Utilise ce/t/te Profil: [DMI Bundle Transmission Traces](StructureDefinition-dmi-bundle-transmission-traces.md)
+* Référence ce Profil: [DMI Device](StructureDefinition-dmi-device.md)
 * Exemples pour ce/t/te Profil: [DeviceDefinition/dmi-devicedefinition-example](DeviceDefinition-dmi-devicedefinition-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-devicedefinition)
@@ -38,8 +41,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-devicedefinition
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicedefinition",
   "version" : "3.0.0",
   "name" : "DMIDeviceDefinition",
+  "title" : "DMI DeviceDefinition",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -48,6 +52,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-devicedefinition
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil créé dans le cadre de ce volet pour représenter un modèle de dispositif médical.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

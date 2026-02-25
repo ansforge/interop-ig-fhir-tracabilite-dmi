@@ -1,15 +1,17 @@
-# DMIOrganizationLocation - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Organization Location - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMIOrganizationLocation**
+* **DMI Organization Location**
 
-## Extension: DMIOrganizationLocation 
+## Extension: DMI Organization Location 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-location | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIOrganizationLocation |
+| Draft as of 2026-02-25 | *Computable Name*:DMIOrganizationLocation |
+
+Extension créée dans ce volet pour représenter le lieu de l'organisation.
 
 **Context of Use**
 
@@ -17,7 +19,7 @@
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [DMIOrganizationInterne](StructureDefinition-dmi-organization-interne.md)
+* Utilise ce/t/te Extension: [DMI Organization Interne](StructureDefinition-dmi-organization-interne.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-organization-location)
 
@@ -42,8 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-organization-loc
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-location",
   "version" : "3.0.0",
   "name" : "DMIOrganizationLocation",
+  "title" : "DMI Organization Location",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -52,6 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-organization-loc
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Extension créée dans ce volet pour représenter le lieu de l'organisation.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -76,6 +80,12 @@ Other representations of profile: [CSV](StructureDefinition-dmi-organization-loc
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "DMI Organization Location",
+      "definition" : "Extension créée dans ce volet pour représenter le lieu de l'organisation."
+    },
+    {
       "id" : "Extension.extension",
       "path" : "Extension.extension",
       "max" : "0"

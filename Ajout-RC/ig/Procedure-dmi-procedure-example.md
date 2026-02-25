@@ -6,7 +6,7 @@
 
 ## Example Procedure: dmi-procedure-example
 
-Profil: [DMIProcedure](StructureDefinition-dmi-procedure.md)
+Profil: [DMI Procedure](StructureDefinition-dmi-procedure.md)
 
 **identifier**: id Intervention/identifier-idIntervention-example
 

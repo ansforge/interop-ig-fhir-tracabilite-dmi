@@ -1,15 +1,18 @@
-# DMIBundleTransmissionTraces - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Bundle Transmission Traces - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMIBundleTransmissionTraces**
+* **DMI Bundle Transmission Traces**
 
-## Resource Profile: DMIBundleTransmissionTraces 
+## Resource Profile: DMI Bundle Transmission Traces 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-transmission-traces | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIBundleTransmissionTraces |
+| Draft as of 2026-02-25 | *Computable Name*:DMIBundleTransmissionTraces |
+
+ 
+Profil créé dans le cadre de ce volet pour transmettre l’ensemble des ressources au serveur. 
 
 **Utilisations:**
 
@@ -36,8 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-bundle-transmiss
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-transmission-traces",
   "version" : "3.0.0",
   "name" : "DMIBundleTransmissionTraces",
+  "title" : "DMI Bundle Transmission Traces",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -46,6 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-bundle-transmiss
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil créé dans le cadre de ce volet pour transmettre l’ensemble des ressources au serveur.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

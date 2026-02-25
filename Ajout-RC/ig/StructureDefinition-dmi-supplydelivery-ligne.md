@@ -1,19 +1,22 @@
-# DMISupplyDeliveryLigne - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI SupplyDelivery Ligne - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMISupplyDeliveryLigne**
+* **DMI SupplyDelivery Ligne**
 
-## Resource Profile: DMISupplyDeliveryLigne 
+## Resource Profile: DMI SupplyDelivery Ligne 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-ligne | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMISupplyDeliveryLigne |
+| Draft as of 2026-02-25 | *Computable Name*:DMISupplyDeliveryLigne |
+
+ 
+Profil créé dans le cadre de ce volet pour représenter une ligne de livraison, de délivrance. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil: [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md) and [DMIBundleDelivery](StructureDefinition-dmi-bundledelivery.md)
+* Utilise ce/t/te Profil: [DMI Bundle Transmission Traces](StructureDefinition-dmi-bundle-transmission-traces.md) and [DMI Bundle Delivery](StructureDefinition-dmi-bundledelivery.md)
 * Exemples pour ce/t/te Profil: [SupplyDelivery/dmi-supplydelivery-ligne-example](SupplyDelivery-dmi-supplydelivery-ligne-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-supplydelivery-ligne)
@@ -37,8 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplydelivery-l
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-ligne",
   "version" : "3.0.0",
   "name" : "DMISupplyDeliveryLigne",
+  "title" : "DMI SupplyDelivery Ligne",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -47,6 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplydelivery-l
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil créé dans le cadre de ce volet pour représenter une ligne de livraison, de délivrance.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

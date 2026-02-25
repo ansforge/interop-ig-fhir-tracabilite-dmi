@@ -6,11 +6,11 @@
 
 ## Example Device: dmi-device-example
 
-Profil: [DMIDevice](StructureDefinition-dmi-device.md)
+Profil: [DMI Device](StructureDefinition-dmi-device.md)
 
-**DMIIPIdLogiciel**: IPIdLogiciel example
+**DMI IP Id logiciel**: IPIdLogiciel example
 
-> **DMIMarquageCE**
+> **DMI Marquage CE**
 * organismeNotifie: [Organization DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
 * libelleAutorisation: MarquageCE libelleAutorisation example
 

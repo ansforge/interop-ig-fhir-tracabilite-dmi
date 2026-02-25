@@ -1,15 +1,17 @@
-# DMINomDistributeur - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Nom Distributeur - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMINomDistributeur**
+* **DMI Nom Distributeur**
 
-## Extension: DMINomDistributeur 
+## Extension: DMI Nom Distributeur 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-nom-distributeur | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMINomDistributeur |
+| Draft as of 2026-02-25 | *Computable Name*:DMINomDistributeur |
+
+Extension créée dans ce volet pour représenter le nom distributeur.
 
 **Context of Use**
 
@@ -42,8 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-nom-distributeur
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-nom-distributeur",
   "version" : "3.0.0",
   "name" : "DMINomDistributeur",
+  "title" : "DMI Nom Distributeur",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -52,6 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-nom-distributeur
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Extension créée dans ce volet pour représenter le nom distributeur.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -77,7 +81,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-nom-distributeur
   "differential" : {
     "element" : [{
       "id" : "Extension",
-      "path" : "Extension"
+      "path" : "Extension",
+      "short" : "DMI Nom Distributeur",
+      "definition" : "Extension créée dans ce volet pour représenter le nom distributeur."
     },
     {
       "id" : "Extension.extension",

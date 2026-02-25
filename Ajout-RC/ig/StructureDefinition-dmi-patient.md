@@ -1,19 +1,22 @@
-# DMIPatient - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Patient - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMIPatient**
+* **DMI Patient**
 
-## Resource Profile: DMIPatient 
+## Resource Profile: DMI Patient 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIPatient |
+| Draft as of 2026-02-25 | *Computable Name*:DMIPatient |
+
+ 
+Profil créé dans le cadre de ce volet étendant le profil français « FrPatient » publié par Interop’Santé. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil: [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md)
+* Utilise ce/t/te Profil: [DMI Bundle Transmission Traces](StructureDefinition-dmi-bundle-transmission-traces.md)
 * Exemples pour ce/t/te Profil: [Patient/dmi-patient-example](Patient-dmi-patient-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-patient)
@@ -37,8 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-patient.csv), [E
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient",
   "version" : "3.0.0",
   "name" : "DMIPatient",
+  "title" : "DMI Patient",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -47,6 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-patient.csv), [E
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil créé dans le cadre de ce volet étendant le profil français « FrPatient » publié par Interop’Santé.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

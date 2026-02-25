@@ -6,7 +6,7 @@
 
 ## Example Invoice: dmi-invoice-example
 
-Profil: [DMIInvoice](StructureDefinition-dmi-invoice.md)
+Profil: [DMI Invoice](StructureDefinition-dmi-invoice.md)
 
 **identifier**: reference Facture/identifier-refFacture-example, reference Commande/identifier-refCommande-example
 

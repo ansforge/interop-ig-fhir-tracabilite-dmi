@@ -6,9 +6,9 @@
 
 ## Example Organization: dmi-organization-interne-example
 
-Profil: [DMIOrganizationInterne](StructureDefinition-dmi-organization-interne.md)
+Profil: [DMI Organization Interne](StructureDefinition-dmi-organization-interne.md)
 
-**DMIIdentifiantLocalDistributeur**: identifiant-local-distributeur-example-oi
+**DMI Identifiant Local Distributeur**: identifiant-local-distributeur-example-oi
 
 **type**: Structure interne ou Service
 

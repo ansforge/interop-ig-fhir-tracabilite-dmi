@@ -11,8 +11,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1"],
     "uses" : {
     },
-    "StructureDefinition-dmi-patient.html" : "DMIPatient",
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner"
+    "StructureDefinition-dmi-patient.html" : "DMI Patient",
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -26,7 +26,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure"
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
@@ -40,9 +40,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.620"],
     "uses" : {
     },
-    "StructureDefinition-dmi-bundle-transmission-traces.html" : "DMIBundleTransmissionTraces",
-    "StructureDefinition-dmi-bundledelivery.html" : "DMIBundleDelivery",
-    "StructureDefinition-dmi-bundle-request.html" : "DMIBundleRequest"
+    "StructureDefinition-dmi-bundle-request.html" : "DMI Bundle Request",
+    "StructureDefinition-dmi-bundledelivery.html" : "DMI Bundle Delivery",
+    "StructureDefinition-dmi-bundle-transmission-traces.html" : "DMI Bundle Transmission Traces"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -56,10 +56,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.79"],
     "uses" : {
     },
-    "StructureDefinition-dmi-organization-ej.html" : "DMIOrganizationEJ",
-    "StructureDefinition-dmi-patient.html" : "DMIPatient",
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner",
-    "StructureDefinition-dmi-organization-interne.html" : "DMIOrganizationInterne"
+    "StructureDefinition-dmi-organization-interne.html" : "DMI Organization Interne",
+    "StructureDefinition-dmi-organization-ej.html" : "DMI Organization EJ",
+    "StructureDefinition-dmi-patient.html" : "DMI Patient",
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -73,8 +73,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.161"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure",
-    "StructureDefinition-dmi-devicerequest.html" : "DMIDeviceRequest"
+    "StructureDefinition-dmi-devicerequest.html" : "DMI DeviceRequest",
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -88,8 +88,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.416"],
     "uses" : {
     },
-    "StructureDefinition-dmi-organization-ej.html" : "DMIOrganizationEJ",
-    "StructureDefinition-dmi-organization-interne.html" : "DMIOrganizationInterne"
+    "StructureDefinition-dmi-organization-interne.html" : "DMI Organization Interne",
+    "StructureDefinition-dmi-organization-ej.html" : "DMI Organization EJ"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/device-action",
@@ -103,7 +103,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.425"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure"
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/device-kind",
@@ -117,9 +117,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.208"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure",
-    "StructureDefinition-dmi-devicedefinition.html" : "DMIDeviceDefinition",
-    "StructureDefinition-dmi-devicerequest.html" : "DMIDeviceRequest"
+    "StructureDefinition-dmi-devicedefinition.html" : "DMI DeviceDefinition",
+    "StructureDefinition-dmi-devicerequest.html" : "DMI DeviceRequest",
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/device-nametype",
@@ -133,8 +133,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1083"],
     "uses" : {
     },
-    "StructureDefinition-dmi-device.html" : "DMIDevice",
-    "StructureDefinition-dmi-devicedefinition.html" : "DMIDeviceDefinition"
+    "StructureDefinition-dmi-devicedefinition.html" : "DMI DeviceDefinition",
+    "StructureDefinition-dmi-device.html" : "DMI Device"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/device-safety",
@@ -148,7 +148,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.213"],
     "uses" : {
     },
-    "StructureDefinition-dmi-devicedefinition.html" : "DMIDeviceDefinition"
+    "StructureDefinition-dmi-devicedefinition.html" : "DMI DeviceDefinition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/device-status",
@@ -162,7 +162,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.209"],
     "uses" : {
     },
-    "StructureDefinition-dmi-device.html" : "DMIDevice"
+    "StructureDefinition-dmi-device.html" : "DMI Device"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/device-status-reason",
@@ -176,7 +176,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1081"],
     "uses" : {
     },
-    "StructureDefinition-dmi-device.html" : "DMIDevice"
+    "StructureDefinition-dmi-device.html" : "DMI Device"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/device-type",
@@ -190,7 +190,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1376"],
     "uses" : {
     },
-    "StructureDefinition-dmi-device.html" : "DMIDevice"
+    "StructureDefinition-dmi-device.html" : "DMI Device"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/event-status",
@@ -204,7 +204,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.109"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure"
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/http-verb",
@@ -218,9 +218,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.624"],
     "uses" : {
     },
-    "StructureDefinition-dmi-bundle-transmission-traces.html" : "DMIBundleTransmissionTraces",
-    "StructureDefinition-dmi-bundledelivery.html" : "DMIBundleDelivery",
-    "StructureDefinition-dmi-bundle-request.html" : "DMIBundleRequest"
+    "StructureDefinition-dmi-bundle-request.html" : "DMI Bundle Request",
+    "StructureDefinition-dmi-bundledelivery.html" : "DMI Bundle Delivery",
+    "StructureDefinition-dmi-bundle-transmission-traces.html" : "DMI Bundle Transmission Traces"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -234,12 +234,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-dmi-organization-ej.html" : "DMIOrganizationEJ",
-    "StructureDefinition-dmi-patient.html" : "DMIPatient",
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure",
-    "StructureDefinition-dmi-invoice.html" : "DMIInvoice",
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner",
-    "StructureDefinition-dmi-organization-interne.html" : "DMIOrganizationInterne"
+    "StructureDefinition-dmi-invoice.html" : "DMI Invoice",
+    "StructureDefinition-dmi-organization-interne.html" : "DMI Organization Interne",
+    "StructureDefinition-dmi-organization-ej.html" : "DMI Organization EJ",
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure",
+    "StructureDefinition-dmi-patient.html" : "DMI Patient",
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -253,12 +253,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-dmi-organization-ej.html" : "DMIOrganizationEJ",
-    "StructureDefinition-dmi-patient.html" : "DMIPatient",
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure",
-    "StructureDefinition-dmi-invoice.html" : "DMIInvoice",
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner",
-    "StructureDefinition-dmi-organization-interne.html" : "DMIOrganizationInterne"
+    "StructureDefinition-dmi-invoice.html" : "DMI Invoice",
+    "StructureDefinition-dmi-organization-interne.html" : "DMI Organization Interne",
+    "StructureDefinition-dmi-organization-ej.html" : "DMI Organization EJ",
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure",
+    "StructureDefinition-dmi-patient.html" : "DMI Patient",
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/invoice-priceComponentType",
@@ -272,7 +272,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.868"],
     "uses" : {
     },
-    "StructureDefinition-dmi-invoice.html" : "DMIInvoice"
+    "StructureDefinition-dmi-invoice.html" : "DMI Invoice"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/invoice-status",
@@ -286,7 +286,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.866"],
     "uses" : {
     },
-    "StructureDefinition-dmi-invoice.html" : "DMIInvoice"
+    "StructureDefinition-dmi-invoice.html" : "DMI Invoice"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -300,27 +300,27 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-dmi-bundle-transmission-traces.html" : "DMIBundleTransmissionTraces",
-    "StructureDefinition-dmi-supplydelivery-ligne.html" : "DMISupplyDeliveryLigne",
-    "StructureDefinition-dmi-device.html" : "DMIDevice",
-    "StructureDefinition-dmi-supplydelivery-enteter-reception.html" : "DMISupplyDeliveryEnteteReception",
-    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMISupplyRequestEnteteCommande",
-    "StructureDefinition-dmi-devicedefinition.html" : "DMIDeviceDefinition",
-    "StructureDefinition-dmi-supplydelivery-entete-delivrance.html" : "DMISupplyDeliveryEnteteDelivrance",
-    "StructureDefinition-dmi-devicerequest.html" : "DMIDeviceRequest",
-    "StructureDefinition-dmi-organization-ej.html" : "DMIOrganizationEJ",
-    "StructureDefinition-dmi-supplydelivery-reception-unitaire.html" : "DMISupplyDeliveryReceptionUnitaire",
-    "StructureDefinition-dmi-patient.html" : "DMIPatient",
-    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMISupplyRequestEnteteReponse",
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure",
-    "StructureDefinition-dmi-bundledelivery.html" : "DMIBundleDelivery",
-    "StructureDefinition-dmi-invoice.html" : "DMIInvoice",
-    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMISupplyRequestEnteteDemande",
-    "StructureDefinition-dmi-supplydelivery-entete-livraison.html" : "DMISupplyDeliveryEnteteLivraison",
-    "StructureDefinition-dmi-supplydelivery-transport.html" : "DMISupplyDeliveryTransport",
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner",
-    "StructureDefinition-dmi-bundle-request.html" : "DMIBundleRequest",
-    "StructureDefinition-dmi-organization-interne.html" : "DMIOrganizationInterne"
+    "StructureDefinition-dmi-supplydelivery-ligne.html" : "DMI SupplyDelivery Ligne",
+    "StructureDefinition-dmi-bundle-request.html" : "DMI Bundle Request",
+    "StructureDefinition-dmi-devicedefinition.html" : "DMI DeviceDefinition",
+    "StructureDefinition-dmi-invoice.html" : "DMI Invoice",
+    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMI SupplyRequest Entete Demande",
+    "StructureDefinition-dmi-organization-ej.html" : "DMI Organization EJ",
+    "StructureDefinition-dmi-patient.html" : "DMI Patient",
+    "StructureDefinition-dmi-supplydelivery-entete-livraison.html" : "DMI SupplyDelivery Entete Livraison",
+    "StructureDefinition-dmi-supplydelivery-entete-delivrance.html" : "DMI SupplyDelivery Entete Delivrance",
+    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMI SupplyRequest Entete Commande",
+    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMI SupplyRequest Entete Reponse",
+    "StructureDefinition-dmi-bundledelivery.html" : "DMI Bundle Delivery",
+    "StructureDefinition-dmi-organization-interne.html" : "DMI Organization Interne",
+    "StructureDefinition-dmi-devicerequest.html" : "DMI DeviceRequest",
+    "StructureDefinition-dmi-supplydelivery-transport.html" : "DMI SupplyDelivery Transport",
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure",
+    "StructureDefinition-dmi-supplydelivery-enteter-reception.html" : "DMI SupplyDelivery Entete Reception",
+    "StructureDefinition-dmi-bundle-transmission-traces.html" : "DMI Bundle Transmission Traces",
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner",
+    "StructureDefinition-dmi-device.html" : "DMI Device",
+    "StructureDefinition-dmi-supplydelivery-reception-unitaire.html" : "DMI SupplyDelivery Reception Unitaire"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -334,7 +334,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.423"],
     "uses" : {
     },
-    "StructureDefinition-dmi-patient.html" : "DMIPatient"
+    "StructureDefinition-dmi-patient.html" : "DMI Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/name-use",
@@ -348,7 +348,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.65"],
     "uses" : {
     },
-    "StructureDefinition-dmi-patient.html" : "DMIPatient"
+    "StructureDefinition-dmi-patient.html" : "DMI Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -362,8 +362,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.414"],
     "uses" : {
     },
-    "StructureDefinition-dmi-organization-ej.html" : "DMIOrganizationEJ",
-    "StructureDefinition-dmi-organization-interne.html" : "DMIOrganizationInterne"
+    "StructureDefinition-dmi-organization-interne.html" : "DMI Organization Interne",
+    "StructureDefinition-dmi-organization-ej.html" : "DMI Organization EJ"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/participant-role",
@@ -377,7 +377,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.152"],
     "uses" : {
     },
-    "StructureDefinition-dmi-devicerequest.html" : "DMIDeviceRequest"
+    "StructureDefinition-dmi-devicerequest.html" : "DMI DeviceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -391,7 +391,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1130"],
     "uses" : {
     },
-    "StructureDefinition-dmi-patient.html" : "DMIPatient"
+    "StructureDefinition-dmi-patient.html" : "DMI Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/performer-role",
@@ -405,7 +405,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.433"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure"
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/procedure-category",
@@ -419,7 +419,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.430"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure"
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
@@ -433,7 +433,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.427"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure"
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/procedure-followup",
@@ -447,7 +447,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.429"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure"
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/procedure-not-performed-reason",
@@ -461,7 +461,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.431"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure"
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/procedure-outcome",
@@ -475,7 +475,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.428"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure"
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
@@ -489,7 +489,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.432"],
     "uses" : {
     },
-    "StructureDefinition-dmi-procedure.html" : "DMIProcedure"
+    "StructureDefinition-dmi-procedure.html" : "DMI Procedure"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-intent",
@@ -503,7 +503,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.113"],
     "uses" : {
     },
-    "StructureDefinition-dmi-devicerequest.html" : "DMIDeviceRequest"
+    "StructureDefinition-dmi-devicerequest.html" : "DMI DeviceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -517,10 +517,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.115"],
     "uses" : {
     },
-    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMISupplyRequestEnteteReponse",
-    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMISupplyRequestEnteteCommande",
-    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMISupplyRequestEnteteDemande",
-    "StructureDefinition-dmi-devicerequest.html" : "DMIDeviceRequest"
+    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMI SupplyRequest Entete Commande",
+    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMI SupplyRequest Entete Reponse",
+    "StructureDefinition-dmi-devicerequest.html" : "DMI DeviceRequest",
+    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMI SupplyRequest Entete Demande"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-status",
@@ -534,7 +534,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.111"],
     "uses" : {
     },
-    "StructureDefinition-dmi-devicerequest.html" : "DMIDeviceRequest"
+    "StructureDefinition-dmi-devicerequest.html" : "DMI DeviceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
@@ -548,9 +548,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.622"],
     "uses" : {
     },
-    "StructureDefinition-dmi-bundle-transmission-traces.html" : "DMIBundleTransmissionTraces",
-    "StructureDefinition-dmi-bundledelivery.html" : "DMIBundleDelivery",
-    "StructureDefinition-dmi-bundle-request.html" : "DMIBundleRequest"
+    "StructureDefinition-dmi-bundle-request.html" : "DMI Bundle Request",
+    "StructureDefinition-dmi-bundledelivery.html" : "DMI Bundle Delivery",
+    "StructureDefinition-dmi-bundle-transmission-traces.html" : "DMI Bundle Transmission Traces"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -568,10 +568,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.47"],
     "uses" : {
     },
-    "StructureDefinition-dmi-organization-ej.html" : "DMIOrganizationEJ",
-    "StructureDefinition-dmi-patient.html" : "DMIPatient",
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner",
-    "StructureDefinition-dmi-organization-interne.html" : "DMIOrganizationInterne"
+    "StructureDefinition-dmi-organization-interne.html" : "DMI Organization Interne",
+    "StructureDefinition-dmi-organization-ej.html" : "DMI Organization EJ",
+    "StructureDefinition-dmi-patient.html" : "DMI Patient",
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/supply-item",
@@ -585,9 +585,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.699"],
     "uses" : {
     },
-    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMISupplyRequestEnteteReponse",
-    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMISupplyRequestEnteteCommande",
-    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMISupplyRequestEnteteDemande"
+    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMI SupplyRequest Entete Commande",
+    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMI SupplyRequest Entete Reponse",
+    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMI SupplyRequest Entete Demande"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/supplydelivery-status",
@@ -601,12 +601,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.700"],
     "uses" : {
     },
-    "StructureDefinition-dmi-supplydelivery-reception-unitaire.html" : "DMISupplyDeliveryReceptionUnitaire",
-    "StructureDefinition-dmi-supplydelivery-ligne.html" : "DMISupplyDeliveryLigne",
-    "StructureDefinition-dmi-supplydelivery-enteter-reception.html" : "DMISupplyDeliveryEnteteReception",
-    "StructureDefinition-dmi-supplydelivery-entete-delivrance.html" : "DMISupplyDeliveryEnteteDelivrance",
-    "StructureDefinition-dmi-supplydelivery-entete-livraison.html" : "DMISupplyDeliveryEnteteLivraison",
-    "StructureDefinition-dmi-supplydelivery-transport.html" : "DMISupplyDeliveryTransport"
+    "StructureDefinition-dmi-supplydelivery-ligne.html" : "DMI SupplyDelivery Ligne",
+    "StructureDefinition-dmi-supplydelivery-transport.html" : "DMI SupplyDelivery Transport",
+    "StructureDefinition-dmi-supplydelivery-enteter-reception.html" : "DMI SupplyDelivery Entete Reception",
+    "StructureDefinition-dmi-supplydelivery-entete-livraison.html" : "DMI SupplyDelivery Entete Livraison",
+    "StructureDefinition-dmi-supplydelivery-entete-delivrance.html" : "DMI SupplyDelivery Entete Delivrance",
+    "StructureDefinition-dmi-supplydelivery-reception-unitaire.html" : "DMI SupplyDelivery Reception Unitaire"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/supplydelivery-type",
@@ -620,12 +620,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.702"],
     "uses" : {
     },
-    "StructureDefinition-dmi-supplydelivery-reception-unitaire.html" : "DMISupplyDeliveryReceptionUnitaire",
-    "StructureDefinition-dmi-supplydelivery-ligne.html" : "DMISupplyDeliveryLigne",
-    "StructureDefinition-dmi-supplydelivery-enteter-reception.html" : "DMISupplyDeliveryEnteteReception",
-    "StructureDefinition-dmi-supplydelivery-entete-delivrance.html" : "DMISupplyDeliveryEnteteDelivrance",
-    "StructureDefinition-dmi-supplydelivery-entete-livraison.html" : "DMISupplyDeliveryEnteteLivraison",
-    "StructureDefinition-dmi-supplydelivery-transport.html" : "DMISupplyDeliveryTransport"
+    "StructureDefinition-dmi-supplydelivery-ligne.html" : "DMI SupplyDelivery Ligne",
+    "StructureDefinition-dmi-supplydelivery-transport.html" : "DMI SupplyDelivery Transport",
+    "StructureDefinition-dmi-supplydelivery-enteter-reception.html" : "DMI SupplyDelivery Entete Reception",
+    "StructureDefinition-dmi-supplydelivery-entete-livraison.html" : "DMI SupplyDelivery Entete Livraison",
+    "StructureDefinition-dmi-supplydelivery-entete-delivrance.html" : "DMI SupplyDelivery Entete Delivrance",
+    "StructureDefinition-dmi-supplydelivery-reception-unitaire.html" : "DMI SupplyDelivery Reception Unitaire"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/supplyrequest-kind",
@@ -639,9 +639,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.693"],
     "uses" : {
     },
-    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMISupplyRequestEnteteReponse",
-    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMISupplyRequestEnteteCommande",
-    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMISupplyRequestEnteteDemande"
+    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMI SupplyRequest Entete Commande",
+    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMI SupplyRequest Entete Reponse",
+    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMI SupplyRequest Entete Demande"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/supplyrequest-reason",
@@ -655,9 +655,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.697"],
     "uses" : {
     },
-    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMISupplyRequestEnteteReponse",
-    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMISupplyRequestEnteteCommande",
-    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMISupplyRequestEnteteDemande"
+    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMI SupplyRequest Entete Commande",
+    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMI SupplyRequest Entete Reponse",
+    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMI SupplyRequest Entete Demande"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/supplyrequest-status",
@@ -671,9 +671,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.695"],
     "uses" : {
     },
-    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMISupplyRequestEnteteReponse",
-    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMISupplyRequestEnteteCommande",
-    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMISupplyRequestEnteteDemande"
+    "StructureDefinition-dmi-supplyrequest-entete-commande.html" : "DMI SupplyRequest Entete Commande",
+    "StructureDefinition-dmi-supplyrequest-entetereponse.html" : "DMI SupplyRequest Entete Reponse",
+    "StructureDefinition-dmi-supplyrequest-entete-demande.html" : "DMI SupplyRequest Entete Demande"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/udi-entry-type",
@@ -687,7 +687,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.211"],
     "uses" : {
     },
-    "StructureDefinition-dmi-device.html" : "DMIDevice"
+    "StructureDefinition-dmi-device.html" : "DMI Device"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
@@ -699,7 +699,7 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
     "uses" : {
     },
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner"
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   },
   {
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status",
@@ -713,7 +713,7 @@
     "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status"],
     "uses" : {
     },
-    "StructureDefinition-dmi-patient.html" : "DMIPatient"
+    "StructureDefinition-dmi-patient.html" : "DMI Patient"
   },
   {
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-identifier-type",
@@ -725,7 +725,7 @@
     "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"],
     "uses" : {
     },
-    "StructureDefinition-dmi-organization-interne.html" : "DMIOrganizationInterne"
+    "StructureDefinition-dmi-organization-interne.html" : "DMI Organization Interne"
   },
   {
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type",
@@ -737,8 +737,8 @@
     "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"],
     "uses" : {
     },
-    "StructureDefinition-dmi-organization-ej.html" : "DMIOrganizationEJ",
-    "StructureDefinition-dmi-organization-interne.html" : "DMIOrganizationInterne"
+    "StructureDefinition-dmi-organization-interne.html" : "DMI Organization Interne",
+    "StructureDefinition-dmi-organization-ej.html" : "DMI Organization EJ"
   },
   {
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
@@ -752,7 +752,7 @@
     "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"],
     "uses" : {
     },
-    "StructureDefinition-dmi-patient.html" : "DMIPatient"
+    "StructureDefinition-dmi-patient.html" : "DMI Patient"
   },
   {
     "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type",
@@ -764,7 +764,7 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"],
     "uses" : {
     },
-    "StructureDefinition-dmi-patient.html" : "DMIPatient"
+    "StructureDefinition-dmi-patient.html" : "DMI Patient"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS",
@@ -778,8 +778,8 @@
     "sources" : ["1.2.250.1.213.1.6.1.169"],
     "uses" : {
     },
-    "StructureDefinition-dmi-organization-ej.html" : "DMIOrganizationEJ",
-    "StructureDefinition-dmi-organization-interne.html" : "DMIOrganizationInterne"
+    "StructureDefinition-dmi-organization-interne.html" : "DMI Organization Interne",
+    "StructureDefinition-dmi-organization-ej.html" : "DMI Organization EJ"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J105-EnsembleDiplome-RASS/FHIR/JDV-J105-EnsembleDiplome-RASS",
@@ -806,7 +806,7 @@
     "sources" : ["1.2.250.1.213.1.6.1.173"],
     "uses" : {
     },
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner"
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS",
@@ -823,7 +823,7 @@
     "sources" : ["1.2.250.1.213.1.6.1.174"],
     "uses" : {
     },
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner"
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS",
@@ -845,7 +845,7 @@
     "sources" : ["1.2.250.1.213.1.6.1.175"],
     "uses" : {
     },
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner"
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS",
@@ -859,8 +859,8 @@
     "sources" : ["1.2.250.1.213.1.6.1.215"],
     "uses" : {
     },
-    "StructureDefinition-dmi-organization-ej.html" : "DMIOrganizationEJ",
-    "StructureDefinition-dmi-organization-interne.html" : "DMIOrganizationInterne"
+    "StructureDefinition-dmi-organization-interne.html" : "DMI Organization Interne",
+    "StructureDefinition-dmi-organization-ej.html" : "DMI Organization EJ"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J81-TypeDiplome-RASS/FHIR/JDV-J81-TypeDiplome-RASS",
@@ -874,7 +874,7 @@
     "sources" : ["1.2.250.1.213.1.6.1.149"],
     "uses" : {
     },
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner"
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J89-CategorieProfessionnelle-RASS/FHIR/JDV-J89-CategorieProfessionnelle-RASS",
@@ -888,7 +888,7 @@
     "sources" : ["1.2.250.1.213.1.6.1.157"],
     "uses" : {
     },
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner"
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J91-TypeSavoirFaire-RASS/FHIR/JDV-J91-TypeSavoirFaire-RASS",
@@ -902,6 +902,6 @@
     "sources" : ["1.2.250.1.213.1.6.1.159"],
     "uses" : {
     },
-    "StructureDefinition-dmi-practitioner.html" : "DMIPractitioner"
+    "StructureDefinition-dmi-practitioner.html" : "DMI Practitioner"
   }]
 }

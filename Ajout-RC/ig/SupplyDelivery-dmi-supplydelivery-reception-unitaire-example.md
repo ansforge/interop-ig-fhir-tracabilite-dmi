@@ -6,9 +6,9 @@
 
 ## Example SupplyDelivery: dmi-supplydelivery-reception-unitaire-example
 
-Profil: [DMISupplyDeliveryReceptionUnitaire](StructureDefinition-dmi-supplydelivery-reception-unitaire.md)
+Profil: [DMI SupplyDelivery Reception Unitaire](StructureDefinition-dmi-supplydelivery-reception-unitaire.md)
 
-**DMIReferenceOrganisationInterne**: [Organization DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
+**DMI Reference Organisation Interne**: [Organization DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
 
 **identifier**: identifier-dmi-supplydelivery-reception-unitaire-example
 

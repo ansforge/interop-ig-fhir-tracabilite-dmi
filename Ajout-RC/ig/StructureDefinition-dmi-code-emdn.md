@@ -1,15 +1,17 @@
-# DMICodeEMDN - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Code EMDN - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMICodeEMDN**
+* **DMI Code EMDN**
 
-## Extension: DMICodeEMDN 
+## Extension: DMI Code EMDN 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMICodeEMDN |
+| Draft as of 2026-02-25 | *Computable Name*:DMICodeEMDN |
+
+Extension créée dans ce volet pour représenter le code EMDN.
 
 **Context of Use**
 
@@ -17,7 +19,7 @@
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [DMIDeviceDefinition](StructureDefinition-dmi-devicedefinition.md)
+* Utilise ce/t/te Extension: [DMI DeviceDefinition](StructureDefinition-dmi-devicedefinition.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-code-emdn)
 
@@ -42,8 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-code-emdn.csv), 
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn",
   "version" : "3.0.0",
   "name" : "DMICodeEMDN",
+  "title" : "DMI Code EMDN",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -52,6 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-code-emdn.csv), 
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Extension créée dans ce volet pour représenter le code EMDN.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -76,6 +80,12 @@ Other representations of profile: [CSV](StructureDefinition-dmi-code-emdn.csv), 
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "DMI Code EMDN",
+      "definition" : "Extension créée dans ce volet pour représenter le code EMDN."
+    },
+    {
       "id" : "Extension.extension",
       "path" : "Extension.extension",
       "max" : "0"

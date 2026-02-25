@@ -6,7 +6,7 @@
 
 ## Example SupplyRequest: dmi-supplyrequest-entete-reponse-example
 
-Profil: [DMISupplyRequestEnteteReponse](StructureDefinition-dmi-supplyrequest-entetereponse.md)
+Profil: [DMI SupplyRequest Entete Reponse](StructureDefinition-dmi-supplyrequest-entetereponse.md)
 
 **identifier**: identifier-dmi-supplyrequest-entete-reponse-example
 

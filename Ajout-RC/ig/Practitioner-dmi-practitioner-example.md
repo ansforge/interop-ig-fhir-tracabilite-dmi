@@ -6,7 +6,7 @@
 
 ## Example Practitioner: dmi-practitioner-example
 
-Profil: [DMIPractitioner](StructureDefinition-dmi-practitioner.md)
+Profil: [DMI Practitioner](StructureDefinition-dmi-practitioner.md)
 
 **identifier**: `http://www.acme.com/identifiers`/identifier-dmi-practitioner-example
 

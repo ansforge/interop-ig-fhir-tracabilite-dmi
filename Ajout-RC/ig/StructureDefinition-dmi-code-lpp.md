@@ -1,15 +1,17 @@
-# DMICodeLPP - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Code LPP - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMICodeLPP**
+* **DMI Code LPP**
 
-## Extension: DMICodeLPP 
+## Extension: DMI Code LPP 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-lpp | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMICodeLPP |
+| Draft as of 2026-02-25 | *Computable Name*:DMICodeLPP |
+
+Extension créée dans ce volet pour représenter le code LPP.
 
 **Context of Use**
 
@@ -42,8 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-code-lpp.csv), [
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-lpp",
   "version" : "3.0.0",
   "name" : "DMICodeLPP",
+  "title" : "DMI Code LPP",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -52,6 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-code-lpp.csv), [
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Extension créée dans ce volet pour représenter le code LPP.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -77,7 +81,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-code-lpp.csv), [
   "differential" : {
     "element" : [{
       "id" : "Extension",
-      "path" : "Extension"
+      "path" : "Extension",
+      "short" : "DMI Code LPP",
+      "definition" : "Extension créée dans ce volet pour représenter le code LPP."
     },
     {
       "id" : "Extension.extension",

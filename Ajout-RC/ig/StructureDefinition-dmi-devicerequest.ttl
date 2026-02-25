@@ -19,8 +19,9 @@
   ] ; # 
   fhir:version [ fhir:v "3.0.0"] ; # 
   fhir:name [ fhir:v "DMIDeviceRequest"] ; # 
+  fhir:title [ fhir:v "DMI DeviceRequest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-24T16:11:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-25T08:15:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -29,6 +30,7 @@
        fhir:value [ fhir:v "https://esante.gouv.fr" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "Profil créé dans le cadre de ce volet permettant d’effectuer une commande, demande, et la réponse à une demande de dispositif médical."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [

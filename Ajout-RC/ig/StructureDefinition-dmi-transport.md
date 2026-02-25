@@ -1,15 +1,17 @@
-# DMITransport - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Transport - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMITransport**
+* **DMI Transport**
 
-## Extension: DMITransport 
+## Extension: DMI Transport 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-transport | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMITransport |
+| Draft as of 2026-02-25 | *Computable Name*:DMITransport |
+
+Extension créée dans ce volet pour représenter le transport.
 
 **Context of Use**
 
@@ -17,7 +19,7 @@
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [DMISupplyDeliveryTransport](StructureDefinition-dmi-supplydelivery-transport.md)
+* Utilise ce/t/te Extension: [DMI SupplyDelivery Transport](StructureDefinition-dmi-supplydelivery-transport.md)
 * Exemples pour ce/t/te Extension: [Bundle/dmi-bundle-delivery-example](Bundle-dmi-bundle-delivery-example.md) and [SupplyDelivery/dmi-supplydelivery-transport-example](SupplyDelivery-dmi-supplydelivery-transport-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-transport)
@@ -43,8 +45,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-transport.csv), 
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-transport",
   "version" : "3.0.0",
   "name" : "DMITransport",
+  "title" : "DMI Transport",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -53,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-transport.csv), 
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Extension créée dans ce volet pour représenter le transport.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -77,6 +81,12 @@ Other representations of profile: [CSV](StructureDefinition-dmi-transport.csv), 
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "DMI Transport",
+      "definition" : "Extension créée dans ce volet pour représenter le transport."
+    },
+    {
       "id" : "Extension.extension",
       "path" : "Extension.extension",
       "min" : 3

@@ -1,20 +1,23 @@
-# DMIOrganizationInterne - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Organization Interne - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMIOrganizationInterne**
+* **DMI Organization Interne**
 
-## Resource Profile: DMIOrganizationInterne 
+## Resource Profile: DMI Organization Interne 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIOrganizationInterne |
+| Draft as of 2026-02-25 | *Computable Name*:DMIOrganizationInterne |
+
+ 
+Profil créé dans le cadre de ce volet permettant de représenter l’organisation interne (Service utilisateur). 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil: [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md)
-* Référence ce Profil: [DMIReferenceOrganisationInterne](StructureDefinition-dmi-reference-organisation-interne.md)
+* Utilise ce/t/te Profil: [DMI Bundle Transmission Traces](StructureDefinition-dmi-bundle-transmission-traces.md)
+* Référence ce Profil: [DMI Reference Organisation Interne](StructureDefinition-dmi-reference-organisation-interne.md)
 * Exemples pour ce/t/te Profil: [DMI Organization Interne Example Name](Organization-dmi-organization-interne-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-organization-interne)
@@ -38,8 +41,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-organization-int
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne",
   "version" : "3.0.0",
   "name" : "DMIOrganizationInterne",
+  "title" : "DMI Organization Interne",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -48,6 +52,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-organization-int
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil créé dans le cadre de ce volet permettant de représenter l’organisation interne (Service utilisateur).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIDiscriminator |
+| Draft as of 2026-02-25 | *Computable Name*:DMIDiscriminator |
 
  
 CodeSystem définissant les codes discriminants. 
@@ -35,7 +35,7 @@ CodeSystem définissant les codes discriminants.
   "title" : "DMI Discriminator",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,19 +1,22 @@
-# DMISupplyDeliveryEnteteReception - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI SupplyDelivery Entete Reception - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DMISupplyDeliveryEnteteReception**
+* **DMI SupplyDelivery Entete Reception**
 
-## Resource Profile: DMISupplyDeliveryEnteteReception 
+## Resource Profile: DMI SupplyDelivery Entete Reception 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-enteter-reception | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMISupplyDeliveryEnteteReception |
+| Draft as of 2026-02-25 | *Computable Name*:DMISupplyDeliveryEnteteReception |
+
+ 
+Profil créé dans le cadre de ce volet pour représenter l’entête des informations de réception des dispositifs médicaux. 
 
 **Utilisations:**
 
-* Utilise ce/t/te Profil: [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md) and [DMIBundleDelivery](StructureDefinition-dmi-bundledelivery.md)
+* Utilise ce/t/te Profil: [DMI Bundle Transmission Traces](StructureDefinition-dmi-bundle-transmission-traces.md) and [DMI Bundle Delivery](StructureDefinition-dmi-bundledelivery.md)
 * Exemples pour ce/t/te Profil: [SupplyDelivery/dmi-supplydelivery-entete-reception-example](SupplyDelivery-dmi-supplydelivery-entete-reception-example.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-supplydelivery-enteter-reception)
@@ -37,8 +40,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplydelivery-e
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-enteter-reception",
   "version" : "3.0.0",
   "name" : "DMISupplyDeliveryEnteteReception",
+  "title" : "DMI SupplyDelivery Entete Reception",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -47,6 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplydelivery-e
       "value" : "https://esante.gouv.fr"
     }]
   }],
+  "description" : "Profil créé dans le cadre de ce volet pour représenter l’entête des informations de réception des dispositifs médicaux.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

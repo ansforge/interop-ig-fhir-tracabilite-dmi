@@ -1,17 +1,17 @@
-# Extension DMI referenceFabricant - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# Extension DMI Reference Fabricant - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Extension DMI referenceFabricant**
+* **Extension DMI Reference Fabricant**
 
-## Extension: Extension DMI referenceFabricant 
+## Extension: Extension DMI Reference Fabricant 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-fabricant | *Version*:3.0.0 |
-| Draft as of 2026-02-24 | *Computable Name*:DMIReferenceFabricant |
+| Draft as of 2026-02-25 | *Computable Name*:DMIReferenceFabricant |
 
-Extension pour référencer l'organisation fabricant du DMI
+Extension créée dans ce volet pour référencer l'organisation fabricant du DMI.
 
 **Context of Use**
 
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-dmi-reference-fabric
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-fabricant",
   "version" : "3.0.0",
   "name" : "DMIReferenceFabricant",
-  "title" : "Extension DMI referenceFabricant",
+  "title" : "Extension DMI Reference Fabricant",
   "status" : "draft",
-  "date" : "2026-02-24T16:11:45+00:00",
+  "date" : "2026-02-25T08:15:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-reference-fabric
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Extension pour référencer l'organisation fabricant du DMI",
+  "description" : "Extension créée dans ce volet pour référencer l'organisation fabricant du DMI.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -82,8 +82,8 @@ Other representations of profile: [CSV](StructureDefinition-dmi-reference-fabric
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Extension DMI referenceFabricant",
-      "definition" : "Extension pour référencer l'organisation fabricant du DMI"
+      "short" : "Extension DMI Reference Fabricant",
+      "definition" : "Extension créée dans ce volet pour référencer l'organisation fabricant du DMI."
     },
     {
       "id" : "Extension.extension",

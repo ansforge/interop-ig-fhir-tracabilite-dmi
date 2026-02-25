@@ -6,9 +6,9 @@
 
 ## Example DeviceDefinition: dmi-devicedefinition-example
 
-Profil: [DMIDeviceDefinition](StructureDefinition-dmi-devicedefinition.md)
+Profil: [DMI DeviceDefinition](StructureDefinition-dmi-devicedefinition.md)
 
-**DMIClasseRisque**: ClasseRisqueExample
+**DMI Classe Risque**: ClasseRisqueExample
 
 ### Properties
 
