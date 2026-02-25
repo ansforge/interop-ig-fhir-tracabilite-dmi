@@ -356,7 +356,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
  Table des cas d'utilisation 
 
-#### "Cas d'utilisation "Transporter DMI au sein de l'établissement""
+#### Cas d'utilisation "Transporter DMI au sein de l'établissement"
 
  Cas d'utilisation "Transporter DMI au sein de l'établissement" 
 
@@ -406,7 +406,7 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
  Table des cas d'utilisation 
 
-#### "Cas d'utilisation "Rechercher des traces""
+#### Cas d'utilisation "Rechercher des traces"
 
  Cas d'utilisation "Rechercher des traces" 
 
@@ -416,13 +416,13 @@ L’objectif de cette étape est de définir les processus métier collaboratifs
 
  Table des cas d'utilisation 
 
-#### "Cas d'utilisation Consulter une trace"
+#### Cas d'utilisation "Consulter une trace"
 
  Cas d'utilisation Consulter une trace 
 
 | | |
 | :--- | :--- |
-| ConsulterTrace | Ce processus réutilise le processus générique ""Consulter une trace"" de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces). |
+| ConsulterTrace | Ce processus réutilise le processus générique "Consulter une trace" de l’étude métier du volet « Traçabilité d’événements » (cf. CI-SIS Etude métier – Généricisation : Spécifications fonctionnelles des échanges Gestion des traces). |
 
  Table des cas d'utilisation 
 
@@ -1822,7 +1822,7 @@ Adresse géopostale. Un emplacement auquel une personne ou une organisation peut
 | complementPointGeographique : [0..1] Texte | Un complément de l'adresse au point géographique constitué des éléments suivants:* Bâtiment: les bâtiments sont désignés par leur type (bâtiment, immeuble, tour,...), éventuellement des mentions d'orientation (est, ouest,...), une dénomination littérale ou une numérotation; exemple: Tour DELTA* Accès au bâtiment: l'accès au bâtiment est identifié par un numéro, une lettre, une combinaison alphanumérique. Ces éléments identifient une entrée, porte, etc.; exemple: Entrée A* Ensemble immobilier: ensemble d'habitations reliées à la voie publique par un ou plusieurs points d'accès (résidence, zoneindustrielle,...); exemple: Résidence des Fleurs. |
 | numeroVoie : [0..1] Texte | Un numéro dans la voie; dans les cas de numérotation sans extension, il est composé de 0 à 4 caractères numériques au maximum. |
 | extension : [0..1] Texte | Extension ou indice de répétition: mention bis, ter, quater, ...ou une lettre A, B, C, D, etc. lorsque ce caractère complète une numérotation de voirie. |
-| typeVoie : [0..1][Code <<TRE_R35-TypeVoie>>](http://mos.asipsante.fr/NOS/PDF/TRE_R35-TypeVoie.tabs.pdf) | Type de voie : rue, avenue, boulevard, etc.Attribut obsolète et non conforme à la norme postale en vigueur qui définit cette information comme faisant partie de l'attribut libelleVoie. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore.Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R35-TypeVoie. |
+| typeVoie : [0..1][Code <<TRE_R35-TypeVoie>>](https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R207-TypeOrganisationInterne.html) | Type de voie : rue, avenue, boulevard, etc.Attribut obsolète et non conforme à la norme postale en vigueur qui définit cette information comme faisant partie de l'attribut libelleVoie. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore.Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R35-TypeVoie. |
 | libelleVoie : [0..1] Texte | Appellation qui est donnée à la voie par les municipalités. Ce libellé figure in extenso ou en abrégé sur les plaques aux différents angles de chaque rue.Synonyme: nom de la voie |
 | lieuDit : [0..1] Texte | Lieu qui porte un nom rappelant une particularité topographique ou historique et qui, souvent, constitue un écart d'une commune (un écart est une petite agglomération distincte du centre de la commune à laquelle elle appartient). |
 | mentionDistribution : [0..1] Texte | Mentions particulières de distribution. Il s'agit de mentions identifiant le service proposé par La Poste au destinataire. Ces mentions sont formées d'un libellé et d'un numéro de séparation (exemple : BP 42534). |
@@ -1984,9 +1984,9 @@ Cas particulier de l'entité géographique : plusieurs lieux peuvent être assoc
 | description : [0..1] Texte | Description textuelle du lieu, indiquant comment l'atteindre. |
 | typeLieu : [0..1] Code | Information catégorisant physiquement le lieu, par exemple un bâtiment, un véhicule, une chambre, une route, etc. |
 | fonctionLieu : [0..1] Code | Fonction à laquelle le lieu est dédié. Par exemple, le lieu d'implantation d'une entité géographique ou la salle de prélèvements dans un service. |
-| statut : [0..1][Code <<TRE_R203-StatutLieu>>](http://mos.asipsante.fr/NOS/PDF/TRE_R203-StatutLieu.tabs.pdf) | Le statut indique si le lieu est opérationnel, fermé temporairement ou fermé définitivement.Quelques exemples de codes :** FD : Fermé définitivement;** FT : Fermé temporairement;** OP : Opérationnel.Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R203-StatutLieu. |
-| accessibiliteLieu : [0..1][Code <<TRE_R202-AccessibiliteLieu>>](http://mos.asipsante.fr/NOS/PDF/TRE_R202-AccessibiliteLieu.tabs.pdf) | Information précisant dans quelle mesure le lieu est conforme aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public (ex : accessible, non accessible, sur demande, non communiqué, etc.).Rappel sur l'obligation d'accessibilité des établissements recevant du public (ERP) aux personnes handicapées (service-public.fr):Les établissements ouverts au public (magasin, bureau, hôtel, etc.) doivent être accessibles aux personnes handicapées. Les établissements recevant du public (ERP) non conformes aux règles d'accessibilité sont tenus de s'inscrire à un Agenda d'Accessibilité Programmée (Ad'AP) qui permet d'engager les travaux nécessaires dans un délai limité.Règles d'accessibilité:Les normes d'accessibilité doivent permettre aux personnes handicapées de circuler avec la plus grande autonomie possible, d'accéder aux locaux et équipements, d'utiliser les équipements et les prestations, de se repérer et de communiquer.L'accès concerne tout type de handicap (moteur, visuel, auditif, mental...).Les conditions d'accès doivent être les mêmes que pour les personnes valides ou, à défaut, présenter une qualité d'usage équivalente.L'accessibilité de ces établissements et de leurs abords concerne :** les cheminements extérieurs,** le stationnement des véhicules,** les conditions d'accès et d'accueil dans les bâtiments,** les circulations horizontales et verticales à l'intérieur des bâtiments,** les locaux intérieurs et les sanitaires ouverts au public,** les portes, les sas intérieurs et les sorties,** les revêtements des sols et des parois,** les équipements et mobiliers intérieurs et extérieurs susceptibles d'y être installés (dispositifs d'éclairage et d'information des usagers, par exemple).Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R202-AccessibiliteLieu. |
-| communeCOG : [0..1][Code <<TRE_R13-CommuneOM>>](http://mos.asipsante.fr/NOS/PDF/TRE_R13-CommuneOM.tabs.pdf) | Code officiel géographique (COG) de la commune dans laquelle le lieu est situé. |
+| statut : [0..1][Code <<TRE_R203-StatutLieu>>](https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R203-StatutLieu.html) | Le statut indique si le lieu est opérationnel, fermé temporairement ou fermé définitivement.Quelques exemples de codes :** FD : Fermé définitivement;** FT : Fermé temporairement;** OP : Opérationnel.Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R203-StatutLieu. |
+| accessibiliteLieu : [0..1][Code <<TRE_R202-AccessibiliteLieu>>](https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R202-AccessibiliteLieu.html) | Information précisant dans quelle mesure le lieu est conforme aux dispositions règlementaires relatives à l’accessibilité des établissements recevant du public (ex : accessible, non accessible, sur demande, non communiqué, etc.).Rappel sur l'obligation d'accessibilité des établissements recevant du public (ERP) aux personnes handicapées (service-public.fr):Les établissements ouverts au public (magasin, bureau, hôtel, etc.) doivent être accessibles aux personnes handicapées. Les établissements recevant du public (ERP) non conformes aux règles d'accessibilité sont tenus de s'inscrire à un Agenda d'Accessibilité Programmée (Ad'AP) qui permet d'engager les travaux nécessaires dans un délai limité.Règles d'accessibilité:Les normes d'accessibilité doivent permettre aux personnes handicapées de circuler avec la plus grande autonomie possible, d'accéder aux locaux et équipements, d'utiliser les équipements et les prestations, de se repérer et de communiquer.L'accès concerne tout type de handicap (moteur, visuel, auditif, mental...).Les conditions d'accès doivent être les mêmes que pour les personnes valides ou, à défaut, présenter une qualité d'usage équivalente.L'accessibilité de ces établissements et de leurs abords concerne :** les cheminements extérieurs,** le stationnement des véhicules,** les conditions d'accès et d'accueil dans les bâtiments,** les circulations horizontales et verticales à l'intérieur des bâtiments,** les locaux intérieurs et les sanitaires ouverts au public,** les portes, les sas intérieurs et les sorties,** les revêtements des sols et des parois,** les équipements et mobiliers intérieurs et extérieurs susceptibles d'y être installés (dispositifs d'éclairage et d'information des usagers, par exemple).Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R202-AccessibiliteLieu. |
+| communeCOG : [0..1][Code <<TRE_R13-CommuneOM>>](https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R13-CommuneOM.html) | Code officiel géographique (COG) de la commune dans laquelle le lieu est situé. |
 | adresse : [0..1][Adresse](#classe-adresse) | Adresse géopostale du lieu. |
 | coordonneeGeographique : [0..1] CoordonneeGeographique | Coordonnées géographiques du lieu. |
 | telecommunication : [0..*][Telecommunication](#classe-telecommunication) | Adresse(s) de télécommunication du lieu (numéro de téléphone, adresse email, URL, etc.). |
@@ -2019,8 +2019,8 @@ Une organisation interne (OI) peut être composée d’autres organisations inte
 | :--- | :--- |
 | identifiantOI : [1..1] Identifiant | Identifiant de l'organisation interne, unique et persistant au niveau national. |
 | nom : [0..1] Texte | Nom de l'organisation interne. |
-| typeOI : [1..1][Code <<TRE_R207-TypeOrganisationInterne>>](http://mos.asipsante.fr/NOS/PDF/TRE_R207-TypeOrganisationInterne.tabs.pdf) | Type d'organisation interne (pôle, structure interne ou service, unité fonctionnelle, unité élémentaire, etc.). |
-| categorieOrganisation : [0..1][Code <<TRE_R244-CategorieOrganisation>>](http://mos.asipsante.fr/NOS/PDF/TRE_R244-CategorieOrganisation.tabs.pdf) | La catégorie d'organisation caractérise la nature particulière d’une organisation liée à un agrément, un personnel spécialement formé, un environnement particulièrement adapté à l'état de santé des patients, etc.Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R244-CategorieOrganisation. |
+| typeOI : [1..1][Code <<TRE_R207-TypeOrganisationInterne>>](https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R207-TypeOrganisationInterne.html) | Type d'organisation interne (pôle, structure interne ou service, unité fonctionnelle, unité élémentaire, etc.). |
+| categorieOrganisation : [0..1][Code <<TRE_R244-CategorieOrganisation>>](https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R244-CategorieOrganisation.html) | La catégorie d'organisation caractérise la nature particulière d’une organisation liée à un agrément, un personnel spécialement formé, un environnement particulièrement adapté à l'état de santé des patients, etc.Les valeurs de ce code sont répertoriées dans la nomenclature TRE_R244-CategorieOrganisation. |
 | lieu : [0..*] Lieu | Lieu(x) rattaché(s) à l'organisation interne. |
 | metadonnee : [1..1] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
