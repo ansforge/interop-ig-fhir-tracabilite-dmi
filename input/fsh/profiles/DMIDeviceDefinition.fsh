@@ -10,7 +10,6 @@ Description: "Profil créé dans le cadre de ce volet pour représenter un modè
 * extension ^min = 0
 * extension contains
     DMIClasseRisque named ClasseRisque 0..1 and
-    DMICodeEMDN named CodeEMDN 0..1 and
     DMIReferenceDistributeur named ReferenceDistributeur 0..1
 * physicalCharacteristics.extension ^slicing.discriminator.type = #value
 * physicalCharacteristics.extension ^slicing.discriminator.path = "url"

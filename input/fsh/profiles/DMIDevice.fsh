@@ -11,6 +11,6 @@ Description: "Profil créé dans le cadre de ce volet pour représenter une inst
 * extension ^min = 0
 * extension contains
     DMIIPIdLogiciel named IPIdLogiciel 0..1 and
-    DMIMarquageCE named MarquageCE 0..1
-    DMICodeEMDN named CodeEMDN 0..1 and
+    DMIMarquageCE named MarquageCE 0..1 and
+    DMICodeEMDN named CodeEMDN 0..1 
 * definition only Reference(DMIDeviceDefinition)
