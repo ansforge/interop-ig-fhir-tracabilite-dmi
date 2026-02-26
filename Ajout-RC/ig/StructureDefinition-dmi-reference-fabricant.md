@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-fabricant | *Version*:3.0.0 |
-| Draft as of 2026-02-25 | *Computable Name*:DMIReferenceFabricant |
+| Draft as of 2026-02-26 | *Computable Name*:DMIReferenceFabricant |
 
 Extension créée dans ce volet pour référencer l'organisation fabricant du DMI.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-reference-fabric
   "name" : "DMIReferenceFabricant",
   "title" : "Extension DMI Reference Fabricant",
   "status" : "draft",
-  "date" : "2026-02-25T08:48:17+00:00",
+  "date" : "2026-02-26T17:10:09+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

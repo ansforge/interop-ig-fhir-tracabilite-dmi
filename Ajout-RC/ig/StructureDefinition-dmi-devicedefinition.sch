@@ -13,7 +13,6 @@
     <sch:title>f:DeviceDefinition</sch:title>
     <sch:rule context="f:DeviceDefinition">
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-classe-risque']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-classe-risque': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-distributeur']) &lt;= 1">extension with URL = 'https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-distributeur': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient | *Version*:3.0.0 |
-| Draft as of 2026-02-25 | *Computable Name*:DMIPatient |
+| Draft as of 2026-02-26 | *Computable Name*:DMIPatient |
 
  
 Profil créé dans le cadre de ce volet étendant le profil français « FrPatient » publié par Interop’Santé. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-patient.csv), [E
   "name" : "DMIPatient",
   "title" : "DMI Patient",
   "status" : "draft",
-  "date" : "2026-02-25T08:48:17+00:00",
+  "date" : "2026-02-26T17:10:09+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

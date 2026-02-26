@@ -50,7 +50,7 @@
       "url": "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-internal-diameter",
       "title": "DMI Internal Diameter",
       "types": [
-        "code"
+        "Quantity"
       ]
     },
     {
@@ -410,7 +410,7 @@
       "DeviceDefinition"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn": [
-      "DeviceDefinition"
+      "Device"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-facture": [
       "Invoice"

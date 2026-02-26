@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-distributeur | *Version*:3.0.0 |
-| Draft as of 2026-02-25 | *Computable Name*:DMIIdentifiantLocalDistributeur |
+| Draft as of 2026-02-26 | *Computable Name*:DMIIdentifiantLocalDistributeur |
 
 Extension créée dans ce volet pour représenter l'identifiant local distributeur.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-identifiant-loca
   "name" : "DMIIdentifiantLocalDistributeur",
   "title" : "DMI Identifiant Local Distributeur",
   "status" : "draft",
-  "date" : "2026-02-25T08:48:17+00:00",
+  "date" : "2026-02-26T17:10:09+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
