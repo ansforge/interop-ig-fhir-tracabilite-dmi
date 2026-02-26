@@ -5,4 +5,4 @@ Description: "Extension créée dans ce volet pour représenter le diamètre int
 
 * ^context.type = #element
 * ^context.expression = "DeviceDefinition.physicalCharacteristics"
-* value[x] only code
+* value[x] only Quantity
