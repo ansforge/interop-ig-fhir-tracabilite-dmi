@@ -3,7 +3,7 @@ TDMI : Validation Results
 
 err = 3, warn = 53, info = 90
 IG Publisher Version: 2.1.1
-Generated Thu Feb 26 17:12:36 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tdmi#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi)
+Generated Fri Feb 27 10:07:52 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tdmi#3.0.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi)
  Build Errors : 0 / 25 / 0
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/AuditEvent-tde-auditevent-example : 0 / 0 / 1
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/Bundle-dmi-bundle-delivery-example : 0 / 2 / 8
@@ -170,18 +170,18 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 INFORMATION: StructureDefinition/dmi-device: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 == fsh-generated/resources/StructureDefinition-dmi-devicedefinition.json ==
 INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[71].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[78].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[85].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[92].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[99].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[106].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[10].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[72].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[79].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[86].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[93].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[100].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[107].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[17].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0
 == fsh-generated/resources/StructureDefinition-dmi-devicerequest.json ==
 INFORMATION: StructureDefinition/dmi-devicerequest: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 == fsh-generated/resources/StructureDefinition-dmi-facture.json ==

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn | *Version*:3.0.0 |
-| Draft as of 2026-02-26 | *Computable Name*:DMICodeEMDN |
+| Draft as of 2026-02-27 | *Computable Name*:DMICodeEMDN |
 
 Extension créée dans ce volet pour représenter le code EMDN.
 
@@ -19,7 +19,7 @@ Extension créée dans ce volet pour représenter le code EMDN.
 
 **Utilisations:**
 
-* Utilise ce/t/te Extension: [DMI Device](StructureDefinition-dmi-device.md)
+* Utilise ce/t/te Extension: [DMI Device](StructureDefinition-dmi-device.md) and [DMI DeviceDefinition](StructureDefinition-dmi-devicedefinition.md)
 * Paramètres de recherche utilisant ce Extension: [DMI_Device_definitionType](SearchParameter-dmi-device-definition-type.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.tdmi|current/StructureDefinition/dmi-code-emdn)
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-code-emdn.csv), 
   "name" : "DMICodeEMDN",
   "title" : "DMI Code EMDN",
   "status" : "draft",
-  "date" : "2026-02-26T17:10:09+00:00",
+  "date" : "2026-02-27T10:05:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

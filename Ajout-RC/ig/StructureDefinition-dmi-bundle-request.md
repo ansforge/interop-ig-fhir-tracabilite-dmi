@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-request | *Version*:3.0.0 |
-| Draft as of 2026-02-26 | *Computable Name*:DMIBundleRequest |
+| Draft as of 2026-02-27 | *Computable Name*:DMIBundleRequest |
 
  
 Profil créé dans le cadre de ce volet pour transmettre au serveur l’ensemble des ressources permettant une commande, une demande et la réponse à la demande d’un DMI. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-bundle-request.c
   "name" : "DMIBundleRequest",
   "title" : "DMI Bundle Request",
   "status" : "draft",
-  "date" : "2026-02-26T17:10:09+00:00",
+  "date" : "2026-02-27T10:05:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

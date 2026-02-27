@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande | *Version*:3.0.0 |
-| Draft as of 2026-02-26 | *Computable Name*:DMISupplyRequestEnteteDemande |
+| Draft as of 2026-02-27 | *Computable Name*:DMISupplyRequestEnteteDemande |
 
  
 Profil créé dans le cadre de ce volet pour transporter les informations générales d’une demande de dispositif médical. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplyrequest-en
   "name" : "DMISupplyRequestEnteteDemande",
   "title" : "DMI SupplyRequest Entete Demande",
   "status" : "draft",
-  "date" : "2026-02-26T17:10:09+00:00",
+  "date" : "2026-02-27T10:05:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

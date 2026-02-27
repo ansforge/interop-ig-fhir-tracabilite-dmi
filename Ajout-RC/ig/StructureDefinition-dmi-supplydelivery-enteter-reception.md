@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-enteter-reception | *Version*:3.0.0 |
-| Draft as of 2026-02-26 | *Computable Name*:DMISupplyDeliveryEnteteReception |
+| Draft as of 2026-02-27 | *Computable Name*:DMISupplyDeliveryEnteteReception |
 
  
 Profil créé dans le cadre de ce volet pour représenter l’entête des informations de réception des dispositifs médicaux. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplydelivery-e
   "name" : "DMISupplyDeliveryEnteteReception",
   "title" : "DMI SupplyDelivery Entete Reception",
   "status" : "draft",
-  "date" : "2026-02-26T17:10:09+00:00",
+  "date" : "2026-02-27T10:05:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

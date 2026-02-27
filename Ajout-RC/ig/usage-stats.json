@@ -410,7 +410,8 @@
       "DeviceDefinition"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn": [
-      "Device"
+      "Device",
+      "DeviceDefinition"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-facture": [
       "Invoice"
