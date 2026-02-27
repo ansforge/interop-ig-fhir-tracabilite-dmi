@@ -1,0 +1,29 @@
+@startuml
+left to right direction
+skinparam componentStyle rectangle
+skinparam shadowing false
+
+' Style des composants
+skinparam component {
+    BackgroundColor #F8F8F8
+    BorderColor #4A6FA5
+    FontColor #333333
+}
+
+component "Event Reporter" as ER
+component "Event Repository" as Repo
+component "Event Consumer" as EC
+
+' Reporter -> Repository
+ER --> Repo : ITI-20\n(syslog)\n(FHIR feed)
+ER -[#D2691E,thickness=2]-> Repo : <color:#D2691E><b>ITI-124</b></color>
+
+' Repository -> Consumer
+Repo --> EC : ITI-20\n(syslog)\n(FHIR feed)
+Repo -[#D2691E,thickness=2]-> EC : <color:#D2691E><b>ITI-124</b></color>
+
+' Consumer -> Repository (FHIR / Syslog)
+EC -[#1E90FF,thickness=2]-> Repo : ITI-81\n(FHIR)
+EC -[#1E90FF,thickness=2]-> Repo : ITI-82\n(syslog)
+
+@enduml
