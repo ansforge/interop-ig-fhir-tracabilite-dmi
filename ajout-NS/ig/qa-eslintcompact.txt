@@ -14,10 +14,9 @@ Generic: line 0, col 0, Error - The image source 'assets/images/fra.svg' cannot 
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
-/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi.json: line 1, col 1062, Info - Reference to draft CodeSystem urn:iso:std:iso:3166:-2|2021 (BUSINESSRULE)
-/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi.json: line 1, col 1062, Error - Unknown code 'FR' in the CodeSystem 'urn:iso:std:iso:3166:-2' version '2021' (CODEINVALID)
+/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi.json: line 1, col 1062, Info - Reference to draft CodeSystem urn:iso:std:iso:3166|20210120 (BUSINESSRULE)
 /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi.json: line 1, col 15702, Error - ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1) (STRUCTURE)
 /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi.json: line 1, col 6625, Error - No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters' (INVALID)
 
-err = 3, warn = 3, info = 1
+err = 2, warn = 3, info = 1
 IG Publisher Version: 2.1.1
