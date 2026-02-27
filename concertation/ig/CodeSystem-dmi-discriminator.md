@@ -35,7 +35,7 @@ CodeSystem définissant les codes discriminants.
   "title" : "DMI Discriminator",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-27T10:40:06+00:00",
+  "date" : "2026-02-27T11:53:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -49,7 +49,7 @@ CodeSystem définissant les codes discriminants.
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France"
     }]
   }],
   "caseSensitive" : true,
