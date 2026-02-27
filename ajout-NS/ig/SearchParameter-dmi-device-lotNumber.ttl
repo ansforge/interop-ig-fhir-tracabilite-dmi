@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-lotNumber> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dmi-device-lotNumber"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ParamètreRecherche dmi-device-lotNumber</b></p><a name=\"dmi-device-lotNumber\"> </a><a name=\"hcdmi-device-lotNumber\"> </a><h2>DMI_Device_lotNumber</h2><p>Paramètre <code>lotNumber</code>:<code>string</code></p><div><p>Permet de faire une recherche sur le numéro de lot du DMI</p>\n</div><table class=\"grid\"><tr><td>Ressource</td><td><a href=\"http://hl7.org/fhir/R4/device.html\">Device</a></td></tr><tr><td>Expression</td><td><code>Device.lotNumber</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd : C'est au serveur de décider si le paramètre peut se répéter pour spécifier plusieurs valeurs qui doivent toutes être vraies</li><li>multipleOr : C'est au serveur de décider si le paramètre peut avoir plusieurs valeurs (séparées par des virgules) dont au moins une doit être vraie</li></ul></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-lotNumber"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-lotNumber>
+  ] ; # 
+  fhir:version [ fhir:v "3.0.0"] ; # 
+  fhir:name [ fhir:v "DMI_Device_lotNumber"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-02-27T10:36:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Permet de faire une recherche sur le numéro de lot du DMI"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:code [ fhir:v "lotNumber"] ; # 
+  fhir:base ( [ fhir:v "Device"] ) ; # 
+  fhir:type [ fhir:v "string"] ; # 
+  fhir:expression [ fhir:v "Device.lotNumber"] . # 
+
+# -------------------------------------------------------------------------------------
+

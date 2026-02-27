@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AuditEvent xmlns="http://hl7.org/fhir">
+  <id value="tde-auditevent-example"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/tde/StructureDefinition/tde-auditevent"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ÉvènementSécurité tde-auditevent-example</b></p><a name="tde-auditevent-example"> </a><a name="hctde-auditevent-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="https://interop.esante.gouv.fr/ig/fhir/tde/2.0.0-ballot/StructureDefinition-tde-auditevent.html">TdE AuditEvent</a></p></div><p><b>type</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110100">DICOM: 110100</a> (Application Activity)</p><p><b>recorded</b>: 2026-02-24 00:00:00+0000</p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td><td><b>Requestor</b></td></tr><tr><td style="display: none">*</td><td><a href="Organization-dmi-organization-interne-example.html">Organization DMI Organization Interne Example Name</a></td><td>true</td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Observer</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-dmi-practitioner-example.html">Practitioner : identifier = http://www.acme.com/identifiers#identifier-dmi-practitioner-example; telecom = dmi-practitioner-example@example.com</a></td></tr></table></div>
+  </text>
+  <type>
+    <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+    <code value="110100"/>
+    <display value="Application Activity"/>
+  </type>
+  <recorded value="2026-02-24T00:00:00Z"/>
+  <agent>
+    <who>
+      <reference value="Organization/dmi-organization-interne-example"/>
+    </who>
+    <requestor value="true"/>
+  </agent>
+  <source>
+    <observer>
+      <reference value="Practitioner/dmi-practitioner-example"/>
+    </observer>
+  </source>
+</AuditEvent>

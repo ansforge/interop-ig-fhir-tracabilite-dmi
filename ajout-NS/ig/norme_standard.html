@@ -68,7 +68,7 @@
 
 
 
-  <span title="null">FR</span>
+  <img src="assets/images/fra.svg" alt="France flag" title="France" height="16"/>
 
 
             </span>
@@ -113,16 +113,10 @@
         <a href="specifications_techniques_construction_flux.html">Construction des flux</a>
       </li>
       <li>
-        <a href="specifications_techniques_flux23_recherche_traces.html">RechercheTraces</a>
+        <a href="specifications_techniques_flux23_flux24.html">Flux 23 - Flux 24</a>
       </li>
       <li>
-        <a href="specifications_techniques_flux24_reponse_recherche_traces.html">RéponseRechercheTraces</a>
-      </li>
-      <li>
-        <a href="specifications_techniques_flux25_consulter_trace.html">ConsulterTrace</a>
-      </li>
-      <li>
-        <a href="specifications_techniques_flux26_reponse_consulter_trace.html">ReponseConsulterTrace</a>
+        <a href="specifications_techniques_flux25_flux26.html">Flux 25- Flux 26</a>
       </li>
     </ul>
   </li>
@@ -133,6 +127,9 @@
     <ul class="dropdown-menu">
       <li>
         <a href="norme_standard.html">Normes et Standards</a>
+      </li>
+      <li>
+        <a href="annexe_mise_en_correspondance.html">Mise en correspondance</a>
       </li>
       <li>
         <a href="glossaire.html">Glossaire</a>
@@ -180,7 +177,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="glossaire.html">next&gt;</a>
+          | <a href="annexe_mise_en_correspondance.html">next&gt;</a>
 
           </span>
 
@@ -283,13 +280,13 @@ ressources FHIR suivantes sont notamment analysées :</p>
   </li>
 </ul>
 
-<p><a name="l500">​</a>L’analyse de ces standards ci-dessus n’est pas détaillée dans ce document car elle est disponible dans le document <a href="N&amp;S TDE">«&nbsp;Etude Normes &amp; Standards généricisation&nbsp;: gestion des traces&nbsp;»</a>. Pour rappel, cette étude Normes &amp; Standards propose de se baser sur une version «&nbsp;générique&nbsp;» de la gestion des traces du profil ATNA.</p>
+<p><a name="l493">​</a>L’analyse de ces standards ci-dessus n’est pas détaillée dans ce document car elle est disponible dans le document <a href="N&amp;S TDE">«&nbsp;Etude Normes &amp; Standards généricisation&nbsp;: gestion des traces&nbsp;»</a>. Pour rappel, cette étude Normes &amp; Standards propose de se baser sur une version «&nbsp;générique&nbsp;» de la gestion des traces du profil ATNA.</p>
 
 <div style="text-align: center;">
   <svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 684 216" zoomAndPan="magnify" data-diagram-type="DESCRIPTION" preserveAspectRatio="none" width="684px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:684px;height:216px;background:#FFFFFF;" version="1.1" height="216px"><defs></defs><g>  <!-- entity ER --><g data-entity="ER" id="entity_ER" data-uid="ent0002" class="entity" data-source-line="12"><rect rx="2.5" ry="2.5" width="125.9639" x="7" y="95.5659" style="stroke:#4A6FA5;stroke-width:0.5;" fill="#F8F8F8" height="36.2969"></rect><text lengthAdjust="spacing" x="17" font-size="14" textLength="105.9639" y="118.561" font-family="sans-serif" fill="#333333">Event Reporter</text></g>  <!-- entity Repo --><g data-entity="Repo" id="entity_Repo" data-uid="ent0003" class="entity" data-source-line="13"><rect rx="2.5" ry="2.5" width="139.6289" x="268" y="95.5659" style="stroke:#4A6FA5;stroke-width:0.5;" fill="#F8F8F8" height="36.2969"></rect><text lengthAdjust="spacing" x="278" font-size="14" textLength="119.6289" y="118.561" font-family="sans-serif" fill="#333333">Event Repository</text></g>  <!-- entity EC --><g data-entity="EC" id="entity_EC" data-uid="ent0004" class="entity" data-source-line="14"><rect rx="2.5" ry="2.5" width="135.9443" x="543" y="95.5659" style="stroke:#4A6FA5;stroke-width:0.5;" fill="#F8F8F8" height="36.2969"></rect><text lengthAdjust="spacing" x="553" font-size="14" textLength="115.9443" y="118.561" font-family="sans-serif" fill="#333333">Event Consumer</text></g>  <!-- link ER to Repo --><g data-entity-2="Repo" data-entity-1="ER" id="link_ER_Repo" data-uid="lnk5" class="link" data-source-line="17"><path d="M133.03,113.5659 C173.4,113.5659 220.12,113.5659 261.84,113.5659" style="stroke:#181818;stroke-width:1;" id="ER-to-Repo" fill="none"></path><polygon style="stroke:#181818;stroke-width:1;" fill="#181818" points="267.84,113.5659,258.84,109.5659,262.84,113.5659,258.84,117.5659,267.84,113.5659"></polygon><text lengthAdjust="spacing" x="182.1892" font-size="13" textLength="36.8418" y="79.6328" font-family="sans-serif" fill="#000000">ITI-20</text><text lengthAdjust="spacing" x="175.01" font-size="13" textLength="51.2002" y="94.7656" font-family="sans-serif" fill="#000000">(syslog)</text><text lengthAdjust="spacing" x="164" font-size="13" textLength="73.2202" y="109.8984" font-family="sans-serif" fill="#000000">(FHIR feed)</text></g>  <!-- link ER to Repo --><g data-entity-2="Repo" data-entity-1="ER" id="link_ER_Repo" data-uid="lnk6" class="link" data-source-line="18"><path d="M128.43,131.6759 C139.78,134.5359 151.68,137.0559 163,138.5659 C196.04,142.9759 204.92,142.6759 238,138.5659 C250.23,137.0459 257.2696,135.8804 269.5496,132.9904" style="stroke:#D2691E;stroke-width:2;" id="ER-to-Repo-1" fill="none"></path><polygon style="stroke:#D2691E;stroke-width:2;" fill="#D2691E" points="275.39,131.6159,265.713,129.784,270.523,132.7613,267.5457,137.5713,275.39,131.6159"></polygon><text font-weight="bold" lengthAdjust="spacing" x="175" font-size="13" textLength="51.0732" y="134.6328" font-family="sans-serif" fill="#D2691E">ITI-124</text></g>  <!-- link Repo to EC --><g data-entity-2="EC" data-entity-1="Repo" id="link_Repo_EC" data-uid="lnk7" class="link" data-source-line="21"><path d="M363.98,95.3259 C383.16,82.5159 410.87,66.4759 438,59.5659 C470.3,51.3259 480.74,51.1859 513,59.5659 C539.68,66.4859 561.865,79.1425 580.625,91.9525" style="stroke:#181818;stroke-width:1;" id="Repo-to-EC" fill="none"></path><polygon style="stroke:#181818;stroke-width:1;" fill="#181818" points="585.58,95.3359,580.4031,86.9574,581.4508,92.5164,575.8918,93.5641,585.58,95.3359"></polygon><text lengthAdjust="spacing" x="457.1892" font-size="13" textLength="36.8418" y="19.6328" font-family="sans-serif" fill="#000000">ITI-20</text><text lengthAdjust="spacing" x="450.01" font-size="13" textLength="51.2002" y="34.7656" font-family="sans-serif" fill="#000000">(syslog)</text><text lengthAdjust="spacing" x="439" font-size="13" textLength="73.2202" y="49.8984" font-family="sans-serif" fill="#000000">(FHIR feed)</text></g>  <!-- link Repo to EC --><g data-entity-2="EC" data-entity-1="Repo" id="link_Repo_EC" data-uid="lnk8" class="link" data-source-line="22"><path d="M408.09,113.5659 C449.49,113.5659 495.87,113.5659 536.91,113.5659" style="stroke:#D2691E;stroke-width:2;" id="Repo-to-EC-1" fill="none"></path><polygon style="stroke:#D2691E;stroke-width:2;" fill="#D2691E" points="542.91,113.5659,533.91,109.5659,537.91,113.5659,533.91,117.5659,542.91,113.5659"></polygon><text font-weight="bold" lengthAdjust="spacing" x="450" font-size="13" textLength="51.0732" y="109.6328" font-family="sans-serif" fill="#D2691E">ITI-124</text></g>  <!-- link EC to Repo --><g data-entity-2="Repo" data-entity-1="EC" id="link_EC_Repo" data-uid="lnk9" class="link" data-source-line="25"><path d="M575.56,131.6259 C557.47,140.1059 534.62,149.2759 513,153.5659 C480.3,160.0359 470.72,159.9259 438,153.5659 C415.98,149.2859 398.1116,142.6218 379.6416,134.1318" style="stroke:#1E90FF;stroke-width:2;" id="EC-to-Repo" fill="none"></path><polygon style="stroke:#1E90FF;stroke-width:2;" fill="#1E90FF" points="374.19,131.6259,380.6968,139.0192,378.733,133.7142,384.0381,131.7504,374.19,131.6259"></polygon><text lengthAdjust="spacing" x="457.2107" font-size="13" textLength="36.8418" y="134.6328" font-family="sans-serif" fill="#000000">ITI-81</text><text lengthAdjust="spacing" x="455.5" font-size="13" textLength="40.2632" y="149.7656" font-family="sans-serif" fill="#000000">(FHIR)</text></g>  <!-- link EC to Repo --><g data-entity-2="Repo" data-entity-1="EC" id="link_EC_Repo" data-uid="lnk10" class="link" data-source-line="26"><path d="M595.93,131.8859 C578.88,152.3959 548.07,184.4859 513,197.5659 C481.77,209.2059 469.29,209.0459 438,197.5659 C402.45,184.5159 374.8084,156.9854 357.3384,136.4554" style="stroke:#1E90FF;stroke-width:2;" id="EC-to-Repo-1" fill="none"></path><polygon style="stroke:#1E90FF;stroke-width:2;" fill="#1E90FF" points="353.45,131.8859,356.2363,141.3324,356.6903,135.6938,362.3289,136.1479,353.45,131.8859"></polygon><text lengthAdjust="spacing" x="457.1792" font-size="13" textLength="36.8418" y="178.6328" font-family="sans-serif" fill="#000000">ITI-82</text><text lengthAdjust="spacing" x="450" font-size="13" textLength="51.2002" y="193.7656" font-family="sans-serif" fill="#000000">(syslog)</text></g></g></svg>
 </div>
 
-<p><a name="l576">​</a>En complément de cette <a href="N&amp;S TDE">étude</a>, le présent document comprend l’analyse des standards suivants, spécifiques au métier de la gestion des dispositifs médicaux&nbsp;:</p>
+<p><a name="l569">​</a>En complément de cette <a href="N&amp;S TDE">étude</a>, le présent document comprend l’analyse des standards suivants, spécifiques au métier de la gestion des dispositifs médicaux&nbsp;:</p>
 
 <ul>
   <li>
@@ -618,7 +615,7 @@ notamment lors de la gestion du cycle de vie du device. Il n’est donc pas adap
 
 <h3 id="comparaison-des-standards-presentes">Comparaison des standards presentes</h3>
 
-<p><a name="l1128">​</a>Les nouveaux profils analysés dans ce document n’apportant d’éléments permettant de les choisir pour répondre au besoin d’interopérabilité de «&nbsp;traçabilité des dispositifs médicaux implantables en établissement de santé&nbsp;», il n’est pas nécessaire de compléter la «&nbsp;comparaison des standards&nbsp;» par rapport à celle présente dans le chapitre 4 du document
+<p><a name="l1121">​</a>Les nouveaux profils analysés dans ce document n’apportant d’éléments permettant de les choisir pour répondre au besoin d’interopérabilité de «&nbsp;traçabilité des dispositifs médicaux implantables en établissement de santé&nbsp;», il n’est pas nécessaire de compléter la «&nbsp;comparaison des standards&nbsp;» par rapport à celle présente dans le chapitre 4 du document
  <a href="N&amp;S TDE">«&nbsp;Etude Normes et Standards – généricisation&nbsp;: gestion des traces&nbsp;»</a>.</p>
 
 <h3 id="synthese-et-conclusion">Synthese et conclusion</h3>
@@ -724,7 +721,7 @@ notamment lors de la gestion du cycle de vie du device. Il n’est donc pas adap
               </td>
               <td style="text-align:right">&nbsp;
 
-                <a href="glossaire.html">next&gt;</a>
+                <a href="annexe_mise_en_correspondance.html">next&gt;</a>
 
               </td>
             </tr>
@@ -734,7 +731,7 @@ notamment lors de la gestion du cycle de vie du device. Il n’est donc pas adap
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 27, 2026 08:38+0000">2026-02-27</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 27, 2026 10:36+0000">2026-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

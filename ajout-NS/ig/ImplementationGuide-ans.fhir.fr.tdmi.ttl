@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "TDMI"] ; # 
   fhir:title [ fhir:v "Traçabilité des Dispositifs Médicaux Implantables"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-27T08:38:46+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-27T10:36:10+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -37,7 +37,7 @@
          fhir:l <urn:iso:std:iso:3166>
        ] ;
        fhir:code [ fhir:v "FR" ] ;
-       fhir:display [ fhir:v "FRANCE" ]
+       fhir:display [ fhir:v "France" ]
      ] )
   ] ) ; # 
   fhir:packageId [ fhir:v "ans.fhir.fr.tdmi"] ; # 
@@ -79,6 +79,22 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
      fhir:version [ fhir:v "5.2.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_fr_core" ] ;
+     fhir:uri [
+       fhir:v "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"^^xsd:anyURI ;
+       fhir:l <https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.fr.core" ] ;
+     fhir:version [ fhir:v "2.1.0" ]
+  ] [
+     fhir:id [ fhir:v "ans_fhir_fr_tde" ] ;
+     fhir:uri [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tde/ImplementationGuide/ans.fhir.fr.tde"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tde/ImplementationGuide/ans.fhir.fr.tde>
+     ] ;
+     fhir:packageId [ fhir:v "ans.fhir.fr.tde" ] ;
+     fhir:version [ fhir:v "2.0.0-ballot" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -1397,6 +1413,1329 @@
          fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
        ]
      ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-bundledelivery" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Bundle Delivery" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour transmettre au serveur l’ensemble des ressources permettant la réception, la délivrance et la livraison d’un DMI." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-request> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-bundle-request" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Bundle Request" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour transmettre au serveur l’ensemble des ressources permettant une commande, une demande et la réponse à la demande d’un DMI." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-transmission-traces> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-bundle-transmission-traces" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Bundle Transmission Traces" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour transmettre l’ensemble des ressources au serveur." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-classe-risque> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-classe-risque" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Classe Risque" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter la classe de risque." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-code-emdn" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Code EMDN" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter le code EMDN." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-lpp> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-code-lpp" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Code LPP" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter le code LPP." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-device> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-device" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Device" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour représenter une instance physique d’un dispositif médical." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicedefinition> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-devicedefinition" ]
+       ] ;
+       fhir:name [ fhir:v "DMI DeviceDefinition" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour représenter un modèle de dispositif médical." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-devicerequest" ]
+       ] ;
+       fhir:name [ fhir:v "DMI DeviceRequest" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet permettant d’effectuer une commande, demande, et la réponse à une demande de dispositif médical." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator> ;
+         fhir:reference [ fhir:v "CodeSystem/dmi-discriminator" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Discriminator" ] ;
+       fhir:description [ fhir:v "CodeSystem définissant les codes discriminants." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-facture> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-facture" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Facture" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter une facture." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-distributeur> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-identifiant-local-distributeur" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Identifiant Local Distributeur" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter l'identifiant local distributeur." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-fabricant> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-identifiant-local-fabricant" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Identifiant Local Fabricant" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter l'identifiant local fabricant." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-internal-diameter> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-internal-diameter" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Internal Diameter" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter le diamètre interne." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-invoice" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Invoice" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour représenter la facturation de dispositifs médicaux." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-ip-id-logiciel> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-ip-id-logiciel" ]
+       ] ;
+       fhir:name [ fhir:v "DMI IP Id logiciel" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter l'IP Id logiciel." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-marquage-ce> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-marquage-ce" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Marquage CE" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter le marquage CE." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-nom-distributeur> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-nom-distributeur" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Nom Distributeur" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter le nom distributeur." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-ej> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-organization-ej" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Organization EJ" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet étendant le profil « FrOrganization ». Ce profil est utilisé pour représenter le fabricant et les distributeurs des DM." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-organization-interne" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Organization Interne" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet permettant de représenter l’organisation interne (Service utilisateur)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-organization-location" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Organization Location" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter le lieu de l'organisation." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-patient" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Patient" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet étendant le profil français « FrPatient » publié par Interop’Santé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Practitioner" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet étendant le profil « FrPractitionner» publié par Interop’Santé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Procedure" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour représenter l’intervention clinique ou chirurgicale implantant un dispositif médical." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-distributeur> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-reference-distributeur" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Reference Distributeur" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter la référence distributeur." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-organisation-interne> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-reference-organisation-interne" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Reference Organisation Interne" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour référencer l'organisation fabricant du DMI." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-delivrance> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-supplydelivery-entete-delivrance" ]
+       ] ;
+       fhir:name [ fhir:v "DMI SupplyDelivery Entete Delivrance" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour représenter l’entête des informations de la délivrance de dispositifs médicaux." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-livraison> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-supplydelivery-entete-livraison" ]
+       ] ;
+       fhir:name [ fhir:v "DMI SupplyDelivery Entete Livraison" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour représenter l’entête des informations de livraison de dispositifs médicaux." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-enteter-reception> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-supplydelivery-enteter-reception" ]
+       ] ;
+       fhir:name [ fhir:v "DMI SupplyDelivery Entete Reception" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour représenter l’entête des informations de réception des dispositifs médicaux." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-ligne> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-supplydelivery-ligne" ]
+       ] ;
+       fhir:name [ fhir:v "DMI SupplyDelivery Ligne" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour représenter une ligne de livraison, de délivrance." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-reception-unitaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-supplydelivery-reception-unitaire" ]
+       ] ;
+       fhir:name [ fhir:v "DMI SupplyDelivery Reception Unitaire" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour représenter les informations de réception d’un dispositif médical." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-supplydelivery-transport" ]
+       ] ;
+       fhir:name [ fhir:v "DMI SupplyDelivery Transport" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour représenter les informations de transports des dispositifs médicaux." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-commande> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-supplyrequest-entete-commande" ]
+       ] ;
+       fhir:name [ fhir:v "DMI SupplyRequest Entete Commande" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet permet transporter les informations générales d’une commande de dispositif médical." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-supplyrequest-entete-demande" ]
+       ] ;
+       fhir:name [ fhir:v "DMI SupplyRequest Entete Demande" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour transporter les informations générales d’une demande de dispositif médical." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entetereponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-supplyrequest-entetereponse" ]
+       ] ;
+       fhir:name [ fhir:v "DMI SupplyRequest Entete Reponse" ] ;
+       fhir:description [ fhir:v "Profil créé dans le cadre de ce volet pour transporter les informations générales de la réponse à une demande de création ou de mise à jour de DMI." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-transport> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-transport" ]
+       ] ;
+       fhir:name [ fhir:v "DMI Transport" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour représenter le transport." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Bundle/dmi-bundle-delivery-example> ;
+         fhir:reference [ fhir:v "Bundle/dmi-bundle-delivery-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-bundle-delivery-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Bundle/dmi-bundle-request-example> ;
+         fhir:reference [ fhir:v "Bundle/dmi-bundle-request-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-bundle-request-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-request"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-request>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Bundle/dmi-bundle-transmission-traces-example> ;
+         fhir:reference [ fhir:v "Bundle/dmi-bundle-transmission-traces-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-bundle-transmission-traces-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-transmission-traces"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-transmission-traces>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Device/dmi-device-example> ;
+         fhir:reference [ fhir:v "Device/dmi-device-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-device-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-device"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-device>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "DeviceDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/DeviceDefinition/dmi-devicedefinition-example> ;
+         fhir:reference [ fhir:v "DeviceDefinition/dmi-devicedefinition-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-devicedefinition-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicedefinition"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicedefinition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "DeviceRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/DeviceRequest/dmi-devicerequest-example> ;
+         fhir:reference [ fhir:v "DeviceRequest/dmi-devicerequest-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-devicerequest-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Invoice"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Invoice/dmi-invoice-example> ;
+         fhir:reference [ fhir:v "Invoice/dmi-invoice-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-invoice-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Organization/dmi-organization-ej-example> ;
+         fhir:reference [ fhir:v "Organization/dmi-organization-ej-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-organization-ej-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-ej"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-ej>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Organization/dmi-organization-interne-example> ;
+         fhir:reference [ fhir:v "Organization/dmi-organization-interne-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-organization-interne-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Patient/dmi-patient-example> ;
+         fhir:reference [ fhir:v "Patient/dmi-patient-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-patient-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Practitioner/dmi-practitioner-example> ;
+         fhir:reference [ fhir:v "Practitioner/dmi-practitioner-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-practitioner-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-practitioner"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Procedure/dmi-procedure-example> ;
+         fhir:reference [ fhir:v "Procedure/dmi-procedure-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-procedure-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-procedure"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SupplyDelivery"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyDelivery/dmi-supplydelivery-entete-delivrance-example> ;
+         fhir:reference [ fhir:v "SupplyDelivery/dmi-supplydelivery-entete-delivrance-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-supplydelivery-entete-delivrance-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-delivrance"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-delivrance>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SupplyDelivery"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyDelivery/dmi-supplydelivery-entete-livraison-example> ;
+         fhir:reference [ fhir:v "SupplyDelivery/dmi-supplydelivery-entete-livraison-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-supplydelivery-entete-livraison-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-livraison"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-livraison>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SupplyDelivery"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyDelivery/dmi-supplydelivery-entete-reception-example> ;
+         fhir:reference [ fhir:v "SupplyDelivery/dmi-supplydelivery-entete-reception-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-supplydelivery-entete-reception-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-enteter-reception"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-enteter-reception>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SupplyDelivery"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyDelivery/dmi-supplydelivery-ligne-example> ;
+         fhir:reference [ fhir:v "SupplyDelivery/dmi-supplydelivery-ligne-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-supplydelivery-ligne-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-ligne"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-ligne>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SupplyDelivery"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyDelivery/dmi-supplydelivery-reception-unitaire-example> ;
+         fhir:reference [ fhir:v "SupplyDelivery/dmi-supplydelivery-reception-unitaire-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-supplydelivery-reception-unitaire-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-reception-unitaire"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-reception-unitaire>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SupplyDelivery"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyDelivery/dmi-supplydelivery-transport-example> ;
+         fhir:reference [ fhir:v "SupplyDelivery/dmi-supplydelivery-transport-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-supplydelivery-transport-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SupplyRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyRequest/dmi-supplyrequest-entete-commande-example> ;
+         fhir:reference [ fhir:v "SupplyRequest/dmi-supplyrequest-entete-commande-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-supplyrequest-entete-commande-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-commande"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-commande>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SupplyRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyRequest/dmi-supplyrequest-entete-demande-example> ;
+         fhir:reference [ fhir:v "SupplyRequest/dmi-supplyrequest-entete-demande-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-supplyrequest-entete-demande-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SupplyRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyRequest/dmi-supplyrequest-entete-reponse-example> ;
+         fhir:reference [ fhir:v "SupplyRequest/dmi-supplyrequest-entete-reponse-example" ]
+       ] ;
+       fhir:name [ fhir:v "dmi-supplyrequest-entete-reponse-example" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entetereponse"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entetereponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-fabricant> ;
+         fhir:reference [ fhir:v "StructureDefinition/dmi-reference-fabricant" ]
+       ] ;
+       fhir:name [ fhir:v "Extension DMI Reference Fabricant" ] ;
+       fhir:description [ fhir:v "Extension créée dans ce volet pour référencer l'organisation fabricant du DMI." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-definition-type> ;
+         fhir:reference [ fhir:v "SearchParameter/dmi-device-definition-type" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameter DMI Device definitionType" ] ;
+       fhir:description [ fhir:v "Permet la recherche sur le Code EMDN" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-lotNumber> ;
+         fhir:reference [ fhir:v "SearchParameter/dmi-device-lotNumber" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameter DMI Device lotNumber" ] ;
+       fhir:description [ fhir:v "Permet de faire une recherche sur le numéro de lot du DMI" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber> ;
+         fhir:reference [ fhir:v "SearchParameter/dmi-device-serialNumber" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameter DMI Device serialNumber" ] ;
+       fhir:description [ fhir:v "Permet la recherche sur le numéro de série du DMI" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Patient-INS> ;
+         fhir:reference [ fhir:v "SearchParameter/DMI-Patient-INS" ]
+       ] ;
+       fhir:name [ fhir:v "SearchParameter DMI Patient INS" ] ;
+       fhir:description [ fhir:v "Permet la recherche sur l'ins du patient" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "AuditEvent"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/AuditEvent/tde-auditevent-example> ;
+         fhir:reference [ fhir:v "AuditEvent/tde-auditevent-example" ]
+       ] ;
+       fhir:name [ fhir:v "tde-auditevent-example" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] ) ;
      fhir:page [
        fhir:extension ( [
          fhir:url [
@@ -1500,16 +2839,16 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "specifications_techniques_flux23_recherche_traces.html"^^xsd:anyURI ;
-               fhir:l fhir:specifications_techniques_flux23_recherche_traces.html
+               fhir:v "specifications_techniques_flux23_flux24.html"^^xsd:anyURI ;
+               fhir:l fhir:specifications_techniques_flux23_flux24.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "specifications_techniques_flux23_recherche_traces.html"^^xsd:anyURI ;
-             fhir:l fhir:specifications_techniques_flux23_recherche_traces.html
+             fhir:v "specifications_techniques_flux23_flux24.html"^^xsd:anyURI ;
+             fhir:l fhir:specifications_techniques_flux23_flux24.html
            ] ;
-           fhir:title [ fhir:v "Flux 23 - RechercheTraces" ] ;
+           fhir:title [ fhir:v "Flux 23 - Flux 24" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -1519,54 +2858,16 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "specifications_techniques_flux24_reponse_recherche_traces.html"^^xsd:anyURI ;
-               fhir:l fhir:specifications_techniques_flux24_reponse_recherche_traces.html
+               fhir:v "specifications_techniques_flux25_flux26.html"^^xsd:anyURI ;
+               fhir:l fhir:specifications_techniques_flux25_flux26.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "specifications_techniques_flux24_reponse_recherche_traces.html"^^xsd:anyURI ;
-             fhir:l fhir:specifications_techniques_flux24_reponse_recherche_traces.html
+             fhir:v "specifications_techniques_flux25_flux26.html"^^xsd:anyURI ;
+             fhir:l fhir:specifications_techniques_flux25_flux26.html
            ] ;
-           fhir:title [ fhir:v "Flux 24 - RéponseRechercheTraces" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-             ] ;
-             fhir:value [
-               a fhir:Url ;
-               fhir:v "specifications_techniques_flux25_consulter_trace.html"^^xsd:anyURI ;
-               fhir:l fhir:specifications_techniques_flux25_consulter_trace.html
-             ]
-           ] ) ;
-           fhir:name [
-             a fhir:Url ;
-             fhir:v "specifications_techniques_flux25_consulter_trace.html"^^xsd:anyURI ;
-             fhir:l fhir:specifications_techniques_flux25_consulter_trace.html
-           ] ;
-           fhir:title [ fhir:v "Flux 25 - ConsulterTrace" ] ;
-           fhir:generation [ fhir:v "markdown" ]
-         ] [
-           fhir:extension ( [
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-             ] ;
-             fhir:value [
-               a fhir:Url ;
-               fhir:v "specifications_techniques_flux26_reponse_consulter_trace.html"^^xsd:anyURI ;
-               fhir:l fhir:specifications_techniques_flux26_reponse_consulter_trace.html
-             ]
-           ] ) ;
-           fhir:name [
-             a fhir:Url ;
-             fhir:v "specifications_techniques_flux26_reponse_consulter_trace.html"^^xsd:anyURI ;
-             fhir:l fhir:specifications_techniques_flux26_reponse_consulter_trace.html
-           ] ;
-           fhir:title [ fhir:v "Flux 26 - ReponseConsulterTrace" ] ;
+           fhir:title [ fhir:v "Flux 25 - Flux 26" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [
@@ -1606,6 +2907,25 @@
              fhir:l fhir:norme_standard.html
            ] ;
            fhir:title [ fhir:v "Normes et Standards" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "annexe_mise_en_correspondance.html"^^xsd:anyURI ;
+               fhir:l fhir:annexe_mise_en_correspondance.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "annexe_mise_en_correspondance.html"^^xsd:anyURI ;
+             fhir:l fhir:annexe_mise_en_correspondance.html
+           ] ;
+           fhir:title [ fhir:v "Mise en correspondance" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [

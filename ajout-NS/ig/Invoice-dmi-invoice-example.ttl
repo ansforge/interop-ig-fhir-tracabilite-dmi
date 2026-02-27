@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tdmi/Invoice/dmi-invoice-example> a fhir:Invoice ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dmi-invoice-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Invoice dmi-invoice-example</b></p><a name=\"dmi-invoice-example\"> </a><a name=\"hcdmi-invoice-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-invoice.html\">DMI Invoice</a></p></div><p><b>identifier</b>: reference Facture/identifier-refFacture-example, reference Commande/identifier-refCommande-example</p><p><b>status</b>: draft</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator>
+         ] ;
+         fhir:code [ fhir:v "refFacture" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "identifier-refFacture-example" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator>
+         ] ;
+         fhir:code [ fhir:v "refCommande" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "identifier-refCommande-example" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "draft"] . # 
+
+# -------------------------------------------------------------------------------------
+

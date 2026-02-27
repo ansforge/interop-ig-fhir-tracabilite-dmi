@@ -4,22 +4,99 @@
 
 * [Accueil](index.md)
 * [Construction des flux](specifications_techniques_construction_flux.md)
+* [Flux 23 - Flux 24](specifications_techniques_flux23_flux24.md)
 * [Volume 1 - Etude fonctionnelle](specifications_fonctionnelles.md)
+* [Flux 25 - Flux 26](specifications_techniques_flux25_flux26.md)
 * [Artifacts Summary](artifacts.md)
-* [Flux 24 - RéponseRechercheTraces](specifications_techniques_flux24_reponse_recherche_traces.md)
 * [Téléchargements et usages](downloads.md)
 * [Autres Ressources](autres_ressources.md)
 * [Volume 2 - Détail des transactions](specifications_techniques_introduction.md)
 * [Glossaire](glossaire.md)
 * [Normes et Standards](norme_standard.md)
-* [Flux 23 - RechercheTraces](specifications_techniques_flux23_recherche_traces.md)
-* [Flux 25 - ConsulterTrace](specifications_techniques_flux25_consulter_trace.md)
-* [Flux 26 - ReponseConsulterTrace](specifications_techniques_flux26_reponse_consulter_trace.md)
+* [Mise en correspondance](annexe_mise_en_correspondance.md)
 * [Historique des versions](change-log.md)
 * [Sécurité](securite.md)
 
 ## Resources
 
+### CodeSystems
+
+* [DMI Discriminator](CodeSystem-dmi-discriminator.md)
+
+### Resource Profiles
+
+* [DMI Bundle Request](StructureDefinition-dmi-bundle-request.md)
+* [DMI Bundle Transmission Traces](StructureDefinition-dmi-bundle-transmission-traces.md)
+* [DMI Bundle Delivery](StructureDefinition-dmi-bundledelivery.md)
+* [DMI Device](StructureDefinition-dmi-device.md)
+* [DMI DeviceDefinition](StructureDefinition-dmi-devicedefinition.md)
+* [DMI DeviceRequest](StructureDefinition-dmi-devicerequest.md)
+* [DMI Invoice](StructureDefinition-dmi-invoice.md)
+* [DMI Organization EJ](StructureDefinition-dmi-organization-ej.md)
+* [DMI Organization Interne](StructureDefinition-dmi-organization-interne.md)
+* [DMI Patient](StructureDefinition-dmi-patient.md)
+* [DMI Practitioner](StructureDefinition-dmi-practitioner.md)
+* [DMI Procedure](StructureDefinition-dmi-procedure.md)
+* [DMI SupplyDelivery Entete Delivrance](StructureDefinition-dmi-supplydelivery-entete-delivrance.md)
+* [DMI SupplyDelivery Entete Livraison](StructureDefinition-dmi-supplydelivery-entete-livraison.md)
+* [DMI SupplyDelivery Entete Reception](StructureDefinition-dmi-supplydelivery-enteter-reception.md)
+* [DMI SupplyDelivery Ligne](StructureDefinition-dmi-supplydelivery-ligne.md)
+* [DMI SupplyDelivery Reception Unitaire](StructureDefinition-dmi-supplydelivery-reception-unitaire.md)
+* [DMI SupplyDelivery Transport](StructureDefinition-dmi-supplydelivery-transport.md)
+* [DMI SupplyRequest Entete Commande](StructureDefinition-dmi-supplyrequest-entete-commande.md)
+* [DMI SupplyRequest Entete Demande](StructureDefinition-dmi-supplyrequest-entete-demande.md)
+* [DMI SupplyRequest Entete Reponse](StructureDefinition-dmi-supplyrequest-entetereponse.md)
+
+### Extensions
+
+* [DMI Classe Risque](StructureDefinition-dmi-classe-risque.md)
+* [DMI Code EMDN](StructureDefinition-dmi-code-emdn.md)
+* [DMI Code LPP](StructureDefinition-dmi-code-lpp.md)
+* [DMI Facture](StructureDefinition-dmi-facture.md)
+* [DMI Identifiant Local Distributeur](StructureDefinition-dmi-identifiant-local-distributeur.md)
+* [DMI Identifiant Local Fabricant](StructureDefinition-dmi-identifiant-local-fabricant.md)
+* [DMI Internal Diameter](StructureDefinition-dmi-internal-diameter.md)
+* [DMI IP Id logiciel](StructureDefinition-dmi-ip-id-logiciel.md)
+* [DMI Marquage CE](StructureDefinition-dmi-marquage-ce.md)
+* [DMI Nom Distributeur](StructureDefinition-dmi-nom-distributeur.md)
+* [DMI Organization Location](StructureDefinition-dmi-organization-location.md)
+* [DMI Reference Distributeur](StructureDefinition-dmi-reference-distributeur.md)
+* [Extension DMI Reference Fabricant](StructureDefinition-dmi-reference-fabricant.md)
+* [DMI Reference Organisation Interne](StructureDefinition-dmi-reference-organisation-interne.md)
+* [DMI Transport](StructureDefinition-dmi-transport.md)
+
 ### ImplementationGuides
 
 * [Traçabilité des Dispositifs Médicaux Implantables](index.md)
+
+### SearchParameters
+
+* [DMI_Patient_INS](SearchParameter-DMI-Patient-INS.md)
+* [DMI_Device_definitionType](SearchParameter-dmi-device-definition-type.md)
+* [DMI_Device_lotNumber](SearchParameter-dmi-device-lotNumber.md)
+* [DMI_Device_serialNumber](SearchParameter-dmi-device-serialNumber.md)
+
+### Examples
+
+* [tde-auditevent-example (AuditEvent)](AuditEvent-tde-auditevent-example.md)
+* [dmi-bundle-delivery-example (Bundle)](Bundle-dmi-bundle-delivery-example.md)
+* [dmi-bundle-request-example (Bundle)](Bundle-dmi-bundle-request-example.md)
+* [dmi-bundle-transmission-traces-example (Bundle)](Bundle-dmi-bundle-transmission-traces-example.md)
+* [dmi-device-example (Device)](Device-dmi-device-example.md)
+* [dmi-devicedefinition-example (DeviceDefinition)](DeviceDefinition-dmi-devicedefinition-example.md)
+* [dmi-devicerequest-example (DeviceRequest)](DeviceRequest-dmi-devicerequest-example.md)
+* [dmi-invoice-example (Invoice)](Invoice-dmi-invoice-example.md)
+* [DMI Organization EJ Example Name (Organization)](Organization-dmi-organization-ej-example.md)
+* [DMI Organization Interne Example Name (Organization)](Organization-dmi-organization-interne-example.md)
+* [dmi-patient-example (Patient)](Patient-dmi-patient-example.md)
+* [dmi-practitioner-example (Practitioner)](Practitioner-dmi-practitioner-example.md)
+* [dmi-procedure-example (Procedure)](Procedure-dmi-procedure-example.md)
+* [dmi-supplydelivery-entete-delivrance-example (SupplyDelivery)](SupplyDelivery-dmi-supplydelivery-entete-delivrance-example.md)
+* [dmi-supplydelivery-entete-livraison-example (SupplyDelivery)](SupplyDelivery-dmi-supplydelivery-entete-livraison-example.md)
+* [dmi-supplydelivery-entete-reception-example (SupplyDelivery)](SupplyDelivery-dmi-supplydelivery-entete-reception-example.md)
+* [dmi-supplydelivery-ligne-example (SupplyDelivery)](SupplyDelivery-dmi-supplydelivery-ligne-example.md)
+* [dmi-supplydelivery-reception-unitaire-example (SupplyDelivery)](SupplyDelivery-dmi-supplydelivery-reception-unitaire-example.md)
+* [dmi-supplydelivery-transport-example (SupplyDelivery)](SupplyDelivery-dmi-supplydelivery-transport-example.md)
+* [dmi-supplyrequest-entete-commande-example (SupplyRequest)](SupplyRequest-dmi-supplyrequest-entete-commande-example.md)
+* [dmi-supplyrequest-entete-demande-example (SupplyRequest)](SupplyRequest-dmi-supplyrequest-entete-demande-example.md)
+* [dmi-supplyrequest-entete-reponse-example (SupplyRequest)](SupplyRequest-dmi-supplyrequest-entete-reponse-example.md)

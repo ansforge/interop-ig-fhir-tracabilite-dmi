@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyRequest/dmi-supplyrequest-entete-reponse-example> a fhir:SupplyRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dmi-supplyrequest-entete-reponse-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entetereponse"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entetereponse>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Demande d'approvisionnement dmi-supplyrequest-entete-reponse-example</b></p><a name=\"dmi-supplyrequest-entete-reponse-example\"> </a><a name=\"hcdmi-supplyrequest-entete-reponse-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-supplyrequest-entetereponse.html\">DMI SupplyRequest Entete Reponse</a></p></div><p><b>identifier</b>: identifier-dmi-supplyrequest-entete-reponse-example</p><p><b>item</b>: <span title=\"Codes :{https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR SDM}\">Suppression de la demande de dispositif médicaux</span></p><p><b>quantity</b>: 2</p><p><b>requester</b>: <a href=\"Practitioner-dmi-practitioner-example.html\">Practitioner : identifier = http://www.acme.com/identifiers#identifier-dmi-practitioner-example; telecom = dmi-practitioner-example@example.com</a></p><p><b>deliverTo</b>: <a href=\"Organization-dmi-organization-interne-example.html\">Organization DMI Organization Interne Example Name</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "identifier-dmi-supplyrequest-entete-reponse-example" ]
+  ] ) ; # 
+  fhir:item [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR"^^xsd:anyURI ;
+         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR>
+       ] ;
+       fhir:code [ fhir:v "SDM" ] ;
+       fhir:display [ fhir:v "Suppression de la demande de dispositif médicaux" ]
+     ] )
+  ] ; # 
+  fhir:quantity [
+     fhir:value [ fhir:v "2"^^xsd:decimal ]
+  ] ; # 
+  fhir:requester [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Practitioner/dmi-practitioner-example> ;
+     fhir:reference [ fhir:v "Practitioner/dmi-practitioner-example" ]
+  ] ; # 
+  fhir:deliverTo [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Organization/dmi-organization-interne-example> ;
+     fhir:reference [ fhir:v "Organization/dmi-organization-interne-example" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

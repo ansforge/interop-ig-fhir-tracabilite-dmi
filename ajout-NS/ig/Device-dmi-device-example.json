@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Device",
+  "id" : "dmi-device-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-device"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Dispositif dmi-device-example</b></p><a name=\"dmi-device-example\"> </a><a name=\"hcdmi-device-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-device.html\">DMI Device</a></p></div><p><b>DMI IP Id logiciel</b>: IPIdLogiciel example</p><blockquote><p><b>DMI Marquage CE</b></p><ul><li>organismeNotifie: <a href=\"Organization-dmi-organization-interne-example.html\">Organization DMI Organization Interne Example Name</a></li><li>libelleAutorisation: MarquageCE libelleAutorisation example</li></ul></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-ip-id-logiciel",
+    "valueString" : "IPIdLogiciel example"
+  },
+  {
+    "extension" : [{
+      "url" : "organismeNotifie",
+      "valueReference" : {
+        "reference" : "Organization/dmi-organization-interne-example"
+      }
+    },
+    {
+      "url" : "libelleAutorisation",
+      "valueString" : "MarquageCE libelleAutorisation example"
+    }],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-marquage-ce"
+  }]
+}

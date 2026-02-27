@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyDelivery/dmi-supplydelivery-transport-example> a fhir:SupplyDelivery ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dmi-supplydelivery-transport-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Supply Livraison dmi-supplydelivery-transport-example</b></p><a name=\"dmi-supplydelivery-transport-example\"> </a><a name=\"hcdmi-supplydelivery-transport-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-supplydelivery-transport.html\">DMI SupplyDelivery Transport</a></p></div><p><b>DMI Reference Organisation Interne</b>: <a href=\"Organization-dmi-organization-interne-example.html\">Organization DMI Organization Interne Example Name</a></p><blockquote><p><b>DMI Transport</b></p><ul><li>refTransport: identifier-reftransport-example</li><li>refDelivery: identifier-refdelivery-example</li><li>meta: Pas d'affichage pour Meta  (versionId : meta-versionid-example)</li></ul></blockquote><p><b>identifier</b>: identifier-dmi-supplydelivery-transport-example</p><p><b>status</b>: Delivered</p><h3>SuppliedItems</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Device-dmi-device-example.html\">Device : extension = IPIdLogiciel example,</a></td></tr></table><p><b>occurrence</b>: 2026-02-24</p><p><b>receiver</b>: <a href=\"Practitioner-dmi-practitioner-example.html\">Practitioner : identifier = http://www.acme.com/identifiers#identifier-dmi-practitioner-example; telecom = dmi-practitioner-example@example.com</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-organisation-interne"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-organisation-interne>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Organization/dmi-organization-interne-example> ;
+       fhir:reference [ fhir:v "Organization/dmi-organization-interne-example" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "refTransport"^^xsd:anyURI ;
+         fhir:l fhir:refTransport
+       ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:value [ fhir:v "identifier-reftransport-example" ]
+       ]
+     ] [
+       fhir:url [
+         fhir:v "refDelivery"^^xsd:anyURI ;
+         fhir:l fhir:refDelivery
+       ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:value [ fhir:v "identifier-refdelivery-example" ]
+       ]
+     ] [
+       fhir:url [
+         fhir:v "meta"^^xsd:anyURI ;
+         fhir:l fhir:meta
+       ] ;
+       fhir:value [
+         a fhir:Meta ;
+         fhir:versionId [ fhir:v "meta-versionid-example" ]
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-transport"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-transport>
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "identifier-dmi-supplydelivery-transport-example" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:suppliedItem [
+     fhir:item [
+       a fhir:Reference ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Device/dmi-device-example> ;
+       fhir:reference [ fhir:v "Device/dmi-device-example" ]
+     ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:DateTime ;
+     fhir:v "2026-02-24"^^xsd:date
+  ] ; # 
+  fhir:receiver ( [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Practitioner/dmi-practitioner-example> ;
+     fhir:reference [ fhir:v "Practitioner/dmi-practitioner-example" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

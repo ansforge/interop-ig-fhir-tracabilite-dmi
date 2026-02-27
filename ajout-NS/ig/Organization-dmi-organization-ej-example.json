@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Organization",
+  "id" : "dmi-organization-ej-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-ej"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Organisation dmi-organization-ej-example</b></p><a name=\"dmi-organization-ej-example\"> </a><a name=\"hcdmi-organization-ej-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-organization-ej.html\">DMI Organization EJ</a></p></div><p><b>DMI Identifiant Local Distributeur</b>: identifiant-local-distributeur-example-ej</p><p><b>identifier</b>: Identification nationale de structure définie par l’ANS dans le CI_SIS/identifer-idnatst-example, Identification de l'organisation au SIREN/identifer-siren-example</p><p><b>name</b>: DMI Organization EJ Example Name</p><p><b>alias</b>: DMI Organization EJ Example Alias</p><p><b>address</b>: DMI Organization EJ Example Address</p></div>"
+  },
+  "extension" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-distributeur",
+    "valueIdentifier" : {
+      "value" : "identifiant-local-distributeur-example-ej"
+    }
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+        "code" : "IDNST"
+      }]
+    },
+    "system" : "urn:oid:1.2.250.1.71.4.2.2",
+    "value" : "identifer-idnatst-example"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+        "code" : "SIREN"
+      }]
+    },
+    "system" : "https://sirene.fr",
+    "value" : "identifer-siren-example"
+  }],
+  "name" : "DMI Organization EJ Example Name",
+  "alias" : ["DMI Organization EJ Example Alias"],
+  "address" : [{
+    "text" : "DMI Organization EJ Example Address"
+  }]
+}
