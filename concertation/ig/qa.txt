@@ -1,0 +1,24 @@
+TDMI : Validation Results
+=========================================
+
+err = 2, warn = 3, info = 1
+IG Publisher Version: 2.1.1
+Generated Fri Feb 27 10:31:19 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tdmi#3.0.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi)
+ Build Errors : 7 / 3 / 0
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi : 2 / 0 / 2
+</table>
+== n/a ==
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 243, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 244, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 252, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 253, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
+ERROR: searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-ans.fhir.fr.tdmi.json ==
+INFORMATION: ImplementationGuide/ans.fhir.fr.tdmi: ImplementationGuide.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+ERROR: ImplementationGuide/ans.fhir.fr.tdmi: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)
+ERROR: ImplementationGuide/ans.fhir.fr.tdmi: ImplementationGuide.definition.extension[27].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'

@@ -1,0 +1,7 @@
+[{
+  "id" : "ans.fhir.fr.tdmi",
+  "type" : "ImplementationGuide",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi",
+  "version" : "3.0.0-ballot",
+  "name" : "TDMI"
+}]
