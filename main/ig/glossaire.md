@@ -6,5 +6,5 @@
 
 ## Glossaire
 
-| Sigle / Acronyme | Signification | |—-|—-| | API | Application Programming Interface | | ANS | Agence du Numérique en Santé | | CI-SIS | Cadre d’Interopérabilité des Systèmes d’Information de Santé | | FHIR | Fast Healthcare Interoperability Resources | | HL7 | Health Level 7 | | DMI | Dispositif médical implantable | | HTTP | HyperText Transfer Protocol | | JDV | Jeu De valeurs | | JSON | JavaScript Object Notation | | REST | Representational State Transfer | | TRE | Terminologie de Référence |
+| Sigle / Acronyme | Signification | |—-|—-| | ANS | Agence du Numérique en Santé | | CI-SIS | Cadre d’interopérabilité des systèmes d’information de santé | | FHIR | **Fast Healthcare Interoperability Ressources** | | HIMSS | Healthcare Information and Management Systems Society | | HL7 | **Health Level 7** | | HTTP | HyperText Transfer Protocol | | JSON | JavaScript Object Notation | | MEMDMC | Medical Equipment Management Device Management Communication | | MEMLS | Medical Equipment Management Location Service | | PMDT | Point of care Medicao Device Tracking | | REST | REpresentational State Transfer | | XML | Extensible Markup Language |
 
