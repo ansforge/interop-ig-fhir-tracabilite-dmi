@@ -32,18 +32,16 @@ pages:
         title: Volume 2 - Détail des transactions
         specifications_techniques_construction_flux.md:
             title: Construction des flux
-        specifications_techniques_flux23_recherche_traces.md:
-            title: Flux 23 - RechercheTraces
-        specifications_techniques_flux24_reponse_recherche_traces.md:
-            title: Flux 24 - RéponseRechercheTraces
-        specifications_techniques_flux25_consulter_trace.md:
-            title: Flux 25 - ConsulterTrace
-        specifications_techniques_flux26_reponse_consulter_trace.md:
-            title: Flux 26 - ReponseConsulterTrace
+        specifications_techniques_flux23_flux24.md:
+            title: Flux 23 - Flux 24
+        specifications_techniques_flux25_flux26.md:
+            title: Flux 25 - Flux 26
     autres_ressources.md:
         title: Autres Ressources
         norme_standard.md:
             title: Normes et Standards
+        annexe_mise_en_correspondance.md:
+            title: Mise en correspondance
         glossaire.md:
             title: Glossaire
         securite.md:
@@ -59,12 +57,11 @@ menu:
     Volume 2 - Détail des transactions:
         Introduction: specifications_techniques_introduction.html
         Construction des flux: specifications_techniques_construction_flux.html
-        RechercheTraces: specifications_techniques_flux23_recherche_traces.html
-        RéponseRechercheTraces: specifications_techniques_flux24_reponse_recherche_traces.html
-        ConsulterTrace: specifications_techniques_flux25_consulter_trace.html
-        ReponseConsulterTrace: specifications_techniques_flux26_reponse_consulter_trace.html
+        Flux 23 - Flux 24: specifications_techniques_flux23_flux24.html
+        Flux 25- Flux 26: specifications_techniques_flux25_flux26.html
     Volume 3 - Annexes:
         Normes et Standards: norme_standard.html
+        Mise en correspondance: annexe_mise_en_correspondance.html
         Glossaire: glossaire.html
         Sécurité: securite.html
         Téléchargements et usage: downloads.html
