@@ -77,6 +77,27 @@ Les ressources profilées dans le cadre de ce guide d'implémentation sont les s
 | | | |
 | :--- | :--- | :--- |
 | Profil parent | Profil | Description |
+| [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle) | [DMIBundleDelivery](StructureDefinition-dmi-bundledelivery.md) | Profil créé dans le cadre de ce volet pour transmettre au serveur l’ensemble des ressources permettant la réception, la délivrance et la livraison d’un DMI. |
+| [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle) | [DMIBundleRequest](StructureDefinition-dmi-bundle-request.md) | Profil créé dans le cadre de ce volet pour transmettre au serveur l’ensemble des ressources permettant une commande, une demande et la réponse à la demande d’un DMI. |
+| [Bundle](http://hl7.org/fhir/StructureDefinition/Bundle) | [DMIBundleTransmissionTraces](StructureDefinition-dmi-bundle-transmission-traces.md) | Profil créé dans le cadre de ce volet pour transmettre l’ensemble des ressources au serveur. |
+| [Device](http://hl7.org/fhir/StructureDefinition/Device) | [DMIDevice](StructureDefinition-dmi-device.md) | Profil créé dans le cadre de ce volet pour représenter une instance physique d’un dispositif médical. |
+| [DeviceDefinition](http://hl7.org/fhir/StructureDefinition/DeviceDefinition) | [DMIDeviceDefinition](StructureDefinition-dmi-devicedefinition.md) | Profil créé dans le cadre de ce volet pour représenter un modèle de dispositif médical. |
+| [DeviceRequest](http://hl7.org/fhir/StructureDefinition/DeviceRequest) | [DMIDeviceRequest](StructureDefinition-dmi-devicerequest.md) | Profil créé dans le cadre de ce volet permettant d’effectuer une commande, demande, et la réponse à une demande de dispositif médical. |
+| [Invoice](http://hl7.org/fhir/StructureDefinition/Invoice) | [DMIInvoice](StructureDefinition-dmi-invoice.md) | Profil créé dans le cadre de ce volet pour représenter la facturation de dispositifs médicaux. |
+| [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization) | [DMIOrganizationEJ](StructureDefinition-dmi-organization-ej.md) | Profil créé dans le cadre de ce volet étendant le profil « FrOrganization ». Ce profil est utilisé pour représenter le fabricant et les distributeurs des DM. |
+| [FR Core Organization Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization) | [DMIOrganizationInterne](StructureDefinition-dmi-organization-interne.md) | Profil créé dans le cadre de ce volet permettant de représenter l’organisation interne (Service utilisateur). |
+| [FR Core Patient Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient) | [DMIPatient](StructureDefinition-dmi-patient.md) | Profil créé dans le cadre de ce volet étendant le profil français « FrPatient » publié par Interop’Santé. |
+| [FR Core Practitioner Profile](https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner) | [DMIPractitioner](StructureDefinition-dmi-practitioner.md) | Profil créé dans le cadre de ce volet étendant le profil « FrPractitionner» publié par Interop’Santé. |
+| [Procedure](http://hl7.org/fhir/StructureDefinition/Procedure) | [DMIProcedure](StructureDefinition-dmi-procedure.md) | Profil créé dans le cadre de ce volet pour représenter l’intervention clinique ou chirurgicale implantant un dispositif médical. |
+| [SupplyDelivery](http://hl7.org/fhir/StructureDefinition/SupplyDelivery) | [DMISupplyDeliveryEnteteDelivrance](StructureDefinition-dmi-supplydelivery-entete-delivrance.md) | Profil créé dans le cadre de ce volet pour représenter l’entête des informations de la délivrance de dispositifs médicaux. |
+| [SupplyDelivery](http://hl7.org/fhir/StructureDefinition/SupplyDelivery) | [DMISupplyDeliveryEnteteLivraison](StructureDefinition-dmi-supplydelivery-entete-livraison.md) | Profil créé dans le cadre de ce volet pour représenter l’entête des informations de livraison de dispositifs médicaux. |
+| [SupplyDelivery](http://hl7.org/fhir/StructureDefinition/SupplyDelivery) | [DMISupplyDeliveryEnteteReception](StructureDefinition-dmi-supplydelivery-enteter-reception.md) | Profil créé dans le cadre de ce volet pour représenter l’entête des informations de réception des dispositifs médicaux. |
+| [SupplyDelivery](http://hl7.org/fhir/StructureDefinition/SupplyDelivery) | [DMISupplyDeliveryLigne](StructureDefinition-dmi-supplydelivery-ligne.md) | Profil créé dans le cadre de ce volet pour représenter une ligne de livraison, de délivrance. |
+| [SupplyDelivery](http://hl7.org/fhir/StructureDefinition/SupplyDelivery) | [DMISupplyDeliveryReceptionUnitaire](StructureDefinition-dmi-supplydelivery-reception-unitaire.md) | Profil créé dans le cadre de ce volet pour représenter les informations de réception d’un dispositif médical. |
+| [SupplyDelivery](http://hl7.org/fhir/StructureDefinition/SupplyDelivery) | [DMISupplyDeliveryTransport](StructureDefinition-dmi-supplydelivery-transport.md) | Profil créé dans le cadre de ce volet pour représenter les informations de transports des dispositifs médicaux. |
+| [SupplyRequest](http://hl7.org/fhir/StructureDefinition/SupplyRequest) | [DMISupplyRequestEnteteCommande](StructureDefinition-dmi-supplyrequest-entete-commande.md) | Profil créé dans le cadre de ce volet permet transporter les informations générales d’une commande de dispositif médical. |
+| [SupplyRequest](http://hl7.org/fhir/StructureDefinition/SupplyRequest) | [DMISupplyRequestEnteteDemande](StructureDefinition-dmi-supplyrequest-entete-demande.md) | Profil créé dans le cadre de ce volet pour transporter les informations générales d’une demande de dispositif médical. |
+| [SupplyRequest](http://hl7.org/fhir/StructureDefinition/SupplyRequest) | [DMISupplyRequestEnteteReponse](StructureDefinition-dmi-supplyrequest-entetereponse.md) | Profil créé dans le cadre de ce volet pour transporter les informations générales de la réponse à une demande de création ou de mise à jour de DMI. |
 
 ### Dépendances
 
@@ -121,7 +142,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "TDMI",
   "title" : "Traçabilité des Dispositifs Médicaux Implantables",
   "status" : "draft",
-  "date" : "2026-02-27T10:33:04+00:00",
+  "date" : "2026-02-27T10:34:43+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -1557,37 +1578,19 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "specifications_techniques_flux23_recherche_traces.html"
+            "valueUrl" : "specifications_techniques_flux23_flux24.html"
           }],
-          "nameUrl" : "specifications_techniques_flux23_recherche_traces.html",
-          "title" : "Flux 23 - RechercheTraces",
+          "nameUrl" : "specifications_techniques_flux23_flux24.html",
+          "title" : "Flux 23 - Flux 24",
           "generation" : "markdown"
         },
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "specifications_techniques_flux24_reponse_recherche_traces.html"
+            "valueUrl" : "specifications_techniques_flux25_flux26.html"
           }],
-          "nameUrl" : "specifications_techniques_flux24_reponse_recherche_traces.html",
-          "title" : "Flux 24 - RéponseRechercheTraces",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "specifications_techniques_flux25_consulter_trace.html"
-          }],
-          "nameUrl" : "specifications_techniques_flux25_consulter_trace.html",
-          "title" : "Flux 25 - ConsulterTrace",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "specifications_techniques_flux26_reponse_consulter_trace.html"
-          }],
-          "nameUrl" : "specifications_techniques_flux26_reponse_consulter_trace.html",
-          "title" : "Flux 26 - ReponseConsulterTrace",
+          "nameUrl" : "specifications_techniques_flux25_flux26.html",
+          "title" : "Flux 25 - Flux 26",
           "generation" : "markdown"
         }]
       },
@@ -1606,6 +1609,15 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }],
           "nameUrl" : "norme_standard.html",
           "title" : "Normes et Standards",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "annexe_mise_en_correspondance.html"
+          }],
+          "nameUrl" : "annexe_mise_en_correspondance.html",
+          "title" : "Mise en correspondance",
           "generation" : "markdown"
         },
         {

@@ -4,7 +4,7 @@ TDMI : Validation Results
 err = 3, warn = 53, info = 90
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.tdmi#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi)
- Build Errors : 0 / 25 / 0
+ Build Errors : 1 / 25 / 0
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/AuditEvent-tde-auditevent-example : 0 / 0 / 1
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/Bundle-dmi-bundle-delivery-example : 0 / 2 / 8
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/Bundle-dmi-bundle-request-example : 0 / 4 / 7
@@ -93,6 +93,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource SupplyRequest/dmi-supplyrequest-entete-demande-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource SupplyRequest/dmi-supplyrequest-entete-reponse-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AuditEvent/tde-auditevent-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: specifications_techniques_flux23_flux24.html#/html/body/div/div/div/div/div/table/thead/tr/th/p/a at Line 244, column 119: The link '#_Flux_23_-' for "Tableau 13" cannot be resolved (valid targets: [ans-nav, segment-header, flux-24---reponserecherchetraces, publish-box, flux-23-recherchetraces, bottom, hl7-logo, flux-23-flux-24, segment-post-footer, hl7-search-lnk, ig-search, family-nav, ig-status, markdown-toc, top, markdown-toc-flux-24---reponserecherchetraces, stripe, segment-footer, flux-24-reponserecherchetraces, segment-navbar, markdown-toc-flux-23---recherchetraces, segment-content, segment-breadcrumb, flux-23---recherchetraces])
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide

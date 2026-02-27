@@ -248,7 +248,7 @@ Traçabilité des Dispositifs Médicaux Implantables - version de développement
 
           IG &copy; 2020+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>
 .  Package ans.fhir.fr.tdmi#3.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Feb 27, 2026 10:33+0000">2026-02-27</span>
+. Generated           <span title="Fri, Feb 27, 2026 10:34+0000">2026-02-27</span>
 
                     <br/>
 
@@ -280,7 +280,7 @@ Traçabilité des Dispositifs Médicaux Implantables - version de développement
 
           IG &copy; 2020+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>
 .  Package ans.fhir.fr.tdmi#3.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Feb 27, 2026 10:33+0000">2026-02-27</span>
+. Generated           <span title="Fri, Feb 27, 2026 10:34+0000">2026-02-27</span>
 
                     <br/>
 
@@ -312,7 +312,7 @@ Traçabilité des Dispositifs Médicaux Implantables - version de développement
 
           IG &copy; 2020+           <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>
 .  Package ans.fhir.fr.tdmi#3.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Fri, Feb 27, 2026 10:33+0000">2026-02-27</span>
+. Generated           <span title="Fri, Feb 27, 2026 10:34+0000">2026-02-27</span>
 
                     <br/>
 
@@ -916,6 +916,31 @@ ISO maintains the copyright on the country codes, and controls its use carefully
 </img>          </a>
         </td>
       </tr>
+      <tr>
+        <td>
+          <a href="specifications_techniques_construction_flux.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf">www.ihe.net</a>
+        </td>
+        <td>
+Ils sont construits selon les exigences de la transaction           <a href="https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf">IHE ITI-20</a>
+ «&nbsp;Record Audit Event&nbsp;» dans sa version HL7 FHIR&nbsp;où une seule trace est transmise à la fois : «&nbsp;Send Audit Resource Request Message - FHIR Feed Interaction&nbsp;».
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="specifications_techniques_flux23_flux24.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf">www.ihe.net</a>
+        </td>
+        <td>
+Ce flux est construit selon les exigences de la transaction           <a href="https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_RESTful-ATNA.pdf">IHE ITI-81</a>
+ «&nbsp;Retrieve ATNA Audit Event&nbsp;» qui se base sur           <a href="https://www.hl7.org/fhir/R4/http.html#search">l’interaction «&nbsp;search&nbsp;»</a>
+ de l’API REST de FHIR. Il s’agit d’une requête HTTP GET adressant la ressource auditEvent.
+        </td>
+      </tr>
     </table>
     <h2>Internal Images</h2>
     <table class="grid">
@@ -923,6 +948,12 @@ ISO maintains the copyright on the country codes, and controls its use carefully
         <td>
 ci-sis-logo.png          <br/>
           <img src="ci-sis-logo.png" alt="ci-sis-logo.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+diagramme_sequence_flux.png          <br/>
+          <img src="diagramme_sequence_flux.png" alt="diagramme_sequence_flux.png" width="600px" height="auto"/>
         </td>
       </tr>
       <tr>
