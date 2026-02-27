@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="dmi-organization-interne-example"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Organisation dmi-organization-interne-example</b></p><a name="dmi-organization-interne-example"> </a><a name="hcdmi-organization-interne-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-dmi-organization-interne.html">DMI Organization Interne</a></p></div><p><b>DMI Identifiant Local Distributeur</b>: identifiant-local-distributeur-example-oi</p><p><b>type</b>: <span title="Codes :{https://mos.esante.gouv.fr/NOS/TRE_R207-TypeOrganisationInterne/FHIR/TRE-R207-TypeOrganisationInterne 2}">Structure interne ou Service</span></p><p><b>name</b>: DMI Organization Interne Example Name</p></div>
+  </text>
+  <extension url="https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-distributeur">
+    <valueIdentifier>
+      <value value="identifiant-local-distributeur-example-oi"/>
+    </valueIdentifier>
+  </extension>
+  <type>
+    <coding>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R207-TypeOrganisationInterne/FHIR/TRE-R207-TypeOrganisationInterne"/>
+      <code value="2"/>
+      <display value="Structure interne ou Service"/>
+    </coding>
+  </type>
+  <name value="DMI Organization Interne Example Name"/>
+</Organization>

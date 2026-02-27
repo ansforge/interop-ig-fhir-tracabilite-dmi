@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tdmi/DeviceRequest/dmi-devicerequest-example> a fhir:DeviceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dmi-devicerequest-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DemandeUtilisationDispositif dmi-devicerequest-example</b></p><a name=\"dmi-devicerequest-example\"> </a><a name=\"hcdmi-devicerequest-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-devicerequest.html\">DMI DeviceRequest</a></p></div><p><b>basedOn</b>: <a href=\"SupplyRequest-dmi-supplyrequest-entete-commande-example.html\">SupplyRequest : identifier = identifier-dmi-supplyrequest-entete-commande-example; item[x] = Commande de dispositifs médicaux; quantity = 2</a></p><p><b>intent</b>: Order</p><p><b>code</b>: <a href=\"Device-dmi-device-example.html\">Device : extension = IPIdLogiciel example,</a></p><p><b>subject</b>: <a href=\"Device-dmi-device-example.html\">Device : extension = IPIdLogiciel example,</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SupplyRequest/dmi-supplyrequest-entete-commande-example> ;
+     fhir:reference [ fhir:v "SupplyRequest/dmi-supplyrequest-entete-commande-example" ]
+  ] ) ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     a fhir:Reference ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Device/dmi-device-example> ;
+     fhir:reference [ fhir:v "Device/dmi-device-example" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Device/dmi-device-example> ;
+     fhir:reference [ fhir:v "Device/dmi-device-example" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

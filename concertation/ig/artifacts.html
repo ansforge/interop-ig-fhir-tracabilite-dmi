@@ -44,7 +44,7 @@
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"6"}
-    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -68,7 +68,7 @@
 
 
 
-  <span title="">FR</span>
+  FRANCE
 
 
             </span>
@@ -113,16 +113,10 @@
         <a href="specifications_techniques_construction_flux.html">Construction des flux</a>
       </li>
       <li>
-        <a href="specifications_techniques_flux23_recherche_traces.html">RechercheTraces</a>
+        <a href="specifications_techniques_flux23_flux24.html">Flux 23 - Flux 24</a>
       </li>
       <li>
-        <a href="specifications_techniques_flux24_reponse_recherche_traces.html">RéponseRechercheTraces</a>
-      </li>
-      <li>
-        <a href="specifications_techniques_flux25_consulter_trace.html">ConsulterTrace</a>
-      </li>
-      <li>
-        <a href="specifications_techniques_flux26_reponse_consulter_trace.html">ReponseConsulterTrace</a>
+        <a href="specifications_techniques_flux25_flux26.html">Flux 25- Flux 26</a>
       </li>
     </ul>
   </li>
@@ -133,6 +127,9 @@
     <ul class="dropdown-menu">
       <li>
         <a href="norme_standard.html">Normes et Standards</a>
+      </li>
+      <li>
+        <a href="annexe_mise_en_correspondance.html">Mise en correspondance</a>
       </li>
       <li>
         <a href="glossaire.html">Glossaire</a>
@@ -180,6 +177,8 @@
 
             <a href="#bottom">bottom</a>
 
+          | <a href="SearchParameter-dmi-device-definition-type.html">next&gt;</a>
+
           </span>
 
         </ul>
@@ -209,12 +208,568 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml"
      class="markdown-toc">
    <p>Contents:</p>
-   <ul/>
+   <ul>
+      <li>
+         <a href="#1">Behavior: Search Parameters</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+   </ul>
 </div>
 <div xmlns="http://www.w3.org/1999/xhtml"
      xmlns:f="http://hl7.org/fhir"
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Behavior: Search Parameters </h3>
+    <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-dmi-device-definition-type.html"
+                  title="SearchParameter/dmi-device-definition-type">SearchParameter DMI Device definitionType</a>
+            </td>
+            <td>
+<p>Permet la recherche sur le Code EMDN</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-dmi-device-lotNumber.html"
+                  title="SearchParameter/dmi-device-lotNumber">SearchParameter DMI Device lotNumber</a>
+            </td>
+            <td>
+<p>Permet de faire une recherche sur le numéro de lot du DMI</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-dmi-device-serialNumber.html"
+                  title="SearchParameter/dmi-device-serialNumber">SearchParameter DMI Device serialNumber</a>
+            </td>
+            <td>
+<p>Permet la recherche sur le numéro de série du DMI</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-DMI-Patient-INS.html"
+                  title="SearchParameter/DMI-Patient-INS">SearchParameter DMI Patient INS</a>
+            </td>
+            <td>
+<p>Permet la recherche sur l'ins du patient</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-bundledelivery.html"
+                  title="StructureDefinition/dmi-bundledelivery">DMI Bundle Delivery</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour transmettre au serveur l’ensemble des ressources permettant la réception, la délivrance et la livraison d’un DMI.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-bundle-request.html"
+                  title="StructureDefinition/dmi-bundle-request">DMI Bundle Request</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour transmettre au serveur l’ensemble des ressources permettant une commande, une demande et la réponse à la demande d’un DMI.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-bundle-transmission-traces.html"
+                  title="StructureDefinition/dmi-bundle-transmission-traces">DMI Bundle Transmission Traces</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour transmettre l’ensemble des ressources au serveur.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-device.html"
+                  title="StructureDefinition/dmi-device">DMI Device</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour représenter une instance physique d’un dispositif médical.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-devicedefinition.html"
+                  title="StructureDefinition/dmi-devicedefinition">DMI DeviceDefinition</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour représenter un modèle de dispositif médical.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-devicerequest.html"
+                  title="StructureDefinition/dmi-devicerequest">DMI DeviceRequest</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet permettant d’effectuer une commande, demande, et la réponse à une demande de dispositif médical.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-invoice.html"
+                  title="StructureDefinition/dmi-invoice">DMI Invoice</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour représenter la facturation de dispositifs médicaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-organization-ej.html"
+                  title="StructureDefinition/dmi-organization-ej">DMI Organization EJ</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet étendant le profil « FrOrganization ». Ce profil est utilisé pour représenter le fabricant et les distributeurs des DM.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-organization-interne.html"
+                  title="StructureDefinition/dmi-organization-interne">DMI Organization Interne</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet permettant de représenter l’organisation interne (Service utilisateur).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-patient.html"
+                  title="StructureDefinition/dmi-patient">DMI Patient</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet étendant le profil français « FrPatient » publié par Interop’Santé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-practitioner.html"
+                  title="StructureDefinition/dmi-practitioner">DMI Practitioner</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet étendant le profil « FrPractitionner» publié par Interop’Santé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-procedure.html"
+                  title="StructureDefinition/dmi-procedure">DMI Procedure</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour représenter l’intervention clinique ou chirurgicale implantant un dispositif médical.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-supplydelivery-entete-delivrance.html"
+                  title="StructureDefinition/dmi-supplydelivery-entete-delivrance">DMI SupplyDelivery Entete Delivrance</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour représenter l’entête des informations de la délivrance de dispositifs médicaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-supplydelivery-entete-livraison.html"
+                  title="StructureDefinition/dmi-supplydelivery-entete-livraison">DMI SupplyDelivery Entete Livraison</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour représenter l’entête des informations de livraison de dispositifs médicaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-supplydelivery-enteter-reception.html"
+                  title="StructureDefinition/dmi-supplydelivery-enteter-reception">DMI SupplyDelivery Entete Reception</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour représenter l’entête des informations de réception des dispositifs médicaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-supplydelivery-ligne.html"
+                  title="StructureDefinition/dmi-supplydelivery-ligne">DMI SupplyDelivery Ligne</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour représenter une ligne de livraison, de délivrance.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-supplydelivery-reception-unitaire.html"
+                  title="StructureDefinition/dmi-supplydelivery-reception-unitaire">DMI SupplyDelivery Reception Unitaire</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour représenter les informations de réception d’un dispositif médical.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-supplydelivery-transport.html"
+                  title="StructureDefinition/dmi-supplydelivery-transport">DMI SupplyDelivery Transport</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour représenter les informations de transports des dispositifs médicaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-supplyrequest-entete-commande.html"
+                  title="StructureDefinition/dmi-supplyrequest-entete-commande">DMI SupplyRequest Entete Commande</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet permet transporter les informations générales d’une commande de dispositif médical.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-supplyrequest-entete-demande.html"
+                  title="StructureDefinition/dmi-supplyrequest-entete-demande">DMI SupplyRequest Entete Demande</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour transporter les informations générales d’une demande de dispositif médical.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-supplyrequest-entetereponse.html"
+                  title="StructureDefinition/dmi-supplyrequest-entetereponse">DMI SupplyRequest Entete Reponse</a>
+            </td>
+            <td>
+<p>Profil créé dans le cadre de ce volet pour transporter les informations générales de la réponse à une demande de création ou de mise à jour de DMI.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-classe-risque.html"
+                  title="StructureDefinition/dmi-classe-risque">DMI Classe Risque</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter la classe de risque.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-code-emdn.html"
+                  title="StructureDefinition/dmi-code-emdn">DMI Code EMDN</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter le code EMDN.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-code-lpp.html"
+                  title="StructureDefinition/dmi-code-lpp">DMI Code LPP</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter le code LPP.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-facture.html"
+                  title="StructureDefinition/dmi-facture">DMI Facture</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter une facture.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-ip-id-logiciel.html"
+                  title="StructureDefinition/dmi-ip-id-logiciel">DMI IP Id logiciel</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter l'IP Id logiciel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-identifiant-local-distributeur.html"
+                  title="StructureDefinition/dmi-identifiant-local-distributeur">DMI Identifiant Local Distributeur</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter l'identifiant local distributeur.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-identifiant-local-fabricant.html"
+                  title="StructureDefinition/dmi-identifiant-local-fabricant">DMI Identifiant Local Fabricant</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter l'identifiant local fabricant.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-internal-diameter.html"
+                  title="StructureDefinition/dmi-internal-diameter">DMI Internal Diameter</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter le diamètre interne.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-marquage-ce.html"
+                  title="StructureDefinition/dmi-marquage-ce">DMI Marquage CE</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter le marquage CE.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-nom-distributeur.html"
+                  title="StructureDefinition/dmi-nom-distributeur">DMI Nom Distributeur</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter le nom distributeur.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-organization-location.html"
+                  title="StructureDefinition/dmi-organization-location">DMI Organization Location</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter le lieu de l'organisation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-reference-distributeur.html"
+                  title="StructureDefinition/dmi-reference-distributeur">DMI Reference Distributeur</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter la référence distributeur.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-reference-organisation-interne.html"
+                  title="StructureDefinition/dmi-reference-organisation-interne">DMI Reference Organisation Interne</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour référencer l'organisation fabricant du DMI.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-transport.html"
+                  title="StructureDefinition/dmi-transport">DMI Transport</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour représenter le transport.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dmi-reference-fabricant.html"
+                  title="StructureDefinition/dmi-reference-fabricant">Extension DMI Reference Fabricant</a>
+            </td>
+            <td>
+<p>Extension créée dans ce volet pour référencer l'organisation fabricant du DMI.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-dmi-discriminator.html"
+                  title="CodeSystem/dmi-discriminator">DMI Discriminator</a>
+            </td>
+            <td>
+<p>CodeSystem définissant les codes discriminants.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-dmi-bundle-delivery-example.html"
+                  title="Bundle/dmi-bundle-delivery-example">dmi-bundle-delivery-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-dmi-bundle-request-example.html"
+                  title="Bundle/dmi-bundle-request-example">dmi-bundle-request-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-dmi-bundle-transmission-traces-example.html"
+                  title="Bundle/dmi-bundle-transmission-traces-example">dmi-bundle-transmission-traces-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-dmi-device-example.html" title="Device/dmi-device-example">dmi-device-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceDefinition-dmi-devicedefinition-example.html"
+                  title="DeviceDefinition/dmi-devicedefinition-example">dmi-devicedefinition-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DeviceRequest-dmi-devicerequest-example.html"
+                  title="DeviceRequest/dmi-devicerequest-example">dmi-devicerequest-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Invoice-dmi-invoice-example.html"
+                  title="Invoice/dmi-invoice-example">dmi-invoice-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-dmi-organization-ej-example.html"
+                  title="Organization/dmi-organization-ej-example">dmi-organization-ej-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-dmi-organization-interne-example.html"
+                  title="Organization/dmi-organization-interne-example">dmi-organization-interne-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-dmi-patient-example.html"
+                  title="Patient/dmi-patient-example">dmi-patient-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-dmi-practitioner-example.html"
+                  title="Practitioner/dmi-practitioner-example">dmi-practitioner-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-dmi-procedure-example.html"
+                  title="Procedure/dmi-procedure-example">dmi-procedure-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SupplyDelivery-dmi-supplydelivery-entete-delivrance-example.html"
+                  title="SupplyDelivery/dmi-supplydelivery-entete-delivrance-example">dmi-supplydelivery-entete-delivrance-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SupplyDelivery-dmi-supplydelivery-entete-livraison-example.html"
+                  title="SupplyDelivery/dmi-supplydelivery-entete-livraison-example">dmi-supplydelivery-entete-livraison-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SupplyDelivery-dmi-supplydelivery-entete-reception-example.html"
+                  title="SupplyDelivery/dmi-supplydelivery-entete-reception-example">dmi-supplydelivery-entete-reception-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SupplyDelivery-dmi-supplydelivery-ligne-example.html"
+                  title="SupplyDelivery/dmi-supplydelivery-ligne-example">dmi-supplydelivery-ligne-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SupplyDelivery-dmi-supplydelivery-reception-unitaire-example.html"
+                  title="SupplyDelivery/dmi-supplydelivery-reception-unitaire-example">dmi-supplydelivery-reception-unitaire-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SupplyDelivery-dmi-supplydelivery-transport-example.html"
+                  title="SupplyDelivery/dmi-supplydelivery-transport-example">dmi-supplydelivery-transport-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SupplyRequest-dmi-supplyrequest-entete-commande-example.html"
+                  title="SupplyRequest/dmi-supplyrequest-entete-commande-example">dmi-supplyrequest-entete-commande-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SupplyRequest-dmi-supplyrequest-entete-demande-example.html"
+                  title="SupplyRequest/dmi-supplyrequest-entete-demande-example">dmi-supplyrequest-entete-demande-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SupplyRequest-dmi-supplyrequest-entete-reponse-example.html"
+                  title="SupplyRequest/dmi-supplyrequest-entete-reponse-example">dmi-supplyrequest-entete-reponse-example</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AuditEvent-tde-auditevent-example.html"
+                  title="AuditEvent/tde-auditevent-example">tde-auditevent-example</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
 </div>
 
 </div>
@@ -245,7 +800,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <span style="visibility:hidden">next&gt;</span>
+                <a href="SearchParameter-dmi-device-definition-type.html">next&gt;</a>
 
               </td>
             </tr>
@@ -255,7 +810,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 27, 2026 10:30+0000">2026-02-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.tdmi#3.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 27, 2026 10:40+0000">2026-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

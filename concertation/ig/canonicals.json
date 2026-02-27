@@ -1,7 +1,294 @@
 [{
+  "id" : "dmi-discriminator",
+  "type" : "CodeSystem",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIDiscriminator"
+},
+{
   "id" : "ans.fhir.fr.tdmi",
   "type" : "ImplementationGuide",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/ImplementationGuide/ans.fhir.fr.tdmi",
   "version" : "3.0.0-ballot",
   "name" : "TDMI"
+},
+{
+  "id" : "DMI-Patient-INS",
+  "type" : "SearchParameter",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/DMI-Patient-INS",
+  "version" : "3.0.0-ballot",
+  "name" : "DMI_Patient_INS"
+},
+{
+  "id" : "dmi-device-definition-type",
+  "type" : "SearchParameter",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-definition-type",
+  "version" : "3.0.0-ballot",
+  "name" : "DMI_Device_definitionType"
+},
+{
+  "id" : "dmi-device-lotNumber",
+  "type" : "SearchParameter",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-lotNumber",
+  "version" : "3.0.0-ballot",
+  "name" : "DMI_Device_lotNumber"
+},
+{
+  "id" : "dmi-device-serialNumber",
+  "type" : "SearchParameter",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber",
+  "version" : "3.0.0-ballot",
+  "name" : "DMI_Device_serialNumber"
+},
+{
+  "id" : "dmi-bundle-request",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-request",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIBundleRequest"
+},
+{
+  "id" : "dmi-bundle-transmission-traces",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundle-transmission-traces",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIBundleTransmissionTraces"
+},
+{
+  "id" : "dmi-bundledelivery",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIBundleDelivery"
+},
+{
+  "id" : "dmi-classe-risque",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-classe-risque",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIClasseRisque"
+},
+{
+  "id" : "dmi-code-emdn",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn",
+  "version" : "3.0.0-ballot",
+  "name" : "DMICodeEMDN"
+},
+{
+  "id" : "dmi-code-lpp",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-lpp",
+  "version" : "3.0.0-ballot",
+  "name" : "DMICodeLPP"
+},
+{
+  "id" : "dmi-device",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-device",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIDevice"
+},
+{
+  "id" : "dmi-devicedefinition",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicedefinition",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIDeviceDefinition"
+},
+{
+  "id" : "dmi-devicerequest",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIDeviceRequest"
+},
+{
+  "id" : "dmi-facture",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-facture",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIFacture"
+},
+{
+  "id" : "dmi-identifiant-local-distributeur",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-distributeur",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIIdentifiantLocalDistributeur"
+},
+{
+  "id" : "dmi-identifiant-local-fabricant",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-identifiant-local-fabricant",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIIdentifiantLocalFabricant"
+},
+{
+  "id" : "dmi-internal-diameter",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-internal-diameter",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIInternalDiameter"
+},
+{
+  "id" : "dmi-invoice",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-invoice",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIInvoice"
+},
+{
+  "id" : "dmi-ip-id-logiciel",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-ip-id-logiciel",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIIPIdLogiciel"
+},
+{
+  "id" : "dmi-marquage-ce",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-marquage-ce",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIMarquageCE"
+},
+{
+  "id" : "dmi-nom-distributeur",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-nom-distributeur",
+  "version" : "3.0.0-ballot",
+  "name" : "DMINomDistributeur"
+},
+{
+  "id" : "dmi-organization-ej",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-ej",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIOrganizationEJ"
+},
+{
+  "id" : "dmi-organization-interne",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIOrganizationInterne"
+},
+{
+  "id" : "dmi-organization-location",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-location",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIOrganizationLocation"
+},
+{
+  "id" : "dmi-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-patient",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIPatient"
+},
+{
+  "id" : "dmi-practitioner",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-practitioner",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIPractitioner"
+},
+{
+  "id" : "dmi-procedure",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-procedure",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIProcedure"
+},
+{
+  "id" : "dmi-reference-distributeur",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-distributeur",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIReferenceDistributeur"
+},
+{
+  "id" : "dmi-reference-fabricant",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-fabricant",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIReferenceFabricant"
+},
+{
+  "id" : "dmi-reference-organisation-interne",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-organisation-interne",
+  "version" : "3.0.0-ballot",
+  "name" : "DMIReferenceOrganisationInterne"
+},
+{
+  "id" : "dmi-supplydelivery-entete-delivrance",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-delivrance",
+  "version" : "3.0.0-ballot",
+  "name" : "DMISupplyDeliveryEnteteDelivrance"
+},
+{
+  "id" : "dmi-supplydelivery-entete-livraison",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-entete-livraison",
+  "version" : "3.0.0-ballot",
+  "name" : "DMISupplyDeliveryEnteteLivraison"
+},
+{
+  "id" : "dmi-supplydelivery-enteter-reception",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-enteter-reception",
+  "version" : "3.0.0-ballot",
+  "name" : "DMISupplyDeliveryEnteteReception"
+},
+{
+  "id" : "dmi-supplydelivery-ligne",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-ligne",
+  "version" : "3.0.0-ballot",
+  "name" : "DMISupplyDeliveryLigne"
+},
+{
+  "id" : "dmi-supplydelivery-reception-unitaire",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-reception-unitaire",
+  "version" : "3.0.0-ballot",
+  "name" : "DMISupplyDeliveryReceptionUnitaire"
+},
+{
+  "id" : "dmi-supplydelivery-transport",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplydelivery-transport",
+  "version" : "3.0.0-ballot",
+  "name" : "DMISupplyDeliveryTransport"
+},
+{
+  "id" : "dmi-supplyrequest-entete-commande",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-commande",
+  "version" : "3.0.0-ballot",
+  "name" : "DMISupplyRequestEnteteCommande"
+},
+{
+  "id" : "dmi-supplyrequest-entete-demande",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande",
+  "version" : "3.0.0-ballot",
+  "name" : "DMISupplyRequestEnteteDemande"
+},
+{
+  "id" : "dmi-supplyrequest-entetereponse",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entetereponse",
+  "version" : "3.0.0-ballot",
+  "name" : "DMISupplyRequestEnteteReponse"
+},
+{
+  "id" : "dmi-transport",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-transport",
+  "version" : "3.0.0-ballot",
+  "name" : "DMITransport"
 }]

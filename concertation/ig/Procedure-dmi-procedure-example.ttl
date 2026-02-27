@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/tdmi/Procedure/dmi-procedure-example> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dmi-procedure-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-procedure"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Procédure dmi-procedure-example</b></p><a name=\"dmi-procedure-example\"> </a><a name=\"hcdmi-procedure-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-dmi-procedure.html\">DMI Procedure</a></p></div><p><b>identifier</b>: id Intervention/identifier-idIntervention-example</p><p><b>status</b>: Preparation</p><p><b>subject</b>: <a href=\"Patient-dmi-patient-example.html\">Patient Anonyme (sexe non précisé), Date de Naissance inconnue ( identifier-dmi-patient-example)</a></p><p><b>performed</b>: 2026-02-24</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td><td><b>OnBehalfOf</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-dmi-practitioner-example.html\">Practitioner : identifier = http://www.acme.com/identifiers#identifier-dmi-practitioner-example; telecom = dmi-practitioner-example@example.com</a></td><td><a href=\"Organization-dmi-organization-ej-example.html\">Organization DMI Organization EJ Example Name</a></td></tr></table><p><b>bodySite</b>: <span title=\"Codes :{http://snomed.info/sct 344001}\">région d'une cheville</span></p><h3>FocalDevices</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Manipulated</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Device-dmi-device-example.html\">Device : extension = IPIdLogiciel example,</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator"^^xsd:anyURI ;
+           fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator>
+         ] ;
+         fhir:code [ fhir:v "idIntervention" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "identifier-idIntervention-example" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preparation"] ; # 
+  fhir:subject [
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Patient/dmi-patient-example> ;
+     fhir:reference [ fhir:v "Patient/dmi-patient-example" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:DateTime ;
+     fhir:v "2026-02-24"^^xsd:date
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Practitioner/dmi-practitioner-example> ;
+       fhir:reference [ fhir:v "Practitioner/dmi-practitioner-example" ]
+     ] ;
+     fhir:onBehalfOf [
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Organization/dmi-organization-ej-example> ;
+       fhir:reference [ fhir:v "Organization/dmi-organization-ej-example" ]
+     ]
+  ] ) ; # 
+  fhir:bodySite ( [
+     fhir:coding ( [
+       a sct:344001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "344001" ] ;
+       fhir:display [ fhir:v "région d'une cheville" ]
+     ] )
+  ] ) ; # 
+  fhir:focalDevice ( [
+     fhir:manipulated [
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/Device/dmi-device-example> ;
+       fhir:reference [ fhir:v "Device/dmi-device-example" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
