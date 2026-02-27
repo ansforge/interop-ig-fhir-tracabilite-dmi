@@ -1,0 +1,86 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "dmi-discriminator",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem dmi-discriminator</b></p><a name=\"dmi-discriminator\"> </a><a name=\"hcdmi-discriminator\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">numeroTVAIntracommunautaire<a name=\"dmi-discriminator-numeroTVAIntracommunautaire\"> </a></td><td>numéro de TVA intracommunautaire</td></tr><tr><td style=\"white-space:nowrap\">numeroSRN<a name=\"dmi-discriminator-numeroSRN\"> </a></td><td>numéro SRN</td></tr><tr><td style=\"white-space:nowrap\">UsageUnique<a name=\"dmi-discriminator-UsageUnique\"> </a></td><td>Usage unique</td></tr><tr><td style=\"white-space:nowrap\">NbReutilisation<a name=\"dmi-discriminator-NbReutilisation\"> </a></td><td>Nombre de réutilisation</td></tr><tr><td style=\"white-space:nowrap\">EmballageSterile<a name=\"dmi-discriminator-EmballageSterile\"> </a></td><td>Emballage stérile</td></tr><tr><td style=\"white-space:nowrap\">SterilisationAvantUtilisation<a name=\"dmi-discriminator-SterilisationAvantUtilisation\"> </a></td><td>Stérilisation avant utilisation</td></tr><tr><td style=\"white-space:nowrap\">Implantable<a name=\"dmi-discriminator-Implantable\"> </a></td><td>Implantable</td></tr><tr><td style=\"white-space:nowrap\">Actif<a name=\"dmi-discriminator-Actif\"> </a></td><td>Actif</td></tr><tr><td style=\"white-space:nowrap\">refFacture<a name=\"dmi-discriminator-refFacture\"> </a></td><td>reference Facture</td></tr><tr><td style=\"white-space:nowrap\">refCommande<a name=\"dmi-discriminator-refCommande\"> </a></td><td>reference Commande</td></tr><tr><td style=\"white-space:nowrap\">idIntervention<a name=\"dmi-discriminator-idIntervention\"> </a></td><td>id Intervention</td></tr><tr><td style=\"white-space:nowrap\">numSejour<a name=\"dmi-discriminator-numSejour\"> </a></td><td>num Sejour</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator",
+  "version" : "3.0.0",
+  "name" : "DMIDiscriminator",
+  "title" : "DMI Discriminator",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-02-27T10:33:04+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "CodeSystem définissant les codes discriminants.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "caseSensitive" : true,
+  "compositional" : false,
+  "content" : "complete",
+  "count" : 12,
+  "concept" : [{
+    "code" : "numeroTVAIntracommunautaire",
+    "display" : "numéro de TVA intracommunautaire"
+  },
+  {
+    "code" : "numeroSRN",
+    "display" : "numéro SRN"
+  },
+  {
+    "code" : "UsageUnique",
+    "display" : "Usage unique"
+  },
+  {
+    "code" : "NbReutilisation",
+    "display" : "Nombre de réutilisation"
+  },
+  {
+    "code" : "EmballageSterile",
+    "display" : "Emballage stérile"
+  },
+  {
+    "code" : "SterilisationAvantUtilisation",
+    "display" : "Stérilisation avant utilisation"
+  },
+  {
+    "code" : "Implantable",
+    "display" : "Implantable"
+  },
+  {
+    "code" : "Actif",
+    "display" : "Actif"
+  },
+  {
+    "code" : "refFacture",
+    "display" : "reference Facture"
+  },
+  {
+    "code" : "refCommande",
+    "display" : "reference Commande"
+  },
+  {
+    "code" : "idIntervention",
+    "display" : "id Intervention"
+  },
+  {
+    "code" : "numSejour",
+    "display" : "num Sejour"
+  }]
+}

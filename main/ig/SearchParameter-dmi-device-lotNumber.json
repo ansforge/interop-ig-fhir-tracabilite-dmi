@@ -1,0 +1,33 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "dmi-device-lotNumber",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ParamètreRecherche dmi-device-lotNumber</b></p><a name=\"dmi-device-lotNumber\"> </a><a name=\"hcdmi-device-lotNumber\"> </a><h2>DMI_Device_lotNumber</h2><p>Paramètre <code>lotNumber</code>:<code>string</code></p><div><p>Permet de faire une recherche sur le numéro de lot du DMI</p>\n</div><table class=\"grid\"><tr><td>Ressource</td><td><a href=\"http://hl7.org/fhir/R4/device.html\">Device</a></td></tr><tr><td>Expression</td><td><code>Device.lotNumber</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd : C'est au serveur de décider si le paramètre peut se répéter pour spécifier plusieurs valeurs qui doivent toutes être vraies</li><li>multipleOr : C'est au serveur de décider si le paramètre peut avoir plusieurs valeurs (séparées par des virgules) dont au moins une doit être vraie</li></ul></td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-lotNumber",
+  "version" : "3.0.0",
+  "name" : "DMI_Device_lotNumber",
+  "status" : "draft",
+  "date" : "2026-02-27T10:33:04+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Permet de faire une recherche sur le numéro de lot du DMI",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "code" : "lotNumber",
+  "base" : ["Device"],
+  "type" : "string",
+  "expression" : "Device.lotNumber"
+}
