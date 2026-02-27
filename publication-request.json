@@ -1,0 +1,16 @@
+{
+    "package-id" : "ans.fhir.fr.tdmi",
+    "version" : "3.0.0-ballot",
+    "path" : "https://interop.esante.gouv.fr/ig/fhir/tde/2.0.0-ballot",
+    "mode" : "working",
+    "status" : "ballot",
+    "sequence" : "STU1",
+    "title" : "Volet Traçabilité des Dispositifs Médicaux Implantables",
+    "first" : true,
+    "desc" : "Ce guide d’implémentation (IG) décrit les mécanismes d’interopérabilité permettant d’assurer la traçabilité des dispositifs médicaux implantables (DMI) au sein d’un établissement de santé.",
+    "ci-build" : "https://ansforge.github.io/interop-ig-fhir-tracabilite-dmi/main/ig/",
+    "category" : "Infrastructure",
+    "introduction" : "Ce guide d’implémentation (IG) décrit les mécanismes d’interopérabilité permettant d’assurer la traçabilité des dispositifs médicaux implantables (DMI) au sein d’un établissement de santé.",
+    "changes": "change-log.html"
+
+  }
