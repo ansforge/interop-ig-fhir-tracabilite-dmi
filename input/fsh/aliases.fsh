@@ -1,0 +1,3 @@
+Alias: $TRE_R254-TypeEvenement-FHIR = https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR
+Alias: $TRE_R207-TypeOrganisationInterne = https://mos.esante.gouv.fr/NOS/TRE_R207-TypeOrganisationInterne/FHIR/TRE-R207-TypeOrganisationInterne
+Alias: $TRE_R244-CategorieOrganisation = https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation

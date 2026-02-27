@@ -1,6 +1,5 @@
 | Sigle / Acronyme | Signification |
 |----|----|
-| **CI-SIS** | Cadre d’interopérabilité des systèmes d’information de santé |
 | **CSP** | Code de la santé publique |
 | **DMI** | Dispositif médical implantable |
 | **GHS** | Groupe homogène de séjours |
@@ -12,3 +11,15 @@
 | **MOS** | Modèle des objets de santé |
 | **PUI** | Pharmacie à usage intérieur |
 | **T2A** | Tarification à l’activité |
+| ANS | Agence du Numérique en Santé |
+| CI-SIS | Cadre d’interopérabilité des systèmes d’information de santé |
+| FHIR | *Fast Healthcare Interoperability Ressources* |
+| HIMSS | Healthcare Information and Management Systems Society |
+| HL7 | *Health Level 7* |
+| HTTP | HyperText Transfer Protocol |
+| JSON | JavaScript Object Notation |
+| MEMDMC | Medical Equipment Management Device Management Communication |
+| MEMLS | Medical Equipment Management Location Service |
+| PMDT | Point of care Medicao Device Tracking |
+| REST | REpresentational State Transfer |
+| XML | Extensible Markup Language |
