@@ -38,8 +38,8 @@ la [spécification fonctionnelle](specifications_fonctionnelles.html) :
 
 L’analyse de ces standards ci-dessus n’est pas détaillée dans ce document car elle est disponible dans le document [« Etude Normes & Standards généricisation : gestion des traces »](N&S TDE). Pour rappel, cette étude Normes & Standards propose de se baser sur une version « générique » de la gestion des traces du profil ATNA.
 
-<div class="figure">
-    <img src="contexte.png" alt="contexte" title="contexte" style="width:100%;">
+<div style="text-align: center;">
+  {% include contexte.svg %}
 </div>
 
 En complément de cette [étude](N&S TDE), le présent document comprend l’analyse des standards suivants, spécifiques au métier de la gestion des dispositifs médicaux :
