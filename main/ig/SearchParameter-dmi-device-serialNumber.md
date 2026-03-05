@@ -1,4 +1,4 @@
-# SearchParameter DMI Device serialNumber - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# SearchParameter DMI Device serialNumber - Traçabilité des Dispositifs Médicaux Implantables v3.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber | *Version*:3.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber | *Version*:3.0.0-ballot |
 | Draft as of 2022-05-24 | *Computable Name*:DMI_Device_serialNumber |
 
  
@@ -23,7 +23,7 @@ Permet la recherche sur le numéro de série du DMI
   "resourceType" : "SearchParameter",
   "id" : "dmi-device-serialNumber",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber",
-  "version" : "3.0.0",
+  "version" : "3.0.0-ballot",
   "name" : "DMI_Device_serialNumber",
   "status" : "draft",
   "date" : "2022-05-24T00:00:00+02:00",

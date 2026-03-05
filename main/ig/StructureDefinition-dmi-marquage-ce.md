@@ -1,4 +1,4 @@
-# DMI Marquage CE - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Marquage CE - Traçabilité des Dispositifs Médicaux Implantables v3.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-marquage-ce | *Version*:3.0.0 |
-| Draft as of 2026-02-27 | *Computable Name*:DMIMarquageCE |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-marquage-ce | *Version*:3.0.0-ballot |
+| Draft as of 2026-03-05 | *Computable Name*:DMIMarquageCE |
 
 Extension créée dans ce volet pour représenter le marquage CE.
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-dmi-marquage-ce.csv)
   "resourceType" : "StructureDefinition",
   "id" : "dmi-marquage-ce",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-marquage-ce",
-  "version" : "3.0.0",
+  "version" : "3.0.0-ballot",
   "name" : "DMIMarquageCE",
   "title" : "DMI Marquage CE",
   "status" : "draft",
-  "date" : "2026-02-27T10:37:28+00:00",
+  "date" : "2026-03-05T09:47:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

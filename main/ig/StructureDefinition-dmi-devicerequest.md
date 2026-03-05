@@ -1,4 +1,4 @@
-# DMI DeviceRequest - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI DeviceRequest - Traçabilité des Dispositifs Médicaux Implantables v3.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest | *Version*:3.0.0 |
-| Draft as of 2026-02-27 | *Computable Name*:DMIDeviceRequest |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest | *Version*:3.0.0-ballot |
+| Draft as of 2026-03-05 | *Computable Name*:DMIDeviceRequest |
 
  
 Profil créé dans le cadre de ce volet permettant d’effectuer une commande, demande, et la réponse à une demande de dispositif médical. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-dmi-devicerequest.cs
   "resourceType" : "StructureDefinition",
   "id" : "dmi-devicerequest",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-devicerequest",
-  "version" : "3.0.0",
+  "version" : "3.0.0-ballot",
   "name" : "DMIDeviceRequest",
   "title" : "DMI DeviceRequest",
   "status" : "draft",
-  "date" : "2026-02-27T10:37:28+00:00",
+  "date" : "2026-03-05T09:47:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

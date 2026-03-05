@@ -7,7 +7,7 @@
 </div><table class="grid"><tr><td>Ressource</td><td><a href="http://hl7.org/fhir/R4/device.html">Device</a></td></tr><tr><td>Expression</td><td><code>Device.serialNumber</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd : C'est au serveur de décider si le paramètre peut se répéter pour spécifier plusieurs valeurs qui doivent toutes être vraies</li><li>multipleOr : C'est au serveur de décider si le paramètre peut avoir plusieurs valeurs (séparées par des virgules) dont au moins une doit être vraie</li></ul></td></tr></table></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber"/>
-  <version value="3.0.0"/>
+  <version value="3.0.0-ballot"/>
   <name value="DMI_Device_serialNumber"/>
   <status value="draft"/>
   <date value="2022-05-24T00:00:00+02:00"/>

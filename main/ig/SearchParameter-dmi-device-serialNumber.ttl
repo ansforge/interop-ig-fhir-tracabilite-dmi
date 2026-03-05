@@ -17,7 +17,7 @@
      fhir:v "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber"^^xsd:anyURI ;
      fhir:l <https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber>
   ] ; # 
-  fhir:version [ fhir:v "3.0.0"] ; # 
+  fhir:version [ fhir:v "3.0.0-ballot"] ; # 
   fhir:name [ fhir:v "DMI_Device_serialNumber"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:date [ fhir:v "2022-05-24T00:00:00+02:00"^^xsd:dateTime] ; # 

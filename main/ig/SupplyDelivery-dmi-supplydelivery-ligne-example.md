@@ -1,4 +1,4 @@
-# dmi-supplydelivery-ligne-example - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# dmi-supplydelivery-ligne-example - Traçabilité des Dispositifs Médicaux Implantables v3.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

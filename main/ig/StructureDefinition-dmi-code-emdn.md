@@ -1,4 +1,4 @@
-# DMI Code EMDN - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Code EMDN - Traçabilité des Dispositifs Médicaux Implantables v3.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn | *Version*:3.0.0 |
-| Draft as of 2026-02-27 | *Computable Name*:DMICodeEMDN |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn | *Version*:3.0.0-ballot |
+| Draft as of 2026-03-05 | *Computable Name*:DMICodeEMDN |
 
 Extension créée dans ce volet pour représenter le code EMDN.
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-dmi-code-emdn.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "dmi-code-emdn",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-code-emdn",
-  "version" : "3.0.0",
+  "version" : "3.0.0-ballot",
   "name" : "DMICodeEMDN",
   "title" : "DMI Code EMDN",
   "status" : "draft",
-  "date" : "2026-02-27T10:37:28+00:00",
+  "date" : "2026-03-05T09:47:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

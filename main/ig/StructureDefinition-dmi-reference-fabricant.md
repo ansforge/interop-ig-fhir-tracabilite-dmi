@@ -1,4 +1,4 @@
-# Extension DMI Reference Fabricant - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# Extension DMI Reference Fabricant - Traçabilité des Dispositifs Médicaux Implantables v3.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-fabricant | *Version*:3.0.0 |
-| Draft as of 2026-02-27 | *Computable Name*:DMIReferenceFabricant |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-fabricant | *Version*:3.0.0-ballot |
+| Draft as of 2026-03-05 | *Computable Name*:DMIReferenceFabricant |
 
 Extension créée dans ce volet pour référencer l'organisation fabricant du DMI.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-dmi-reference-fabric
   "resourceType" : "StructureDefinition",
   "id" : "dmi-reference-fabricant",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-reference-fabricant",
-  "version" : "3.0.0",
+  "version" : "3.0.0-ballot",
   "name" : "DMIReferenceFabricant",
   "title" : "Extension DMI Reference Fabricant",
   "status" : "draft",
-  "date" : "2026-02-27T10:37:28+00:00",
+  "date" : "2026-03-05T09:47:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

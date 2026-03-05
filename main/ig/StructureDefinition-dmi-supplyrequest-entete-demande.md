@@ -1,4 +1,4 @@
-# DMI SupplyRequest Entete Demande - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI SupplyRequest Entete Demande - Traçabilité des Dispositifs Médicaux Implantables v3.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande | *Version*:3.0.0 |
-| Draft as of 2026-02-27 | *Computable Name*:DMISupplyRequestEnteteDemande |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande | *Version*:3.0.0-ballot |
+| Draft as of 2026-03-05 | *Computable Name*:DMISupplyRequestEnteteDemande |
 
  
 Profil créé dans le cadre de ce volet pour transporter les informations générales d’une demande de dispositif médical. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplyrequest-en
   "resourceType" : "StructureDefinition",
   "id" : "dmi-supplyrequest-entete-demande",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-supplyrequest-entete-demande",
-  "version" : "3.0.0",
+  "version" : "3.0.0-ballot",
   "name" : "DMISupplyRequestEnteteDemande",
   "title" : "DMI SupplyRequest Entete Demande",
   "status" : "draft",
-  "date" : "2026-02-27T10:37:28+00:00",
+  "date" : "2026-03-05T09:47:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

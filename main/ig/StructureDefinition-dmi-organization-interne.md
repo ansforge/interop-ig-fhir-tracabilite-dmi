@@ -1,4 +1,4 @@
-# DMI Organization Interne - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Organization Interne - Traçabilité des Dispositifs Médicaux Implantables v3.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne | *Version*:3.0.0 |
-| Draft as of 2026-02-27 | *Computable Name*:DMIOrganizationInterne |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne | *Version*:3.0.0-ballot |
+| Draft as of 2026-03-05 | *Computable Name*:DMIOrganizationInterne |
 
  
 Profil créé dans le cadre de ce volet permettant de représenter l’organisation interne (Service utilisateur). 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-dmi-organization-int
   "resourceType" : "StructureDefinition",
   "id" : "dmi-organization-interne",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-organization-interne",
-  "version" : "3.0.0",
+  "version" : "3.0.0-ballot",
   "name" : "DMIOrganizationInterne",
   "title" : "DMI Organization Interne",
   "status" : "draft",
-  "date" : "2026-02-27T10:37:28+00:00",
+  "date" : "2026-03-05T09:47:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

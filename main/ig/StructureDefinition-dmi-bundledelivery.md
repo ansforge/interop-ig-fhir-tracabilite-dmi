@@ -1,4 +1,4 @@
-# DMI Bundle Delivery - Traçabilité des Dispositifs Médicaux Implantables v3.0.0
+# DMI Bundle Delivery - Traçabilité des Dispositifs Médicaux Implantables v3.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery | *Version*:3.0.0 |
-| Draft as of 2026-02-27 | *Computable Name*:DMIBundleDelivery |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery | *Version*:3.0.0-ballot |
+| Draft as of 2026-03-05 | *Computable Name*:DMIBundleDelivery |
 
  
 Profil créé dans le cadre de ce volet pour transmettre au serveur l’ensemble des ressources permettant la réception, la délivrance et la livraison d’un DMI. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-dmi-bundledelivery.c
   "resourceType" : "StructureDefinition",
   "id" : "dmi-bundledelivery",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/StructureDefinition/dmi-bundledelivery",
-  "version" : "3.0.0",
+  "version" : "3.0.0-ballot",
   "name" : "DMIBundleDelivery",
   "title" : "DMI Bundle Delivery",
   "status" : "draft",
-  "date" : "2026-02-27T10:37:28+00:00",
+  "date" : "2026-03-05T09:47:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
