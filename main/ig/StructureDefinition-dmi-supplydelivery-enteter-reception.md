@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-supplydelivery-e
   "name" : "DMISupplyDeliveryEnteteReception",
   "title" : "DMI SupplyDelivery Entete Reception",
   "status" : "draft",
-  "date" : "2026-03-05T09:47:44+00:00",
+  "date" : "2026-03-05T10:00:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
