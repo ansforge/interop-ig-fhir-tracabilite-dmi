@@ -1,9 +1,9 @@
 TDMI : Validation Results
 =========================================
 
-err = 3, warn = 53, info = 96
+err = 3, warn = 53, info = 90
 IG Publisher Version: 2.1.2
-Generated Thu Mar 05 10:03:44 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tdmi#3.0.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi)
+Generated Thu Mar 05 10:24:39 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tdmi#3.0.0-ballot (canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi)
  Build Errors : 4 / 25 / 0
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/AuditEvent-tde-auditevent-example : 0 / 0 / 1
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/Bundle-dmi-bundle-delivery-example : 0 / 2 / 8
@@ -37,16 +37,16 @@ Generated Thu Mar 05 10:03:44 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.tdmi#
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-identifiant-local-distributeur : 0 / 0 / 2
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-identifiant-local-fabricant : 0 / 1 / 2
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-internal-diameter : 0 / 1 / 2
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-invoice : 0 / 0 / 8
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-invoice : 0 / 0 / 6
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-ip-id-logiciel : 0 / 0 / 2
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-marquage-ce : 0 / 0 / 2
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-nom-distributeur : 0 / 1 / 2
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-organization-ej : 0 / 1 / 11
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-organization-ej : 0 / 1 / 9
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-organization-interne : 0 / 1 / 5
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-organization-location : 0 / 1 / 2
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-patient : 0 / 1 / 2
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-practitioner : 0 / 0 / 3
- /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-procedure : 0 / 0 / 8
+ /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-procedure : 0 / 0 / 6
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-reference-distributeur : 0 / 1 / 2
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-reference-fabricant : 0 / 1 / 2
  /home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-reference-organisation-interne : 0 / 0 / 2
@@ -180,12 +180,12 @@ INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snaps
 INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[93].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
 INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[100].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
 INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.snapshot.element[107].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[10].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
+INFORMATION: StructureDefinition/dmi-devicedefinition: StructureDefinition.differential.element[17].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
 == fsh-generated/resources/StructureDefinition-dmi-devicerequest.json ==
 INFORMATION: StructureDefinition/dmi-devicerequest: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 == fsh-generated/resources/StructureDefinition-dmi-facture.json ==
@@ -202,11 +202,9 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 == fsh-generated/resources/StructureDefinition-dmi-invoice.json ==
 INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.snapshot.element[18].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.snapshot.element[24].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.snapshot.element[27].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
+INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
+INFORMATION: StructureDefinition/dmi-invoice: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
 == fsh-generated/resources/StructureDefinition-dmi-ip-id-logiciel.json ==
 INFORMATION: StructureDefinition/dmi-ip-id-logiciel: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 == fsh-generated/resources/StructureDefinition-dmi-marquage-ce.json ==
@@ -218,9 +216,7 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 WARNING: StructureDefinition/dmi-organization-ej: StructureDefinition.snapshot.element[19].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/organization-period'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/organization-period' to 'http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0'
 INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.snapshot.element[93].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.snapshot.element[96].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.snapshot.element[102].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.snapshot.element[105].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
 INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
 INFORMATION: StructureDefinition/dmi-organization-ej: StructureDefinition.snapshot.element[23].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -242,9 +238,7 @@ INFORMATION: StructureDefinition/dmi-practitioner: StructureDefinition.snapshot.
 == fsh-generated/resources/StructureDefinition-dmi-procedure.json ==
 INFORMATION: StructureDefinition/dmi-procedure: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display
 INFORMATION: StructureDefinition/dmi-procedure: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-procedure: StructureDefinition.snapshot.element[17].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/dmi-procedure: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
-INFORMATION: StructureDefinition/dmi-procedure: StructureDefinition.snapshot.element[26].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/dmi-procedure: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
 INFORMATION: StructureDefinition/dmi-procedure: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot
 == fsh-generated/resources/StructureDefinition-dmi-reference-distributeur.json ==
