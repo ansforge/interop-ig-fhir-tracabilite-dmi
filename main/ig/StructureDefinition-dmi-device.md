@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-device.csv), [Ex
   "name" : "DMIDevice",
   "title" : "DMI Device",
   "status" : "draft",
-  "date" : "2026-03-05T10:23:55+00:00",
+  "date" : "2026-03-05T10:25:07+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -82,17 +82,6 @@ Other representations of profile: [CSV](StructureDefinition-dmi-device.csv), [Ex
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Device.extension",
-      "path" : "Device.extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "rules" : "open"
-      }
-    },
-    {
       "id" : "Device.extension:IPIdLogiciel",
       "path" : "Device.extension",
       "sliceName" : "IPIdLogiciel",

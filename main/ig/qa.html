@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 4, errors = 3, warn = 53, info = 90-->
+<!-- broken links = 4, errors = 3, warn = 53, info = 96-->
 <head>
   <title>TDMI : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for TDMI</h1>
- <p>Generated Thu Mar 05 10:26:10 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.tdmi#3.0.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tdmi">https://interop.esante.gouv.fr/ig/fhir/tdmi</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Thu Mar 05 10:27:15 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.tdmi#3.0.0-ballot (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/tdmi">https://interop.esante.gouv.fr/ig/fhir/tdmi</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/tdmi/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.1.2</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.tdmi, Canonical = https://interop.esante.gouv.fr/ig/fhir/tdmi</td></tr>
@@ -112,11 +112,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-device-nametype.html">DeviceNameType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-device-type.html">DeviceType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
- (66 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (66 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
  (13 uses),     <a href="http://hl7.org/fhir/R4/devicedefinition.html">DeviceDefinition</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-device-kind.html">FHIRDeviceTypes</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-device-safety.html">DeviceSafety</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/activitydefinition.html">ActivityDefinition</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/supplyrequest.html">SupplyRequest</a>
@@ -127,9 +129,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (2 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
  (24 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
  (19 uses),     <a href="http://hl7.org/fhir/R4/valueset-participant-role.html">ParticipantRoles</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
- (4 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
  (7 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
  (6 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
@@ -138,9 +138,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/invoice.html">Invoice</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-invoice-status.html">InvoiceStatus</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/valueset-invoice-status.html">InvoiceStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/chargeitem.html">ChargeItem</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-invoice-priceComponentType.html">InvoicePriceComponentType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a>
@@ -182,7 +182,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 3, warn = 53, info = 90, broken links = 4, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 3, warn = 53, info = 96, broken links = 4, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -294,7 +294,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-internal-diameter"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-internal-diameter</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-invoice"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-invoice</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>5</b></td>
+     <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-invoice"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-invoice</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>7</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-ip-id-logiciel"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-ip-id-logiciel</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
@@ -306,7 +306,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-nom-distributeur"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-nom-distributeur</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-organization-ej"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-organization-ej</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>7</b></td>
+     <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-organization-ej"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-organization-ej</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>9</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-organization-interne"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-organization-interne</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>3</b></td>
@@ -321,7 +321,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-practitioner"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-practitioner</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-procedure"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-procedure</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>5</b></td>
+     <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-procedure"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-procedure</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>7</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_interop-ig-fhir-tracabilite-dmi_interop-ig-fhir-tracabilite-dmi_igSource_fsh-generated_resources_StructureDefinition-dmi-reference-distributeur"><b>/home/runner/work/interop-ig-fhir-tracabilite-dmi/interop-ig-fhir-tracabilite-dmi/igSource/fsh-generated/resources/StructureDefinition-dmi-reference-distributeur</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -1132,7 +1132,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Code "FR" found in urn:iso:std:iso:3166|2018</pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c28005)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c28076)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
@@ -1286,7 +1286,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c16627)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi75" onClick="document.getElementById('vmi75').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi75" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c16211)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi75" onClick="document.getElementById('vmi75').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi75" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1313,7 +1313,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c84289)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi76" onClick="document.getElementById('vmi76').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi76" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c83853)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi76" onClick="document.getElementById('vmi76').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi76" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1330,40 +1330,40 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Code "FR" found in urn:iso:std:iso:3166|2018</pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[72]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c167848)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[72]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c182240)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[79]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c175693)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[79]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c192028)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[86]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c183553)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[86]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c201831)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[93]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c191506)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[93]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c211727)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[100]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c199359)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[100]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c221523)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[107]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c207134)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[107]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c231241)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c223095)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c252986)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c223474)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c253365)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c223857)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c253748)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c224292)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[12]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c254183)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c224655)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c254546)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[17]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c224994)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c254885)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
 </table>
 <hr/>
@@ -1520,7 +1520,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c36704)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi97" onClick="document.getElementById('vmi97').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi97" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c36286)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi97" onClick="document.getElementById('vmi97').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi97" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1537,16 +1537,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Code "FR" found in urn:iso:std:iso:3166|2018</pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c58521)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c60720)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c69455)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c65881)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SECURITY_STRING_CONTENT_WARNING</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c112301)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c74216)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c112731)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c79380)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SECURITY_STRING_CONTENT_WARNING</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c127215)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c127645)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
 </table>
 <hr/>
@@ -1559,7 +1565,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12533)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi102" onClick="document.getElementById('vmi102').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi102" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12533)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi104" onClick="document.getElementById('vmi104').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi104" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1586,7 +1592,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c27864)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi103" onClick="document.getElementById('vmi103').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi103" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c27864)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi105" onClick="document.getElementById('vmi105').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi105" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1613,7 +1619,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12566)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi104" onClick="document.getElementById('vmi104').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi104" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12566)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi106" onClick="document.getElementById('vmi106').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi106" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1643,7 +1649,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c47240)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi106" onClick="document.getElementById('vmi106').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi106" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c47240)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi108" onClick="document.getElementById('vmi108').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi108" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1663,22 +1669,28 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c72154)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/organization-period'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/organization-period' to 'http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[93]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c166217)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[93]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c166478)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[102]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c177537)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[96]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c171720)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SECURITY_STRING_CONTENT_WARNING</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c262315)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[102]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c180003)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c262670)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[105]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c185191)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SECURITY_STRING_CONTENT_WARNING</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c266725)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c267080)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[23]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c77520)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[108]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c184767)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[108]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c189177)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_PATH_SLICING_DEPRECATED</span></td>
    </tr>
 </table>
 <hr/>
@@ -1691,7 +1703,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c29995)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi114" onClick="document.getElementById('vmi114').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi114" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c29995)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi118" onClick="document.getElementById('vmi118').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi118" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1727,7 +1739,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12711)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi118" onClick="document.getElementById('vmi118').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi118" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12711)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi122" onClick="document.getElementById('vmi122').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi122" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1757,7 +1769,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c10684)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi120" onClick="document.getElementById('vmi120').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi120" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c10684)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi124" onClick="document.getElementById('vmi124').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi124" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1787,7 +1799,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c10519)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi122" onClick="document.getElementById('vmi122').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi122" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c10519)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi126" onClick="document.getElementById('vmi126').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi126" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1817,7 +1829,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c41586)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi124" onClick="document.getElementById('vmi124').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi124" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c41586)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi128" onClick="document.getElementById('vmi128').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi128" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1834,16 +1846,22 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Code "FR" found in urn:iso:std:iso:3166|2018</pre></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c64866)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c66798)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[23]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c76612)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c71983)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SECURITY_STRING_CONTENT_WARNING</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c128761)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[23]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c81106)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c129199)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[26]&#8203;.mapping[2]&#8203;.map (l1&#8203;/c86276)</b></td><td><b>information</b></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SECURITY_STRING_CONTENT_WARNING</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c153367)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c153805)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/tdmi/CodeSystem/dmi-discriminator|3.0.0-ballot</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
 </table>
 <hr/>
@@ -1856,7 +1874,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12654)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi129" onClick="document.getElementById('vmi129').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi129" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12654)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi135" onClick="document.getElementById('vmi135').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi135" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1886,7 +1904,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12778)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi131" onClick="document.getElementById('vmi131').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi131" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12778)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi137" onClick="document.getElementById('vmi137').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi137" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1916,7 +1934,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12794)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi133" onClick="document.getElementById('vmi133').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi133" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c12794)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi139" onClick="document.getElementById('vmi139').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi139" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1943,7 +1961,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c18216)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi134" onClick="document.getElementById('vmi134').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi134" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c19580)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi140" onClick="document.getElementById('vmi140').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi140" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1970,7 +1988,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c23489)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi135" onClick="document.getElementById('vmi135').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi135" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c24839)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi141" onClick="document.getElementById('vmi141').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi141" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -1997,7 +2015,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c23505)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi136" onClick="document.getElementById('vmi136').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi136" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c24855)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi142" onClick="document.getElementById('vmi142').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi142" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -2024,7 +2042,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c21664)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi137" onClick="document.getElementById('vmi137').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi137" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c23028)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi143" onClick="document.getElementById('vmi143').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi143" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -2051,7 +2069,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c21750)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi138" onClick="document.getElementById('vmi138').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi138" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c23114)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi144" onClick="document.getElementById('vmi144').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi144" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -2078,7 +2096,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c23611)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi139" onClick="document.getElementById('vmi139').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi139" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c24961)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi145" onClick="document.getElementById('vmi145').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi145" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -2105,7 +2123,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c19996)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi140" onClick="document.getElementById('vmi140').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi140" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c19996)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi146" onClick="document.getElementById('vmi146').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi146" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -2122,16 +2140,16 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Code "FR" found in urn:iso:std:iso:3166|2018</pre></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c40557)</b></td><td><b>warning</b></td><td><b>Unable to check whether the code is in the value set '' because the code system https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR was not found</b> (from <a href="qa-txservers.html#https://smt.esante.gouv.fr/fhir">https://smt.esante.gouv.fr/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c42541)</b></td><td><b>warning</b></td><td><b>Unable to check whether the code is in the value set '' because the code system https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR was not found</b> (from <a href="qa-txservers.html#https://smt.esante.gouv.fr/fhir">https://smt.esante.gouv.fr/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l1&#8203;/c40557)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://smt.esante.gouv.fr/fhir">https://smt.esante.gouv.fr/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l1&#8203;/c42541)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://smt.esante.gouv.fr/fhir">https://smt.esante.gouv.fr/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c56760)</b></td><td><b>warning</b></td><td><b>Unable to check whether the code is in the value set '' because the code system https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR was not found</b> (from <a href="qa-txservers.html#https://smt.esante.gouv.fr/fhir">https://smt.esante.gouv.fr/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c66156)</b></td><td><b>warning</b></td><td><b>Unable to check whether the code is in the value set '' because the code system https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR was not found</b> (from <a href="qa-txservers.html#https://smt.esante.gouv.fr/fhir">https://smt.esante.gouv.fr/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l1&#8203;/c56760)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://smt.esante.gouv.fr/fhir">https://smt.esante.gouv.fr/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.pattern&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l1&#8203;/c66156)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R254-TypeEvenement/FHIR/TRE-R254-TypeEvenement/TRE_R254-TypeEvenement-FHIR' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://smt.esante.gouv.fr/fhir">https://smt.esante.gouv.fr/fhir</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
 <hr/>
@@ -2144,7 +2162,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c24754)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi145" onClick="document.getElementById('vmi145').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi145" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c24754)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi151" onClick="document.getElementById('vmi151').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi151" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -2171,7 +2189,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c24912)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi146" onClick="document.getElementById('vmi146').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi146" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c24912)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi152" onClick="document.getElementById('vmi152').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi152" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -2198,7 +2216,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c60651)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi147" onClick="document.getElementById('vmi147').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi147" style="display:none"><br/><pre>0ms tx-op
+     <td><b>StructureDefinition&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c60651)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#FR for language(s) 'fr'. The display is 'France' which is the default language display</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l5">log</a>, or see <a href="#vmi153" onClick="document.getElementById('vmi153').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi153" style="display:none"><br/><pre>0ms tx-op
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Analysing http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1 for validation purposes
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=fr, generate-narrative, default-to-latest
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/11000315107
@@ -3322,6 +3340,29 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-dmi-practitioner.html">fsh-generated/resources/StructureDefinition-dmi-practitioner.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SECURITY_STRING_CONTENT_WARNING"> </a>
+<h2>SECURITY_STRING_CONTENT_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-dmi-invoice.html">fsh-generated/resources/StructureDefinition-dmi-invoice.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-dmi-invoice.html">fsh-generated/resources/StructureDefinition-dmi-invoice.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-dmi-organization-ej.html">fsh-generated/resources/StructureDefinition-dmi-organization-ej.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-dmi-organization-ej.html">fsh-generated/resources/StructureDefinition-dmi-organization-ej.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-dmi-procedure.html">fsh-generated/resources/StructureDefinition-dmi-procedure.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-dmi-procedure.html">fsh-generated/resources/StructureDefinition-dmi-procedure.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
 </table>
 <hr/>
