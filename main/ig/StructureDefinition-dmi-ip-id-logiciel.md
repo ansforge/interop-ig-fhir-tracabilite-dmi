@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-dmi-ip-id-logiciel.c
   "name" : "DMIIPIdLogiciel",
   "title" : "DMI IP Id logiciel",
   "status" : "draft",
-  "date" : "2026-03-05T10:22:34+00:00",
+  "date" : "2026-03-05T10:23:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

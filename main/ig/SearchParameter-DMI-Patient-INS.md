@@ -26,7 +26,7 @@ Permet la recherche sur l'ins du patient
   "version" : "3.0.0-ballot",
   "name" : "DMI_Patient_INS",
   "status" : "draft",
-  "date" : "2026-03-05T10:22:34+00:00",
+  "date" : "2026-03-05T10:23:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
