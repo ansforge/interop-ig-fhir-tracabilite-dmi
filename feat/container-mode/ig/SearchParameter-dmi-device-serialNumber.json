@@ -1,0 +1,33 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "dmi-device-serialNumber",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter dmi-device-serialNumber</b></p><a name=\"dmi-device-serialNumber\"> </a><a name=\"hcdmi-device-serialNumber\"> </a><h2>DMI_Device_serialNumber</h2><p>Parameter <code>serialNumber</code>:<code>string</code></p><div><p>Permet la recherche sur le numéro de série du DMI</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/device.html\">Device</a></td></tr><tr><td>Expression</td><td><code>Device.serialNumber</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/tdmi/SearchParameter/dmi-device-serialNumber",
+  "version" : "3.0.0-ballot",
+  "name" : "DMI_Device_serialNumber",
+  "status" : "draft",
+  "date" : "2022-05-24T00:00:00+02:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Permet la recherche sur le numéro de série du DMI",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "code" : "serialNumber",
+  "base" : ["Device"],
+  "type" : "string",
+  "expression" : "Device.serialNumber"
+}
